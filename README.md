@@ -30,6 +30,8 @@
 
 ## Новые отчёты
 
+- **[pgbot v0.9.0: эксперимент на PostgreSQL 18.3 (4 ноября 2026)](reports/2026-11-04-pgbot-postgresql-lab.md)** — управляемые инциденты autovacuum и locking, проверка JSON Schema и прав, повторные измерения, независимый oracle и проектная карточка [pgbot](studies/pgbot.md). Без production.
+
 - **[Лабораторные проверки гипотез из избранного (3 ноября 2026)](reports/2026-11-03-bookmark-hypotheses-offline-experiments.md)** — FTS5 A/B на размеченных DBA-запросах, read-only PostgreSQL sandbox, agent-config baseline, проверка ссылок, блокеры и ограничения; приложен воспроизводимый скрипт.
 
 Еженедельная задача «Исследования для портфеля проектов» читает актуальный `project-registry`, проверяет полный текст новых работ и исходные репозитории, затем сохраняет обзор в `reports/YYYY-MM-DD-portfolio-research.md`. Новую ссылку добавлять в этот раздел. Если значимых материалов нет, сохранять честный отчёт `NO_SIGNIFICANT_NEW_MATERIAL` без выдуманных рекомендаций.
