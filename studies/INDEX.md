@@ -31,6 +31,7 @@ not in the 16 older evidence-based DSH decisions above. Their **original PDF v1*
 methods, results and caveats were examined on 2026-11-03; the studies themselves
 were **not independently replicated**. Dispositions are *proposals pending owner review*.
 Full results: [6–12 Oct retrospective scientific review](../reports/2026-11-03-review-of-2026-10-06-to-12.md).
+Concrete preliminary project links: [research-to-project mapping](../reports/2026-11-03-project-mapping-2026-10-06-to-12.md) (profile-based, **not** source-verified).
 
 | Paper | arXiv / DOI | Status |
 | --- | --- | --- |
