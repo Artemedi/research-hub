@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Новые инженерные проверки (отдельно от научных full-text reviews):** [pgbot — PostgreSQL diagnostic lab, v0.9.0](pgbot.md) — `LAB_VERIFIED / NO_PRODUCTION_APPROVAL`, [протокол](../reports/2026-11-04-pgbot-postgresql-lab.md).
+
 This index promotes **16 historically source-reviewed items** from the original DSH
 research decisions into separate traceable records. Their original reviews and
 full methodological qualifications are preserved via pinned SHA and archive links.
