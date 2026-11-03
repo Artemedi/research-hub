@@ -24,6 +24,24 @@ This is a document migration and extraction, **not a new independent replication
 | [ReCAP — Persistent Context Graphs for Memory Compaction](recap.md) | `MEMORY` | `FULL_TEXT_REVIEW_RECORDED` |
 | [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | `KV_CACHE` | `FULL_TEXT_REVIEW_RECORDED` |
 
+## New full-text checks: 6–12 October watch (reviewed 2026-11-03)
+
+These **seven additional papers** had appeared only in a *reconstructed screening watch*,
+not in the 16 older evidence-based DSH decisions above. Their **original PDF v1**
+methods, results and caveats were examined on 2026-11-03; the studies themselves
+were **not independently replicated**. Dispositions are *proposals pending owner review*.
+Full results: [6–12 Oct retrospective scientific review](../reports/2026-11-03-review-of-2026-10-06-to-12.md).
+
+| Paper | arXiv / DOI | Status |
+| --- | --- | --- |
+| [HarnessSecurity-Bench](harnesssecurity-bench.md) | [arXiv:2610.07639](https://arxiv.org/abs/2610.07639) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [SquidAgent](squidagent.md) | [arXiv:2610.08647](https://arxiv.org/abs/2610.08647) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [ExperienceIndex](experienceindex.md) | [arXiv:2610.10091](https://arxiv.org/abs/2610.10091) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [DAEDALUS](daedalus.md) | [arXiv:2610.08048](https://arxiv.org/abs/2610.08048) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [PackHallu](package-hallucination-rule-files.md) | [arXiv:2610.09264](https://arxiv.org/abs/2610.09264) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [POLAR](polar.md) | [arXiv:2610.08082](https://arxiv.org/abs/2610.08082) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [REMORY](remory.md) | [arXiv:2610.11287](https://arxiv.org/abs/2610.11287) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+
 ## Scope and exclusions
 
 - 2026-09-21: five source assessments. Auto Mode public method text was reviewed;
@@ -36,8 +54,9 @@ This is a document migration and extraction, **not a new independent replication
   ToolGrad, REVA and NovaFabric. Its decision record explicitly identifies
   missing full-paper method verification for some candidates, so none was
   automatically promoted here.
-- The 12 and 19 October digests are **reconstructed summaries**, not records of
-  complete full-text scientific reviews. Their candidates remain in the immutable archive.
+- The **original** 12 and 19 October digests are **reconstructed summaries**,
+  not records of complete scientific reviews. The seven 12 October candidates received
+  a separate 2026-11-03 full-text review above; the 19 October candidates are still screening-only.
 - The 26 October DSH watch preserves an author-supplied review, but explicitly
   says the import is not an independent full-text reread of each paper.
   Its candidates remain historical until source verification per item.
