@@ -45,6 +45,23 @@ Concrete preliminary project links: [research-to-project mapping](../reports/202
 | [POLAR](polar.md) | [arXiv:2610.08082](https://arxiv.org/abs/2610.08082) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
 | [REMORY](remory.md) | [arXiv:2610.11287](https://arxiv.org/abs/2610.11287) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
 
+## Full-text checks: 12–19 October historical watch (reviewed 2026-11-03)
+
+The [historical DSH watch](../archive/dsh/knowledge/research/2026-10-19-deepseek-harness-research-watch-reconstructed.md) was reconstructed screening-only, including **six primary picks and two extra mentions**. All eight original v1 PDFs were subsequently reviewed in full on 2026-11-03, with explicit methodology, result and limitation notes; no independent reproduction was performed.
+
+[Full review](../reports/2026-11-03-full-text-review-2026-10-12-to-19.md) | [research → project mapping](../reports/2026-11-03-project-mapping-2026-10-12-to-19.md)
+
+| Study | Full source | Evidence |
+| --- | --- | --- |
+| [HTN-Orchestrate](htn-orchestrate.md) | [arXiv:2610.22195](https://arxiv.org/abs/2610.22195) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [agent-risk](agent-risk.md) | [arXiv:2610.16280](https://arxiv.org/abs/2610.16280) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [JevAgentHarness](jevagentharness.md) | [arXiv:2610.21412](https://arxiv.org/abs/2610.21412) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [MemComposer](memcomposer.md) | [arXiv:2610.21091](https://arxiv.org/abs/2610.21091) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [LAGO](lago.md) | [arXiv:2610.19843](https://arxiv.org/abs/2610.19843) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [Agentic Self-Awareness](agentic-self-awareness.md) | [arXiv:2610.19226](https://arxiv.org/abs/2610.19226) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [MemScope](memscope.md) | [arXiv:2610.21170](https://arxiv.org/abs/2610.21170) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+| [Matoi](matoi.md) | [arXiv:2610.21394](https://arxiv.org/abs/2610.21394) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
+
 ## Scope and exclusions
 
 - 2026-09-21: five source assessments. Auto Mode public method text was reviewed;
@@ -57,9 +74,7 @@ Concrete preliminary project links: [research-to-project mapping](../reports/202
   ToolGrad, REVA and NovaFabric. Its decision record explicitly identifies
   missing full-paper method verification for some candidates, so none was
   automatically promoted here.
-- The **original** 12 and 19 October digests are **reconstructed summaries**,
-  not records of complete scientific reviews. The seven 12 October candidates received
-  a separate 2026-11-03 full-text review above; the 19 October candidates are still screening-only.
+- The original 12 and 19 October digests remain **reconstructed screening-only summaries**. Seven original 12 October candidates and eight 19 October candidates each now have a separate 2026-11-03 full-text review above; historical originals are unchanged.
 - The 26 October DSH watch preserves an author-supplied review, but explicitly
   says the import is not an independent full-text reread of each paper.
   Its candidates remain historical until source verification per item.
