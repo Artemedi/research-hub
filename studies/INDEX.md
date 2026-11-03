@@ -62,6 +62,37 @@ The [historical DSH watch](../archive/dsh/knowledge/research/2026-10-19-deepseek
 | [MemScope](memscope.md) | [arXiv:2610.21170](https://arxiv.org/abs/2610.21170) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
 | [Matoi](matoi.md) | [arXiv:2610.21394](https://arxiv.org/abs/2610.21394) | `FULL_TEXT_REVIEWED_2026-11-03 / PROPOSED_ONLY` |
 
+## Full text checked: 20–26 October 2026 (reviewed 2026-11-03)
+
+This window had a separate document-based review; author results were not independently replicated. See [scientific review](../reports/2026-11-03-full-text-review-2026-10-20-to-26.md) and [explicit project-fit matrix](../reports/2026-11-03-project-mapping-2026-10-20-to-26.md).
+
+| Study | Primary arXiv work | Evidence status |
+| --- | --- | --- |
+| [GeoAgent — Contract-Constrained Agents](geoagent.md) | [arXiv:2610.31096](https://arxiv.org/abs/2610.31096) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Training Small LMs for Transferable Tool Selection](transferable-tool-selection.md) | [arXiv:2610.31483](https://arxiv.org/abs/2610.31483) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [arXiv:2610.28982](https://arxiv.org/abs/2610.28982) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | [arXiv:2610.30418](https://arxiv.org/abs/2610.30418) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [arXiv:2610.30026](https://arxiv.org/abs/2610.30026) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [arXiv:2610.29357](https://arxiv.org/abs/2610.29357) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | [arXiv:2610.29426](https://arxiv.org/abs/2610.29426) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+
+
+METR internal monitoring report: FULL_TEXT_UNAVAILABLE, only public overview; not promoted to source-reviewed paper.
+
+
+## Full text checked: 27 October–2 November 2026 (reviewed 2026-11-03)
+
+This window had a separate document-based review; author results were not independently replicated. See [scientific review](../reports/2026-11-03-full-text-review-2026-10-27-to-11-02.md) and [explicit project-fit matrix](../reports/2026-11-03-project-mapping-2026-10-27-to-11-02.md).
+
+| Study | Primary arXiv work | Evidence status |
+| --- | --- | --- |
+| [Concordat — Typed Sessions for LLM Agents](concordat.md) | [arXiv:2610.37461](https://arxiv.org/abs/2610.37461) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [arXiv:2610.39193](https://arxiv.org/abs/2610.39193) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Your Policy Is Secretly a Harness — Decision Geometry](decision-geometry-harness.md) | [arXiv:2610.37255](https://arxiv.org/abs/2610.37255) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Where You Inject Matters — Trust Region Effect](trust-region-injection.md) | [arXiv:2610.38867](https://arxiv.org/abs/2610.38867) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [arXiv:2610.37738](https://arxiv.org/abs/2610.37738) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+| [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [arXiv:2610.38398](https://arxiv.org/abs/2610.38398) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
+
 ## Scope and exclusions
 
 - 2026-09-21: five source assessments. Auto Mode public method text was reviewed;
@@ -75,9 +106,7 @@ The [historical DSH watch](../archive/dsh/knowledge/research/2026-10-19-deepseek
   missing full-paper method verification for some candidates, so none was
   automatically promoted here.
 - The original 12 and 19 October digests remain **reconstructed screening-only summaries**. Seven original 12 October candidates and eight 19 October candidates each now have a separate 2026-11-03 full-text review above; historical originals are unchanged.
-- The 26 October DSH watch preserves an author-supplied review, but explicitly
-  says the import is not an independent full-text reread of each paper.
-  Its candidates remain historical until source verification per item.
+- The original 26 October DSH watch is an operator-supplied historical summary, not itself a fresh full-text review. Seven papers from it were separately checked in full on 2026-11-03 above; METR remains FULL_TEXT_UNAVAILABLE.
 - The 7 October mathematical-models assessment remains available in the
   archive and is not conflated with these 16 paper-source research decisions.
 
