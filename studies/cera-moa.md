@@ -21,7 +21,7 @@ Co-trains LoRA specialist policies and familiarity router using mid-layer model 
 
 ## Further cross-project evaluation
 
-- Candidate applicability beyond DSH: `NOT_YET_ASSESSED`. Scan all projects in project-registry only when a concrete research comparison is requested.
+- Candidate applicability beyond DSH (2026-11-03): `NO_CURRENT_TARGET`. Причина: Скрытые состояния и LoRA-обучение требуют controlled trainable backend; обычный API-router не подходит. [Cross-project matrix](../reports/2026-11-03-project-mapping-historical-16.md). **Profile-only match, not a verified code integration.**
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.

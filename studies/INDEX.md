@@ -5,6 +5,8 @@ research decisions into separate traceable records. Their original reviews and
 full methodological qualifications are preserved via pinned SHA and archive links.
 This is a document migration and extraction, **not a new independent replication**.
 
+[**Historical project-fit matrix (16 papers)**](../reports/2026-11-03-project-mapping-historical-16.md) — linked to project profiles, proposed offline tests, and explicit NO_CURRENT_TARGET cases. This is a profile-based retrospective, not new scientific review.
+
 | Study | Area | Historical evidence status |
 | --- | --- | --- |
 | [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | `SECURITY` | `PUBLIC_METHODS_REVIEW_RECORDED_APPENDICES_NOT_INSPECTED` |

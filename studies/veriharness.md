@@ -28,7 +28,7 @@
 
 ## Further cross-project evaluation
 
-- Candidate applicability beyond DSH: `NOT_YET_ASSESSED`. Scan all projects in project-registry only when a concrete research comparison is requested.
+- Candidate applicability beyond DSH (2026-11-03): [agent-skills](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/agent-skills/PROJECT.md), [dsh-paper2agent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/dsh-paper2agent/PROJECT.md), [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md). Причина: Независимый evidence-based verification; у коллеги hunter/refuter только в планах. [Cross-project matrix](../reports/2026-11-03-project-mapping-historical-16.md). **Profile-only match, not a verified code integration.**
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.

@@ -21,7 +21,7 @@ Cursor reports 7% total token-cost reduction on its traffic; reduced static tool
 
 ## Further cross-project evaluation
 
-- Candidate applicability beyond DSH: `NOT_YET_ASSESSED`. Scan all projects in project-registry only when a concrete research comparison is requested.
+- Candidate applicability beyond DSH (2026-11-03): [dsh-runtime](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/dsh-runtime/PROJECT.md), [HermesAgent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/HermesAgent/PROJECT.md). Причина: Издержки tool schemas, MCP discovery и prompt-prefix cache stability. [Cross-project matrix](../reports/2026-11-03-project-mapping-historical-16.md). **Profile-only match, not a verified code integration.**
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
