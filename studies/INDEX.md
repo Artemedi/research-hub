@@ -9,7 +9,7 @@ This is a document migration and extraction, **not a new independent replication
 
 | Study | Area | Historical evidence status |
 | --- | --- | --- |
-| [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | `SECURITY` | `PUBLIC_METHODS_REVIEW_RECORDED_APPENDICES_NOT_INSPECTED` |
+| [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | `SECURITY` | `HISTORICAL_METHODS_ONLY; PDF_APPENDICES_REVIEWED_2026-11-03` |
 | [REALM — Retrieval-Driven Memory Reconsolidation](realm.md) | `MEMORY` | `FULL_TEXT_REVIEW_RECORDED` |
 | [DRAG — Dynamic Retriever and Generator Selection](drag.md) | `RETRIEVAL` | `FULL_TEXT_REVIEW_RECORDED` |
 | [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | `RESEARCH_WORKFLOW` | `FULL_TEXT_REVIEW_RECORDED` |
@@ -93,22 +93,33 @@ This window had a separate document-based review; author results were not indepe
 | [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [arXiv:2610.37738](https://arxiv.org/abs/2610.37738) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
 | [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [arXiv:2610.38398](https://arxiv.org/abs/2610.38398) | FULL_TEXT_REVIEWED_2026-11-03 / PROJECT_PROFILE_MATCH / PROPOSED_ONLY |
 
+## Original September gap closure (full text reviewed 2026-11-03)
+
+[Scientific source review](../reports/2026-11-03-historical-gap-closure-2026-09-03-to-15.md) and [project-fit mapping](../reports/2026-11-03-project-mapping-september-gaps.md). Six original full research PDFs checked; one original technical security disclosure separately classified. Earlier DSH owner decisions remain unchanged.
+
+| Source | Original source and version | Evidence type |
+| --- | --- | --- |
+| [BenchShield — reward-integrity instrumentation](benchshield.md) | [2609.11028](https://arxiv.org/abs/2609.11028) | ARXIV_PREPRINT / FULL_TEXT_REVIEWED_2026-11-03 |
+| [SWRouter — multi-turn context-aware model routing](swrouter.md) | [2609.11414](https://arxiv.org/abs/2609.11414) | ARXIV_PREPRINT / FULL_TEXT_REVIEWED_2026-11-03 |
+| [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | [ACL:2026.findings-acl.950](https://aclanthology.org/2026.findings-acl.950/) | PEER_REVIEWED_ACL_FINDINGS / FULL_TEXT_REVIEWED_2026-11-03 |
+| [REVA — Reusable Evidence View Aggregation](reva.md) | [2609.11209](https://arxiv.org/abs/2609.11209) | ARXIV_ICDM_ACCEPTED_MANUSCRIPT / FULL_TEXT_REVIEWED_2026-11-03 |
+| [NovaFabric — tamper-evident agent run evidence](novafabric.md) | [2609.12582](https://arxiv.org/abs/2609.12582) | AUTHOR_PREPRINT / FULL_TEXT_REVIEWED_2026-11-03 |
+| [Random Attention — KV eviction for reasoning](random-attention.md) | [2609.03430](https://arxiv.org/abs/2609.03430) | ARXIV_PREPRINT / FULL_TEXT_REVIEWED_2026-11-03 |
+| [CVE-2026-82533 technical disclosure](cve-2026-82533-technical-disclosure.md) | [OX Research](https://www.ox.security/blog/cve-2026-82533-deepseek-harness-ai-agent-sandbox-escape/) | PRIMARY_TECHNICAL_DISCLOSURE, NOT A PAPER |
+
+The [2026-10-07 mathematical DSH assessment](../archive/dsh/knowledge/research/2026-10-07-math-models-assessment.md) is an existing internal engineering document, not a new paper. The complete original 03–09 Sep digest was not archived; only the named Random Attention candidate could be recovered. NO_CURRENT_TARGET for that KV-serving paper.
+
 ## Scope and exclusions
 
-- 2026-09-21: five source assessments. Auto Mode public method text was reviewed;
-  the PDF appendices were not independently inspected.
+- 2026-09-21: five historical source assessments. Auto Mode public methods were reviewed then, while its PDF appendices were not. A separate full v1 PDF + appendices A–F source check was completed on 2026-11-03 and appended to its card; no local experiment was reproduced.
 - 2026-09-28: five full-source / first-party technical reviews; KVSET has an
   additional **bounded local test** on pinned original code, which is not a production benefit claim.
 - 2026-10-05: six complete scientific-paper assessments, with methodology,
   caveats and accepted research-only dispositions.
-- The 15 September early digest contains material including BenchShield, SWRouter,
-  ToolGrad, REVA and NovaFabric. Its decision record explicitly identifies
-  missing full-paper method verification for some candidates, so none was
-  automatically promoted here.
+- The original 15 September digest and decision note did not verify the complete methods of all five early candidates. All five plus the separately named 03 Sep Random Attention were given a fresh, version-pinned complete-source review on 2026-11-03 above; prior owner research dispositions remain unchanged.
 - The original 12 and 19 October digests remain **reconstructed screening-only summaries**. Seven original 12 October candidates and eight 19 October candidates each now have a separate 2026-11-03 full-text review above; historical originals are unchanged.
 - The original 26 October DSH watch is an operator-supplied historical summary, not itself a fresh full-text review. Seven papers from it were separately checked in full on 2026-11-03 above; METR remains FULL_TEXT_UNAVAILABLE.
-- The 7 October mathematical-models assessment remains available in the
-  archive and is not conflated with these 16 paper-source research decisions.
+- The 7 October mathematical-models assessment is original internal engineering evidence, not a scientific paper; it remains in the immutable archive. The original 03–09 September digest was never archived in full (ORIGINAL_DIGEST_NOT_ARCHIVED).
 
 **Evidence levels:** `FULL_TEXT_REVIEW_RECORDED` = an earlier review states
 it inspected the complete work (not locally reproduced);

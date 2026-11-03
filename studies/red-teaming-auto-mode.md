@@ -25,3 +25,13 @@ Tested blocking monitors against deliberate adversarial agent strategies; report
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
+
+## 2026-11-03 appendix follow-up
+
+**New independent documentary source check:** [arXiv v1 PDF](https://arxiv.org/pdf/2609.19587v1), 23 pages, SHA-256 `a17983591a1b420087ef918adf4d4995c97049c030f67b59049ab0d7caea058f`; full paper and appendices A–F examined on 2026-11-03. **This supplements but does not rewrite** the earlier operator-accepted historical KEEP decision. Status `PDF_APPENDICES_REVIEWED_2026-11-03 / NOT_EXPERIMENTALLY_REPRODUCED`.
+
+**Methods, sample and findings:** Appendix A explains transcript serialization, hardened role delimiting, monitor-injection mechanism, persuasion and repeated-attempt tests. Appendix B documents attacker knowledge/defender affordances and multi-agent experiments. C–F specify model, replay/arena/simulation settings and example trajectories. A best-of-N plot includes 11 simulated environments × 10 seeds (110 trials per point) and shows materially different outcomes depending on whether the monitor sees its prior blocks. These observations are specific to the evaluated monitor configuration.
+
+**Limitations:** Snapshot of September systems, assumed trustworthy monitor, outside scope of sandbox quality; arena replay is not identical to a live adversarial threat. Simulated compaction simplified the process, and the LLM Dungeon Master judging tool outcomes was experimental; some choices may overestimate effectiveness. Appendix cases are **not evidence of a current vulnerability** in dsh-runtime/HermesAgent.
+
+**Applicability gate:** only synthetic review-transcript/role-boundary/compaction negative tests with independent action/effect oracles, baseline false-denial and coverage. No permission-policy relaxation, auto rollout or runtime patch. See [closure report](../reports/2026-11-03-historical-gap-closure-2026-09-03-to-15.md).
