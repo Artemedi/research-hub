@@ -32,3 +32,14 @@
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
+
+
+## 2026-11-04 — independent offline verification-gate replay
+
+**Source:** [завершённый локальный протокол](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-veriharness-agent-config-offline.md), [воспроизводимый скрипт](../experiments/2026-11-04-veriharness-offline-replay.py).
+
+**MEASURED_SYNTHETIC:** 50 procedurally generated code claims with independent execution oracle. Current `agent-config/tools/review.py:check_findings` accepted 20 valid and 20 invalid claims (10 fabricated quotes already rejected). Enforcing cited-line adjacency reduced false accepts to 10; adding an executable behavior oracle reduced them to 0 **on this artificial dataset only**. Across 16 test artifact bundles, the actual VeriHarness `validate_delivery` accepted eight initially, `complete_bundle` restored eight dropped or empty files, and four semantically incorrect complete bundles remained accepted. This matches the driver's intended **content-blind structural** contract, not a flaw in its LLM verifier.
+
+**Precise application:** [`agent-config/tools/review.py:103-113`](https://github.com/Artemedi/agent-config/blob/489e074ab0daaadb732673c193047172a3744862/tools/review.py#L103-L113) checks the quoted text anywhere in the provided file, separately from the claimed line. Status `CITATION_SCOPE_GAP_CONFIRMED`; new review policy, automated patch, real-world agent performance, tool/token budget improvement and full VeriHarness investigation/adjudication: `NOT_TESTED`.
+
+**Decision:** Preserve historical full-text evaluation and `RESEARCH_ONLY`. Do not introduce a second verifier engine into DSH; validate the already existing verifier with a fixed oracle and non-synthetic rollouts first.
