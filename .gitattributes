@@ -1,0 +1,2 @@
+# Historical DSH Markdown hard-break spaces must be preserved byte-for-byte.
+archive/dsh/knowledge/research/** whitespace=-trailing-space
