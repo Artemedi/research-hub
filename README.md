@@ -30,6 +30,8 @@
 
 ## Новые отчёты
 
+- **[RRSI / Harness²: переобучение harness при отборе (4 ноября 2026)](reports/2026-11-04-rrsi-harness2-overfit-lab.md)** — 105 синтетических задач train/validation/holdout; оригинальные функции выбора RRSI и Harness², негативный memorizer-control, независимая проверка эффекта; [повторяемый скрипт](experiments/2026-11-04-rrsi-harness2-selector-smoke.py).
+
 - **[VeriHarness / agent-config — offline replay (4 ноября 2026)](reports/2026-11-04-veriharness-agent-config-offline.md)** — реальные deterministic gates VeriHarness и текущего review.py, 50 синтетических assertions, 16 артефактных комплектов, воспроизводимый [скрипт](experiments/2026-11-04-veriharness-offline-replay.py); **не** тест полной LLM-оркестрации.
 
 - **[pgbot v0.9.0: эксперимент на PostgreSQL 18.3 (4 ноября 2026)](reports/2026-11-04-pgbot-postgresql-lab.md)** — управляемые инциденты autovacuum и locking, проверка JSON Schema и прав, повторные измерения, независимый oracle и проектная карточка [pgbot](studies/pgbot.md). Без production.
