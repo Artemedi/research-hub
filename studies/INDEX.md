@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-025 — Unreal Agent video:** [карточка](unreal-agent-bk025.md), [provenance и отсрочка](../reports/2026-11-04-bk025-unreal-video-provenance.md); `FULL_TEXT_UNAVAILABLE`, метод не оценён.
+
 **Telegram BK-024 — Local Knowledge Graph:** [карточка](local-knowledge-graph.md), [обзор и synthetic graph tests](../reports/2026-11-04-bk024-local-knowledge-graph-review.md); модель и реальный корпус не запускались.
 
 **Telegram BK-022 — Microsoft Skill Recorder:** [карточка](microsoft-skill-recorder.md), [обзор и узкий synthetic privacy test](../reports/2026-11-04-bk022-skill-recorder-review.md); Copilot и реальная запись не запускались.

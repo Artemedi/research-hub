@@ -36,6 +36,7 @@
 - **[BK-041 — Inspektor Gadget v0.57.0: проверка eBPF-доступа на Bazzite](reports/2026-11-04-bk041-inspektor-gadget-gate.md)** — официальный CLI/SHA проверены; unprivileged BPF_MAP_CREATE → EPERM, реальная трассировка не выполнялась; [карточка](studies/inspektor-gadget.md), [gate script](experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py).
 - **[BK-059 — IPFire fireperf 0.3.0: авторский бинарник и loopback](reports/2026-11-04-bk059-fireperf-loopback.md)** — 12 ограниченных тестов × 20 TCP, нулевые отказы, проверка request/response, закрытый порт; [карточка](studies/ipfire-fireperf.md), [скрипт](experiments/2026-11-04-bk059-fireperf-loopback-lab.py). Не тест сети AKUZ.
 
+- **[BK-025 — Unreal Agent video: provenance и отсрочка](reports/2026-11-04-bk025-unreal-video-provenance.md)** — [карточка](studies/unreal-agent-bk025.md); исходное видео недоступно, метод не оценён.
 - **[BK-024 — Local Knowledge Graph: обзор и synthetic graph tests](reports/2026-11-04-bk024-local-knowledge-graph-review.md)** — [карточка](studies/local-knowledge-graph.md); граф шагов модели, не готовый RAG.
 - **[BK-022 — Microsoft Skill Recorder: обзор и synthetic privacy test](reports/2026-11-04-bk022-skill-recorder-review.md)** — [карточка](studies/microsoft-skill-recorder.md); запись и Copilot не запускались.
 - **[BK-019 — Warp Skill Doctor: обзор и тест атрибуции](reports/2026-11-04-bk019-warp-skill-doctor-review.md)** — [карточка](studies/warp-skill-doctor.md); только синтетические данные.
