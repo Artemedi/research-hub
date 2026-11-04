@@ -1,0 +1,26 @@
+# BK-050 — Chartli: review parser, нормализации и отображения
+
+Проверено 04.11.2026: [ahmadawais/chartli @3b39b97aeb564646437b2b7501b60541994d7575](https://github.com/ahmadawais/chartli/tree/3b39b97aeb564646437b2b7501b60541994d7575), v1.0.0, HEAD совпадал при проверке. README и Rust Cargo manifest указывают Apache-2.0; отдельный LICENSE в снимке не обнаружен — условия и зависимости проверить до использования. Изучены README, input parsing, normalization, chart renderers и их тесты; это не exhaustiveness/security audit Rust версии.
+
+## Контракт и наблюдение
+
+TypeScript [parseChartInput и normalizeData](https://github.com/ahmadawais/chartli/blob/3b39b97aeb564646437b2b7501b60541994d7575/src/utils/normalize.ts#L16) разделяют whitespace, определяют заголовок по символам первой строки, преобразуют числа `Number`, нормируют столбцы отдельно и затем уменьшают высоту некоторых рядов по диапазону. Для multi-series результат не равен единой общей линейной шкале исходных величин. ASCII renderer использует индекс строки для x координаты; метки не делают нерегулярные интервалы времени пропорциональными. Применять как диагностическое доказательство без пояснения масштаба и сохранения исходных данных нельзя.
+
+[Изолированный fixture](../experiments/bk050-chartli/normalize-fixture.mjs) вызывает оригинальный module на четырёх synthetic вводах: `1e3\n2e3` распознаёт `1e3` как заголовок и оставляет только 2000; для строк `1 2\n3` минимум второго столбца становится 0 из-за подстановки отсутствующей ячейки; для `1 2\n3 nope` минимум второго столбца становится NaN; обычные `1\n2` нормируются в 0 и 1. Последний случай — положительный контроль. Тест изолирован `bwrap --unshare-all`, source readonly, без сети и реальных метрик, Node v22.23.2. Это `LAB_VERIFIED` только для parser/normalizer; CLI и отдельные режимы рендера или Rust версия не проверены. Upstream Vitest suite `NOT_RUN`, установка зависимостей не выполнялась.
+
+```sh
+bwrap --unshare-all --die-with-parent --ro-bind /usr /usr --ro-bind /lib /lib --ro-bind /lib64 /lib64 --ro-bind /path/to/node /node --ro-bind /path/to/pinned-source /source --ro-bind "$PWD/experiments/bk050-chartli/normalize-fixture.mjs" /fixture.mjs --tmpfs /tmp --proc /proc --dev /dev --setenv HOME /tmp --chdir /source /node --experimental-strip-types /fixture.mjs
+```
+
+## Проектные соответствия
+
+Прочитаны 45 профилей `project-registry@de96837e715b767c0122303e3a12b332c3e40b83`.
+
+| Проект | Гипотеза | Условие / следующий тест | Статус |
+| --- | --- | --- | --- |
+| `akuzlogparser` | [описанные stages и elapsed_s @d6061aa](https://github.com/Artemedi/akuzlogparser/blob/d6061aa83cdeadc22e30cfaee36aea94ac131bb2/README.md#L42) дают числовой diagnostic output для сравнения с таблицей. | Проверить формат, выгоду визуализации и совместимость Windows; отдельная валидация NaN, missing и времени. | `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE` |
+| `akuz-schema-inventory` | [snapshot analytics @8d8adcd](https://github.com/Artemedi/akuz-schema-inventory/blob/8d8adcdf99cea0bd4e9fde40cfac2fb3371d9487/ARCHITECTURE.md#L103) — условный сценарий сравнения численных агрегатов риска. | Нужен конкретный экспорт со схемой и единицами; не заменяет семантику SQL-каталога. | `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE` |
+
+Предварительные связи `AKUZ` и `Wiki_PG` не подтверждены конкретным числовым контрактом и удалены из карточек; они остаются гипотезами, если появятся подходящие экспортируемые ряды. `sequential-rca` не имеет подтверждённого графического интерфейса; другие профили не дают более предметного основания.
+
+A/B без production: закрепить baseline и формат синтетических рядов, независимый oracle координат и labels, отрицательные/exponent/NaN/missing, единицы и нерегулярные интервалы, сравнить с таблицей и проверить не вводит ли шкала в заблуждение; измерить время/CPU/RAM/IO и расходы сопровождения, ограничить сохранение логов, определить rollback. Пока `BLOCKED: MEASUREMENT_MISSING`.

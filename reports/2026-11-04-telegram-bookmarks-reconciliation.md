@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **24** / ожидает проверки: **10** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **25** / ожидает проверки: **9** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -73,7 +73,7 @@
 | BK-047 / 13.10 | [Anthropic agent automations guide](https://claude.dev/blog/building-effective-agent-automations/) | **разобран** | [карточка](../studies/anthropic-agent-automations.md), [обзор](2026-11-04-bk047-agent-automations-review.md) | Изучены статья и reference config; managed workflow не запускался и exactly-once не доказан. |
 | BK-048 / 16.10 | [Understand Anything](https://github.com/Egonex-AI/Understand-Anything) | **разобран** | [карточка](../studies/understand-anything.md), [обзор](2026-11-04-bk048-understand-anything-review.md) | SQL parser есть, но synthetic тесты выявили ограничения; качество реального графа не измерено. |
 | BK-049 / 16.10 | [Prompt Motion library](https://prompt-motion.com/) | **исключён** | — | Сборник motion-подсказок — источник оформления, не метод повышения надёжности продуктов. |
-| BK-050 / 16.10 | [Chartli](https://github.com/ahmadawais/chartli) | **ожидает проверки** | — | CLI-диаграммы проверялись только как репозиторий; нет контракта для графиков DBA/логов. |
+| BK-050 / 16.10 | [Chartli](https://github.com/ahmadawais/chartli) | **разобран** | [карточка](../studies/chartli.md), [обзор](2026-11-04-bk050-chartli-review.md) | Проверены исходники и synthetic input cases; CLI и польза проектам не измерены. |
 | BK-051 / 18.10 | [Harness²](https://arxiv.org/html/2610.14224v1) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/harness2.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-rrsi-harness2-overfit-lab.md) | Выполнены реальный selector Harness² и upstream tests; модельные Propose/Probe/Compose не воспроизводились. |
 | BK-052 / 19.10 | [Anatomy educational visualizations](https://github.com/wheresryan22/anatomy) | **исключён** | — | Учебная анатомическая визуализация; отсутствует подтверждённый target и проверка научной корректности. |
 | BK-053 / 22.10 | [Yahont CE](https://github.com/pipedude/yahont-ce) | **ожидает проверки** | — | Нужна проверка лицензий подпапок, read-only deploy и качества ответов на локальном корпусе. |
