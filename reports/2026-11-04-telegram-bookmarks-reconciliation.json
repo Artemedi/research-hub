@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 12,
-    "ожидает проверки": 17,
+    "ожидает проверки": 16,
     "исключён": 19,
-    "разобран": 17
+    "разобран": 18
   },
-  "mapped_study_cards": 18,
+  "mapped_study_cards": 19,
   "mapped_experimental_items": 13,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -453,13 +453,15 @@
       "source_kind": "Model announcement",
       "source_audit_evidence": "AUTHOR_SITE",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Публикация разработчика модели не заменяет локальный inference/quality benchmark.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_MODEL_NOT_RUN",
+      "status_reason_ru": "Изучены авторский код и материалы; synthetic fixture функции представления вероятностей. Inference и качество модели не проверены.",
+      "hub_study_card": "studies/julia-1.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/julia-1.md",
       "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_url": null,
+      "hub_review_report": "reports/2026-11-04-bk026-julia-1-review.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk026-julia-1-review.md"
     },
     {
       "id": "BK-027",

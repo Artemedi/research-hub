@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **17** / ожидает проверки: **17** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **18** / ожидает проверки: **16** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -49,7 +49,7 @@
 | BK-023 / 25.09 | [Claude Code Advisor](https://code.claude.com/docs/en/advisor) | **разобран** | — | Полная официальная документация изучена; отдельного A/B в проектах нет. |
 | BK-024 / 25.09 | [Local Knowledge Graph](https://github.com/punnerud/Local_Knowledge_Graph) | **проверен экспериментально** | [Карточка](../studies/local-knowledge-graph.md), [Обзор и тест](2026-11-04-bk024-local-knowledge-graph-review.md) | 21 graph tests и synthetic path fixtures; польза для проектов и реальные embeddings не измерены. |
 | BK-025 / 26.09 | [Unreal Agent cost vs Codex video](https://www.youtube.com/watch?v=eFBSlgXG3U0) | **ожидает проверки** | [карточка](../studies/unreal-agent-bk025.md), [provenance](2026-11-04-bk025-unreal-video-provenance.md) | `FULL_TEXT_UNAVAILABLE`: исходное видео недоступно; метод и соответствие проектам не оценены. |
-| BK-026 / 27.09 | [Julia 1 144M decision model](https://supersoniclabs.ia.br/julia-1/) | **ожидает проверки** | — | Публикация разработчика модели не заменяет локальный inference/quality benchmark. |
+| BK-026 / 27.09 | [Julia 1 144M decision model](https://supersoniclabs.ia.br/julia-1/) | **разобран** | [карточка](../studies/julia-1.md), [обзор](2026-11-04-bk026-julia-1-review.md) | Изучены авторский код и материалы; ограниченный synthetic fixture вероятностей. Inference и качество модели не проверены. |
 | BK-027 / 27.09 | [AlloyDB PostgreSQL for agents](https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb) | **разобран** | — | Официальная статья AlloyDB разобрана; это cloud preview, не стандартная функция PostgreSQL. |
 | BK-028 / 27.09 | [Hyperresearch](https://github.com/jordan-gibbs/hyperresearch) | **ожидает проверки** | — | Нет независимо проверенного benchmark и фиксированного сравнения research-cost. |
 | BK-029 / 28.09 | [0-CODE autonomous loops](https://github.com/0-SOFT/0-CODE) | **ожидает проверки** | — | Показан отдельный демо-запуск, не проверена устойчивость длительных автоматических циклов. |
