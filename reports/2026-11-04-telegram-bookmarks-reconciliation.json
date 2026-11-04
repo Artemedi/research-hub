@@ -7,13 +7,13 @@
   "unique_source_url_count": 63,
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
-    "проверен экспериментально": 10,
-    "ожидает проверки": 19,
+    "проверен экспериментально": 11,
+    "ожидает проверки": 18,
     "исключён": 19,
     "разобран": 17
   },
-  "mapped_study_cards": 15,
-  "mapped_experimental_items": 11,
+  "mapped_study_cards": 16,
+  "mapped_experimental_items": 12,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -387,13 +387,13 @@
       "source_kind": "Open-source software",
       "source_audit_evidence": "REPO_README_AND_TREE",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Прочитано описание Microsoft Skill Recorder; запись и восстановление реального workflow не проверены.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_LAB",
+      "status_reason_ru": "Тесты structured PII и synthetic fixture; реальная запись, Copilot, OCR и качество workflow не проверялись.",
+      "hub_study_card": "studies/microsoft-skill-recorder.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/microsoft-skill-recorder.md",
+      "hub_experiment_report": "reports/2026-11-04-bk022-skill-recorder-review.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk022-skill-recorder-review.md"
     },
     {
       "id": "BK-023",

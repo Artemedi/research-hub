@@ -7,8 +7,8 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **10** / разобран: **17** / ожидает проверки: **19** / исключён: **19**.
-- **15** пунктов имеют прямую карточку в `studies/` research-hub; **11** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
+- По текущему состоянию: проверен экспериментально: **11** / разобран: **17** / ожидает проверки: **18** / исключён: **19**.
+- **16** пунктов имеют прямую карточку в `studies/` research-hub; **12** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
 ## Правила присвоения статуса
@@ -45,7 +45,7 @@
 | BK-019 / 20.09 | [Warp Skill Doctor](https://www.warp.dev/skill-doctor) | **проверен экспериментально** | [Карточка](../studies/warp-skill-doctor.md), [Обзор и опыт](2026-11-04-bk019-warp-skill-doctor-review.md) | Изолированные unit tests и синтетическая проверка фильтра проектов; качество рекомендаций и реальные истории не проверялись. |
 | BK-020 / 22.09 | [Google AX](https://github.com/google/ax) | **исключён** | — | Google AX ещё не стабилизирован; нет подтверждённой потребности в новой глобальной системе оркестрации. |
 | BK-021 / 24.09 | [Cursor improved token efficiency](https://cursor.com/blog/improved-token-efficiency) | **разобран** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/cursor-token-efficiency.md) | Инженерная статья Cursor ранее разобрана в research-hub; экономия токенов локально не воспроизводилась. |
-| BK-022 / 25.09 | [Microsoft Skill Recorder](https://github.com/microsoft/skill-recorder) | **ожидает проверки** | — | Прочитано описание Microsoft Skill Recorder; запись и восстановление реального workflow не проверены. |
+| BK-022 / 25.09 | [Microsoft Skill Recorder](https://github.com/microsoft/skill-recorder) | **проверен экспериментально** | [Карточка](../studies/microsoft-skill-recorder.md), [Обзор и тест](2026-11-04-bk022-skill-recorder-review.md) | Тесты structured PII и синтетический fixture; реальная запись, Copilot, OCR и качество workflow не проверялись. |
 | BK-023 / 25.09 | [Claude Code Advisor](https://code.claude.com/docs/en/advisor) | **разобран** | — | Полная официальная документация изучена; отдельного A/B в проектах нет. |
 | BK-024 / 25.09 | [Local Knowledge Graph](https://github.com/punnerud/Local_Knowledge_Graph) | **ожидает проверки** | — | Нужен oracle по корректности рёбер и стоимости обновлений графа. |
 | BK-025 / 26.09 | [Unreal Agent cost vs Codex video](https://www.youtube.com/watch?v=eFBSlgXG3U0) | **ожидает проверки** | — | Есть пересказ видео, но нет независимых task traces, токенов и воспроизводимого сравнения стоимости. |

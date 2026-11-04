@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-022 — Microsoft Skill Recorder:** [карточка](microsoft-skill-recorder.md), [обзор и узкий synthetic privacy test](../reports/2026-11-04-bk022-skill-recorder-review.md); Copilot и реальная запись не запускались.
+
 **Telegram BK-019 — Warp Skill Doctor:** [карточка](warp-skill-doctor.md), [обзор и изолированный тест атрибуции](../reports/2026-11-04-bk019-warp-skill-doctor-review.md); качество рекомендаций не проверялось.
 
 **Telegram BK-016 — Claude Swarm:** [карточка](claude-swarm.md), [обзор исходных контрактов и project fit](../reports/2026-11-04-bk016-claude-swarm-review.md); найдено неподключение enforcement в штатной инициализации, динамический запуск не проводился.
