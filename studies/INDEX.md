@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-041 / BK-059 — независимые инженерные проверки вне DSH:** [Inspektor Gadget v0.57.0](inspektor-gadget.md) — [permission gate на Bazzite, eBPF tracing BLOCKED](../reports/2026-11-04-bk041-inspektor-gadget-gate.md); [IPFire fireperf 0.3.0](ipfire-fireperf.md) — [изолированный реальный loopback lab, 12×20 TCP](../reports/2026-11-04-bk059-fireperf-loopback.md). Первое остаётся `AWAITING_REAL_TRACE`, второе `ORIGINAL_BINARY_LOOPBACK_VERIFIED`; ни одно не получает production approval.
+
 **Инженерные инструменты с лабораторной MCP-проверкой:** [Google MCP Toolbox / PostgreSQL](mcp-toolbox-postgres.md) — [проверенный live SQL и снимки Wiki_PG](../reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md), `LIMITED_FIXTURE_PASS / NO_PRODUCTION_APPROVAL`.
 
 **Новое исследование с лабораторным тестом selection mechanics (не воспроизведение LLM-экспериментов):** [RRSI](rrsi.md) и [Harness²](harness2.md) — [протокол](../reports/2026-11-04-rrsi-harness2-overfit-lab.md).
