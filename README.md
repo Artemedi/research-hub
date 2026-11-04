@@ -30,6 +30,7 @@
 
 ## Новые отчёты
 
+- **[Предварительная Telegram BK → проектная матрица: 22 материала / 45 карточек](reports/2026-11-04-telegram-bk-preliminary-project-matrix.md)** — 51 прямых и 48 условных соответствий без лабораторных тестов; [машинно-читаемая версия](reports/2026-11-04-telegram-bk-preliminary-project-matrix.json). Исторические статусы полного разбора не изменены.
 - **[BK-014 — alphaXiv OpenResearch: source audit, full-text gate, experiment provenance and portfolio fit](reports/2026-11-04-bk014-openresearch-review.md)** — 45 project profiles checked, only dsh-paper2agent shortlisted; OpenAlex/PubMed/bioRxiv expose abstracts rather than full text via orx; [engineering card](studies/alphaxiv-openresearch.md), no execution and no production approval.
 - **[BK-002 — Tencent TeamAI CLI: upstream, fork, trust boundaries и проектное соответствие](reports/2026-11-04-bk002-tencent-teamai-cli-review.md)** — 45 карточек рассмотрены, найдено три соответствия; форк 13 commits ahead / 732 behind upstream, 6 конфликтов сухого слияния; [карточка](studies/tencent-teamai-cli.md), без runtime теста, без разрешения на обновление.
 - **[BK-041 — Inspektor Gadget v0.57.0: проверка eBPF-доступа на Bazzite](reports/2026-11-04-bk041-inspektor-gadget-gate.md)** — официальный CLI/SHA проверены; unprivileged BPF_MAP_CREATE → EPERM, реальная трассировка не выполнялась; [карточка](studies/inspektor-gadget.md), [gate script](experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py).
