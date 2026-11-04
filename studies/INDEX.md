@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Инженерные инструменты с лабораторной MCP-проверкой:** [Google MCP Toolbox / PostgreSQL](mcp-toolbox-postgres.md) — [проверенный live SQL и снимки Wiki_PG](../reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md), `LIMITED_FIXTURE_PASS / NO_PRODUCTION_APPROVAL`.
+
 **Новое исследование с лабораторным тестом selection mechanics (не воспроизведение LLM-экспериментов):** [RRSI](rrsi.md) и [Harness²](harness2.md) — [протокол](../reports/2026-11-04-rrsi-harness2-overfit-lab.md).
 
 **Новые инженерные проверки (отдельно от научных full-text reviews):** [pgbot — PostgreSQL diagnostic lab, v0.9.0](pgbot.md) — `LAB_VERIFIED / NO_PRODUCTION_APPROVAL`, [протокол](../reports/2026-11-04-pgbot-postgresql-lab.md).
