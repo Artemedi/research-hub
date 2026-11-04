@@ -36,6 +36,7 @@
 - **[BK-041 — Inspektor Gadget v0.57.0: проверка eBPF-доступа на Bazzite](reports/2026-11-04-bk041-inspektor-gadget-gate.md)** — официальный CLI/SHA проверены; unprivileged BPF_MAP_CREATE → EPERM, реальная трассировка не выполнялась; [карточка](studies/inspektor-gadget.md), [gate script](experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py).
 - **[BK-059 — IPFire fireperf 0.3.0: авторский бинарник и loopback](reports/2026-11-04-bk059-fireperf-loopback.md)** — 12 ограниченных тестов × 20 TCP, нулевые отказы, проверка request/response, закрытый порт; [карточка](studies/ipfire-fireperf.md), [скрипт](experiments/2026-11-04-bk059-fireperf-loopback-lab.py). Не тест сети AKUZ.
 
+- **[BK-034 — Karpathy autoresearch: source review](reports/2026-11-04-bk034-autoresearch-review.md)** — [карточка](studies/karpathy-autoresearch.md); исходное видео недоступно, обучение не запускалось.
 - **[BK-029 — 0-CODE: source review и synthetic guard tests](reports/2026-11-04-bk029-zero-code-review.md)** — [карточка](studies/zero-code.md); полный цикл не запускался.
 - **[BK-028 — Hyperresearch: source review и synthetic citation fixture](reports/2026-11-04-bk028-hyperresearch-review.md)** — [карточка](studies/hyperresearch.md); полный pipeline не запускался.
 - **[BK-026 — Julia 1: source review и synthetic probability fixture](reports/2026-11-04-bk026-julia-1-review.md)** — [карточка](studies/julia-1.md); модель не запускалась.

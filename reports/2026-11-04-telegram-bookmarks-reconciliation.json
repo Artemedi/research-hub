@@ -588,12 +588,16 @@
       "source_audit_evidence": "USER_TRANSCRIPT_ONLY",
       "initial_priority_2026_11_03": "A",
       "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Видеопересказ; результаты оптимизационных запусков и защита от overfit не воспроизведены.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "disposition": "VIDEO_FULL_TEXT_UNAVAILABLE_RELATED_REPO_REVIEWED",
+      "status_reason_ru": "Видео недоступно; отдельно изучен тематически связанный репозиторий. Обучение и результаты не воспроизведены.",
       "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_url": null,
+      "hub_review_report": "reports/2026-11-04-bk034-autoresearch-review.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk034-autoresearch-review.md",
+      "related_study_card": "studies/karpathy-autoresearch.md",
+      "related_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/karpathy-autoresearch.md",
+      "hub_study_card": null,
+      "hub_study_url": null
     },
     {
       "id": "BK-035",

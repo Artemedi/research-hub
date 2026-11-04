@@ -1,0 +1,6 @@
+# Karpathy autoresearch — цикл экспериментов на одной GPU
+
+- **Первичный инженерный источник:** [karpathy/autoresearch @228791fb499afffb54b46200aca536f79142f117](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117), Andrej Karpathy, MIT, HEAD 25.03.2026. Исторический пункт BK-034 — [видео](https://www.youtube.com/watch?v=qLfSDQ5NGh0), недоступное при проверке; репозиторий рассмотрен отдельно, без утверждений о полном содержимом видео.
+- **Механика:** агент по инструкции меняет `train.py`, запускает обучение на GPU, сравнивает validation bits per byte, оставляет или откатывает commit; `prepare.py` задаёт метрику и фиксированный validation shard. Бюджет 300 секунд относится к тренировочной части после разогрева, не ко всему процессу.
+- **Ограничения:** повторный отбор по одному validation набору может дать selection overfit; независимый holdout в предложенном цикле не задан. Изоляция и неизменность harness — инструкции агенту, а не проверенный независимый security gate. Реальное обучение, GPU и LLM `NOT_RUN`.
+- **Проекты:** `dsh-paper2agent`, `dsh-team-context` как гипотезы исследования ограниченных циклов и валидации, `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE`, без запуска или интеграции. [Источник и разбор](../reports/2026-11-04-bk034-autoresearch-review.md).
