@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-029 — 0-CODE:** [карточка](zero-code.md), [source review и synthetic guard tests](../reports/2026-11-04-bk029-zero-code-review.md); полноценный цикл не запускался.
+
 **Telegram BK-028 — Hyperresearch:** [карточка](hyperresearch.md), [source review и synthetic citation fixture](../reports/2026-11-04-bk028-hyperresearch-review.md); полноценный pipeline не запускался.
 
 **Telegram BK-026 — Julia 1:** [карточка](julia-1.md), [source review и synthetic probability fixture](../reports/2026-11-04-bk026-julia-1-review.md); inference не запускался.

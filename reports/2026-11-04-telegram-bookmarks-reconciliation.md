@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **19** / ожидает проверки: **15** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **20** / ожидает проверки: **14** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -52,7 +52,7 @@
 | BK-026 / 27.09 | [Julia 1 144M decision model](https://supersoniclabs.ia.br/julia-1/) | **разобран** | [карточка](../studies/julia-1.md), [обзор](2026-11-04-bk026-julia-1-review.md) | Изучены авторский код и материалы; ограниченный synthetic fixture вероятностей. Inference и качество модели не проверены. |
 | BK-027 / 27.09 | [AlloyDB PostgreSQL for agents](https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb) | **разобран** | — | Официальная статья AlloyDB разобрана; это cloud preview, не стандартная функция PostgreSQL. |
 | BK-028 / 27.09 | [Hyperresearch](https://github.com/jordan-gibbs/hyperresearch) | **разобран** | [карточка](../studies/hyperresearch.md), [обзор](2026-11-04-bk028-hyperresearch-review.md) | Проверены контракты и synthetic citation triage; benchmark и полный pipeline не запускались. |
-| BK-029 / 28.09 | [0-CODE autonomous loops](https://github.com/0-SOFT/0-CODE) | **ожидает проверки** | — | Показан отдельный демо-запуск, не проверена устойчивость длительных автоматических циклов. |
+| BK-029 / 28.09 | [0-CODE autonomous loops](https://github.com/0-SOFT/0-CODE) | **разобран** | [карточка](../studies/zero-code.md), [обзор](2026-11-04-bk029-zero-code-review.md) | Проверены контракты и выбранные unit tests; реальный цикл и устойчивость не проверены. |
 | BK-030 / 28.09 | [Dream-RSI](https://arxiv.org/html/2609.14858v1) | **разобран** | — | Прочитан полный научный текст и подтверждено наличие авторского кода; training experiments не выполнялись. |
 | BK-031 / 01.10 | [RRSI regularized harness evolution](https://arxiv.org/html/2609.24972v3) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/rrsi.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-rrsi-harness2-overfit-lab.md) | Реальные функции отбора RRSI и тесты на 105 синтетических случаях; end-to-end LLM evolution не воспроизведена. |
 | BK-032 / 01.10 | [Context Language Models](https://arxiv.org/html/2609.37725v1) | **разобран** | — | Полный текст и код найдены; не проверена эффективность на собственных задачах; лицензия CC BY-NC ограничивает использование. |
