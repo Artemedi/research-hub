@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **20** / ожидает проверки: **14** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **21** / ожидает проверки: **13** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -60,7 +60,7 @@
 | BK-034 / 04.10 | [Karpathy-loop / AutoResearch video](https://www.youtube.com/watch?v=qLfSDQ5NGh0) | **ожидает проверки** | [карточка репозитория](../studies/karpathy-autoresearch.md), [обзор](2026-11-04-bk034-autoresearch-review.md) | Видео недоступно; отдельно изучен тематически связанный репозиторий. Обучение и результаты не воспроизведены. |
 | BK-035 / 04.10 | [Google MCP Toolbox for Databases](https://github.com/googleapis/mcp-toolbox) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/mcp-toolbox-postgres.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md) | Реальный MCP Toolbox v1.15.0 и PostgreSQL GUC fixture, 160 RPC; не production. |
 | BK-036 / 05.10 | [Advent of Agents](https://adventofagents.com/) | **исключён** | — | Сборник учебных уроков; конкретная новая проверяемая методика из ссылки не выделена. |
-| BK-037 / 05.10 | [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) | **ожидает проверки** | — | Не проверен внешний TranscriptAPI, тарифы и устойчивость извлечения видео. |
+| BK-037 / 05.10 | [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) | **разобран** | [карточка](../studies/youtube-skills.md), [обзор](2026-11-04-bk037-youtube-skills-review.md) | Изучены skill-инструкции; внешний TranscriptAPI, тарифы и качество извлечения не проверены. |
 | BK-038 / 06.10 | [NoPayWall model credit aggregator](https://nopaywall.io/) | **исключён** | — | Сторонний агрегатор модельных кредитов без подтверждённых гарантий провайдера и обработки секретов. |
 | BK-039 / 07.10 | [VeriHarness](https://arxiv.org/html/2610.00972v1) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/veriharness.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-veriharness-agent-config-offline.md) | Реальные компоненты VeriHarness и agent-config проверены offline; нет полноценного LLM-оркестрационного цикла. |
 | BK-040 / 08.10 | [DeLM decentralized agents](https://arxiv.org/html/2606.10662v3) | **разобран** | — | Научный полный текст изучен; децентрализованный агентный рантайм не воспроизводился. |

@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-037 — youtube-skills:** [карточка](youtube-skills.md), [source review](../reports/2026-11-04-bk037-youtube-skills-review.md); внешний сервис не проверялся.
+
 **Telegram BK-034 — autoresearch:** [карточка репозитория](karpathy-autoresearch.md), [source review](../reports/2026-11-04-bk034-autoresearch-review.md); видео недоступно, обучение не запускалось.
 
 **Telegram BK-029 — 0-CODE:** [карточка](zero-code.md), [source review и synthetic guard tests](../reports/2026-11-04-bk029-zero-code-review.md); полноценный цикл не запускался.

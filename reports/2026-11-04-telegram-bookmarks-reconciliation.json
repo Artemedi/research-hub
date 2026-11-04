@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 12,
-    "ожидает проверки": 14,
+    "ожидает проверки": 13,
     "исключён": 19,
-    "разобран": 20
+    "разобран": 21
   },
-  "mapped_study_cards": 21,
+  "mapped_study_cards": 22,
   "mapped_experimental_items": 13,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -639,13 +639,15 @@
       "source_kind": "Agent tool",
       "source_audit_evidence": "REPO_README",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Не проверен внешний TranscriptAPI, тарифы и устойчивость извлечения видео.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_EXTERNAL_API_NOT_RUN",
+      "status_reason_ru": "Изучены skill-инструкции; внешний TranscriptAPI, тарифы и качество извлечения не проверены.",
+      "hub_study_card": "studies/youtube-skills.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/youtube-skills.md",
       "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_url": null,
+      "hub_review_report": "reports/2026-11-04-bk037-youtube-skills-review.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk037-youtube-skills-review.md"
     },
     {
       "id": "BK-038",
