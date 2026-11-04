@@ -30,6 +30,8 @@
 
 ## Новые отчёты
 
+- **[LIMBO × TelegramBot: повторные публикации при неоднозначном HTTP POST (4 ноября 2026)](reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md)** — оригинальный код LIMBO и реальный TelegramBot `main()`: 180 детерминированных случаев с fake сервисом, подтверждённый trade-off at-most-once/retry; [скрипт](experiments/2026-11-04-limbo-telegrambot-send-retry.py) и [JSON](reports/2026-11-04-limbo-telegrambot-send-retry.json). Без сетевых запросов и изменений production.
+
 - **[NovaFabric v0.108.0: реальные Run Capsules и воспроизводимый replay (4 ноября 2026)](reports/2026-11-04-novafabric-real-capsules-replay.md)** — 20 подписанных toy-капсул, 40/40 подставленных tool responses, проверка границ mocked mode, 6 отрицательных seal-тестов; независимый DSSE/Merkle [verifier](experiments/2026-11-04-novafabric-independent-bundle-verify.py) и [реальный CLI-скрипт](experiments/2026-11-04-novafabric-real-capsule-lab.py).
 
 - **[BenchShield: целостность reward и provenance (4 ноября 2026)](reports/2026-11-04-benchshield-reward-integrity-offline.md)** — независимый offline lifecycle replay: 100 фиктивных траекторий, 30 доказанных нарушений, 40 отказов от необоснованного вердикта; [Python-скрипт](experiments/2026-11-04-benchshield-reward-integrity-replay.py), [JSON-агрегаты](reports/2026-11-04-benchshield-reward-integrity-offline.json). Не запуск оригинального BenchShield.
