@@ -1,0 +1,30 @@
+{
+  "bpf_map_create_probe": {
+    "errno": 1,
+    "errno_name": "Operation not permitted",
+    "result_fd_sign": "negative"
+  },
+  "btf_vmlinux_present": true,
+  "effective_caps_hex": "0000000000000000",
+  "gadget_downloads": 0,
+  "kernel": "6.18.56-ogc1.1.fc44.x86_64",
+  "limitations": [
+    "BPF_MAP_CREATE permission gate is a syscall test, NOT a live Inspektor Gadget trace.",
+    "No eBPF program loaded; cannot measure syscall/TCP evidence completeness or overhead.",
+    "Host eBPF tracing requires explicit privilege and security authorization in nonprod.",
+    "No production claims for PostgreSQL/MSSQL RCA or kernel support per gadget."
+  ],
+  "original_cli_run_flags_present": [
+    "--disallow-pulling",
+    "--verify-image",
+    "--allowed-gadgets",
+    "--timeout"
+  ],
+  "release": "v0.57.0",
+  "release_tar_sha256": "f5e3233c6c1ffc3ad068326913e11def23c7cef6c764e585c2205cda0e2f76f1",
+  "root_or_host_mount_changes": 0,
+  "source": "Official github.com/inspektor-gadget/inspektor-gadget release",
+  "status": "RUNTIME_BLOCKED_UNPRIVILEGED",
+  "tracing_performed": false,
+  "unprivileged_bpf_disabled": "2"
+}
