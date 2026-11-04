@@ -30,6 +30,8 @@
 
 ## Новые отчёты
 
+- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 6 ограниченных экспериментов, 15 полных разборов, 25 ожидают проверки, 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
+
 - **[LIMBO × TelegramBot: повторные публикации при неоднозначном HTTP POST (4 ноября 2026)](reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md)** — оригинальный код LIMBO и реальный TelegramBot `main()`: 180 детерминированных случаев с fake сервисом, подтверждённый trade-off at-most-once/retry; [скрипт](experiments/2026-11-04-limbo-telegrambot-send-retry.py) и [JSON](reports/2026-11-04-limbo-telegrambot-send-retry.json). Без сетевых запросов и изменений production.
 
 - **[NovaFabric v0.108.0: реальные Run Capsules и воспроизводимый replay (4 ноября 2026)](reports/2026-11-04-novafabric-real-capsules-replay.md)** — 20 подписанных toy-капсул, 40/40 подставленных tool responses, проверка границ mocked mode, 6 отрицательных seal-тестов; независимый DSSE/Merkle [verifier](experiments/2026-11-04-novafabric-independent-bundle-verify.py) и [реальный CLI-скрипт](experiments/2026-11-04-novafabric-real-capsule-lab.py).
