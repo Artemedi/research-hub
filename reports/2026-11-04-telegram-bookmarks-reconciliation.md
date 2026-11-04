@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **22** / ожидает проверки: **12** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **23** / ожидает проверки: **11** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -70,7 +70,7 @@
 | BK-044 / 12.10 | [Unsloth Qwen3.5 decision model — repeat](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth) | **исключён** | — | Точный повтор BK-043; второй независимой работы нет. |
 | BK-045 / 12.10 | [Animator](https://github.com/ashishjamarkattel/Animator) | **исключён** | — | Видео-генератор не покрывает текущую измеримую инженерную задачу; время вывода зависит от внешних моделей. |
 | BK-046 / 12.10 | [QwenGyre](https://arxiv.org/html/2609.33848v1) | **исключён** | — | Работа требует масштабного GPU RL-training; текущая инфраструктура/проекты такой контур не подтверждают. |
-| BK-047 / 13.10 | [Anthropic agent automations guide](https://claude.dev/blog/building-effective-agent-automations/) | **ожидает проверки** | — | Официальные советы не проверены на конкретной автоматизации или reproducible workflow. |
+| BK-047 / 13.10 | [Anthropic agent automations guide](https://claude.dev/blog/building-effective-agent-automations/) | **разобран** | [карточка](../studies/anthropic-agent-automations.md), [обзор](2026-11-04-bk047-agent-automations-review.md) | Изучены статья и reference config; managed workflow не запускался и exactly-once не доказан. |
 | BK-048 / 16.10 | [Understand Anything](https://github.com/Egonex-AI/Understand-Anything) | **ожидает проверки** | — | Не измерено качество графа вызовов на актуальных исходниках одного проекта. |
 | BK-049 / 16.10 | [Prompt Motion library](https://prompt-motion.com/) | **исключён** | — | Сборник motion-подсказок — источник оформления, не метод повышения надёжности продуктов. |
 | BK-050 / 16.10 | [Chartli](https://github.com/ahmadawais/chartli) | **ожидает проверки** | — | CLI-диаграммы проверялись только как репозиторий; нет контракта для графиков DBA/логов. |
