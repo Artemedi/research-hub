@@ -30,7 +30,10 @@
 
 ## Новые отчёты
 
-- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 6 ограниченных экспериментов, 15 полных разборов, 25 ожидают проверки, 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
+- **[BK-041 — Inspektor Gadget v0.57.0: проверка eBPF-доступа на Bazzite](reports/2026-11-04-bk041-inspektor-gadget-gate.md)** — официальный CLI/SHA проверены; unprivileged BPF_MAP_CREATE → EPERM, реальная трассировка не выполнялась; [карточка](studies/inspektor-gadget.md), [gate script](experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py).
+- **[BK-059 — IPFire fireperf 0.3.0: авторский бинарник и loopback](reports/2026-11-04-bk059-fireperf-loopback.md)** — 12 ограниченных тестов × 20 TCP, нулевые отказы, проверка request/response, закрытый порт; [карточка](studies/ipfire-fireperf.md), [скрипт](experiments/2026-11-04-bk059-fireperf-loopback-lab.py). Не тест сети AKUZ.
+
+- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 7 ограниченных экспериментальных проверок, 14 полных разборов, 25 ожидают проверки (включая BK-041: проверены только права eBPF), 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
 
 - **[LIMBO × TelegramBot: повторные публикации при неоднозначном HTTP POST (4 ноября 2026)](reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md)** — оригинальный код LIMBO и реальный TelegramBot `main()`: 180 детерминированных случаев с fake сервисом, подтверждённый trade-off at-most-once/retry; [скрипт](experiments/2026-11-04-limbo-telegrambot-send-retry.py) и [JSON](reports/2026-11-04-limbo-telegrambot-send-retry.json). Без сетевых запросов и изменений production.
 
