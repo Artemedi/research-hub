@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 9,
-    "ожидает проверки": 21,
+    "ожидает проверки": 20,
     "исключён": 19,
-    "разобран": 16
+    "разобран": 17
   },
-  "mapped_study_cards": 13,
+  "mapped_study_cards": 14,
   "mapped_experimental_items": 10,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -291,11 +291,11 @@
       "source_kind": "Agent orchestration",
       "source_audit_evidence": "REPO_CONFIRMED",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Оркестратор не тестировался; семантика записи в общие файлы и стоимость API неизвестны.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_ONLY",
+      "status_reason_ru": "Проверены исходные контракты workers и протоколов; динамический запуск, изоляция и стоимость API не проверены.",
+      "hub_study_card": "studies/claude-swarm.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/claude-swarm.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null
     },

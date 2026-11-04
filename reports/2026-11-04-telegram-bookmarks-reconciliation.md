@@ -7,8 +7,8 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **9** / разобран: **16** / ожидает проверки: **21** / исключён: **19**.
-- **13** пунктов имеют прямую карточку в `studies/` research-hub; **10** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
+- По текущему состоянию: проверен экспериментально: **9** / разобран: **17** / ожидает проверки: **20** / исключён: **19**.
+- **14** пунктов имеют прямую карточку в `studies/` research-hub; **10** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
 ## Правила присвоения статуса
@@ -39,7 +39,7 @@
 | BK-013 / 16.09 | [Retrieve-for-Train (R4T)](https://arxiv.org/html/2603.06397v1) | **исключён** | — | Работа о RL-поиске на наборах данных; нет подходящего trainable target и бюджета для переноса на текущие проекты. |
 | BK-014 / 16.09 | [alphaXiv OpenResearch](https://github.com/alphaXiv/OpenResearch) | **разобран** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/alphaxiv-openresearch.md), [Разбор provenance / full-text](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk014-openresearch-review.md) | Проверен официальный Rust v0.2.24: Git commit archives/SQLite/run lineage. В orx paper нет автоматического полного текста OpenAlex/PubMed/bioRxiv; один project fit — dsh-paper2agent, без запусков и A/B. |
 | BK-015 / 17.09 | [Anything2Explainer](https://github.com/Vincentwei1021/anything2explainer) | **исключён** | — | Генерация объясняющих видео не связана с обнаруженной задачей портфеля; авторское обещание скорости не проверено. |
-| BK-016 / 17.09 | [Claude-swarm](https://github.com/cj-vana/claude-swarm) | **ожидает проверки** | — | Оркестратор не тестировался; семантика записи в общие файлы и стоимость API неизвестны. |
+| BK-016 / 17.09 | [Claude-swarm](https://github.com/cj-vana/claude-swarm) | **разобран** | [Карточка](../studies/claude-swarm.md), [Обзор](2026-11-04-bk016-claude-swarm-review.md) | Проверены исходные контракты workers и протоколов; динамический запуск, изоляция и стоимость API не проверены. |
 | BK-017 / 17.09 | [Google AI UI design guide](https://aistudio.google.com/learn/ai-ui-design-google-ai-studio) | **исключён** | — | Руководство по дизайну UI не является релевантным научным улучшением работающего backend. |
 | BK-018 / 20.09 | [ScientistTwo](https://arxiv.org/html/2609.19644v1) | **разобран** | — | Полный текст учтён; заявленная авторская проверка scientific output не воспроизведена. |
 | BK-019 / 20.09 | [Warp Skill Doctor](https://www.warp.dev/skill-doctor) | **ожидает проверки** | — | Официальный инструмент указан, но нет privacy-аудита и сравнения с локальными skills. |

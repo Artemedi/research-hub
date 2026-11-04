@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-016 — Claude Swarm:** [карточка](claude-swarm.md), [обзор исходных контрактов и project fit](../reports/2026-11-04-bk016-claude-swarm-review.md); найдено неподключение enforcement в штатной инициализации, динамический запуск не проводился.
+
 **Telegram BK-011 — SIMURG:** [карточка](simurg.md), [обзор и изолированные проверки](../reports/2026-11-04-bk011-simurg-review.md): найдены ошибки AUROC и ограничения калибровки; польза проектам не измерена.
 
 **Telegram BK-006 — Open Steps:** [инженерная карточка](open-steps.md), [обзор и ограниченная проверка хуков](../reports/2026-11-04-bk006-open-steps-review.md). Найден пропуск изменения untracked-файла; качество ответов не измерено.
