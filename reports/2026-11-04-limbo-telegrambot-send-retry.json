@@ -1,0 +1,189 @@
+{
+  "actual_telegrambot_main_and_send_telegram_invoked": true,
+  "cases_per_mode": 20,
+  "example_by_mode": {
+    "crash_after_ack": {
+      "attempts": 2,
+      "final_effects": 2,
+      "first_effects": 1,
+      "first_error": "SystemExit",
+      "post_state_written_after_first": false
+    },
+    "duplicate_delivery": {
+      "attempts": 1,
+      "final_effects": 2,
+      "first_effects": 2,
+      "first_error": null,
+      "post_state_written_after_first": true
+    },
+    "http500_post": {
+      "attempts": 2,
+      "final_effects": 2,
+      "first_effects": 1,
+      "first_error": "RuntimeError",
+      "post_state_written_after_first": false
+    },
+    "http500_pre": {
+      "attempts": 2,
+      "final_effects": 1,
+      "first_effects": 0,
+      "first_error": "RuntimeError",
+      "post_state_written_after_first": false
+    },
+    "state_lost_after_ack": {
+      "attempts": 2,
+      "final_effects": 2,
+      "first_effects": 1,
+      "first_error": null,
+      "post_state_written_after_first": true
+    },
+    "success": {
+      "attempts": 1,
+      "final_effects": 1,
+      "first_effects": 1,
+      "first_error": null,
+      "post_state_written_after_first": true
+    },
+    "timeout_late": {
+      "attempts": 2,
+      "final_effects": 2,
+      "first_effects": 0,
+      "first_error": "RuntimeError",
+      "post_state_written_after_first": false
+    },
+    "timeout_post": {
+      "attempts": 2,
+      "final_effects": 2,
+      "first_effects": 1,
+      "first_error": "RuntimeError",
+      "post_state_written_after_first": false
+    },
+    "timeout_pre": {
+      "attempts": 2,
+      "final_effects": 1,
+      "first_effects": 0,
+      "first_error": "RuntimeError",
+      "post_state_written_after_first": false
+    }
+  },
+  "first_observation_indistinguishable_between_pre_and_post": true,
+  "limbo_upstream_commit": "2db09fba22a0572a70639162a808906409f612a8",
+  "limitations": [
+    "Only real main.py control flow + urllib transport mock; no Telegram/Gemini/YouTube/Actions network.",
+    "No actual Telegram idempotency key support; Mastodon in LIMBO is illustrative only.",
+    "Provider ledger is a simulated independent oracle; no real sent message IDs or platform acknowledgement.",
+    "Test runs are sequential and synthetic; network/IO/process latency not benchmarked.",
+    "A local PENDING marker avoids automatic duplicate retries but cannot ensure delivery under timeout_pre.",
+    "No deployment/production changes were made."
+  ],
+  "manual_pending_no_retry_tradeoff_model": {
+    "timeout_late": {
+      "cases": 20,
+      "duplicates": 0,
+      "missing": 0,
+      "uncertain_escalations": 20
+    },
+    "timeout_post": {
+      "cases": 20,
+      "duplicates": 0,
+      "missing": 0,
+      "uncertain_escalations": 20
+    },
+    "timeout_pre": {
+      "cases": 20,
+      "duplicates": 0,
+      "missing": 20,
+      "uncertain_escalations": 20
+    }
+  },
+  "original_limbo_world_results": {
+    "mastodon/duplicate_delivery": {
+      "cases": 20,
+      "duplicates": 0,
+      "effects_per_case": 1,
+      "supports_idempotency_key": true
+    },
+    "mastodon/timeout_late": {
+      "cases": 20,
+      "duplicates": 0,
+      "effects_per_case": 1,
+      "supports_idempotency_key": true
+    },
+    "mastodon/timeout_post": {
+      "cases": 20,
+      "duplicates": 0,
+      "effects_per_case": 1,
+      "supports_idempotency_key": true
+    },
+    "x/duplicate_delivery": {
+      "cases": 20,
+      "duplicates": 20,
+      "effects_per_case": 2,
+      "supports_idempotency_key": false
+    },
+    "x/timeout_late": {
+      "cases": 20,
+      "duplicates": 20,
+      "effects_per_case": 2,
+      "supports_idempotency_key": false
+    },
+    "x/timeout_post": {
+      "cases": 20,
+      "duplicates": 20,
+      "effects_per_case": 2,
+      "supports_idempotency_key": false
+    }
+  },
+  "real_network_calls": 0,
+  "status": "PASS",
+  "telegrambot_cases": 180,
+  "telegrambot_commit": "b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e",
+  "telegrambot_duplicate_cases": 120,
+  "telegrambot_results": {
+    "crash_after_ack": {
+      "cases": 20,
+      "committed_effects": 40,
+      "duplicate_cases": 20
+    },
+    "duplicate_delivery": {
+      "cases": 20,
+      "committed_effects": 40,
+      "duplicate_cases": 20
+    },
+    "http500_post": {
+      "cases": 20,
+      "committed_effects": 40,
+      "duplicate_cases": 20
+    },
+    "http500_pre": {
+      "cases": 20,
+      "committed_effects": 20,
+      "duplicate_cases": 0
+    },
+    "state_lost_after_ack": {
+      "cases": 20,
+      "committed_effects": 40,
+      "duplicate_cases": 20
+    },
+    "success": {
+      "cases": 20,
+      "committed_effects": 20,
+      "duplicate_cases": 0
+    },
+    "timeout_late": {
+      "cases": 20,
+      "committed_effects": 40,
+      "duplicate_cases": 20
+    },
+    "timeout_post": {
+      "cases": 20,
+      "committed_effects": 40,
+      "duplicate_cases": 20
+    },
+    "timeout_pre": {
+      "cases": 20,
+      "committed_effects": 20,
+      "duplicate_cases": 0
+    }
+  }
+}
