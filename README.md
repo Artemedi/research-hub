@@ -30,6 +30,7 @@
 
 ## Новые отчёты
 
+- **[BK-002 — Tencent TeamAI CLI: upstream, fork, trust boundaries и проектное соответствие](reports/2026-11-04-bk002-tencent-teamai-cli-review.md)** — 45 карточек рассмотрены, найдено три соответствия; форк 13 commits ahead / 732 behind upstream, 6 конфликтов сухого слияния; [карточка](studies/tencent-teamai-cli.md), без runtime теста, без разрешения на обновление.
 - **[BK-041 — Inspektor Gadget v0.57.0: проверка eBPF-доступа на Bazzite](reports/2026-11-04-bk041-inspektor-gadget-gate.md)** — официальный CLI/SHA проверены; unprivileged BPF_MAP_CREATE → EPERM, реальная трассировка не выполнялась; [карточка](studies/inspektor-gadget.md), [gate script](experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py).
 - **[BK-059 — IPFire fireperf 0.3.0: авторский бинарник и loopback](reports/2026-11-04-bk059-fireperf-loopback.md)** — 12 ограниченных тестов × 20 TCP, нулевые отказы, проверка request/response, закрытый порт; [карточка](studies/ipfire-fireperf.md), [скрипт](experiments/2026-11-04-bk059-fireperf-loopback-lab.py). Не тест сети AKUZ.
 
