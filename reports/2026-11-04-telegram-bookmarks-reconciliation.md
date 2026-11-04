@@ -7,8 +7,8 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **7** / разобран: **14** / ожидает проверки: **25** / исключён: **19**.
-- **7** пунктов имеют прямую карточку в `studies/` research-hub; **6** имеют воспроизводимый лабораторный отчёт. Один из этих шести (BK-001) привязан **только** к лабораторному отчету, без научной карточки.
+- По текущему состоянию: проверен экспериментально: **7** / разобран: **15** / ожидает проверки: **24** / исключён: **19**.
+- **10** пунктов имеют прямую карточку в `studies/` research-hub; **8** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
 ## Правила присвоения статуса
@@ -25,7 +25,7 @@
 | ID / дата | Исходный пункт | Итоговый статус | В research-hub | Подтверждение / причина |
 | --- | --- | --- | --- | --- |
 | BK-001 / 07.09 | [Vectorless RAG vs embeddings](https://clc.to/iSaRbg) | **проверен экспериментально** | [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-03-bookmark-hypotheses-offline-experiments.md) | Ограниченный offline FTS5-тест: 6 DBA-запросов, не сопоставление всех RAG-подходов; сокращённая Telegram-ссылка не подтверждает тезис. |
-| BK-002 / 08.09 | [Tencent TeamAI CLI](https://github.com/Tencent/teamai-cli) | **ожидает проверки** | — | Проверены GitHub/дерево, но нет diff upstream↔форк и запуска сценария нескольких агентов. |
+| BK-002 / 08.09 | [Tencent TeamAI CLI](https://github.com/Tencent/teamai-cli) | **разобран** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/tencent-teamai-cli.md), [Разбор fork/upstream](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk002-tencent-teamai-cli-review.md) | Полные код/документация изучены: fork 13 ahead / 732 behind; сухой merge — 6 конфликтов. 3 обоснованных project matches; реального TeamAI E2E/синхронизации не было. |
 | BK-003 / 11.09 | [pgbot](https://github.com/pgrundev/pgbot) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/pgbot.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-pgbot-postgresql-lab.md) | Запущен исходный pgbot v0.9.0 на изолированном PostgreSQL; production-эффект не доказан. |
 | BK-004 / 11.09 | [Tencent TeamAI CLI — repeat](https://github.com/Tencent/teamai-cli) | **исключён** | — | Точный повтор BK-002; не считать самостоятельным источником или второй проверкой. |
 | BK-005 / 11.09 | [ToolGrad](https://aclanthology.org/2026.findings-acl.950/) | **разобран** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/toolgrad.md) | Полный опубликованный текст научной работы ранее рассмотрен; воспроизведения chain-first обучения нет. |
