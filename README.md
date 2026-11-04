@@ -30,6 +30,8 @@
 
 ## Новые отчёты
 
+- **[NovaFabric v0.108.0: реальные Run Capsules и воспроизводимый replay (4 ноября 2026)](reports/2026-11-04-novafabric-real-capsules-replay.md)** — 20 подписанных toy-капсул, 40/40 подставленных tool responses, проверка границ mocked mode, 6 отрицательных seal-тестов; независимый DSSE/Merkle [verifier](experiments/2026-11-04-novafabric-independent-bundle-verify.py) и [реальный CLI-скрипт](experiments/2026-11-04-novafabric-real-capsule-lab.py).
+
 - **[BenchShield: целостность reward и provenance (4 ноября 2026)](reports/2026-11-04-benchshield-reward-integrity-offline.md)** — независимый offline lifecycle replay: 100 фиктивных траекторий, 30 доказанных нарушений, 40 отказов от необоснованного вердикта; [Python-скрипт](experiments/2026-11-04-benchshield-reward-integrity-replay.py), [JSON-агрегаты](reports/2026-11-04-benchshield-reward-integrity-offline.json). Не запуск оригинального BenchShield.
 
 - **[MCP Toolbox v1.15.0 vs Wiki_PG: PostgreSQL GUC (4 ноября 2026)](reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md)** — реальные MCP stdio-сеансы, 4 GUC × 20 повторений на каждый инструмент, независимый SQL-oracle, исторические снимки, контроль устаревания и read-only роли; [карточка](studies/mcp-toolbox-postgres.md) и воспроизводимые скрипты.
