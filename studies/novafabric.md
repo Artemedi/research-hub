@@ -28,3 +28,18 @@ Author-led preprint, прототипное состояние и несогла
 Идентичность и доказательная полнота session replay, RCA evidence, multi-agent transitions. Не создавать новый crypto framework до верификации простого bundle.
 
 **Gate:** `PROJECT_PROFILE_MATCH / NEEDS_CURRENT_SOURCE_CODE`. Owner gate and independent outcome oracle required before any code changes.
+
+
+## 2026-11-04 — реальная авторская реализация v0.108.0: лабораторная проверка
+
+[**Полный новый протокол**](../reports/2026-11-04-novafabric-real-capsules-replay.md), [исходный лабораторный скрипт](../experiments/2026-11-04-novafabric-real-capsule-lab.py), [отдельный независимый verifier Evidence Bundle](../experiments/2026-11-04-novafabric-independent-bundle-verify.py).
+
+**Обновлённая доступность:** авторский [MSKazemi/novafabric@v0.108.0](https://github.com/MSKazemi/novafabric/tree/v0.108.0) (commit `cc1d71b64b4d1b4c9aa6e4a16a804686514fe667`, Apache-2.0) теперь доступен и **запущен как реальный CLI**. Прочитано и техническое продолжение [arXiv:2610.34594](https://arxiv.org/html/2610.34594): оно не заменяет исторические количественные результаты original paper v1. Эта запись дополняет первоначальную оценку `NEEDS_CURRENT_SOURCE_CODE`.
+
+**Собственные измерения на Python 3.12:** прошли **83 upstream tests, 2 skipped**. Созданы 20 sealed Run Capsules одного synthetic Python-агента; **40/40 `@record.tool` ответов** восстановлены из журнала, 20/20 выходов совпали побайтно; все 20 получили `nova validate` + `nova verify` + pinned-local-CA PASS. Исходные данные были изменены перед replay, новые побочные вызовы tool bodies не произошли.
+
+**Криптография на копиях:** `nova verify` отклоняет 6/6 изменений **подписанного содержимого**, но принимает добавленный файл, **не входящий** в подписанный manifest inventory. Переносимый **Evidence Bundle** (49 files) независимо проверен скриптом без импортов NovaFabric: 48/48 SHA, 4/4 Ed25519 DSSE подписи, Merkle root, member-allowlist, 5/5 негативных контролей.
+
+**Fail-closed имеет узкую границу:** лишний `@record.tool` вызов отвергнут, но простая `Path.write_text` **вне инструментированного инструмента действительно выполняется** во время `mocked replay`. Из авторского исходного протокола нельзя вывести «полный offline replay произвольных действий». Модельные вызовы = 0, реальные DSH trace и MCP/network tools = `NOT_TESTED`. `nova seal init` использует только self-asserted identity без trusted TSA. При экспорте Evidence Bundle было предупреждение **OPA unavailable → NoopEngine**, policy gates не выполнены.
+
+**Решение:** `AUTHOR_IMPLEMENTATION_LAB_VERIFIED / RESEARCH_PRINCIPLE_ONLY_FOR_DSH / NO_PRODUCTION_APPROVAL`. Допустим следующий *узкий* эксперимент с подписанным manifest и независимой проверкой только уже имеющихся test-run evidence. Не создавать новый криптографический framework, не внедрять all-in-one NovaFabric, не объявлять replay sandbox. Требуются подтверждённые capture completeness, target-specific trust anchor, redaction policy и реальные trace-oracle замеры.
