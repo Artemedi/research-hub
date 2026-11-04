@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 12,
-    "ожидает проверки": 9,
+    "ожидает проверки": 8,
     "исключён": 19,
-    "разобран": 25
+    "разобран": 26
   },
-  "mapped_study_cards": 26,
+  "mapped_study_cards": 27,
   "mapped_experimental_items": 13,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -905,13 +905,15 @@
       "source_kind": "Self-hosted RAG system",
       "source_audit_evidence": "REPO_README",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Нужна проверка лицензий подпапок, read-only deploy и качества ответов на локальном корпусе.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_DEPLOY_NOT_RUN",
+      "status_reason_ru": "Изучены исходники и смешанные лицензии; deploy, ACL и качество corpus не проверены.",
+      "hub_study_card": "studies/yahont-ce.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/yahont-ce.md",
       "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_url": null,
+      "hub_review_report": "reports/2026-11-04-bk053-yahont-review.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk053-yahont-review.md"
     },
     {
       "id": "BK-054",

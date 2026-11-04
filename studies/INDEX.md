@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-053 — Yahont CE:** [карточка](yahont-ce.md), [source review и synthetic ID helper test](../reports/2026-11-04-bk053-yahont-review.md); retrieval не запускался.
+
 **Telegram BK-050 — Chartli:** [карточка](chartli.md), [source review и synthetic input tests](../reports/2026-11-04-bk050-chartli-review.md); CLI не запускался.
 
 **Telegram BK-048 — Understand Anything:** [карточка](understand-anything.md), [source review и synthetic SQL tests](../reports/2026-11-04-bk048-understand-anything-review.md); SQL parser имеет ограничения, реальный граф не запускался.

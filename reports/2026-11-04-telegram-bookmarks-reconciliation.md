@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **25** / ожидает проверки: **9** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **26** / ожидает проверки: **8** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -76,7 +76,7 @@
 | BK-050 / 16.10 | [Chartli](https://github.com/ahmadawais/chartli) | **разобран** | [карточка](../studies/chartli.md), [обзор](2026-11-04-bk050-chartli-review.md) | Проверены исходники и synthetic input cases; CLI и польза проектам не измерены. |
 | BK-051 / 18.10 | [Harness²](https://arxiv.org/html/2610.14224v1) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/harness2.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-rrsi-harness2-overfit-lab.md) | Выполнены реальный selector Harness² и upstream tests; модельные Propose/Probe/Compose не воспроизводились. |
 | BK-052 / 19.10 | [Anatomy educational visualizations](https://github.com/wheresryan22/anatomy) | **исключён** | — | Учебная анатомическая визуализация; отсутствует подтверждённый target и проверка научной корректности. |
-| BK-053 / 22.10 | [Yahont CE](https://github.com/pipedude/yahont-ce) | **ожидает проверки** | — | Нужна проверка лицензий подпапок, read-only deploy и качества ответов на локальном корпусе. |
+| BK-053 / 22.10 | [Yahont CE](https://github.com/pipedude/yahont-ce) | **разобран** | [карточка](../studies/yahont-ce.md), [обзор](2026-11-04-bk053-yahont-review.md) | Изучены исходники и смешанные лицензии; deploy, ACL и качество corpus не проверены. |
 | BK-054 / 23.10 | [Anthropic + Theorem formal verification](https://www.anthropic.com/research/formal-verification) | **разобран** | — | Официальная инженерная статья разобрана; формальная гарантия зависит от полноты спецификации. |
 | BK-055 / 23.10 | [Claudemy](https://github.com/assafkip/claudemy) | **исключён** | — | Генерация обучающего аудио без подтверждённой востребованности, проблематики и надёжного oracle. |
 | BK-056 / 24.10 | [Microsoft sequential diagnosis with LMs](https://www.science.org/doi/10.1126/science.aeh7930) | **разобран** | — | Полная Science-статья по последовательной диагностике разобрана отдельно; clinical deployment не проверен. |
