@@ -25,3 +25,16 @@ Complete 23-page arXiv PDF, including setup, theorems, Tables 3–6 and limitati
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
+
+
+## 2026-11-04 — cross-project experiment: LIMBO × TelegramBot
+
+**Целевой проект вне DSH/Wiki_PG:** [Artemedi/TelegramBot@b47c527](https://github.com/Artemedi/TelegramBot/tree/b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e). [**Полный lab report**](../reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md), [исполняемый воспроизводимый replay](../experiments/2026-11-04-limbo-telegrambot-send-retry.py), [JSON results](../reports/2026-11-04-limbo-telegrambot-send-retry.json). Авторский [jaxblack/limbo-bench@2db09fb](https://github.com/jaxblack/limbo-bench/tree/2db09fba22a0572a70639162a808906409f612a8) был непосредственно исполнен.
+
+**Почему этот target:** реальный `main.py:187-204` делает HTTP POST `sendMessage`, а `main.main` помечает `seen_videos.txt` и `post_state.json` **только после** возврата `send_telegram`; отдельный GitHub Actions `Save state` коммитит результат после исполнения. Сервис Telegram не декларирует контракт `idempotency_key`, поэтому надежность не исправить одной добавленной строкой со случайным ключом.
+
+**Собственный эксперимент:** 9 классов сбоя × 20 независимых fake video IDs = **180 вызовов двух последовательных запусков настоящего TelegramBot.main**, с полностью подменённым `urllib.request.urlopen` и fake ledger. **120/180** synthetic scenarios с дублем из-за заданных commit-after-timeout/500, delayed commit, redelivery, abrupt process crash или непереданного state. Это **не** измеренная частота ошибок в реальном Telegram. `timeout_pre` и `timeout_post` имели одинаковую локальную картину ошибки и файлов, но скрытый ledger отличался: 0 против 1 совершённого эффекта.
+
+**Подтверждение авторским кодом:** `limbo.World`/`ToolRuntime` исполнены для 20 семян × 3 fault types × 2 contracts: 60/60 дублей для model platform `x` **без ключей**, 0/60 для `mastodon` **со стабильным поддерживаемым ключом**. Это две *симулированные* сети из LIMBO, **не** эквивалент Telegram API. Upstream original tests **65/65 PASS**, Python compile/Ruff, альтернативный объём теста 63 cases и oracle mutation control — PASS.
+
+**Решение:** `AMBIGUOUS_EFFECT_REAL_CODE_REPRODUCED / NO_SERVER_KEYS / NO_PRODUCTION_APPROVAL`. Кандидат: долговременный outbox с логическим ключом, `READY | SENDING | SENT(message_id) | UNCERTAIN`; при неизвестном исходе *не* выполнять немедленный повторный POST, а передавать в manual reconciliation. Это at-most-once на клиенте и может **пропустить** сообщение после `timeout_pre`, то есть нельзя заявлять exactly-once. Любая правка исходников TelegramBot — отдельный approval/branch после согласования судьбы `UNCERTAIN`.
