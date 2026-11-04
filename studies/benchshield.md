@@ -28,3 +28,14 @@
 Индивидуальные проверяемые eval-артефакты и tool/run provenance; особенно полезно для регрессий agent skills и scientific tool benchmarks, не как общий security grant.
 
 **Gate:** `PROJECT_PROFILE_MATCH / NEEDS_CURRENT_SOURCE_CODE`. Owner gate and independent outcome oracle required before any code changes.
+
+
+## 2026-11-04 — собственный offline lifecycle-evidence эксперимент
+
+**Протокол:** [BenchShield reward-integrity replay](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-benchshield-reward-integrity-offline.md), [выполненный скрипт](../experiments/2026-11-04-benchshield-reward-integrity-replay.py), [агрегаты JSON](../reports/2026-11-04-benchshield-reward-integrity-offline.json). **Статус:** `METHODOLOGY_REPLAY_VERIFIED / AUTHORS_CODE_NOT_RUN / NO_DSH_INTEGRATION`.
+
+**Что измерено:** отдельная Python-модель reward-relevant lifecycle, **не оригинальный BenchShield**. Сгенерировано 100 траекторий (10 классов по 10); `reported_reward` доверчивого evaluator указывал PASS в **90**, значение output совпало с независимым oracle в **60**. Инфраструктурный проверяющий классифицировал **30 CLEAR, 30 VIOLATION, 40 ABSTAIN**. Из 40 намеренно смоделированных нарушений 30 доказаны записью/чтением защищённых ресурсов; ещё 10 semantic attacks остаются `ABSTAIN`. Статическая достижимость защищённых путей была в **35** траекториях, включая 5 честных без использования пути. Среди намеренно легитимных примеров не обнаружены ложные обвинения, но это **сконструированная выборка**.
+
+**Проверено отрицательными контролями:** изменение журнала после подписи отклоняется как unverifiable, санкционированное изменение grader при preflight не классифицируется как agent attack, подтверждённый post-handoff write нарушает границу. Повторный запуск (100 случаев) и альтернативный seed (80 случаев) — PASS. LLM, авторская TLA+/static taint/runtime реализация, production evidence, cost и actual DSH verifier **не запускались**. Метрики из научной статьи **не воспроизведены**.
+
+**Граница переноса:** концепция `reported_reward != credible_reward` подходит системе оценивания DSH; обязательны отдельные proof-of-capture, grader/oracle hash, manifest revision, actor/phase/op/path, nullable evidence outcome и `ABSTAIN`. Недостаточно только score или текста tool/agent transcript. **Решение:** `EVIDENCE_BOUNDARY_PRINCIPLE_ACCEPTED / NO_AUTOMATIC_RUNTIME_INTEGRATION`.
