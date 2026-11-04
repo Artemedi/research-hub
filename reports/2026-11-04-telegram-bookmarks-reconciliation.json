@@ -7,13 +7,13 @@
   "unique_source_url_count": 63,
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
-    "проверен экспериментально": 7,
-    "ожидает проверки": 23,
+    "проверен экспериментально": 8,
+    "ожидает проверки": 22,
     "исключён": 19,
     "разобран": 16
   },
-  "mapped_study_cards": 11,
-  "mapped_experimental_items": 8,
+  "mapped_study_cards": 12,
+  "mapped_experimental_items": 9,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -131,13 +131,13 @@
       "source_kind": "Open-source skills",
       "source_audit_evidence": "REPO_CONFIRMED",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Skills прочитаны как инструкции, но не выполнен сравнимый контроль ошибок/проверок.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_LAB",
+      "status_reason_ru": "Offline fixtures и узкий изолированный тест хуков v0.4.8: изменение уже существующего untracked-файла не вызвало stop-report; качество ответов и польза проектам не измерены.",
+      "hub_study_card": "studies/open-steps.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/open-steps.md",
+      "hub_experiment_report": "reports/2026-11-04-bk006-open-steps-review.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk006-open-steps-review.md"
     },
     {
       "id": "BK-007",

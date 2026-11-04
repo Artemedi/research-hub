@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-006 — Open Steps:** [инженерная карточка](open-steps.md), [обзор и ограниченная проверка хуков](../reports/2026-11-04-bk006-open-steps-review.md). Найден пропуск изменения untracked-файла; качество ответов не измерено.
+
 **Telegram BK-014 — alphaXiv OpenResearch:** [source-reviewed engineering card](alphaxiv-openresearch.md), [Git-snapshot/full-text/security and project-fit report](../reports/2026-11-04-bk014-openresearch-review.md). Full-text metadata trap confirmed in original Rust source; only dsh-paper2agent profile matched; LAB_NOT_RUN and no adoption approval.
 
 **Telegram BK-002 — Tencent TeamAI CLI:** [инженерная карточка](tencent-teamai-cli.md) и [полная сверка upstream↔fork и применимости к трём проектам](../reports/2026-11-04-bk002-tencent-teamai-cli-review.md). Source review, 6 merge conflicts; никакого исполнения TeamAI/лаборатории.

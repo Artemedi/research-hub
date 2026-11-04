@@ -7,8 +7,8 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **7** / разобран: **16** / ожидает проверки: **23** / исключён: **19**.
-- **11** пунктов имеют прямую карточку в `studies/` research-hub; **8** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
+- По текущему состоянию: проверен экспериментально: **8** / разобран: **16** / ожидает проверки: **22** / исключён: **19**.
+- **12** пунктов имеют прямую карточку в `studies/` research-hub; **9** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
 ## Правила присвоения статуса
@@ -29,7 +29,7 @@
 | BK-003 / 11.09 | [pgbot](https://github.com/pgrundev/pgbot) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/pgbot.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-pgbot-postgresql-lab.md) | Запущен исходный pgbot v0.9.0 на изолированном PostgreSQL; production-эффект не доказан. |
 | BK-004 / 11.09 | [Tencent TeamAI CLI — repeat](https://github.com/Tencent/teamai-cli) | **исключён** | — | Точный повтор BK-002; не считать самостоятельным источником или второй проверкой. |
 | BK-005 / 11.09 | [ToolGrad](https://aclanthology.org/2026.findings-acl.950/) | **разобран** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/toolgrad.md) | Полный опубликованный текст научной работы ранее рассмотрен; воспроизведения chain-first обучения нет. |
-| BK-006 / 11.09 | [Open Steps agent skills](https://github.com/kharmanskyi/open-steps) | **ожидает проверки** | — | Skills прочитаны как инструкции, но не выполнен сравнимый контроль ошибок/проверок. |
+| BK-006 / 11.09 | [Open Steps agent skills](https://github.com/kharmanskyi/open-steps) | **проверен экспериментально** | [Карточка](../studies/open-steps.md), [Разбор и опыт](2026-11-04-bk006-open-steps-review.md) | Offline tests и узкий синтетический тест хуков v0.4.8; обнаружен пропуск изменения уже существующего untracked-файла. Качество ответов и польза проектам не измерены. |
 | BK-007 / 12.09 | [OpenAI Agents API](https://openai.com/index/introducing-the-agents-api/) | **разобран** | — | Прочитана официальная полная статья; сервисный runtime на проектах не тестировался. |
 | BK-008 / 13.09 | [Beautiful Mermaid](https://github.com/lukilabs/beautiful-mermaid) | **исключён** | — | Инструмент оформления схем; нет подтверждённого сейчас эффекта на корректность или надёжность проектов. |
 | BK-009 / 13.09 | [GPT-6 Astra skills/prompt guidance](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra) | **разобран** | — | Прочитано официальное руководство; влияние на стоимость/качество skills локально не измерено. |
