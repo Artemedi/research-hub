@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 12,
-    "ожидает проверки": 16,
+    "ожидает проверки": 15,
     "исключён": 19,
-    "разобран": 18
+    "разобран": 19
   },
-  "mapped_study_cards": 19,
+  "mapped_study_cards": 20,
   "mapped_experimental_items": 13,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -487,13 +487,15 @@
       "source_kind": "Open-source research harness",
       "source_audit_evidence": "REPO_CONFIRMED",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Нет независимо проверенного benchmark и фиксированного сравнения research-cost.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_PIPELINE_NOT_RUN",
+      "status_reason_ru": "Проверены контракты и synthetic citation triage; benchmark и полный pipeline не запускались.",
+      "hub_study_card": "studies/hyperresearch.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/hyperresearch.md",
       "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_url": null,
+      "hub_review_report": "reports/2026-11-04-bk028-hyperresearch-review.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk028-hyperresearch-review.md"
     },
     {
       "id": "BK-029",

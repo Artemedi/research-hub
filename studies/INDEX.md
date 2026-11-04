@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-028 — Hyperresearch:** [карточка](hyperresearch.md), [source review и synthetic citation fixture](../reports/2026-11-04-bk028-hyperresearch-review.md); полноценный pipeline не запускался.
+
 **Telegram BK-026 — Julia 1:** [карточка](julia-1.md), [source review и synthetic probability fixture](../reports/2026-11-04-bk026-julia-1-review.md); inference не запускался.
 
 **Telegram BK-025 — Unreal Agent video:** [карточка](unreal-agent-bk025.md), [provenance и отсрочка](../reports/2026-11-04-bk025-unreal-video-provenance.md); `FULL_TEXT_UNAVAILABLE`, метод не оценён.
