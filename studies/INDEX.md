@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Новое исследование с лабораторным тестом selection mechanics (не воспроизведение LLM-экспериментов):** [RRSI](rrsi.md) и [Harness²](harness2.md) — [протокол](../reports/2026-11-04-rrsi-harness2-overfit-lab.md).
+
 **Новые инженерные проверки (отдельно от научных full-text reviews):** [pgbot — PostgreSQL diagnostic lab, v0.9.0](pgbot.md) — `LAB_VERIFIED / NO_PRODUCTION_APPROVAL`, [протокол](../reports/2026-11-04-pgbot-postgresql-lab.md).
 
 This index promotes **16 historically source-reviewed items** from the original DSH
