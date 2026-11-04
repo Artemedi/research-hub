@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-024 — Local Knowledge Graph:** [карточка](local-knowledge-graph.md), [обзор и synthetic graph tests](../reports/2026-11-04-bk024-local-knowledge-graph-review.md); модель и реальный корпус не запускались.
+
 **Telegram BK-022 — Microsoft Skill Recorder:** [карточка](microsoft-skill-recorder.md), [обзор и узкий synthetic privacy test](../reports/2026-11-04-bk022-skill-recorder-review.md); Copilot и реальная запись не запускались.
 
 **Telegram BK-019 — Warp Skill Doctor:** [карточка](warp-skill-doctor.md), [обзор и изолированный тест атрибуции](../reports/2026-11-04-bk019-warp-skill-doctor-review.md); качество рекомендаций не проверялось.
