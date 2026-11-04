@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **6** / разобран: **15** / ожидает проверки: **25** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **7** / разобран: **14** / ожидает проверки: **25** / исключён: **19**.
 - **7** пунктов имеют прямую карточку в `studies/` research-hub; **6** имеют воспроизводимый лабораторный отчёт. Один из этих шести (BK-001) привязан **только** к лабораторному отчету, без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -64,7 +64,7 @@
 | BK-038 / 06.10 | [NoPayWall model credit aggregator](https://nopaywall.io/) | **исключён** | — | Сторонний агрегатор модельных кредитов без подтверждённых гарантий провайдера и обработки секретов. |
 | BK-039 / 07.10 | [VeriHarness](https://arxiv.org/html/2610.00972v1) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/veriharness.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-veriharness-agent-config-offline.md) | Реальные компоненты VeriHarness и agent-config проверены offline; нет полноценного LLM-оркестрационного цикла. |
 | BK-040 / 08.10 | [DeLM decentralized agents](https://arxiv.org/html/2606.10662v3) | **разобран** | — | Научный полный текст изучен; децентрализованный агентный рантайм не воспроизводился. |
-| BK-041 / 08.10 | [Inspektor Gadget eBPF](https://github.com/inspektor-gadget/inspektor-gadget) | **ожидает проверки** | — | Для Linux eBPF требуется отдельная sandbox-проверка прав ядра, накладных расходов и полезности RCA. |
+| BK-041 / 08.10 | [Inspektor Gadget eBPF](https://github.com/inspektor-gadget/inspektor-gadget) | **ожидает проверки** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/inspektor-gadget.md), [Проверка допуска](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk041-inspektor-gadget-gate.md) | Официальный CLI v0.57.0 проверен, но BPF_MAP_CREATE вернул EPERM; живые eBPF events и RCA-overhead не проверены. |
 | BK-042 / 10.10 | [Claude Code comprehensive course](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know) | **исключён** | — | Обучающий курс; не демонстрирует отдельное новое исследование или целевой runtime improvement. |
 | BK-043 / 11.10 | [Unsloth Qwen3.5 4B decision model](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth) | **ожидает проверки** | — | Описан training tutorial; реальная локальная модель и данные для 8 GB VRAM не проверялись. |
 | BK-044 / 12.10 | [Unsloth Qwen3.5 decision model — repeat](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth) | **исключён** | — | Точный повтор BK-043; второй независимой работы нет. |
@@ -82,7 +82,7 @@
 | BK-056 / 24.10 | [Microsoft sequential diagnosis with LMs](https://www.science.org/doi/10.1126/science.aeh7930) | **разобран** | — | Полная Science-статья по последовательной диагностике разобрана отдельно; clinical deployment не проверен. |
 | BK-057 / 28.10 | [SLEEP continual learning](https://arxiv.org/pdf/2606.03979) | **исключён** | — | Полноценное continual-training исследование, а не агентная память; нет управляемого обучения модели. |
 | BK-058 / 31.10 | [Google Project Chrysalis](https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/) | **разобран** | — | Официальный архитектурный материал разобран; vendor ROI не подтверждён независимыми результатами. |
-| BK-059 / 01.11 | [IPFire fireperf](https://www.ipfire.org/fireperf) | **разобран** | — | Прочитана официальная документация fireperf; никаких нагрузочных тестов сетей/production не проводилось. |
+| BK-059 / 01.11 | [IPFire fireperf](https://www.ipfire.org/fireperf) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/ipfire-fireperf.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk059-fireperf-loopback.md) | Авторская сборка 0.3.0, 12 ограниченных изолированных loopback-прогонов, 240/240 TCP и отрицательный контроль; не производство, не iperf3 A/B. |
 | BK-060 / 01.11 | [dsh-superagent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) | **ожидает проверки** | — | README прямо называет проект прототипом; отсутствует воспроизводимый security/runtime test. |
 | BK-061 / 01.11 | [ASCII Sharks](https://github.com/stackedlol/ascii-sharks) | **исключён** | — | ASCII-визуализация не имеет установленного ROI для задач проектов. |
 | BK-062 / 02.11 | [Reverse Engineer Anything (REA)](https://github.com/morluto/rea) | **ожидает проверки** | — | Не установлен безопасный sandbox и допустимость работы с бинарниками/лицензиями. |
