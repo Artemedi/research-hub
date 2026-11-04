@@ -1,5 +1,9 @@
 # Individually indexed studies — previously reviewed in DSH
 
+## New research intake — 2026-11-05
+
+- [Sequential diagnosis with language models / MAI-DxO](sequential-diagnosis-language-models.md) — [full-source review, applicability and A/B plan](../reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md); `FIT_CANDIDATE / NEEDS_EVIDENCE`, not production-approved.
+
 **Telegram BK-053 — Yahont CE:** [карточка](yahont-ce.md), [source review и synthetic ID helper test](../reports/2026-11-04-bk053-yahont-review.md); retrieval не запускался.
 
 **Telegram BK-050 — Chartli:** [карточка](chartli.md), [source review и synthetic input tests](../reports/2026-11-04-bk050-chartli-review.md); CLI не запускался.
