@@ -1,0 +1,117 @@
+{
+  "source_repo": "MSKazemi/novafabric",
+  "tag": "v0.108.0",
+  "sha": "cc1d71b64b4d1b4c9aa6e4a16a804686514fe667",
+  "lab": {
+    "status": "PASS",
+    "original_code": "MSKazemi/novafabric v0.108.0",
+    "python": "/tmp/novafabric-verification-20261104/venv/bin/python",
+    "cases": 20,
+    "captured_tool_calls": 40,
+    "mocked_tool_calls": 40,
+    "tool_body_executions_on_replay": 0,
+    "byte_identical_outputs": 20,
+    "capsule_validate_pass": 20,
+    "capsule_seal_verify_pass": 20,
+    "local_ca_pinned_verify_pass": 20,
+    "forensic_replay_pass": 1,
+    "real_model_calls": 0,
+    "network_connections_live_during_mocked": 0,
+    "replay_policy": "NOVA_CAPTURE_LEVEL=forensic; instrumented @record.tool only",
+    "median_duration_ms": {
+      "direct": 129.761,
+      "capture": 1457.738,
+      "validate": 1348.759,
+      "verify": 1226.686,
+      "verify_ca": 1242.167,
+      "replay_mocked": 1379.459,
+      "replay_forensic": 1225.584
+    },
+    "median_capsule_bytes": 18155,
+    "min_capsule_bytes": 18008,
+    "max_capsule_bytes": 18300,
+    "mutation_checks": {
+      "output_payload": {
+        "verification_exit_code": 1,
+        "tampering_detected": true
+      },
+      "tool_swap": {
+        "verification_exit_code": 1,
+        "tampering_detected": true
+      },
+      "manifest_status": {
+        "verification_exit_code": 1,
+        "tampering_detected": true
+      },
+      "missing_trace": {
+        "verification_exit_code": 1,
+        "tampering_detected": true
+      },
+      "renamed_empty_stream": {
+        "verification_exit_code": 1,
+        "tampering_detected": true
+      },
+      "remove_seal": {
+        "verification_exit_code": 1,
+        "tampering_detected": true
+      },
+      "extra_unsigned_file": {
+        "verification_exit_code": 0,
+        "tampering_detected": false
+      }
+    },
+    "mocked_replay_boundary_controls": {
+      "extra_instrumented_tool_call": "REFUSED_BEFORE_BODY_EXECUTION",
+      "unrecorded_python_file_write": "EXECUTED_LIVE_DESPITE_MOCKED_REPLAY"
+    },
+    "first_capsule": {
+      "index": 0,
+      "source_value": 700,
+      "capsule_id": "01M6JXC64591A8KAYPGWF9E7PT",
+      "tools_captured": 2,
+      "tools_mocked": 2,
+      "external_tool_body_executions_on_mocked_replay": 0,
+      "output_sha256": "74c409277bcc6c2ba62bf93e679f30135cfcb1e2f9f0aebb2c64ac985d6d05d2",
+      "verify": "PASS",
+      "verify_ca": "PASS"
+    },
+    "last_capsule": {
+      "index": 19,
+      "source_value": 947,
+      "capsule_id": "01M6JXG6GT4DN3NJSQEBSYAP7K",
+      "tools_captured": 2,
+      "tools_mocked": 2,
+      "external_tool_body_executions_on_mocked_replay": 0,
+      "output_sha256": "93263e6c9e0338498336b846c7f8f286bb6694912b3c9b140913d7b60aa09fcd",
+      "verify": "PASS",
+      "verify_ca": "PASS"
+    },
+    "limitations": [
+      "Two explicit @record.tool boundaries per synthetic run, not arbitrary filesystem/shell tools.",
+      "Model SDK responses, MCP network tools, real DSH runtime and provider transport not tested.",
+      "In-memory/offline fixture source changed; no network sandbox or OS syscall audit performed.",
+      "No trusted external TSA; local self-asserted signer and pinned local CA only.",
+      "Emitted file inventory is authoritative only for covered evidence files.",
+      "Performance compares different operations on one machine and does not establish production overhead."
+    ]
+  },
+  "independent_bundle_verification": {
+    "status": "PASS",
+    "archive_members": 49,
+    "artifacts_verified": 48,
+    "ed25519_attestations_verified": 4,
+    "capsule_root": "sha256:65ca2341d383f7638bb32dbca3c9a632d767906707fe979a9e8d4d4ef03416d3",
+    "signer_public_key_sha256": "sha256:157b94a7c3d460e5053d04da80e8ecfcfdb2c7a6c8af688a58547cdb070ea2b4",
+    "pin_matched": false,
+    "trusted_timestamp": false,
+    "signer_identity": "only the public key; no independently verified owner",
+    "novafabric_imported": false,
+    "negative_controls": {
+      "output_data": "REJECTED:ValueError",
+      "tool_order": "REJECTED:ValueError",
+      "added_unsigned_file": "REJECTED:ValueError",
+      "changed_manifest": "REJECTED:ValueError",
+      "wrong_signer_pin": "REJECTED:ValueError"
+    }
+  }
+}
