@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 7,
-    "ожидает проверки": 25,
+    "ожидает проверки": 24,
     "исключён": 19,
-    "разобран": 14
+    "разобран": 15
   },
-  "mapped_study_cards": 9,
+  "mapped_study_cards": 10,
   "mapped_experimental_items": 8,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -67,11 +67,11 @@
       "source_kind": "Open-source software",
       "source_audit_evidence": "REPO_AND_TREE",
       "initial_priority_2026_11_03": "A",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Проверены GitHub/дерево, но нет diff upstream↔форк и запуска сценария нескольких агентов.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_NO_RUNTIME_TEST",
+      "status_reason_ru": "Официальные исходники, полная документация и собственный fork сверены по SHA и общей базе: 13 fork commits ahead, 732 behind upstream, сухой merge даёт 6 content conflicts. 45 проектных профилей рассмотрены; подтверждены три тематических соответствия. npm/CLI/E2E не запускались.",
+      "hub_study_card": "studies/tencent-teamai-cli.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/tencent-teamai-cli.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null
     },
