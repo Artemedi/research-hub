@@ -1,5 +1,7 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-048 — Understand Anything:** [карточка](understand-anything.md), [source review и synthetic SQL tests](../reports/2026-11-04-bk048-understand-anything-review.md); SQL parser имеет ограничения, реальный граф не запускался.
+
 **Telegram BK-047 — agent automations:** [карточка](anthropic-agent-automations.md), [source review](../reports/2026-11-04-bk047-agent-automations-review.md); managed workflow не запускался.
 
 **Telegram BK-043 — Unsloth decision model:** [карточка](unsloth-decision-model.md), [source review](../reports/2026-11-04-bk043-unsloth-decision-review.md); обучение не запускалось.
