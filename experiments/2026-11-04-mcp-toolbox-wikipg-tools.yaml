@@ -1,0 +1,19 @@
+kind: source
+name: lab-postgres
+type: postgres
+host: 127.0.0.1
+port: "5432"
+database: lab
+user: observer
+password: lab-only-no-secret
+---
+kind: tool
+name: get_live_pg_setting
+type: postgres-sql
+source: lab-postgres
+description: Get current setting and unit from a disposable PostgreSQL instance. No modification.
+parameters:
+  - name: setting
+    type: string
+    description: PostgreSQL setting name
+statement: "SELECT name, setting, unit FROM pg_catalog.pg_settings WHERE name = $1"
