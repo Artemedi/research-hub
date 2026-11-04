@@ -7,8 +7,8 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **7** / разобран: **15** / ожидает проверки: **24** / исключён: **19**.
-- **10** пунктов имеют прямую карточку в `studies/` research-hub; **8** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
+- По текущему состоянию: проверен экспериментально: **7** / разобран: **16** / ожидает проверки: **23** / исключён: **19**.
+- **11** пунктов имеют прямую карточку в `studies/` research-hub; **8** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
 ## Правила присвоения статуса
@@ -37,7 +37,7 @@
 | BK-011 / 15.09 | [SIMURG streaming integrity monitor](https://github.com/doofzoff/SIMURG) | **ожидает проверки** | — | Репозиторий есть, но нет измерения false positives на потоковых SQL/русских/JSON ответах. |
 | BK-012 / 15.09 | [The Last AI Built by Humans — RSI levels](https://arxiv.org/html/2609.11873v1) | **разобран** | — | Полная обзорная работа разобрана; типология RSI не доказывает работоспособности L5. |
 | BK-013 / 16.09 | [Retrieve-for-Train (R4T)](https://arxiv.org/html/2603.06397v1) | **исключён** | — | Работа о RL-поиске на наборах данных; нет подходящего trainable target и бюджета для переноса на текущие проекты. |
-| BK-014 / 16.09 | [alphaXiv OpenResearch](https://github.com/alphaXiv/OpenResearch) | **ожидает проверки** | — | Репозиторий OpenResearch изучен по структуре; интеграция с paper2agent и full-text provenance не прогонялась. |
+| BK-014 / 16.09 | [alphaXiv OpenResearch](https://github.com/alphaXiv/OpenResearch) | **разобран** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/alphaxiv-openresearch.md), [Разбор provenance / full-text](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk014-openresearch-review.md) | Проверен официальный Rust v0.2.24: Git commit archives/SQLite/run lineage. В orx paper нет автоматического полного текста OpenAlex/PubMed/bioRxiv; один project fit — dsh-paper2agent, без запусков и A/B. |
 | BK-015 / 17.09 | [Anything2Explainer](https://github.com/Vincentwei1021/anything2explainer) | **исключён** | — | Генерация объясняющих видео не связана с обнаруженной задачей портфеля; авторское обещание скорости не проверено. |
 | BK-016 / 17.09 | [Claude-swarm](https://github.com/cj-vana/claude-swarm) | **ожидает проверки** | — | Оркестратор не тестировался; семантика записи в общие файлы и стоимость API неизвестны. |
 | BK-017 / 17.09 | [Google AI UI design guide](https://aistudio.google.com/learn/ai-ui-design-google-ai-studio) | **исключён** | — | Руководство по дизайну UI не является релевантным научным улучшением работающего backend. |
