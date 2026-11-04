@@ -7,20 +7,21 @@
   "unique_source_url_count": 63,
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
-    "проверен экспериментально": 6,
+    "проверен экспериментально": 7,
     "ожидает проверки": 25,
     "исключён": 19,
-    "разобран": 15
+    "разобран": 14
   },
-  "mapped_study_cards": 7,
-  "mapped_experimental_items": 6,
+  "mapped_study_cards": 9,
+  "mapped_experimental_items": 8,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
     "Reviewed = full paper or full first-party engineering material was assessed, but no isolated project experiment was confirmed.",
     "Awaiting validation = found/triaged in source audit but missing required full-text or reproducible target measurements; an existing GitHub repository does not constitute a runtime test.",
     "Hub study card mapping is only for matching titles; related research from the hub outside the Telegram list must not be counted as original Telegram entries.",
-    "Original Telegram chronology is reconstructed from the preserved audit; the original Telegram message byte stream was not available for independent comparison."
+    "Original Telegram chronology is reconstructed from the preserved audit; the original Telegram message byte stream was not available for independent comparison.",
+    "BK-041 has a permission-gate lab report but is still AWAITING a real eBPF tracer experiment. Linked reports do not imply successful target-capability verification."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -691,12 +692,12 @@
       "source_audit_evidence": "REPO_CONFIRMED",
       "initial_priority_2026_11_03": "A",
       "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Для Linux eBPF требуется отдельная sandbox-проверка прав ядра, накладных расходов и полезности RCA.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "disposition": "BPF_PERMISSION_GATE_VERIFIED_TRACING_BLOCKED",
+      "status_reason_ru": "Официальный Inspektor Gadget v0.57.0 и SHA подтверждены; Bazzite BTF есть, но непривилегированный BPF_MAP_CREATE получил EPERM. Настоящие eBPF traces и RCA overhead остаются непроверенными.",
+      "hub_study_card": "studies/inspektor-gadget.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/inspektor-gadget.md",
+      "hub_experiment_report": "reports/2026-11-04-bk041-inspektor-gadget-gate.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk041-inspektor-gadget-gate.md"
     },
     {
       "id": "BK-042",
@@ -978,13 +979,13 @@
       "source_kind": "Network test utility",
       "source_audit_evidence": "OFFICIAL_FULL_ARTICLE",
       "initial_priority_2026_11_03": "A",
-      "status": "разобран",
-      "disposition": "SOURCE_REVIEWED_ONLY",
-      "status_reason_ru": "Прочитана официальная документация fireperf; никаких нагрузочных тестов сетей/production не проводилось.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status": "проверен экспериментально",
+      "disposition": "ORIGINAL_BINARY_BOUNDED_LOOPBACK_12_RUNS_NO_NETWORK_BENEFIT_CLAIM",
+      "status_reason_ru": "Авторский fireperf 0.3.0 собран из исходников с совпавшей BLAKE2b; в rootless Podman без внешней сети 12/12 тестов (240/240 TCP), correct byte exchange, rejected closed-port negative. Полный make check не завершён, iperf3 и реальный сетевой путь не тестировались.",
+      "hub_study_card": "studies/ipfire-fireperf.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/ipfire-fireperf.md",
+      "hub_experiment_report": "reports/2026-11-04-bk059-fireperf-loopback.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk059-fireperf-loopback.md"
     },
     {
       "id": "BK-060",
