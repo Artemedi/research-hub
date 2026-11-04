@@ -7,7 +7,7 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **21** / ожидает проверки: **13** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **22** / ожидает проверки: **12** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -66,7 +66,7 @@
 | BK-040 / 08.10 | [DeLM decentralized agents](https://arxiv.org/html/2606.10662v3) | **разобран** | — | Научный полный текст изучен; децентрализованный агентный рантайм не воспроизводился. |
 | BK-041 / 08.10 | [Inspektor Gadget eBPF](https://github.com/inspektor-gadget/inspektor-gadget) | **ожидает проверки** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/inspektor-gadget.md), [Проверка допуска](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk041-inspektor-gadget-gate.md) | Официальный CLI v0.57.0 проверен, но BPF_MAP_CREATE вернул EPERM; живые eBPF events и RCA-overhead не проверены. |
 | BK-042 / 10.10 | [Claude Code comprehensive course](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know) | **исключён** | — | Обучающий курс; не демонстрирует отдельное новое исследование или целевой runtime improvement. |
-| BK-043 / 11.10 | [Unsloth Qwen3.5 4B decision model](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth) | **ожидает проверки** | — | Описан training tutorial; реальная локальная модель и данные для 8 GB VRAM не проверялись. |
+| BK-043 / 11.10 | [Unsloth Qwen3.5 4B decision model](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth) | **разобран** | [карточка](../studies/unsloth-decision-model.md), [обзор](2026-11-04-bk043-unsloth-decision-review.md) | Изучены руководство, notebook и контракты; обучение, данные и VRAM не проверены. |
 | BK-044 / 12.10 | [Unsloth Qwen3.5 decision model — repeat](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth) | **исключён** | — | Точный повтор BK-043; второй независимой работы нет. |
 | BK-045 / 12.10 | [Animator](https://github.com/ashishjamarkattel/Animator) | **исключён** | — | Видео-генератор не покрывает текущую измеримую инженерную задачу; время вывода зависит от внешних моделей. |
 | BK-046 / 12.10 | [QwenGyre](https://arxiv.org/html/2609.33848v1) | **исключён** | — | Работа требует масштабного GPU RL-training; текущая инфраструктура/проекты такой контур не подтверждают. |

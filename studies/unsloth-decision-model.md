@@ -1,0 +1,6 @@
+# Unsloth — обучение decision model
+
+- **Источник:** [руководство Unsloth](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth), просмотрено 04.11.2026; [Qwen3.5-4B notebook @d85d113](https://github.com/unslothai/notebooks/blob/d85d113eacfc8a87a7003e73ffb2a86403a94344/nb/Qwen3_5_%284B%29-Decision.ipynb), [реализация @e2ffc740](https://github.com/unslothai/unsloth/tree/e2ffc740508707b8f069b3e90aa94de8daea8da0). Telegram BK-043; BK-044 — точный повтор.
+- **Подход:** дообучить LLM с decision head и LoRA на структурированных `state/questions/gold`; далее оценить и калибровать вероятности. Параметры таблиц, примера и notebook различаются, переносить результаты между ними нельзя. Авторские accuracy/VRAM `AUTHOR_REPORTED`.
+- **Проверка:** исследованы руководство, notebook, фрагменты реализации и upstream tests; обучение, данные, веса, тесты GPU и репликация `NOT_RUN`. Параметры / лицензии модели, датасетов и кода требуют отдельной проверки; источники кода Unsloth помечены `AGPL-3.0-only`.
+- **Проекты:** `9router`, `dsh-runtime` — условный выбор среди разрешённых маршрутов, `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE`; нельзя делегировать модели право расширять пользовательские политики. [Обзор](../reports/2026-11-04-bk043-unsloth-decision-review.md); `NO_PRODUCTION_APPROVAL`.

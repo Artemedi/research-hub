@@ -8,11 +8,11 @@
   "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
   "count_by_status": {
     "проверен экспериментально": 12,
-    "ожидает проверки": 13,
+    "ожидает проверки": 12,
     "исключён": 19,
-    "разобран": 21
+    "разобран": 22
   },
-  "mapped_study_cards": 22,
+  "mapped_study_cards": 23,
   "mapped_experimental_items": 13,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
@@ -737,13 +737,15 @@
       "source_kind": "Training tutorial",
       "source_audit_evidence": "TUTORIAL_SOURCE",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Описан training tutorial; реальная локальная модель и данные для 8 GB VRAM не проверялись.",
-      "hub_study_card": null,
-      "hub_study_url": null,
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_TRAINING_NOT_RUN",
+      "status_reason_ru": "Изучены руководство, notebook и контракты; обучение, данные и VRAM не проверены.",
+      "hub_study_card": "studies/unsloth-decision-model.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/unsloth-decision-model.md",
       "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_url": null,
+      "hub_review_report": "reports/2026-11-04-bk043-unsloth-decision-review.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk043-unsloth-decision-review.md"
     },
     {
       "id": "BK-044",
