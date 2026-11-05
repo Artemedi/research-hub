@@ -2,7 +2,7 @@
 
 ## New research intake — 2026-11-05
 
-- [Sequential diagnosis with language models / MAI-DxO](sequential-diagnosis-language-models.md) — [full-source review, applicability and A/B plan](../reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md); `FIT_CANDIDATE / NEEDS_EVIDENCE`, not production-approved.
+- [Sequential diagnosis with language models / MAI-DxO](sequential-diagnosis-language-models.md) — [первоначальный полнотекстовый обзор](../reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md) → [144 Wello A/B и внедрение в TrinMedicalBot 05.11.2026](../reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md). TrinMedicalBot: `PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING`; sequential-rca: `FIT_CANDIDATE / NEEDS_EVIDENCE`; оригинальный SDBench не воспроизводился.
 
 **Telegram BK-053 — Yahont CE:** [карточка](yahont-ce.md), [source review и synthetic ID helper test](../reports/2026-11-04-bk053-yahont-review.md); retrieval не запускался.
 
