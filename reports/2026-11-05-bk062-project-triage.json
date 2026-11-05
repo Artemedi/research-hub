@@ -6,7 +6,7 @@
   "source": "morluto/rea",
   "source_sha": "970969cb53f788976e64eae387076fcea104b603",
   "review_state": "PARTIAL_SOURCE_REVIEW",
-  "report": "reports/2026-11-05-bk062-rea-source-gate.md",
+  "report": "reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md",
   "card_count": 45,
   "profile_candidates": [
     "MyPartyIsGrinding",

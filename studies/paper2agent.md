@@ -21,7 +21,7 @@ From 100 biology papers, 74 could be agentified, yielding 599 proposed tools, 59
 
 ## Further cross-project evaluation
 
-- Candidate applicability beyond DSH (2026-11-03): [dsh-paper2agent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/dsh-paper2agent/PROJECT.md), [paper2agent-index](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/paper2agent-index/PROJECT.md). Причина: Проверяемое преобразование авторского кода в ограниченные научные инструменты; индекс только derived. [Cross-project matrix](../reports/2026-11-03-project-mapping-historical-16.md). **Profile-only match, not a verified code integration.**
+- Candidate applicability beyond DSH (2026-11-03): [dsh-paper2agent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/dsh-paper2agent/PROJECT.md), [paper2agent-index](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/paper2agent-index/PROJECT.md). Причина: Проверяемое преобразование авторского кода в ограниченные научные инструменты; индекс только derived. [Cross-project matrix](../portfolio/historical/project-fit.md). **Profile-only match, not a verified code integration.**
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.

@@ -1,0 +1,983 @@
+{
+  "schema_version": 1,
+  "migrated_on": "2026-11-05",
+  "base_commit": "855762c75348bd68cb56aba7582e535143d0fbbd",
+  "description": "Canonical paths and generated compatibility endpoints. Evidence statuses are owned by the source cards/ledger, never inferred by the catalog.",
+  "studies": [
+    "studies/agent-error-dataset.md",
+    "studies/agent-mosaic.md",
+    "studies/agent-risk.md",
+    "studies/agent-transfer-protocol.md",
+    "studies/agentic-self-awareness.md",
+    "studies/alphaxiv-openresearch.md",
+    "studies/anthropic-agent-automations.md",
+    "studies/behavior-beyond-text.md",
+    "studies/benchshield.md",
+    "studies/bird-rl.md",
+    "studies/cera-moa.md",
+    "studies/chartli.md",
+    "studies/claude-swarm.md",
+    "studies/concordat.md",
+    "studies/covert-assistance.md",
+    "studies/cursor-token-efficiency.md",
+    "studies/cve-2026-82533-technical-disclosure.md",
+    "studies/daedalus.md",
+    "studies/decision-geometry-harness.md",
+    "studies/drag.md",
+    "studies/dsh-superagent-prototype.md",
+    "studies/exactly-once-limbo.md",
+    "studies/experienceindex.md",
+    "studies/geoagent.md",
+    "studies/goal-aware-dynamic-collaboration.md",
+    "studies/harness2.md",
+    "studies/harnesssecurity-bench.md",
+    "studies/htn-orchestrate.md",
+    "studies/hyperresearch.md",
+    "studies/hyra-2.md",
+    "studies/inspektor-gadget.md",
+    "studies/ipfire-fireperf.md",
+    "studies/jevagentharness.md",
+    "studies/julia-1.md",
+    "studies/karpathy-autoresearch.md",
+    "studies/kvset.md",
+    "studies/kvtether.md",
+    "studies/lago.md",
+    "studies/local-knowledge-graph.md",
+    "studies/maadbench.md",
+    "studies/matoi.md",
+    "studies/mcp-toolbox-postgres.md",
+    "studies/memcomposer.md",
+    "studies/memory-centric-continual-learning.md",
+    "studies/memscope.md",
+    "studies/microsoft-skill-recorder.md",
+    "studies/novafabric.md",
+    "studies/open-steps.md",
+    "studies/package-hallucination-rule-files.md",
+    "studies/paper2agent.md",
+    "studies/pgbot.md",
+    "studies/poisoned-skills.md",
+    "studies/polar.md",
+    "studies/random-attention.md",
+    "studies/realm.md",
+    "studies/recap.md",
+    "studies/red-teaming-auto-mode.md",
+    "studies/remory.md",
+    "studies/reva.md",
+    "studies/reverse-engineer-anything.md",
+    "studies/rrsi.md",
+    "studies/self-replicating-prompt-injections.md",
+    "studies/sequential-diagnosis-language-models.md",
+    "studies/silent-cue-loss.md",
+    "studies/simurg.md",
+    "studies/squidagent.md",
+    "studies/statecomp.md",
+    "studies/swrouter.md",
+    "studies/tencent-teamai-cli.md",
+    "studies/toolgrad.md",
+    "studies/transferable-tool-selection.md",
+    "studies/trust-region-injection.md",
+    "studies/understand-anything.md",
+    "studies/unreal-agent-bk025.md",
+    "studies/unsloth-decision-model.md",
+    "studies/vercel-agent-desktop.md",
+    "studies/veriharness.md",
+    "studies/warp-skill-doctor.md",
+    "studies/yahont-ce.md",
+    "studies/youtube-skills.md",
+    "studies/zero-code.md"
+  ],
+  "documents": [
+    {
+      "from": "reports/2026-11-04-bk002-tencent-teamai-cli-review.md",
+      "to": "reviews/tencent-teamai-cli/2026-11-04.md",
+      "title": "Tencent TeamAI CLI — исходники и расхождение форка",
+      "kind": "review",
+      "original_sha256": "8598a5c83d7d7a1e1b13375cfa24548dadfecf9cbec0c484c2e471cc1edd597b",
+      "legacy_headings": [
+        "Telegram BK-002 — Tencent TeamAI CLI: исходный код, fork divergence и применимость к портфелю",
+        "1. Что именно является источником",
+        "2. Функциональность, подтверждённая исходным кодом",
+        "3. Что фактически добавлено в Artemedi fork",
+        "4. Project-fit: проверены все 45 существующих PROJECT.md",
+        "5. Измеримый следующий эксперимент (НЕ выполнялся)",
+        "6. Решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk006-open-steps-review.md",
+      "to": "reviews/open-steps/2026-11-04.md",
+      "title": "Open Steps — хуки и ограничения",
+      "kind": "review",
+      "original_sha256": "d78ad7f15655232fdc0cad122f558765c7a28ab05ffd2aacec2aab0b9210ef05",
+      "legacy_headings": [
+        "BK-006 — Open Steps: инженерный обзор, проверки и применимость",
+        "Что именно делает источник",
+        "Авторские результаты и их границы",
+        "Независимая изолированная проверка",
+        "Research → Project",
+        "Предыдущая проверка",
+        "Следующий измеримый A/B и решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk011-simurg-review.md",
+      "to": "reviews/simurg/2026-11-04.md",
+      "title": "SIMURG — потоковый монитор",
+      "kind": "review",
+      "original_sha256": "cda42c0a0c9fd1a8e76462dc3a99bd8358912fb65bab30e95d211d2e58548017",
+      "legacy_headings": [
+        "BK-011 — SIMURG: потоковый монитор, статистические ограничения и project fit",
+        "Метод и результаты авторов",
+        "Проверка кода и наблюдаемые риски",
+        "Наш ограниченный offline test",
+        "Research → Project",
+        "Минимальный A/B и решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk014-openresearch-review.md",
+      "to": "reviews/alphaxiv-openresearch/2026-11-04.md",
+      "title": "alphaXiv OpenResearch — источники и границы доступа",
+      "kind": "review",
+      "original_sha256": "0da97481bf051f333e27966ed707a13c6ca2a86355497a723f151f1cecddaf3e",
+      "legacy_headings": [
+        "BK-014 — alphaXiv OpenResearch: полнотекстовый gate, Git provenance и экспериментальный runtime",
+        "1. Первичные источники и ревизии",
+        "2. Что технически реализовано в коде (VERIFIED_STATIC)",
+        "3. Критический FULL_TEXT gate для нашего исследовательского процесса",
+        "4. Security/privacy и накладные расходы",
+        "5. Research-to-Project: 45 карточек, shortlist из одного",
+        "6. Минимальный offline A/B: план, не эксперимент",
+        "7. Решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk016-claude-swarm-review.md",
+      "to": "reviews/claude-swarm/2026-11-04.md",
+      "title": "Claude Swarm — workers и изоляция",
+      "kind": "review",
+      "original_sha256": "5343c806131e10496d9586b62c7a8a48b602778419b75266f6a55ac4c320f924",
+      "legacy_headings": [
+        "BK-016 — Claude Swarm: workers, изоляция и ограничения протоколов",
+        "Как устроено",
+        "Подтверждённые исходником ограничения",
+        "Матрица исследования → проекты",
+        "Следующий A/B и решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk019-warp-skill-doctor-review.md",
+      "to": "reviews/warp-skill-doctor/2026-11-04.md",
+      "title": "Warp Skill Doctor — атрибуция и приватность",
+      "kind": "review",
+      "original_sha256": "accbe3559cd5b6d4b0058376d5f546e4bcf3e99cfe96b65bdd6d37aa44becd8f",
+      "legacy_headings": [
+        "BK-019 — Warp Skill Doctor: оценка навыков и граница приватности",
+        "Метод и ограничения",
+        "Изолированная проверка",
+        "Матрица",
+        "Минимальный A/B"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk022-skill-recorder-review.md",
+      "to": "reviews/microsoft-skill-recorder/2026-11-04.md",
+      "title": "Microsoft Skill Recorder — действия и приватность",
+      "kind": "review",
+      "original_sha256": "7e629f439bb280c34a4b411f12d6f21d9add58c0ab84ef8d488ae7dcae738ba7",
+      "legacy_headings": [
+        "BK-022 — Microsoft Skill Recorder: воспроизведение действий и приватность",
+        "Метод, данные и границы",
+        "Проверка защиты и её реальные границы",
+        "Research → Project",
+        "Минимальное сравнение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk024-local-knowledge-graph-review.md",
+      "to": "reviews/local-knowledge-graph/2026-11-04.md",
+      "title": "Local Knowledge Graph — граф рассуждений",
+      "kind": "review",
+      "original_sha256": "e65c06ca6a505b31aec1c7aa04273c4e9019fc75d9a84021ce4c8a127a3928c0",
+      "legacy_headings": [
+        "BK-024 — Local Knowledge Graph: граф модельных шагов и границы доказательств",
+        "Метод и авторские результаты",
+        "Изолированная проверка графовой функции",
+        "Лицензия и безопасность",
+        "Исследование → проекты",
+        "A/B план"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk025-unreal-video-provenance.md",
+      "to": "reviews/unreal-agent/2026-11-04.md",
+      "title": "Unreal Agent — доступность исходного видео",
+      "kind": "review",
+      "original_sha256": "f9b0fcf40bf3480a49da0161d9f28ed5d32709d8e340d0e3c554199016817d5b",
+      "legacy_headings": [
+        "BK-025 — provenance и отсрочка: исходное видео Unreal Agent"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk026-julia-1-review.md",
+      "to": "reviews/julia-1/2026-11-04.md",
+      "title": "Julia 1 — типы и вероятности",
+      "kind": "review",
+      "original_sha256": "6daecbc75e25113fd14593427ee42b8842307308203223db642a480587b70560",
+      "legacy_headings": [
+        "BK-026 — Julia 1: source review и границы вероятностей",
+        "Устройство и доказательства",
+        "Проверка",
+        "Портфель и возможное применение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk028-hyperresearch-review.md",
+      "to": "reviews/hyperresearch/2026-11-04.md",
+      "title": "Hyperresearch — проверка цитирования",
+      "kind": "review",
+      "original_sha256": "d3e8e195d8c65b2c0ac8d0cdf27e8114aab3690e6b2c5c2f1a4ffd0d992af509",
+      "legacy_headings": [
+        "BK-028 — Hyperresearch: source review цитирования и контрпример",
+        "Что делает и что заявлено",
+        "Изолированный воспроизводимый тест",
+        "Проекты и план"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk029-zero-code-review.md",
+      "to": "reviews/zero-code/2026-11-04.md",
+      "title": "0-CODE — состояние и фильтры",
+      "kind": "review",
+      "original_sha256": "3b212e2f474e19d8c6c4070075e8afde5718de41ffa05ebff48643ac38f4e49b",
+      "legacy_headings": [
+        "BK-029 — 0-CODE: автономный цикл, состояние и границы фильтра",
+        "Механика и ограничения",
+        "Изолированная проверка",
+        "Портфель и дальнейшая проверка"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk034-autoresearch-review.md",
+      "to": "reviews/karpathy-autoresearch/2026-11-04.md",
+      "title": "Karpathy autoresearch — исходники и ограничения",
+      "kind": "review",
+      "original_sha256": "3c3467118a5084da54b7ad8de1232c31baa2f9a120216e99a2ac5bd2d80ff05a",
+      "legacy_headings": [
+        "BK-034 — autoresearch: независимый source review при недоступном видео",
+        "Технический подход",
+        "Портфель и дальнейшие условия"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk037-youtube-skills-review.md",
+      "to": "reviews/youtube-skills/2026-11-04.md",
+      "title": "youtube-skills — инструкции и внешние зависимости",
+      "kind": "review",
+      "original_sha256": "57a0ddceb49b865bbb28ed3208aa806f8400f7935886a51f8312192eaa01b8ea",
+      "legacy_headings": [
+        "BK-037 — youtube-skills: обзор инструкций и внешней зависимости",
+        "Контракт и пределы",
+        "Применимость ко всем проектам"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk041-inspektor-gadget-gate.md",
+      "to": "reviews/inspektor-gadget/2026-11-04.md",
+      "title": "Inspektor Gadget — разрешения eBPF",
+      "kind": "review",
+      "original_sha256": "8964189df53c6845836781b27feecc0ccecfb978e98a22dfd8dba252b2840f7f",
+      "legacy_headings": [
+        "BK-041 — Inspektor Gadget v0.57.0 / eBPF на Bazzite 44",
+        "Первичные источники и версия",
+        "Исполненная проверка — только неповышенные привилегии",
+        "Предметная применимость к AKUZ/DBA",
+        "Повторение проверки только прав",
+        "Инструмент предварительно скачивается из официального GitHub release v0.57.0,",
+        "проверяется SHA-256 (значение указано выше) и извлекается в отдельный tmp каталог."
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk043-unsloth-decision-review.md",
+      "to": "reviews/unsloth-decision-model/2026-11-04.md",
+      "title": "Unsloth — обучение decision model",
+      "kind": "review",
+      "original_sha256": "26a4422af05229ea5e1374c589c3c3167c3b6f30c0aa867112c920e0ba1880a4",
+      "legacy_headings": [
+        "BK-043 — Unsloth decision model: руководство, notebook и код",
+        "Метод и качество доказательств",
+        "Применимость к портфелю"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk047-agent-automations-review.md",
+      "to": "reviews/anthropic-agent-automations/2026-11-04.md",
+      "title": "Anthropic agent automations — исходные контракты",
+      "kind": "review",
+      "original_sha256": "498f845b1d4b3182fc519cdf814d84c8710ee4c2b889cceca5c60593006b69de",
+      "legacy_headings": [
+        "BK-047 — Anthropic agent automations: source review",
+        "Метод и ограничение гарантии",
+        "Проекты и границы"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk048-understand-anything-review.md",
+      "to": "reviews/understand-anything/2026-11-04.md",
+      "title": "Understand Anything — граф и SQL parser",
+      "kind": "review",
+      "original_sha256": "9bb48800319578aa413123a54103871f31e01a95c6176e4dd7f54ef08615e493",
+      "legacy_headings": [
+        "BK-048 — Understand Anything: исходники графа и границы SQL parser",
+        "Устройство и исправление первичного screening",
+        "Изолированные проверки",
+        "Проектное сопоставление"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk050-chartli-review.md",
+      "to": "reviews/chartli/2026-11-04.md",
+      "title": "Chartli — parser и отображение",
+      "kind": "review",
+      "original_sha256": "67a53f8069ef25c47de584bda3b0e6d609931e2b709232fbb7276d13fe48251a",
+      "legacy_headings": [
+        "BK-050 — Chartli: review parser, нормализации и отображения",
+        "Контракт и наблюдение",
+        "Проектные соответствия"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk053-yahont-review.md",
+      "to": "reviews/yahont-ce/2026-11-04.md",
+      "title": "Yahont CE — поиск, ACL и лицензия",
+      "kind": "review",
+      "original_sha256": "0abe0340ccd573516cbd36061b510d80d3eb0e8386582f70a5e81416876e5958",
+      "legacy_headings": [
+        "BK-053 — Yahont CE: retrieval, ACL и лицензии",
+        "Лицензия и область продукта",
+        "Изолированный helper test",
+        "45 проектных профилей и план"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-bk059-fireperf-loopback.md",
+      "to": "reviews/ipfire-fireperf/2026-11-04.md",
+      "title": "IPFire fireperf — TCP loopback",
+      "kind": "review",
+      "original_sha256": "39ce35aee3ac74d4e544ebd1d066cfe8710c483f98f38ceea16427b41489559e",
+      "legacy_headings": [
+        "BK-059 — IPFire fireperf 0.3.0: реальный bounded TCP loopback lab",
+        "Авторские источники и provenance",
+        "Сборка оригинального пакета",
+        "Реальный ограниченный сетевой эксперимент",
+        "Применение к AKUZ и DBA",
+        "Повторение",
+        "Получить оригинальный fireperf-0.3.0.tar.gz (ссылка выше),",
+        "предварительно сверить b2sum с зафиксированным значением.",
+        "Затем в другом rootless Podman контейнере:",
+        "- передать собранный бинарник + необходимые runtime shared libraries",
+        "  в read/write рабочий /src (на Fedora toolbox liburing.so.2 добавлялась локально);",
+        "- НЕ предоставлять network/host PID/privileged доступ;",
+        "- --network=none и --cpus=2 --memory=512m."
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-bk060-dsh-superagent-review.md",
+      "to": "reviews/dsh-superagent-prototype/2026-11-05.md",
+      "title": "DSH Superagent Prototype — полномочия и lifecycle",
+      "kind": "review",
+      "original_sha256": "5adf81b50cbaa957d8eb0843e5af871921c2b85aacbdd0fa6e0739c382817a3c",
+      "legacy_headings": [
+        "BK-060 — DSH Superagent Prototype: полномочия, work items и границы изоляции",
+        "Источник и область проверки",
+        "Что действительно ограничивает полномочия",
+        "Permission и sandbox: разные уровни",
+        "Privacy и внешние действия",
+        "Lifecycle, восстановление и доставка",
+        "Выполненный ограниченный эксперимент",
+        "В корне research-hub; $source — отдельный checkout указанного SHA.",
+        "Матрица shortlist",
+        "Следующий gate и исторический статус"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-bk062-rea-source-gate.md",
+      "to": "reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md",
+      "title": "REA — границы статического анализа",
+      "kind": "review",
+      "original_sha256": "6ee485c4890634ac9148fea2fc9314cba86a39a3758adab5b9ca36e882a5d6f1",
+      "legacy_headings": [
+        "BK-062 — REA: разделение static inspection и runtime execution",
+        "Проверенные источники",
+        "Что установлено по коду",
+        "Портфель и неподтверждённые кандидаты",
+        "Неисполненный gate"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-bk062-rea-bounded-followup.md",
+      "to": "reviews/reverse-engineer-anything/2026-11-05-pe-layout.md",
+      "title": "REA — проверка PE layout",
+      "kind": "review",
+      "original_sha256": "b36947ef9cf68f6dbc26ca755795aeca9c972aa132da6de08a9349772584c2ee",
+      "legacy_headings": [
+        "BK-062 — REA: проверка static PE reader, не всей RE-системы",
+        "Ревизия и прочитанный код",
+        "Воспроизводимый опыт",
+        "Исследование → проекты"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-bk063-hyra2-primary-review.md",
+      "to": "reviews/hyra-2/2026-11-05.md",
+      "title": "Hyra 2.0 — архитектура исследовательских агентов",
+      "kind": "review",
+      "original_sha256": "33c5c8823af088f3ac5753ee0a3ccd6f5af3b767d1d4dfd7550ac0a9d43ea5ce",
+      "legacy_headings": [
+        "BK-063 — Hyra 2.0: полный инженерный текст найден, реализация не воспроизведена",
+        "Первичный материал и воспроизводимость доступа",
+        "Что описывает автор",
+        "Оценка метода и пределы вывода",
+        "Исследование → проекты"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-bk065-agent-desktop-source-gate.md",
+      "to": "reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md",
+      "title": "Agent Desktop — ссылки и разрешения",
+      "kind": "review",
+      "original_sha256": "9ab34b3ee50184c0c10816cdd99e9472a3fe4abb50e023fc09bdb4044b5c525b",
+      "legacy_headings": [
+        "BK-065 — Agent Desktop: snapshot refs, permissions и GUI gate",
+        "Версия и границы прочитанного",
+        "Наблюдаемая архитектура",
+        "Privacy и безопасный стенд",
+        "Портфель и следующий измеримый gate"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-bk065-agent-desktop-bounded-followup.md",
+      "to": "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+      "title": "Agent Desktop — изолированная проверка Wayland",
+      "kind": "review",
+      "original_sha256": "97f316b149212de8dc9d91a4dbf2dcc3f43836875864374cbc5eae3a6d7de2a5",
+      "legacy_headings": [
+        "BK-065 — Agent Desktop: original CLI на искусственном Wayland desktop",
+        "Код и границы",
+        "Реальный ограниченный запуск",
+        "Исследование → проекты"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-benchshield-reward-integrity-offline.md",
+      "to": "reviews/benchshield/2026-11-04.md",
+      "title": "BenchShield — целостность reward и provenance",
+      "kind": "review",
+      "original_sha256": "5a7eb77c8d58d2c8d49a9f08cc76ff81028d025fd2f36c0a8b1a54a4452295ae",
+      "legacy_headings": [
+        "BenchShield — reward-integrity lifecycle and evidence-boundary replay",
+        "Цель и проверенные первоисточники",
+        "Дизайн исследования",
+        "Классы и ожидаемые реакции",
+        "Результаты реально запущенного скрипта",
+        "Реальная точка интеграции и безопасность",
+        "Воспроизведение",
+        "Скрипт печатает JSON; status=PASS; выход с ошибкой при ложных контрольных ожиданиях.",
+        "Решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md",
+      "to": "reviews/exactly-once-limbo/2026-11-04.md",
+      "title": "LIMBO и TelegramBot — неоднозначная доставка",
+      "kind": "review",
+      "original_sha256": "f393e3bc5a9ab69fc958127ef716975703d2ea5a2115c46e202b78c76d0a42dd",
+      "legacy_headings": [
+        "LIMBO × TelegramBot — ambiguous sendMessage outcome and duplicate publication",
+        "Почему выбран именно этот проект",
+        "Источники и границы",
+        "Что действительно запущено",
+        "Контроль с настоящим исходным LIMBO (не Telegram API!)",
+        "Что может сделать TelegramBot без поддержки key на сервере",
+        "Архитектурная рекомендация / trade-offs",
+        "Верификация и репродукция",
+        "Optional original full suite:",
+        "Gate"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md",
+      "to": "reviews/mcp-toolbox-postgres/2026-11-04.md",
+      "title": "MCP Toolbox и Wiki_PG — настройки PostgreSQL",
+      "kind": "review",
+      "original_sha256": "dc31c47e81a03bb3b14e6e0649f86ea1b9fffa547fbd7d3465556696eb975f77",
+      "legacy_headings": [
+        "MCP Toolbox v1.15.0 vs Wiki_PG MCP — PostgreSQL settings / snapshot contract",
+        "Вопрос",
+        "Реальные версии, источники, тестовый контур",
+        "Проверки MCP, независимый oracle",
+        "Overhead: micro-lab, не производственный benchmark",
+        "Безопасность и интеграционные нюансы",
+        "Репродукция на отдельной машине",
+        "Для точной репликации: git -C \"$LAB/Wiki_PG\" checkout d55721bb99bff25fae352341cfd630c048693d6b",
+        "Дождаться podman exec trin-toolbox-lab-20261104 pg_isready -U postgres.",
+        "Верификация, применимость, решение"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-novafabric-real-capsules-replay.md",
+      "to": "reviews/novafabric/2026-11-04.md",
+      "title": "NovaFabric — капсулы, replay и проверка evidence",
+      "kind": "review",
+      "original_sha256": "9ca2a5a09100796e99dcef8af273b28f439457754967af14a0697d0717051b1e",
+      "legacy_headings": [
+        "NovaFabric v0.108.0 — реальные Run Capsules, mocked replay, seal и независимый Evidence Bundle",
+        "Первоисточники и версия",
+        "Какие реальнo upstream-тесты выполнены",
+        "Наш independent A/B на 20 test-run capsules",
+        "Итоговые счётчики",
+        "Negative controls через официальный `nova replay`",
+        "Подпись, manifest и нарушения целостности",
+        "Переносимый Evidence Bundle и независимый verifier",
+        "Производительность, storage и trade-offs",
+        "Отношение к проектам",
+        "Воспроизведение",
+        "Запустить в новом, пустом --workspace. Только synthetic test, никаких real agents.",
+        "Crypto verification; no imports from novafabric:",
+        "Acceptance"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-pgbot-postgresql-lab.md",
+      "to": "reviews/pgbot/2026-11-04.md",
+      "title": "pgbot — диагностические проверки PostgreSQL",
+      "kind": "review",
+      "original_sha256": "34486b747a63c60a240c2cfc81bed1d86e190dcdb2abf7122daa6f46c995f6d6",
+      "legacy_headings": [
+        "PostgreSQL / pgbot v0.9.0 — controlled diagnostic lab",
+        "Первичные материалы, версии, полномочия",
+        "Проверенные переходы и независимый oracle",
+        "Накладные расходы: ограниченный замер",
+        "Воспроизведение",
+        "Дождаться pg_isready -U postgres (инициализация занимает несколько секунд).",
+        "Сопоставление с проектами и ограничения",
+        "Границы изменений"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-rrsi-harness2-overfit-lab.md",
+      "to": "reviews/rrsi-harness2/2026-11-04.md",
+      "title": "RRSI и Harness² — переобучение при отборе",
+      "kind": "review",
+      "original_sha256": "d9afeb6c124a0600713ab37a8362293438ff822c4300a1375b20def33d79a478",
+      "legacy_headings": [
+        "RRSI / Harness² — offline experiment on harness-selection overfitting",
+        "Задача и первоисточники",
+        "Сначала выполнили upstream test suites",
+        "Наш фиксированный эксперимент",
+        "Выбор кандидата реальным RRSI selector",
+        "Контракт Harness²",
+        "Измеренные trade-offs и пределы",
+        "Повторение",
+        "В чистом временном каталоге клонировать репозитории на pinned SHA выше."
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-veriharness-agent-config-offline.md",
+      "to": "reviews/veriharness/2026-11-04.md",
+      "title": "VeriHarness и agent-config — проверка gates",
+      "kind": "review",
+      "original_sha256": "2db1f93e1f5a42163ec5a1627bdda9b4886ef46cb71a010b7bd0eae3564ba490",
+      "legacy_headings": [
+        "VeriHarness × agent-config — offline verification-gate experiment",
+        "Версии и границы",
+        "Test A — agent-config citation guard (50 процедурно сгенерированных утверждений)",
+        "Test B — реальные deterministic gates VeriHarness (16 комплектов артефактов)",
+        "Повторяемость и код",
+        "Зафиксировать SHA ревизий выше или использовать pinned checkout.",
+        "Что делать с результатом",
+        "Изменения"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md",
+      "to": "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md",
+      "title": "MAI-DxO и SDBench — применимость к проектам",
+      "kind": "review",
+      "original_sha256": "08c56ff3bdc19265bb98c83f537a844d247b1a655d7fe844c35e3907277e7400",
+      "legacy_headings": [
+        "MAI-DxO / SDBench: применимость к TrinMedicalBot и портфелю",
+        "1. Что реально проверяет исследование",
+        "2. Проверка полного портфеля: shortlist",
+        "3. TrinMedBot: что внедрено, чего пока нет",
+        "4. Минимальный независимый A/B и gate",
+        "5. Итог"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md",
+      "to": "reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md",
+      "title": "TrinMedicalBot — A/B и внедрение Challenger v2",
+      "kind": "review",
+      "original_sha256": "75798e964f3b02a2e54de70356fa39e1af118fc60a90e6f2a56d3adbdfd0c01d",
+      "legacy_headings": [
+        "Sequential Diagnosis → TrinMedicalBot: реальный A/B и внедрение Challenger v2",
+        "1. Исследование → проекты: актуальная матрица",
+        "2. Wello A/B: что действительно измерено",
+        "3. Что внедрено 5 ноября на Bazzite",
+        "4. Остаточные риски и gate"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-bookmark-hypotheses-offline-experiments.md",
+      "to": "portfolio/2026-11-03/offline-experiments.md",
+      "title": "Портфельные гипотезы — offline-проверки",
+      "kind": "portfolio",
+      "original_sha256": "6df37d0ef4908780766d939e5abbbd9540c55a6f9aaf932494ac6a42abba6930",
+      "legacy_headings": [
+        "Offline-эксперименты по избранному: Vectorless Retrieval, DBA Safety, Agent Verification",
+        "Границы и версии",
+        "EXP-01. Vectorless RAG: влияние FTS-оператора и дедупликации на Recall@8",
+        "EXP-02. Минимальные права DBA-диагностики",
+        "EXP-03. Agent-config: регрессионный baseline, не A/B verifier",
+        "EXP-04. Integrity smoke-test научного архива",
+        "Дополнительные test failures и ограничения среды",
+        "Решения и границы публикации"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-colleague-dotnet-retrospective.md",
+      "to": "portfolio/2026-11-03/dotnet-retrospective.md",
+      "title": "Проект .NET — ретроспективный отбор",
+      "kind": "portfolio",
+      "original_sha256": "83df56f0111cf2d0740269f2fea4c3bdc4e3207215bd8ec41c4917c25b045121",
+      "legacy_headings": [
+        "Повторный отбор ранее рассмотренных работ для проекта коллеги",
+        "Самые подходящие гипотезы",
+        "Остальные кандидаты",
+        "Недостаточно представленные темы старого архива"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-project-mapping-historical-16.md",
+      "to": "portfolio/historical/project-fit.md",
+      "title": "Исторические исследования — соответствие проектам",
+      "kind": "portfolio",
+      "original_sha256": "dfc0ebe9273afc7a7970ecc8778f5a4c006a422fbce2aa34dd54b533b06c3f23",
+      "legacy_headings": [
+        "Ретроспективная матрица: ранее проверенные исследования → проекты",
+        "Проверенные ранее работы (16)",
+        "Отдельные ограничения",
+        "Обратные ссылки в каталоге"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-historical-gap-closure-2026-09-03-to-15.md",
+      "to": "portfolio/2026-09-03--2026-09-15/review.md",
+      "title": "Исследования 3–15 сентября 2026",
+      "kind": "portfolio",
+      "original_sha256": "c51f0e3d4a8c022e698005e09325cda62f0b1e4bc621929339b7ee84fd9d7680",
+      "legacy_headings": [
+        "Закрытие исторических пробелов: 3–15 сентября 2026",
+        "По каждой ранее непроверенной работе",
+        "Правила для исторических решений",
+        "Дополнительное устранение исторического пробела: Auto Mode appendices",
+        "Отдельный технический источник: CVE-2026-82533",
+        "Отдельная оригинальная инженерная оценка: 7 октября",
+        "Оставшаяся неопределённость по полноте архива",
+        "Итог и контроль качества"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-project-mapping-september-gaps.md",
+      "to": "portfolio/2026-09-03--2026-09-15/project-fit.md",
+      "title": "Исследования 3–15 сентября — соответствие проектам",
+      "kind": "portfolio",
+      "original_sha256": "4786e164074e4d9c41c27864b96b6ac40aed943091d489410084ccbb1fc7a38e",
+      "legacy_headings": [
+        "Сопоставление ранних исторических работ с портфелем",
+        "Что не является новой работой для проектов"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-review-of-2026-10-06-to-12.md",
+      "to": "portfolio/2026-10-06--2026-10-12/review.md",
+      "title": "Исследования 6–12 октября 2026",
+      "kind": "portfolio",
+      "original_sha256": "b7995a0ca67d64312a4b27278e260410876bc6d04c66a9512de274142d38265c",
+      "legacy_headings": [
+        "Полное ревью восстановленного выпуска 6–12 октября 2026",
+        "Вывод и порядок работ",
+        "1. HarnessSecurity-Bench — security vs legitimate utility",
+        "2. SquidAgent — когда агентное распараллеливание окупается",
+        "3. ExperienceIndex — память с привязкой к конкретным артефактам",
+        "4. DAEDALUS — процедурная память из самостоятельной практики",
+        "5. PackHallu — подмена зависимостей через файлы инструкций агенту",
+        "6. POLAR — оценка обратимости инструментальных действий",
+        "7. REMORY — обучаемая soft-token память при compaction",
+        "Практические решения, нуждающиеся в подтверждении"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-project-mapping-2026-10-06-to-12.md",
+      "to": "portfolio/2026-10-06--2026-10-12/project-fit.md",
+      "title": "Исследования 6–12 октября — соответствие проектам",
+      "kind": "portfolio",
+      "original_sha256": "1e8f3b9dc82be10c0dc6ff24fa9bbad6f7854760c4626368edf92fa20354c0d0",
+      "legacy_headings": [
+        "Соответствие исследований за 6–12 октября конкретным проектам",
+        "Сводная матрица — что какому проекту подходит",
+        "Критерии отбора и примечания",
+        "Минимальные проверяемые выходы следующего этапа"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-full-text-review-2026-10-12-to-19.md",
+      "to": "portfolio/2026-10-12--2026-10-19/review.md",
+      "title": "Исследования 12–19 октября 2026",
+      "kind": "portfolio",
+      "original_sha256": "34c9655a0e9f0e5de69a3b701e087cb944ba443490b8b870f153fbcc468a6b7f",
+      "legacy_headings": [
+        "Full-text review: historical Research Watch 12–19 October 2026",
+        "Итоговая исследовательская триаж-оценка",
+        "1. HTN-Orchestrate — Hierarchical Task Network Framework for Multi-Agent Orchestration",
+        "2. agent-risk — Risk Assessment for Changes to AI Agents",
+        "3. JevAgentHarness — Decision Models That Share Control with LLMs",
+        "4. MemComposer — Learning to Assemble Memories via Reinforcement Learning",
+        "5. LAGO — Language Agents with Reusable Growing Options",
+        "6. Agentic Self-Awareness — Aligning Knowing, Acting, and Holding",
+        "7. MemScope — Evolving Agent Memory Architectures through Localized Code Repair",
+        "8. Matoi — Selective Revalidation of Consequence Evidence for Agent Authorization",
+        "Решения и ограничения принятия"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-project-mapping-2026-10-12-to-19.md",
+      "to": "portfolio/2026-10-12--2026-10-19/project-fit.md",
+      "title": "Исследования 12–19 октября — соответствие проектам",
+      "kind": "portfolio",
+      "original_sha256": "e8d98626344ae8487b47f4fee0d08c93a3c4d5e67fcd25bfa722e33d73fc068a",
+      "legacy_headings": [
+        "Сопоставление с проектами: исследования выпуска 12–19 октября 2026",
+        "Матрица научная работа → конкретный проект",
+        "Принципиальные исключения",
+        "Порядок первого измерения"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-full-text-review-2026-10-20-to-26.md",
+      "to": "portfolio/2026-10-20--2026-10-26/review.md",
+      "title": "Исследования 20–26 октября 2026",
+      "kind": "portfolio",
+      "original_sha256": "2c7f5d07fcae05a64a324de19e5893db7a35d6187846d4cc4a2002cfcb564678",
+      "legacy_headings": [
+        "Full-text review — 20–26 October 2026",
+        "Summary of studies",
+        "1. GeoAgent — Contract-Constrained Agents",
+        "2. Training Small LMs for Transferable Tool Selection",
+        "3. Behavior Beyond Text — Refusal Transfer Failure",
+        "4. Agent Mosaic — Composite Disclosure Risk",
+        "5. Silent Cue Loss — Formatting in Document Ingestion",
+        "6. Memory-Centric Continual Learning (MCCL)",
+        "7. BIRD-RL — Stateful SQL Agent Evaluation",
+        "Excluded source: METR/OpenAI monitoring",
+        "Owner gate"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-project-mapping-2026-10-20-to-26.md",
+      "to": "portfolio/2026-10-20--2026-10-26/project-fit.md",
+      "title": "Исследования 20–26 октября — соответствие проектам",
+      "kind": "portfolio",
+      "original_sha256": "39ad3042aa7371ada89b9f1aae7f146e9d1d067601bac5a128354f90a0d6ab15",
+      "legacy_headings": [
+        "Research → Project mapping: 20–26 October 2026",
+        "Restrictions and scope"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-full-text-review-2026-10-27-to-11-02.md",
+      "to": "portfolio/2026-10-27--2026-11-02/review.md",
+      "title": "Исследования 27 октября — 2 ноября 2026",
+      "kind": "portfolio",
+      "original_sha256": "725b88438dc88b2a699411c29ea5dc82ca71b9522c48be4e923e30ab7946afcb",
+      "legacy_headings": [
+        "Full-text review — 27 October–2 November 2026",
+        "Summary of studies",
+        "1. Concordat — Typed Sessions for LLM Agents",
+        "2. Goal-Aware Dynamic Multi-Agent Collaboration (GAD)",
+        "3. Your Policy Is Secretly a Harness — Decision Geometry",
+        "4. Where You Inject Matters — Trust Region Effect",
+        "5. Poisoned Skills — Agent Markdown Config Injection",
+        "6. Agent Transfer Protocol (ATP) — Server-Mediated Communication",
+        "Source provenance and overlap",
+        "Owner gate"
+      ]
+    },
+    {
+      "from": "reports/2026-11-03-project-mapping-2026-10-27-to-11-02.md",
+      "to": "portfolio/2026-10-27--2026-11-02/project-fit.md",
+      "title": "Исследования 27 октября — 2 ноября: соответствие проектам",
+      "kind": "portfolio",
+      "original_sha256": "7e64d974b7f292d5fd032caad2d82eca774651cdaa747a1516210668aa4caf54",
+      "legacy_headings": [
+        "Research → Project mapping: 27 October–2 November 2026",
+        "Restrictions and scope"
+      ]
+    },
+    {
+      "from": "reports/2026-11-05-portfolio-research.md",
+      "to": "portfolio/2026-11-05/review.md",
+      "title": "Telegram-коллекция — проверки 5 ноября 2026",
+      "kind": "portfolio",
+      "original_sha256": "0b0d02ba02aaa99836857ba44dd6217d1fa8fe191cb64763bbcdc75fb76e691d",
+      "legacy_headings": [
+        "Telegram follow-up — 5 ноября 2026",
+        "Повторно проверенные препятствия",
+        "Следующие приоритеты"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-telegram-bookmarks-reconciliation.md",
+      "to": "collections/telegram/README.md",
+      "title": "Telegram — реестр восстановленных материалов",
+      "kind": "collection",
+      "original_sha256": "d58c8a3e717c4c17c1a3a381da600406d22790eb1d64a84fde3a8b9c70e0960c",
+      "legacy_headings": [
+        "Telegram-подборка → research-hub: полная сверка 65 пунктов",
+        "Итоги",
+        "Правила присвоения статуса",
+        "Полная матрица в исходном Telegram-порядке",
+        "Чего фактически не хватало в research-hub",
+        "Следующая проверка без искусственного приоритета DSH"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-telegram-bk-preliminary-project-matrix.md",
+      "to": "collections/telegram/preliminary-project-fit.md",
+      "title": "Telegram — предварительное соответствие проектам",
+      "kind": "collection",
+      "original_sha256": "4a52680200cecedee31d34c9e9ad99948e8d4f4e9d9352bfcdcd447404b1df3e",
+      "legacy_headings": [
+        "Telegram BK → проекты: предварительная матрица соответствий",
+        "Материал → все профильные кандидаты",
+        "Обоснование каждой прямой связи",
+        "Обратная матрица: проект → все подходящие BK",
+        "Остальные 17 проектов из 45",
+        "Границы доказательности"
+      ]
+    },
+    {
+      "from": "reports/2026-11-04-telegram-bookmarks-reconciliation.json",
+      "to": "collections/telegram/bookmarks.json",
+      "title": "bookmarks.json",
+      "kind": "data",
+      "original_sha256": "7cdec528b36346c5653cef0469f3a298d962d3693af448649d0562b2084355f0"
+    },
+    {
+      "from": "reports/2026-11-04-telegram-bk-preliminary-project-matrix.json",
+      "to": "collections/telegram/preliminary-project-fit.json",
+      "title": "preliminary-project-fit.json",
+      "kind": "project-fit",
+      "original_sha256": "b1bb742d909a2b92350e90e1d9f4bbddd005738e52e26f640bdf158dc8f5e959"
+    },
+    {
+      "from": "reports/2026-11-04-benchshield-reward-integrity-offline.json",
+      "to": "data/results/benchshield/2026-11-04.json",
+      "title": "2026-11-04.json",
+      "kind": "data",
+      "original_sha256": "c3b1eea3f889fdde28ffa51c27ff4f1aee6871b04781f98ae701e2d7e439ebc8"
+    },
+    {
+      "from": "reports/2026-11-04-bk041-inspektor-gadget-gate.json",
+      "to": "data/results/inspektor-gadget/2026-11-04.json",
+      "title": "2026-11-04.json",
+      "kind": "data",
+      "original_sha256": "8b3bf9963afbe6daa656d9380f25ad86532a55c59e066c7cbc4bf6b05d27310c"
+    },
+    {
+      "from": "reports/2026-11-04-bk059-fireperf-loopback.json",
+      "to": "data/results/ipfire-fireperf/2026-11-04.json",
+      "title": "2026-11-04.json",
+      "kind": "data",
+      "original_sha256": "a4acbb5c7fe54c257aba2f14c8120f0273be104c87ddfda085d15478ed95ea4a"
+    },
+    {
+      "from": "reports/2026-11-04-limbo-telegrambot-send-retry.json",
+      "to": "data/results/exactly-once-limbo/2026-11-04.json",
+      "title": "2026-11-04.json",
+      "kind": "data",
+      "original_sha256": "5bd6cf7607506b5ac315345edbaf4929ebfdc918cd28540b6f0df4ae675378ac"
+    },
+    {
+      "from": "reports/2026-11-04-novafabric-real-capsules-replay.json",
+      "to": "data/results/novafabric/2026-11-04.json",
+      "title": "2026-11-04.json",
+      "kind": "data",
+      "original_sha256": "db41d659b7cebb6bc3d0de25ebdb9e13ac07746b16df4e333b349dabbafbf73f"
+    },
+    {
+      "from": "reports/2026-11-05-bk060-core-offline.json",
+      "to": "data/results/dsh-superagent-prototype/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "data",
+      "original_sha256": "8dc1598f431af178942de183e9966dfd4e956c327c5c27a9cb7ebe98384eff81"
+    },
+    {
+      "from": "reports/2026-11-05-bk062-pe-layout.json",
+      "to": "data/results/reverse-engineer-anything/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "data",
+      "original_sha256": "92891140f898d316bcf554b868faee9e73bab75f4befa4d6f826da1390ff87a9"
+    },
+    {
+      "from": "reports/2026-11-05-bk065-desktop-evidence.json",
+      "to": "data/results/vercel-agent-desktop/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "data",
+      "original_sha256": "934a2267f5f9765f071491de00d79197b19841db62cef984fdd28f1b1fe45a58"
+    },
+    {
+      "from": "reports/2026-11-05-bk060-project-triage.json",
+      "to": "data/project-fit/dsh-superagent-prototype/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "project-fit",
+      "original_sha256": "e4a7fd2c3e7f8ffbfa3b5743050538438fa3e3fc4b7e73669ac3db5289341517"
+    },
+    {
+      "from": "reports/2026-11-05-bk062-project-triage.json",
+      "to": "data/project-fit/reverse-engineer-anything/2026-11-05-initial.json",
+      "title": "2026-11-05-initial.json",
+      "kind": "project-fit",
+      "original_sha256": "a80d85e2844259ca77b8b2d109240ddb40a41827c1235932f13b7896d9295d8b"
+    },
+    {
+      "from": "reports/2026-11-05-bk062-followup-project-triage.json",
+      "to": "data/project-fit/reverse-engineer-anything/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "project-fit",
+      "original_sha256": "99f2da98a67e03a9872569d9e4cfc6f0c1351fe391e587e18c076bb3d610a3e0"
+    },
+    {
+      "from": "reports/2026-11-05-bk063-project-triage.json",
+      "to": "data/project-fit/hyra-2/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "project-fit",
+      "original_sha256": "5761428a80183ed8d3d210910b3f529acc30c65cf940e2ca52654ba8b8c134a2"
+    },
+    {
+      "from": "reports/2026-11-05-bk065-project-triage.json",
+      "to": "data/project-fit/vercel-agent-desktop/2026-11-05-initial.json",
+      "title": "2026-11-05-initial.json",
+      "kind": "project-fit",
+      "original_sha256": "2c45c193d7c6e418322af30b538667d412e92cd82247c61a2bf1f548ece60a65"
+    },
+    {
+      "from": "reports/2026-11-05-bk065-followup-project-triage.json",
+      "to": "data/project-fit/vercel-agent-desktop/2026-11-05.json",
+      "title": "2026-11-05.json",
+      "kind": "project-fit",
+      "original_sha256": "cba22f1ae13d426292999f2e15e604f5425b3df115ff46a91c1567469ad64e3c"
+    }
+  ]
+}

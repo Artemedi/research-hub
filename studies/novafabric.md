@@ -4,7 +4,7 @@
 **Primary version:** arXiv v1; 44 pages. **SHA-256:** `b5a81659602175218aba04bb936c8d689bfd5e021ba94a1ffb3b13bfa1548ca9` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `AUTHOR_PREPRINT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.
 **Historical first watch:** [15 Sep 2026](../archive/dsh/knowledge/research/2026-09-15-deepseek-harness-research-watch.md); [non-normative operator dispositions](../archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md). For Random Attention the earlier source is the [chronological archive index](../archive/dsh/knowledge/research/README.md).
-**Historical closure:** [scientific review](../reports/2026-11-03-historical-gap-closure-2026-09-03-to-15.md); [research-to-project matrix](../reports/2026-11-03-project-mapping-september-gaps.md).
+**Historical closure:** [scientific review](../portfolio/2026-09-03--2026-09-15/review.md); [research-to-project matrix](../portfolio/2026-09-03--2026-09-15/project-fit.md).
 **Editorial value / disposition:** 7/10; `P2_MINIMAL_REPLAY_BUNDLE_ONLY` (research only, no production authorization).
 
 ## Methodology and sample
@@ -32,7 +32,7 @@ Author-led preprint, прототипное состояние и несогла
 
 ## 2026-11-04 — реальная авторская реализация v0.108.0: лабораторная проверка
 
-[**Полный новый протокол**](../reports/2026-11-04-novafabric-real-capsules-replay.md), [исходный лабораторный скрипт](../experiments/2026-11-04-novafabric-real-capsule-lab.py), [отдельный независимый verifier Evidence Bundle](../experiments/2026-11-04-novafabric-independent-bundle-verify.py).
+[**Полный новый протокол**](../reviews/novafabric/2026-11-04.md), [исходный лабораторный скрипт](../experiments/2026-11-04-novafabric-real-capsule-lab.py), [отдельный независимый verifier Evidence Bundle](../experiments/2026-11-04-novafabric-independent-bundle-verify.py).
 
 **Обновлённая доступность:** авторский [MSKazemi/novafabric@v0.108.0](https://github.com/MSKazemi/novafabric/tree/v0.108.0) (commit `cc1d71b64b4d1b4c9aa6e4a16a804686514fe667`, Apache-2.0) теперь доступен и **запущен как реальный CLI**. Прочитано и техническое продолжение [arXiv:2610.34594](https://arxiv.org/html/2610.34594): оно не заменяет исторические количественные результаты original paper v1. Эта запись дополняет первоначальную оценку `NEEDS_CURRENT_SOURCE_CODE`.
 

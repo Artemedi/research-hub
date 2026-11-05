@@ -58,8 +58,8 @@
       "status_reason_ru": "Ограниченный offline FTS5-тест: 6 DBA-запросов, не сопоставление всех RAG-подходов; сокращённая Telegram-ссылка не подтверждает тезис.",
       "hub_study_card": null,
       "hub_study_url": null,
-      "hub_experiment_report": "reports/2026-11-03-bookmark-hypotheses-offline-experiments.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-03-bookmark-hypotheses-offline-experiments.md"
+      "hub_experiment_report": "portfolio/2026-11-03/offline-experiments.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/portfolio/2026-11-03/offline-experiments.md"
     },
     {
       "id": "BK-002",
@@ -90,8 +90,8 @@
       "status_reason_ru": "Запущен исходный pgbot v0.9.0 на изолированном PostgreSQL; production-эффект не доказан.",
       "hub_study_card": "studies/pgbot.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/pgbot.md",
-      "hub_experiment_report": "reports/2026-11-04-pgbot-postgresql-lab.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-pgbot-postgresql-lab.md"
+      "hub_experiment_report": "reviews/pgbot/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/pgbot/2026-11-04.md"
     },
     {
       "id": "BK-004",
@@ -138,8 +138,8 @@
       "status_reason_ru": "Offline fixtures и узкий изолированный тест хуков v0.4.8: изменение уже существующего untracked-файла не вызвало stop-report; качество ответов и польза проектам не измерены.",
       "hub_study_card": "studies/open-steps.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/open-steps.md",
-      "hub_experiment_report": "reports/2026-11-04-bk006-open-steps-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk006-open-steps-review.md"
+      "hub_experiment_report": "reviews/open-steps/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/open-steps/2026-11-04.md"
     },
     {
       "id": "BK-007",
@@ -218,8 +218,8 @@
       "status_reason_ru": "Узкий offline тест метрики AUROC, калибровки и синтетических текстов; качество на реальных проектах не измерено.",
       "hub_study_card": "studies/simurg.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/simurg.md",
-      "hub_experiment_report": "reports/2026-11-04-bk011-simurg-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk011-simurg-review.md"
+      "hub_experiment_report": "reviews/simurg/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/simurg/2026-11-04.md"
     },
     {
       "id": "BK-012",
@@ -346,8 +346,8 @@
       "status_reason_ru": "Изолированные unit tests и синтетическая проверка фильтра проектов; качество рекомендаций и реальные истории не проверялись.",
       "hub_study_card": "studies/warp-skill-doctor.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/warp-skill-doctor.md",
-      "hub_experiment_report": "reports/2026-11-04-bk019-warp-skill-doctor-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk019-warp-skill-doctor-review.md"
+      "hub_experiment_report": "reviews/warp-skill-doctor/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/warp-skill-doctor/2026-11-04.md"
     },
     {
       "id": "BK-020",
@@ -394,8 +394,8 @@
       "status_reason_ru": "Тесты structured PII и synthetic fixture; реальная запись, Copilot, OCR и качество workflow не проверялись.",
       "hub_study_card": "studies/microsoft-skill-recorder.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/microsoft-skill-recorder.md",
-      "hub_experiment_report": "reports/2026-11-04-bk022-skill-recorder-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk022-skill-recorder-review.md"
+      "hub_experiment_report": "reviews/microsoft-skill-recorder/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/microsoft-skill-recorder/2026-11-04.md"
     },
     {
       "id": "BK-023",
@@ -426,8 +426,8 @@
       "status_reason_ru": "21 graph tests и synthetic path fixtures; польза для проектов и реальные embeddings не измерены.",
       "hub_study_card": "studies/local-knowledge-graph.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/local-knowledge-graph.md",
-      "hub_experiment_report": "reports/2026-11-04-bk024-local-knowledge-graph-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk024-local-knowledge-graph-review.md"
+      "hub_experiment_report": "reviews/local-knowledge-graph/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/local-knowledge-graph/2026-11-04.md"
     },
     {
       "id": "BK-025",
@@ -444,8 +444,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/unreal-agent-bk025.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk025-unreal-video-provenance.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk025-unreal-video-provenance.md"
+      "hub_review_report": "reviews/unreal-agent/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/unreal-agent/2026-11-04.md"
     },
     {
       "id": "BK-026",
@@ -462,8 +462,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/julia-1.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk026-julia-1-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk026-julia-1-review.md"
+      "hub_review_report": "reviews/julia-1/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/julia-1/2026-11-04.md"
     },
     {
       "id": "BK-027",
@@ -496,8 +496,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/hyperresearch.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk028-hyperresearch-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk028-hyperresearch-review.md"
+      "hub_review_report": "reviews/hyperresearch/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/hyperresearch/2026-11-04.md"
     },
     {
       "id": "BK-029",
@@ -514,8 +514,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/zero-code.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk029-zero-code-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk029-zero-code-review.md"
+      "hub_review_report": "reviews/zero-code/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/zero-code/2026-11-04.md"
     },
     {
       "id": "BK-030",
@@ -546,8 +546,8 @@
       "status_reason_ru": "Реальные функции отбора RRSI и тесты на 105 синтетических случаях; end-to-end LLM evolution не воспроизведена.",
       "hub_study_card": "studies/rrsi.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/rrsi.md",
-      "hub_experiment_report": "reports/2026-11-04-rrsi-harness2-overfit-lab.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-rrsi-harness2-overfit-lab.md"
+      "hub_experiment_report": "reviews/rrsi-harness2/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/rrsi-harness2/2026-11-04.md"
     },
     {
       "id": "BK-032",
@@ -594,8 +594,8 @@
       "status_reason_ru": "Видео недоступно; отдельно изучен тематически связанный репозиторий. Обучение и результаты не воспроизведены.",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk034-autoresearch-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk034-autoresearch-review.md",
+      "hub_review_report": "reviews/karpathy-autoresearch/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/karpathy-autoresearch/2026-11-04.md",
       "related_study_card": "studies/karpathy-autoresearch.md",
       "related_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/karpathy-autoresearch.md",
       "hub_study_card": null,
@@ -614,8 +614,8 @@
       "status_reason_ru": "Реальный MCP Toolbox v1.15.0 и PostgreSQL GUC fixture, 160 RPC; не production.",
       "hub_study_card": "studies/mcp-toolbox-postgres.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/mcp-toolbox-postgres.md",
-      "hub_experiment_report": "reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-mcp-toolbox-vs-wikipg-postgres-lab.md"
+      "hub_experiment_report": "reviews/mcp-toolbox-postgres/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/mcp-toolbox-postgres/2026-11-04.md"
     },
     {
       "id": "BK-036",
@@ -648,8 +648,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/youtube-skills.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk037-youtube-skills-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk037-youtube-skills-review.md"
+      "hub_review_report": "reviews/youtube-skills/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/youtube-skills/2026-11-04.md"
     },
     {
       "id": "BK-038",
@@ -680,8 +680,8 @@
       "status_reason_ru": "Реальные компоненты VeriHarness и agent-config проверены offline; нет полноценного LLM-оркестрационного цикла.",
       "hub_study_card": "studies/veriharness.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/veriharness.md",
-      "hub_experiment_report": "reports/2026-11-04-veriharness-agent-config-offline.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-veriharness-agent-config-offline.md"
+      "hub_experiment_report": "reviews/veriharness/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/veriharness/2026-11-04.md"
     },
     {
       "id": "BK-040",
@@ -712,8 +712,8 @@
       "status_reason_ru": "Официальный Inspektor Gadget v0.57.0 и SHA подтверждены; Bazzite BTF есть, но непривилегированный BPF_MAP_CREATE получил EPERM. Настоящие eBPF traces и RCA overhead остаются непроверенными.",
       "hub_study_card": "studies/inspektor-gadget.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/inspektor-gadget.md",
-      "hub_experiment_report": "reports/2026-11-04-bk041-inspektor-gadget-gate.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk041-inspektor-gadget-gate.md"
+      "hub_experiment_report": "reviews/inspektor-gadget/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-04.md"
     },
     {
       "id": "BK-042",
@@ -746,8 +746,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/unsloth-decision-model.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk043-unsloth-decision-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk043-unsloth-decision-review.md"
+      "hub_review_report": "reviews/unsloth-decision-model/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/unsloth-decision-model/2026-11-04.md"
     },
     {
       "id": "BK-044",
@@ -812,8 +812,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/anthropic-agent-automations.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk047-agent-automations-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk047-agent-automations-review.md"
+      "hub_review_report": "reviews/anthropic-agent-automations/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/anthropic-agent-automations/2026-11-04.md"
     },
     {
       "id": "BK-048",
@@ -830,8 +830,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/understand-anything.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk048-understand-anything-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk048-understand-anything-review.md"
+      "hub_review_report": "reviews/understand-anything/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/understand-anything/2026-11-04.md"
     },
     {
       "id": "BK-049",
@@ -864,8 +864,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/chartli.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk050-chartli-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk050-chartli-review.md"
+      "hub_review_report": "reviews/chartli/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/chartli/2026-11-04.md"
     },
     {
       "id": "BK-051",
@@ -880,8 +880,8 @@
       "status_reason_ru": "Выполнены реальный selector Harness² и upstream tests; модельные Propose/Probe/Compose не воспроизводились.",
       "hub_study_card": "studies/harness2.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/harness2.md",
-      "hub_experiment_report": "reports/2026-11-04-rrsi-harness2-overfit-lab.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-rrsi-harness2-overfit-lab.md"
+      "hub_experiment_report": "reviews/rrsi-harness2/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/rrsi-harness2/2026-11-04.md"
     },
     {
       "id": "BK-052",
@@ -914,8 +914,8 @@
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/yahont-ce.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reports/2026-11-04-bk053-yahont-review.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk053-yahont-review.md"
+      "hub_review_report": "reviews/yahont-ce/2026-11-04.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/yahont-ce/2026-11-04.md"
     },
     {
       "id": "BK-054",
@@ -1010,8 +1010,8 @@
       "status_reason_ru": "Авторский fireperf 0.3.0 собран из исходников с совпавшей BLAKE2b; в rootless Podman без внешней сети 12/12 тестов (240/240 TCP), correct byte exchange, rejected closed-port negative. Полный make check не завершён, iperf3 и реальный сетевой путь не тестировались.",
       "hub_study_card": "studies/ipfire-fireperf.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/ipfire-fireperf.md",
-      "hub_experiment_report": "reports/2026-11-04-bk059-fireperf-loopback.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk059-fireperf-loopback.md"
+      "hub_experiment_report": "reviews/ipfire-fireperf/2026-11-04.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/ipfire-fireperf/2026-11-04.md"
     },
     {
       "id": "BK-060",
@@ -1026,8 +1026,8 @@
       "status_reason_ru": "Source review полномочий/lifecycle на 8c32a9d; 15/15 проверок оригинального in-memory core с fake Policy/Executor и mutation control. Не полный runtime/security test; PROTOTYPE_NOT_PRODUCTION.",
       "hub_study_card": "studies/dsh-superagent-prototype.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/dsh-superagent-prototype.md",
-      "hub_experiment_report": "reports/2026-11-05-bk060-dsh-superagent-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk060-dsh-superagent-review.md"
+      "hub_experiment_report": "reviews/dsh-superagent-prototype/2026-11-05.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/dsh-superagent-prototype/2026-11-05.md"
     },
     {
       "id": "BK-061",
@@ -1058,8 +1058,8 @@
       "status_reason_ru": "48/48 authored PE32/PE32+ layout cases на original reader и обнаруженный overlap-guard mutant. Только header/layout boundary; весь metadata/CIL/CLI/MCP pipeline, package tests/lint/build и project benefit не проверены.",
       "hub_study_card": "studies/reverse-engineer-anything.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/reverse-engineer-anything.md",
-      "hub_experiment_report": "reports/2026-11-05-bk062-rea-bounded-followup.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk062-rea-bounded-followup.md"
+      "hub_experiment_report": "reviews/reverse-engineer-anything/2026-11-05-pe-layout.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/reverse-engineer-anything/2026-11-05-pe-layout.md"
     },
     {
       "id": "BK-063",
@@ -1074,8 +1074,8 @@
       "status_reason_ru": "Полный официальный инженерный текст получен через публичный API страницы и прочитан; content hash в отчёте. Orchestrator source, full replay и независимое подтверждение результатов отсутствуют. Только architecture/governance reference.",
       "hub_study_card": "studies/hyra-2.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/hyra-2.md",
-      "hub_experiment_report": "reports/2026-11-05-bk063-hyra2-primary-review.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk063-hyra2-primary-review.md"
+      "hub_experiment_report": "reviews/hyra-2/2026-11-05.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/hyra-2/2026-11-05.md"
     },
     {
       "id": "BK-064",
@@ -1106,8 +1106,8 @@
       "status_reason_ru": "Original Linux CLI на private Wayland toy UI: 12/12 cases; core1683 PASS, fmt/clippy core/build PASS. Linux whole-suite retained failures (2173/1/233 ignored); failing source scanner отдельно PASS. Не all-platform security или project-benefit verification.",
       "hub_study_card": "studies/vercel-agent-desktop.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/vercel-agent-desktop.md",
-      "hub_experiment_report": "reports/2026-11-05-bk065-agent-desktop-bounded-followup.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk065-agent-desktop-bounded-followup.md"
+      "hub_experiment_report": "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/vercel-agent-desktop/2026-11-05-wayland.md"
     }
   ],
   "public_projection_note": "Public projection excludes private project-candidate lists and additional audit notes; full user inventory is available as a separate private artifact."

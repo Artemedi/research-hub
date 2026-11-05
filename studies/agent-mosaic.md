@@ -3,7 +3,7 @@
 **Primary source:** https://arxiv.org/abs/2610.30418 ; [full PDF v1](https://arxiv.org/pdf/2610.30418v1).
 **Original PDF SHA-256:** 3effb1c2251223ecbdd7e3f201681fdd33f07b99ddf314dabdd1577ce7822061. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).
-**Report:** [weekly source review](../reports/2026-11-03-full-text-review-2026-10-20-to-26.md). **Project applicability:** [explicit matrix](../reports/2026-11-03-project-mapping-2026-10-20-to-26.md).
+**Report:** [weekly source review](../portfolio/2026-10-20--2026-10-26/review.md). **Project applicability:** [explicit matrix](../portfolio/2026-10-20--2026-10-26/project-fit.md).
 **Editorial valuation / effort:** 8/10 ; 6/10. **Proposed disposition:** P1_SYNTHETIC_DISCLOSURE; no implementation approval.
 
 ## Methodology

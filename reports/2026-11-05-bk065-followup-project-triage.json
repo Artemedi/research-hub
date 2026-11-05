@@ -6,7 +6,7 @@
   "source": "vercel-labs/agent-desktop",
   "source_sha": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
   "review_state": "BOUNDED_COMPONENT_EXPERIMENT / PARTIAL_REPOSITORY_REVIEW",
-  "report": "reports/2026-11-05-bk065-agent-desktop-bounded-followup.md",
+  "report": "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
   "card_count": 45,
   "profile_candidates": [
     "Harness",

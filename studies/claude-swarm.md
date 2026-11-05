@@ -5,4 +5,4 @@
 - **Назначение:** долгоживущие задачи, tmux workers, Git worktree, state/checkpoint, тесты, протоколы ограничений и повторные запуски.
 - **Проверено по исходнику:** стандартный worker использует `bypassPermissions`; при ошибке создания worktree допускается общий каталог. В штатной точке инициализации worker manager и protocol registry создаются отдельно, а подключение enforcement к manager в исходном дереве не вызывается. Само сообщение о включении протокола не доказывает исполнения ограничений.
 - **Не проверено:** запуск MCP, workers, протоколов и зависимостей; динамический тест остановки, конкурентности и восстановления; стоимость LLM. `SOURCE_REVIEWED / PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / LAB_NOT_RUN / NO_PRODUCTION_APPROVAL`.
-- **Кандидаты:** `dsh-runtime`, `dsh-claude-primary-agent`, `wiki-tasks` — см. [обзор и матрицу](../reports/2026-11-04-bk016-claude-swarm-review.md). Не устанавливать и не активировать автоматически.
+- **Кандидаты:** `dsh-runtime`, `dsh-claude-primary-agent`, `wiki-tasks` — см. [обзор и матрицу](../reviews/claude-swarm/2026-11-04.md). Не устанавливать и не активировать автоматически.

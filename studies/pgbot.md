@@ -2,7 +2,7 @@
 
 **Класс:** ENGINEERING_IMPLEMENTATION (не научная статья).
 **Первичный источник:** [pgrundev/pgbot](https://github.com/pgrundev/pgbot/tree/826531fefd7d13b4381327acd4cce5be98bd71eb), [release v0.9.0](https://github.com/pgrundev/pgbot/releases/tag/v0.9.0), Apache-2.0.
-**Проверка:** [лабораторный протокол 2026-11-04](../reports/2026-11-04-pgbot-postgresql-lab.md), [независимый JSON oracle](../experiments/2026-11-04-pgbot-verify.py).
+**Проверка:** [лабораторный протокол 2026-11-04](../reviews/pgbot/2026-11-04.md), [независимый JSON oracle](../experiments/2026-11-04-pgbot-verify.py).
 **Статус:** `LAB_VERIFIED` / `HEAD_TO_HEAD_NOT_DONE` / `NO_PRODUCTION_APPROVAL`.
 
 ## Что проверено непосредственно

@@ -7,4 +7,4 @@
 - **INDEPENDENTLY_VERIFIED:** в изолированном тесте исходная `_auroc` выдаёт 1.0 при равных оценках классов (независимый попарный oracle 0.5). При 50 одинаковых clean scores 0.99 `calibrate(alpha=0.02)` ограничивает порог 0.95 и классифицирует 0.99 как corrupt. Пять тестов sentinel прошли; искусственные повторяющиеся русский текст и SQL были ошибочно отмечены как corrupt. [Код эксперимента](../experiments/bk011-simurg/check-fixture.py).
 - **Проекты:** `dsh-runtime`, `9router`, `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE`. `LAB_VERIFIED` относится только к перечисленным синтетическим случаям; `BLOCKED: MEASUREMENT_MISSING` для пользы на проектах; `NO_PRODUCTION_APPROVAL`.
 
-[Полный обзор и матрица](../reports/2026-11-04-bk011-simurg-review.md) • [предварительная матрица](../reports/2026-11-04-telegram-bk-preliminary-project-matrix.md)
+[Полный обзор и матрица](../reviews/simurg/2026-11-04.md) • [предварительная матрица](../collections/telegram/preliminary-project-fit.md)

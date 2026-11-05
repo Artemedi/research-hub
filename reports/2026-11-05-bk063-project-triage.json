@@ -5,7 +5,7 @@
   "source_content_sha256": "03c939a9f924c2026e5d4b47da591fe1f223a6a50e71dc3dfbe3d4b96b645688",
   "source_code_sha": null,
   "review_state": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED / NOT_REPRODUCED",
-  "report": "reports/2026-11-05-bk063-hyra2-primary-review.md",
+  "report": "reviews/hyra-2/2026-11-05.md",
   "card_count": 45,
   "profile_candidates": [
     "dsh-paper2agent",

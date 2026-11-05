@@ -1,10 +1,10 @@
-# BK-014 — alphaXiv OpenResearch (local-first research agent harness)
+# alphaXiv OpenResearch
 
 **Type:** full open-source engineering implementation, not a peer-reviewed paper.
 **Telegram bookmark:** `BK-014`, 2026-09-16.
 **Official primary source:** [alphaXiv/OpenResearch](https://github.com/alphaXiv/OpenResearch), [architecture](https://github.com/alphaXiv/OpenResearch/blob/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d/arc/experiments.md), [storage/egress](https://github.com/alphaXiv/OpenResearch/blob/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d/arc/storage.md).
 **Pinned revision:** `23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d` (2026-11-04 UTC), `Cargo.toml` version `0.2.24`, MIT.
-**Detailed independent source review:** [2026-11-04-bk014-openresearch-review.md](../reports/2026-11-04-bk014-openresearch-review.md).
+**Detailed independent source review:** [2026-11-04-bk014-openresearch-review.md](../reviews/alphaxiv-openresearch/2026-11-04.md).
 
 ## Engineering claim and evidence
 

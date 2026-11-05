@@ -4,7 +4,7 @@
 **Primary version:** arXiv v1; 11 pages. **SHA-256:** `a1779977061cc77485478e6567ec6d98c44852f5059a4cb0e77b6ba88244d601` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `ARXIV_ICDM_ACCEPTED_MANUSCRIPT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.
 **Historical first watch:** [15 Sep 2026](../archive/dsh/knowledge/research/2026-09-15-deepseek-harness-research-watch.md); [non-normative operator dispositions](../archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md). For Random Attention the earlier source is the [chronological archive index](../archive/dsh/knowledge/research/README.md).
-**Historical closure:** [scientific review](../reports/2026-11-03-historical-gap-closure-2026-09-03-to-15.md); [research-to-project matrix](../reports/2026-11-03-project-mapping-september-gaps.md).
+**Historical closure:** [scientific review](../portfolio/2026-09-03--2026-09-15/review.md); [research-to-project matrix](../portfolio/2026-09-03--2026-09-15/project-fit.md).
 **Editorial value / disposition:** 7/10; `P2_ONLY_WHERE_ATTENTION_SIGNAL_EXISTS` (research only, no production authorization).
 
 ## Methodology and sample

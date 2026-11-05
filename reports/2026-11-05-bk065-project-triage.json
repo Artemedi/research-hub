@@ -6,7 +6,7 @@
   "source": "vercel-labs/agent-desktop",
   "source_sha": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
   "review_state": "PARTIAL_SOURCE_REVIEW",
-  "report": "reports/2026-11-05-bk065-agent-desktop-source-gate.md",
+  "report": "reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md",
   "card_count": 45,
   "profile_candidates": [
     "Harness",

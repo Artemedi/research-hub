@@ -1,0 +1,554 @@
+{
+  "date": "2026-11-04",
+  "source_registry": "Artemedi/project-registry",
+  "stage": "PROFILE_TRIAGE_ONLY",
+  "status_not_promoted": true,
+  "entries": [
+    {
+      "id": "BK-006",
+      "title": "Open Steps",
+      "source_url": "https://github.com/kharmanskyi/open-steps",
+      "source_evidence_url": "https://github.com/kharmanskyi/open-steps/blob/4fa744ba8ea06ccf128a39853824c46ac391dd00/README.md",
+      "source_commit": "4fa744ba8ea06ccf128a39853824c46ac391dd00",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Набор навыков оформления статуса и независимой проверки работы агента, ориентированный на понятную человеку отчётность.",
+      "direct_project_ids": [
+        "agent-skills",
+        "agent-config"
+      ],
+      "conditional_project_ids": [
+        "dsh-team-context"
+      ],
+      "blocker": "Улучшение читаемости не доказывает качество кода; нужны тесты неизменности фактов и совместимости фронтматтера.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "agent-skills": "Собственные SKILL.md: проверка результатов и читаемость статуса",
+        "agent-config": "Шаблоны Claude/Codex: стандарт отчётности и проверки"
+      }
+    },
+    {
+      "id": "BK-011",
+      "title": "SIMURG",
+      "source_url": "https://github.com/doofzoff/SIMURG",
+      "source_evidence_url": "https://github.com/doofzoff/SIMURG/blob/2831a92359cdaf1b38cc14f55e74251e09a91e0b/README.md",
+      "source_commit": "2831a92359cdaf1b38cc14f55e74251e09a91e0b",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Раннее обнаружение деградации LLM-стрима (повторы, дрейф языка, мусор); не детектор фактических галлюцинаций.",
+      "direct_project_ids": [
+        "dsh-runtime",
+        "9router"
+      ],
+      "conditional_project_ids": [
+        "HermesAgent",
+        "TrinMedicalBot"
+      ],
+      "blocker": "Полный научный PDF пока не прочитан; риск false positive на русскоязычных SQL/JSON и медицинском тексте.",
+      "review_depth": "PRIMARY_REPO_AND_README; FULL_SCIENTIFIC_PDF_NOT_REVIEWED",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh-runtime": "Контроль деградации генерации в потоке runtime",
+        "9router": "Проверка чанков ответов на шлюзе моделей; seam не подтверждён"
+      }
+    },
+    {
+      "id": "BK-016",
+      "title": "claude-swarm",
+      "source_url": "https://github.com/cj-vana/claude-swarm",
+      "source_evidence_url": "https://github.com/cj-vana/claude-swarm/blob/31f19199bf3557cda4860231186a06b72c8edb94/README.md",
+      "source_commit": "31f19199bf3557cda4860231186a06b72c8edb94",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "MCP-оркестрация параллельных Claude workers, git worktrees, checkpointing и проверки протоколов.",
+      "direct_project_ids": [
+        "dsh-runtime",
+        "dsh-claude-primary-agent",
+        "wiki-tasks"
+      ],
+      "conditional_project_ids": [
+        "HermesAgent",
+        "Harness",
+        "dsh"
+      ],
+      "blocker": "Требует проверки реального права записи, остановки workers, API-расхода и восстановления после отказов.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh-runtime": "Изоляция workers, retry и recovery runtime",
+        "dsh-claude-primary-agent": "Рабочие сессии Claude Agent SDK",
+        "wiki-tasks": "Долговечные задачи, блокировки и восстановление"
+      }
+    },
+    {
+      "id": "BK-019",
+      "title": "Warp Skill Doctor",
+      "source_url": "https://www.warp.dev/skill-doctor",
+      "source_evidence_url": "https://www.warp.dev/skill-doctor",
+      "source_commit": null,
+      "source_type": "OFFICIAL_TECHNICAL_WEB_SOURCE",
+      "summary": "Анализ транскриптов с последующей оценкой качества навыков и предложением правок.",
+      "direct_project_ids": [
+        "agent-skills",
+        "agent-config"
+      ],
+      "conditional_project_ids": [
+        "dsh-team-context"
+      ],
+      "blocker": "Метод оценки вендорский и не воспроизведён; риск утечки приватных транскриптов и ложной оптимизации метрики.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "agent-skills": "Оценка качества собственных навыков по истории",
+        "agent-config": "Общая политика prompts/hooks и её ревью"
+      }
+    },
+    {
+      "id": "BK-022",
+      "title": "Microsoft Skill Recorder",
+      "source_url": "https://github.com/microsoft/skill-recorder",
+      "source_evidence_url": "https://github.com/microsoft/skill-recorder/blob/505c97ae47be5642c0e1b44ebb8d1c1530c298fa/README.md",
+      "source_commit": "505c97ae47be5642c0e1b44ebb8d1c1530c298fa",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Захват GUI/терминальной последовательности и превращение её в SKILL.md/автоматизацию.",
+      "direct_project_ids": [
+        "agent-skills",
+        "agent-config"
+      ],
+      "conditional_project_ids": [
+        "wiki-tasks",
+        "dsh-team-context"
+      ],
+      "blocker": "Скринкаст/голос/окна содержат приватные сведения; нужна проверка покрытия действий и платформенных прав.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "agent-skills": "Производство SKILL.md из наблюдаемого workflow",
+        "agent-config": "Проверка и установка экспортированных инструкций"
+      }
+    },
+    {
+      "id": "BK-024",
+      "title": "Local Knowledge Graph",
+      "source_url": "https://github.com/punnerud/Local_Knowledge_Graph",
+      "source_evidence_url": "https://github.com/punnerud/Local_Knowledge_Graph/blob/58fce402c7d15a3f5abcc8d0b1e920c1be5071b5/README.md",
+      "source_commit": "58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Локальное построение используемого в рассуждении RDF-графа с Ollama и несколькими режимами проверки.",
+      "direct_project_ids": [
+        "dsh-team-context",
+        "Wiki_PG",
+        "MyWiki"
+      ],
+      "conditional_project_ids": [
+        "dsh-runtime",
+        "sequential-rca"
+      ],
+      "blocker": "Лицензия не OSI-approved, проверить коммерческие ограничения; графовые рёбра и эффект retrieval пока не верифицированы.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh-team-context": "Структурирование связей знаний для retrieval",
+        "Wiki_PG": "Связи документов PostgreSQL и графовый oracle",
+        "MyWiki": "Связи Obsidian-заметок и локальный граф"
+      }
+    },
+    {
+      "id": "BK-025",
+      "title": "Unreal Agent cost vs Codex (видео)",
+      "source_url": "https://www.youtube.com/watch?v=eFBSlgXG3U0",
+      "source_evidence_url": "https://unreallabs.ai/blog/long-horizon-agents-at-half-the-cost/",
+      "source_commit": null,
+      "source_type": "UNAVAILABLE_ORIGINAL_VIDEO_RELATED_LATER_BLOG",
+      "summary": "Видеообзор сравнения стоимости Unreal Agent и Codex. Транскрипт недоступен; позже вышла авторская техническая статья о compaction, но не доказано, что это тот же эксперимент.",
+      "direct_project_ids": [],
+      "conditional_project_ids": [
+        "dsh-runtime",
+        "Harness",
+        "dsh-claude-primary-agent"
+      ],
+      "blocker": "Видеозапись от сентября не удалось получить без авторизации; официальный технический пост появился позднее, тождественность экспериментов НЕ подтверждена. Отложено без backlinks.",
+      "review_depth": "ORIGINAL_VIDEO_UNAVAILABLE; RELATED_LATER_BLOG_ONLY; NO_SAME_EXPERIMENT_VERIFICATION",
+      "routing": "REVIEWED_DEFERRED",
+      "original_telegram_source_url": "https://www.youtube.com/watch?v=eFBSlgXG3U0",
+      "original_video_not_full_read": true,
+      "direct_project_rationale": {}
+    },
+    {
+      "id": "BK-026",
+      "title": "Julia 1 (144M decision model)",
+      "source_url": "https://supersoniclabs.ai/julia-1/",
+      "source_evidence_url": "https://supersoniclabs.ai/julia-1/",
+      "source_commit": null,
+      "source_type": "OFFICIAL_TECHNICAL_WEB_SOURCE",
+      "summary": "Авторская модель выбора из 2–20 опций с CPU-инференсом и несколькими оценками, включая неудачу на Banking77.",
+      "direct_project_ids": [
+        "9router",
+        "dsh-runtime"
+      ],
+      "conditional_project_ids": [
+        "sequential-rca",
+        "TelegramBot"
+      ],
+      "blocker": "Задачи сравнения не совпадают с портфелем; известны ограничения длинных списков и 1024 токенов, проверить лицензии/веса.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "9router": "Классификатор выбора провайдера",
+        "dsh-runtime": "Дешёвое принятие решений для агентов"
+      }
+    },
+    {
+      "id": "BK-028",
+      "title": "Hyperresearch",
+      "source_url": "https://github.com/jordan-gibbs/hyperresearch",
+      "source_evidence_url": "https://github.com/jordan-gibbs/hyperresearch/blob/aece65f9307197119629beacf8aeaf8cc80e999a/README.md",
+      "source_commit": "aece65f9307197119629beacf8aeaf8cc80e999a",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Многоэтапный research harness с библиографическим хранилищем и проверкой цитат, включая skill для Codex.",
+      "direct_project_ids": [
+        "dsh-paper2agent",
+        "agent-skills"
+      ],
+      "conditional_project_ids": [
+        "dsh",
+        "dsh-team-context"
+      ],
+      "blocker": "Позиция в бенчмарке заявлена автором; стоимость вызовов, воспроизводимость и границы полнотекстового допуска неизвестны.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh-paper2agent": "Провенанс источников и проверка цитат научного конвейера",
+        "agent-skills": "Внешний Codex skill — reference для собственных навыков"
+      }
+    },
+    {
+      "id": "BK-029",
+      "title": "0-CODE",
+      "source_url": "https://github.com/0-SOFT/0-CODE",
+      "source_evidence_url": "https://github.com/0-SOFT/0-CODE/blob/47f6a81724e87ff5e916f0eb146516d801a8fb28/README.md",
+      "source_commit": "47f6a81724e87ff5e916f0eb146516d801a8fb28",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Автономные циклы разработки, журнал состояния, doctor и hooks для Claude/Codex/OpenCode.",
+      "direct_project_ids": [
+        "dsh-runtime",
+        "wiki-tasks",
+        "agent-config"
+      ],
+      "conditional_project_ids": [
+        "Harness",
+        "dsh",
+        "HermesAgent",
+        "agent-skills"
+      ],
+      "blocker": "Большая область записей/хуков и риск конфликта с существующими DSH STATE/EVENTS; никогда не интегрировать автоматически.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh-runtime": "Runtime-циклы, возобновление и state machine",
+        "wiki-tasks": "Persistent task state и документальные workflow",
+        "agent-config": "Настройка hooks, prompts и doctor"
+      }
+    },
+    {
+      "id": "BK-034",
+      "title": "Karpathy AutoResearch loop",
+      "source_url": "https://github.com/karpathy/autoresearch",
+      "source_evidence_url": "https://github.com/karpathy/autoresearch/blob/228791fb499afffb54b46200aca536f79142f117/program.md",
+      "source_commit": "228791fb499afffb54b46200aca536f79142f117",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Фиксированный независимый eval и цикл изменения только train.py с сохранением лучшего коммита, вместо вторичного видео.",
+      "direct_project_ids": [
+        "dsh-paper2agent",
+        "dsh-team-context"
+      ],
+      "conditional_project_ids": [
+        "bitvec-dsh",
+        "dsh-runtime"
+      ],
+      "blocker": "Исходная инфраструктура заточена под обучение GPT на GPU; overfitting и перенос на agent eval требуют отдельного измерения.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "original_telegram_source_url": "https://www.youtube.com/watch?v=qLfSDQ5NGh0",
+      "original_video_not_full_read": true,
+      "direct_project_rationale": {
+        "dsh-paper2agent": "Stage 6 эксперименты с фиксированным независимым oracle",
+        "dsh-team-context": "Безопасные циклы эволюции навыков"
+      }
+    },
+    {
+      "id": "BK-037",
+      "title": "youtube-skills",
+      "source_url": "https://github.com/ZeroPointRepo/youtube-skills",
+      "source_evidence_url": "https://github.com/ZeroPointRepo/youtube-skills/blob/4f7994b94e7d5e250c3b51102d609992e04d5d0d/README.md",
+      "source_commit": "4f7994b94e7d5e250c3b51102d609992e04d5d0d",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Набор agent skills для транскриптов, поиска и списка видео через коммерческий TranscriptAPI.",
+      "direct_project_ids": [
+        "TelegramBot",
+        "HermesAgent",
+        "agent-skills"
+      ],
+      "conditional_project_ids": [
+        "dsh-runtime"
+      ],
+      "blocker": "Сервис внешний: проверить условия, стоимость, хранение ключей и точность субтитров; без API теста нет.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "TelegramBot": "YouTube источник метаданных и субтитров видео",
+        "HermesAgent": "Агентный видео-анализ в Hermes",
+        "agent-skills": "Проверяемая skill-обёртка внешнего TranscriptAPI"
+      }
+    },
+    {
+      "id": "BK-041",
+      "title": "Inspektor Gadget eBPF",
+      "source_url": "https://github.com/inspektor-gadget/inspektor-gadget",
+      "source_evidence_url": "https://github.com/inspektor-gadget/inspektor-gadget/blob/fcc7786b21d41e176e2ad5b4d5c86bc0269974d4/README.md",
+      "source_commit": "fcc7786b21d41e176e2ad5b4d5c86bc0269974d4",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Наблюдаемость Linux syscalls/eBPF для диагностики DBA и системных инцидентов; BK-041 ранее имеет отдельную карточку и permission gate.",
+      "direct_project_ids": [
+        "AKUZ",
+        "Wiki_PG",
+        "sequential-rca"
+      ],
+      "conditional_project_ids": [
+        "akuz-issue"
+      ],
+      "blocker": "На Bazzite unprivileged BPF_MAP_CREATE=EPERM; ни один настоящий gadget trace не выполнялся, LAB_VERIFIED не назначен.",
+      "review_depth": "PREVIOUS_SOURCE_SHA_AND_PERMISSION_GATE; BPF_RUNTIME_BLOCKED",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "AKUZ": "Kernel evidence для Linux PostgreSQL DBA",
+        "Wiki_PG": "Диагностика Linux/PostgreSQL в Wiki_PG",
+        "sequential-rca": "Read-only syscall/IO trace как источник offline RCA"
+      }
+    },
+    {
+      "id": "BK-043",
+      "title": "Unsloth decision model tutorial",
+      "source_url": "https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth",
+      "source_evidence_url": "https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth",
+      "source_commit": null,
+      "source_type": "OFFICIAL_TECHNICAL_WEB_SOURCE",
+      "summary": "Обучение классификатора/модели принятия решений на Qwen/LoRA с оценкой выбора и вероятностей.",
+      "direct_project_ids": [
+        "9router",
+        "dsh-runtime"
+      ],
+      "conditional_project_ids": [
+        "sequential-rca",
+        "wiki-tasks"
+      ],
+      "blocker": "Потребность в разметке и реальном benchmark, 8 GB VRAM не гарантируют безопасное обучение; заявленные цифры не перенесены.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "9router": "Решение о маршрутизации модели с вероятностями",
+        "dsh-runtime": "Выбор действия в runtime при наличии меток"
+      }
+    },
+    {
+      "id": "BK-047",
+      "title": "Anthropic agent automations guide",
+      "source_url": "https://claude.dev/blog/building-effective-agent-automations/",
+      "source_evidence_url": "https://claude.dev/blog/building-effective-agent-automations/",
+      "source_commit": null,
+      "source_type": "OFFICIAL_TECHNICAL_WEB_SOURCE",
+      "summary": "Инженерная методика scheduled agents: source bookmarks, failure-aware reads, scoped secrets, отдельный destination и budget caps.",
+      "direct_project_ids": [
+        "TelegramBot",
+        "wiki-tasks",
+        "HermesAgent"
+      ],
+      "conditional_project_ids": [
+        "dsh",
+        "confluence-wiki-backups"
+      ],
+      "blocker": "Описан конкретный managed-agents стек, не проверена переносимость механики на текущие системы и Google/GitHub интеграции.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "TelegramBot": "Долговечный bookmark и подтверждение отправки видео",
+        "wiki-tasks": "Event state, retries и обнаружение пропуска",
+        "HermesAgent": "Scheduled gateway, scoped credentials и budgets"
+      }
+    },
+    {
+      "id": "BK-048",
+      "title": "Understand Anything",
+      "source_url": "https://github.com/Egonex-AI/Understand-Anything",
+      "source_evidence_url": "https://github.com/Egonex-AI/Understand-Anything/blob/4e6d3299017a7432da15957874992837a315c5b4/README.md",
+      "source_commit": "4e6d3299017a7432da15957874992837a315c5b4",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Построение графов исходников, функций, зависимостей и знаний с интерактивной навигацией и impact-анализом.",
+      "direct_project_ids": [
+        "dsh-team-context",
+        "MyWiki"
+      ],
+      "conditional_project_ids": [
+        "akuz-schema-inventory",
+        "Wiki_PG",
+        "psqlqa"
+      ],
+      "blocker": "В README нет заявленной поддержки SQL/T-SQL: невозможно считать граф кода готовой альтернативой проверенному MSSQL dependency graph. Остальные рёбра/impact и издержки модели не измерены.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh-team-context": "Knowledge/retrieval graph в Team Context",
+        "MyWiki": "Структурированные связи Obsidian-вики"
+      }
+    },
+    {
+      "id": "BK-050",
+      "title": "Chartli",
+      "source_url": "https://github.com/ahmadawais/chartli",
+      "source_evidence_url": "https://github.com/ahmadawais/chartli/blob/3b39b97aeb564646437b2b7501b60541994d7575/README.md",
+      "source_commit": "3b39b97aeb564646437b2b7501b60541994d7575",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "CLI-рендеринг численных рядов в ASCII/Braille/Unicode/SVG для терминала.",
+      "direct_project_ids": [
+        "AKUZ",
+        "Wiki_PG",
+        "akuz-schema-inventory"
+      ],
+      "conditional_project_ids": [
+        "sequential-rca",
+        "akuzlogparser"
+      ],
+      "blocker": "Только представление метрик, без новых диагностических правил; нужен тест точности осей и ценности против таблиц.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "AKUZ": "Терминальные числовые отчёты DBA",
+        "Wiki_PG": "Ряды PostgreSQL метрик в CLI",
+        "akuz-schema-inventory": "Показатели риска инвентаризации схемы"
+      }
+    },
+    {
+      "id": "BK-053",
+      "title": "Yahont CE",
+      "source_url": "https://github.com/pipedude/yahont-ce",
+      "source_evidence_url": "https://github.com/pipedude/yahont-ce/blob/367b48da9de2d296f905aca4bf0eb384043bf643/README.md",
+      "source_commit": "367b48da9de2d296f905aca4bf0eb384043bf643",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Локальная русскоязычная RAG/поисковая платформа с гибридным поиском, источниками, агентами и MCP.",
+      "direct_project_ids": [
+        "Wiki_PG",
+        "dsh-team-context",
+        "MyWiki"
+      ],
+      "conditional_project_ids": [
+        "hermes-akuz-agents",
+        "HermesAgent"
+      ],
+      "blocker": "Форк Onyx, проверить лицензии всех компонентов, ACL/PII, индекс и производительность, не переносить рабочий корпус без допуска.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "Wiki_PG": "Гибридный retrieval для Wiki_PG",
+        "dsh-team-context": "Контекст команды и knowledge retrieval",
+        "MyWiki": "Поиск по локальному корпусу вики"
+      }
+    },
+    {
+      "id": "BK-060",
+      "title": "DeepSeek dsh-superagent prototype",
+      "source_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "source_evidence_url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/8c32a9dc5d72c033816c6a8110b37f40cf94fba4/README.md",
+      "source_commit": "8c32a9dc5d72c033816c6a8110b37f40cf94fba4",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "Экспериментальный агент на событиях GitHub, с work items, разрешениями, изолированными сессиями и human escalation.",
+      "direct_project_ids": [
+        "dsh",
+        "dsh-runtime",
+        "wiki-tasks"
+      ],
+      "conditional_project_ids": [
+        "dsh-claude-primary-agent",
+        "HermesAgent",
+        "Harness"
+      ],
+      "blocker": "Сам README говорит «research prototype, not production»; интеграция с DSH и проверка отказоустойчивости отсутствуют.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "dsh": "Управление работами и owner approvals в DSH",
+        "dsh-runtime": "Изоляция исполнения запросов в runtime",
+        "wiki-tasks": "Persistent task и event processing"
+      }
+    },
+    {
+      "id": "BK-062",
+      "title": "Reverse Engineer Anything (REA)",
+      "source_url": "https://github.com/morluto/rea",
+      "source_evidence_url": "https://github.com/morluto/rea/blob/5a1f75461ac843f32423afd49c9e8b69a116b879/README.md",
+      "source_commit": "5a1f75461ac843f32423afd49c9e8b69a116b879",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "MCP-интерфейс к анализу бинарников/.NET/JS/Electron и динамических систем для поиска контрактов.",
+      "direct_project_ids": [
+        "MyPartyIsGrinding",
+        "WarOfGenesisIdleLoot",
+        "game-localization-guide"
+      ],
+      "conditional_project_ids": [
+        "psqlqa"
+      ],
+      "blocker": "Только собственные или разрешённые бинарники; правовая и supply-chain проверка перед запуском внешних инструментов.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "MyPartyIsGrinding": "Разрешённый reverse engineering модифицируемой игры",
+        "WarOfGenesisIdleLoot": "Анализ разрешённых .NET/mono assemblies",
+        "game-localization-guide": "Извлечение форматов и статический анализ для локализации"
+      }
+    },
+    {
+      "id": "BK-063",
+      "title": "Tencent Hyra 2.0",
+      "source_url": "https://hy.tencent.com/research/hyra2",
+      "source_evidence_url": "https://hy.tencent.com/research/hyra2",
+      "source_commit": null,
+      "source_type": "OFFICIAL_TECHNICAL_WEB_SOURCE",
+      "summary": "Анонс разделения Overall/Mission/Worker, повторного использования исследовательских инструментов и независимого review.",
+      "direct_project_ids": [],
+      "conditional_project_ids": [
+        "dsh",
+        "dsh-team-context",
+        "dsh-paper2agent",
+        "wiki-tasks"
+      ],
+      "blocker": "DEFER: нет подтверждённого полного технического описания и исходников именно Hyra 2.0; публикации результатов Hyra ≠ воспроизводимость новой системы.",
+      "review_depth": "OFFICIAL_ANNOUNCEMENT_ONLY; TECHNICAL_FULL_TEXT_UNAVAILABLE",
+      "routing": "REVIEWED_DEFERRED",
+      "direct_project_rationale": {}
+    },
+    {
+      "id": "BK-065",
+      "title": "Vercel Agent Desktop",
+      "source_url": "https://github.com/vercel-labs/agent-desktop",
+      "source_evidence_url": "https://github.com/vercel-labs/agent-desktop/blob/6660fbac768dc7e7332837b90ed465684859afa3/README.md",
+      "source_commit": "6660fbac768dc7e7332837b90ed465684859afa3",
+      "source_type": "OPEN_SOURCE_ENGINEERING_REPO",
+      "summary": "CLI/MCP компьютерного управления через системное accessibility tree (AT-SPI/UIA/AX) с проверяемыми element refs.",
+      "direct_project_ids": [
+        "HermesAgent",
+        "Harness",
+        "psqlqa"
+      ],
+      "conditional_project_ids": [
+        "concept-loom-desktop",
+        "hermes-akuz-agents",
+        "dsh-claude-primary-agent"
+      ],
+      "blocker": "Linux Wayland/AT-SPI и приватные снимки окна, permissions, stale refs требуют отдельного GUI-sandbox и E2E.",
+      "review_depth": "PRIMARY_SCREENING_ONLY; NO_LAB_OR_FULL_SCIENTIFIC_REVIEW",
+      "routing": "PROFILE_MAPPING_CANDIDATE",
+      "direct_project_rationale": {
+        "HermesAgent": "GUI-инструменты через Hermes gateway",
+        "Harness": "Стенд адаптера accessibility и MCP",
+        "psqlqa": "UI acceptance testing PostgreSQL desktop app"
+      }
+    }
+  ]
+}

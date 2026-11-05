@@ -1,0 +1,126 @@
+# Исследования 12–19 октября 2026
+
+Дата записи: 2026-11-03. Перенос структуры: 2026-11-05; выводы и область проверки сохранены.
+
+**Проверено:** 2026-11-03. **Исторический выпуск:** [Research Watch от 19 октября](../../archive/dsh/knowledge/research/2026-10-19-deepseek-harness-research-watch-reconstructed.md); внутри указан охват `13–19 октября` и альтернативная подпись `12–18 октября`. **Это ретроспективный разбор, не новые работы 3 ноября.**
+
+**Выпуск:** шесть основных исследований и два дополнительных (MemScope, Matoi). Все восемь исходных полных PDF **arXiv v1** скачаны и разобраны по методологии, результатам и ограничениям. SHA-256 PDF зафиксированы ниже; сами PDF не перепубликуются. **Статус:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED / PROPOSED_ONLY`. При сравнении не смешаны разные версии и авторские показатели с измерениями наших систем.
+
+**Прямой результат «какое исследование какому проекту»:** [матрица соответствия](project-fit.md).
+
+**Снимок каталога:** `Artemedi/project-registry@132887398d3dc27097ed6596ccd3d319383d2f73` (45 проектных карточек, включая проект коллеги). [Матрица «работа → конкретные проекты → почему → тест»](project-fit.md) оформляется отдельно. Ссылки на приватные карточки доступны только авторизованным пользователям. Соответствие `PROJECT_PROFILE_MATCH` не подтверждает реальную точку внедрения, для этого нужен актуальный исходный `repo@SHA/path:line`.
+
+## Итоговая исследовательская триаж-оценка
+
+| Работа | Принцип/цель | Предварительная ценность / сложность (1–10) | Статус |
+| --- | --- | --- | --- |
+| [HTN-Orchestrate](../../studies/htn-orchestrate.md) | Отложенная декомпозиция и проверяемая сеть зависимостей | 8 / 7 | `P2_BOUNDED_OFFLINE_A_B` |
+| [agent-risk](../../studies/agent-risk.md) | Риск изменений агента: logs, first deviation, saved-state reruns | 9 / 6 | `P1_RISK_EVIDENCE_PILOT` |
+| [JevAgentHarness](../../studies/jevagentharness.md) | Калиброванное делегирование отдельных решений небольшой модели | 7 / 8 | `P2_SHADOW_ONLY` |
+| [MemComposer](../../studies/memcomposer.md) | Контролируемый отбор, объём и порядок procedural memories | 8 / 7 | `P2_READ_ONLY_BASELINE_FIRST` |
+| [LAGO](../../studies/lago.md) | Проверяемая библиотека переиспользуемых специализированных agent options | 7 / 7 | `P2_SANDBOX_ONLY` |
+| [Agentic Self-Awareness](../../studies/agentic-self-awareness.md) | Уместное воздержание: blocked vs feasible tasks и false refusal | 9 / 4 | `P1_OFFLINE_EVAL_DESIGN` |
+| [MemScope](../../studies/memscope.md) | Диагностика провала по raw trace + memory state вместо общего переписывания | 8 / 6 | `P1_OFFLINE_DIAGNOSTICS_ONLY` |
+| [Matoi](../../studies/matoi.md) | Разделение доказательств эффектов, текущей авторизации и durable occurrence | 7 / 8 | `P2_AUTHORIZATION_REFERENCE` |
+
+Оценки — экспертные для **формирования эксперимента**, а не фактически измеренный эффект. Фиксированное ограничение: никакого production, live credentials, автоправок и передачи приватного исходного кода во внешний сервис.
+
+## 1. HTN-Orchestrate — Hierarchical Task Network Framework for Multi-Agent Orchestration
+
+**Полный источник:** https://arxiv.org/abs/2610.22195; [PDF v1](https://arxiv.org/pdf/2610.22195v1), 20 страниц, SHA-256 `781ff3cd5f16673d7f7b9f8a2cb6a8381d6eb5e1332c6e55bed2dcbbd300b452`.
+
+**Методика.** Двухуровневый `Planner → local Orchestrators` поддерживает HTN: дочерние задания не декомпозируются раньше, чем получены результаты необходимых зависимостей. Итог листьев агрегируется по AND-семантике, при несостоятельной ветке сеть перепланируется. Пять бенчмарков: BrowseComp, FSR, FSO, SUPERChem, PRL-Bench; авторы сравнивают ReAct, Agent Team и DeepSeek Harness с одной базовой моделью для соответствующих harness-строк.
+
+**Результаты авторов.** На BrowseComp получено **89,73%** против **87,28%** у Agent Team и **80,33%** у DeepSeek Harness; SUPERChem **73,44%** против **68,75%** Agent Team и **66,80%** DeepSeek Harness. Результаты относятся к таблице авторов и их конкретным настройкам, не к нашему `dsh-runtime`.
+
+**Ограничения.** Авторы указывают необходимость проверки более глубоких HTN и других backbone; работа не даёт причинной декомпозиции всех различий harness, а стоимость планирования, fan-out и инструментария в разных средах не универсальна. Научный выигрыш зависит от того, есть ли реальные межзадачные зависимости.
+
+**Проверяемое применение.** Сравнить offline на 20–30 задачах с зависимостями: fixed workflow, простой DAG scheduler и HTN с deferred expansion. Независимый oracle — корректность конечного артефакта и соблюдение preconditions, метрики wall-time, total tokens/tools и доля ложных перепланирований. Не писать новый оркестратор без превосходства над простым DAG.
+
+## 2. agent-risk — Risk Assessment for Changes to AI Agents
+
+**Полный источник:** https://arxiv.org/abs/2610.16280; [PDF v1](https://arxiv.org/pdf/2610.16280v1), 43 страницы, SHA-256 `2b6b107ed057dbfe7b7133143fe1bd7beef1178700b22bbc7af23caac204d21e`.
+
+**Методика.** Формальная схема оценки изменённой gate/model policy по уже зарегистрированным эпизодам: повторное вычисление решения до **first deviation**; случаи `agree`, `stop` и `continue` требуют соответственно известного исхода, объявленной стоимости stop либо данных о продолжении/сохранённого state/bounds. Доказательства условны по предположениям `A1/A2` (неизменённая среда и отсутствие распознавания новой политики). Эксперименты в bash sandbox: лог 7200 эпизодов, paired live runs, targeted restoration/rerun.
+
+**Результаты авторов.** Исходный лог не позволил принять решение ни об одном из двух retry gates; адресный повтор только веток после first deviation дал сопоставимые с live решения **примерно при половине agent calls** постфактум выбранного live теста. Без per-step harm time предел риска для stop gate в примере вырос **до 2,5 раза**.
+
+**Ограничения.** Авторский `Limitations`: конечные пространства путей, независимость эпизодов для статистических гарантий, честные модели из ограниченной семьи, восстановление только проверенного файлового дерева, stop losses объявлены, но не проверены, тестирование aware-of-oversight остаётся открытым. Из логов нельзя честно вывести counterfactual после никогда не виденного отказа.
+
+**Проверяемое применение.** 20–40 offline agent trajectories с deterministic state snapshot и synthetically injected gate changes: log-only, full rerun, targeted rerun. Мерить согласие с live oracle, uncertain mass, harm-before-stop и CPU/token cost. До owner gate — только аналитический replay, не самостоятельная политика допуска.
+
+## 3. JevAgentHarness — Decision Models That Share Control with LLMs
+
+**Полный источник:** https://arxiv.org/abs/2610.21412; [PDF v1](https://arxiv.org/pdf/2610.21412v1), 44 страницы, SHA-256 `16af19adf3eed2a5fcce32cd4402cd71215f11f58d696d683809700d449feb06`.
+
+**Методика.** `AgentDecisionBench` сравнивает точность isolated multiple-choice decision и реальную успешность целого агента в задачах tool choice, аргументов и stopping. `JevAgentHarness` разрешает delegate небольшой модели только выше **calibrated threshold**, заданного по траекториям конкретного агента; сомнительные шаги возвращает LLM. `AgentDecision-4B` дополнительно обучен на состояниях после собственных ошибок агента. Проверки в DecisionGym, ALFWorld, mini-SWE-agent и др.
+
+**Результаты авторов.** Самая точная isolated-choice модель решала лишь **69,5%** полноценных agent tasks; AgentDecision-4B — **91,5%**, Jev — **82,0%** в описанном comparison. Без настроенного порога success падал до **−19 п.п.** В подходящем DecisionGym с выделенной GPU наблюдались **−86,3% cost и ускорение до 2,5×**, но для coding agent более скромные **7,0–10,5% экономии**, а некоторые тяжёлые задачи становились медленнее.
+
+**Ограничения.** Англоязычные наборы, преимущественно Gemini executor; доказана **non-inferiority в допуске 3/5 п.п.**, не эквивалентная успешность. Confidence threshold и training подлежат повторной калибровке для каждого нового агента и набора инструментов; отдельный shared GPU может ухудшить latency и IO. Решение `which tool` не равно выбору провайдера в `9router`, менять routing/Model Trust нельзя автоматически.
+
+**Проверяемое применение.** Shadow-only 100+ записанных решений из синтетических задач. Baseline крупная модель против calibrated cascade; task-level success с независимым oracle, conditional error, refusal quality, p50/p95 и полный GPU serving cost. Если задача не имеет дешёвого дискретного выбора — `NO_FIT`.
+
+## 4. MemComposer — Learning to Assemble Memories via Reinforcement Learning
+
+**Полный источник:** https://arxiv.org/abs/2610.21091; [PDF v1](https://arxiv.org/pdf/2610.21091v1), 30 страниц, SHA-256 `23dbaad05dd483ba39d2a761f4b62b24c9911e70923fd9649d9df52673d9d116`.
+
+**Методика.** Trainable `composer` по запросу и top-10 retrieved past trajectories динамически выбирает количество, состав и порядок **procedural memories**. `ExPO` оптимизирует полные task success через GRPO; исполнители Qwen3-4B и Ministral-3-8B, исходные memory banks и retriever заморожены. Оценка: три домена τ²-bench, четыре trial/task, `pass1` и `pass4`; baselines — no-memory, similarity, complexity, reranker, MemRL, Memento.
+
+**Результаты авторов.** Средний `pass1` Qwen3-4B: **50,8%** у MemComposer против **45,0%** наиболее сильного из отдельных представленных baselines Memento; Ministral 8B: **63,5%** против **58,9%** MemRL. Авторы также сообщают сокращение среднего memory-token use на **16,9% и 4,9%** относительно сильнейших baseline по двум исполнителям. Результаты для трёх service domains не являются доказательством выигрыша на базе знаний DBA.
+
+**Ограничения.** Только 4B и 8B executors, отдельный обучаемый компонент и RL training overhead. Порядок выдачи обучается одновременно с отбором, поэтому вклад order не изолирован полностью; нет полного permutation oracle. Изучена **procedural memory**, а не семантические документы, знания пользователя или SQL схемы. Нельзя переносить цифры напрямую на `Wiki_PG`.
+
+**Проверяемое применение.** Сначала offline ablation над собственными разрешёнными trajectory memories: BM25/embeddings top-k, fixed order, rule-based dynamic-k, и только потом learned composer. Оценить task success, pass^k, false recall, tokens и training+online cost.
+
+## 5. LAGO — Language Agents with Reusable Growing Options
+
+**Полный источник:** https://arxiv.org/abs/2610.19843; [PDF v1](https://arxiv.org/pdf/2610.19843v1), 16 страниц, SHA-256 `f54fe3c3751290e8e593326b66d2ccff8b44e255f4b0ffe52ecafaee2b487943`.
+
+**Методика.** `Meta-agent` управляет специализированными `options`: повторно использует или создаёт агента, назначает задачу, проверяет результат, сохраняет только подходящий reusable option. Базовая модель на основном эксперименте `Qwen3.5-35B-A3B` заморожена. Официальный SWE-bench Verified на 500 задачах и отдельное строго одинаковое сравнение на **150** репозиторий-стратифицированных задачах с mini-SWE-agent и Terminus 2 (температура 0, один attempt, Docker oracle); 50-task component ablation.
+
+**Результаты авторов.** LAGO решает **58,6% из 500** полного SWE-bench Verified — это только его собственный absolute score. На **совпадающих 150** задачах: mini-SWE-agent **49,3%**, Terminus 2 **57,3%**, LAGO **60,3%**. На 50-task ablation полный LAGO **30/50**, без decomposition **26/50**, без library **24/50**.
+
+**Ограничения.** У 150-task сравнения широкая ошибка (авторы оценивают примерно ±8 п.п.), 500-task конкурентных reruns нет. Budget/context scaffold не полностью нормированы. Участие options и деформация знания не отделены причинно; даже shuffled content даёт **28/50**, а utility зависит от baseline/LLM/router. Рост банка options требует dedup и governance.
+
+**Проверяемое применение.** В offline coding fixture: текущие Agent Skills/approved runbook против bounded options reuse, отдельно spawn/verify/dedup. Отслеживать actual test pass, missed constraints, library growth, work/tokens, malicious skill propagation. Не создавать self-updating production skills.
+
+## 6. Agentic Self-Awareness — Aligning Knowing, Acting, and Holding
+
+**Полный источник:** https://arxiv.org/abs/2610.19226; [PDF v1](https://arxiv.org/pdf/2610.19226v1), 25 страниц, SHA-256 `8c00fe2bb1585169d2b28ec390285daa3bd944749fbca425337ed0ab923e4d3d`.
+
+**Методика.** Разделение `know` (реально ли выполнимо), `act` (правильное действие/отложить), `hold` (пересмотр при новых доказательствах). Для Terminal-Bench 2.1 и τ² Retail созданы paired feasible/blocked tasks с authorship-aware rubric (`M0–M3`); слепой зачёт сообщения «не могу» от самого scaffold исключён. Отдельно проверяются search-set и held-out, feasible success и false abstention.
+
+**Результаты авторов.** В исходном Terminal-Bench recognition blocker **84,4%**, а strict SA всего **40,6%**. Harness-search на задачах *отбора* повышает strict SA **45,3→93,8%**, но это не held-out. На Retail held-out совместный objective даёт **10/32 (31,3%)** корректных blocked-task strict SA и **19/32 (59,4%)** feasible solve; SA-only selection снижает feasible solve до **9/32 (28,1%)**. Нельзя объявлять 93,8% универсальной точностью агента.
+
+**Ограничения.** Search task reuse и stochastic trajectories, отсутствие проверки transfer на Terminal-Bench blocked holdouts; поздно обнаруженные blockers («traps») остаются сложными. Один false refusal может оказаться дороже лишнего шага. Авторы прямо отмечают, что metric не доказывает общей безопасности или субъективного самосознания.
+
+**Проверяемое применение.** Для evidence-based RCA/DBA agent review создать 20 пар «задание выполнимо / не хватает фактов» с одинаковыми interface contracts; judge-independent oracle должен учитывать не только отказ, но и корректное выполнение feasible twin, source attribution и своевременный запрос недостающих данных.
+
+## 7. MemScope — Evolving Agent Memory Architectures through Localized Code Repair
+
+**Полный источник:** https://arxiv.org/abs/2610.21170; [PDF v1](https://arxiv.org/pdf/2610.21170v1), 19 страниц, SHA-256 `d0f7e2c555c0cdfdd5156abc07ae96a9f31f06076bceb6a7177107b6c7d17b90`.
+
+**Методика.** `Patch Agent` диагностирует память не по итоговому score, а по raw tool traces, актуальному memory state и provider code. Изменения локализованы под provider identity и memory compatibility; сравниваются summary-only, trace-only и trace+memory inspection. Эксперименты: GAIA, xBench DeepSearch-2505, ALFWorld unseen; DeepSeek V3.2 / Kimi K2.7 Code, GPT-4o-mini judge для web tasks, deterministic environment success для ALFWorld.
+
+**Результаты авторов.** Диагностическая ablation GAIA: trace+memory **86,67%**, trace-only **70,00%**, summary-only **63,33%** (не все варианты MemScope одинаково успешны). На 70 paired вопросах xBench после эволюции **49→55** правильных у DeepSeek и **50→53** у Kimi; ALFWorld unseen **34/67 (50,75%)→48/67 (71,64%)**. Из 14 архивированных переходов median code-change ratio **4,4%**.
+
+**Ограничения.** Self-modifying provider — риск непреднамеренного drift; локальная диагностика не является доказательством правильности патча. Web бенчмарки частично оценивались LLM judge; код и состояние памяти менялись одновременно, а 14 transitions — небольшая выборка. Сравнение с baseline привязано к конкретным setup; нельзя разрешать Patch Agent править production memory код.
+
+**Проверяемое применение.** На отдельной копии/fixture намеренно внедрить 10–15 defects (stale retrieval, broken early guard, missing evidence). Сравнить summary-only vs trace-only vs trace+memory диагностику: точность локализации, false positives, changed lines, regression tests, tokens и стоимость. Патчи только в throwaway copies; human review обязателен.
+
+## 8. Matoi — Selective Revalidation of Consequence Evidence for Agent Authorization
+
+**Полный источник:** https://arxiv.org/abs/2610.21394; [PDF v1](https://arxiv.org/pdf/2610.21394v1), 55 страниц, SHA-256 `ff01afd79911ebee7a431a4bc380dfa66bc819d541f74ca5ece14f8add22fc9f`. **Авторский технический preprint, не peer reviewed.**
+
+**Методика.** Схема отделяет (1) доказательство возможных последствий, (2) **действующую** authority+grant, (3) durable occurrence/reservation с явным unknown при remote commitment. Семантическая модель ограничена конечными ветвями, коллекциями и negative lookups; следует текущее право на эффект, а не кешированное «разрешение». Испытания: оригинальные JS/Python checker, paired matched-wire cost и синтетический Banking scenario.
+
+**Результаты авторов.** Matched-wire на **144 authored inputs / 1440 cells** с одинаковой compact serialization показывает скромное **−3,49% lifecycle cost в JS** и **−1,79% в Python** относительно полного recheck; ряд статистических интервалов пересекает нейтральное значение. Отдельная Banking mapping покрывает лишь **5/16** benign user plans и **7/9** attack plans; пять разрешённых synthetic transfers и 35 скрещиваний attack/policy были обработаны в описанных ограничениях.
+
+**Ограничения.** Авторский `Discussion and Limitations` прямо исключает произвольные tools, атомарные remote side effects, end-to-end production superiority, full mediation без инструментирования receivers. Benchmark — scripted synthetic tools, не реальный банк и не автономные агенты; hidden writer, provider duplication и поздний remote commit сохраняют риск. Отдельные эксперименты с разными cost boundaries **не** суммировать в одно «ускорение».
+
+**Проверяемое применение.** Только как reference при проектировании границ actor/tool authorization: таблица «requested effect / allowed now / observed evidence / durable occurrence». Offline 20 synthetic actions с revoked grant, queue/callback, uncertain retry; baseline `always fresh` против selective evidence reuse, корректность fail-closed и полный validation overhead. Не заменять существующий authorization gate.
+
+## Решения и ограничения принятия
+
+Все восемь получают индивидуальные карточки с доступным PDF v1 и статусом `FULL_TEXT_REVIEWED_2026-11-03`. Ни одной работе не присваивается `VERIFIED_FIT` без проверки текущего целевого исходника, его `repo@SHA/path:line`, сравнимого baseline, confidence/noise и explicit owner gate. Предпочтительные следующие **только offline** тесты: **agent-risk** (правда ли логов достаточно для изменения политики), **Agentic Self-Awareness** (ошибочные отказы и верные действия при нехватке данных), **MemScope** (обнаружение и локализация дефекта по трассам). HTN/MemComposer/LAGO/JevAgentHarness требуют дополнительной оценки runtime overhead и невыполненных предпосылок. Matoi — исследовательский reference, не production authorization design.

@@ -28,7 +28,7 @@
 
 ## Further cross-project evaluation
 
-- Candidate applicability beyond DSH (2026-11-03): [agent-skills](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/agent-skills/PROJECT.md), [dsh-paper2agent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/dsh-paper2agent/PROJECT.md), [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md). Причина: Независимый evidence-based verification; у коллеги hunter/refuter только в планах. [Cross-project matrix](../reports/2026-11-03-project-mapping-historical-16.md). **Profile-only match, not a verified code integration.**
+- Candidate applicability beyond DSH (2026-11-03): [agent-skills](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/agent-skills/PROJECT.md), [dsh-paper2agent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/06-independent-research/dsh-paper2agent/PROJECT.md), [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md). Причина: Независимый evidence-based verification; у коллеги hunter/refuter только в планах. [Cross-project matrix](../portfolio/historical/project-fit.md). **Profile-only match, not a verified code integration.**
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
@@ -36,7 +36,7 @@
 
 ## 2026-11-04 — independent offline verification-gate replay
 
-**Source:** [завершённый локальный протокол](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-veriharness-agent-config-offline.md), [воспроизводимый скрипт](../experiments/2026-11-04-veriharness-offline-replay.py).
+**Source:** [завершённый локальный протокол](https://github.com/Artemedi/research-hub/blob/main/reviews/veriharness/2026-11-04.md), [воспроизводимый скрипт](../experiments/2026-11-04-veriharness-offline-replay.py).
 
 **MEASURED_SYNTHETIC:** 50 procedurally generated code claims with independent execution oracle. Current `agent-config/tools/review.py:check_findings` accepted 20 valid and 20 invalid claims (10 fabricated quotes already rejected). Enforcing cited-line adjacency reduced false accepts to 10; adding an executable behavior oracle reduced them to 0 **on this artificial dataset only**. Across 16 test artifact bundles, the actual VeriHarness `validate_delivery` accepted eight initially, `complete_bundle` restored eight dropped or empty files, and four semantically incorrect complete bundles remained accepted. This matches the driver's intended **content-blind structural** contract, not a flaw in its LLM verifier.
 

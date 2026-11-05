@@ -40,7 +40,7 @@
         "failed": 0,
         "lost": 0,
         "new": 20,
-        "new_per_s": 10.0,
+        "new_per_s": 10,
         "open": 0,
         "resets": 0,
         "total": 20
@@ -75,7 +75,7 @@
         "failed": 0,
         "lost": 0,
         "new": 20,
-        "new_per_s": 10.0,
+        "new_per_s": 10,
         "open": 0,
         "resets": 0,
         "total": 20
@@ -110,7 +110,7 @@
         "failed": 0,
         "lost": 0,
         "new": 20,
-        "new_per_s": 10.0,
+        "new_per_s": 10,
         "open": 0,
         "resets": 0,
         "total": 20
@@ -145,7 +145,7 @@
         "failed": 0,
         "lost": 0,
         "new": 20,
-        "new_per_s": 10.0,
+        "new_per_s": 10,
         "open": 0,
         "resets": 0,
         "total": 20
@@ -180,7 +180,7 @@
         "failed": 0,
         "lost": 0,
         "new": 20,
-        "new_per_s": 10.0,
+        "new_per_s": 10,
         "open": 0,
         "resets": 0,
         "total": 20
@@ -215,7 +215,7 @@
         "failed": 0,
         "lost": 0,
         "new": 20,
-        "new_per_s": 10.0,
+        "new_per_s": 10,
         "open": 0,
         "resets": 0,
         "total": 20

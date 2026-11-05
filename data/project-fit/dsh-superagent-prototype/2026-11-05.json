@@ -1,0 +1,375 @@
+{
+  "reviewed_on": "2026-11-05",
+  "registry_sha": "fc15adabccfcf1e41cb2625f7ecb8d74a9ffc8a6",
+  "source_sha": "8c32a9dc5d72c033816c6a8110b37f40cf94fba4",
+  "scope": "45 project profiles; pinned current source contracts additionally read for three shortlisted projects. No audit of all project implementations.",
+  "report": "reviews/dsh-superagent-prototype/2026-11-05.md",
+  "card_count": 45,
+  "shortlist": [
+    "dsh-claude-primary-agent",
+    "dsh-runtime",
+    "wiki-tasks"
+  ],
+  "projects": [
+    {
+      "project_id": "AKUZ",
+      "card_path": "projects/01-dba-akuz/AKUZ/PROJECT.md",
+      "card_sha256": "4dd957bf4bb9348e07dc86382e45d2a72ea1ed22bf6bc438c450ad945291059a",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Смешанная DBA-база; нет выделенного coding-agent task runtime или безопасного benchmark для Superagent.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "Wiki_PG",
+      "card_path": "projects/01-dba-akuz/Wiki_PG/PROJECT.md",
+      "card_sha256": "0c70c5add04a9be90c9b5b65662b7b67417b8a47b0c1211e8120999547f8b14f",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Возможна диспетчеризация DBA-задач, но не подтверждён безопасный task-to-action контракт; read-only/PHI ограничения.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "akuz-issue",
+      "card_path": "projects/01-dba-akuz/akuz-issue/PROJECT.md",
+      "card_sha256": "79a7732ba4dc87fa92763be007d61a3b27e790b928f6a9e5d96cb17a535d5f19",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Incident evidence и playbooks; автоматическая разработка PR не проверяет RCA.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "akuz-optimizer-twin",
+      "card_path": "projects/01-dba-akuz/akuz-optimizer-twin/PROJECT.md",
+      "card_sha256": "3a83fb70cb581ecd26f76b329eb75082f028bcf716ba8780fee11dcd0afaac2e",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Нужны fidelity статистик и планов, а не оркестрация GitHub coding tasks.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "akuz-schema-inventory",
+      "card_path": "projects/01-dba-akuz/akuz-schema-inventory/PROJECT.md",
+      "card_sha256": "58c594566af3420c10a87f212031ea6961c0d7f76893291b53dcdfc0022cef6a",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Read-only inventory и dependency graphs; нет показанного выигрыша от полномочного PR worker.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "akuzlogparser",
+      "card_path": "projects/01-dba-akuz/akuzlogparser/PROJECT.md",
+      "card_sha256": "f47a0c913a0bd6b5fe1f8dfc824e7b3c78c2272dc569610ff4e7b739ec8ccdc9",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Парсинг журналов и отчёты; механизм Ticket не решает подтверждённую parser-проблему.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "psqlqa",
+      "card_path": "projects/01-dba-akuz/psqlqa/PROJECT.md",
+      "card_sha256": "eb5ca078d08818de82011fa5cccbe597e1d2fb36e99007b768e4ca3623249121",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Справочный fork анализатора планов; нет downstream task-agent контракта.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "sequential-rca",
+      "card_path": "projects/01-dba-akuz/sequential-rca/PROJECT.md",
+      "card_sha256": "e23ff05fa4693d8103d86360bc0bd9a1dbe63c2ddf1e222f4472bc9656314d79",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Offline причинная диагностика не равна автоматическому выполнению coding requests.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "9router",
+      "card_path": "projects/02-agents-dsh/9router/PROJECT.md",
+      "card_sha256": "2097f6227a651ee3e5a60af673c96cf4c513b75a8ee433c7a8f0875190ba64b4",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Model/provider routing не является lifecycle GitHub work items; нет A/B seam для этого метода.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "Harness",
+      "card_path": "projects/02-agents-dsh/Harness/PROJECT.md",
+      "card_sha256": "7f1a3315c9030a57f301207071625e90543cc7e7e7b75781382bf389589d1213",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Интеграционный workspace подходит для будущих probes, но current bundle contract не проверен; отдельная четвёртая цель не назначена.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "HermesAgent",
+      "card_path": "projects/02-agents-dsh/HermesAgent/PROJECT.md",
+      "card_sha256": "7b4daf99adb5d4b7d359712e62771becec1568b1bb7c27dc47705f982fdcbe25",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Gateway configuration, не DSH runtime source; нет доказанного plugin seam Superagent.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "TencentDB-Agent-Memory",
+      "card_path": "projects/02-agents-dsh/TencentDB-Agent-Memory/PROJECT.md",
+      "card_sha256": "df85954c09953cf4fd25d757b0dbecf9b15d0826be46dae45a0059db9cfe2eff",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Memory reference; Ticket lifecycle не даёт измеримого улучшения memory API.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "agent-config",
+      "card_path": "projects/02-agents-dsh/agent-config/PROJECT.md",
+      "card_sha256": "fb9b7f24c686ca73556bfcfc80873b20eb8028faa83354b3a35515709196df28",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Процедурный reference scope/permission, но перенос host gates в prompt/hook без реализации не доказан.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "agent-skills",
+      "card_path": "projects/02-agents-dsh/agent-skills/PROJECT.md",
+      "card_sha256": "1edc7b56cecf6e68a0509a7747144161e3d65d61ab2877b6b7a63b47dd9b7c8b",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Можно обсуждать review checklist; bundle runtime не является skill и effect не измерен.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "bitvec-dsh",
+      "card_path": "projects/02-agents-dsh/bitvec-dsh/PROJECT.md",
+      "card_sha256": "f7e26cc68d2ab3ec80d195dd06ce936e1fc0fd6a478d0513aacdf7e8eb274b2a",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Latent-state bridge и обучение; Superagent не даёт механизм сжатия или метрику качества bridge.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "claude-code-docs",
+      "card_path": "projects/02-agents-dsh/claude-code-docs/PROJECT.md",
+      "card_sha256": "8f86928aba10db99bb82cdcfb12fbd5b4416007d648b68decd213ce0556e8739",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Архив документации, не место исполнения work items.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "deepseek-harness",
+      "card_path": "projects/02-agents-dsh/deepseek-harness/PROJECT.md",
+      "card_sha256": "2adfe86fb8b2c98ef56da191e86aaa59648771af8afa863537e433a91241b6a5",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Upstream-tracking reference; собственный runtime выделен в dsh-runtime.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "dsh-claude-primary-agent",
+      "card_path": "projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md",
+      "card_sha256": "59dce2894609805c2bf5fe6d7718c7bd1129939168040896d818f41175a2506e",
+      "decision": "SHORTLIST",
+      "reason_ru": "Session resume/cancellation и permission propagation — конкретный lifecycle contract; совместимость и process ownership требуют теста.",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE"
+    },
+    {
+      "project_id": "dsh-runtime",
+      "card_path": "projects/02-agents-dsh/dsh-runtime/PROJECT.md",
+      "card_sha256": "8557ba18396fbfff2fca422684ee0a0e338d1e37a94d3241ddae1be9c812a061",
+      "decision": "SHORTLIST",
+      "reason_ru": "Permission/session/plugin контракты прямо связаны с исполнением Ticket; bundle совместимость и безопасные defaults не измерены.",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE"
+    },
+    {
+      "project_id": "dsh-team-context",
+      "card_path": "projects/02-agents-dsh/dsh-team-context/PROJECT.md",
+      "card_sha256": "5e395dea4e05710dffb3f35be98b129736350338948eb833cd77f2aeaffa4e7b",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Governance знания соприкасаются с policy, но это не task executor и не готовый integration seam.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "dsh",
+      "card_path": "projects/02-agents-dsh/dsh/PROJECT.md",
+      "card_sha256": "bf51f92bb4cf933574f348ee9cba84a757961062eb8f79aa28d4ba99945d900e",
+      "decision": "CONTROL_PLANE_REFERENCE",
+      "reason_ru": "Предметная связь с governance и owner approvals; документальный reference, не runtime implementation target.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "free-router",
+      "card_path": "projects/02-agents-dsh/free-router/PROJECT.md",
+      "card_sha256": "5605450c358853ffdf3a4429bee88f5d09c2aacad289ac466898577a0fe17af8",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Legacy routing reference; не coding-agent task lifecycle.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "hermes-akuz-agents",
+      "card_path": "projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md",
+      "card_sha256": "9fb60ca689db5acbb7bcec9841480ba304e39473a7bb492ac6b6f68c174bc16d",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Конфигурация multi-agent DBA handoff; перенос Mandate/queue в Hermes требует собственного adapter и benchmark.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "teamai-cli",
+      "card_path": "projects/02-agents-dsh/teamai-cli/PROJECT.md",
+      "card_sha256": "1bbd30d1e46108bb63d81fc5a32eb19b2b7ac4c27359ed201984b89384543d32",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Синхронизация знаний/rules, не host-authorized coding task executor.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "TelegramBot",
+      "card_path": "projects/03-automations/TelegramBot/PROJECT.md",
+      "card_sha256": "bdcb47f08cc29c8973e34a20e26a02d7259162fb322a7b91311b534a7650d419",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Outbox marker/idempotency — полезное сравнение delivery, но GitHub/Feishu семантика не доказывает Telegram deduplication.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "TrinMedicalBot",
+      "card_path": "projects/03-automations/TrinMedicalBot/PROJECT.md",
+      "card_sha256": "4c344023433d8025d19acd35423940c1de05d08b94c1e2c1b575aae8c365bb22",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Медицинский deployment profile; coding task autonomy не подтверждает клиническую безопасность.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "confluence-wiki-backups",
+      "card_path": "projects/03-automations/confluence-wiki-backups/PROJECT.md",
+      "card_sha256": "b44da358681864318e4e3e728669cbfd1efe6e6a3e7e4ca951d11455b493a377",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Backup/restore нуждается в coverage/checksum oracle; Superagent не backup engine.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "wiki-tasks",
+      "card_path": "projects/03-automations/wiki-tasks/PROJECT.md",
+      "card_sha256": "ec5176d559d9ec2b579064022da0797c6488f1211464d892a9888dd39aa14eaf",
+      "decision": "SHORTLIST",
+      "reason_ru": "Recovery-oriented task state и journal — предметное сравнение с Ticket/Assignment/Input; исполняемый baseline recovery пока не найден.",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE"
+    },
+    {
+      "project_id": "MyPartyIsGrinding",
+      "card_path": "projects/04-personal-games/MyPartyIsGrinding/PROJECT.md",
+      "card_sha256": "263ff02449f6c99828a928952df40e44eac2f249065fe5971d0e7afaab502980",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Game-mod events/diagnostics; coding assistant общего назначения недостаточен для предметного fit.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "MyWiki",
+      "card_path": "projects/04-personal-games/MyWiki/PROJECT.md",
+      "card_sha256": "997e6df2f06a981aa2525f31d5f6723e5d5d621c5bac3061b12e7e4a578ee63b",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Obsidian retrieval и связывание знаний; Superagent не retrieval method.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "WarOfGenesisIdleLoot",
+      "card_path": "projects/04-personal-games/WarOfGenesisIdleLoot/PROJECT.md",
+      "card_sha256": "d7993a725f78ec0e574f4d252bb205392e4471e70e65cba2b9cf45b0fb607707",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "C# game hooks/telemetry; нет специфического метода для этих задач.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "anastasia-wiki-bot",
+      "card_path": "projects/04-personal-games/anastasia-wiki-bot/PROJECT.md",
+      "card_sha256": "5dfaf723cb56ce93dad39e3e0f2c7651e206b21c8c2faa22b6cc124845ddf365",
+      "decision": "NEEDS_EVIDENCE",
+      "reason_ru": "Назначение не подтверждено; по имени бота нельзя назначить task-agent integration.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "concept-loom-desktop",
+      "card_path": "projects/04-personal-games/concept-loom-desktop/PROJECT.md",
+      "card_sha256": "75d5941cfbe983c8b1fe985c051d555b604a5297ccdefc68eda99ae917a42687",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Обучение/оценивание ответов; coding-agent lifecycle не является методом обучения.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "game-localization-guide",
+      "card_path": "projects/04-personal-games/game-localization-guide/PROJECT.md",
+      "card_sha256": "01ffb6dd38caa286cef3ec86acdb12a3088898d23b6c2933db3ea2f96aed6ce2",
+      "decision": "NO_CURRENT_FIT",
+      "reason_ru": "Извлечение/локализация ресурсов; Superagent не реализует эти методы и их QA.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "MS-SQL",
+      "card_path": "projects/05-external-references/MS-SQL/PROJECT.md",
+      "card_sha256": "0b5d3ed27845574f9ce4377a204f64a08ef22e57fa85e36b25a4806ee07c455e",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "T-SQL reference, не autonomous coding deployment.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "Postgres14book",
+      "card_path": "projects/05-external-references/Postgres14book/PROJECT.md",
+      "card_sha256": "1cc34dab52451dc705acef9e4e24517599c9aa8f22cc7b9e44db6b82df8c2770",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Материалы книги, не исполняемая система задач.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "SQL-Server-First-Responder-Kit",
+      "card_path": "projects/05-external-references/SQL-Server-First-Responder-Kit/PROJECT.md",
+      "card_sha256": "25a7a0b0f5f291e1354946cd184f5a01e1e86596ad575251268a9e1b7da2bc9c",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "DBA diagnostics fork; нет собственного task-agent потребителя.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "SQLServerTools",
+      "card_path": "projects/05-external-references/SQLServerTools/PROJECT.md",
+      "card_sha256": "b4f450fb317c67b22f62d482d922756e9feaa930716a41ddd7cc01227168fc17",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Набор DBA scripts; Superagent не проверяет их SQL correctness или performance.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "gitignore",
+      "card_path": "projects/05-external-references/gitignore/PROJECT.md",
+      "card_sha256": "6e180749cc98846cf6616eb5bebc336e7b9294899f5f7541d4e30c9a53ef4e84",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Шаблоны исключений; task runtime не решает качество ignore rules.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "sqlserver-kit",
+      "card_path": "projects/05-external-references/sqlserver-kit/PROJECT.md",
+      "card_sha256": "395cc0df73dd5049fa6d6d0754b6dcf924e919b80805f342565e917f872c1b1a",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "SQL справочник; generic automation не даёт предметного fit.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "tigertoolbox",
+      "card_path": "projects/05-external-references/tigertoolbox/PROJECT.md",
+      "card_sha256": "351a8817a4d9310e848aa52746351811a084b2bb2304b8b06d39bdc87a5546bc",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Microsoft diagnostic reference; нет downstream work-item engine.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "uuid-vs-auto-increment",
+      "card_path": "projects/05-external-references/uuid-vs-auto-increment/PROJECT.md",
+      "card_sha256": "b4e424a4604e13035277ac101dbc3743193f26b3b50bf8b9870ff0bafc677b01",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Benchmark идентификаторов; lifecycle agents не меняет измеряемое B-tree свойство.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "dsh-paper2agent",
+      "card_path": "projects/06-independent-research/dsh-paper2agent/PROJECT.md",
+      "card_sha256": "55d581b05f86aa8d68e6c43cfa6a40f17d0926bb9349cce484d9aa8c1d0d6e63",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "reason_ru": "Есть research task pipeline, но замена научных evidence/human gates на coding-agent autonomy не обоснована.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "paper2agent-index",
+      "card_path": "projects/06-independent-research/paper2agent-index/PROJECT.md",
+      "card_sha256": "ca472f0bb9346cfe1219852ab3dce49c4e087b2fca3fd5138387ab7601104839",
+      "decision": "REFERENCE_NO_TARGET",
+      "reason_ru": "Derived Markdown index, не task executor.",
+      "evidence": "PROFILE_TRIAGE_ONLY"
+    },
+    {
+      "project_id": "developer-safe-dotnet-core",
+      "card_path": "projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md",
+      "card_sha256": "382dac3061773fddd677dbcafd6725fb317421507a2bb193c0a8e79e8a64de6d",
+      "decision": "CONDITIONAL_NEEDS_SOURCE_CODE",
+      "reason_ru": "Agent audit — вторичный интерес по авторскому brief; нет source/baseline. Нельзя приписывать SHA, namespaces или готовый integration seam.",
+      "evidence": "AUTHOR_STATED / NEEDS_SOURCE_CODE"
+    }
+  ]
+}

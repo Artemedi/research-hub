@@ -3,7 +3,7 @@
   "registry_sha": "fc15adabccfcf1e41cb2625f7ecb8d74a9ffc8a6",
   "source_sha": "8c32a9dc5d72c033816c6a8110b37f40cf94fba4",
   "scope": "45 project profiles; pinned current source contracts additionally read for three shortlisted projects. No audit of all project implementations.",
-  "report": "reports/2026-11-05-bk060-dsh-superagent-review.md",
+  "report": "reviews/dsh-superagent-prototype/2026-11-05.md",
   "card_count": 45,
   "shortlist": [
     "dsh-claude-primary-agent",

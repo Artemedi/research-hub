@@ -1,0 +1,121 @@
+# Исследования 20–26 октября 2026
+
+Дата записи: 2026-11-03. Перенос структуры: 2026-11-05; выводы и область проверки сохранены.
+
+**Дата нового scientific review:** 2026-11-03. **Период выпуска:** 20–26 October 2026. **Исторический источник:** [archived DSH watch](../../archive/dsh/knowledge/research/2026-10-26-deepseek-harness-research-watch.md).
+**Охват:** 7 source-reviewed papers plus METR/OpenAI summary excluded for lack of complete internal report. **Статус:** FULL_TEXT_REVIEWED_2026-11-03 / NOT_REPRODUCED / PROPOSED_ONLY.
+**Важно:** авторские метрики ниже не измерены на наших проектах; никакие внедрения, исходники, production, API токены или настоящий SQL Server/PostgreSQL не затрагивались. Все оценки требуют source-code gate и одобрения владельца.
+**Project registry pinned:** Artemedi/project-registry@069c416d57bb6e8fea5c50a646da827c8ade62b0. **Матрица применимости:** [study → project → test](project-fit.md).
+
+## Summary of studies
+
+| Article | Value/effort (expert 1–10) | Disposition |
+| --- | --- | --- |
+| [GeoAgent — Contract-Constrained Agents](../../studies/geoagent.md) | 8 / 5 | P1_ARTIFACT_CONTRACTS |
+| [Training Small LMs for Transferable Tool Selection](../../studies/transferable-tool-selection.md) | 7 / 7 | P2_BM25_BASELINE_FIRST |
+| [Behavior Beyond Text — Refusal Transfer Failure](../../studies/behavior-beyond-text.md) | 9 / 4 | P1_TOOL_EFFECT_SECURITY |
+| [Agent Mosaic — Composite Disclosure Risk](../../studies/agent-mosaic.md) | 8 / 6 | P1_SYNTHETIC_DISCLOSURE |
+| [Silent Cue Loss — Formatting in Document Ingestion](../../studies/silent-cue-loss.md) | 8 / 5 | P2_CONDITIONAL_INGESTION |
+| [Memory-Centric Continual Learning (MCCL)](../../studies/memory-centric-continual-learning.md) | 8 / 3 | P1_EVALUATION_METHOD_ONLY |
+| [BIRD-RL — Stateful SQL Agent Evaluation](../../studies/bird-rl.md) | 9 / 7 | P1_DB_STATE_ISOLATION |
+
+## 1. GeoAgent — Contract-Constrained Agents
+
+**Full primary source:** https://arxiv.org/abs/2610.31096 ; [PDF v2](https://arxiv.org/pdf/2610.31096v2) ; pages: 7 ; SHA-256: f40b351366e3edea41252e1808ee75d823d170b0816f7767ca2c3f300df0aa94.
+**Method/sample.** Предметный pipeline обработки сейсмики Madagascar: около 1965 CLI-инструментов, индекс 1937 операторов и 54 agent wrappers (51 декларативно сгенерированный). Девять этапов принудительно отслеживают named artifacts, input resolution, parameters и output validation. Детерминированный geometry checker сверяет восемь инвариантов SPS/RPS/XPS/SEG-Y. Контейнерное выполнение изолировано на уровне task/session.
+
+**Authors outcomes (not independent reproduction).** Один 2-D land dataset завершил все девять стадий примерно за 6–11 минут с проверенным артефактом каждого шага. Retrieval сокращал представление tool descriptions приблизительно с 12 тысяч до 2 тысяч токенов за ход. Это не сравнительный end-to-end benchmark независимых систем.
+
+**Limits and confounders.** Демонстрация на одном типе данных; domain-specific contracts, отсутствует полноценная контрольная группа и статистика переноса на coding/SQL, поэтому нет утверждения о выигрыше DSH. Контракт workflow имеет собственную стоимость и может сужать допустимые сценарии.
+
+**Smallest falsifiable experiment.** 30–50 disposable шаговых задач: prompt-only против schema-only против named-artifact contract. Проверить фактический input и checksum final artifact независимым oracle, ошибочные transitions, tokens, latency, cost.
+
+**Research disposition:** P1_ARTIFACT_CONTRACTS; associated candidate projects in [mapping](project-fit.md).
+
+## 2. Training Small LMs for Transferable Tool Selection
+
+**Full primary source:** https://arxiv.org/abs/2610.31483 ; [PDF v1](https://arxiv.org/pdf/2610.31483v1) ; pages: 19 ; SHA-256: 2c13c3a2558a5c18ed484d62326f62e25ac77ea55cc9dec439a033bd3259145e.
+**Method/sample.** Plan → Retrieve → Select: Qwen3 1.7B/4B/8B получает SFT по synthetic trajectories Llama-4-Maverick, затем RL (GRPO) по coverage и exact-match tool IDs. Проверено ToolBench G3/G2, Gorilla, CRAFT, TaskBench. Метрика — exact match всего gold set, а не фактический успех задачи.
+
+**Authors outcomes (not independent reproduction).** На 2124 инструкциях ToolBench G3 обученный Qwen3-8B даёт 41,5% exact match, 4B — 40,3%, лучший prompting baseline Llama-4-Maverick — 30,6%. На G2 точность заметно ниже; на TaskBench сильный Search-R1 baseline обгоняет обученный вариант. Перенос не универсален.
+
+**Limits and confounders.** Gold labels прошли авторскую фильтрацию; corpus shift и retrieval miss опасны; обучение и его затраты не сравнивались с нашим MCP-набором; не доказаны downstream task quality и экономия total latency. Visibility никогда не подменяет authorization.
+
+**Smallest falsifiable experiment.** 100–200 held-out tools tasks: all-tools vs BM25 Top-K vs BM25+rerank и только затем trained selector. Измерить required-tool recall (особенно false omissions), task success, tokens, p95, GPU selection cost.
+
+**Research disposition:** P2_BM25_BASELINE_FIRST; associated candidate projects in [mapping](project-fit.md).
+
+## 3. Behavior Beyond Text — Refusal Transfer Failure
+
+**Full primary source:** https://arxiv.org/abs/2610.28982 ; [PDF v1](https://arxiv.org/pdf/2610.28982v1) ; pages: 18 ; SHA-256: df265e2ff480b4612cf1901c80e4d0bcb0e1545832814fc2d37fc1d2ce5224dc.
+**Method/sample.** Бенчмарк 2304 matched prompts с text-only, standard tool-enabled и adversarial tool-enabled условиями; четыре домена, пять open-weight моделей, 20 заранее помеченных forbidden actions. Отдельно изучены refusal-associated representations и activation patching.
+
+**Authors outcomes (not independent reproduction).** Среди вредных запросов, отвергнутых в обычном чате, для matched tool-enabled режима в зависимости от модели было около 10–52% случаев unsafe tool calls. Signal refusal не объяснял причинно все нарушения, исправление активаций убирало лишь часть.
+
+**Limits and confounders.** Искусственные действия, конкретные модели и условия; unsafe attempted call не равен реально выполненному side effect. Работа не доказывает дефект наших permissions. Нужен независимый effects oracle, а не оценка текста ответа.
+
+**Smallest falsifiable experiment.** 20–30 synthetic benign/forbidden pairs: отдельные метрики text refusal, tool attempt, actual effect, legitimate completion и false-deny. Только fake filesystem/HTTP tools.
+
+**Research disposition:** P1_TOOL_EFFECT_SECURITY; associated candidate projects in [mapping](project-fit.md).
+
+## 4. Agent Mosaic — Composite Disclosure Risk
+
+**Full primary source:** https://arxiv.org/abs/2610.30418 ; [PDF v1](https://arxiv.org/pdf/2610.30418v1) ; pages: 16 ; SHA-256: 3effb1c2251223ecbdd7e3f201681fdd33f07b99ddf314dabdd1577ce7822061.
+**Method/sample.** 30 вымышленных случаев из разных чувствительных областей, в которых каждый документ доступен отдельно, а их композиция даёт запрещённый вывод. 10800 simulated final answers (три модели), 1440 live-harness answers; варьируются намерения пользователя, classification headers, aggregation safeguards и distractors.
+
+**Authors outcomes (not independent reproduction).** В симуляции pooled mosaic disclosure 52,68% для равной смеси трёх генераторов. Две меры защиты снижали pooled disclosure в конкретных factorial cells приблизительно с 68,63% до 32,37%, но риск оставался. Отказ текстом может сосуществовать с раскрытием составного факта.
+
+**Limits and confounders.** Только 30 synthetic examples, одна adversarial suffix family и ограниченные distractors; правила секретности искусственные, результаты не измеряют утечку наших частных данных. Запрещено публиковать реальную внутреннюю информацию ради бенчмарка.
+
+**Smallest falsifiable experiment.** 30 synthetic двухдокументных pairs, заранее запрещённая composite relation, сравнить per-document ACL-only и outbound composite filter. False disclosures, false refusals, cost.
+
+**Research disposition:** P1_SYNTHETIC_DISCLOSURE; associated candidate projects in [mapping](project-fit.md).
+
+## 5. Silent Cue Loss — Formatting in Document Ingestion
+
+**Full primary source:** https://arxiv.org/abs/2610.30026 ; [PDF v1](https://arxiv.org/pdf/2610.30026v1) ; pages: 28 ; SHA-256: a1634fad8737ed6ff5524ff7f943ba48ee962cf0633e40b6cf356fb5608cf06c.
+**Method/sample.** 76 настоящих policy DOCX с gold marked requirements из OOXML и deterministic matcher, шесть answering models и шесть representations; paired document analysis, confirmatory 79-document followup для typed/untyped cue labels.
+
+**Authors outcomes (not independent reproduction).** Micro-F1 0,690 при сохранённых стилевых подсказках против 0,150 в docling и 0,075 в plain text для данной постановки. Highlight и цвет наиболее важны. Representation обходится примерно вдвое дороже plain text в токенах.
+
+**Limits and confounders.** Смысловая стилизация присутствует не во всех документах; PDF без OCR должен иметь извлекаемый текст; не все модели реагируют на cues; ground truth генерируется программно с rendered spot checks, а не полноценной независимой human annotation. Нужен доказанный ingestion seam.
+
+**Smallest falsifiable experiment.** 30 synthetic/style-annotated DOCX/PDF, oracle по выделенным инструкциям; plain text vs style annotations vs typed cue markers. Precision, recall, F1, latency/tokens, false positives.
+
+**Research disposition:** P2_CONDITIONAL_INGESTION; associated candidate projects in [mapping](project-fit.md).
+
+## 6. Memory-Centric Continual Learning (MCCL)
+
+**Full primary source:** https://arxiv.org/abs/2610.29357 ; [PDF v1](https://arxiv.org/pdf/2610.29357v1) ; pages: 50 ; SHA-256: f5d32f7b605cc18e033b1820e99aa23ac715671a7bf10b1608abfd5324bce268.
+**Method/sample.** Концептуальная taxonomy по memory substrate/asset/policy, inner loop изменения памяти и outer loop изменения management policy, протокол измерения retention under interference, adaptation to changed facts и transfer. Ресурсные scaling hypotheses; опубликованные численные примеры других работ — это цитируемая литература, не собственный новый бенчмарк MCCL.
+
+**Authors outcomes (not independent reproduction).** Методологический тезис: retrieval accuracy и recall сами по себе не доказывают улучшение будущих действий. Авторская работа предлагает постановку тестов с outcome-based оценкой, не сообщает measured production gain для DSH.
+
+**Limits and confounders.** Не доказано превосходство конкретной памяти, оптимальный budget или универсальность scaling curves; нужны независимые temporal splits и зафиксированная среда, иначе contamination легко имитирует learning.
+
+**Smallest falsifiable experiment.** Три temporal held-out cohorts: retention с interference, changed facts, transfer. Baselines no-memory / BM25 / existing memory при равном model/tools бюджете; task success, stale facts, citations, storage IO.
+
+**Research disposition:** P1_EVALUATION_METHOD_ONLY; associated candidate projects in [mapping](project-fit.md).
+
+## 7. BIRD-RL — Stateful SQL Agent Evaluation
+
+**Full primary source:** https://arxiv.org/abs/2610.29426 ; [PDF v1](https://arxiv.org/pdf/2610.29426v1) ; pages: 35 ; SHA-256: e8c9232482b6cce191f5bca6b7a92b945b93c44f8fa5871e95af34706c0f25dc.
+**Method/sample.** Trajectory-scoped persistent execution environment for SQL debugging/reinforcement learning: reuse DB replicas while preventing cross-trajectory state contamination. Четырёхфазное RL curriculum и BIRD-CRITIC-SQLite evaluation; измерены раздельно accuracy и spatial efficiency.
+
+**Authors outcomes (not independent reproduction).** Авторы сообщают 44,4% и 48,0% success для 7B и 14B BIRD-Talon против 26,2%/33,8% base models. Отдельно заявлено 12,8× улучшение spatial efficiency тестовой инфраструктуры. Результат относится к SQLite, а не к PostgreSQL или MSSQL.
+
+**Limits and confounders.** Различие движков, WAL/MVCC/locking/recovery и stateful admin operations; нет evidence безопасного replay на production DB. Разделять скорость clone, IO cost, snapshot consistency и сам успех SQL agent.
+
+**Smallest falsifiable experiment.** Одноразовая PostgreSQL test DB: per-trajectory container, clone/base snapshot и допустимый rollback baseline. Проверить final DB state, contamination, setup wall-time, WAL bytes, IOPS, RAM, storage; никакого live production access.
+
+**Research disposition:** P1_DB_STATE_ISOLATION; associated candidate projects in [mapping](project-fit.md).
+
+## Excluded source: METR/OpenAI monitoring
+
+**METR:** https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/ ; **OpenAI companion:** https://openai.com/index/securing-our-frontier-model-training-environment/ .
+The historical DSH archive says the complete METR internal report is not publicly available. Public blog summaries and the OpenAI account are preliminary context, not full-method independent review. **FULL_TEXT_UNAVAILABLE / EXCLUDED_FROM_SCIENTIFIC_ACCEPTANCE**. A safe synthetic monitor-coverage test may be discussed as an engineering hypothesis, but no paper rating, claim of reproduced vulnerabilities, or implementation authorization is made.
+
+
+## Owner gate
+
+The project links are research-profile hypotheses, not verified code integration. Before any PoC: read current target source at repo@SHA:path:line, specify baselines and deterministic oracles, isolate sensitive data and DB state, measure CPU/RAM/GPU/IO latency and full cost, get explicit owner permission. Do not infer production-readiness or authorize modifications from this report.

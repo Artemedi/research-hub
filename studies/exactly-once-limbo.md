@@ -21,7 +21,7 @@ Complete 23-page arXiv PDF, including setup, theorems, Tables 3–6 and limitati
 
 ## Further cross-project evaluation
 
-- Candidate applicability beyond DSH (2026-11-03): [TelegramBot](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/03-automations/TelegramBot/PROJECT.md), [HermesAgent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/HermesAgent/PROJECT.md). Причина: Неопределённость результата внешней записи и дубли после retry, не SQL atomicity. [Cross-project matrix](../reports/2026-11-03-project-mapping-historical-16.md). **Profile-only match, not a verified code integration.**
+- Candidate applicability beyond DSH (2026-11-03): [TelegramBot](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/03-automations/TelegramBot/PROJECT.md), [HermesAgent](https://github.com/Artemedi/project-registry/blob/f1342414ecca7f5b2f708e91e54bc086c879b63d/projects/02-agents-dsh/HermesAgent/PROJECT.md). Причина: Неопределённость результата внешней записи и дубли после retry, не SQL atomicity. [Cross-project matrix](../portfolio/historical/project-fit.md). **Profile-only match, not a verified code integration.**
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
@@ -29,7 +29,7 @@ Complete 23-page arXiv PDF, including setup, theorems, Tables 3–6 and limitati
 
 ## 2026-11-04 — cross-project experiment: LIMBO × TelegramBot
 
-**Целевой проект вне DSH/Wiki_PG:** [Artemedi/TelegramBot@b47c527](https://github.com/Artemedi/TelegramBot/tree/b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e). [**Полный lab report**](../reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md), [исполняемый воспроизводимый replay](../experiments/2026-11-04-limbo-telegrambot-send-retry.py), [JSON results](../reports/2026-11-04-limbo-telegrambot-send-retry.json). Авторский [jaxblack/limbo-bench@2db09fb](https://github.com/jaxblack/limbo-bench/tree/2db09fba22a0572a70639162a808906409f612a8) был непосредственно исполнен.
+**Целевой проект вне DSH/Wiki_PG:** [Artemedi/TelegramBot@b47c527](https://github.com/Artemedi/TelegramBot/tree/b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e). [**Полный lab report**](../reviews/exactly-once-limbo/2026-11-04.md), [исполняемый воспроизводимый replay](../experiments/2026-11-04-limbo-telegrambot-send-retry.py), [JSON results](../data/results/exactly-once-limbo/2026-11-04.json). Авторский [jaxblack/limbo-bench@2db09fb](https://github.com/jaxblack/limbo-bench/tree/2db09fba22a0572a70639162a808906409f612a8) был непосредственно исполнен.
 
 **Почему этот target:** реальный `main.py:187-204` делает HTTP POST `sendMessage`, а `main.main` помечает `seen_videos.txt` и `post_state.json` **только после** возврата `send_telegram`; отдельный GitHub Actions `Save state` коммитит результат после исполнения. Сервис Telegram не декларирует контракт `idempotency_key`, поэтому надежность не исправить одной добавленной строкой со случайным ключом.
 

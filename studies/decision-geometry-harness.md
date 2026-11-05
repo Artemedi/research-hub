@@ -3,7 +3,7 @@
 **Primary source:** https://arxiv.org/abs/2610.37255 ; [full PDF v2](https://arxiv.org/pdf/2610.37255v2).
 **Original PDF SHA-256:** d678315eba5c30fd26966f6a33ea635b2889391b0d8eacc718f085063cea5319. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).
-**Report:** [weekly source review](../reports/2026-11-03-full-text-review-2026-10-27-to-11-02.md). **Project applicability:** [explicit matrix](../reports/2026-11-03-project-mapping-2026-10-27-to-11-02.md).
+**Report:** [weekly source review](../portfolio/2026-10-27--2026-11-02/review.md). **Project applicability:** [explicit matrix](../portfolio/2026-10-27--2026-11-02/project-fit.md).
 **Editorial valuation / effort:** 10/10 ; 4/10. **Proposed disposition:** P1_INTERFACE_REGRESSION_AB; no implementation approval.
 
 ## Methodology

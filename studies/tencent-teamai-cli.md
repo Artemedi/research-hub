@@ -1,4 +1,4 @@
-# BK-002 — Tencent TeamAI CLI: Git-distributed AI team skills and governance
+# Tencent TeamAI CLI
 
 **Source type:** full technical open-source implementation and documentation, **not** a peer-reviewed paper. [Official source](https://github.com/Tencent/teamai-cli) • [full technical guide](https://github.com/Tencent/teamai-cli/blob/7ed698998da8e446d8116c79ae58a9d5ff6ca016/docs/guide/distribution.md) • MIT.
 **Upstream pin:** `Tencent/teamai-cli@7ed698998da8e446d8116c79ae58a9d5ff6ca016` (2026-11-04).
@@ -15,4 +15,4 @@
 
 **Main risks:** unconditional trust in canonical provider's published skills/governance in fork; upstream team scripts may execute on member machines, and Codex hooks may be rewritten. Project review, pinning and isolated workspace validation must precede adoption. For an existing single-machine workflow, extra sync complexity may be YAGNI.
 
-**Full evidence:** [source review and 45-card mapping](../reports/2026-11-04-bk002-tencent-teamai-cli-review.md) • [Telegram 65-item status ledger](../reports/2026-11-04-telegram-bookmarks-reconciliation.md). No reproducible performance benchmark executed; a minimal isolated A/B plan is in the report.
+**Full evidence:** [source review and 45-card mapping](../reviews/tencent-teamai-cli/2026-11-04.md) • [Telegram 65-item status ledger](../collections/telegram/README.md). No reproducible performance benchmark executed; a minimal isolated A/B plan is in the report.
