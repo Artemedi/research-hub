@@ -1,0 +1,24 @@
+{
+  "source": "deepseek-ai/dsh-superagent-prototype",
+  "sha": "8c32a9dc5d72c033816c6a8110b37f40cf94fba4",
+  "runtime": "v24.19.0",
+  "passed": 15,
+  "checks": [
+    "unlisted origin cannot be directly accepted",
+    "filtered trigger never becomes candidate",
+    "duplicate event creates no second ticket",
+    "worker-owned follow-up cannot directly spawn work",
+    "human stop prevents subsequent fanout and resume",
+    "bot does not resume completed ticket",
+    "human resumes completed ticket under same mandate",
+    "revoked mandate cannot resume completed ticket",
+    "pause defers resume and rechecks policy after unpause",
+    "context-only human message cannot resume ended ticket",
+    "context-only thread rejects acknowledgement",
+    "policy version mismatch refuses stale decision",
+    "ready ticket waits for its own PR close",
+    "repository transaction rolls back failed mutations",
+    "repository reads are isolated clones"
+  ],
+  "scope": "original in-memory core; fake Policy/Executor/Outbox; no live adapters, settingsPolicy, persistence, model, OS sandbox or production validation"
+}

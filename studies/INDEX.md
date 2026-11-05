@@ -1,5 +1,8 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**Telegram BK-060 — DSH Superagent Prototype:** [карточка](dsh-superagent-prototype.md), [source review и 15 ограниченных core checks](../reports/2026-11-05-bk060-dsh-superagent-review.md); полный security/runtime NOT_RUN, PROTOTYPE_NOT_PRODUCTION.
+
+
 ## New research intake — 2026-11-05
 
 - [Sequential diagnosis with language models / MAI-DxO](sequential-diagnosis-language-models.md) — [первоначальный полнотекстовый обзор](../reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md) → [144 Wello A/B и внедрение в TrinMedicalBot 05.11.2026](../reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md). TrinMedicalBot: `PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING`; sequential-rca: `FIT_CANDIDATE / NEEDS_EVIDENCE`; оригинальный SDBench не воспроизводился.

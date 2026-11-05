@@ -5,15 +5,15 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub, status verified as of 2026-11-04",
+  "tracked_hub_state": "Artemedi/research-hub, BK-060 updated 2026-11-05; other entries retain their recorded verification dates",
   "count_by_status": {
     "проверен экспериментально": 12,
-    "ожидает проверки": 8,
+    "ожидает проверки": 7,
     "исключён": 19,
-    "разобран": 26
+    "разобран": 27
   },
-  "mapped_study_cards": 27,
-  "mapped_experimental_items": 13,
+  "mapped_study_cards": 28,
+  "mapped_experimental_items": 14,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -1017,15 +1017,15 @@
       "telegram_title_recovered": "dsh-superagent prototype",
       "source_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "source_kind": "Research prototype",
-      "source_audit_evidence": "REPO_README_AND_TREE",
+      "source_audit_evidence": "PINNED_SECURITY_CRITICAL_SOURCE_REVIEW_AND_BOUNDED_CORE_TEST",
       "initial_priority_2026_11_03": "A",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "README прямо называет проект прототипом; отсутствует воспроизводимый security/runtime test.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED",
+      "status_reason_ru": "Source review полномочий/lifecycle на 8c32a9d; 15/15 проверок оригинального in-memory core с fake Policy/Executor и mutation control. Не полный runtime/security test; PROTOTYPE_NOT_PRODUCTION.",
+      "hub_study_card": "studies/dsh-superagent-prototype.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/dsh-superagent-prototype.md",
+      "hub_experiment_report": "reports/2026-11-05-bk060-dsh-superagent-review.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk060-dsh-superagent-review.md"
     },
     {
       "id": "BK-061",

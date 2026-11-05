@@ -31,6 +31,8 @@
 
 ## Новые отчёты
 
+- **[BK-060 — DSH Superagent Prototype: полномочия и lifecycle](reports/2026-11-05-bk060-dsh-superagent-review.md)** — [карточка](studies/dsh-superagent-prototype.md); 45 профилей, 15/15 offline core checks и mutation control. Полный security/runtime gate не пройден; PROTOTYPE_NOT_PRODUCTION.
+
 - **[Sequential Diagnosis / TrinMedicalBot — выполненный A/B и production-внедрение 5 ноября 2026](reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md)** — 144/144 технически успешных Wello-запроса (72 на arm), 44/44 локальных инфраструктурных теста, Challenger v2, проверка лекарств по источникам, очередь Telegram. `PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING`; исходный SDBench не воспроизводился.
 
 - **[Предварительная Telegram BK → проектная матрица: 22 материала / 45 карточек](reports/2026-11-04-telegram-bk-preliminary-project-matrix.md)** — 51 прямых и 48 условных соответствий без лабораторных тестов; [машинно-читаемая версия](reports/2026-11-04-telegram-bk-preliminary-project-matrix.json). Исторические статусы полного разбора не изменены.
@@ -56,7 +58,7 @@
 - **[BK-016 — Claude Swarm: обзор ограничений и изоляции](reports/2026-11-04-bk016-claude-swarm-review.md)** — [карточка](studies/claude-swarm.md); подтверждённые кодом риски, динамический запуск не проводился.
 - **[BK-011 — SIMURG: обзор и изолированные проверки](reports/2026-11-04-bk011-simurg-review.md)** — [карточка](studies/simurg.md); обнаружены ошибки AUROC и ограничения калибровки.
 - **[BK-006 — Open Steps: инженерный обзор и ограниченная проверка хуков](reports/2026-11-04-bk006-open-steps-review.md)** — [карточка](studies/open-steps.md); выявлен пропуск изменения untracked-файла, качество ответов не измерено.
-- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 12 ограниченных экспериментальных проверок, 26 разборов источников, 8 ожидают проверки (включая BK-041: проверены только права eBPF), 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
+- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 12 ограниченных экспериментальных проверок, 27 разборов источников, 7 ожидают проверки (включая BK-041: проверены только права eBPF), 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
 
 - **[LIMBO × TelegramBot: повторные публикации при неоднозначном HTTP POST (4 ноября 2026)](reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md)** — оригинальный код LIMBO и реальный TelegramBot `main()`: 180 детерминированных случаев с fake сервисом, подтверждённый trade-off at-most-once/retry; [скрипт](experiments/2026-11-04-limbo-telegrambot-send-retry.py) и [JSON](reports/2026-11-04-limbo-telegrambot-send-retry.json). Без сетевых запросов и изменений production.
 

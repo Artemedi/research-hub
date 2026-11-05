@@ -1,13 +1,13 @@
 # Telegram-подборка → research-hub: полная сверка 65 пунктов
 
-**Дата:** 2026-11-04. **Назначение:** восстановить последовательность исходных Telegram-закладок, не смешивая их с другими исследовательскими потоками.
+**Дата:** 2026-11-04; BK-060 и агрегаты обновлены 2026-11-05. **Назначение:** восстановить последовательность исходных Telegram-закладок, не смешивая их с другими исследовательскими потоками.
 
 **Происхождение:** сохранённые `bookmark_research_inventory_2026-11-03.json` и `bookmark_research_audit_2026-11-03.md` от 3 ноября. Это **производный аудит пересланных сообщений**, а не дословный экспорт Telegram. Даты, заголовки, URL и порядок перенесены из сохранённого аудита; сверка с исходным текстом Telegram построчно невозможна без его прямой копии.
 
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **26** / ожидает проверки: **8** / исключён: **19**.
+- По текущему состоянию: проверен экспериментально: **12** / разобран: **27** / ожидает проверки: **7** / исключён: **19**.
 - **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
@@ -83,7 +83,7 @@
 | BK-057 / 28.10 | [SLEEP continual learning](https://arxiv.org/pdf/2606.03979) | **исключён** | — | Полноценное continual-training исследование, а не агентная память; нет управляемого обучения модели. |
 | BK-058 / 31.10 | [Google Project Chrysalis](https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/) | **разобран** | — | Официальный архитектурный материал разобран; vendor ROI не подтверждён независимыми результатами. |
 | BK-059 / 01.11 | [IPFire fireperf](https://www.ipfire.org/fireperf) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/ipfire-fireperf.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk059-fireperf-loopback.md) | Авторская сборка 0.3.0, 12 ограниченных изолированных loopback-прогонов, 240/240 TCP и отрицательный контроль; не производство, не iperf3 A/B. |
-| BK-060 / 01.11 | [dsh-superagent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) | **ожидает проверки** | — | README прямо называет проект прототипом; отсутствует воспроизводимый security/runtime test. |
+| BK-060 / 01.11 | [dsh-superagent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) | **разобран** | [Карточка](../studies/dsh-superagent-prototype.md), [обзор](2026-11-05-bk060-dsh-superagent-review.md) | 05.11: pinned source review, 15/15 original core checks с fake Policy/Executor и mutation control; полный runtime/security NOT_RUN, PROTOTYPE_NOT_PRODUCTION. |
 | BK-061 / 01.11 | [ASCII Sharks](https://github.com/stackedlol/ascii-sharks) | **исключён** | — | ASCII-визуализация не имеет установленного ROI для задач проектов. |
 | BK-062 / 02.11 | [Reverse Engineer Anything (REA)](https://github.com/morluto/rea) | **ожидает проверки** | — | Не установлен безопасный sandbox и допустимость работы с бинарниками/лицензиями. |
 | BK-063 / 02.11 | [Tencent Hyra 2.0](https://hy.tencent.com/research/hyra2) | **ожидает проверки** | — | Сохранился анонс; полный методологический текст не подтверждён. По одной странице scientific verdict невозможен. |
