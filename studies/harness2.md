@@ -1,5 +1,7 @@
 # Harness² — Recursive Agent Harnessing for an Open World
 
+[Структурированная запись и связи](../catalog/studies/harness2.md)
+
 **Источник:** [полный HTML v1, arXiv 2610.14224](https://arxiv.org/html/2610.14224v1). **Проверенный код:** [google-research/harness2@68688175](https://github.com/google-research/harness2/tree/6868817518876de8fd170c6a8354daca273b6191), Apache-2.0.
 **Эксперимент:** [2026-11-04 — RRSI/Harness² overfitting lab](../reviews/rrsi-harness2/2026-11-04.md), [offline-скрипт](../experiments/2026-11-04-rrsi-harness2-selector-smoke.py).
 **Статус:** `SELECTION_POOL_CONTRACT_VERIFIED / PROPOSE_PROBE_COMPOSE_NOT_RUN / NO_PRODUCTION_APPROVAL`.

@@ -25,9 +25,11 @@ jobs:
           node --check scripts/build-catalog.mjs
           node --check scripts/check.mjs
           node --check scripts/check.test.mjs
+          node --check scripts/entity-model.mjs
+          node --check scripts/entity-model.test.mjs
       - name: Check repository and generated catalog
         run: node scripts/check.mjs
       - name: Test integrity failures
-        run: node --test scripts/check.test.mjs
+        run: node --test scripts/check.test.mjs scripts/entity-model.test.mjs
       - name: Check whitespace
         run: git diff --check HEAD^ HEAD

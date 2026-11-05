@@ -2,6 +2,8 @@
 
 Read `RESEARCH_POLICY.md` and `docs/architecture.md` before adding research material. Preserve evidence qualifications, pinned source revisions and the distinction between author claims, local tests and project benefit.
 
+New sources must also follow `docs/data-model.md` and register explicit entities in `catalog/entities.json`. The `legacy_studies` list marks existing unconverted cards; do not put newly added sources there. Project and structured study pages are generated from the same assessments, never edited independently. Preserve supersession and explicit current pointers.
+
 - One canonical source card: `studies/<source>.md`.
 - Dated source reviews: `reviews/<source>/YYYY-MM-DD[-scope].md`.
 - Multi-source reviews and project-fit: `portfolio/<period>/`.
@@ -19,7 +21,7 @@ After edits:
 ```sh
 node scripts/build-catalog.mjs
 node scripts/check.mjs
-node --test scripts/check.test.mjs
+node --test scripts/check.test.mjs scripts/entity-model.test.mjs
 git diff --check
 ```
 

@@ -1,5 +1,7 @@
 # BenchShield — reward-integrity instrumentation
 
+[Структурированная запись и связи](../catalog/studies/benchshield.md)
+
 **Original paper:** https://arxiv.org/abs/2609.11028; [complete PDF](https://arxiv.org/pdf/2609.11028v1).
 **Primary version:** arXiv v1; 18 pages. **SHA-256:** `c0dba3c4aa89ec50e3453a61d4334c5d0ba7e29701fdb82183cccfc498e9b1d1` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `ARXIV_PREPRINT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.

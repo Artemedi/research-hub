@@ -17,7 +17,7 @@
 | [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04](../reviews/alphaxiv-openresearch/2026-11-04.md) |
 | [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04](../reviews/anthropic-agent-automations/2026-11-04.md) |
 | [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | Сводный обзор указан в карточке |
-| [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-04](../reviews/benchshield/2026-11-04.md) |
+| [BenchShield — reward-integrity instrumentation](benchshield.md) | [review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | Сводный обзор указан в карточке |
 | [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | Сводный обзор указан в карточке |
 | [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04](../reviews/chartli/2026-11-04.md) |
@@ -34,7 +34,7 @@
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | Сводный обзор указан в карточке |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
 | [HarnessSecurity-Bench](harnesssecurity-bench.md) | Сводный обзор указан в карточке |
-| [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | Сводный обзор указан в карточке |
+| [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04](../reviews/rrsi-harness2/2026-11-04.md) |
 | [HTN-Orchestrate](htn-orchestrate.md) | Сводный обзор указан в карточке |
 | [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04](../reviews/hyperresearch/2026-11-04.md) |
 | [Hyra 2.0](hyra-2.md) | [2026-11-05](../reviews/hyra-2/2026-11-05.md) |
@@ -67,7 +67,7 @@
 | [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | Сводный обзор указан в карточке |
 | [REMORY](remory.md) | Сводный обзор указан в карточке |
 | [REVA — Reusable Evidence View Aggregation](reva.md) | Сводный обзор указан в карточке |
-| [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | Сводный обзор указан в карточке |
+| [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04](../reviews/rrsi-harness2/2026-11-04.md) |
 | [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | Сводный обзор указан в карточке |
 | [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05-project-fit](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) · [2026-11-05-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) |
 | [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | Сводный обзор указан в карточке |
@@ -79,7 +79,7 @@
 | [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | Сводный обзор указан в карточке |
 | [Training Small LMs for Transferable Tool Selection](transferable-tool-selection.md) | Сводный обзор указан в карточке |
 | [Understand Anything — графы исходников и wiki](understand-anything.md) | [2026-11-04](../reviews/understand-anything/2026-11-04.md) |
-| [Unreal Agent — исходное видео](unreal-agent-bk025.md) | Сводный обзор указан в карточке |
+| [Unreal Agent — исходное видео](unreal-agent-bk025.md) | [2026-11-04](../reviews/unreal-agent/2026-11-04.md) |
 | [Unsloth — обучение decision model](unsloth-decision-model.md) | [2026-11-04](../reviews/unsloth-decision-model/2026-11-04.md) |
 | [Vercel Agent Desktop](vercel-agent-desktop.md) | [2026-11-05-source-boundaries](../reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md) · [2026-11-05-wayland](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
 | [VeriHarness — Evidence-Grounded Agentic Verification](veriharness.md) | [2026-11-04](../reviews/veriharness/2026-11-04.md) |

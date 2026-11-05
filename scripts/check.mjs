@@ -1,3 +1,4 @@
+import { validateEntities } from './entity-model.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -16,6 +17,7 @@ const walk = dir => fs.readdirSync(path.join(root, dir), { withFileTypes: true }
 const files = walk(''), errors = [];
 const config = JSON.parse(read('catalog/structure.json'));
 assert.equal(config.schema_version, 1);
+validateEntities(root, JSON.parse(read('catalog/entities.json')));
 const safe = p => typeof p === 'string' && !p.includes('\\') && !p.startsWith('/') && path.posix.normalize(p) === p && !p.startsWith('../');
 const targets = config.documents.map(d => d.to);
 assert.equal(new Set(targets).size, targets.length, 'duplicate canonical document');

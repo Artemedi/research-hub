@@ -1,3 +1,4 @@
+import { validateEntities, entityPages } from './entity-model.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -5,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'catalog/structure.json'), 'utf8'));
 const check = process.argv.includes('--check');
+const entities = validateEntities(root, JSON.parse(fs.readFileSync(path.join(root, 'catalog/entities.json'), 'utf8')));
+const explicitReviews = card => { const s = entities.studies.find(s => s.card === card); return s ? entities.reviews.filter(r => r.study_ids.includes(s.id)).map(r => ({to:r.document})) : null; };
 const errors = [];
 const rel = (from, to) => path.posix.relative(path.posix.dirname(from), to);
 const read = p => fs.readFileSync(path.join(root, p), 'utf8');
@@ -42,7 +45,7 @@ for (const d of config.documents) {
 const sorted = (items, key) => [...items].sort((a, b) => compare(key(a), key(b)));
 const studyRows = sorted(config.studies, title).map(p => {
   const source = path.posix.basename(p, '.md');
-  const reviews = config.documents.filter(d => d.kind === 'review' && d.to.startsWith(`reviews/${source}/`));
+  const reviews = explicitReviews(p) ?? config.documents.filter(d => d.kind === 'review' && d.to.startsWith(`reviews/${source}/`));
   return `| [${title(p)}](${rel('studies/INDEX.md', p)}) | ${reviews.map(d => `[${d.to.split('/').at(-1).replace('.md', '')}](${rel('studies/INDEX.md', d.to)})`).join(' · ') || 'Сводный обзор указан в карточке'} |`;
 });
 emit('studies/INDEX.md', `# Каталог исследований\n\n${config.studies.length} карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.\n\n[Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)\n\n| Источник | Датированные обзоры |\n| --- | --- |\n${studyRows.join('\n')}`);
@@ -56,5 +59,6 @@ const walk = dir => fs.readdirSync(path.join(root, dir), { withFileTypes: true }
 const scripts = walk('experiments').filter(p => !p.endsWith('/README.md')).sort(compare);
 emit('experiments/README.md', `# Экспериментальные скрипты\n\nСкрипты ограниченных проверок и fixtures. Зависимости, полномочия и команды запуска описаны в [обзорах](../reviews/README.md); не запускайте все файлы подряд. Проверка каталога не исполняет эксперименты, агентов или сетевые сценарии.\n\nОпубликованные имена сохранены для воспроизводимости. Новые опыты размещаются в experiments/source/, результаты — в [data/results](../data/README.md).\n\n${scripts.map(p => `- [${p.slice('experiments/'.length)}](${rel('experiments/README.md', p)})`).join('\n')}`);
 emit('reports/README.md', '# Совместимость опубликованных ссылок\n\nЗдесь автоматически создаются переходы со старых адресов и совместимые копии JSON. Канонические документы находятся в [reviews](../reviews/README.md), [portfolio](../portfolio/README.md), [collections](../collections/README.md) и [data](../data/README.md).\n\nНовые материалы сюда не добавлять. Изменения вносить в канонический файл, затем запускать `node scripts/build-catalog.mjs`. Соответствие адресов — [catalog/structure.json](../catalog/structure.json).');
+for (const [file, text] of entityPages(entities)) emit(file, text);
 if (errors.length) { process.stderr.write('Generated catalog differs: ' + errors.join(', ') + '\n'); process.exitCode = 1; }
 else console.log(`${check ? 'Checked' : 'Generated'} indexes and ${config.documents.filter(d => d.from).length} compatibility endpoints.`);
