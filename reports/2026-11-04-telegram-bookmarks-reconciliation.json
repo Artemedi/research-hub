@@ -715,7 +715,18 @@
       "hub_experiment_report": "reviews/inspektor-gadget/2026-11-04.md",
       "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-04.md",
       "hub_review_report": "reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-06-privilege-gate.md"
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
+      "integration_priority": {
+        "priority": "P1",
+        "workflow": "PRIORITY_INTEGRATION_BACKLOG",
+        "target_project_ids": [
+          "AKUZ",
+          "sequential-rca"
+        ],
+        "dependency": "trusted local Linux sudo authentication, pinned limited eBPF gadget and nonprod lab; independent event oracle",
+        "status": "AWAITING_PRIVILEGED_EBPF_VALIDATION",
+        "tracking": "portfolio/2026-11-06/integration-priority.md"
+      }
     },
     {
       "id": "BK-042",
@@ -1095,7 +1106,18 @@
       "hub_experiment_report": null,
       "hub_experiment_url": null,
       "hub_review_report": "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/dsh-creator-mode/2026-11-06-local-probe.md"
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+      "integration_priority": {
+        "priority": "P1",
+        "workflow": "PRIORITY_INTEGRATION_BACKLOG",
+        "target_project_ids": [
+          "dsh-runtime",
+          "agent-skills"
+        ],
+        "dependency": "DSH CVE-2026-82533 remediation; isolated patched Creator Mode; owner gate",
+        "status": "NOT_INTEGRATED",
+        "tracking": "portfolio/2026-11-06/integration-priority.md"
+      }
     },
     {
       "id": "BK-065",

@@ -1146,6 +1146,13 @@
       "title": "Решение BK-041/BK-064/CVE — лабораторные проверки и риск",
       "kind": "portfolio",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-06/integration-priority.md",
+      "title": "Приоритетная очередь интеграций — безопасность DSH, Creator Mode и Inspektor Gadget",
+      "kind": "portfolio",
+      "date": "2026-11-06"
     }
   ]
 }
