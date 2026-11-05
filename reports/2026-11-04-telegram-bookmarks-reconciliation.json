@@ -5,15 +5,15 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub, BK-060 updated 2026-11-05; other entries retain their recorded verification dates",
+  "tracked_hub_state": "Artemedi/research-hub, BK-060/062/065 evidence updated 2026-11-05; other entries retain recorded dates",
   "count_by_status": {
     "проверен экспериментально": 12,
     "ожидает проверки": 7,
     "исключён": 19,
     "разобран": 27
   },
-  "mapped_study_cards": 28,
-  "mapped_experimental_items": 14,
+  "mapped_study_cards": 30,
+  "mapped_experimental_items": 16,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -21,7 +21,8 @@
     "Awaiting validation = found/triaged in source audit but missing required full-text or reproducible target measurements; an existing GitHub repository does not constitute a runtime test.",
     "Hub study card mapping is only for matching titles; related research from the hub outside the Telegram list must not be counted as original Telegram entries.",
     "Original Telegram chronology is reconstructed from the preserved audit; the original Telegram message byte stream was not available for independent comparison.",
-    "BK-041 has a permission-gate lab report but is still AWAITING a real eBPF tracer experiment. Linked reports do not imply successful target-capability verification."
+    "BK-041 has a permission-gate lab report but is still AWAITING a real eBPF tracer experiment. Linked reports do not imply successful target-capability verification.",
+    "BK-062 and BK-065 linked source-gate reports are partial reviews, NOT experiments or completed deep source reviews; both remain awaiting validation. hub_experiment_report is a historical link field and does not prove execution."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -1049,15 +1050,15 @@
       "telegram_title_recovered": "Reverse Engineer Anything (REA)",
       "source_url": "https://github.com/morluto/rea",
       "source_kind": "Reverse-engineering suite",
-      "source_audit_evidence": "REPO_AND_TREE",
+      "source_audit_evidence": "PARTIAL_PINNED_SOURCE_GATE_REVIEW",
       "initial_priority_2026_11_03": "B",
       "status": "ожидает проверки",
       "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Не установлен безопасный sandbox и допустимость работы с бинарниками/лицензиями.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status_reason_ru": "Подтверждён static PE/CLI contract; полный parser/provider source review и safe pipeline test не завершены. PARTIAL_SOURCE_REVIEW / NOT_RUN; исполнение targets и setup не проводились.",
+      "hub_study_card": "studies/reverse-engineer-anything.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/reverse-engineer-anything.md",
+      "hub_experiment_report": "reports/2026-11-05-bk062-rea-source-gate.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk062-rea-source-gate.md"
     },
     {
       "id": "BK-063",
@@ -1097,15 +1098,15 @@
       "telegram_title_recovered": "Vercel Agent Desktop",
       "source_url": "https://github.com/vercel-labs/agent-desktop",
       "source_kind": "Open-source desktop automation",
-      "source_audit_evidence": "REPO_README_AND_TREE",
+      "source_audit_evidence": "PARTIAL_PINNED_SOURCE_GATE_REVIEW",
       "initial_priority_2026_11_03": "A",
       "status": "ожидает проверки",
       "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Существование code/README подтверждено; требуется disposable GUI/Wayland тест и privacy gate.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status_reason_ru": "Текущий source 1.2.0 и refs/permissions частично проверены; Rust toolchain отсутствует, disposable GUI/Wayland gate не выполнен. PARTIAL_SOURCE_REVIEW / GUI_NOT_RUN / BLOCKED_ENV.",
+      "hub_study_card": "studies/vercel-agent-desktop.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/vercel-agent-desktop.md",
+      "hub_experiment_report": "reports/2026-11-05-bk065-agent-desktop-source-gate.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk065-agent-desktop-source-gate.md"
     }
   ],
   "public_projection_note": "Public projection excludes private project-candidate lists and additional audit notes; full user inventory is available as a separate private artifact."

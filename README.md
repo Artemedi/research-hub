@@ -31,6 +31,10 @@
 
 ## Новые отчёты
 
+- **[BK-062 — REA: промежуточная проверка границ](reports/2026-11-05-bk062-rea-source-gate.md)** — [карточка](studies/reverse-engineer-anything.md); source review не завершён, статус ожидания сохранён.
+
+- **[BK-065 — Vercel Agent Desktop: промежуточная проверка границ](reports/2026-11-05-bk065-agent-desktop-source-gate.md)** — [карточка](studies/vercel-agent-desktop.md); source review не завершён, статус ожидания сохранён.
+
 - **[BK-060 — DSH Superagent Prototype: полномочия и lifecycle](reports/2026-11-05-bk060-dsh-superagent-review.md)** — [карточка](studies/dsh-superagent-prototype.md); 45 профилей, 15/15 offline core checks и mutation control. Полный security/runtime gate не пройден; PROTOTYPE_NOT_PRODUCTION.
 
 - **[Sequential Diagnosis / TrinMedicalBot — выполненный A/B и production-внедрение 5 ноября 2026](reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md)** — 144/144 технически успешных Wello-запроса (72 на arm), 44/44 локальных инфраструктурных теста, Challenger v2, проверка лекарств по источникам, очередь Telegram. `PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING`; исходный SDBench не воспроизводился.

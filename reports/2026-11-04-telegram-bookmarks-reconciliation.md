@@ -1,6 +1,6 @@
 # Telegram-подборка → research-hub: полная сверка 65 пунктов
 
-**Дата:** 2026-11-04; BK-060 и агрегаты обновлены 2026-11-05. **Назначение:** восстановить последовательность исходных Telegram-закладок, не смешивая их с другими исследовательскими потоками.
+**Дата:** 2026-11-04; BK-060/062/065 evidence и агрегаты обновлены 2026-11-05. **Назначение:** восстановить последовательность исходных Telegram-закладок, не смешивая их с другими исследовательскими потоками.
 
 **Происхождение:** сохранённые `bookmark_research_inventory_2026-11-03.json` и `bookmark_research_audit_2026-11-03.md` от 3 ноября. Это **производный аудит пересланных сообщений**, а не дословный экспорт Telegram. Даты, заголовки, URL и порядок перенесены из сохранённого аудита; сверка с исходным текстом Telegram построчно невозможна без его прямой копии.
 
@@ -85,10 +85,10 @@
 | BK-059 / 01.11 | [IPFire fireperf](https://www.ipfire.org/fireperf) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/ipfire-fireperf.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk059-fireperf-loopback.md) | Авторская сборка 0.3.0, 12 ограниченных изолированных loopback-прогонов, 240/240 TCP и отрицательный контроль; не производство, не iperf3 A/B. |
 | BK-060 / 01.11 | [dsh-superagent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) | **разобран** | [Карточка](../studies/dsh-superagent-prototype.md), [обзор](2026-11-05-bk060-dsh-superagent-review.md) | 05.11: pinned source review, 15/15 original core checks с fake Policy/Executor и mutation control; полный runtime/security NOT_RUN, PROTOTYPE_NOT_PRODUCTION. |
 | BK-061 / 01.11 | [ASCII Sharks](https://github.com/stackedlol/ascii-sharks) | **исключён** | — | ASCII-визуализация не имеет установленного ROI для задач проектов. |
-| BK-062 / 02.11 | [Reverse Engineer Anything (REA)](https://github.com/morluto/rea) | **ожидает проверки** | — | Не установлен безопасный sandbox и допустимость работы с бинарниками/лицензиями. |
+| BK-062 / 02.11 | [REA](https://github.com/morluto/rea) | **ожидает проверки** | [карточка](../studies/reverse-engineer-anything.md), [source gate](2026-11-05-bk062-rea-source-gate.md) | Подтверждён static PE/CLI contract; полный parser/provider source review и safe pipeline test не завершены. PARTIAL_SOURCE_REVIEW / NOT_RUN; исполнение targets и setup не проводились. |
 | BK-063 / 02.11 | [Tencent Hyra 2.0](https://hy.tencent.com/research/hyra2) | **ожидает проверки** | — | Сохранился анонс; полный методологический текст не подтверждён. По одной странице scientific verdict невозможен. |
 | BK-064 / 02.11 | [DeepSeek Harness Creator Mode examples](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html) | **ожидает проверки** | — | Есть официальные примеры, но не tested transferable skill/protocol. |
-| BK-065 / 03.11 | [Vercel Agent Desktop](https://github.com/vercel-labs/agent-desktop) | **ожидает проверки** | — | Существование code/README подтверждено; требуется disposable GUI/Wayland тест и privacy gate. |
+| BK-065 / 03.11 | [Vercel Agent Desktop](https://github.com/vercel-labs/agent-desktop) | **ожидает проверки** | [карточка](../studies/vercel-agent-desktop.md), [source gate](2026-11-05-bk065-agent-desktop-source-gate.md) | Текущий source 1.2.0 и refs/permissions частично проверены; Rust toolchain отсутствует, disposable GUI/Wayland gate не выполнен. PARTIAL_SOURCE_REVIEW / GUI_NOT_RUN / BLOCKED_ENV. |
 
 ## Чего фактически не хватало в research-hub
 

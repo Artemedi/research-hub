@@ -1,5 +1,10 @@
 # Individually indexed studies — previously reviewed in DSH
 
+**BK-062 — REA:** [карточка](reverse-engineer-anything.md), [промежуточный source gate](../reports/2026-11-05-bk062-rea-source-gate.md); полный review и runtime gate не завершены.
+
+**BK-065 — Vercel Agent Desktop:** [карточка](vercel-agent-desktop.md), [промежуточный source gate](../reports/2026-11-05-bk065-agent-desktop-source-gate.md); полный review и runtime gate не завершены.
+
+
 **Telegram BK-060 — DSH Superagent Prototype:** [карточка](dsh-superagent-prototype.md), [source review и 15 ограниченных core checks](../reports/2026-11-05-bk060-dsh-superagent-review.md); полный security/runtime NOT_RUN, PROTOTYPE_NOT_PRODUCTION.
 
 
