@@ -6,12 +6,13 @@
 
 ## Текущий обзор
 
-[exactly-once-limbo-telegrambot-review](../../reviews/exactly-once-limbo/2026-11-04.md) — BOUNDED_CODE_REVIEW. The review tests pinned TelegramBot control flow with a fake HTTP/service ledger and replays selected original LIMBO contracts. No Telegram, Gemini, YouTube, or Actions network was called; results are synthetic fault scenarios, not production error rates. The 120/180 duplicate fraction is not a real-world frequency. The current Telegram API contract does not document an idempotency key; no production approval.
+[fulltext-exactly-once-limbo-2026-11-05](../../reviews/exactly-once-limbo/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [exactly-once-limbo-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.29095).
 - [exactly-once-limbo-telegrambot-review](../../reviews/exactly-once-limbo/2026-11-04.md), 2026-11-04; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e](https://github.com/Artemedi/TelegramBot/tree/b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e), [2db09fba22a0572a70639162a808906409f612a8](https://github.com/jaxblack/limbo-bench/tree/2db09fba22a0572a70639162a808906409f612a8).
+- [fulltext-exactly-once-limbo-2026-11-05](../../reviews/exactly-once-limbo/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.29095v1).
 
 ## Применимость к проектам
 

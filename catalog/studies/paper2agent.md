@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[paper2agent-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) — HISTORICAL_REVIEW_RECORDED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
+[fulltext-paper2agent-2026-11-05](../../reviews/paper2agent/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [paper2agent-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://www.nature.com/articles/s41586-026-11044-y).
+- [fulltext-paper2agent-2026-11-05](../../reviews/paper2agent/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [Nature version of record 2026-09-16](https://www.nature.com/articles/s41586-026-11044-y).
 
 ## Применимость к проектам
 

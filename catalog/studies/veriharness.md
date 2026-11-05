@@ -6,12 +6,13 @@
 
 ## Текущий обзор
 
-[veriharness-review](../../reviews/veriharness/2026-11-04.md) — BOUNDED_CODE_REVIEW. Deterministic gates only; full LLM VeriHarness was not run, no project-benefit or production approval. Historical paper assessment is retained separately.
+[fulltext-veriharness-2026-11-05](../../reviews/veriharness/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [veriharness-review](../../reviews/veriharness/2026-11-04.md), 2026-11-04; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2610.00972), [0f10db9818920f8d79641b23d9311c4877f67702](https://github.com/google-research/veriharness/tree/0f10db9818920f8d79641b23d9311c4877f67702).
 - [veriharness-historical-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2610.00972).
+- [fulltext-veriharness-2026-11-05](../../reviews/veriharness/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2610.00972v1).
 
 ## Применимость к проектам
 

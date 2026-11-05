@@ -1006,6 +1006,97 @@
       "title": "Покрытие доказательств — повторная проверка первоисточников",
       "kind": "portfolio",
       "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-error-dataset/2026-11-05-full-text.md",
+      "title": "Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/covert-assistance/2026-11-05-full-text.md",
+      "title": "Covert Assistance — Helpful LLM Agents Evade Oversight — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/drag/2026-11-05-full-text.md",
+      "title": "DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/exactly-once-limbo/2026-11-05-full-text.md",
+      "title": "Where Does Exactly-Once Live? / LIMBO — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/kvset/2026-11-05-full-text.md",
+      "title": "KVSET — The KV Cache Working Set — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/kvtether/2026-11-05-full-text.md",
+      "title": "KVTether — KV Cache Lifecycle Management in ReAct Agents — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/maadbench/2026-11-05-full-text.md",
+      "title": "MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/paper2agent/2026-11-05-full-text.md",
+      "title": "Paper2Agent — Research Papers as Reliable AI Agents — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/realm/2026-11-05-full-text.md",
+      "title": "REALM — Retrieval-Driven Memory Reconsolidation — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/recap/2026-11-05-full-text.md",
+      "title": "ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/statecomp/2026-11-05-full-text.md",
+      "title": "StateComp — State-Conditioned Context Compression — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/veriharness/2026-11-05-full-text.md",
+      "title": "VeriHarness — Evidence-Grounded Agentic Verification — полнотекстовая научная проверка",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-05/full-text-closure.md",
+      "title": "Доказательное покрытие — закрытие полнотекстовых научных пробелов",
+      "kind": "portfolio",
+      "date": "2026-11-05"
     }
   ]
 }

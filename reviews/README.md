@@ -8,14 +8,18 @@
 
 | Обзор | Дата записи |
 | --- | --- |
+| [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
 | [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
 | [Chartli — parser и отображение](chartli/2026-11-04.md) | 2026-11-04 |
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |
+| [Covert Assistance — Helpful LLM Agents Evade Oversight — полнотекстовая научная проверка](covert-assistance/2026-11-05-full-text.md) | 2026-11-05 |
+| [DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка](drag/2026-11-05-full-text.md) | 2026-11-05 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |
+| [Where Does Exactly-Once Live? / LIMBO — полнотекстовая научная проверка](exactly-once-limbo/2026-11-05-full-text.md) | 2026-11-05 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
@@ -23,12 +27,18 @@
 | [IPFire fireperf — TCP loopback](ipfire-fireperf/2026-11-04.md) | 2026-11-04 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |
 | [Karpathy autoresearch — исходники и ограничения](karpathy-autoresearch/2026-11-04.md) | 2026-11-04 |
+| [KVSET — The KV Cache Working Set — полнотекстовая научная проверка](kvset/2026-11-05-full-text.md) | 2026-11-05 |
+| [KVTether — KV Cache Lifecycle Management in ReAct Agents — полнотекстовая научная проверка](kvtether/2026-11-05-full-text.md) | 2026-11-05 |
 | [Local Knowledge Graph — граф рассуждений](local-knowledge-graph/2026-11-04.md) | 2026-11-04 |
+| [MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка](maadbench/2026-11-05-full-text.md) | 2026-11-05 |
 | [MCP Toolbox и Wiki_PG — настройки PostgreSQL](mcp-toolbox-postgres/2026-11-04.md) | 2026-11-04 |
 | [Microsoft Skill Recorder — действия и приватность](microsoft-skill-recorder/2026-11-04.md) | 2026-11-04 |
 | [NovaFabric — капсулы, replay и проверка evidence](novafabric/2026-11-04.md) | 2026-11-04 |
 | [Open Steps — хуки и ограничения](open-steps/2026-11-04.md) | 2026-11-04 |
+| [Paper2Agent — Research Papers as Reliable AI Agents — полнотекстовая научная проверка](paper2agent/2026-11-05-full-text.md) | 2026-11-05 |
 | [pgbot — диагностические проверки PostgreSQL](pgbot/2026-11-04.md) | 2026-11-04 |
+| [REALM — Retrieval-Driven Memory Reconsolidation — полнотекстовая научная проверка](realm/2026-11-05-full-text.md) | 2026-11-05 |
+| [ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка](recap/2026-11-05-full-text.md) | 2026-11-05 |
 | [REA — проверка PE layout](reverse-engineer-anything/2026-11-05-pe-layout.md) | 2026-11-05 |
 | [REA — границы статического анализа](reverse-engineer-anything/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [RRSI и Harness² — переобучение при отборе](rrsi-harness2/2026-11-04.md) | 2026-11-04 |
@@ -36,6 +46,7 @@
 | [TrinMedicalBot — A/B и внедрение Challenger v2](sequential-diagnosis-language-models/2026-11-05-challenger.md) | 2026-11-05 |
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
+| [StateComp — State-Conditioned Context Compression — полнотекстовая научная проверка](statecomp/2026-11-05-full-text.md) | 2026-11-05 |
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [Understand Anything — граф и SQL parser](understand-anything/2026-11-04.md) | 2026-11-04 |
 | [Unreal Agent — доступность исходного видео](unreal-agent/2026-11-04.md) | 2026-11-04 |
@@ -43,6 +54,7 @@
 | [Agent Desktop — ссылки и разрешения](vercel-agent-desktop/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [Agent Desktop — изолированная проверка Wayland](vercel-agent-desktop/2026-11-05-wayland.md) | 2026-11-05 |
 | [VeriHarness и agent-config — проверка gates](veriharness/2026-11-04.md) | 2026-11-04 |
+| [VeriHarness — Evidence-Grounded Agentic Verification — полнотекстовая научная проверка](veriharness/2026-11-05-full-text.md) | 2026-11-05 |
 | [Warp Skill Doctor — атрибуция и приватность](warp-skill-doctor/2026-11-04.md) | 2026-11-04 |
 | [Yahont CE — поиск, ACL и лицензия](yahont-ce/2026-11-04.md) | 2026-11-04 |
 | [youtube-skills — инструкции и внешние зависимости](youtube-skills/2026-11-04.md) | 2026-11-04 |

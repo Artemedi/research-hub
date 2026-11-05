@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[recap-review](../../studies/recap.md) — HISTORICAL_REVIEW_RECORDED. Historical full-source assessment preserved; no fresh reread or reproduction.
+[fulltext-recap-2026-11-05](../../reviews/recap/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [recap-review](../../studies/recap.md), 2026-11-03; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.40118).
+- [fulltext-recap-2026-11-05](../../reviews/recap/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.40118v1).
 
 ## Применимость к проектам
 

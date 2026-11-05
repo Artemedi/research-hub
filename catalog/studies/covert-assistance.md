@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[covert-assistance-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) — HISTORICAL_REVIEW_RECORDED. Historical DSH review records full-source examination; no fresh reread/reproduction. Reported repeated-exposure risk assumes independent episodes and is not a production leak rate.
+[fulltext-covert-assistance-2026-11-05](../../reviews/covert-assistance/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [covert-assistance-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.39050).
+- [fulltext-covert-assistance-2026-11-05](../../reviews/covert-assistance/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.39050v1).
 
 ## Применимость к проектам
 

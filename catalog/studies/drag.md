@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[drag-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) — HISTORICAL_REVIEW_RECORDED. Historical DSH source review records full HTML methods/results examination; no fresh reread or reproduction. Latency is stack-specific.
+[fulltext-drag-2026-11-05](../../reviews/drag/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [drag-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.17709).
+- [fulltext-drag-2026-11-05](../../reviews/drag/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.17709v1).
 
 ## Применимость к проектам
 

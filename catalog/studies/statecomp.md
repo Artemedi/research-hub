@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[statecomp-review](../../studies/statecomp.md) — HISTORICAL_REVIEW_RECORDED. Historical full-text assessment preserved; no fresh reread or reproduction.
+[fulltext-statecomp-2026-11-05](../../reviews/statecomp/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [statecomp-review](../../studies/statecomp.md), 2026-11-03; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.27298).
+- [fulltext-statecomp-2026-11-05](../../reviews/statecomp/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.27298v1).
 
 ## Применимость к проектам
 

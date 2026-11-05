@@ -116,7 +116,7 @@
       "kind": "paper",
       "card": "studies/agent-error-dataset.md",
       "primary_url": "https://arxiv.org/abs/2609.40111",
-      "current_review_id": "agent-error-dataset-review",
+      "current_review_id": "fulltext-agent-error-dataset-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "b63b4f112669f519f32c23c6e54916574bc15b2d2c9d9c7285fdbeea4f32616e",
       "linked_materials": [
@@ -303,7 +303,7 @@
       "kind": "paper",
       "card": "studies/covert-assistance.md",
       "primary_url": "https://arxiv.org/abs/2609.39050",
-      "current_review_id": "covert-assistance-review",
+      "current_review_id": "fulltext-covert-assistance-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "e199e7fdbfe67ad4d91f2f1ef821e63a822f68e357cf13cfef40ebfd3d8d53c2",
       "linked_materials": [
@@ -374,7 +374,7 @@
       "kind": "paper",
       "card": "studies/drag.md",
       "primary_url": "https://arxiv.org/abs/2609.17709",
-      "current_review_id": "drag-review",
+      "current_review_id": "fulltext-drag-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "013a5082e14d897dacb6b2fbe9376dd7972cb8bb21535a72610d08dc3b9a961c",
       "linked_materials": [
@@ -404,7 +404,7 @@
       "kind": "paper",
       "card": "studies/exactly-once-limbo.md",
       "primary_url": "https://arxiv.org/abs/2609.29095",
-      "current_review_id": "exactly-once-limbo-telegrambot-review",
+      "current_review_id": "fulltext-exactly-once-limbo-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "75bac18caa85ca9b8de9d1c5d23342161f0e9666beedaafcd64e0b53b6ee1fbb",
       "linked_materials": [
@@ -575,7 +575,7 @@
       "card": "studies/kvset.md",
       "title": "KVSET — The KV Cache Working Set",
       "fit_coverage": "PARTIAL",
-      "current_review_id": "kvset-review",
+      "current_review_id": "fulltext-kvset-2026-11-05",
       "id": "kvset",
       "primary_url": "https://arxiv.org/abs/2609.27746",
       "card_body_sha256": "a815225cdfd8eacedfd2c60b002bb5cc20c71a9172cc6c3b46f789f17be70e2f",
@@ -589,7 +589,7 @@
       "card": "studies/kvtether.md",
       "title": "KVTether — KV Cache Lifecycle Management in ReAct Agents",
       "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
-      "current_review_id": "kvtether-review",
+      "current_review_id": "fulltext-kvtether-2026-11-05",
       "id": "kvtether",
       "primary_url": "https://arxiv.org/abs/2609.39819",
       "card_body_sha256": "876e2e714b7d714da9dfb516b58ee9781e828cb68212c13374b9b700cd04068c",
@@ -638,7 +638,7 @@
       "card": "studies/maadbench.md",
       "title": "MAADBench — Multi-Agent Anomaly and Fault Benchmarks",
       "fit_coverage": "PARTIAL",
-      "current_review_id": "maadbench-review",
+      "current_review_id": "fulltext-maadbench-2026-11-05",
       "id": "maadbench",
       "primary_url": "https://arxiv.org/abs/2609.36556",
       "card_body_sha256": "253b026eae79bfbf516193a493a01343cfdb4f283fba0530a5866593cee780ac",
@@ -787,7 +787,7 @@
       "card": "studies/paper2agent.md",
       "title": "Paper2Agent — Research Papers as Reliable AI Agents",
       "fit_coverage": "PARTIAL",
-      "current_review_id": "paper2agent-review",
+      "current_review_id": "fulltext-paper2agent-2026-11-05",
       "id": "paper2agent",
       "primary_url": "https://www.nature.com/articles/s41586-026-11044-y",
       "card_body_sha256": "c0f975a988181ec9dcf79f23cce50a521d6db375b26c3c4b439bfc987010c839",
@@ -867,7 +867,7 @@
       "kind": "paper",
       "card": "studies/realm.md",
       "primary_url": "https://arxiv.org/abs/2609.16053",
-      "current_review_id": "realm-review",
+      "current_review_id": "fulltext-realm-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "36953ba697ac90d4d5a5112db2336fa4c5e72f571e8fedf7826f5f934853c8bf",
       "linked_materials": [
@@ -881,7 +881,7 @@
       "kind": "paper",
       "card": "studies/recap.md",
       "primary_url": "https://arxiv.org/abs/2609.40118",
-      "current_review_id": "recap-review",
+      "current_review_id": "fulltext-recap-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "6651f1820273aa2e84e2e359cdab8112a519511ae938313e94460d956b4462bf",
       "linked_materials": [
@@ -1011,7 +1011,7 @@
       "kind": "paper",
       "card": "studies/statecomp.md",
       "primary_url": "https://arxiv.org/abs/2609.27298",
-      "current_review_id": "statecomp-review",
+      "current_review_id": "fulltext-statecomp-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "ea8199ecb00940c0040e81ab01832f330233a102d023c9eb0b92804d73644a87",
       "linked_materials": [
@@ -1126,7 +1126,7 @@
       "kind": "paper",
       "card": "studies/veriharness.md",
       "primary_url": "https://arxiv.org/abs/2610.00972",
-      "current_review_id": "veriharness-review",
+      "current_review_id": "fulltext-veriharness-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "fdaa69aaf25f1469407ad3bb891748e691e3c47023cbb4a39055dd91e672f4ab",
       "linked_materials": [
@@ -1804,6 +1804,90 @@
       "study_id": "cera-moa",
       "ref": "arxiv:v1",
       "url": "https://arxiv.org/html/2609.18779v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-agent-error-dataset-2026-11-05",
+      "study_id": "agent-error-dataset",
+      "ref": "arxiv:v2",
+      "url": "https://arxiv.org/html/2609.40111v2",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-covert-assistance-2026-11-05",
+      "study_id": "covert-assistance",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.39050v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-drag-2026-11-05",
+      "study_id": "drag",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.17709v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-exactly-once-limbo-2026-11-05",
+      "study_id": "exactly-once-limbo",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.29095v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-kvset-2026-11-05",
+      "study_id": "kvset",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/pdf/2609.27746v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-kvtether-2026-11-05",
+      "study_id": "kvtether",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.39819v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-maadbench-2026-11-05",
+      "study_id": "maadbench",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.36556v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-paper2agent-2026-11-05",
+      "study_id": "paper2agent",
+      "ref": "Nature version of record 2026-09-16",
+      "url": "https://www.nature.com/articles/s41586-026-11044-y",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-realm-2026-11-05",
+      "study_id": "realm",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.16053v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-recap-2026-11-05",
+      "study_id": "recap",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.40118v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-statecomp-2026-11-05",
+      "study_id": "statecomp",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.27298v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "verified-veriharness-2026-11-05",
+      "study_id": "veriharness",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2610.00972v1",
       "unknown_reason": null
     }
   ],
@@ -3058,6 +3142,174 @@
       "document": "reviews/cera-moa/2026-11-05-full-text.md",
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "CERA-MoA arXiv v1 прочитан; независимой репликации тренировки нет, а текущий портфель не имеет подтверждённого trainable target.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-agent-error-dataset-2026-11-05",
+      "study_ids": [
+        "agent-error-dataset"
+      ],
+      "version_ids": [
+        "verified-agent-error-dataset-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/agent-error-dataset/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-covert-assistance-2026-11-05",
+      "study_ids": [
+        "covert-assistance"
+      ],
+      "version_ids": [
+        "verified-covert-assistance-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/covert-assistance/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-drag-2026-11-05",
+      "study_ids": [
+        "drag"
+      ],
+      "version_ids": [
+        "verified-drag-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/drag/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-exactly-once-limbo-2026-11-05",
+      "study_ids": [
+        "exactly-once-limbo"
+      ],
+      "version_ids": [
+        "verified-exactly-once-limbo-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/exactly-once-limbo/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-kvset-2026-11-05",
+      "study_ids": [
+        "kvset"
+      ],
+      "version_ids": [
+        "verified-kvset-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/kvset/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-kvtether-2026-11-05",
+      "study_ids": [
+        "kvtether"
+      ],
+      "version_ids": [
+        "verified-kvtether-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/kvtether/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-maadbench-2026-11-05",
+      "study_ids": [
+        "maadbench"
+      ],
+      "version_ids": [
+        "verified-maadbench-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/maadbench/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-paper2agent-2026-11-05",
+      "study_ids": [
+        "paper2agent"
+      ],
+      "version_ids": [
+        "verified-paper2agent-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/paper2agent/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-realm-2026-11-05",
+      "study_ids": [
+        "realm"
+      ],
+      "version_ids": [
+        "verified-realm-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/realm/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-recap-2026-11-05",
+      "study_ids": [
+        "recap"
+      ],
+      "version_ids": [
+        "verified-recap-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/recap/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-statecomp-2026-11-05",
+      "study_ids": [
+        "statecomp"
+      ],
+      "version_ids": [
+        "verified-statecomp-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/statecomp/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "fulltext-veriharness-2026-11-05",
+      "study_ids": [
+        "veriharness"
+      ],
+      "version_ids": [
+        "verified-veriharness-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/veriharness/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
       "supersedes": null
     }
   ],

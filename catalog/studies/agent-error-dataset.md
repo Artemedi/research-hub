@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[agent-error-dataset-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) — HISTORICAL_REVIEW_RECORDED. The DSH historical decision records full-source examination, but no fresh reread or independent reproduction is claimed; historical disposition is DSH-specific.
+[fulltext-agent-error-dataset-2026-11-05](../../reviews/agent-error-dataset/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
 ## Версии и история обзоров
 
 - [agent-error-dataset-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.40111).
+- [fulltext-agent-error-dataset-2026-11-05](../../reviews/agent-error-dataset/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/html/2609.40111v2).
 
 ## Применимость к проектам
 
