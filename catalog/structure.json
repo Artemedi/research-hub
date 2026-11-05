@@ -1097,6 +1097,20 @@
       "title": "Доказательное покрытие — закрытие полнотекстовых научных пробелов",
       "kind": "portfolio",
       "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/cursor-token-efficiency/2026-11-05-primary.md",
+      "title": "Cursor — инженерный источник и пределы доказательств",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-05/source-version-gates.md",
+      "title": "Проверенные версии источников и внешние блокировки",
+      "kind": "portfolio",
+      "date": "2026-11-05"
     }
   ]
 }

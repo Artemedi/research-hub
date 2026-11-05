@@ -317,7 +317,7 @@
       "kind": "engineering",
       "card": "studies/cursor-token-efficiency.md",
       "primary_url": "https://cursor.com/blog/improved-token-efficiency",
-      "current_review_id": "cursor-token-efficiency-review",
+      "current_review_id": "cursor-token-efficiency-primary-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "f8db572df897bfa4425f79f2c139d435e9b662f5ab0f43d455281ec6fef980ab",
       "linked_materials": [
@@ -1889,6 +1889,27 @@
       "ref": "arxiv:v1",
       "url": "https://arxiv.org/html/2610.00972v1",
       "unknown_reason": null
+    },
+    {
+      "id": "anthropic-agent-automations-observed-html-2026-11-05",
+      "study_id": "anthropic-agent-automations",
+      "ref": "htmlsha256:968c4c5a26cd0056035a998aa2fec6586fe159cc55cb2dbf90cbe885307027ae",
+      "url": "https://claude.dev/blog/building-effective-agent-automations/",
+      "unknown_reason": null
+    },
+    {
+      "id": "cursor-token-efficiency-observed-html-2026-11-05",
+      "study_id": "cursor-token-efficiency",
+      "ref": "htmlsha256:b3acfeaf56c9f2100b212ad1b28c0cffc2340a1f915fd85dba0b7c222fc81466",
+      "url": "https://cursor.com/blog/improved-token-efficiency",
+      "unknown_reason": null
+    },
+    {
+      "id": "sequential-diagnosis-observed-pdf-2026-11-05",
+      "study_id": "sequential-diagnosis-language-models",
+      "ref": "author-pdf-sha256:92b8989852d2bb4218f7e9d208cb6c29fd74d139803623f98b50feaa569135fa",
+      "url": "https://erichorvitz.com/sequential_diagnosis_LM.pdf",
+      "unknown_reason": null
     }
   ],
   "reviews": [
@@ -3310,6 +3331,20 @@
       "document": "reviews/veriharness/2026-11-05-full-text.md",
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "cursor-token-efficiency-primary-2026-11-05",
+      "study_ids": [
+        "cursor-token-efficiency"
+      ],
+      "version_ids": [
+        "cursor-token-efficiency-observed-html-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/cursor-token-efficiency/2026-11-05-primary.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Полная авторская engineering-статья прочитана и сверена с HTML-снимком; производственные улучшения AUTHOR_REPORTED, независимые A/B и интеграция в локальные проекты NOT_RUN. Исторический DSH review сохранён.",
       "supersedes": null
     }
   ],

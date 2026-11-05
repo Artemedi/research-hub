@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[cursor-token-efficiency-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) — HISTORICAL_REVIEW_RECORDED. Historical DSH review records complete first-party engineering article review; proprietary A/B results are not independently reproducible.
+[cursor-token-efficiency-primary-2026-11-05](../../reviews/cursor-token-efficiency/2026-11-05-primary.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Полная авторская engineering-статья прочитана и сверена с HTML-снимком; производственные улучшения AUTHOR_REPORTED, независимые A/B и интеграция в локальные проекты NOT_RUN. Исторический DSH review сохранён.
 
 ## Версии и история обзоров
 
 - [cursor-token-efficiency-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://cursor.com/blog/improved-token-efficiency).
+- [cursor-token-efficiency-primary-2026-11-05](../../reviews/cursor-token-efficiency/2026-11-05-primary.md), 2026-11-05; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [htmlsha256:b3acfeaf56c9f2100b212ad1b28c0cffc2340a1f915fd85dba0b7c222fc81466](https://cursor.com/blog/improved-token-efficiency).
 
 ## Применимость к проектам
 
