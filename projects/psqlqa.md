@@ -4,19 +4,20 @@
 
 [Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/psqlqa/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
 
-**Пилот:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
+**Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
 ## Исследовательские кандидаты
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [rea](../catalog/studies/rea.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | desktop plan analyzer fork: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
-| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | PROFILE_CANDIDATE_NOT_VALIDATED | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | desktop plan analyzer fork: предметный кандидат из профиля; текущий target source seam и acceptance baseline не проверены. См. ограничения и тест в отчёте. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
+| [rea](../catalog/studies/rea.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | desktop plan analyzer fork: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | PROFILE_CANDIDATE_NOT_VALIDATED | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | desktop plan analyzer fork: предметный кандидат из профиля; текущий target source seam и acceptance baseline не проверены. См. ограничения и тест в отчёте. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
 
-## Соответствие не подтверждено
+## Соответствие не подтверждено или применение отложено
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | desktop plan analyzer fork: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
+| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | desktop plan analyzer fork: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
+| [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | REFERENCE_NO_TARGET | PROFILE_TRIAGE_ONLY | Справочный fork анализатора планов; нет downstream task-agent контракта. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 
-Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.
+Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

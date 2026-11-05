@@ -1,5 +1,7 @@
 # Self-Replicating Prompt Injections Exist
 
+[Структурированная запись и связи](../catalog/studies/self-replicating-prompt-injections.md)
+
 **Primary source:** https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist
 
 **Topic:** `SECURITY`. **Previously recorded evidence:** `FULL_PUBLIC_DISCLOSURE_REVIEW_RECORDED`.

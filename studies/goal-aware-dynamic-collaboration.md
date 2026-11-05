@@ -1,5 +1,7 @@
 # Goal-Aware Dynamic Multi-Agent Collaboration (GAD)
 
+[Структурированная запись и связи](../catalog/studies/goal-aware-dynamic-collaboration.md)
+
 **Primary source:** https://arxiv.org/abs/2610.39193 ; [full PDF v1](https://arxiv.org/pdf/2610.39193v1).
 **Original PDF SHA-256:** 5338392c1e65f133e460c8d33adf826872fb5fd45abdfb6240ee021762cfac93. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

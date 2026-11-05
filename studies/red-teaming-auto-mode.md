@@ -1,5 +1,7 @@
 # Red-Teaming Auto Mode
 
+[Структурированная запись и связи](../catalog/studies/red-teaming-auto-mode.md)
+
 **Primary source:** https://arxiv.org/abs/2609.19587
 
 **Topic:** `SECURITY`. **Previously recorded evidence:** `PUBLIC_METHODS_REVIEW_RECORDED_APPENDICES_NOT_INSPECTED`.

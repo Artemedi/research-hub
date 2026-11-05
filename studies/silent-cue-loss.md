@@ -1,5 +1,7 @@
 # Silent Cue Loss — Formatting in Document Ingestion
 
+[Структурированная запись и связи](../catalog/studies/silent-cue-loss.md)
+
 **Primary source:** https://arxiv.org/abs/2610.30026 ; [full PDF v1](https://arxiv.org/pdf/2610.30026v1).
 **Original PDF SHA-256:** a1634fad8737ed6ff5524ff7f943ba48ee962cf0633e40b6cf356fb5608cf06c. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

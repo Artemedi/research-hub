@@ -1,5 +1,7 @@
 # Cursor — Improved Token Efficiency
 
+[Структурированная запись и связи](../catalog/studies/cursor-token-efficiency.md)
+
 **Primary source:** https://cursor.com/blog/improved-token-efficiency
 
 **Topic:** `INFERENCE_EFFICIENCY`. **Previously recorded evidence:** `FULL_ENGINEERING_ARTICLE_REVIEW_RECORDED`.

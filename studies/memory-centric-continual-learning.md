@@ -1,5 +1,7 @@
 # Memory-Centric Continual Learning (MCCL)
 
+[Структурированная запись и связи](../catalog/studies/memory-centric-continual-learning.md)
+
 **Primary source:** https://arxiv.org/abs/2610.29357 ; [full PDF v1](https://arxiv.org/pdf/2610.29357v1).
 **Original PDF SHA-256:** f5d32f7b605cc18e033b1820e99aa23ac715671a7bf10b1608abfd5324bce268. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

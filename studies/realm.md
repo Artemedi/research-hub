@@ -1,5 +1,7 @@
 # REALM — Retrieval-Driven Memory Reconsolidation
 
+[Структурированная запись и связи](../catalog/studies/realm.md)
+
 **Primary source:** https://arxiv.org/abs/2609.16053
 
 **Topic:** `MEMORY`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

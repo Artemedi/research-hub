@@ -1,5 +1,7 @@
 # Where You Inject Matters — Trust Region Effect
 
+[Структурированная запись и связи](../catalog/studies/trust-region-injection.md)
+
 **Primary source:** https://arxiv.org/abs/2610.38867 ; [full PDF v1](https://arxiv.org/pdf/2610.38867v1).
 **Original PDF SHA-256:** 82473243e510b0a7fa305a92c73c619e15d91b276d224e00ea39413d2212d4d5. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

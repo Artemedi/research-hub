@@ -4,20 +4,22 @@
 
 [Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/AKUZ/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
 
-**Пилот:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
+**Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
 ## Исследовательские кандидаты
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
+| [inspektor-gadget](../catalog/studies/inspektor-gadget.md) | DOCUMENTED_CANDIDATE | кандидат | Для Linux PostgreSQL это кандидат на точечное, ограниченное по времени собирание дополнительных доказательств: trace_open для доступа к файлам, trace_exec для дочерних процессов, TCP/DNS Gadgets для системных сетевых событий. Сопоставлять с pg_stat_activity, pg_stat_io, системными журналами, pid/cgroup и метриками Prometheus. Ни один eBPF-trace не является SQL-планом, не заменяет EXPLAIN (ANALYZE, BUFFERS) и не даёт автоматически причинно-следственного доказательства. | [Обзор](../reviews/inspektor-gadget/2026-11-04.md) · [Основание](../reviews/inspektor-gadget/2026-11-04.md) |
+| [ipfire-fireperf](../catalog/studies/ipfire-fireperf.md) | DOCUMENTED_CANDIDATE | Практический предметный fit | Практический предметный fit: проверка соединений, отказов, RTT handshake и коротких request-response TCP операций между тестовыми хостами, потенциально при RCA симптомов PG replication/backup, клиентских disconnect и сетевых bottlenecks. fireperf — активный генератор и способен создать ненормальную нагрузку, даже если одна операция не использует значимый bandwidth. Он не объясняет redo queue SQL Server, wait stats PostgreSQL, storage latency SAN или packet loss до проведения корректного двуххостового эксперимента. 127.0.0.1 не проходит физический firewall, FC SAN, MPIO или маршрутизатор. | [Обзор](../reviews/ipfire-fireperf/2026-11-04.md) · [Основание](../reviews/ipfire-fireperf/2026-11-04.md) |
 
-
-## Соответствие не подтверждено
+## Соответствие не подтверждено или применение отложено
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
-| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
-| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
+| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
+| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Смешанная DBA-база; нет выделенного coding-agent task runtime или безопасного benchmark для Superagent. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 
-Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.
+Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

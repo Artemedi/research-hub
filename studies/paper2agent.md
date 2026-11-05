@@ -1,5 +1,7 @@
 # Paper2Agent — Research Papers as Reliable AI Agents
 
+[Структурированная запись и связи](../catalog/studies/paper2agent.md)
+
 **Primary source:** https://www.nature.com/articles/s41586-026-11044-y
 
 **Topic:** `RESEARCH_WORKFLOW`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

@@ -1,5 +1,7 @@
 # REVA — Reusable Evidence View Aggregation
 
+[Структурированная запись и связи](../catalog/studies/reva.md)
+
 **Original paper:** https://arxiv.org/abs/2609.11209; [complete PDF](https://arxiv.org/pdf/2609.11209v1).
 **Primary version:** arXiv v1; 11 pages. **SHA-256:** `a1779977061cc77485478e6567ec6d98c44852f5059a4cb0e77b6ba88244d601` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `ARXIV_ICDM_ACCEPTED_MANUSCRIPT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.

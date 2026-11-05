@@ -1,5 +1,7 @@
 # Agent Error Dataset — Trace-Grounded Diagnosis and Replay
 
+[Структурированная запись и связи](../catalog/studies/agent-error-dataset.md)
+
 **Primary source:** https://arxiv.org/abs/2609.40111
 
 **Topic:** `ERROR_RECOVERY`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

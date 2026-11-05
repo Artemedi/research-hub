@@ -1,5 +1,7 @@
 # SIMURG — монитор целостности потоковой генерации
 
+[Структурированная запись и связи](../catalog/studies/simurg.md)
+
 - **Авторы:** Farid Aghayev и Elturan Ahmadbayli; [полный технический отчёт от 2026-08-24](https://github.com/doofzoff/SIMURG/blob/2831a92359cdaf1b38cc14f55e74251e09a91e0b/paper/simurg_paper.pdf), 13 страниц; [SSRN 7451269](https://ssrn.com/abstract=7451269); peer review не установлен.
 - **Инженерный источник:** [SIMURG v1.0.4 @ 2831a92359cdaf1b38cc14f55e74251e09a91e0b](https://github.com/doofzoff/SIMURG/tree/2831a92359cdaf1b38cc14f55e74251e09a91e0b), 2026-09-21; [Apache-2.0](https://github.com/doofzoff/SIMURG/blob/2831a92359cdaf1b38cc14f55e74251e09a91e0b/LICENSE). Исходная закладка Telegram BK-011 от 15.09; эта ревизия позднее закладки.
 - **Метод:** анализ повторов, символов и сигнатур текста в потоке, удержание начального буфера, оценки ансамбля, прерывание и повтор. Это не самостоятельная проверка истинности медицинских и иных утверждений.

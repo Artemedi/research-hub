@@ -1,5 +1,7 @@
 # Behavior Beyond Text — Refusal Transfer Failure
 
+[Структурированная запись и связи](../catalog/studies/behavior-beyond-text.md)
+
 **Primary source:** https://arxiv.org/abs/2610.28982 ; [full PDF v1](https://arxiv.org/pdf/2610.28982v1).
 **Original PDF SHA-256:** df265e2ff480b4612cf1901c80e4d0bcb0e1545832814fc2d37fc1d2ce5224dc. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

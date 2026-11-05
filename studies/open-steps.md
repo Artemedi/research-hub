@@ -1,5 +1,7 @@
 # Open Steps — понятные статусы и навыки агентной разработки
 
+[Структурированная запись и связи](../catalog/studies/open-steps.md)
+
 - **Источник:** [kharmanskyi/open-steps](https://github.com/kharmanskyi/open-steps), Pavlo Kharmanskyi; открытая инженерная реализация, не рецензируемая научная статья.
 - **Исходный Telegram ID:** BK-006 / 11.09.2026; при этом здесь рассмотрена более поздняя версия, не утверждается, что она существовала в исходной закладке.
 - **Версия:** [v0.4.8 / 4fa744ba8ea06ccf128a39853824c46ac391dd00](https://github.com/kharmanskyi/open-steps/tree/4fa744ba8ea06ccf128a39853824c46ac391dd00), коммит 2026-10-05; проверка 2026-11-04; [MIT](https://github.com/kharmanskyi/open-steps/blob/4fa744ba8ea06ccf128a39853824c46ac391dd00/LICENSE).

@@ -1,5 +1,7 @@
 # KVTether — KV Cache Lifecycle Management in ReAct Agents
 
+[Структурированная запись и связи](../catalog/studies/kvtether.md)
+
 **Primary source:** https://arxiv.org/abs/2609.39819
 
 **Topic:** `KV_CACHE`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

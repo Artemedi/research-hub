@@ -1,5 +1,7 @@
 # Training Small LMs for Transferable Tool Selection
 
+[Структурированная запись и связи](../catalog/studies/transferable-tool-selection.md)
+
 **Primary source:** https://arxiv.org/abs/2610.31483 ; [full PDF v1](https://arxiv.org/pdf/2610.31483v1).
 **Original PDF SHA-256:** 2c13c3a2558a5c18ed484d62326f62e25ac77ea55cc9dec439a033bd3259145e. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

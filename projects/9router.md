@@ -4,20 +4,24 @@
 
 [Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/9router/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
 
-**Пилот:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
+**Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
 ## Исследовательские кандидаты
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
+| [julia-1](../catalog/studies/julia-1.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | \| 9router \| Исследовать локальное ранжирование уже разрешённых provider/model кандидатов; контракт allowedCandidates @d15f5bf задаёт жёсткий верхний предел, не делегируя полномочия модели. \| Offline replay с policy oracle: ни одной попытки вне allowlist, fallback и modalities сохранены; проверить качество, стоимость и p95. \| PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE \| | [Обзор](../reviews/julia-1/2026-11-04.md) · [Основание](../reviews/julia-1/2026-11-04.md) |
+| [simurg](../catalog/studies/simurg.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | - Проекты: dsh-runtime, 9router, PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE. LAB_VERIFIED относится только к перечисленным синтетическим случаям; BLOCKED: MEASUREMENT_MISSING для пользы на проектах; NO_PRODUCTION_APPROVAL. | [Обзор](../reviews/simurg/2026-11-04.md) · [Основание](../studies/simurg.md) |
+| [unsloth-decision-model](../catalog/studies/unsloth-decision-model.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | - Проекты: 9router, dsh-runtime — условный выбор среди разрешённых маршрутов, PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE; нельзя делегировать модели право расширять пользовательские политики. Обзор; NO_PRODUCTION_APPROVAL. | [Обзор](../reviews/unsloth-decision-model/2026-11-04.md) · [Основание](../studies/unsloth-decision-model.md) |
+| [swrouter](../catalog/studies/swrouter.md) | DOCUMENTED_CANDIDATE | P2_SHADOW_ROUTER_TEST | \| SWRouter — multi-turn context-aware model routing \| 9router, dsh-runtime, HermesAgent \| Распределение контекстных окон и выбор модели в существующих маршрутизаторах и gateway; Model Trust and current model eligibility не изменяются. \| На 100 frozen multi-turn tasks compare always strong, simple last-turn routing, BM25 history windows, similarity windows; oracle actual task success, allowed provider set, cost including prompt caching, p95 and repair turns. \| P2_SHADOW_ROUTER_TEST \| | [Обзор](../portfolio/2026-09-03--2026-09-15/review.md) · [Основание](../portfolio/2026-09-03--2026-09-15/project-fit.md) |
 
-
-## Соответствие не подтверждено
+## Соответствие не подтверждено или применение отложено
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | model routing: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
-| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | model routing: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
-| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | model routing: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
+| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | model routing: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
+| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | model routing: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | model routing: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Model/provider routing не является lifecycle GitHub work items; нет A/B seam для этого метода. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 
-Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.
+Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

@@ -4,7 +4,7 @@
 
 [Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/03-automations/TrinMedicalBot/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
 
-**Пилот:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
+**Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
 ## Исследовательские кандидаты
 
@@ -12,12 +12,14 @@
 | --- | --- | --- | --- | --- |
 
 
-## Соответствие не подтверждено
+## Соответствие не подтверждено или применение отложено
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | medical deployment profile: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
-| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | medical deployment profile: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
-| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | medical deployment profile: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
+| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | medical deployment profile: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
+| [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | medical deployment profile: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | medical deployment profile: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [sequential-diagnosis-language-models](../catalog/studies/sequential-diagnosis-language-models.md) | DEFERRED | PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING | \| MAI-DxO / Sequential Diagnosis \| TrinMedicalBot \| В существующий DxO-lite добавлен одноагентный Challenger: проверка опровергающих фактов и альтернатив без отдельной модели или диагностических назначений; также введены приоритет экстренной помощи, русскоязычный guard, проверка лекарственного бренда и источников, очередь Telegram. Исходники и коммит внедрения, ограничение повторных попыток. \| Только инженерная проверка на синтетике; квалифицированной слепой клинической оценки нет; blocked web_extract, задержка и стоимость поиска не нормированы. \| Слепая врачебная/фармацевтическая оценка 144 ответов и регрессий по лекарствам/триажу; реальный контроль доставки нового сообщения Telegram и p95 после исправления поиска. \| PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING \| | [Обзор](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [Основание](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) |
+| [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Медицинский deployment profile; coding task autonomy не подтверждает клиническую безопасность. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 
-Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.
+Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

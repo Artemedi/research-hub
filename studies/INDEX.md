@@ -8,84 +8,84 @@
 
 | Источник | Датированные обзоры |
 | --- | --- |
-| [0-CODE — автономные циклы разработки](zero-code.md) | [2026-11-04](../reviews/zero-code/2026-11-04.md) |
-| [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md) | Сводный обзор указан в карточке |
-| [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | Сводный обзор указан в карточке |
-| [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | Сводный обзор указан в карточке |
-| [agent-risk](agent-risk.md) | Сводный обзор указан в карточке |
-| [Agentic Self-Awareness](agentic-self-awareness.md) | Сводный обзор указан в карточке |
-| [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04](../reviews/alphaxiv-openresearch/2026-11-04.md) |
-| [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04](../reviews/anthropic-agent-automations/2026-11-04.md) |
-| [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | Сводный обзор указан в карточке |
-| [BenchShield — reward-integrity instrumentation](benchshield.md) | [review](../portfolio/2026-09-03--2026-09-15/review.md) |
-| [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | Сводный обзор указан в карточке |
-| [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | Сводный обзор указан в карточке |
-| [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04](../reviews/chartli/2026-11-04.md) |
-| [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md) | [2026-11-04](../reviews/claude-swarm/2026-11-04.md) |
-| [Concordat — Typed Sessions for LLM Agents](concordat.md) | Сводный обзор указан в карточке |
-| [Covert Assistance — Helpful LLM Agents Evade Oversight](covert-assistance.md) | Сводный обзор указан в карточке |
-| [Cursor — Improved Token Efficiency](cursor-token-efficiency.md) | Сводный обзор указан в карточке |
-| [CVE-2026-82533 — техническое раскрытие](cve-2026-82533-technical-disclosure.md) | Сводный обзор указан в карточке |
-| [DAEDALUS](daedalus.md) | Сводный обзор указан в карточке |
-| [DRAG — Dynamic Retriever and Generator Selection](drag.md) | Сводный обзор указан в карточке |
-| [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05](../reviews/dsh-superagent-prototype/2026-11-05.md) |
-| [ExperienceIndex](experienceindex.md) | Сводный обзор указан в карточке |
-| [GeoAgent — Contract-Constrained Agents](geoagent.md) | Сводный обзор указан в карточке |
-| [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | Сводный обзор указан в карточке |
-| [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
-| [HarnessSecurity-Bench](harnesssecurity-bench.md) | Сводный обзор указан в карточке |
-| [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04](../reviews/rrsi-harness2/2026-11-04.md) |
-| [HTN-Orchestrate](htn-orchestrate.md) | Сводный обзор указан в карточке |
-| [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04](../reviews/hyperresearch/2026-11-04.md) |
-| [Hyra 2.0](hyra-2.md) | [2026-11-05](../reviews/hyra-2/2026-11-05.md) |
-| [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04](../reviews/inspektor-gadget/2026-11-04.md) |
-| [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04](../reviews/ipfire-fireperf/2026-11-04.md) |
-| [JevAgentHarness](jevagentharness.md) | Сводный обзор указан в карточке |
-| [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04](../reviews/julia-1/2026-11-04.md) |
-| [Karpathy autoresearch — цикл экспериментов на одной GPU](karpathy-autoresearch.md) | [2026-11-04](../reviews/karpathy-autoresearch/2026-11-04.md) |
-| [KVSET — The KV Cache Working Set](kvset.md) | Сводный обзор указан в карточке |
-| [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | Сводный обзор указан в карточке |
-| [LAGO](lago.md) | Сводный обзор указан в карточке |
-| [Local Knowledge Graph — граф шагов рассуждения модели](local-knowledge-graph.md) | [2026-11-04](../reviews/local-knowledge-graph/2026-11-04.md) |
-| [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | Сводный обзор указан в карточке |
-| [Matoi](matoi.md) | Сводный обзор указан в карточке |
-| [MemComposer](memcomposer.md) | Сводный обзор указан в карточке |
-| [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | Сводный обзор указан в карточке |
-| [MemScope](memscope.md) | Сводный обзор указан в карточке |
-| [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04](../reviews/microsoft-skill-recorder/2026-11-04.md) |
-| [NovaFabric — tamper-evident agent run evidence](novafabric.md) | [2026-11-04](../reviews/novafabric/2026-11-04.md) |
-| [Open Steps — понятные статусы и навыки агентной разработки](open-steps.md) | [2026-11-04](../reviews/open-steps/2026-11-04.md) |
-| [PackHallu](package-hallucination-rule-files.md) | Сводный обзор указан в карточке |
-| [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | Сводный обзор указан в карточке |
-| [pgbot — deterministic PostgreSQL diagnostics for AI agents](pgbot.md) | [2026-11-04](../reviews/pgbot/2026-11-04.md) |
-| [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | Сводный обзор указан в карточке |
-| [POLAR](polar.md) | Сводный обзор указан в карточке |
-| [Random Attention — KV eviction for reasoning](random-attention.md) | Сводный обзор указан в карточке |
-| [REA — Reverse Engineer Anything](reverse-engineer-anything.md) | [2026-11-05-source-boundaries](../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md) · [2026-11-05-pe-layout](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
-| [REALM — Retrieval-Driven Memory Reconsolidation](realm.md) | Сводный обзор указан в карточке |
-| [ReCAP — Persistent Context Graphs for Memory Compaction](recap.md) | Сводный обзор указан в карточке |
-| [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | Сводный обзор указан в карточке |
-| [REMORY](remory.md) | Сводный обзор указан в карточке |
-| [REVA — Reusable Evidence View Aggregation](reva.md) | Сводный обзор указан в карточке |
-| [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04](../reviews/rrsi-harness2/2026-11-04.md) |
-| [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | Сводный обзор указан в карточке |
-| [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05-project-fit](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) · [2026-11-05-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) |
-| [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | Сводный обзор указан в карточке |
-| [SIMURG — монитор целостности потоковой генерации](simurg.md) | [2026-11-04](../reviews/simurg/2026-11-04.md) |
-| [SquidAgent](squidagent.md) | Сводный обзор указан в карточке |
-| [StateComp — State-Conditioned Context Compression](statecomp.md) | Сводный обзор указан в карточке |
-| [SWRouter — multi-turn context-aware model routing](swrouter.md) | Сводный обзор указан в карточке |
-| [Tencent TeamAI CLI](tencent-teamai-cli.md) | [2026-11-04](../reviews/tencent-teamai-cli/2026-11-04.md) |
-| [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | Сводный обзор указан в карточке |
-| [Training Small LMs for Transferable Tool Selection](transferable-tool-selection.md) | Сводный обзор указан в карточке |
-| [Understand Anything — графы исходников и wiki](understand-anything.md) | [2026-11-04](../reviews/understand-anything/2026-11-04.md) |
-| [Unreal Agent — исходное видео](unreal-agent-bk025.md) | [2026-11-04](../reviews/unreal-agent/2026-11-04.md) |
-| [Unsloth — обучение decision model](unsloth-decision-model.md) | [2026-11-04](../reviews/unsloth-decision-model/2026-11-04.md) |
-| [Vercel Agent Desktop](vercel-agent-desktop.md) | [2026-11-05-source-boundaries](../reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md) · [2026-11-05-wayland](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
-| [VeriHarness — Evidence-Grounded Agentic Verification](veriharness.md) | [2026-11-04](../reviews/veriharness/2026-11-04.md) |
-| [Warp Skill Doctor — анализ сессий и предложения по навыкам](warp-skill-doctor.md) | [2026-11-04](../reviews/warp-skill-doctor/2026-11-04.md) |
-| [Where Does Exactly-Once Live? / LIMBO](exactly-once-limbo.md) | [2026-11-04](../reviews/exactly-once-limbo/2026-11-04.md) |
-| [Where You Inject Matters — Trust Region Effect](trust-region-injection.md) | Сводный обзор указан в карточке |
-| [Yahont CE — поиск и корпоративный контекст](yahont-ce.md) | [2026-11-04](../reviews/yahont-ce/2026-11-04.md) |
-| [Your Policy Is Secretly a Harness — Decision Geometry](decision-geometry-harness.md) | Сводный обзор указан в карточке |
-| [youtube-skills — инструкции к TranscriptAPI](youtube-skills.md) | [2026-11-04](../reviews/youtube-skills/2026-11-04.md) |
+| [0-CODE — автономные циклы разработки](zero-code.md) | [2026-11-04 / zero-code-review](../reviews/zero-code/2026-11-04.md) |
+| [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md) | [2026-10-05 / agent-error-dataset-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) |
+| [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | [2026-11-03 / agent-mosaic-review](agent-mosaic.md) |
+| [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [2026-11-03 / agent-transfer-protocol-review](agent-transfer-protocol.md) |
+| [agent-risk](agent-risk.md) | [2026-11-03 / agent-risk-review](agent-risk.md) |
+| [Agentic Self-Awareness](agentic-self-awareness.md) | [2026-11-03 / agentic-self-awareness-review](agentic-self-awareness.md) |
+| [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04 / alphaxiv-openresearch-review](../reviews/alphaxiv-openresearch/2026-11-04.md) |
+| [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04 / anthropic-agent-automations-review](../reviews/anthropic-agent-automations/2026-11-04.md) |
+| [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [2026-11-03 / behavior-beyond-text-review](behavior-beyond-text.md) |
+| [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | [2026-11-03 / bird-rl-review](bird-rl.md) |
+| [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) |
+| [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04 / chartli-review](../reviews/chartli/2026-11-04.md) |
+| [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md) | [2026-11-04 / claude-swarm-review](../reviews/claude-swarm/2026-11-04.md) |
+| [Concordat — Typed Sessions for LLM Agents](concordat.md) | [2026-11-03 / concordat-review](concordat.md) |
+| [Covert Assistance — Helpful LLM Agents Evade Oversight](covert-assistance.md) | [2026-10-05 / covert-assistance-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) |
+| [Cursor — Improved Token Efficiency](cursor-token-efficiency.md) | [2026-09-28 / cursor-token-efficiency-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) |
+| [CVE-2026-82533 — техническое раскрытие](cve-2026-82533-technical-disclosure.md) | [2026-11-03 / cve-2026-82533-technical-disclosure-review](cve-2026-82533-technical-disclosure.md) |
+| [DAEDALUS](daedalus.md) | [2026-11-03 / daedalus-review](daedalus.md) |
+| [DRAG — Dynamic Retriever and Generator Selection](drag.md) | [2026-09-21 / drag-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) |
+| [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05 / dsh-superagent-prototype-review](../reviews/dsh-superagent-prototype/2026-11-05.md) |
+| [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |
+| [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
+| [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |
+| [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
+| [HarnessSecurity-Bench](harnesssecurity-bench.md) | [2026-11-03 / harnesssecurity-bench-review](harnesssecurity-bench.md) |
+| [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) |
+| [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04 / hyperresearch-review](../reviews/hyperresearch/2026-11-04.md) |
+| [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
+| [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) |
+| [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04 / ipfire-fireperf-review](../reviews/ipfire-fireperf/2026-11-04.md) |
+| [JevAgentHarness](jevagentharness.md) | [2026-11-03 / jevagentharness-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04 / julia-1-review](../reviews/julia-1/2026-11-04.md) |
+| [Karpathy autoresearch — цикл экспериментов на одной GPU](karpathy-autoresearch.md) | [2026-11-04 / karpathy-autoresearch-review](../reviews/karpathy-autoresearch/2026-11-04.md) |
+| [KVSET — The KV Cache Working Set](kvset.md) | [2026-09-28 / kvset-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) |
+| [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | [2026-10-05 / kvtether-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) |
+| [LAGO](lago.md) | [2026-11-03 / lago-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Local Knowledge Graph — граф шагов рассуждения модели](local-knowledge-graph.md) | [2026-11-04 / local-knowledge-graph-review](../reviews/local-knowledge-graph/2026-11-04.md) |
+| [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | [2026-10-05 / maadbench-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) |
+| [Matoi](matoi.md) | [2026-11-03 / matoi-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [MemComposer](memcomposer.md) | [2026-11-03 / memcomposer-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [2026-11-03 / memory-centric-continual-learning-review](../portfolio/2026-10-20--2026-10-26/review.md) |
+| [MemScope](memscope.md) | [2026-11-03 / memscope-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04 / microsoft-skill-recorder-review](../reviews/microsoft-skill-recorder/2026-11-04.md) |
+| [NovaFabric — tamper-evident agent run evidence](novafabric.md) | [2026-11-03 / novafabric-paper-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-04 / novafabric-review](../reviews/novafabric/2026-11-04.md) |
+| [Open Steps — понятные статусы и навыки агентной разработки](open-steps.md) | [2026-11-04 / open-steps-review](../reviews/open-steps/2026-11-04.md) |
+| [PackHallu](package-hallucination-rule-files.md) | [2026-11-03 / package-hallucination-rule-files-review](../portfolio/2026-10-06--2026-10-12/review.md) |
+| [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | [2026-09-21 / paper2agent-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) |
+| [pgbot — deterministic PostgreSQL diagnostics for AI agents](pgbot.md) | [2026-11-04 / pgbot-review](../reviews/pgbot/2026-11-04.md) |
+| [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [2026-11-03 / poisoned-skills-review](../portfolio/2026-10-27--2026-11-02/review.md) |
+| [POLAR](polar.md) | [2026-11-03 / polar-review](../portfolio/2026-10-06--2026-10-12/review.md) |
+| [Random Attention — KV eviction for reasoning](random-attention.md) | [2026-11-03 / random-attention-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [REA — Reverse Engineer Anything](reverse-engineer-anything.md) | [2026-11-05 / rea-boundaries](../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md) · [2026-11-05 / rea-pe](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
+| [REALM — Retrieval-Driven Memory Reconsolidation](realm.md) | [2026-11-03 / realm-review](realm.md) |
+| [ReCAP — Persistent Context Graphs for Memory Compaction](recap.md) | [2026-11-03 / recap-review](recap.md) |
+| [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | [2026-11-03 / red-teaming-auto-mode-review](red-teaming-auto-mode.md) |
+| [REMORY](remory.md) | [2026-11-03 / remory-review](remory.md) |
+| [REVA — Reusable Evidence View Aggregation](reva.md) | [2026-11-03 / reva-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) |
+| [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | [2026-11-03 / self-replicating-prompt-injections-review](self-replicating-prompt-injections.md) |
+| [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05 / sequential-diagnosis-language-models-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [2026-11-05 / sequential-diagnosis-language-models-initial-review](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) |
+| [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [2026-11-03 / silent-cue-loss-review](../portfolio/2026-10-20--2026-10-26/review.md) |
+| [SIMURG — монитор целостности потоковой генерации](simurg.md) | [2026-11-04 / simurg-review](../reviews/simurg/2026-11-04.md) |
+| [SquidAgent](squidagent.md) | [2026-11-03 / squidagent-review](squidagent.md) |
+| [StateComp — State-Conditioned Context Compression](statecomp.md) | [2026-11-03 / statecomp-review](statecomp.md) |
+| [SWRouter — multi-turn context-aware model routing](swrouter.md) | [2026-11-03 / swrouter-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [Tencent TeamAI CLI](tencent-teamai-cli.md) | [2026-11-04 / tencent-teamai-cli-review](../reviews/tencent-teamai-cli/2026-11-04.md) |
+| [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | [2026-11-03 / toolgrad-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [Training Small LMs for Transferable Tool Selection](transferable-tool-selection.md) | [2026-11-03 / transferable-tool-selection-review](../portfolio/2026-10-20--2026-10-26/review.md) |
+| [Understand Anything — графы исходников и wiki](understand-anything.md) | [2026-11-04 / understand-anything-review](../reviews/understand-anything/2026-11-04.md) |
+| [Unreal Agent — исходное видео](unreal-agent-bk025.md) | [2026-11-04 / unreal-access](../reviews/unreal-agent/2026-11-04.md) |
+| [Unsloth — обучение decision model](unsloth-decision-model.md) | [2026-11-04 / unsloth-decision-model-review](../reviews/unsloth-decision-model/2026-11-04.md) |
+| [Vercel Agent Desktop](vercel-agent-desktop.md) | [2026-11-05 / vercel-agent-desktop-source-gate](../reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md) · [2026-11-05 / vercel-agent-desktop-wayland](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
+| [VeriHarness — Evidence-Grounded Agentic Verification](veriharness.md) | [2026-11-04 / veriharness-review](../reviews/veriharness/2026-11-04.md) · [2026-10-05 / veriharness-historical-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) |
+| [Warp Skill Doctor — анализ сессий и предложения по навыкам](warp-skill-doctor.md) | [2026-11-04 / warp-skill-doctor-review](../reviews/warp-skill-doctor/2026-11-04.md) |
+| [Where Does Exactly-Once Live? / LIMBO](exactly-once-limbo.md) | [2026-09-28 / exactly-once-limbo-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-04 / exactly-once-limbo-telegrambot-review](../reviews/exactly-once-limbo/2026-11-04.md) |
+| [Where You Inject Matters — Trust Region Effect](trust-region-injection.md) | [2026-11-03 / trust-region-injection-review](../portfolio/2026-10-27--2026-11-02/review.md) |
+| [Yahont CE — поиск и корпоративный контекст](yahont-ce.md) | [2026-11-04 / yahont-ce-review](../reviews/yahont-ce/2026-11-04.md) |
+| [Your Policy Is Secretly a Harness — Decision Geometry](decision-geometry-harness.md) | [2026-11-03 / decision-geometry-harness-review](decision-geometry-harness.md) |
+| [youtube-skills — инструкции к TranscriptAPI](youtube-skills.md) | [2026-11-04 / youtube-skills-review](../reviews/youtube-skills/2026-11-04.md) |

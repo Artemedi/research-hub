@@ -2,7 +2,7 @@
 
 # RRSI — Regularized Recursive Self-Improvement of Agent Harnesses
 
-Пилот единой модели. [Карточка](../../studies/rrsi.md) · [Первоисточник](https://arxiv.org/abs/2609.24972)
+Структурированная запись источника. [Карточка](../../studies/rrsi.md) · [Первоисточник](https://arxiv.org/abs/2609.24972)
 
 ## Текущий обзор
 
@@ -14,14 +14,22 @@
 
 ## Применимость к проектам
 
-Связи ещё не перенесены в единую модель. Это не NO_FIT и не отсутствие прежнего анализа; см. исходную карточку.
+Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-
+- [agent-config](../../projects/agent-config.md): DOCUMENTED_CANDIDATE; ADOPT_SELECTION_DISCIPLINE_NOT_AUTO_EVOLUTION. Вердикт: ADOPT_SELECTION_DISCIPLINE_NOT_AUTO_EVOLUTION. Для agent-config — отдельно и хирургически исправить проверку местоположения цитаты после регрессионных тестов. Для dsh-runtime — не добавлять RRSI/Harness² engine поверх существующего verifier, пока нет воспроизводимого offline-replay набора реальных traces и immutable holdout. В production-контур не направлять агента, который меняет собственные prompts/tools без независимого oracle и отдельного approval. Ограничения: Design/selection discipline only. Для dsh-runtime установка engine отложена до replay/holdout; правки agent-config требуют отдельных регрессий и approval. Польза проекта не измерена. Следующий тест: См. условия verdict и независимого oracle в связанном отчёте. [Основание](../../reviews/rrsi-harness2/2026-11-04.md); предыдущая оценка: нет.
+- [dsh-runtime](../../projects/dsh-runtime.md): DEFERRED; ADOPT_SELECTION_DISCIPLINE_NOT_AUTO_EVOLUTION. Вердикт: ADOPT_SELECTION_DISCIPLINE_NOT_AUTO_EVOLUTION. Для agent-config — отдельно и хирургически исправить проверку местоположения цитаты после регрессионных тестов. Для dsh-runtime — не добавлять RRSI/Harness² engine поверх существующего verifier, пока нет воспроизводимого offline-replay набора реальных traces и immutable holdout. В production-контур не направлять агента, который меняет собственные prompts/tools без независимого oracle и отдельного approval. Ограничения: Design/selection discipline only. Для dsh-runtime установка engine отложена до replay/holdout; правки agent-config требуют отдельных регрессий и approval. Польза проекта не измерена. Следующий тест: См. условия verdict и независимого oracle в связанном отчёте. [Основание](../../reviews/rrsi-harness2/2026-11-04.md); предыдущая оценка: нет.
 
 ## Эксперименты
 
-Отдельные записи экспериментов в пилот ещё не перенесены; см. обзоры. Это не утверждение NOT_RUN.
+В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
 
 ## Связанные исследования
 
 - [harness2](harness2.md): compares (rrsi → harness2). Общий ограниченный обзор механизмов отбора; не утверждение происхождения одного метода от другого. [Основание](../../reviews/rrsi-harness2/2026-11-04.md).
+
+## Ссылки из исходной карточки
+
+Это ссылки на материалы, а не автоматическое подтверждение связи методов или собственного эксперимента.
+
+- [reviews/rrsi-harness2/2026-11-04.md](../../reviews/rrsi-harness2/2026-11-04.md)
+- [experiments/2026-11-04-rrsi-harness2-selector-smoke.py](../../experiments/2026-11-04-rrsi-harness2-selector-smoke.py)

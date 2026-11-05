@@ -1,5 +1,7 @@
 # ReCAP — Persistent Context Graphs for Memory Compaction
 
+[Структурированная запись и связи](../catalog/studies/recap.md)
+
 **Primary source:** https://arxiv.org/abs/2609.40118
 
 **Topic:** `MEMORY`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

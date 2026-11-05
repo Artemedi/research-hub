@@ -1,5 +1,7 @@
 # Inspektor Gadget
 
+[Структурированная запись и связи](../catalog/studies/inspektor-gadget.md)
+
 **Telegram source:** BK-041 / 08.10.2026; [official repository](https://github.com/inspektor-gadget/inspektor-gadget).
 **Evidence type:** full first-party docs and verified official binary; **not** a peer-reviewed research paper. Not a source-level security audit of the entire project.
 **Source pin:** [v0.57.0](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0), tag SHA `29d60de9f7924607784915533dd5f3cc0052ee1a`; official release tar SHA-256 `f5e3233c6c1ffc3ad068326913e11def23c7cef6c764e585c2205cda0e2f76f1`.

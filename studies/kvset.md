@@ -1,5 +1,7 @@
 # KVSET — The KV Cache Working Set
 
+[Структурированная запись и связи](../catalog/studies/kvset.md)
+
 **Primary source:** https://arxiv.org/abs/2609.27746
 
 **Topic:** `KV_CACHE`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_AND_LOCAL_TOOL_TEST_RECORDED`.

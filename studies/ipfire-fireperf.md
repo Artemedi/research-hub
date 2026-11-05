@@ -1,5 +1,7 @@
 # IPFire fireperf
 
+[Структурированная запись и связи](../catalog/studies/ipfire-fireperf.md)
+
 **Telegram source:** BK-059 / 01.11.2026; [full engineering introduction](https://www.ipfire.org/fireperf) and [complete manual](https://man-pages.ipfire.org/fireperf/fireperf.html).
 **Evidence type:** full original C source and official docs; **not** a peer-reviewed scientific paper.
 **Source pin:** official [fireperf-0.3.0.tar.gz](https://source.ipfire.org/releases/fireperf/fireperf-0.3.0.tar.gz) (2026-10-26); BLAKE2b-512 `5f21302765f34a3043fc5df984b13f21355742ad787af84fb5c5d89707bbda079e1a84de465053e59a7f3ac2bb25d72fe45ba0084132d3a4067582bac9962a85`; compiled from source in disposable Fedora 44 toolbox.

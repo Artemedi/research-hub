@@ -1,5 +1,7 @@
 # Your Policy Is Secretly a Harness — Decision Geometry
 
+[Структурированная запись и связи](../catalog/studies/decision-geometry-harness.md)
+
 **Primary source:** https://arxiv.org/abs/2610.37255 ; [full PDF v2](https://arxiv.org/pdf/2610.37255v2).
 **Original PDF SHA-256:** d678315eba5c30fd26966f6a33ea635b2889391b0d8eacc718f085063cea5319. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

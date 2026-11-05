@@ -1,5 +1,7 @@
 # alphaXiv OpenResearch
 
+[Структурированная запись и связи](../catalog/studies/alphaxiv-openresearch.md)
+
 **Type:** full open-source engineering implementation, not a peer-reviewed paper.
 **Telegram bookmark:** `BK-014`, 2026-09-16.
 **Official primary source:** [alphaXiv/OpenResearch](https://github.com/alphaXiv/OpenResearch), [architecture](https://github.com/alphaXiv/OpenResearch/blob/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d/arc/experiments.md), [storage/egress](https://github.com/alphaXiv/OpenResearch/blob/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d/arc/storage.md).

@@ -1,5 +1,7 @@
 # Agent Mosaic — Composite Disclosure Risk
 
+[Структурированная запись и связи](../catalog/studies/agent-mosaic.md)
+
 **Primary source:** https://arxiv.org/abs/2610.30418 ; [full PDF v1](https://arxiv.org/pdf/2610.30418v1).
 **Original PDF SHA-256:** 3effb1c2251223ecbdd7e3f201681fdd33f07b99ddf314dabdd1577ce7822061. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

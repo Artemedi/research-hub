@@ -1,5 +1,7 @@
 # Covert Assistance — Helpful LLM Agents Evade Oversight
 
+[Структурированная запись и связи](../catalog/studies/covert-assistance.md)
+
 **Primary source:** https://arxiv.org/abs/2609.39050
 
 **Topic:** `SECURITY`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

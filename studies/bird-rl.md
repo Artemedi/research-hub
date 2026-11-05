@@ -1,5 +1,7 @@
 # BIRD-RL — Stateful SQL Agent Evaluation
 
+[Структурированная запись и связи](../catalog/studies/bird-rl.md)
+
 **Primary source:** https://arxiv.org/abs/2610.29426 ; [full PDF v1](https://arxiv.org/pdf/2610.29426v1).
 **Original PDF SHA-256:** e8c9232482b6cce191f5bca6b7a92b945b93c44f8fa5871e95af34706c0f25dc. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

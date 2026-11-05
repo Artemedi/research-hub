@@ -33,7 +33,7 @@
 - Current pointers не ссылаются на заменённые записи; история не удаляется и не сортируется догадкой по имени файла.
 - Публичные страницы используют только разрешённые уже опубликованные сведения о проектах. Закрытые тексты не копируются.
 - Исходные карточки меняются только добавлением навигации. Старые обзоры, результаты, ledger, архив и код экспериментов сохраняются.
-- `node scripts/build-catalog.mjs`, `node scripts/check.mjs`, `node --test scripts/check.test.mjs scripts/entity-model.test.mjs` и `git diff --check` завершаются успешно.
+- `node scripts/build-catalog.mjs`, `node scripts/check.mjs`, `node --test scripts/check.test.mjs scripts/entity-model.test.mjs scripts/document-assessment.test.mjs` и `git diff --check` завершаются успешно.
 - Негативные тесты отклоняют неподтверждённую связь, потерю части импорта, подмену project URL и повышение/подмену исходного evidence.
 
 Проверки offline. Установка зависимостей, сетевые агенты, live desktop, databases, production и повторный запуск экспериментов не входят в этот сценарий.

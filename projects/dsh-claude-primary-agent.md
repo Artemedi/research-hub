@@ -4,19 +4,21 @@
 
 [Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
 
-**Пилот:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
+**Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
 ## Исследовательские кандидаты
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
-| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
+| [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [claude-swarm](../catalog/studies/claude-swarm.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | \| Claude Swarm \| dsh-claude-primary-agent \| driver@6253550:8–20 уже имеет SDK query, разрешения и abort \| Работающий primary driver — не совместимый swarm API; нельзя переносить bypass permissions \| mocked lifecycle + permission/abort negative controls \| PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE \| | [Обзор](../reviews/claude-swarm/2026-11-04.md) · [Основание](../reviews/claude-swarm/2026-11-04.md) |
+| [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Session resume/cancellation и permission propagation — конкретный lifecycle contract; совместимость и process ownership требуют теста. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 
-## Соответствие не подтверждено
+## Соответствие не подтверждено или применение отложено
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
+| [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
 
-Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.
+Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

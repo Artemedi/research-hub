@@ -7,7 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'catalog/structure.json'), 'utf8'));
 const check = process.argv.includes('--check');
 const entities = validateEntities(root, JSON.parse(fs.readFileSync(path.join(root, 'catalog/entities.json'), 'utf8')));
-const explicitReviews = card => { const s = entities.studies.find(s => s.card === card); return s ? entities.reviews.filter(r => r.study_ids.includes(s.id)).map(r => ({to:r.document})) : null; };
+const explicitReviews = card => { const s = entities.studies.find(s => s.card === card); return s ? entities.reviews.filter(r => r.study_ids.includes(s.id)).map(r => ({to:r.document,date:r.date,id:r.id})) : null; };
 const errors = [];
 const rel = (from, to) => path.posix.relative(path.posix.dirname(from), to);
 const read = p => fs.readFileSync(path.join(root, p), 'utf8');
@@ -46,7 +46,7 @@ const sorted = (items, key) => [...items].sort((a, b) => compare(key(a), key(b))
 const studyRows = sorted(config.studies, title).map(p => {
   const source = path.posix.basename(p, '.md');
   const reviews = explicitReviews(p) ?? config.documents.filter(d => d.kind === 'review' && d.to.startsWith(`reviews/${source}/`));
-  return `| [${title(p)}](${rel('studies/INDEX.md', p)}) | ${reviews.map(d => `[${d.to.split('/').at(-1).replace('.md', '')}](${rel('studies/INDEX.md', d.to)})`).join(' · ') || 'Сводный обзор указан в карточке'} |`;
+  return `| [${title(p)}](${rel('studies/INDEX.md', p)}) | ${reviews.map(d => `[${d.date ? d.date + ' / ' + d.id : d.to.split('/').at(-1).replace('.md', '')}](${rel('studies/INDEX.md', d.to)})`).join(' · ') || 'Сводный обзор указан в карточке'} |`;
 });
 emit('studies/INDEX.md', `# Каталог исследований\n\n${config.studies.length} карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.\n\n[Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)\n\n| Источник | Датированные обзоры |\n| --- | --- |\n${studyRows.join('\n')}`);
 const reviewRows = sorted(config.documents.filter(d => d.kind === 'review'), d => d.to).map(d => `| [${d.title}](${rel('reviews/README.md', d.to)}) | ${d.date ?? d.from?.slice(8, 18)} |`);

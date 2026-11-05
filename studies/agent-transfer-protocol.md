@@ -1,5 +1,7 @@
 # Agent Transfer Protocol (ATP) — Server-Mediated Communication
 
+[Структурированная запись и связи](../catalog/studies/agent-transfer-protocol.md)
+
 **Primary source:** https://arxiv.org/abs/2610.38398 ; [full PDF v1](https://arxiv.org/pdf/2610.38398v1).
 **Original PDF SHA-256:** 072f3943a10d1dfa6fa93d5932d8da9b5533b4d11ece905ba343a2a09e4843d5. The PDF itself is not redistributed.
 **Full-text review date:** 2026-11-03. **Evidence:** FULL_TEXT_REVIEWED_2026-11-03 (original PDF methods/results/limits inspected; *not* locally reproduced).

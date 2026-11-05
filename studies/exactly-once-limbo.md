@@ -1,5 +1,7 @@
 # Where Does Exactly-Once Live? / LIMBO
 
+[Структурированная запись и связи](../catalog/studies/exactly-once-limbo.md)
+
 **Primary source:** https://arxiv.org/abs/2609.29095
 
 **Topic:** `RELIABILITY`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

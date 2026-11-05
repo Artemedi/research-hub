@@ -1,5 +1,7 @@
 # Sequential diagnosis with language models — MAI-DxO / SDBench
 
+[Структурированная запись и связи](../catalog/studies/sequential-diagnosis-language-models.md)
+
 **Исход research-intake:** `Добавлен в карточки` (BK-056). **Научный источник:** `FULL_TEXT_REVIEWED_2026-11-05`; опубликованный MAI-DxO/SDBench **не воспроизводился**. **Применение к TrinMedicalBot:** `WELLO_AB_OPERATIONAL_VERIFIED / PRODUCTION_DEPLOYED_2026-11-05 / CLINICAL_REVIEW_PENDING`. **Отдельный проект sequential-rca:** `FIT_CANDIDATE / NEEDS_EVIDENCE`. Production deployment — констатация факта, **не** `CLINICALLY_APPROVED`.
 
 - **Статья:** Harsha Nori et al., *Sequential diagnosis with language models*, *Science* 394(6822), 423–428 (22.10.2026), DOI [10.1126/science.aeh7930](https://doi.org/10.1126/science.aeh7930), PMID [42912144](https://pubmed.ncbi.nlm.nih.gov/42912144/).

@@ -1,5 +1,7 @@
 # Random Attention — KV eviction for reasoning
 
+[Структурированная запись и связи](../catalog/studies/random-attention.md)
+
 **Original paper:** https://arxiv.org/abs/2609.03430; [complete PDF](https://arxiv.org/pdf/2609.03430v1).
 **Primary version:** arXiv v1; 22 pages. **SHA-256:** `7126afd49f82a499e70bb201d32d3c11c8f75012323213c444982736926be14b` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `ARXIV_PREPRINT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.

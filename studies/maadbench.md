@@ -1,5 +1,7 @@
 # MAADBench — Multi-Agent Anomaly and Fault Benchmarks
 
+[Структурированная запись и связи](../catalog/studies/maadbench.md)
+
 **Primary source:** https://arxiv.org/abs/2609.36556
 
 **Topic:** `EVALUATION`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

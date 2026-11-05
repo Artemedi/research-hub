@@ -1,5 +1,7 @@
 # DSH Superagent Prototype
 
+[Структурированная запись и связи](../catalog/studies/dsh-superagent-prototype.md)
+
 - Тип: first-party engineering prototype, не научная репликация.
 - Источник: [deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype), [pinned 8c32a9dc5d72c033816c6a8110b37f40cf94fba4](https://github.com/deepseek-ai/dsh-superagent-prototype/tree/8c32a9dc5d72c033816c6a8110b37f40cf94fba4), commit 31.10.2026, package 0.1.0, MIT.
 - Проверка: 05.11.2026; [source review, ограничения и shortlist](../reviews/dsh-superagent-prototype/2026-11-05.md), [45 project decisions](../data/project-fit/dsh-superagent-prototype/2026-11-05.json).

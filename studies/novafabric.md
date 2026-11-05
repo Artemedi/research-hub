@@ -1,5 +1,7 @@
 # NovaFabric — tamper-evident agent run evidence
 
+[Структурированная запись и связи](../catalog/studies/novafabric.md)
+
 **Original paper:** https://arxiv.org/abs/2609.12582; [complete PDF](https://arxiv.org/pdf/2609.12582v1).
 **Primary version:** arXiv v1; 44 pages. **SHA-256:** `b5a81659602175218aba04bb936c8d689bfd5e021ba94a1ffb3b13bfa1548ca9` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `AUTHOR_PREPRINT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.

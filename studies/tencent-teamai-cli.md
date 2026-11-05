@@ -1,5 +1,7 @@
 # Tencent TeamAI CLI
 
+[Структурированная запись и связи](../catalog/studies/tencent-teamai-cli.md)
+
 **Source type:** full technical open-source implementation and documentation, **not** a peer-reviewed paper. [Official source](https://github.com/Tencent/teamai-cli) • [full technical guide](https://github.com/Tencent/teamai-cli/blob/7ed698998da8e446d8116c79ae58a9d5ff6ca016/docs/guide/distribution.md) • MIT.
 **Upstream pin:** `Tencent/teamai-cli@7ed698998da8e446d8116c79ae58a9d5ff6ca016` (2026-11-04).
 **Private fork pin:** `Artemedi/teamai-cli@5a3c371f692675b6e080a6554af5a3da0752fe5c` (2026-09-14).

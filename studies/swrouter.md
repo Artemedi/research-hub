@@ -1,5 +1,7 @@
 # SWRouter — multi-turn context-aware model routing
 
+[Структурированная запись и связи](../catalog/studies/swrouter.md)
+
 **Original paper:** https://arxiv.org/abs/2609.11414; [complete PDF](https://arxiv.org/pdf/2609.11414v1).
 **Primary version:** arXiv v1; 26 pages. **SHA-256:** `e24cbce0ffdb95dd18a6e8620439e5c29d3eb5c1e2aa7c985f9cec18668bb825` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `ARXIV_PREPRINT`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.

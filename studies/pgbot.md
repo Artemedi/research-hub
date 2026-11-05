@@ -1,5 +1,7 @@
 # pgbot — deterministic PostgreSQL diagnostics for AI agents
 
+[Структурированная запись и связи](../catalog/studies/pgbot.md)
+
 **Класс:** ENGINEERING_IMPLEMENTATION (не научная статья).
 **Первичный источник:** [pgrundev/pgbot](https://github.com/pgrundev/pgbot/tree/826531fefd7d13b4381327acd4cce5be98bd71eb), [release v0.9.0](https://github.com/pgrundev/pgbot/releases/tag/v0.9.0), Apache-2.0.
 **Проверка:** [лабораторный протокол 2026-11-04](../reviews/pgbot/2026-11-04.md), [независимый JSON oracle](../experiments/2026-11-04-pgbot-verify.py).

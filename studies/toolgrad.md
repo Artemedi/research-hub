@@ -1,5 +1,7 @@
 # ToolGrad — verified chain-first tool-use dataset generation
 
+[Структурированная запись и связи](../catalog/studies/toolgrad.md)
+
 **Original paper:** https://aclanthology.org/2026.findings-acl.950/; [complete PDF](https://aclanthology.org/2026.findings-acl.950.pdf).
 **Primary version:** ACL 2026 Proceedings; 17 pages. **SHA-256:** `373e90c6049d46ea1e3aa19906f5b45f6a51123d37321d9e98eb856bd6d48144` (checked 2026-11-03; PDF binary not redistributed).
 **Source type:** `PEER_REVIEWED_ACL_FINDINGS`. **Evidence:** `FULL_TEXT_REVIEWED_2026-11-03 / NOT_INDEPENDENTLY_REPRODUCED`.

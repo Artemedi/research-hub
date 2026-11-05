@@ -1,5 +1,7 @@
 # DRAG — Dynamic Retriever and Generator Selection
 
+[Структурированная запись и связи](../catalog/studies/drag.md)
+
 **Primary source:** https://arxiv.org/abs/2609.17709
 
 **Topic:** `RETRIEVAL`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

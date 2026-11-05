@@ -2,7 +2,7 @@
 
 # BenchShield — reward-integrity instrumentation
 
-Пилот единой модели. [Карточка](../../studies/benchshield.md) · [Первоисточник](https://arxiv.org/abs/2609.11028)
+Структурированная запись источника. [Карточка](../../studies/benchshield.md) · [Первоисточник](https://arxiv.org/abs/2609.11028)
 
 ## Текущий обзор
 
@@ -14,10 +14,24 @@
 
 ## Применимость к проектам
 
-Связи ещё не перенесены в единую модель. Это не NO_FIT и не отсутствие прежнего анализа; см. исходную карточку.
+Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-
+- [agent-skills](../../projects/agent-skills.md): DOCUMENTED_CANDIDATE; P1_EVAL_INTEGRITY_DESIGN. \| BenchShield — reward-integrity instrumentation \| agent-skills, dsh-runtime, dsh-paper2agent \| Индивидуальные проверяемые eval-артефакты и tool/run provenance; особенно полезно для регрессий agent skills и scientific tool benchmarks, не как общий security grant. \| Только isolated eval fixture: 20–30 trajectories с безопасными reward manipulation canaries. Сравнить baseline task success с proof of reward-input provenance, seal completeness, abstentions, false positives, runtime/tokens overhead. Публиковать только fake data. \| P1_EVAL_INTEGRITY_DESIGN \| Ограничения: Документальная гипотеза для eval design, не проверенный integration seam. Следующий тест: План минимального offline eval указан в исходной строке матрицы. [Основание](../../portfolio/2026-09-03--2026-09-15/project-fit.md); предыдущая оценка: нет.
+- [dsh-runtime](../../projects/dsh-runtime.md): DOCUMENTED_CANDIDATE; P1_EVAL_INTEGRITY_DESIGN. \| BenchShield — reward-integrity instrumentation \| agent-skills, dsh-runtime, dsh-paper2agent \| Индивидуальные проверяемые eval-артефакты и tool/run provenance; особенно полезно для регрессий agent skills и scientific tool benchmarks, не как общий security grant. \| Только isolated eval fixture: 20–30 trajectories с безопасными reward manipulation canaries. Сравнить baseline task success с proof of reward-input provenance, seal completeness, abstentions, false positives, runtime/tokens overhead. Публиковать только fake data. \| P1_EVAL_INTEGRITY_DESIGN \| Ограничения: Документальная гипотеза для eval design, не проверенный integration seam. Следующий тест: План минимального offline eval указан в исходной строке матрицы. [Основание](../../portfolio/2026-09-03--2026-09-15/project-fit.md); предыдущая оценка: нет.
+- [dsh-paper2agent](../../projects/dsh-paper2agent.md): DOCUMENTED_CANDIDATE; P1_EVAL_INTEGRITY_DESIGN. \| BenchShield — reward-integrity instrumentation \| agent-skills, dsh-runtime, dsh-paper2agent \| Индивидуальные проверяемые eval-артефакты и tool/run provenance; особенно полезно для регрессий agent skills и scientific tool benchmarks, не как общий security grant. \| Только isolated eval fixture: 20–30 trajectories с безопасными reward manipulation canaries. Сравнить baseline task success с proof of reward-input provenance, seal completeness, abstentions, false positives, runtime/tokens overhead. Публиковать только fake data. \| P1_EVAL_INTEGRITY_DESIGN \| Ограничения: Документальная гипотеза для eval design, не проверенный integration seam. Следующий тест: План минимального offline eval указан в исходной строке матрицы. [Основание](../../portfolio/2026-09-03--2026-09-15/project-fit.md); предыдущая оценка: нет.
 
 ## Эксперименты
 
-Отдельные записи экспериментов в пилот ещё не перенесены; см. обзоры. Это не утверждение NOT_RUN.
+В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+
+## Ссылки из исходной карточки
+
+Это ссылки на материалы, а не автоматическое подтверждение связи методов или собственного эксперимента.
+
+- [archive/dsh/knowledge/research/2026-09-15-deepseek-harness-research-watch.md](../../archive/dsh/knowledge/research/2026-09-15-deepseek-harness-research-watch.md)
+- [archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md](../../archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md)
+- [archive/dsh/knowledge/research/README.md](../../archive/dsh/knowledge/research/README.md)
+- [portfolio/2026-09-03--2026-09-15/review.md](../../portfolio/2026-09-03--2026-09-15/review.md)
+- [portfolio/2026-09-03--2026-09-15/project-fit.md](../../portfolio/2026-09-03--2026-09-15/project-fit.md)
+- [experiments/2026-11-04-benchshield-reward-integrity-replay.py](../../experiments/2026-11-04-benchshield-reward-integrity-replay.py)
+- [data/results/benchshield/2026-11-04.json](../../data/results/benchshield/2026-11-04.json)

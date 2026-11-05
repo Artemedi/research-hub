@@ -1,5 +1,7 @@
 # Google MCP Toolbox for Databases — PostgreSQL live read-only MCP
 
+[Структурированная запись и связи](../catalog/studies/mcp-toolbox-postgres.md)
+
 **Категория:** ENGINEERING_IMPLEMENTATION; не исследовательская статья.
 **Первичный источник:** [Google MCP Toolbox](https://github.com/googleapis/mcp-toolbox), [официальный release v1.15.0](https://github.com/googleapis/genai-toolbox/releases/tag/v1.15.0); источник main исследован на [3e536bb](https://github.com/googleapis/genai-toolbox/tree/3e536bb683c914b26bdf9046a65b805a160af8dc). Бинарник зафиксирован отдельно в лабораторном отчёте.
 **Прямые измерения:** [PostgreSQL 18.3 / Wiki_PG MCP lab](../reviews/mcp-toolbox-postgres/2026-11-04.md), [воспроизводимый MCP-тест](../experiments/2026-11-04-mcp-toolbox-wikipg-compare.py).

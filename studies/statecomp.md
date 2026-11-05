@@ -1,5 +1,7 @@
 # StateComp — State-Conditioned Context Compression
 
+[Структурированная запись и связи](../catalog/studies/statecomp.md)
+
 **Primary source:** https://arxiv.org/abs/2609.27298
 
 **Topic:** `CONTEXT_MANAGEMENT`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

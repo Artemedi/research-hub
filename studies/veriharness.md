@@ -1,5 +1,7 @@
 # VeriHarness — Evidence-Grounded Agentic Verification
 
+[Структурированная запись и связи](../catalog/studies/veriharness.md)
+
 **Primary source:** https://arxiv.org/abs/2610.00972
 
 **Topic:** `VERIFICATION`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.

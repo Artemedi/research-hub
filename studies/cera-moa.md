@@ -1,5 +1,7 @@
 # CERA-MoA — Adaptive Multi-Agent Routing
 
+[Структурированная запись и связи](../catalog/studies/cera-moa.md)
+
 **Primary source:** https://arxiv.org/abs/2609.18779
 
 **Topic:** `MODEL_ROUTING`. **Previously recorded evidence:** `FULL_TEXT_REVIEW_RECORDED`.
