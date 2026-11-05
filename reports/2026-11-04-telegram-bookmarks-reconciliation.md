@@ -7,8 +7,8 @@
 ## Итоги
 
 - **65** записей, **63** уникальных URL/темы, **2** точных дубликата: BK-004 → BK-002 и BK-044 → BK-043.
-- По текущему состоянию: проверен экспериментально: **12** / разобран: **27** / ожидает проверки: **7** / исключён: **19**.
-- **17** пунктов имеют прямую карточку в `studies/` research-hub; **13** имеют ссылку на отдельный тестовый/permission-gate отчёт (не все эти работы считаются экспериментально верифицированными). BK-001 имеет только лабораторный отчёт без научной карточки.
+- По текущему состоянию: проверен экспериментально: **14** / разобран: **28** / ожидает проверки: **4** / исключён: **19**.
+- **31** пункт имеет прямую карточку в `studies/` research-hub; **17** имеют ссылку в историческом поле отдельного отчёта (review/test/permission gate; ссылка не означает экспериментальную верификацию). BK-001 имеет только лабораторный отчёт без научной карточки.
 - Все **65** исходных ссылок и основания решения доступны также в машиночитаемом [JSON](2026-11-04-telegram-bookmarks-reconciliation.json).
 
 ## Правила присвоения статуса
@@ -85,16 +85,16 @@
 | BK-059 / 01.11 | [IPFire fireperf](https://www.ipfire.org/fireperf) | **проверен экспериментально** | [Карточка](https://github.com/Artemedi/research-hub/blob/main/studies/ipfire-fireperf.md), [Опыт](https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-04-bk059-fireperf-loopback.md) | Авторская сборка 0.3.0, 12 ограниченных изолированных loopback-прогонов, 240/240 TCP и отрицательный контроль; не производство, не iperf3 A/B. |
 | BK-060 / 01.11 | [dsh-superagent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) | **разобран** | [Карточка](../studies/dsh-superagent-prototype.md), [обзор](2026-11-05-bk060-dsh-superagent-review.md) | 05.11: pinned source review, 15/15 original core checks с fake Policy/Executor и mutation control; полный runtime/security NOT_RUN, PROTOTYPE_NOT_PRODUCTION. |
 | BK-061 / 01.11 | [ASCII Sharks](https://github.com/stackedlol/ascii-sharks) | **исключён** | — | ASCII-визуализация не имеет установленного ROI для задач проектов. |
-| BK-062 / 02.11 | [REA](https://github.com/morluto/rea) | **ожидает проверки** | [карточка](../studies/reverse-engineer-anything.md), [source gate](2026-11-05-bk062-rea-source-gate.md) | Подтверждён static PE/CLI contract; полный parser/provider source review и safe pipeline test не завершены. PARTIAL_SOURCE_REVIEW / NOT_RUN; исполнение targets и setup не проводились. |
-| BK-063 / 02.11 | [Tencent Hyra 2.0](https://hy.tencent.com/research/hyra2) | **ожидает проверки** | — | Сохранился анонс; полный методологический текст не подтверждён. По одной странице scientific verdict невозможен. |
+| BK-062 / 02.11 | [REA](https://github.com/morluto/rea) | **проверен экспериментально** | [карточка](../studies/reverse-engineer-anything.md), [follow-up](2026-11-05-bk062-rea-bounded-followup.md) | 48/48 authored PE32/PE32+ layout cases на original reader и обнаруженный overlap-guard mutant. Только header/layout boundary; весь metadata/CIL/CLI/MCP pipeline, package tests/lint/build и project benefit не проверены. |
+| BK-063 / 02.11 | [Hyra 2.0](https://hy.tencent.com/research/hyra2) | **разобран** | [карточка](../studies/hyra-2.md), [follow-up](2026-11-05-bk063-hyra2-primary-review.md) | Полный официальный инженерный текст получен через публичный API страницы и прочитан; content hash в отчёте. Orchestrator source, full replay и независимое подтверждение результатов отсутствуют. Только architecture/governance reference. |
 | BK-064 / 02.11 | [DeepSeek Harness Creator Mode examples](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html) | **ожидает проверки** | — | Есть официальные примеры, но не tested transferable skill/protocol. |
-| BK-065 / 03.11 | [Vercel Agent Desktop](https://github.com/vercel-labs/agent-desktop) | **ожидает проверки** | [карточка](../studies/vercel-agent-desktop.md), [source gate](2026-11-05-bk065-agent-desktop-source-gate.md) | Текущий source 1.2.0 и refs/permissions частично проверены; Rust toolchain отсутствует, disposable GUI/Wayland gate не выполнен. PARTIAL_SOURCE_REVIEW / GUI_NOT_RUN / BLOCKED_ENV. |
+| BK-065 / 03.11 | [Vercel Agent Desktop](https://github.com/vercel-labs/agent-desktop) | **проверен экспериментально** | [карточка](../studies/vercel-agent-desktop.md), [follow-up](2026-11-05-bk065-agent-desktop-bounded-followup.md) | Original Linux CLI на private Wayland toy UI: 12/12 cases; core1683 PASS, fmt/clippy core/build PASS. Linux whole-suite retained failures (2173/1/233 ignored); failing source scanner отдельно PASS. Не all-platform security или project-benefit verification. |
 
 ## Чего фактически не хватало в research-hub
 
 1. `research-hub/studies/INDEX.md` изначально индексировал преимущественно **научные наблюдения DSH**, а Telegram-закладки от 3 ноября жили в отдельной инвентаризации. Поэтому **отсутствие карточки НЕ означает отсутствия исходного анализа**; это может быть пробел каталогизации.
 2. Для BK-001, BK-003, BK-031, BK-035, BK-039, BK-051 существуют **ограниченные лабораторные результаты**, но их нельзя объявлять воспроизведением всего исследования или внедрением.
-3. BK-025 и BK-034 опираются на пересказы видео, BK-063 — на анонс без проверенного полного метода. **Не считать** их полным научным обзором. Для научных работ после поиска законных полных текстов: если доступа так и нет — `FULL_TEXT_UNAVAILABLE` и исключение из подробного научного анализа.
+3. BK-025 и BK-034 опираются на пересказы видео. **Не считать** их полным научным обзором. BK-063 теперь имеет отдельный обзор полного инженерного текста, без source implementation или scientific replication. Для научных работ после поиска законных полных текстов: если доступа так и нет — `FULL_TEXT_UNAVAILABLE` и исключение из подробного научного анализа.
 4. Сюжеты, выбранные в промежуточных экспериментах (BenchShield, NovaFabric, LIMBO), **не являются** строками исходного Telegram-списка. BIRD-RL также добавлен как внешний кандидат и не проведён экспериментально. Их результаты учитываются в общей библиотеке, но **не засчитываются** как последовательное закрытие Telegram-подборки.
 
 ## Следующая проверка без искусственного приоритета DSH

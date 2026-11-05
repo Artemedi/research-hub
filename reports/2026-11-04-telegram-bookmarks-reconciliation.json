@@ -5,15 +5,15 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub, BK-060/062/065 evidence updated 2026-11-05; other entries retain recorded dates",
+  "tracked_hub_state": "Artemedi/research-hub, BK-062/063/065 follow-up evidence 2026-11-05; other records retain recorded evidence",
   "count_by_status": {
-    "проверен экспериментально": 12,
-    "ожидает проверки": 7,
+    "проверен экспериментально": 14,
+    "ожидает проверки": 4,
     "исключён": 19,
-    "разобран": 27
+    "разобран": 28
   },
-  "mapped_study_cards": 30,
-  "mapped_experimental_items": 16,
+  "mapped_study_cards": 31,
+  "mapped_experimental_items": 17,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -22,7 +22,8 @@
     "Hub study card mapping is only for matching titles; related research from the hub outside the Telegram list must not be counted as original Telegram entries.",
     "Original Telegram chronology is reconstructed from the preserved audit; the original Telegram message byte stream was not available for independent comparison.",
     "BK-041 has a permission-gate lab report but is still AWAITING a real eBPF tracer experiment. Linked reports do not imply successful target-capability verification.",
-    "BK-062 and BK-065 linked source-gate reports are partial reviews, NOT experiments or completed deep source reviews; both remain awaiting validation. hub_experiment_report is a historical link field and does not prove execution."
+    "The earlier BK-062/065 source-gate reports were partial and remain historical. Their dated follow-ups verify bounded components only; hub_experiment_report is a link field, not proof of full-system reproduction.",
+    "BK-063 full official engineering article was recovered on 2026-11-05; orchestrator source and independent result reproduction remain unavailable."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -1050,31 +1051,31 @@
       "telegram_title_recovered": "Reverse Engineer Anything (REA)",
       "source_url": "https://github.com/morluto/rea",
       "source_kind": "Reverse-engineering suite",
-      "source_audit_evidence": "PARTIAL_PINNED_SOURCE_GATE_REVIEW",
+      "source_audit_evidence": "PINNED_SOURCE_REVIEW / BOUNDED_COMPONENT_EXPERIMENT",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Подтверждён static PE/CLI contract; полный parser/provider source review и safe pipeline test не завершены. PARTIAL_SOURCE_REVIEW / NOT_RUN; исполнение targets и setup не проводились.",
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_COMPONENT_EXPERIMENT",
+      "status_reason_ru": "48/48 authored PE32/PE32+ layout cases на original reader и обнаруженный overlap-guard mutant. Только header/layout boundary; весь metadata/CIL/CLI/MCP pipeline, package tests/lint/build и project benefit не проверены.",
       "hub_study_card": "studies/reverse-engineer-anything.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/reverse-engineer-anything.md",
-      "hub_experiment_report": "reports/2026-11-05-bk062-rea-source-gate.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk062-rea-source-gate.md"
+      "hub_experiment_report": "reports/2026-11-05-bk062-rea-bounded-followup.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk062-rea-bounded-followup.md"
     },
     {
       "id": "BK-063",
       "date_2026": "02.11.2026",
       "telegram_title_recovered": "Tencent Hyra 2.0",
       "source_url": "https://hy.tencent.com/research/hyra2",
-      "source_kind": "Research announcement",
-      "source_audit_evidence": "ANNOUNCEMENT_ONLY",
+      "source_kind": "First-party engineering article",
+      "source_audit_evidence": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Сохранился анонс; полный методологический текст не подтверждён. По одной странице scientific verdict невозможен.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status": "разобран",
+      "disposition": "REVIEWED_NOT_EXPERIMENTED",
+      "status_reason_ru": "Полный официальный инженерный текст получен через публичный API страницы и прочитан; content hash в отчёте. Orchestrator source, full replay и независимое подтверждение результатов отсутствуют. Только architecture/governance reference.",
+      "hub_study_card": "studies/hyra-2.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/hyra-2.md",
+      "hub_experiment_report": "reports/2026-11-05-bk063-hyra2-primary-review.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk063-hyra2-primary-review.md"
     },
     {
       "id": "BK-064",
@@ -1098,15 +1099,15 @@
       "telegram_title_recovered": "Vercel Agent Desktop",
       "source_url": "https://github.com/vercel-labs/agent-desktop",
       "source_kind": "Open-source desktop automation",
-      "source_audit_evidence": "PARTIAL_PINNED_SOURCE_GATE_REVIEW",
+      "source_audit_evidence": "PINNED_SOURCE_REVIEW / BOUNDED_COMPONENT_EXPERIMENT",
       "initial_priority_2026_11_03": "A",
-      "status": "ожидает проверки",
-      "disposition": "NOT_YET_VALIDATED",
-      "status_reason_ru": "Текущий source 1.2.0 и refs/permissions частично проверены; Rust toolchain отсутствует, disposable GUI/Wayland gate не выполнен. PARTIAL_SOURCE_REVIEW / GUI_NOT_RUN / BLOCKED_ENV.",
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_COMPONENT_EXPERIMENT",
+      "status_reason_ru": "Original Linux CLI на private Wayland toy UI: 12/12 cases; core1683 PASS, fmt/clippy core/build PASS. Linux whole-suite retained failures (2173/1/233 ignored); failing source scanner отдельно PASS. Не all-platform security или project-benefit verification.",
       "hub_study_card": "studies/vercel-agent-desktop.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/vercel-agent-desktop.md",
-      "hub_experiment_report": "reports/2026-11-05-bk065-agent-desktop-source-gate.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk065-agent-desktop-source-gate.md"
+      "hub_experiment_report": "reports/2026-11-05-bk065-agent-desktop-bounded-followup.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reports/2026-11-05-bk065-agent-desktop-bounded-followup.md"
     }
   ],
   "public_projection_note": "Public projection excludes private project-candidate lists and additional audit notes; full user inventory is available as a separate private artifact."

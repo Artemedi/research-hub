@@ -1,5 +1,11 @@
 # Research Hub — исследования для всех проектов
 
+- [Telegram follow-up 05.11: результаты и сохранённые gates](reports/2026-11-05-portfolio-research.md).
+- **[BK-062 — REA: новый follow-up](reports/2026-11-05-bk062-rea-bounded-followup.md)** — проверен экспериментально; предел проверки указан в отчёте.
+- **[BK-065 — Vercel Agent Desktop: новый follow-up](reports/2026-11-05-bk065-agent-desktop-bounded-followup.md)** — проверен экспериментально; предел проверки указан в отчёте.
+- **[BK-063 — Hyra 2.0: новый follow-up](reports/2026-11-05-bk063-hyra2-primary-review.md)** — разобран; предел проверки указан в отчёте.
+
+
 Публичный независимый архив научных и инженерных исследований, проверок их применимости к проектам и минимальных экспериментов.
 
 ## Разделение ответственности
@@ -62,7 +68,7 @@
 - **[BK-016 — Claude Swarm: обзор ограничений и изоляции](reports/2026-11-04-bk016-claude-swarm-review.md)** — [карточка](studies/claude-swarm.md); подтверждённые кодом риски, динамический запуск не проводился.
 - **[BK-011 — SIMURG: обзор и изолированные проверки](reports/2026-11-04-bk011-simurg-review.md)** — [карточка](studies/simurg.md); обнаружены ошибки AUROC и ограничения калибровки.
 - **[BK-006 — Open Steps: инженерный обзор и ограниченная проверка хуков](reports/2026-11-04-bk006-open-steps-review.md)** — [карточка](studies/open-steps.md); выявлен пропуск изменения untracked-файла, качество ответов не измерено.
-- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 12 ограниченных экспериментальных проверок, 27 разборов источников, 7 ожидают проверки (включая BK-041: проверены только права eBPF), 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
+- **[Telegram-подборка: сверка всех 65 записей с research-hub (4 ноября 2026)](reports/2026-11-04-telegram-bookmarks-reconciliation.md)** — 63 уникальные темы, 14 ограниченных экспериментальных проверок, 28 разборов источников, 4 ожидают проверки (включая BK-041: проверены только права eBPF), 19 выведены из активной очереди (включая 2 повтора); [машинно-читаемая матрица](reports/2026-11-04-telegram-bookmarks-reconciliation.json). Список восстановлен из сохранённого аудита, не из дословного экспорта Telegram.
 
 - **[LIMBO × TelegramBot: повторные публикации при неоднозначном HTTP POST (4 ноября 2026)](reports/2026-11-04-limbo-telegrambot-ambiguous-publish.md)** — оригинальный код LIMBO и реальный TelegramBot `main()`: 180 детерминированных случаев с fake сервисом, подтверждённый trade-off at-most-once/retry; [скрипт](experiments/2026-11-04-limbo-telegrambot-send-retry.py) и [JSON](reports/2026-11-04-limbo-telegrambot-send-retry.json). Без сетевых запросов и изменений production.
 

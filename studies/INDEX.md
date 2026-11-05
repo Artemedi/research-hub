@@ -1,6 +1,12 @@
 # Individually indexed studies — previously reviewed in DSH
 
-**BK-062 — REA:** [карточка](reverse-engineer-anything.md), [промежуточный source gate](../reports/2026-11-05-bk062-rea-source-gate.md); полный review и runtime gate не завершены.
+- [Telegram follow-up 05.11: результаты и сохранённые gates](../reports/2026-11-05-portfolio-research.md).
+- **[BK-062 — REA: новый follow-up](../reports/2026-11-05-bk062-rea-bounded-followup.md)** — проверен экспериментально; предел проверки указан в отчёте.
+- **[BK-065 — Vercel Agent Desktop: новый follow-up](../reports/2026-11-05-bk065-agent-desktop-bounded-followup.md)** — проверен экспериментально; предел проверки указан в отчёте.
+- **[BK-063 — Hyra 2.0: новый follow-up](../reports/2026-11-05-bk063-hyra2-primary-review.md)** — разобран; предел проверки указан в отчёте.
+
+
+**BK-062 — REA:** [карточка](reverse-engineer-anything.md), [промежуточный source gate](../reports/2026-11-05-bk062-rea-source-gate.md); исторический промежуточный gate; актуальный bounded follow-up указан выше.
 
 **BK-065 — Vercel Agent Desktop:** [карточка](vercel-agent-desktop.md), [промежуточный source gate](../reports/2026-11-05-bk065-agent-desktop-source-gate.md); полный review и runtime gate не завершены.
 

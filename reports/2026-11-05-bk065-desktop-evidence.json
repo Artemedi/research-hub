@@ -1,0 +1,343 @@
+{
+  "source_sha": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+  "repetitions": 3,
+  "gui_cases_passed": 12,
+  "all_gui_runs_passed": true,
+  "gui_runs": [
+    {
+      "source_sha": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+      "oracle": "GTK clicked callback in authored toy app",
+      "pid": 6,
+      "cases": [
+        {
+          "case": "original click updates GTK oracle",
+          "passed": true,
+          "count": 1
+        },
+        {
+          "case": "bare ref refused without effect",
+          "passed": true
+        },
+        {
+          "case": "unknown snapshot refused without effect",
+          "passed": true
+        },
+        {
+          "case": "destroyed widget refused without effect",
+          "passed": true
+        }
+      ],
+      "apps": {
+        "version": "2.6",
+        "ok": true,
+        "command": "list-apps",
+        "data": {
+          "apps": [
+            {
+              "name": "python3.14",
+              "pid": 6,
+              "presentation": "foreground",
+              "process_instance": "ef821309:49068733"
+            }
+          ]
+        }
+      },
+      "snapshot": {
+        "version": "2.6",
+        "ok": true,
+        "command": "snapshot",
+        "data": {
+          "app": "python3.14",
+          "complete": true,
+          "ref_count": 1,
+          "snapshot_id": "s3k2doyzf370lv",
+          "tree": {
+            "children": [
+              {
+                "available_actions": [
+                  "Click",
+                  "SetFocus"
+                ],
+                "name": "Fixture Button",
+                "ref_id": "@s3k2doyzf370lv:e1",
+                "role": "button"
+              }
+            ],
+            "name": "BK065 Synthetic Only",
+            "role": "window"
+          },
+          "window": {
+            "id": "w-1.0-org-a11y-atspi-accessible-2",
+            "title": "BK065 Synthetic Only"
+          }
+        }
+      },
+      "stale": {
+        "version": "2.6",
+        "ok": false,
+        "command": "click",
+        "error": {
+          "code": "STALE_REF",
+          "message": "No live element matches the saved ref's recorded identity",
+          "suggestion": "Run 'snapshot' to refresh, then retry with the updated ref.",
+          "details": {
+            "complete": true,
+            "kind": "saved_ref_absent",
+            "process_state": "running",
+            "retryable": false,
+            "role": "button"
+          },
+          "disposition": {
+            "delivery": "not_delivered",
+            "retry": "safe"
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "source_sha": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+      "oracle": "GTK clicked callback in authored toy app",
+      "pid": 6,
+      "cases": [
+        {
+          "case": "original click updates GTK oracle",
+          "passed": true,
+          "count": 1
+        },
+        {
+          "case": "bare ref refused without effect",
+          "passed": true
+        },
+        {
+          "case": "unknown snapshot refused without effect",
+          "passed": true
+        },
+        {
+          "case": "destroyed widget refused without effect",
+          "passed": true
+        }
+      ],
+      "apps": {
+        "version": "2.6",
+        "ok": true,
+        "command": "list-apps",
+        "data": {
+          "apps": [
+            {
+              "name": "python3.14",
+              "pid": 6,
+              "presentation": "foreground",
+              "process_instance": "ef821309:49081107"
+            }
+          ]
+        }
+      },
+      "snapshot": {
+        "version": "2.6",
+        "ok": true,
+        "command": "snapshot",
+        "data": {
+          "app": "python3.14",
+          "complete": true,
+          "ref_count": 1,
+          "snapshot_id": "s2hwdf80yz4l11",
+          "tree": {
+            "children": [
+              {
+                "available_actions": [
+                  "Click",
+                  "SetFocus"
+                ],
+                "name": "Fixture Button",
+                "ref_id": "@s2hwdf80yz4l11:e1",
+                "role": "button"
+              }
+            ],
+            "name": "BK065 Synthetic Only",
+            "role": "window"
+          },
+          "window": {
+            "id": "w-1.0-org-a11y-atspi-accessible-2",
+            "title": "BK065 Synthetic Only"
+          }
+        }
+      },
+      "stale": {
+        "version": "2.6",
+        "ok": false,
+        "command": "click",
+        "error": {
+          "code": "STALE_REF",
+          "message": "No live element matches the saved ref's recorded identity",
+          "suggestion": "Run 'snapshot' to refresh, then retry with the updated ref.",
+          "details": {
+            "complete": true,
+            "kind": "saved_ref_absent",
+            "process_state": "running",
+            "retryable": false,
+            "role": "button"
+          },
+          "disposition": {
+            "delivery": "not_delivered",
+            "retry": "safe"
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "source_sha": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+      "oracle": "GTK clicked callback in authored toy app",
+      "pid": 6,
+      "cases": [
+        {
+          "case": "original click updates GTK oracle",
+          "passed": true,
+          "count": 1
+        },
+        {
+          "case": "bare ref refused without effect",
+          "passed": true
+        },
+        {
+          "case": "unknown snapshot refused without effect",
+          "passed": true
+        },
+        {
+          "case": "destroyed widget refused without effect",
+          "passed": true
+        }
+      ],
+      "apps": {
+        "version": "2.6",
+        "ok": true,
+        "command": "list-apps",
+        "data": {
+          "apps": [
+            {
+              "name": "python3.14",
+              "pid": 6,
+              "presentation": "foreground",
+              "process_instance": "ef821309:49081299"
+            }
+          ]
+        }
+      },
+      "snapshot": {
+        "version": "2.6",
+        "ok": true,
+        "command": "snapshot",
+        "data": {
+          "app": "python3.14",
+          "complete": true,
+          "ref_count": 1,
+          "snapshot_id": "s1ek1vxj45gbvp",
+          "tree": {
+            "children": [
+              {
+                "available_actions": [
+                  "Click",
+                  "SetFocus"
+                ],
+                "name": "Fixture Button",
+                "ref_id": "@s1ek1vxj45gbvp:e1",
+                "role": "button"
+              }
+            ],
+            "name": "BK065 Synthetic Only",
+            "role": "window"
+          },
+          "window": {
+            "id": "w-1.0-org-a11y-atspi-accessible-2",
+            "title": "BK065 Synthetic Only"
+          }
+        }
+      },
+      "stale": {
+        "version": "2.6",
+        "ok": false,
+        "command": "click",
+        "error": {
+          "code": "STALE_REF",
+          "message": "No live element matches the saved ref's recorded identity",
+          "suggestion": "Run 'snapshot' to refresh, then retry with the updated ref.",
+          "details": {
+            "complete": true,
+            "kind": "saved_ref_absent",
+            "process_state": "running",
+            "retryable": false,
+            "role": "button"
+          },
+          "disposition": {
+            "delivery": "not_delivered",
+            "retry": "safe"
+          }
+        }
+      },
+      "passed": true
+    }
+  ],
+  "compiler": "rustc 1.97.1; cargo 1.97.1",
+  "build": "debug CLI; offline locked",
+  "binary_sha256": "c6080efe285a2aa3edb5134478bfbef9c0aef71e11c30d9fb041bef09a725a34",
+  "core_suite": "1683 passed; 0 failed",
+  "first_linux_suite": "2171 passed; 3 failed; 233 ignored; environment failures retained",
+  "cargo-core-all.log": {
+    "sha256": "701a7e1a0c6ac14fd7501f01ed702e6f88bc783facde7b6c2ac49f3016a08ef3",
+    "last_lines": [
+      "test tree::renderer_accessibility::tests::a_renderer_that_never_activates_is_not_re_walked_continuously ... ok",
+      "",
+      "test result: ok. 1683 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 24.84s",
+      ""
+    ]
+  },
+  "cargo-linux.log": {
+    "sha256": "d3d76d7ee04bde1a086a3872e42bfe133d8097b77372bba9a670f7c0a485626c",
+    "last_lines": [
+      "",
+      "test result: FAILED. 2171 passed; 3 failed; 233 ignored; 0 measured; 0 filtered out; finished in 54.37s",
+      "",
+      "error: test failed, to rerun pass `-p agent-desktop-linux --lib`"
+    ]
+  },
+  "cargo-linux-private.log": {
+    "sha256": "e5770d6dde7b35132f9d7536b2104ed880a40bb08be2f1c54c7af7073e8ac1a1",
+    "last_lines": [
+      "    actions::action_scan_tests::no_action_file_reaches_a_read_path_mapper_or_a_banned_call",
+      "",
+      "test result: FAILED. 2173 passed; 1 failed; 233 ignored; 0 measured; 0 filtered out; finished in 54.14s",
+      ""
+    ]
+  },
+  "cargo-fmt.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_lines": []
+  },
+  "cargo-clippy.log": {
+    "sha256": "2c581ae44951aab219988fcb382dfbed296c01e2bbb02da08b8226f0f1ce03b5",
+    "last_lines": [
+      "    Checking base64 v0.23.1",
+      "    Checking rustc-hash v2.1.3",
+      "    Checking agent-desktop-core v1.2.0 (/source/crates/core)",
+      "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 41.20s"
+    ]
+  },
+  "cargo-build-cli.log": {
+    "sha256": "62eae5420384712e76481e029a617cae42b1f80a63866c0f8b2e8b3025e8d457",
+    "last_lines": [
+      "   Compiling agent-desktop-linux v1.2.0 (/source/crates/linux)",
+      "   Compiling clap v4.6.7",
+      "   Compiling agent-desktop v1.2.0 (/source/src)",
+      "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 29.39s"
+    ]
+  },
+  "source_scanner_separate": {
+    "command": "cargo test --offline --locked -p agent-desktop-linux --lib actions::action_scan_tests::no_action_file_reaches_a_read_path_mapper_or_a_banned_call -- --exact",
+    "cwd": "/source",
+    "passed": 1,
+    "failed": 0,
+    "filtered_out": 2406,
+    "seconds": 0.01
+  }
+}
