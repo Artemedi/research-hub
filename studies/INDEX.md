@@ -19,7 +19,7 @@
 | [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [2026-11-03 / behavior-beyond-text-review](behavior-beyond-text.md) |
 | [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | [2026-11-03 / bird-rl-review](bird-rl.md) |
-| [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) |
+| [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / cera-moa-full-text-2026-11-05](../reviews/cera-moa/2026-11-05-full-text.md) |
 | [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04 / chartli-review](../reviews/chartli/2026-11-04.md) |
 | [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md) | [2026-11-04 / claude-swarm-review](../reviews/claude-swarm/2026-11-04.md) |
 | [Concordat — Typed Sessions for LLM Agents](concordat.md) | [2026-11-03 / concordat-review](concordat.md) |
@@ -34,7 +34,7 @@
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
 | [HarnessSecurity-Bench](harnesssecurity-bench.md) | [2026-11-03 / harnesssecurity-bench-review](harnesssecurity-bench.md) |
-| [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) |
+| [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / harness2-full-text-2026-11-05](../reviews/harness2/2026-11-05-full-text.md) |
 | [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04 / hyperresearch-review](../reviews/hyperresearch/2026-11-04.md) |
 | [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
@@ -67,7 +67,7 @@
 | [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | [2026-11-03 / red-teaming-auto-mode-review](red-teaming-auto-mode.md) |
 | [REMORY](remory.md) | [2026-11-03 / remory-review](remory.md) |
 | [REVA — Reusable Evidence View Aggregation](reva.md) | [2026-11-03 / reva-review](../portfolio/2026-09-03--2026-09-15/review.md) |
-| [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) |
+| [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / rrsi-full-text-2026-11-05](../reviews/rrsi/2026-11-05-full-text.md) |
 | [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | [2026-11-03 / self-replicating-prompt-injections-review](self-replicating-prompt-injections.md) |
 | [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05 / sequential-diagnosis-language-models-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [2026-11-05 / sequential-diagnosis-language-models-initial-review](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) |
 | [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [2026-11-03 / silent-cue-loss-review](../portfolio/2026-10-20--2026-10-26/review.md) |

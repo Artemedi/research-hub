@@ -978,6 +978,34 @@
       "title": "2026-11-05.json",
       "kind": "project-fit",
       "original_sha256": "cba22f1ae13d426292999f2e15e604f5425b3df115ff46a91c1567469ad64e3c"
+    },
+    {
+      "from": null,
+      "to": "reviews/rrsi/2026-11-05-full-text.md",
+      "title": "Полный текст RRSI — метод и ограничения",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/harness2/2026-11-05-full-text.md",
+      "title": "Полный текст Harness² — метод и ограничения",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/cera-moa/2026-11-05-full-text.md",
+      "title": "Полный текст CERA-MoA — источники и применимость",
+      "kind": "review",
+      "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-05/evidence-coverage.md",
+      "title": "Покрытие доказательств — повторная проверка первоисточников",
+      "kind": "portfolio",
+      "date": "2026-11-05"
     }
   ]
 }

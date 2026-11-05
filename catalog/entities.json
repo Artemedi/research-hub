@@ -60,7 +60,7 @@
       "kind": "paper",
       "card": "studies/rrsi.md",
       "primary_url": "https://arxiv.org/abs/2609.24972",
-      "current_review_id": "selection-review",
+      "current_review_id": "rrsi-full-text-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "b054b413545e29f83477f5c6bb222f452b5b3850e68a9319e3d7d4f964dd3193",
       "linked_materials": [
@@ -74,7 +74,7 @@
       "kind": "paper",
       "card": "studies/harness2.md",
       "primary_url": "https://arxiv.org/abs/2610.14224",
-      "current_review_id": "selection-review",
+      "current_review_id": "harness2-full-text-2026-11-05",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "31a5ad6bc531bb5d2c11e55dfa9ecb39d28dd3cc1424c1fb233a69943bd94f29",
       "linked_materials": [
@@ -243,7 +243,7 @@
       "kind": "paper",
       "card": "studies/cera-moa.md",
       "primary_url": "https://arxiv.org/abs/2609.18779",
-      "current_review_id": "cera-moa-review",
+      "current_review_id": "cera-moa-full-text-2026-11-05",
       "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
       "card_body_sha256": "6224e8a11be7e5b22510152479650a8ff314159057473ec20868cbea46e9dc02",
       "linked_materials": [
@@ -1798,6 +1798,13 @@
       "ref": "8ef47d719eba5379ff8f38133f5defcc499e856f",
       "url": "https://github.com/anthropics/claude-quickstarts/tree/8ef47d719eba5379ff8f38133f5defcc499e856f/managed-agents/daily-brief",
       "unknown_reason": null
+    },
+    {
+      "id": "cera-moa-v1-2026-11-05",
+      "study_id": "cera-moa",
+      "ref": "arxiv:v1",
+      "url": "https://arxiv.org/html/2609.18779v1",
+      "unknown_reason": null
     }
   ],
   "reviews": [
@@ -3009,6 +3016,48 @@
       "document": "archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md",
       "source_coverage": "HISTORICAL_REVIEW_RECORDED",
       "limitations": "Historical source assessment, not a fresh reread or independent reproduction.",
+      "supersedes": null
+    },
+    {
+      "id": "rrsi-full-text-2026-11-05",
+      "study_ids": [
+        "rrsi"
+      ],
+      "version_ids": [
+        "rrsi-v3"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/rrsi/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "RRSI arXiv v3 прочитан; результаты авторские, самостоятельная репликация научных экспериментов не выполнена. Старый bounded code review сохраняет отдельный scope.",
+      "supersedes": null
+    },
+    {
+      "id": "harness2-full-text-2026-11-05",
+      "study_ids": [
+        "harness2"
+      ],
+      "version_ids": [
+        "harness-v1"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/harness2/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Harness² arXiv v1 прочитан; только авторские измерения. Propose/Probe/Compose и модельные benchmark эксперименты локально не воспроизводились; прошлый bounded code review остаётся в истории.",
+      "supersedes": null
+    },
+    {
+      "id": "cera-moa-full-text-2026-11-05",
+      "study_ids": [
+        "cera-moa"
+      ],
+      "version_ids": [
+        "cera-moa-v1-2026-11-05"
+      ],
+      "date": "2026-11-05",
+      "document": "reviews/cera-moa/2026-11-05-full-text.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "CERA-MoA arXiv v1 прочитан; независимой репликации тренировки нет, а текущий портфель не имеет подтверждённого trainable target.",
       "supersedes": null
     }
   ],

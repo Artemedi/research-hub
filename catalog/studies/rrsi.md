@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[selection-review](../../reviews/rrsi-harness2/2026-11-04.md) — BOUNDED_CODE_REVIEW. Только selection mechanics; не реальные LLM experiments и не полное воспроизведение обоих методов.
+[rrsi-full-text-2026-11-05](../../reviews/rrsi/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. RRSI arXiv v3 прочитан; результаты авторские, самостоятельная репликация научных экспериментов не выполнена. Старый bounded code review сохраняет отдельный scope.
 
 ## Версии и история обзоров
 
 - [selection-review](../../reviews/rrsi-harness2/2026-11-04.md), 2026-11-04; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v3](https://arxiv.org/html/2609.24972v3), [arxiv:v1](https://arxiv.org/html/2610.14224v1).
+- [rrsi-full-text-2026-11-05](../../reviews/rrsi/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v3](https://arxiv.org/html/2609.24972v3).
 
 ## Применимость к проектам
 

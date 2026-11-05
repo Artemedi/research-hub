@@ -6,11 +6,12 @@
 
 ## Текущий обзор
 
-[cera-moa-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) — HISTORICAL_REVIEW_RECORDED. Historical DSH source review records full HTML examination; no fresh reread or reproduction. Opaque cloud APIs lack required hidden-state and training access.
+[cera-moa-full-text-2026-11-05](../../reviews/cera-moa/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. CERA-MoA arXiv v1 прочитан; независимой репликации тренировки нет, а текущий портфель не имеет подтверждённого trainable target.
 
 ## Версии и история обзоров
 
 - [cera-moa-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.18779).
+- [cera-moa-full-text-2026-11-05](../../reviews/cera-moa/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.18779v1).
 
 ## Применимость к проектам
 

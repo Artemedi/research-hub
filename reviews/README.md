@@ -11,10 +11,12 @@
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
+| [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
 | [Chartli — parser и отображение](chartli/2026-11-04.md) | 2026-11-04 |
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |
+| [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
 | [Inspektor Gadget — разрешения eBPF](inspektor-gadget/2026-11-04.md) | 2026-11-04 |
@@ -30,6 +32,7 @@
 | [REA — проверка PE layout](reverse-engineer-anything/2026-11-05-pe-layout.md) | 2026-11-05 |
 | [REA — границы статического анализа](reverse-engineer-anything/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [RRSI и Harness² — переобучение при отборе](rrsi-harness2/2026-11-04.md) | 2026-11-04 |
+| [Полный текст RRSI — метод и ограничения](rrsi/2026-11-05-full-text.md) | 2026-11-05 |
 | [TrinMedicalBot — A/B и внедрение Challenger v2](sequential-diagnosis-language-models/2026-11-05-challenger.md) | 2026-11-05 |
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
