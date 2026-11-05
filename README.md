@@ -11,7 +11,7 @@
 
 ## Навигация
 
-- [MAI-DxO / SDBench — исследование последовательной диагностики](studies/sequential-diagnosis-language-models.md) — полный первоисточник; [обзор применимости к TrinMedicalBot и sequential-rca](reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md), A/B не проводился.
+- [MAI-DxO / SDBench — последовательная диагностика](studies/sequential-diagnosis-language-models.md) — [первоначальный полнотекстовый обзор и план](reports/2026-11-05-sequential-diagnosis-trinmedicalbot-review.md) → [144 Wello A/B и внедрение Challenger v2 в TrinMedicalBot 05.11.2026](reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md); клиническая проверка ещё не выполнена, sequential-rca остаётся кандидатом.
 - [RESEARCH_POLICY.md](RESEARCH_POLICY.md) — правила доступа к полным текстам, проверки кода, оценивания и публикации.
 - [Проверенные ранее работы — 16 отдельных карточек](studies/INDEX.md) — индекс с доказательствами из DSH и ссылками на исходные решения. **Не** повторная научная экспертиза.
 - [Научное ревью за 6–12 октября 2026](reports/2026-11-03-review-of-2026-10-06-to-12.md) — семь ранее не проверенных работ, полные PDF v1, методология, результаты, ограничения и предложения экспериментов; без внедрения.
@@ -30,6 +30,8 @@
 - [Повторный отбор старых работ для .NET/PostgreSQL-проекта коллеги](reports/2026-11-03-colleague-dotnet-retrospective.md) — исторические кандидаты, не новые исследования.
 
 ## Новые отчёты
+
+- **[Sequential Diagnosis / TrinMedicalBot — выполненный A/B и production-внедрение 5 ноября 2026](reports/2026-11-05-sequential-diagnosis-challenger-production-followup.md)** — 144/144 технически успешных Wello-запроса (72 на arm), 44/44 локальных инфраструктурных теста, Challenger v2, проверка лекарств по источникам, очередь Telegram. `PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING`; исходный SDBench не воспроизводился.
 
 - **[Предварительная Telegram BK → проектная матрица: 22 материала / 45 карточек](reports/2026-11-04-telegram-bk-preliminary-project-matrix.md)** — 51 прямых и 48 условных соответствий без лабораторных тестов; [машинно-читаемая версия](reports/2026-11-04-telegram-bk-preliminary-project-matrix.json). Исторические статусы полного разбора не изменены.
 - **[BK-014 — alphaXiv OpenResearch: source audit, full-text gate, experiment provenance and portfolio fit](reports/2026-11-04-bk014-openresearch-review.md)** — 45 project profiles checked, only dsh-paper2agent shortlisted; OpenAlex/PubMed/bioRxiv expose abstracts rather than full text via orx; [engineering card](studies/alphaxiv-openresearch.md), no execution and no production approval.
