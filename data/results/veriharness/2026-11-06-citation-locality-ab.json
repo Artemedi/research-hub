@@ -1,0 +1,316 @@
+{
+  "experiment": "agent-config citation locality A/B, restricted VeriHarness-related mechanism",
+  "scope": "real source check_findings; synthetic generated claims; no LLM verifier",
+  "source_file": "tools/review.py",
+  "source_sha256": "5aa8032a7c56fc6ff1fe050138343a54d8363d1211aa72e7733c153001cfe505",
+  "host": {
+    "python": "3.14.8",
+    "os": "6.18.56-ogc1.1.fc44.x86_64"
+  },
+  "seeds": [
+    20261106,
+    20261107,
+    20261108,
+    20261109,
+    20261110
+  ],
+  "fixture_sha256": [
+    "087c7d0068cdaed7b200a58191c8cbf0f9a4bfb0c77fea74a309baed5e48af6a",
+    "38fb4b0db710f4827249854bf74104c40624e184abe3d085297bc3e20b15382d",
+    "64fb3da8cc3efcad782ccdbb4713da15fea27a6857f40fd69a24ff70a73fa6fb",
+    "4d44127e13a7ed7eee4c9448f47f4460ebc2fbad2fccbf724747788d0e3ed268",
+    "40eb1a1c3caf0473ac739591e5b4b2937d4d73009687836f473662d08cd5a21e"
+  ],
+  "total_cases": 1000,
+  "per_class_per_seed": 40,
+  "controls": [
+    "valid_exact",
+    "valid_neighbor",
+    "wrong_line",
+    "fabricated_quote",
+    "false_behavior"
+  ],
+  "runs": [
+    {
+      "seed": 20261106,
+      "cases": 200,
+      "order": [
+        "baseline",
+        "locality"
+      ],
+      "arms": {
+        "baseline": {
+          "tp": 80,
+          "fp": 80,
+          "tn": 40,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.666667,
+          "latency_us_p50": 42.436,
+          "latency_us_p95": 52.571,
+          "wall_ms": 9.025,
+          "cpu_ms": 8.975,
+          "python_peak_alloc_bytes": 140972,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26016
+        },
+        "locality": {
+          "tp": 80,
+          "fp": 40,
+          "tn": 80,
+          "fn": 0,
+          "precision": 0.666667,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.333333,
+          "latency_us_p50": 70.022,
+          "latency_us_p95": 74.212,
+          "wall_ms": 13.312,
+          "cpu_ms": 13.259,
+          "python_peak_alloc_bytes": 140956,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26016
+        }
+      }
+    },
+    {
+      "seed": 20261107,
+      "cases": 200,
+      "order": [
+        "locality",
+        "baseline"
+      ],
+      "arms": {
+        "locality": {
+          "tp": 80,
+          "fp": 40,
+          "tn": 80,
+          "fn": 0,
+          "precision": 0.666667,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.333333,
+          "latency_us_p50": 69.882,
+          "latency_us_p95": 74.461,
+          "wall_ms": 13.297,
+          "cpu_ms": 13.252,
+          "python_peak_alloc_bytes": 140940,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26528
+        },
+        "baseline": {
+          "tp": 80,
+          "fp": 80,
+          "tn": 40,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.666667,
+          "latency_us_p50": 44.186,
+          "latency_us_p95": 48.242,
+          "wall_ms": 9.023,
+          "cpu_ms": 8.991,
+          "python_peak_alloc_bytes": 140916,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26528
+        }
+      }
+    },
+    {
+      "seed": 20261108,
+      "cases": 200,
+      "order": [
+        "baseline",
+        "locality"
+      ],
+      "arms": {
+        "baseline": {
+          "tp": 80,
+          "fp": 80,
+          "tn": 40,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.666667,
+          "latency_us_p50": 42.556,
+          "latency_us_p95": 47.591,
+          "wall_ms": 8.888,
+          "cpu_ms": 8.851,
+          "python_peak_alloc_bytes": 140900,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26656
+        },
+        "locality": {
+          "tp": 80,
+          "fp": 40,
+          "tn": 80,
+          "fn": 0,
+          "precision": 0.666667,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.333333,
+          "latency_us_p50": 70.106,
+          "latency_us_p95": 104.973,
+          "wall_ms": 13.889,
+          "cpu_ms": 13.833,
+          "python_peak_alloc_bytes": 140884,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26656
+        }
+      }
+    },
+    {
+      "seed": 20261109,
+      "cases": 200,
+      "order": [
+        "locality",
+        "baseline"
+      ],
+      "arms": {
+        "locality": {
+          "tp": 80,
+          "fp": 40,
+          "tn": 80,
+          "fn": 0,
+          "precision": 0.666667,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.333333,
+          "latency_us_p50": 69.832,
+          "latency_us_p95": 73.492,
+          "wall_ms": 13.276,
+          "cpu_ms": 13.227,
+          "python_peak_alloc_bytes": 140868,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26656
+        },
+        "baseline": {
+          "tp": 80,
+          "fp": 80,
+          "tn": 40,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.666667,
+          "latency_us_p50": 44.411,
+          "latency_us_p95": 47.261,
+          "wall_ms": 9.021,
+          "cpu_ms": 8.99,
+          "python_peak_alloc_bytes": 140844,
+          "proc_io_counters_delta": {
+            "rchar": 112,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26656
+        }
+      }
+    },
+    {
+      "seed": 20261110,
+      "cases": 200,
+      "order": [
+        "baseline",
+        "locality"
+      ],
+      "arms": {
+        "baseline": {
+          "tp": 80,
+          "fp": 80,
+          "tn": 40,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.666667,
+          "latency_us_p50": 42.951,
+          "latency_us_p95": 46.661,
+          "wall_ms": 8.906,
+          "cpu_ms": 8.869,
+          "python_peak_alloc_bytes": 140828,
+          "proc_io_counters_delta": {
+            "rchar": 113,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26656
+        },
+        "locality": {
+          "tp": 80,
+          "fp": 40,
+          "tn": 80,
+          "fn": 0,
+          "precision": 0.666667,
+          "recall": 1.0,
+          "negative_false_accept_rate": 0.333333,
+          "latency_us_p50": 70.826,
+          "latency_us_p95": 79.551,
+          "wall_ms": 13.55,
+          "cpu_ms": 13.499,
+          "python_peak_alloc_bytes": 140812,
+          "proc_io_counters_delta": {
+            "rchar": 113,
+            "wchar": 0,
+            "read_bytes": 0,
+            "write_bytes": 0
+          },
+          "rss_max_kib_process_wide": 26656
+        }
+      }
+    }
+  ],
+  "mean_false_accept_rate": {
+    "baseline": 0.666667,
+    "locality": 0.333333
+  },
+  "mean_wall_ms_per_seed": {
+    "baseline": 8.973,
+    "locality": 13.465
+  },
+  "llm_calls": 0,
+  "tokens": "N/A: no LLM calls; not an estimate of inference token usage",
+  "api_spend_usd": 0,
+  "vram": "N/A: CPU/Python benchmark, no model or GPU",
+  "limitations": [
+    "Fixture labels and file contents are generated; no independent human coding claims.",
+    "The oracle executes only self-generated Python threshold functions.",
+    "The locality guard checks citation location, NOT semantic correctness.",
+    "Both algorithms run in one process, with alternating order, CPU/cache noise remains.",
+    "Python tracemalloc peak is not process RSS or kernel memory.",
+    "No original VeriHarness resolver/challenger/LLM integration was tested.",
+    "Results do not imply real-project precision or measured inference savings."
+  ]
+}

@@ -23,6 +23,7 @@
 - [2026-11-05-bk062-pe-layout.mjs](2026-11-05-bk062-pe-layout.mjs)
 - [2026-11-05-bk065-gui-probe.py](2026-11-05-bk065-gui-probe.py)
 - [2026-11-05-bk065-isolated-gui.sh](2026-11-05-bk065-isolated-gui.sh)
+- [2026-11-06-agent-config-citation-locality-ab.py](2026-11-06-agent-config-citation-locality-ab.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)
 - [bk011-simurg/check-fixture.py](bk011-simurg/check-fixture.py)
 - [bk019-skill-doctor/attribution-fixture.py](bk019-skill-doctor/attribution-fixture.py)

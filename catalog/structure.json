@@ -1153,6 +1153,20 @@
       "title": "Приоритетная очередь интеграций — безопасность DSH, Creator Mode и Inspektor Gadget",
       "kind": "portfolio",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/veriharness/2026-11-06-citation-locality-ab.md",
+      "title": "VeriHarness/agent-config — offline A/B по близости цитаты",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-06/offline-ab-pilot.md",
+      "title": "Начало воспроизводимых offline A/B — пилот и очередь",
+      "kind": "portfolio",
+      "date": "2026-11-06"
     }
   ]
 }

@@ -3346,6 +3346,20 @@
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Полная авторская engineering-статья прочитана и сверена с HTML-снимком; производственные улучшения AUTHOR_REPORTED, независимые A/B и интеграция в локальные проекты NOT_RUN. Исторический DSH review сохранён.",
       "supersedes": null
+    },
+    {
+      "id": "veriharness-locality-ab-2026-11-06",
+      "study_ids": [
+        "veriharness"
+      ],
+      "version_ids": [
+        "verified-veriharness-2026-11-05"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/veriharness/2026-11-06-citation-locality-ab.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Independent deterministic oracle over synthetic agent-config citation fixtures, not a VeriHarness LLM run, not original experimental replication; no production patch.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -3396,6 +3410,22 @@
       ],
       "observations": "TelegramBot replay: 120 of 180 synthetic paired-run trajectories duplicated across nine injected fault modes (20 each). Original LIMBO control: no-key x contract duplicated in 60/60 selected fault episodes; stable-key mastodon contract duplicated in 0/60. A separate reservation-only model avoided duplicates but missed 20/20 timeout_pre deliveries; these are bounded test outcomes, not production rates.",
       "environment_details": "Original TelegramBot with fake transport and temporary state; simulated LIMBO contracts; no network. Runtime details in the linked protocol."
+    },
+    {
+      "id": "veriharness-agent-config-citation-locality-ab-2026-11-06",
+      "study_ids": [
+        "veriharness"
+      ],
+      "review_id": "veriharness-locality-ab-2026-11-06",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Real agent-config check_findings @489e074 vs additional citation locality +/-1 on 1000 synthetic claims, 5 distinct seeds of 200. TP 400 both; FP 400 baseline vs 200 locality; false accept 66.7% vs 33.3% among artificial negatives; mean 200-check evaluation time 8.973 vs 13.465 ms.",
+      "limitations": "Not a VeriHarness full-model run, not representative code-review class distribution, not semantic correctness, not a production improvement; CPU/Python allocations and evaluation-only /proc/self/io measured, VRAM/tokens N/A.",
+      "artifacts": [
+        "experiments/2026-11-06-agent-config-citation-locality-ab.py",
+        "data/results/veriharness/2026-11-06-citation-locality-ab.json",
+        "reviews/veriharness/2026-11-06-citation-locality-ab.md"
+      ]
     }
   ],
   "projects": [

@@ -60,6 +60,7 @@
 | [Agent Desktop — изолированная проверка Wayland](vercel-agent-desktop/2026-11-05-wayland.md) | 2026-11-05 |
 | [VeriHarness и agent-config — проверка gates](veriharness/2026-11-04.md) | 2026-11-04 |
 | [VeriHarness — Evidence-Grounded Agentic Verification — полнотекстовая научная проверка](veriharness/2026-11-05-full-text.md) | 2026-11-05 |
+| [VeriHarness/agent-config — offline A/B по близости цитаты](veriharness/2026-11-06-citation-locality-ab.md) | 2026-11-06 |
 | [Warp Skill Doctor — атрибуция и приватность](warp-skill-doctor/2026-11-04.md) | 2026-11-04 |
 | [Yahont CE — поиск, ACL и лицензия](yahont-ce/2026-11-04.md) | 2026-11-04 |
 | [youtube-skills — инструкции и внешние зависимости](youtube-skills/2026-11-04.md) | 2026-11-04 |
