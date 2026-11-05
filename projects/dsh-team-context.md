@@ -10,12 +10,13 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-
+| [hyra-2](../catalog/studies/hyra-2.md) | ARCHITECTURAL_REFERENCE_CANDIDATE | VERIFIED_DOCUMENTED_CONTRACT / HYPOTHESIS_BENEFIT | Current documented knowledge/governance promotion boundary verified; no runtime scheduler ownership or measured benefit. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
 
 ## Соответствие не подтверждено
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | knowledge/governance: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | knowledge/governance: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.

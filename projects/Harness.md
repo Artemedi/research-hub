@@ -10,7 +10,8 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-
+| [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | интеграционный workspace: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | PROFILE_CANDIDATE_NOT_VALIDATED | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | интеграционный workspace: предметный кандидат из профиля; текущий target source seam и acceptance baseline не проверены. См. ограничения и тест в отчёте. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
 
 ## Соответствие не подтверждено
 

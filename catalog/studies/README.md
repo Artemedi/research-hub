@@ -2,10 +2,12 @@
 
 # Структурированные исследования — пилот
 
-5 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит и ещё не мигрированные записи. [Проекты](../../projects/README.md).
+7 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит и ещё не мигрированные записи. [Проекты](../../projects/README.md).
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: NOT_MIGRATED.
 - [REA — Reverse Engineer Anything](rea.md); project fit: MIGRATED.
 - [Unreal Agent — исходное видео](unreal-agent.md); project fit: NOT_MIGRATED.
 - [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md); project fit: NOT_MIGRATED.
 - [Harness² — Recursive Agent Harnessing for an Open World](harness2.md); project fit: NOT_MIGRATED.
+- [Hyra 2.0](hyra-2.md); project fit: MIGRATED.
+- [Vercel Agent Desktop](vercel-agent-desktop.md); project fit: MIGRATED.

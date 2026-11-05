@@ -10,7 +10,8 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-
+| [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | multi-agent configuration: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) |
+| [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | multi-agent configuration: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) |
 
 ## Соответствие не подтверждено
 

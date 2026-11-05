@@ -41,7 +41,7 @@ export function validateEntities(root, m) {
   }
   for (const r of m.reviews) {
     list(r.study_ids, r.id); list(r.version_ids, r.id); strings(r, ['source_coverage', 'limitations']);
-    require(['FULL_TEXT_REVIEWED', 'PARTIAL_SOURCE_REVIEW', 'FULL_TEXT_UNAVAILABLE', 'BOUNDED_CODE_REVIEW'].includes(r.source_coverage), r.id + ': unknown source coverage');
+    require(['FULL_TEXT_REVIEWED', 'FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED', 'PARTIAL_SOURCE_REVIEW', 'FULL_TEXT_UNAVAILABLE', 'BOUNDED_CODE_REVIEW'].includes(r.source_coverage), r.id + ': unknown source coverage');
     require(date(r.date) && local(r.document), r.id + ': missing date/document');
     for (const id of r.study_ids) { ref('studies', id); require(r.version_ids.some(v => ref('versions', v).study_id === id), r.id + ': missing source version'); }
     for (const id of r.version_ids) require(r.study_ids.includes(ref('versions', id).study_id), r.id + ': version outside review');
@@ -60,7 +60,7 @@ export function validateEntities(root, m) {
     strings(p, ['title', 'registry_revision', 'registry_card_url']);
     require(/^[a-f0-9]{40}$/.test(p.registry_revision) && p.registry_card_url.startsWith(`https://github.com/Artemedi/project-registry/blob/${p.registry_revision}/projects/`) && p.registry_card_url.endsWith('/PROJECT.md'), p.id + ': registry provenance required');
   }
-  const decisions = ['PROFILE_CANDIDATE_NOT_VALIDATED', 'CONDITIONAL_NEEDS_EVIDENCE', 'NO_CONFIRMED_FIT', 'RESEARCH_CANDIDATE_TARGET_NOT_MEASURED'];
+  const decisions = ['PROFILE_CANDIDATE_NOT_VALIDATED', 'CONDITIONAL_NEEDS_EVIDENCE', 'NO_CONFIRMED_FIT', 'RESEARCH_CANDIDATE_TARGET_NOT_MEASURED', 'ARCHITECTURAL_REFERENCE_CANDIDATE'];
   const imports = new Map();
   for (const a of m.assessments) {
     ref('studies', a.study_id); ref('projects', a.project_id);
@@ -123,7 +123,7 @@ export function entityPages(m) {
     const fits = current.filter(a => a.project_id === p.id), candidates = fits.filter(a => a.decision !== 'NO_CONFIRMED_FIT'), other = fits.filter(a => a.decision === 'NO_CONFIRMED_FIT');
     pages.set(`projects/${p.id}.md`, `# ${escape(p.title)}\n\n[Каноническая карточка проекта](${p.registry_card_url}); ревизия ${p.registry_revision}. Публичная проекция без закрытого кода и текстов проекта.\n\n**Пилот:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.\n\n## Исследовательские кандидаты\n\n| Источник | Решение | Доказательность | Основание | Проверка |\n| --- | --- | --- | --- | --- |\n${rows(candidates)}\n\n## Соответствие не подтверждено\n\n| Источник | Решение | Доказательность | Основание | Проверка |\n| --- | --- | --- | --- | --- |\n${rows(other)}\n\nОграничения, следующий тест и история оценки доступны в структурированной записи источника. Остальные связи ещё не мигрированы.`);
   }
-  pages.set('projects/README.md', `# Проекты и исследования\n\nПилот обратного каталога: ${m.projects.length} проектов из зафиксированного реестра, но оценки перенесены только для REA. Это неполный список исследований для каждого проекта. Обе стороны связи генерируются из одних current_assessments.\n\n${m.projects.map(p=>`- [${escape(p.title)}](${p.id}.md)`).join('\n')}`);
+  pages.set('projects/README.md', `# Проекты и исследования\n\nПилот обратного каталога: ${m.projects.length} проектов из зафиксированного реестра, оценки перенесены для ${new Set(m.current_assessments.map(a => a.study_id)).size} источников. Это неполный список исследований для каждого проекта. Обе стороны связи генерируются из одних current_assessments.\n\n${m.projects.map(p=>`- [${escape(p.title)}](${p.id}.md)`).join('\n')}`);
   pages.set('catalog/studies/README.md', `# Структурированные исследования — пилот\n\n${m.studies.length} источников. [Полный файловый каталог](../../studies/INDEX.md) содержит и ещё не мигрированные записи. [Проекты](../../projects/README.md).\n\n${m.studies.map(s=>`- [${escape(s.title)}](${s.id}.md); project fit: ${s.fit_coverage}.`).join('\n')}`);
   for (const s of m.studies) {
     const related = m.relations.filter(r => r.from === s.id || r.to === s.id);

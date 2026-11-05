@@ -43,3 +43,19 @@ test('project and study views expose the same current decision and limits', () =
   assert.ok(pages.get('catalog/studies/unreal-agent.md').includes('NOT_MIGRATED') === false);
   assert.ok(pages.get('catalog/studies/unreal-agent.md').includes('Это не NO_FIT'));
 });
+test('Hyra article hash and coverage are not presented as source-code verification', () => {
+  const r = original.reviews.find(r => r.id === 'hyra-2-primary');
+  const v = original.versions.find(v => v.id === r.version_ids[0]);
+  const matrix = JSON.parse(fs.readFileSync(path.join(root, 'data/project-fit/hyra-2/2026-11-05.json'), 'utf8'));
+  assert.equal(r.source_coverage, 'FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED');
+  assert.equal(v.ref, 'sha256:' + matrix.source_content_sha256);
+  assert.equal(matrix.source_code_sha, null);
+});
+test('Desktop GUI PASS retains narrow scope and whole-suite limitations', () => {
+  const e = original.experiments.find(e => e.id === 'vercel-agent-desktop-wayland-toy-ui');
+  const evidence = JSON.parse(fs.readFileSync(path.join(root, 'data/results/vercel-agent-desktop/2026-11-05.json'), 'utf8'));
+  assert.equal(e.result, 'PASS');
+  assert.equal(evidence.all_gui_runs_passed, true);
+  assert.ok(e.scope.includes(`${evidence.gui_cases_passed}/${evidence.gui_cases_passed}`));
+  assert.match(e.limitations, /one failure and 233 ignored/);
+});
