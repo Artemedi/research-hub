@@ -17,7 +17,9 @@
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |
 | [Covert Assistance — Helpful LLM Agents Evade Oversight — полнотекстовая научная проверка](covert-assistance/2026-11-05-full-text.md) | 2026-11-05 |
 | [Cursor — инженерный источник и пределы доказательств](cursor-token-efficiency/2026-11-05-primary.md) | 2026-11-05 |
+| [CVE-2026-82533 — аудит риска текущей установки DSH](cve-2026-82533/2026-11-06-readonly-risk.md) | 2026-11-06 |
 | [DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка](drag/2026-11-05-full-text.md) | 2026-11-05 |
+| [BK-064 — ограниченный опыт Creator Mode](dsh-creator-mode/2026-11-06-local-probe.md) | 2026-11-06 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |
 | [Where Does Exactly-Once Live? / LIMBO — полнотекстовая научная проверка](exactly-once-limbo/2026-11-05-full-text.md) | 2026-11-05 |
@@ -25,6 +27,7 @@
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
 | [Inspektor Gadget — разрешения eBPF](inspektor-gadget/2026-11-04.md) | 2026-11-04 |
+| [BK-041 — проверка системного допуска](inspektor-gadget/2026-11-06-privilege-gate.md) | 2026-11-06 |
 | [IPFire fireperf — TCP loopback](ipfire-fireperf/2026-11-04.md) | 2026-11-04 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |
 | [Karpathy autoresearch — исходники и ограничения](karpathy-autoresearch/2026-11-04.md) | 2026-11-04 |
@@ -48,6 +51,7 @@
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
 | [StateComp — State-Conditioned Context Compression — полнотекстовая научная проверка](statecomp/2026-11-05-full-text.md) | 2026-11-05 |
+| [BK-025/034 — пользовательские транскрипты и ограничения](telegram-transcripts/2026-11-06-user-provided.md) | 2026-11-06 |
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [Understand Anything — граф и SQL parser](understand-anything/2026-11-04.md) | 2026-11-04 |
 | [Unreal Agent — доступность исходного видео](unreal-agent/2026-11-04.md) | 2026-11-04 |

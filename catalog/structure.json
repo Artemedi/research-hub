@@ -1111,6 +1111,41 @@
       "title": "Проверенные версии источников и внешние блокировки",
       "kind": "portfolio",
       "date": "2026-11-05"
+    },
+    {
+      "from": null,
+      "to": "reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
+      "title": "BK-041 — проверка системного допуска",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+      "title": "BK-064 — ограниченный опыт Creator Mode",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/cve-2026-82533/2026-11-06-readonly-risk.md",
+      "title": "CVE-2026-82533 — аудит риска текущей установки DSH",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/telegram-transcripts/2026-11-06-user-provided.md",
+      "title": "BK-025/034 — пользовательские транскрипты и ограничения",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-06/review.md",
+      "title": "Решение BK-041/BK-064/CVE — лабораторные проверки и риск",
+      "kind": "portfolio",
+      "date": "2026-11-06"
     }
   ]
 }

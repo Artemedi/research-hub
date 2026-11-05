@@ -1,0 +1,16 @@
+# BK-025 и BK-034 — полный пользовательский транскрипт получен
+
+**Дата:** 2026-11-06. **Происхождение:** предоставленный пользователем текстовый файл `Вставленный текст(20261105-225605).txt`, 259 строк/29317 байт, SHA-256 `1fc3abc0e8bee55cada7ab468df2a254194ae2926489e822de253226a9c2e284`. Файл содержит русские заголовки и полные по изложению англоязычные временные транскрипты видео, **но тождественность загруженным YouTube-видео самостоятельно не подтверждена**; повторная попытка yt-dlp через Bazzite всё ещё требует авторизации. Текст не включён целиком в публичный репозиторий.
+
+**BK-025** — [исходный YouTube ID eFBSlgXG3U0](https://youtu.be/eFBSlgXG3U0): автор пересказывает утверждение Unreal Labs об экономии до 40% относительно Codex и раскрывает условия TerminalBench 4.0 (согласно данному тексту, $1428 против $2350 при 57,9% pass; вычисленный относительный выигрыш 39,2%). Указывает на отдельные механизмы batch/async tool handling, сокращение context/tool outputs, разный счёт cached и new input. В Atlas отмечено несоответствие заявленных $133 и отображённых $1356.18 без объяснения. **Это информация из пользовательского транскрипта и авторского сравнения, не наше независимое A/B.** Нужно закрепить benchmark revision + pricing artifacts и offline smoke на реальных задачах при одинаковых моделях.
+
+**BK-034** — [исходный YouTube ID qLfSDQ5NGh0](https://youtu.be/qLfSDQ5NGh0): описана система *write checks → human approval → locked tests → isolated feature builder → keep/revert*; второй auto loop извлекает повторяющиеся дефекты и изменяет инструкции `program.md` без права править oracle. В собственном примере авторов 11 тестов правил заказа пройдены, но UI формы не оказалось — иллюстрация **неполного oracle**, не доказательство полной корректности. Во второй демонстрации один из дефектов требовал трёх итераций. Это **авторские результаты видео**, не самостоятельная репликация.
+
+**Эвиденс-категория:** `USER_FULL_TRANSCRIPT_AVAILABLE / ORIGINAL_VIDEO_NOT_INDEPENDENTLY_VERIFIED / EXPERIMENT_NOT_RUN` для обеих BK. Предыдущая маркировка `FULL_TEXT_UNAVAILABLE` больше не соответствует наличию **пользовательского текста**, однако отсутствие исходного video access и независимой проверки benchmark остаётся. Поэтому обе записи не повышаются автоматически до `LAB_VERIFIED` и не получают новых приватных backlinks.
+
+| BK | Target IDs | Соответствие | Ограничения | Минимальный тест | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| BK-025 | `dsh-runtime`, `agent-config` | Async scheduler + context reduction могут снизить бесполезные LLM calls | Benchmark accounting не верифицирован; первичное видео недоступно | 30 synthetic tasks, same-model/same-budget, oracle pass, cached vs new tokens и wall time, 3 повтора | `USER_TRANSCRIPT / NEEDS_INDEPENDENT_EVIDENCE` |
+| BK-034 | `agent-skills`, `dsh-runtime` | Locked oracle и безопасный auto loop уменьшают reward hacking | Примеры демонстрируют пропуски тестов; опасно автоматически переписывать правила | Frozen multi-feature fixtures, independent UI integration oracle, mutation checks, 3 ×, rollback | `USER_TRANSCRIPT / NEEDS_VALIDATION` |
+
+**Outcome:** источник больше не отсутствует у пользователя, но независимость его происхождения и функциональная репликация остаются открытыми.
