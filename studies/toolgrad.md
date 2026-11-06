@@ -30,3 +30,12 @@ Generation pass 99,8% против 63,8% DFS, средняя длина gold cha
 Методика верифицированной генерации tool chains и replayable regressions, не автоматическое обучение production модели.
 
 **Gate:** `PROJECT_PROFILE_MATCH / NEEDS_CURRENT_SOURCE_CODE`. Owner gate and independent outcome oracle required before any code changes.
+
+
+## 2026-11-06 — source-backed ограниченный chain-first / DFS эксперимент
+
+[Полный отчёт](../reviews/toolgrad/2026-11-06-chain-validation-ab.md) • [воспроизводимый Python runner](../experiments/2026-11-06-bk005-toolgrad-chain-validation-ab.py) • [машинный JSON](../data/results/toolgrad/2026-11-06-chain-validation-ab.json).
+
+На оригинальном [ToolGrad source@c9544f8](https://github.com/zhongyi-zhou/toolgrad/tree/c9544f842aacc13b5e44d5833fcc5dc4b86c5161) выполнены настоящие `chain_update_step` и `validate_api_response`, но model-dependent proposer/selector/query заменены детерминированными. В 12 in-memory tools: **5 seeds ×100 цепочек**, длина 2–6, chain-first **500/500** валидных конечных состояний; наш query-first bounded DFS также **500/500** на тех же заведомо достижимых целях. **Это не репликация показателей ACL, не использование модели и не доказанная польза ToolGrad.** 100/100 невозможных запросов отклонены oracle; 500/500 цепочек с удалённым последним действием не соответствовали цели.
+
+**Новая проверяемая регрессия по коду:** исходный API validator ошибочно отклонил 10/10 корректных JSON с `error_count: 0` из-за поиска подстроки `error`, тогда как `{"ok":true}` не доказывает реального commit. Не применять validator как замену независимому oracle для SQL/file/network действий. Проектные кандидаты остаются `dsh-paper2agent`, `agent-skills`, `dsh-runtime`, но без подтверждения интеграции, без новых runtime skills и без изменений пользовательских систем. **Status:** `разобран / BOUNDED_SOURCE_COMPONENT_EXPERIMENT / NO_PRODUCTION_APPROVAL`.

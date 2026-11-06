@@ -1074,15 +1074,18 @@
       "kind": "paper",
       "card": "studies/toolgrad.md",
       "primary_url": "https://aclanthology.org/2026.findings-acl.950/",
-      "current_review_id": "toolgrad-review",
+      "current_review_id": "toolgrad-bk005-source-proxy-20261106",
       "fit_coverage": "PARTIAL",
-      "card_body_sha256": "75e7459315bab96c8ea7d7b7189e135dd71d9afd0e9975c04d02b9878a8c9c01",
+      "card_body_sha256": "30a2ca178b1eec37feae92dd10b98c0820986fb09e1b09fbcae88d11e8652775",
       "linked_materials": [
         "archive/dsh/knowledge/research/2026-09-15-deepseek-harness-research-watch.md",
         "archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md",
         "archive/dsh/knowledge/research/README.md",
         "portfolio/2026-09-03--2026-09-15/review.md",
-        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+        "portfolio/2026-09-03--2026-09-15/project-fit.md",
+        "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+        "experiments/2026-11-06-bk005-toolgrad-chain-validation-ab.py",
+        "data/results/toolgrad/2026-11-06-chain-validation-ab.json"
       ]
     },
     {
@@ -1962,6 +1965,13 @@
       "study_id": "dsh-creator-mode",
       "ref": "sha256:69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346",
       "url": "https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html",
+      "unknown_reason": null
+    },
+    {
+      "id": "toolgrad-author-code-20261106",
+      "study_id": "toolgrad",
+      "ref": "c9544f842aacc13b5e44d5833fcc5dc4b86c5161",
+      "url": "https://github.com/zhongyi-zhou/toolgrad",
       "unknown_reason": null
     }
   ],
@@ -3546,6 +3556,21 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Tested local-only owner port e5a0bb5901f4b1c78d7b1e28a2ba43e1cbe86db4, NOT the linked public upstream version; version_ids names source lineage only. 38 unit + 7 E2E pass; 5 seeds x8 phases/arm; TeamAI write-scope gate FAIL with 35 extra paths in disposable HOME. No production or multi-host proof.",
       "supersedes": "tencent-teamai-cli-review"
+    },
+    {
+      "id": "toolgrad-bk005-source-proxy-20261106",
+      "study_ids": [
+        "toolgrad"
+      ],
+      "version_ids": [
+        "toolgrad-version",
+        "toolgrad-author-code-20261106"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Actual source validate_api_response and chain_update_step run on 500 synthetic chains; proposer, selector, inverse query and ToolBench DFS replaced with deterministic local mechanisms. 500/500 both arms, no measured model benefit; 10/10 benign error_count=0 JSON erroneously refused. No SFT, BFCL, LLM calls, production changes.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -3766,6 +3791,22 @@
         "experiments/2026-11-06-bk002-teamai-distribution-ab.py",
         "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json",
         "data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json"
+      ]
+    },
+    {
+      "id": "toolgrad-bk005-chain-state-oracle-20261106",
+      "study_ids": [
+        "toolgrad"
+      ],
+      "review_id": "toolgrad-bk005-source-proxy-20261106",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Source-backed Pydantic workflow updater and API response validator executed on 5 seeds x 100 tasks over 12 synthetic stateful APIs; chain-first and local bounded DFS both 500/500; 100 impossible targets rejected; 500 truncated-chain oracle mutations rejected; original validator 10/10 benign error_count:0 false negatives.",
+      "limitations": "No Gemini / model API / ToolBench / original DFS / SFT / BFCL. Answer-first always generates reachable tasks, DFS written locally; 500/500 cannot establish comparative ToolGrad benefit; time CPU RSS not feature-equivalent.",
+      "artifacts": [
+        "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+        "experiments/2026-11-06-bk005-toolgrad-chain-validation-ab.py",
+        "data/results/toolgrad/2026-11-06-chain-validation-ab.json"
       ]
     }
   ],
@@ -12814,6 +12855,69 @@
       "source_line": 53,
       "source_excerpt": "| BK-041 Inspektor Gadget | `Wiki_PG` | `OWNER_SUGGESTION / PROFILE_HYPOTHESIS_ONLY` | В disposable PostgreSQL-контейнере с фиксированными PID/QueryID/временем проверить, даёт ли точечный eBPF trace_exec/trace_open полезные системные факты для Wiki_PG; определить точный ingest/source-provenance contract по исходникам Wiki_PG; запретить raw JSON argv/path, измерить CPU/RAM/IO/BPF и независимый oracle. Без внедрения |",
       "supersedes": null
+    },
+    {
+      "id": "bk005-toolgrad-source-proxy-20261106-dsh-paper2agent",
+      "study_id": "toolgrad",
+      "project_id": "dsh-paper2agent",
+      "review_id": "toolgrad-bk005-source-proxy-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "OFFLINE_METHOD_CANDIDATE / NO_MODEL_BENEFIT_VERIFIED",
+      "evidence": "OFFLINE_METHOD_CANDIDATE / NO_MODEL_BENEFIT_VERIFIED",
+      "reason": "Owner project remained research candidate after source-backed synthetic ToolGrad proxy test: no LLM model improvement and no actual source-level project integration verified.",
+      "limitations": "Original source workflow updater/validator executed, but only synthetic 12-API in-memory fixture; 10 valid error_count:0 responses rejected; source integration and human-query distribution unknown; DSH security gate remains separate.",
+      "next_test": "Verify target repo@SHA and read-only integration seam; if needed build consent-gated, held-out tool chain test with real user-like intents, independent state oracle and LLM token/cost budget; no production side effects.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Exact target project tool API contract and measured usefulness remain unverified.",
+      "source_document": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "source_line": 61,
+      "source_excerpt": "| BK-005 ToolGrad | `dsh-paper2agent` | `OFFLINE_METHOD_CANDIDATE / NO_MODEL_BENEFIT_VERIFIED` | Можно исследовать генерацию коротких reproducible инструментальных цепочек из verified read-only paper tools; прежде всего внешний state/answer oracle, origin/version/citation tags, реальные API contracts и отрицательные тесты, без LLM-SFT |",
+      "supersedes": "toolgrad-document-dsh-paper2agent"
+    },
+    {
+      "id": "bk005-toolgrad-source-proxy-20261106-agent-skills",
+      "study_id": "toolgrad",
+      "project_id": "agent-skills",
+      "review_id": "toolgrad-bk005-source-proxy-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "QA_ORACLE_CANDIDATE / ORIGINAL_VALIDATOR_FALSE_NEGATIVE",
+      "evidence": "QA_ORACLE_CANDIDATE / ORIGINAL_VALIDATOR_FALSE_NEGATIVE",
+      "reason": "Owner project remained research candidate after source-backed synthetic ToolGrad proxy test: no LLM model improvement and no actual source-level project integration verified.",
+      "limitations": "Original source workflow updater/validator executed, but only synthetic 12-API in-memory fixture; 10 valid error_count:0 responses rejected; source integration and human-query distribution unknown; DSH security gate remains separate.",
+      "next_test": "Verify target repo@SHA and read-only integration seam; if needed build consent-gated, held-out tool chain test with real user-like intents, independent state oracle and LLM token/cost budget; no production side effects.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Exact target project tool API contract and measured usefulness remain unverified.",
+      "source_document": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "source_line": 62,
+      "source_excerpt": "| BK-005 ToolGrad | `agent-skills` | `QA_ORACLE_CANDIDATE / ORIGINAL_VALIDATOR_FALSE_NEGATIVE` | Использовать как источник ограниченных oracle-test cases для validation skills; сперва сохранить 10 `error_count` mutation cases и 10 fake-success examples; не публиковать новый глобальный skill без измеренного выигрыша |",
+      "supersedes": "toolgrad-document-agent-skills"
+    },
+    {
+      "id": "bk005-toolgrad-source-proxy-20261106-dsh-runtime",
+      "study_id": "toolgrad",
+      "project_id": "dsh-runtime",
+      "review_id": "toolgrad-bk005-source-proxy-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "RESEARCH_ONLY / SECURITY_GATE_UNSATISFIED",
+      "evidence": "RESEARCH_ONLY / SECURITY_GATE_UNSATISFIED",
+      "reason": "Owner project remained research candidate after source-backed synthetic ToolGrad proxy test: no LLM model improvement and no actual source-level project integration verified.",
+      "limitations": "Original source workflow updater/validator executed, but only synthetic 12-API in-memory fixture; 10 valid error_count:0 responses rejected; source integration and human-query distribution unknown; DSH security gate remains separate.",
+      "next_test": "Verify target repo@SHA and read-only integration seam; if needed build consent-gated, held-out tool chain test with real user-like intents, independent state oracle and LLM token/cost budget; no production side effects.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Exact target project tool API contract and measured usefulness remain unverified.",
+      "source_document": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "source_line": 63,
+      "source_excerpt": "| BK-005 ToolGrad | `dsh-runtime` | `RESEARCH_ONLY / SECURITY_GATE_UNSATISFIED` | Минимальные offline chain tests без новых runtime hooks. До эксперимента с Model/tool execution устранить отдельный P0 CVE-2026-82533 и проверить scope/redaction/approval; пока не внедрять |",
+      "supersedes": "toolgrad-document-dsh-runtime"
     }
   ],
   "current_assessments": [
@@ -14155,17 +14259,17 @@
     {
       "study_id": "toolgrad",
       "project_id": "dsh-paper2agent",
-      "assessment_id": "toolgrad-document-dsh-paper2agent"
+      "assessment_id": "bk005-toolgrad-source-proxy-20261106-dsh-paper2agent"
     },
     {
       "study_id": "toolgrad",
       "project_id": "agent-skills",
-      "assessment_id": "toolgrad-document-agent-skills"
+      "assessment_id": "bk005-toolgrad-source-proxy-20261106-agent-skills"
     },
     {
       "study_id": "toolgrad",
       "project_id": "dsh-runtime",
-      "assessment_id": "toolgrad-document-dsh-runtime"
+      "assessment_id": "bk005-toolgrad-source-proxy-20261106-dsh-runtime"
     },
     {
       "study_id": "transferable-tool-selection",

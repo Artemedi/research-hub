@@ -1322,6 +1322,20 @@
       "title": "BK-002 test-only NPM lock URL provenance",
       "kind": "data",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "title": "ToolGrad BK-005 original code and local chain-first DFS experiment",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/toolgrad/2026-11-06-chain-validation-ab.json",
+      "title": "ToolGrad BK-005 complete 500-chain state-oracle results",
+      "kind": "data",
+      "date": "2026-11-06"
     }
   ]
 }

@@ -77,7 +77,7 @@
 | [StateComp — State-Conditioned Context Compression](statecomp.md) | [2026-11-03 / statecomp-review](statecomp.md) · [2026-11-05 / fulltext-statecomp-2026-11-05](../reviews/statecomp/2026-11-05-full-text.md) |
 | [SWRouter — multi-turn context-aware model routing](swrouter.md) | [2026-11-03 / swrouter-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [Tencent TeamAI CLI](tencent-teamai-cli.md) | [2026-11-04 / tencent-teamai-cli-review](../reviews/tencent-teamai-cli/2026-11-04.md) · [2026-11-06 / bk002-teamai-cli-distribution-ab-20261106](../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) |
-| [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | [2026-11-03 / toolgrad-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | [2026-11-03 / toolgrad-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-06 / toolgrad-bk005-source-proxy-20261106](../reviews/toolgrad/2026-11-06-chain-validation-ab.md) |
 | [Training Small LMs for Transferable Tool Selection](transferable-tool-selection.md) | [2026-11-03 / transferable-tool-selection-review](../portfolio/2026-10-20--2026-10-26/review.md) |
 | [Understand Anything — графы исходников и wiki](understand-anything.md) | [2026-11-04 / understand-anything-review](../reviews/understand-anything/2026-11-04.md) |
 | [Unreal Agent — исходное видео и инженерные материалы](unreal-agent-bk025.md) | [2026-11-04 / unreal-access](../reviews/unreal-agent/2026-11-04.md) · [2026-11-06 / unreal-source-audit-2026-11-06](../reviews/unreal-agent/2026-11-06-source-audit.md) |

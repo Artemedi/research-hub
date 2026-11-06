@@ -61,6 +61,7 @@
 | [BK-025/034 — пользовательские транскрипты и ограничения](telegram-transcripts/2026-11-06-user-provided.md) | 2026-11-06 |
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [BK-002 TeamAI CLI independent distribution and scope A/B](tencent-teamai-cli/2026-11-06-distribution-ab.md) | 2026-11-06 |
+| [ToolGrad BK-005 original code and local chain-first DFS experiment](toolgrad/2026-11-06-chain-validation-ab.md) | 2026-11-06 |
 | [Understand Anything — граф и SQL parser](understand-anything/2026-11-04.md) | 2026-11-04 |
 | [Unreal Agent — доступность исходного видео](unreal-agent/2026-11-04.md) | 2026-11-04 |
 | [Unreal Agent — первоисточники и проверка стоимости](unreal-agent/2026-11-06-source-audit.md) | 2026-11-06 |

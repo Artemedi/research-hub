@@ -5,7 +5,7 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives",
   "count_by_status": {
     "проверен экспериментально": 16,
     "ожидает проверки": 0,
@@ -13,7 +13,7 @@
     "разобран": 30
   },
   "mapped_study_cards": 32,
-  "mapped_experimental_items": 20,
+  "mapped_experimental_items": 21,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -27,7 +27,8 @@
     "BK-034 lab validates only real Wiki_PG autoloop.sh in disposable toy worktrees with fake scripted agent, not AI LABS video/runtime, Karpathy GPU experiment, actual LLM, or production.",
     "BK-064 is 'разобран', NOT 'проверен экспериментально' for actual DSH Creator workflow. Model generation was from external Codex CLI and testing was synthetic/isolated.",
     "BK-041 full eBPF verified ONLY for disposable rootless Podman synthetic exec 5x40/40 using filter.exec, not --comm; never publish raw JSON args/paths; no production or overhead claims.",
-    "BK-002: isolated local-only port TeamAI B pass functional E2E but FAIL file-write allowlist; 35 extra tool/home paths in disposable HOME. Test source SHA not published, no deployment approval."
+    "BK-002: isolated local-only port TeamAI B pass functional E2E but FAIL file-write allowlist; 35 extra tool/home paths in disposable HOME. Test source SHA not published, no deployment approval.",
+    "BK-005 source components only: original chain updater/validator on synthetic 500 chains, independent DFS 500/500, API response error_count:0 false negatives; no model API or SFT; no production approval."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -121,15 +122,17 @@
       "telegram_title_recovered": "ToolGrad",
       "source_url": "https://aclanthology.org/2026.findings-acl.950/",
       "source_kind": "Peer-reviewed paper",
-      "source_audit_evidence": "PREVIOUS_FULL_TEXT",
+      "source_audit_evidence": "FULL_ACL_TEXT; ORIGINAL_AUTHOR_CODE_SHA_c9544f8; SOURCE_UPDATE_500_OF_500; DFS_500_OF_500; INVALID_TARGETS_100_OF_100; VALIDATOR_ERROR_COUNT_10_FALSE_NEGATIVES; NO_LLM",
       "initial_priority_2026_11_03": "A",
       "status": "разобран",
-      "disposition": "SOURCE_REVIEWED_ONLY",
-      "status_reason_ru": "Полный опубликованный текст научной работы ранее рассмотрен; воспроизведения chain-first обучения нет.",
+      "disposition": "ORIGINAL_COMPONENTS_VERIFIED_SYNTHETIC_PROXY_AB_NO_MEASURED_ADVANTAGE",
+      "status_reason_ru": "Оригинальные функции ToolGrad@c9544f8: 5×100 синтетических stateful цепочек 2–6 шагов, оригинальный chain_update_step 500/500; локальный query-first DFS 500/500; 100/100 невозможных целей отклонены; валидатор ложно отклонил 10/10 корректных error_count:0. LLM, ToolBench и SFT не запускались. Ограниченный source-component эксперимент, НЕ доказанная эффективность оригинального ToolGrad.",
       "hub_study_card": "studies/toolgrad.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/toolgrad.md",
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_report": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "hub_review_report": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/toolgrad/2026-11-06-chain-validation-ab.md"
     },
     {
       "id": "BK-006",
