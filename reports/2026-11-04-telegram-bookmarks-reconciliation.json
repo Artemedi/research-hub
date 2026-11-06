@@ -5,15 +5,15 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06",
   "count_by_status": {
     "проверен экспериментально": 15,
-    "ожидает проверки": 2,
+    "ожидает проверки": 1,
     "исключён": 19,
-    "разобран": 29
+    "разобран": 30
   },
-  "mapped_study_cards": 31,
-  "mapped_experimental_items": 18,
+  "mapped_study_cards": 32,
+  "mapped_experimental_items": 19,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -24,7 +24,8 @@
     "BK-041 has a permission-gate lab report but is still AWAITING a real eBPF tracer experiment. Linked reports do not imply successful target-capability verification.",
     "The earlier BK-062/065 source-gate reports were partial and remain historical. Their dated follow-ups verify bounded components only; hub_experiment_report is a link field, not proof of full-system reproduction.",
     "BK-063 full official engineering article was recovered on 2026-11-05; orchestrator source and independent result reproduction remain unavailable.",
-    "BK-034 lab validates only real Wiki_PG autoloop.sh in disposable toy worktrees with fake scripted agent, not AI LABS video/runtime, Karpathy GPU experiment, actual LLM, or production."
+    "BK-034 lab validates only real Wiki_PG autoloop.sh in disposable toy worktrees with fake scripted agent, not AI LABS video/runtime, Karpathy GPU experiment, actual LLM, or production.",
+    "BK-064 is 'разобран', NOT 'проверен экспериментально' for actual DSH Creator workflow. Model generation was from external Codex CLI and testing was synthetic/isolated."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -1086,17 +1087,17 @@
       "telegram_title_recovered": "DeepSeek Harness Creator Mode examples",
       "source_url": "https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html",
       "source_kind": "Official examples",
-      "source_audit_evidence": "OFFICIAL_LINK",
+      "source_audit_evidence": "OFFICIAL_7_PROMPTS_FULL; EXTERNAL_CODEX_GENERATION; PODMAN_9_OF_9; DSH_CREATOR_E2E_NOT_RUN",
       "initial_priority_2026_11_03": "B",
-      "status": "ожидает проверки",
-      "disposition": "OFFLINE_CREATOR_UI_PASS_PLUGIN_GENERATION_NOT_RUN_SECURITY_GATE",
-      "status_reason_ru": "66/66 UI unit тестов PASS, браузерный creator draft PASS; 3 snapshot mismatch из 7 e2e. Плагин из официального промпта НЕ создавался на уязвимой рабочей версии DSH. См. reviews/dsh-creator-mode/2026-11-06-local-probe.md.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null,
-      "hub_review_report": "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/dsh-creator-mode/2026-11-06-local-probe.md"
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_EXTERNAL_PLUGIN_PROBE_PASS_NOT_DSH_CREATOR_E2E",
+      "status_reason_ru": "Официальные примеры разобраны. Native Cordis 102 Host и 108 Client tests PASS; Codex CLI независимо создал Client plugin, в изолированном Podman 9/9 synthetic PASS. Но это не штатный DSH Creator Mode; патч CVE и реальный Creator E2E NOT_RUN. См. reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md.",
+      "hub_study_card": "studies/dsh-creator-mode.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/dsh-creator-mode.md",
+      "hub_experiment_report": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "hub_review_report": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md"
     },
     {
       "id": "BK-065",

@@ -1,0 +1,11 @@
+{
+  "id": "poster-design-workbench",
+  "intent": "Customize a minimal poster with editable title, text, and two independent shader colors; default title: Everything is a plugin.",
+  "exactWebsiteShaderAndFont": false,
+  "scope": "offline client-only Cordis Run card",
+  "knownLimitations": [
+    "Uses a CSS gradient shader approximation and system sans-serif English typeface; original DeepSeek Harness website assets were not provided.",
+    "Targets the documented Creator Run card slot only; live provider and real browser runtime were not verified.",
+    "Edits remain in component state; no persistence or export."
+  ]
+}

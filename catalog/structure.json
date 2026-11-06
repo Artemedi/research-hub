@@ -24,6 +24,7 @@
     "studies/daedalus.md",
     "studies/decision-geometry-harness.md",
     "studies/drag.md",
+    "studies/dsh-creator-mode.md",
     "studies/dsh-superagent-prototype.md",
     "studies/exactly-once-limbo.md",
     "studies/experienceindex.md",
@@ -1235,6 +1236,41 @@
       "from": null,
       "to": "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json",
       "title": "BK-034 frozen oracle synthetic metrics",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "title": "BK-064 — Codex generated Client plugin, synthetic Cordis test",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/dsh-creator/2026-11-06-offline-poster-probe.json",
+      "title": "BK-064 — offline poster synthetic oracle metrics",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/fixtures/dsh-creator/2026-11-06/INSTRUCTIONS.md",
+      "title": "BK-064 — creator prompt and scoped generation contract",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/fixtures/dsh-creator/2026-11-06/code.client.js",
+      "title": "BK-064 — generated Cordis Client code",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/fixtures/dsh-creator/2026-11-06/manifest.json",
+      "title": "BK-064 — generated plugin manifest",
       "kind": "data",
       "date": "2026-11-06"
     }

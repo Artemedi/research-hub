@@ -46,6 +46,7 @@
 | [agent-risk](../catalog/studies/agent-risk.md) | DOCUMENTED_CANDIDATE | P1 / PROJECT_PROFILE_MATCH | Pre-change gate: логи, snapshot и неизвестные продолжения; harm/utility и воспроизводимость | [Обзор](../studies/agent-risk.md) · [Основание](../portfolio/2026-10-12--2026-10-19/project-fit.md) |
 | [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_CANDIDATE | Node/TS Cordis agent-loop | Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
 | [karpathy-autoresearch](../catalog/studies/karpathy-autoresearch.md) | DOCUMENTED_CANDIDATE | SECONDARY_CANDIDATE / NOT_VERIFIED | Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте. | [Обзор](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) · [Основание](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |
+| [dsh-creator-mode](../catalog/studies/dsh-creator-mode.md) | DOCUMENTED_CANDIDATE | SOURCE_SEAM / CONDITIONAL_CANDIDATE | Документальный fit на основании Codex mock Client contract и project profile; эффект на рабочем проекте не измерен. | [Обзор](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) · [Основание](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

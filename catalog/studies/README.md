@@ -2,9 +2,10 @@
 
 # Структурированные исследования
 
-81 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
+82 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: PARTIAL.
+- [DeepSeek Harness Creator Mode — демо-подсказки и offline plugin probe](dsh-creator-mode.md); project fit: PARTIAL.
 - [REA — Reverse Engineer Anything](rea.md); project fit: MIGRATED.
 - [Unreal Agent — видео и инженерный обзор](unreal-agent.md); project fit: PARTIAL.
 - [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md); project fit: PARTIAL.

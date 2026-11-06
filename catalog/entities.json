@@ -22,6 +22,20 @@
       ]
     },
     {
+      "id": "dsh-creator-mode",
+      "title": "DeepSeek Harness Creator Mode — демо-подсказки и offline plugin probe",
+      "kind": "engineering",
+      "card": "studies/dsh-creator-mode.md",
+      "primary_url": "https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html",
+      "current_review_id": "dsh-creator-mode-offline-20261106",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "8c7733a57080587ed22258b2381feebed714511a4798dfb6a338388b3f731540",
+      "linked_materials": [
+        "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md"
+      ]
+    },
+    {
       "id": "rea",
       "title": "REA — Reverse Engineer Anything",
       "kind": "engineering",
@@ -1933,6 +1947,13 @@
       "ref": null,
       "url": "https://www.youtube.com/watch?v=qLfSDQ5NGh0",
       "unknown_reason": "Оригинальный YouTube-поток и AI LABS setup не проверены; есть пользовательский полный транскрипт."
+    },
+    {
+      "id": "dsh-creator-official-seven-prompts-20261106",
+      "study_id": "dsh-creator-mode",
+      "ref": "sha256:69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346",
+      "url": "https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html",
+      "unknown_reason": null
     }
   ],
   "reviews": [
@@ -3474,6 +3495,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Оригинальный AutoResearch проверен статически; видео AI LABS не прочитано независимо, author code недоступен; реальный Wiki_PG autoloop.sh проверен 6 раз на toy Git worktree с scripted fake agent, не LLM.",
       "supersedes": "karpathy-autoresearch-review"
+    },
+    {
+      "id": "dsh-creator-mode-offline-20261106",
+      "study_ids": [
+        "dsh-creator-mode"
+      ],
+      "version_ids": [
+        "dsh-creator-official-seven-prompts-20261106"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Официальные 7 примеров и локальный Cordis source; Codex CLI вместо реального Creator, mock React/Slots, 9/9 synthetic checks, DSH Creator E2E NOT_RUN due unpatched vulnerable runtime.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -3639,6 +3674,25 @@
         "experiments/2026-11-06-bk034-wikipg-autoloop-oracle.py",
         "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json",
         "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md"
+      ]
+    },
+    {
+      "id": "bk064-model-external-poster-probe-20261106",
+      "study_ids": [
+        "dsh-creator-mode"
+      ],
+      "review_id": "dsh-creator-mode-offline-20261106",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Codex CLI once generated code.client.js per official prompt #4; 9/9 deterministic mock React/Slots contract checks in rootless no-network read-only Podman; DSH Host 102/102 and Client 108/108 pre-existing unit tests passed.",
+      "limitations": "Generator was NOT DSH Creator. Real DSH browser model route/approval/installation not exercised, exact site font/shader unavailable, 1 attempt no A/B, no priced inference, no live DSH or CVE fix.",
+      "artifacts": [
+        "experiments/2026-11-06-bk064-poster-probe.cjs",
+        "data/results/dsh-creator/2026-11-06-offline-poster-probe.json",
+        "data/fixtures/dsh-creator/2026-11-06/INSTRUCTIONS.md",
+        "data/fixtures/dsh-creator/2026-11-06/code.client.js",
+        "data/fixtures/dsh-creator/2026-11-06/manifest.json",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md"
       ]
     }
   ],
@@ -12519,6 +12573,48 @@
       "source_line": 56,
       "source_excerpt": "| **`dsh-runtime`** | `SECONDARY_CANDIDATE / NOT_VERIFIED` — Cordis agent-loop и уже существующие benchmarks требуют точного owning seam | **Приоритет P0 — CVE-2026-82533**; только после фикса и isolated runtime рассматривать opt-in frozen-oracle adjudicator. Не ставить BK-034 как P1 |",
       "supersedes": null
+    },
+    {
+      "id": "bk064-creator-offline-20261106-dsh-runtime",
+      "study_id": "dsh-creator-mode",
+      "project_id": "dsh-runtime",
+      "review_id": "dsh-creator-mode-offline-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SOURCE_SEAM / CONDITIONAL_CANDIDATE",
+      "evidence": "SOURCE_SEAM / CONDITIONAL_CANDIDATE",
+      "reason": "Документальный fit на основании Codex mock Client contract и project profile; эффект на рабочем проекте не измерен.",
+      "limitations": "No actual Creator backend, browser runtime, security patch or live installation; only local synthetic result.",
+      "next_test": "After owner-approved P0 CVE remediation, 3 real Creator runs in disposable patched profile with hidden GUI and permission oracles.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project on-device integration seam and business benefit not independently executed.",
+      "source_document": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "source_line": 46,
+      "source_excerpt": "| **dsh-runtime** | SOURCE_SEAM / CONDITIONAL_CANDIDATE: UI, cordis preset, Client/Host runner и plugin contracts в исходниках; модельная надёжность Creator не подтверждена | **Сначала P0 CVE-2026-82533 remediation** в отдельном clean worktree, negative regression и owner-approved staged deployment; затем настоящий Creator test в disposable patched environment, 3 промпта/seed и independent GUI+security oracle |",
+      "supersedes": null
+    },
+    {
+      "id": "bk064-creator-offline-20261106-agent-skills",
+      "study_id": "dsh-creator-mode",
+      "project_id": "agent-skills",
+      "review_id": "dsh-creator-mode-offline-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "DOCUMENTED_CANDIDATE",
+      "reason": "Документальный fit на основании Codex mock Client contract и project profile; эффект на рабочем проекте не измерен.",
+      "limitations": "No actual Creator backend, browser runtime, security patch or live installation; only local synthetic result.",
+      "next_test": "Review existing skills against inspect/define/run contract; no global skill changes before controlled evidence.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project on-device integration seam and business benefit not independently executed.",
+      "source_document": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+      "source_line": 47,
+      "source_excerpt": "| **agent-skills** | DOCUMENTED_CANDIDATE: QA rubric и cordis-plugin-development contract пригодны для будущей проверки генерации плагинов | Не создавать новый глобальный skill; добавить проверку source provenance/permissions/cleanup лишь после измерения на нескольких независимых fixtures |",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -14366,6 +14462,16 @@
       "study_id": "karpathy-autoresearch",
       "project_id": "dsh-runtime",
       "assessment_id": "bk034-loop-20261106-dsh-runtime"
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "project_id": "dsh-runtime",
+      "assessment_id": "bk064-creator-offline-20261106-dsh-runtime"
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "project_id": "agent-skills",
+      "assessment_id": "bk064-creator-offline-20261106-agent-skills"
     }
   ],
   "relations": [

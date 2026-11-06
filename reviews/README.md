@@ -21,6 +21,7 @@
 | [DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка](drag/2026-11-05-full-text.md) | 2026-11-05 |
 | [DRAG — offline evidence gate and adversarial validation](drag/2026-11-06-evidence-gate-ab.md) | 2026-11-06 |
 | [DRAG — bounded offline lexical retrieval A/B](drag/2026-11-06-retrieval-ab.md) | 2026-11-06 |
+| [BK-064 — Codex generated Client plugin, synthetic Cordis test](dsh-creator-mode/2026-11-06-external-generator-probe.md) | 2026-11-06 |
 | [BK-064 — ограниченный опыт Creator Mode](dsh-creator-mode/2026-11-06-local-probe.md) | 2026-11-06 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |

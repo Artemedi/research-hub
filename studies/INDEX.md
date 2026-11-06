@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-81 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+82 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -27,6 +27,7 @@
 | [Cursor — Improved Token Efficiency](cursor-token-efficiency.md) | [2026-09-28 / cursor-token-efficiency-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-05 / cursor-token-efficiency-primary-2026-11-05](../reviews/cursor-token-efficiency/2026-11-05-primary.md) |
 | [CVE-2026-82533 — техническое раскрытие](cve-2026-82533-technical-disclosure.md) | [2026-11-03 / cve-2026-82533-technical-disclosure-review](cve-2026-82533-technical-disclosure.md) |
 | [DAEDALUS](daedalus.md) | [2026-11-03 / daedalus-review](daedalus.md) |
+| [DeepSeek Harness Creator Mode — BK-064](dsh-creator-mode.md) | [2026-11-06 / dsh-creator-mode-offline-20261106](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) |
 | [DRAG — Dynamic Retriever and Generator Selection](drag.md) | [2026-09-21 / drag-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-drag-2026-11-05](../reviews/drag/2026-11-05-full-text.md) · [2026-11-06 / drag-offline-retrieval-ab-2026-11-06](../reviews/drag/2026-11-06-retrieval-ab.md) · [2026-11-06 / drag-evidence-guard-ab-2026-11-06](../reviews/drag/2026-11-06-evidence-gate-ab.md) |
 | [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05 / dsh-superagent-prototype-review](../reviews/dsh-superagent-prototype/2026-11-05.md) |
 | [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |

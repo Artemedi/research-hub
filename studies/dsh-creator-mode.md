@@ -1,0 +1,11 @@
+# DeepSeek Harness Creator Mode — BK-064
+
+[Структурированная запись и связи](../catalog/studies/dsh-creator-mode.md)
+
+- **Первичный материал:** [семь официальных Creator Mode demo prompts](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html). Предыдущая проверка установила полный HTML SHA-256 `69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346`. Это инженерные примеры, не воспроизводимый научный эксперимент.
+- **Цель теста:** официальный prompt №4 Poster Design Workbench: доступ из разговора, default title «Everything is a plugin», изменение текста/заголовка/двух цветов фона, минимальный UI и оформление в стиле сайта.
+- **Предыдущий этап:** [ограниченный UI тест 06.11](../reviews/dsh-creator-mode/2026-11-06-local-probe.md) — 66/66 unit PASS, Chromium creator-draft PASS из 4/7 E2E; 3 FAIL из-за устаревших snapshot предустановленных профилей. Реальная plugin generation тогда не выполнялась.
+- **Дополнительный этап:** [технический разбор и генерация внешним Codex CLI](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md). Native Cordis suites: Host 102/102, Client 108/108 PASS. Один Codex CLI с ограниченным workspace создал [Client-код](../data/fixtures/dsh-creator/2026-11-06/code.client.js) и [манифест](../data/fixtures/dsh-creator/2026-11-06/manifest.json); отдельный [Podman verifier](../experiments/2026-11-06-bk064-poster-probe.cjs) дал **9/9 PASS** на синтетических React/Slots контрактах. [Machine-readable результат](../data/results/dsh-creator/2026-11-06-offline-poster-probe.json).
+- **Принципиальное разграничение:** модель была **внешним Codex CLI**, не DSH Creator. Плагин не устанавливался, не запускался реальный browser/Host Cordis, не использовались точные шейдер и шрифт сайта. Работающий DSH 0.1.1-rc.2 не исправлен по CVE-2026-82533, поэтому настоящий Creator E2E по-прежнему `NOT_RUN_SECURITY_GATE`.
+- **Research → Projects:** `dsh-runtime` — кандидат только после исправления CVE и отдельного disposable end-to-end; `agent-skills` — тестовый/QA reference; `deepseek-harness` — upstream reference, не runtime owner. Никаких внедрений.
+- **Итог:** `SOURCE_REVIEWED / EXTERNAL_GENERATOR_OFFLINE_PROBE_PASS / DSH_CREATOR_REAL_E2E_NOT_RUN`; Telegram BK-064 — «разобран», **не «проверен экспериментально»** в смысле штатного Creator Mode.

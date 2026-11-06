@@ -1,0 +1,83 @@
+{
+  "study": "BK-064",
+  "date": "2026-11-06",
+  "prompt": "Official Creator Mode demo #4 Poster Design Workbench",
+  "mode": "EXTERNAL_CODEX_GENERATION_PLUS_SYNTHETIC_CORDIS_RUN_CARD_VERIFIER",
+  "creator_mode_real_e2e": false,
+  "original_website_assets_used": false,
+  "dsh_source_head": "5b9d43878744d6a827a7104a30e0f08a04d81f66",
+  "dsh_version": "0.1.1-rc.2",
+  "dsh_source_modified": false,
+  "codex_cli": "0.164.0",
+  "code_generator": "Codex CLI via ChatGPT login; actual effective model not independently pinned",
+  "generator_invocations": 1,
+  "generator_attempts_failed_stdin": 1,
+  "generator_wall_seconds_approx": 44.91,
+  "generator_usage_reported": {
+    "input_tokens": 116611,
+    "cached_input_tokens": 102272,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1300,
+    "reasoning_output_tokens": 12
+  },
+  "generation_cost_usd": null,
+  "plugin_code_sha256": "ef8c7513520ce1996d0dbb41bd2630118c1645fbde6b3d2778c82237583050f2",
+  "plugin_manifest_sha256": "e3d86f36bcf51c52c261f79d6c81b00e29c025e3a5bb8f9693ddef31fa260e18",
+  "generated_artifact_type": "Cordis client function body; static read-only source",
+  "offline_container": {
+    "image": "docker.io/library/node:22",
+    "rootless": true,
+    "network": "none",
+    "rootfs": "read-only",
+    "capabilities": "all dropped",
+    "no_new_privileges": true,
+    "pids_limit": 64,
+    "memory_limit_mb": 256,
+    "cpu_limit": 1,
+    "result": {
+      "id": "BK-064-offline-cordis-model-generated-client",
+      "verdict": "PASS",
+      "sha256": "ef8c7513520ce1996d0dbb41bd2630118c1645fbde6b3d2778c82237583050f2",
+      "source_bytes": 2592,
+      "checks": {
+        "default_title": true,
+        "title_edit": true,
+        "text_edit": true,
+        "shader_colors_independent": true,
+        "minimal_ui": true,
+        "slot_scoped": true,
+        "unload_cleanup": true,
+        "missing_slot_safe": true,
+        "invalid_source_rejected": true
+      },
+      "passes": 9,
+      "duration_ms": 4.086,
+      "rss_kb": 47248,
+      "guardrails": "podman read-only / network none / caps none / no creds",
+      "limits": [
+        "outside DeepSeek Harness Creator UI",
+        "synthetic slot and React, no real browser",
+        "website shader/font substituted",
+        "no live install",
+        "no original-model guarantee"
+      ]
+    }
+  },
+  "existing_native_tests": {
+    "cordis_host_6_suites_pass": 102,
+    "cordis_client_5_suites_pass": 108,
+    "prior_creator_ui_pass": 66,
+    "prior_browser_creator_suite_pass": 4,
+    "prior_browser_creator_suite_total": 7,
+    "browser_failures": "3 stale preset roster snapshots"
+  },
+  "limitations": [
+    "One generation, no A/B or repeated seeds",
+    "The generator was Codex CLI, not the DeepSeek Harness Creator Mode UI or model route",
+    "The verifier uses mock Slots and React, not a browser or production Cordis",
+    "No plugin installed, no live DSH server or runtime mounts used",
+    "Exact website shader and English font were approximated with CSS gradient and system sans-serif",
+    "The original DSH is below patched 0.1.2-alpha.1 and remains unchanged",
+    "No real model invoice; CLI token usage is not billing proof"
+  ]
+}
