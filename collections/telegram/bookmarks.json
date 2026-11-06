@@ -5,15 +5,15 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives; BK-009 2026-11-06 official full text pinned, 5-pair live Astra A/B, 46.72% fewer input tokens, no project integration",
   "count_by_status": {
-    "проверен экспериментально": 16,
+    "проверен экспериментально": 17,
     "ожидает проверки": 0,
     "исключён": 19,
-    "разобран": 30
+    "разобран": 29
   },
-  "mapped_study_cards": 32,
-  "mapped_experimental_items": 21,
+  "mapped_study_cards": 33,
+  "mapped_experimental_items": 22,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -28,7 +28,8 @@
     "BK-064 is 'разобран', NOT 'проверен экспериментально' for actual DSH Creator workflow. Model generation was from external Codex CLI and testing was synthetic/isolated.",
     "BK-041 full eBPF verified ONLY for disposable rootless Podman synthetic exec 5x40/40 using filter.exec, not --comm; never publish raw JSON args/paths; no production or overhead claims.",
     "BK-002: isolated local-only port TeamAI B pass functional E2E but FAIL file-write allowlist; 35 extra tool/home paths in disposable HOME. Test source SHA not published, no deployment approval.",
-    "BK-005 source components only: original chain updater/validator on synthetic 500 chains, independent DFS 500/500, API response error_count:0 false negatives; no model API or SFT; no production approval."
+    "BK-005 source components only: original chain updater/validator on synthetic 500 chains, independent DFS 500/500, API response error_count:0 false negatives; no model API or SFT; no production approval.",
+    "BK-009 exact live gpt-6-astra: 5 paired synthetic tasks, 5/5 functional each arm, fewer input tokens all five B vs intentionally verbose A, 4/5 faster; no causal factor isolation or real AGENTS/skill modification."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -188,15 +189,17 @@
       "telegram_title_recovered": "GPT-6 Astra skills/prompt guidance",
       "source_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
       "source_kind": "Official guidance",
-      "source_audit_evidence": "OFFICIAL_FULL_ARTICLE",
+      "source_audit_evidence": "OFFICIAL_FULL_ARTICLE_SHA256_a1deee4c0b3ca16a20385c27f0692e22d5150fdec81710c04742dd5da29f0468; LIVE_CODEX_GPT6_ASTRA_5x2; INDEPENDENT_ORACLE; LOWER_INPUT_TOKENS_5_OF_5; BOTH_FUNCTIONAL_5_OF_5; PYCACHE_SCOPE_4_OF_5",
       "initial_priority_2026_11_03": "A",
-      "status": "разобран",
-      "disposition": "SOURCE_REVIEWED_ONLY",
-      "status_reason_ru": "Прочитано официальное руководство; влияние на стоимость/качество skills локально не измерено.",
-      "hub_study_card": null,
-      "hub_study_url": null,
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_LIVE_ASTRA_AB_5_PAIRS_TOKENS_LOWER_NO_PRODUCTION",
+      "status_reason_ru": "Оригинальный полный официальный материал 11.09.2026 проверен. В Codex CLI 0.164.0 реальная модель gpt-6-astra выполнила 5 пар одноразовых задач: 5/5 функционально корректны в обеих группах; контекстные инструкции B -46.72% input tokens, -13% wall vs намеренно verbose A; B быстрее 4/5; оба оставили pycache в 1/5. Это только synthetic local A/B без производственной оценки и факторной изоляции. См. reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "hub_study_card": "studies/gpt6-astra-skills-prompts.md",
+      "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/gpt6-astra-skills-prompts.md",
+      "hub_experiment_report": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "hub_review_report": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md"
     },
     {
       "id": "BK-010",

@@ -1,0 +1,467 @@
+{
+  "study": "BK-009 GPT-6 Astra official guidance",
+  "date": "2026-11-06",
+  "source_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+  "source_markdown_sha256": "a1deee4c0b3ca16a20385c27f0692e22d5150fdec81710c04742dd5da29f0468",
+  "experiment": "Paired Codex CLI 0.164.0 --model gpt-6-astra, 5 tasks x2 treatment arms; safe disposable Git workspaces. Original article did not report controlled experiment.",
+  "model": "gpt-6-astra",
+  "model_reasoning_effort": "medium",
+  "is_an_official_study_replication": false,
+  "requires_model_for_replay": true,
+  "runs": [
+    {
+      "id": "A-typo",
+      "task": "typo",
+      "variant": "A",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "docs/quickstart.md"
+      ],
+      "wall_seconds": 28.85,
+      "input_tokens": 118419,
+      "cached_input_tokens": 91136,
+      "uncached_input_tokens": 27283,
+      "output_tokens": 463,
+      "tool_commands": 5,
+      "test_commands": 2,
+      "docs_tool_mentions": {
+        "architecture": 1,
+        "database": 1,
+        "deployment": 1
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.38712,
+      "success_exit": true
+    },
+    {
+      "id": "B-typo",
+      "task": "typo",
+      "variant": "B",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "docs/quickstart.md"
+      ],
+      "wall_seconds": 19.26,
+      "input_tokens": 45661,
+      "cached_input_tokens": 42112,
+      "uncached_input_tokens": 3549,
+      "output_tokens": 275,
+      "tool_commands": 3,
+      "test_commands": 0,
+      "docs_tool_mentions": {
+        "architecture": 0,
+        "database": 0,
+        "deployment": 0
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.09135,
+      "success_exit": true
+    },
+    {
+      "id": "B-unit",
+      "task": "unit",
+      "variant": "B",
+      "functional_success": true,
+      "strict_workspace_scope_pass": false,
+      "nonsemantic_pycache_files": [
+        "src/__pycache__/__init__.cpython-314.pyc",
+        "src/__pycache__/status_formatter.cpython-314.pyc",
+        "tests/__pycache__/test_status_formatter.cpython-314.pyc"
+      ],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "src/__pycache__/__init__.cpython-314.pyc",
+        "src/__pycache__/status_formatter.cpython-314.pyc",
+        "src/status_formatter.py",
+        "tests/__pycache__/test_status_formatter.cpython-314.pyc"
+      ],
+      "wall_seconds": 26.408,
+      "input_tokens": 67790,
+      "cached_input_tokens": 57472,
+      "uncached_input_tokens": 10318,
+      "output_tokens": 336,
+      "tool_commands": 5,
+      "test_commands": 1,
+      "docs_tool_mentions": {
+        "architecture": 0,
+        "database": 0,
+        "deployment": 0
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.17745,
+      "success_exit": true
+    },
+    {
+      "id": "A-unit",
+      "task": "unit",
+      "variant": "A",
+      "functional_success": true,
+      "strict_workspace_scope_pass": false,
+      "nonsemantic_pycache_files": [
+        "src/__pycache__/__init__.cpython-314.pyc",
+        "src/__pycache__/status_formatter.cpython-314.pyc",
+        "tests/__pycache__/test_status_formatter.cpython-314.pyc"
+      ],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "src/__pycache__/__init__.cpython-314.pyc",
+        "src/__pycache__/status_formatter.cpython-314.pyc",
+        "src/status_formatter.py",
+        "tests/__pycache__/test_status_formatter.cpython-314.pyc"
+      ],
+      "wall_seconds": 21.65,
+      "input_tokens": 86506,
+      "cached_input_tokens": 74368,
+      "uncached_input_tokens": 12138,
+      "output_tokens": 414,
+      "tool_commands": 5,
+      "test_commands": 2,
+      "docs_tool_mentions": {
+        "architecture": 1,
+        "database": 1,
+        "deployment": 1
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.21645,
+      "success_exit": true
+    },
+    {
+      "id": "A-migration",
+      "task": "migration",
+      "variant": "A",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "migrations/0002_observations_created_at_idx.sql"
+      ],
+      "wall_seconds": 34.622,
+      "input_tokens": 119149,
+      "cached_input_tokens": 91264,
+      "uncached_input_tokens": 27885,
+      "output_tokens": 689,
+      "tool_commands": 6,
+      "test_commands": 2,
+      "docs_tool_mentions": {
+        "architecture": 1,
+        "database": 1,
+        "deployment": 1
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.40456,
+      "success_exit": true
+    },
+    {
+      "id": "B-migration",
+      "task": "migration",
+      "variant": "B",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "migrations/0002_observations_created_at_idx.sql"
+      ],
+      "wall_seconds": 30.315,
+      "input_tokens": 63896,
+      "cached_input_tokens": 55168,
+      "uncached_input_tokens": 8728,
+      "output_tokens": 558,
+      "tool_commands": 4,
+      "test_commands": 0,
+      "docs_tool_mentions": {
+        "architecture": 0,
+        "database": 1,
+        "deployment": 0
+      },
+      "skills_tool_mentions": 2,
+      "api_price_equivalent_usd": 0.17035,
+      "success_exit": true
+    },
+    {
+      "id": "B-config",
+      "task": "config",
+      "variant": "B",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "config/service.yaml"
+      ],
+      "wall_seconds": 26.86,
+      "input_tokens": 61544,
+      "cached_input_tokens": 54272,
+      "uncached_input_tokens": 7272,
+      "output_tokens": 453,
+      "tool_commands": 3,
+      "test_commands": 0,
+      "docs_tool_mentions": {
+        "architecture": 0,
+        "database": 0,
+        "deployment": 0
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.14964,
+      "success_exit": true
+    },
+    {
+      "id": "A-config",
+      "task": "config",
+      "variant": "A",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "config/service.yaml"
+      ],
+      "wall_seconds": 31.016,
+      "input_tokens": 110895,
+      "cached_input_tokens": 98176,
+      "uncached_input_tokens": 12719,
+      "output_tokens": 559,
+      "tool_commands": 5,
+      "test_commands": 2,
+      "docs_tool_mentions": {
+        "architecture": 1,
+        "database": 1,
+        "deployment": 1
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.25332,
+      "success_exit": true
+    },
+    {
+      "id": "A-query",
+      "task": "query",
+      "variant": "A",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "queries/find_event.sql"
+      ],
+      "wall_seconds": 35.473,
+      "input_tokens": 145219,
+      "cached_input_tokens": 130688,
+      "uncached_input_tokens": 14531,
+      "output_tokens": 582,
+      "tool_commands": 6,
+      "test_commands": 2,
+      "docs_tool_mentions": {
+        "architecture": 1,
+        "database": 1,
+        "deployment": 1
+      },
+      "skills_tool_mentions": 1,
+      "api_price_equivalent_usd": 0.3051,
+      "success_exit": true
+    },
+    {
+      "id": "B-query",
+      "task": "query",
+      "variant": "B",
+      "functional_success": true,
+      "strict_workspace_scope_pass": true,
+      "nonsemantic_pycache_files": [],
+      "other_unrelated_paths": [],
+      "changed_paths": [
+        "queries/find_event.sql"
+      ],
+      "wall_seconds": 29.062,
+      "input_tokens": 70209,
+      "cached_input_tokens": 64000,
+      "uncached_input_tokens": 6209,
+      "output_tokens": 581,
+      "tool_commands": 4,
+      "test_commands": 0,
+      "docs_tool_mentions": {
+        "architecture": 0,
+        "database": 2,
+        "deployment": 0
+      },
+      "skills_tool_mentions": 2,
+      "api_price_equivalent_usd": 0.15514,
+      "success_exit": true
+    }
+  ],
+  "per_task": {
+    "typo": {
+      "A": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 28.85,
+        "input_tokens": 118419,
+        "cache_tokens": 91136,
+        "command_count": 5
+      },
+      "B": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 19.26,
+        "input_tokens": 45661,
+        "cache_tokens": 42112,
+        "command_count": 3
+      },
+      "B_less_time": true,
+      "B_less_tokens": true
+    },
+    "unit": {
+      "A": {
+        "functional": true,
+        "scope": false,
+        "wall_s": 21.65,
+        "input_tokens": 86506,
+        "cache_tokens": 74368,
+        "command_count": 5
+      },
+      "B": {
+        "functional": true,
+        "scope": false,
+        "wall_s": 26.408,
+        "input_tokens": 67790,
+        "cache_tokens": 57472,
+        "command_count": 5
+      },
+      "B_less_time": false,
+      "B_less_tokens": true
+    },
+    "migration": {
+      "A": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 34.622,
+        "input_tokens": 119149,
+        "cache_tokens": 91264,
+        "command_count": 6
+      },
+      "B": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 30.315,
+        "input_tokens": 63896,
+        "cache_tokens": 55168,
+        "command_count": 4
+      },
+      "B_less_time": true,
+      "B_less_tokens": true
+    },
+    "config": {
+      "A": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 31.016,
+        "input_tokens": 110895,
+        "cache_tokens": 98176,
+        "command_count": 5
+      },
+      "B": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 26.86,
+        "input_tokens": 61544,
+        "cache_tokens": 54272,
+        "command_count": 3
+      },
+      "B_less_time": true,
+      "B_less_tokens": true
+    },
+    "query": {
+      "A": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 35.473,
+        "input_tokens": 145219,
+        "cache_tokens": 130688,
+        "command_count": 6
+      },
+      "B": {
+        "functional": true,
+        "scope": true,
+        "wall_s": 29.062,
+        "input_tokens": 70209,
+        "cache_tokens": 64000,
+        "command_count": 4
+      },
+      "B_less_time": true,
+      "B_less_tokens": true
+    }
+  },
+  "summary": {
+    "A": {
+      "tasks": 5,
+      "functional_pass": 5,
+      "strict_scope_pass": 4,
+      "pycache_artifacts": 3,
+      "input_tokens_total": 580188,
+      "cached_input_tokens_total": 485632,
+      "uncached_input_tokens_total": 94556,
+      "output_tokens_total": 2707,
+      "wall_seconds_total": 151.611,
+      "wall_seconds_p50": 31.016,
+      "tool_commands_total": 27,
+      "test_commands_total": 10,
+      "api_list_equivalent_usd_total": 1.56655
+    },
+    "B": {
+      "tasks": 5,
+      "functional_pass": 5,
+      "strict_scope_pass": 4,
+      "pycache_artifacts": 3,
+      "input_tokens_total": 309100,
+      "cached_input_tokens_total": 273024,
+      "uncached_input_tokens_total": 36076,
+      "output_tokens_total": 2203,
+      "wall_seconds_total": 131.905,
+      "wall_seconds_p50": 26.86,
+      "tool_commands_total": 19,
+      "test_commands_total": 1,
+      "api_list_equivalent_usd_total": 0.74393
+    }
+  },
+  "comparisons": {
+    "functional_pass_both": true,
+    "token_input_reduction_pct": 46.72,
+    "wall_reduction_pct": 13.0,
+    "list_price_equivalent_reduction_pct": 52.51,
+    "b_faster_task_pairs": 4,
+    "b_lower_input_token_pairs": 5
+  },
+  "treatment_sizes": {
+    "A": {
+      "agents_chars": 515,
+      "skill_root_bytes": 20100
+    },
+    "B": {
+      "agents_chars": 611,
+      "skill_root_bytes": 1858
+    }
+  },
+  "limitations": [
+    "The upstream OpenAI article is engineering guidance, not a measured A/B study.",
+    "Synthetic A is deliberately verbose and requires unrelated reads/tests; no evidence that this reflects any user production AGENTS.md.",
+    "Only 5 different paired tasks and one call per treatment, no multi-run confidence interval; ordering/caching/provider/load confounding.",
+    "Combined intervention AGENTS.md plus skill description, skill content/progressive router: cannot attribute savings to one mechanism.",
+    "Both model calls use same pinned GPT-6 Astra and model reasoning effort, but prompt context and cache history differ.",
+    "Only trivial self-contained text/SQL/YAML/Python fixtures; no benchmark on real large repositories.",
+    "Untracked .pyc appears in both unit tests and is a strict scope fail, though target tests pass.",
+    "CLI raw provider token usage includes model/tool context; price uses API list equivalents, not actual billed Codex charges.",
+    "No production skill, prompt, runtime or account settings updated."
+  ],
+  "pricing": {
+    "price_basis": "OpenAI gpt-6-astra official API model page as of 2026-11-06",
+    "input_usd_per_million": 10,
+    "cached_input_usd_per_million": 1,
+    "output_usd_per_million": 50,
+    "not_actual_billed_codex_charge": true
+  }
+}

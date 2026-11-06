@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-82 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+83 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -34,6 +34,7 @@
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
+| [GPT-6 Astra — Rethinking skills and prompts (BK-009)](gpt6-astra-skills-prompts.md) | [2026-11-06 / bk009-gpt6-astra-live-ab-20261106](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
 | [HarnessSecurity-Bench](harnesssecurity-bench.md) | [2026-11-03 / harnesssecurity-bench-review](harnesssecurity-bench.md) |
 | [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / harness2-full-text-2026-11-05](../reviews/harness2/2026-11-05-full-text.md) · [2026-11-06 / rrsi-harness2-selector-ab-2026-11-06](../reviews/rrsi/2026-11-06-validation-ab.md) |
 | [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) |

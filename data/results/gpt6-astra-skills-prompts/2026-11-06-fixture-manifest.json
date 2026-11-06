@@ -1,0 +1,25 @@
+{
+  "study": "BK-009",
+  "tasks": {
+    "typo": "Fix only the statuz typo to status in docs/quickstart.md. Verify the result.",
+    "unit": "Fix render_status(200) so tests/test_status_formatter.py passes. Run the relevant local test. Change only what the task requires.",
+    "migration": "Create migrations/0002_observations_created_at_idx.sql for PostgreSQL: index created_at on public.observations, using CREATE INDEX CONCURRENTLY IF NOT EXISTS. Do not use BEGIN/COMMIT and do not connect to any database. Verify the SQL file.",
+    "config": "Disable telemetry by setting telemetry.enabled to false in config/service.yaml. Preserve other configuration values. Verify the change.",
+    "query": "Fix queries/find_event.sql so the UUID primary key column id is compared without casting the column, preserving index eligibility; refer to docs/database.md. Do not connect to a database."
+  },
+  "variants": {
+    "A": "Historical broad mandatory docs reads, verbose skill roots",
+    "B": "Contextual docs pointers, concise skill descriptions and progressive disclosure"
+  },
+  "sizes": {
+    "A": {
+      "agents_chars": 515,
+      "skill_root_bytes": 20100
+    },
+    "B": {
+      "agents_chars": 611,
+      "skill_root_bytes": 1858
+    }
+  },
+  "scope": "Disposable local Git fixtures only; no user repo modifications"
+}

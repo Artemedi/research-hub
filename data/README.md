@@ -21,6 +21,8 @@
 | [data/results/dsh-creator/2026-11-06-offline-poster-probe.json](results/dsh-creator/2026-11-06-offline-poster-probe.json) | Результат ограниченной проверки |
 | [data/results/dsh-superagent-prototype/2026-11-05.json](results/dsh-superagent-prototype/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/exactly-once-limbo/2026-11-04.json](results/exactly-once-limbo/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json](results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json) | Результат ограниченной проверки |
+| [data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json](results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](results/inspektor-gadget/2026-11-06-host-diagnostics.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-pilot.json](results/inspektor-gadget/2026-11-06-host-pilot.json) | Результат ограниченной проверки |

@@ -2,7 +2,7 @@
 
 # Структурированные исследования
 
-82 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
+83 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: PARTIAL.
 - [DeepSeek Harness Creator Mode — демо-подсказки и offline plugin probe](dsh-creator-mode.md); project fit: PARTIAL.
@@ -86,3 +86,4 @@
 - [Yahont CE — поиск и корпоративный контекст](yahont-ce.md); project fit: PARTIAL.
 - [youtube-skills — инструкции к TranscriptAPI](youtube-skills.md); project fit: PARTIAL.
 - [0-CODE — автономные циклы разработки](zero-code.md); project fit: PARTIAL.
+- [Rethinking skills and prompts for GPT-6 Astra](gpt6-astra-skills-prompts.md); project fit: PARTIAL.

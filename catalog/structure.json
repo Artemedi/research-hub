@@ -30,6 +30,7 @@
     "studies/experienceindex.md",
     "studies/geoagent.md",
     "studies/goal-aware-dynamic-collaboration.md",
+    "studies/gpt6-astra-skills-prompts.md",
     "studies/harness2.md",
     "studies/harnesssecurity-bench.md",
     "studies/htn-orchestrate.md",
@@ -1334,6 +1335,27 @@
       "from": null,
       "to": "data/results/toolgrad/2026-11-06-chain-validation-ab.json",
       "title": "ToolGrad BK-005 complete 500-chain state-oracle results",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "title": "BK-009 original Astra guidance full-text and five-pair live A/B",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
+      "title": "BK-009 Astra Codex independent scored model usage and correctness",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json",
+      "title": "BK-009 Astra A/B fixture manifest with synthetic tasks",
       "kind": "data",
       "date": "2026-11-06"
     }

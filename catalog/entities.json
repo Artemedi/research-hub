@@ -1209,6 +1209,24 @@
       "linked_materials": [
         "reviews/zero-code/2026-11-04.md"
       ]
+    },
+    {
+      "id": "gpt6-astra-skills-prompts",
+      "title": "Rethinking skills and prompts for GPT-6 Astra",
+      "kind": "engineering",
+      "card": "studies/gpt6-astra-skills-prompts.md",
+      "primary_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "current_review_id": "bk009-gpt6-astra-live-ab-20261106",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "1c692711b0e5fb831d7f0b7cf7968063a513fd2284fe9d12416529e23edf5588",
+      "linked_materials": [
+        "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+        "experiments/2026-11-06-bk009-astra/prepare.py",
+        "experiments/2026-11-06-bk009-astra/run-ab.py",
+        "experiments/2026-11-06-bk009-astra/score-ab.py",
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json"
+      ]
     }
   ],
   "versions": [
@@ -1972,6 +1990,13 @@
       "study_id": "toolgrad",
       "ref": "c9544f842aacc13b5e44d5833fcc5dc4b86c5161",
       "url": "https://github.com/zhongyi-zhou/toolgrad",
+      "unknown_reason": null
+    },
+    {
+      "id": "gpt6-astra-guidance-20260911",
+      "study_id": "gpt6-astra-skills-prompts",
+      "ref": "2026-09-11 official article; Markdown SHA-256 a1deee4c0b3ca16a20385c27f0692e22d5150fdec81710c04742dd5da29f0468",
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
       "unknown_reason": null
     }
   ],
@@ -3571,6 +3596,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Actual source validate_api_response and chain_update_step run on 500 synthetic chains; proposer, selector, inverse query and ToolBench DFS replaced with deterministic local mechanisms. 500/500 both arms, no measured model benefit; 10/10 benign error_count=0 JSON erroneously refused. No SFT, BFCL, LLM calls, production changes.",
       "supersedes": null
+    },
+    {
+      "id": "bk009-gpt6-astra-live-ab-20261106",
+      "study_ids": [
+        "gpt6-astra-skills-prompts"
+      ],
+      "version_ids": [
+        "gpt6-astra-guidance-20260911"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Original source is OpenAI official engineering advice, not a controlled paper. Local experiment used five live Astra paired tasks and a deliberately verbose synthetic baseline; no production applicability, per-factor attribution or repeated confidence interval. No user project files modified.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -3807,6 +3846,25 @@
         "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
         "experiments/2026-11-06-bk005-toolgrad-chain-validation-ab.py",
         "data/results/toolgrad/2026-11-06-chain-validation-ab.json"
+      ]
+    },
+    {
+      "id": "bk009-gpt6-astra-five-pairs-20261106",
+      "study_ids": [
+        "gpt6-astra-skills-prompts"
+      ],
+      "review_id": "bk009-gpt6-astra-live-ab-20261106",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Real pinned gpt-6-astra via Codex 0.164.0, 5 x2 ephemeral disposable Git coding tasks; both 5/5 semantic correct, 4/5 strict workspace clean due identical Python pycache; B -46.72% input tokens and -13% wall, lower tokens 5/5 faster 4/5. Independent post-hoc file/state tests.",
+      "limitations": "N=5 pairs one run each, combined AGENTS+skill descriptions and body treatment, intentionally weak verbose A, no real agent repo/model variants, cache/server confounding; API list-price equivalent not actual billed Codex charges.",
+      "artifacts": [
+        "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+        "experiments/2026-11-06-bk009-astra/prepare.py",
+        "experiments/2026-11-06-bk009-astra/run-ab.py",
+        "experiments/2026-11-06-bk009-astra/score-ab.py",
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json"
       ]
     }
   ],
@@ -12918,6 +12976,90 @@
       "source_line": 63,
       "source_excerpt": "| BK-005 ToolGrad | `dsh-runtime` | `RESEARCH_ONLY / SECURITY_GATE_UNSATISFIED` | Минимальные offline chain tests без новых runtime hooks. До эксперимента с Model/tool execution устранить отдельный P0 CVE-2026-82533 и проверить scope/redaction/approval; пока не внедрять |",
       "supersedes": "toolgrad-document-dsh-runtime"
+    },
+    {
+      "id": "bk009-gpt6-astra-live-ab-20261106-agent-skills",
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "agent-skills",
+      "review_id": "bk009-gpt6-astra-live-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "A_B_SYNTHETIC_TOKEN_SAVINGS / PROJECT_NOT_TESTED",
+      "evidence": "A_B_SYNTHETIC_TOKEN_SAVINGS / PROJECT_NOT_TESTED",
+      "reason": "OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested.",
+      "limitations": "Synthetic deliberately verbose comparison and combined treatment, no verified project integration or production benefit, no user config edits.",
+      "next_test": "Read-only audit exact target revision and instructions, select representative independent tasks and original outcome oracle; owner-review explicit diff before any skill or AGENTS changes.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "No pinned source-level prompt/skill integration seam or repeated held-out task oracle for this actual project.",
+      "source_document": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "source_line": 53,
+      "source_excerpt": "| BK-009 | `agent-skills` | `A_B_SYNTHETIC_TOKEN_SAVINGS / PROJECT_NOT_TESTED` | Read-only инвентаризация описаний и overlap; 30–50 одинаковых задач в копии репозитория, precision/recall выбора skill, oracle, token cost, отдельный diff review |",
+      "supersedes": null
+    },
+    {
+      "id": "bk009-gpt6-astra-live-ab-20261106-agent-config",
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "agent-config",
+      "review_id": "bk009-gpt6-astra-live-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "CONTEXTUAL_AGENTS_MD_CANDIDATE / OWNER_REVIEW_REQUIRED",
+      "evidence": "CONTEXTUAL_AGENTS_MD_CANDIDATE / OWNER_REVIEW_REQUIRED",
+      "reason": "OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested.",
+      "limitations": "Synthetic deliberately verbose comparison and combined treatment, no verified project integration or production benefit, no user config edits.",
+      "next_test": "Read-only audit exact target revision and instructions, select representative independent tasks and original outcome oracle; owner-review explicit diff before any skill or AGENTS changes.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "No pinned source-level prompt/skill integration seam or repeated held-out task oracle for this actual project.",
+      "source_document": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "source_line": 54,
+      "source_excerpt": "| BK-009 | `agent-config` | `CONTEXTUAL_AGENTS_MD_CANDIDATE / OWNER_REVIEW_REQUIRED` | Найти глобальные always-read directives; отличить реальные security restrictions от ненужной навигации; не убирать approval без отдельного разрешения |",
+      "supersedes": null
+    },
+    {
+      "id": "bk009-gpt6-astra-live-ab-20261106-dsh-team-context",
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "dsh-team-context",
+      "review_id": "bk009-gpt6-astra-live-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SKILL_GOVERNANCE_HYPOTHESIS / CONTRACT_NOT_TESTED",
+      "evidence": "SKILL_GOVERNANCE_HYPOTHESIS / CONTRACT_NOT_TESTED",
+      "reason": "OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested.",
+      "limitations": "Synthetic deliberately verbose comparison and combined treatment, no verified project integration or production benefit, no user config edits.",
+      "next_test": "Read-only audit exact target revision and instructions, select representative independent tasks and original outcome oracle; owner-review explicit diff before any skill or AGENTS changes.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "No pinned source-level prompt/skill integration seam or repeated held-out task oracle for this actual project.",
+      "source_document": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "source_line": 55,
+      "source_excerpt": "| BK-009 | `dsh-team-context` | `SKILL_GOVERNANCE_HYPOTHESIS / CONTRACT_NOT_TESTED` | Сверить local-wins/central-governance и поведение собственных routers на синтетическом profile до каких-либо правок |",
+      "supersedes": null
+    },
+    {
+      "id": "bk009-gpt6-astra-live-ab-20261106-dsh-runtime",
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "dsh-runtime",
+      "review_id": "bk009-gpt6-astra-live-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "MODEL_SPECIFIC_PROMPT_HYPOTHESIS / P0_BLOCKER_UNCHANGED",
+      "evidence": "MODEL_SPECIFIC_PROMPT_HYPOTHESIS / P0_BLOCKER_UNCHANGED",
+      "reason": "OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested.",
+      "limitations": "Synthetic deliberately verbose comparison and combined treatment, no verified project integration or production benefit, no user config edits.",
+      "next_test": "Read-only audit exact target revision and instructions, select representative independent tasks and original outcome oracle; owner-review explicit diff before any skill or AGENTS changes.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "No pinned source-level prompt/skill integration seam or repeated held-out task oracle for this actual project.",
+      "source_document": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "source_line": 56,
+      "source_excerpt": "| BK-009 | `dsh-runtime` | `MODEL_SPECIFIC_PROMPT_HYPOTHESIS / P0_BLOCKER_UNCHANGED` | Не меняя hooks/runtime, исследовать routing только offline; CVE-2026-82533 и permission gate остаются P0 до запуска неотложенного исполнения |",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -14780,6 +14922,26 @@
       "study_id": "inspektor-gadget",
       "project_id": "Wiki_PG",
       "assessment_id": "bk041-ebpf-wikipg-hypothesis-20261106"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "agent-skills",
+      "assessment_id": "bk009-gpt6-astra-live-ab-20261106-agent-skills"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "agent-config",
+      "assessment_id": "bk009-gpt6-astra-live-ab-20261106-agent-config"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "dsh-team-context",
+      "assessment_id": "bk009-gpt6-astra-live-ab-20261106-dsh-team-context"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "project_id": "dsh-runtime",
+      "assessment_id": "bk009-gpt6-astra-live-ab-20261106-dsh-runtime"
     }
   ],
   "relations": [
