@@ -24,6 +24,7 @@
 - [2026-11-05-bk065-gui-probe.py](2026-11-05-bk065-gui-probe.py)
 - [2026-11-05-bk065-isolated-gui.sh](2026-11-05-bk065-isolated-gui.sh)
 - [2026-11-06-agent-config-citation-locality-ab.py](2026-11-06-agent-config-citation-locality-ab.py)
+- [2026-11-06-drag-retrieval-depth-ab.py](2026-11-06-drag-retrieval-depth-ab.py)
 - [2026-11-06-limbo-telegrambot-policy-ab.py](2026-11-06-limbo-telegrambot-policy-ab.py)
 - [2026-11-06-rrsi-validation-harness2-ab.py](2026-11-06-rrsi-validation-harness2-ab.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)

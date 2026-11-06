@@ -1188,6 +1188,20 @@
       "title": "Offline A/B — LIMBO и RRSI/Harness²: вторые пилоты",
       "kind": "portfolio",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/drag/2026-11-06-retrieval-ab.md",
+      "title": "DRAG — bounded offline lexical retrieval A/B",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-06/offline-ab-drag.md",
+      "title": "DRAG offline A/B — итог и отрицательные контроли",
+      "kind": "portfolio",
+      "date": "2026-11-06"
     }
   ]
 }

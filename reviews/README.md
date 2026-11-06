@@ -19,6 +19,7 @@
 | [Cursor — инженерный источник и пределы доказательств](cursor-token-efficiency/2026-11-05-primary.md) | 2026-11-05 |
 | [CVE-2026-82533 — аудит риска текущей установки DSH](cve-2026-82533/2026-11-06-readonly-risk.md) | 2026-11-06 |
 | [DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка](drag/2026-11-05-full-text.md) | 2026-11-05 |
+| [DRAG — bounded offline lexical retrieval A/B](drag/2026-11-06-retrieval-ab.md) | 2026-11-06 |
 | [BK-064 — ограниченный опыт Creator Mode](dsh-creator-mode/2026-11-06-local-probe.md) | 2026-11-06 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |

@@ -12,6 +12,7 @@
 
 - [drag-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.17709).
 - [fulltext-drag-2026-11-05](../../reviews/drag/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.17709v1).
+- [drag-offline-retrieval-ab-2026-11-06](../../reviews/drag/2026-11-06-retrieval-ab.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.17709v1).
 
 ## Применимость к проектам
 
@@ -23,7 +24,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- drag-lexical-routing-ab-2026-11-06: SYNTHETIC / OBSERVED. 5 seeds, 84 synthetic DBA documents and 60 query-classified requests per seed, 4 arms and equal top-3 output budget. Recall@3 baseline 47.0%, adaptive 63.3%, always-deep 63.3%, matched-deep-count random 57.0%; adaptive 36/60 expensive routes vs always 60/60. All arms falsely cite documents on 12/12 no-match queries per seed. Adaptive multi-hop complete-evidence rate 0%. CPU/wall/p95/RAM/IO measured, all query outputs and gold labels archived; deterministic replay and mutated oracle checked. Not authors published DRAG code, QPP, perplexity or SFT; synthetic self-authored corpus and gold with alias glossary favor expanded retrieval. No human blind oracle or project benefit; no LLM calls, tokens/VRAM N/A, API cost 0. No-match and multi-hop negative controls fail, NOT approved for integration. [Артефакт](../../experiments/2026-11-06-drag-retrieval-depth-ab.py) · [Артефакт](../../data/results/drag/2026-11-06-retrieval-depth-ab.json) · [Артефакт](../../reviews/drag/2026-11-06-retrieval-ab.md)
 
 ## Ссылки из исходной карточки
 
