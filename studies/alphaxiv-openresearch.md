@@ -25,3 +25,14 @@ OpenResearch creates independent Git-based experiment branches, archives the exa
 **State:** `SOURCE_REVIEWED / PROJECT_PROFILE_MATCH / VERIFIED_SOURCE_SEAM / NEEDS_EVIDENCE / LAB_NOT_RUN / NO_PRODUCTION_APPROVAL`. **Value 6/10, complexity 7/10.** Next gate: owner-approved isolated offline A/B comparing existing Python Podman runner against a content-addressed Git snapshot variant with deterministic independent oracle, resource/IO/cost measurements and explicit full-text coverage guards.
 
 **No project source changes, installs, external code execution or experiment runs.**
+
+
+## 2026-11-06 — отдельно выполненный source/provenance experiment
+
+[Полный отчёт с методологией и отрицательными контролями](../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) · [проверяемый runner](../experiments/2026-11-06-bk014-openresearch-provenance-ab.py) · [25×2 сравнительных измерений и все 5 негативных наборов](../data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) · [8/8 оригинальных compute Rust-тестов](../data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt).
+
+На pinned `alphaXiv/OpenResearch@23a4d67` в изолированном rootless Podman без сети **реально** выполнены `cargo build`, `cargo test --no-run` и 8/8 оригинальных compute unit tests. Для baseline A из pinned `Artemedi/dsh-paper2agent@6d82a421` **реально импортировали `tree_hash`**. В варианте B `git archive + SHA256` был **воспроизведён по Rust source**, но **не вызывался оригинальный Rust `SourceSnapshot::create`** и не запускался полный orx agent/run lifecycle.
+
+5 seeds ×5 пар: A p50 2.6991 ms, B proxy p50 1.8550 ms на крошечных фикстурах (не сравнение равных функций, не performance-claim). B создал 256000 логических байтов архивов; A сохранил только дерево SHA. Во всех 5 наборах: изменение .git metadata меняло A, не B; dirty source обнаружен A, пропущен committed archive B; новый commit менял оба; повреждённый B archive был обнаружен SHA; исходники восстанавливались из сохранённого B tar после удаления checkout. Synthetic missing FULL_TEXT blocked **только внешним gate** 5/5, не самим OpenResearch.
+
+**Статус:** `разобран + BOUNDED_SOURCE_COMPONENT_PROVENANCE_AB / NOT_ORX_E2E / NO_PRODUCTION_APPROVAL`. Единственный подтверждённый кандидат `dsh-paper2agent` — **опционально хранить immutable commit tar в дополнение к текущему хешу/Podman**, если появится конкретная проблема replay/provenance. Не заменять существующий executor и не считать `orx paper --full` проверкой полного текста научной работы.

@@ -14,7 +14,7 @@
 | [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [2026-11-03 / agent-transfer-protocol-review](agent-transfer-protocol.md) |
 | [agent-risk](agent-risk.md) | [2026-11-03 / agent-risk-review](agent-risk.md) |
 | [Agentic Self-Awareness](agentic-self-awareness.md) | [2026-11-03 / agentic-self-awareness-review](agentic-self-awareness.md) |
-| [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04 / alphaxiv-openresearch-review](../reviews/alphaxiv-openresearch/2026-11-04.md) |
+| [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04 / alphaxiv-openresearch-review](../reviews/alphaxiv-openresearch/2026-11-04.md) · [2026-11-06 / alphaxiv-openresearch-provenance-ab-20261106](../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) |
 | [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04 / anthropic-agent-automations-review](../reviews/anthropic-agent-automations/2026-11-04.md) |
 | [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [2026-11-03 / behavior-beyond-text-review](behavior-beyond-text.md) |
 | [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) |

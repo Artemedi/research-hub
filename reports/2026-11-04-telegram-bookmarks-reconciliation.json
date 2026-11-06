@@ -5,7 +5,7 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives; BK-009 2026-11-06 official full text pinned, 5-pair live Astra A/B, 46.72% fewer input tokens, no project integration",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives; BK-009 2026-11-06 official full text pinned, 5-pair live Astra A/B, 46.72% fewer input tokens, no project integration; BK-014 2026-11-06 pinned Rust OpenResearch 8 tests plus 5x5 provenance proxy A/B no orx E2E",
   "count_by_status": {
     "проверен экспериментально": 17,
     "ожидает проверки": 0,
@@ -13,7 +13,7 @@
     "разобран": 29
   },
   "mapped_study_cards": 33,
-  "mapped_experimental_items": 22,
+  "mapped_experimental_items": 23,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -29,7 +29,8 @@
     "BK-041 full eBPF verified ONLY for disposable rootless Podman synthetic exec 5x40/40 using filter.exec, not --comm; never publish raw JSON args/paths; no production or overhead claims.",
     "BK-002: isolated local-only port TeamAI B pass functional E2E but FAIL file-write allowlist; 35 extra tool/home paths in disposable HOME. Test source SHA not published, no deployment approval.",
     "BK-005 source components only: original chain updater/validator on synthetic 500 chains, independent DFS 500/500, API response error_count:0 false negatives; no model API or SFT; no production approval.",
-    "BK-009 exact live gpt-6-astra: 5 paired synthetic tasks, 5/5 functional each arm, fewer input tokens all five B vs intentionally verbose A, 4/5 faster; no causal factor isolation or real AGENTS/skill modification."
+    "BK-009 exact live gpt-6-astra: 5 paired synthetic tasks, 5/5 functional each arm, fewer input tokens all five B vs intentionally verbose A, 4/5 faster; no causal factor isolation or real AGENTS/skill modification.",
+    "BK-014: owner tree_hash actual, OpenResearch git archive source-derived proxy, 25 pairs; archive recovery vs metadata/dirty tradeoff; full text externally gated, no approval to integrate or replace Podman."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -271,15 +272,17 @@
       "telegram_title_recovered": "alphaXiv OpenResearch",
       "source_url": "https://github.com/alphaXiv/OpenResearch",
       "source_kind": "Open-source research harness",
-      "source_audit_evidence": "REPO_AND_TREE",
+      "source_audit_evidence": "ENGINEERING_FULL_SOURCE_PIN_ORX_23a4d67; OWNER_SOURCE_P2A_6d82a42; RUST_OFFLINE_BUILD_PASS; RUST_COMPUTE_8_OF_8; ORIGINAL_TREE_HASH_EXECUTED; SOURCE_DERIVED_ARCHIVE_25_PAIRS; NEGATIVE_GATES_5_OF_5; FULL_TEXT_EXTERNAL_ONLY",
       "initial_priority_2026_11_03": "A",
       "status": "разобран",
-      "disposition": "SOURCE_REVIEWED_FULL_TEXT_GATE_INCOMPLETE_NO_EXPERIMENT",
-      "status_reason_ru": "Изучены полные инженерные исходники OpenResearch v0.2.24 @23a4d67, экспериментальные Git snapshots, SQLite WAL и ограничения PDF/full-text. Одна предметная привязка к dsh-paper2agent, приоритет — provenance-only. Реальный orx, lab A/B и production benefit не проверялись.",
+      "disposition": "SOURCE_BUILT_RUST_TESTS_8_PASS_PROVENANCE_PROXY_25_PAIRS_NO_ORX_E2E",
+      "status_reason_ru": "Оригинальный pinned OpenResearch v0.2.24 собран без сети; compute Rust тесты 8/8. В синтетическом Podman A/B (5 seeds×5): действительно выполнен owner tree_hash; Git archive + sha256 B воспроизведён по исходникам, но Rust SourceSnapshot::create непосредственно не вызывался. 5/5 проверки git metadata, dirty, commit, corruption, archive replay, full-text negative gate. Внедрение не разрешено; подтверждено лишь опциональное provenance-only преимущество сохранения tar. См. reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
       "hub_study_card": "studies/alphaxiv-openresearch.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/alphaxiv-openresearch.md",
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_report": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "hub_review_report": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md"
     },
     {
       "id": "BK-015",

@@ -29,6 +29,7 @@
 - [2026-11-06-bk009-astra/prepare.py](2026-11-06-bk009-astra/prepare.py)
 - [2026-11-06-bk009-astra/run-ab.py](2026-11-06-bk009-astra/run-ab.py)
 - [2026-11-06-bk009-astra/score-ab.py](2026-11-06-bk009-astra/score-ab.py)
+- [2026-11-06-bk014-openresearch-provenance-ab.py](2026-11-06-bk014-openresearch-provenance-ab.py)
 - [2026-11-06-bk034-wikipg-autoloop-oracle.py](2026-11-06-bk034-wikipg-autoloop-oracle.py)
 - [2026-11-06-bk041-host-diagnostic.py](2026-11-06-bk041-host-diagnostic.py)
 - [2026-11-06-bk041-podman-trace.py](2026-11-06-bk041-podman-trace.py)

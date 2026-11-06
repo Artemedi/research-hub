@@ -1358,6 +1358,27 @@
       "title": "BK-009 Astra A/B fixture manifest with synthetic tasks",
       "kind": "data",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "title": "BK-014 OpenResearch provenance evidence and bounded source A/B",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json",
+      "title": "BK-014 synthetic 25-pair source archive and tree hash measurements",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt",
+      "title": "BK-014 original Rust compute unit tests, 8 PASS",
+      "kind": "data",
+      "date": "2026-11-06"
     }
   ]
 }

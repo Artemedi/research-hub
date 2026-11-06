@@ -197,11 +197,15 @@
       "kind": "engineering",
       "card": "studies/alphaxiv-openresearch.md",
       "primary_url": "https://github.com/alphaXiv/OpenResearch",
-      "current_review_id": "alphaxiv-openresearch-review",
+      "current_review_id": "alphaxiv-openresearch-provenance-ab-20261106",
       "fit_coverage": "PARTIAL",
-      "card_body_sha256": "9ec8bdec98f9651017062c3f56a8602016b2a30c8c18e9b29782acfd892eb61a",
+      "card_body_sha256": "d366f3e5a91c40320fa4162e0af0be21b417d4d9f94ecee5d88175e44cbbc05a",
       "linked_materials": [
-        "reviews/alphaxiv-openresearch/2026-11-04.md"
+        "reviews/alphaxiv-openresearch/2026-11-04.md",
+        "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+        "experiments/2026-11-06-bk014-openresearch-provenance-ab.py",
+        "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json",
+        "data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt"
       ]
     },
     {
@@ -3610,6 +3614,20 @@
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Original source is OpenAI official engineering advice, not a controlled paper. Local experiment used five live Astra paired tasks and a deliberately verbose synthetic baseline; no production applicability, per-factor attribution or repeated confidence interval. No user project files modified.",
       "supersedes": null
+    },
+    {
+      "id": "alphaxiv-openresearch-provenance-ab-20261106",
+      "study_ids": [
+        "alphaxiv-openresearch"
+      ],
+      "version_ids": [
+        "alphaxiv-openresearch-version"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Original OpenResearch v0.2.24 built offline and 8 compute tests passed; 25x2 provenance A/B ran actual paper2project tree_hash against source-derived git archive proxy. No direct SourceSnapshot::create call, orx agent/SQLite/supervisor E2E, live paper retrieval or production benefit. No production approval.",
+      "supersedes": "alphaxiv-openresearch-review"
     }
   ],
   "experiments": [
@@ -3865,6 +3883,23 @@
         "experiments/2026-11-06-bk009-astra/score-ab.py",
         "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
         "data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json"
+      ]
+    },
+    {
+      "id": "bk014-openresearch-provenance-ab-20261106",
+      "study_ids": [
+        "alphaxiv-openresearch"
+      ],
+      "review_id": "alphaxiv-openresearch-provenance-ab-20261106",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Pinned source code OpenResearch cargo build PASS and author compute tests 8/8; pinned original paper2project tree_hash executed; 5 seeds x5 source-derived git archive proxy pairs with deterministic content oracle, 5/5 metadata/dirty/commit/corrupt/persisted archive and independent missing full text negative controls.",
+      "limitations": "Actual Rust SourceSnapshot::create, SQLite/daemon, agent/model backend, network, arbitrary code execution, real full-text paper checks and project integration NOT tested. A/B has intentionally different contract and tiny fixtures; speed is descriptive only.",
+      "artifacts": [
+        "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+        "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json",
+        "experiments/2026-11-06-bk014-openresearch-provenance-ab.py",
+        "data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt"
       ]
     }
   ],
@@ -13060,6 +13095,27 @@
       "source_line": 56,
       "source_excerpt": "| BK-009 | `dsh-runtime` | `MODEL_SPECIFIC_PROMPT_HYPOTHESIS / P0_BLOCKER_UNCHANGED` | Не меняя hooks/runtime, исследовать routing только offline; CVE-2026-82533 и permission gate остаются P0 до запуска неотложенного исполнения |",
       "supersedes": null
+    },
+    {
+      "id": "bk014-openresearch-provenance-20261106-dsh-paper2agent",
+      "study_id": "alphaxiv-openresearch",
+      "project_id": "dsh-paper2agent",
+      "review_id": "alphaxiv-openresearch-provenance-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / PROVENANCE_ARCHIVE_OPTION_ONLY",
+      "evidence": "DOCUMENTED_CANDIDATE / PROVENANCE_ARCHIVE_OPTION_ONLY",
+      "reason": "Source-derived Git archive is recoverable after original source checkout deletion; current paper2project tree_hash detects dirty files but contains only digest. Real project provenance improvement is not proven.",
+      "limitations": "No source-level integration executed, no original orx SourceSnapshot Rust API E2E; avoid replacing existing Podman executor. Full text requires independent gating; model and production performance unmeasured.",
+      "next_test": "Owner-approved disposable project A/B only after concrete replay failure: pin exact clone revision, compare current hash/Podman against optional content-addressed commit tar with explicit dirty preflight, rehydrate after checkout deletion, enforce full-text and independent state oracles, measure IO/retention/rollback.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "No real project scenario demonstrated replay failure or measurable integration benefit.",
+      "source_document": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "source_line": 60,
+      "source_excerpt": "| BK-014 OpenResearch | `dsh-paper2agent` | B позволяет сохранить точную версию committed source + digest и восстановить её без исходного checkout; A фиксирует текущие файлы и обнаруживает dirty change | `DOCUMENTED_CANDIDATE / PROVENANCE_ARCHIVE_OPTION_ONLY`. При доказанном дефекте воспроизведения — добавить минимальный **неизменяемый source tar** и manifest `commit/digest/size` как **дополнение** к существующим `tree_hash` и Podman; сначала определить независимый raw-vs-committed invariant, dirty preflight, archive size limit/retention, repeated offline test |",
+      "supersedes": "alphaxiv-openresearch-document-dsh-paper2agent"
     }
   ],
   "current_assessments": [
@@ -14841,7 +14897,7 @@
     {
       "study_id": "alphaxiv-openresearch",
       "project_id": "dsh-paper2agent",
-      "assessment_id": "alphaxiv-openresearch-document-dsh-paper2agent"
+      "assessment_id": "bk014-openresearch-provenance-20261106-dsh-paper2agent"
     },
     {
       "study_id": "rrsi",

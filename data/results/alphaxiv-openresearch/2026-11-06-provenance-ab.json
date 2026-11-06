@@ -1,0 +1,683 @@
+{
+  "study": "BK-014 alphaXiv OpenResearch",
+  "date": "2026-11-06",
+  "pin_orx": "23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d",
+  "pin_paper2project": "6d82a42175a71d3327b773df88f1da0707efe43c",
+  "status": "SOURCE_DERIVED_GIT_ARCHIVE_AB_BASELINE_SOURCE_EXECUTED",
+  "branch_A": "Actual owner paper2project.execution.tree_hash (includes .git and all current bytes, modes)",
+  "branch_B": "Source-derived reimplementation of original Rust SourceSnapshot git archive + SHA256 content-addressed cache, not actual orx SourceSnapshot::create",
+  "design": "5 seeds x5 repetitions; same synthetic Git repository, content, operation sequence; A/B order shuffled per repeat",
+  "metrics": {
+    "A": {
+      "wall_ms": {
+        "n": 25,
+        "p50": 2.6991,
+        "p95_nearest_rank": 3.3297,
+        "mean": 2.7778,
+        "min": 2.3088,
+        "max": 3.6728
+      },
+      "cpu_ms": {
+        "n": 25,
+        "p50": 2.681,
+        "p95_nearest_rank": 3.215,
+        "mean": 2.7396,
+        "min": 2.291,
+        "max": 3.632
+      },
+      "total_archive_bytes_written": 0,
+      "rss_max_kib_cumulative": 20496
+    },
+    "B": {
+      "wall_ms": {
+        "n": 25,
+        "p50": 1.855,
+        "p95_nearest_rank": 2.2269,
+        "mean": 1.8912,
+        "min": 1.5359,
+        "max": 2.6511
+      },
+      "cpu_ms": {
+        "n": 25,
+        "p50": 1.889,
+        "p95_nearest_rank": 2.202,
+        "mean": 1.8902,
+        "min": 1.585,
+        "max": 2.209
+      },
+      "total_archive_bytes_written": 256000,
+      "rss_max_kib_cumulative": 20496
+    }
+  },
+  "samples_per_arm": 25,
+  "full_text_input": {
+    "synthetic_methods_results_limitations_present": 5,
+    "missing_fulltext_negative_cases": 5,
+    "missing_fulltext_rejected_by": "external explicit gate, not orx or paper2project snapshot"
+  },
+  "controls_summary": {
+    "full_text_gate_pass": 5,
+    "archive_committed_no_dirty": 5,
+    "metadata_false_invalidation_A": 5,
+    "metadata_stable_B": 5,
+    "dirty_mutation_detected_A": 5,
+    "dirty_mutation_omitted_B": 5,
+    "post_commit_both_change": 5,
+    "archive_corruption_detected_B": 5,
+    "snapshot_available_without_source_B": 5,
+    "missing_fulltext_rejected_external_gate": 5,
+    "no_unrelated_host_files": 5
+  },
+  "owner_podman_argv": {
+    "offline": true,
+    "read_only": true,
+    "drop_caps": true,
+    "no_new_privileges": true,
+    "source_mount_ro": true
+  },
+  "io_semantics": "Archive bytes are logical tar payload bytes, not measured physical I/O; A hash reads .git and content but does not persist source snapshot",
+  "resources": {
+    "model_calls": 0,
+    "api_cost_usd": 0,
+    "gpu_vram": null,
+    "CPU_time": "rusage_self+children, in synthetic local container",
+    "RSS": "cumulative max for entire process, not per-arm"
+  },
+  "limitations": [
+    "B reimplements documented Rust SourceSnapshot archive/digest behavior, NOT a direct invocation of orx SourceSnapshot or its SQLite/daemon lifecycle. Separate source build/tests are needed to validate binary.",
+    "A hashes current working tree INCLUDING .git metadata, while B creates immutable Git commit tar. They are NOT functionally equivalent by design.",
+    "This compares provenance guarantees, not end-to-end research quality, launch safety, or workflow speed.",
+    "No actual paper or model, only explicit synthetic full-text fixture; no AlphaXiv/PubMed queries.",
+    "Crash/restart of orx supervisor, remote GPU, agent calls and database WAL are not exercised.",
+    "B archive omission of dirty changes is expected semantics; strong guard requires explicit git dirty preflight.",
+    "No user workspace files, secrets or production datasets were read.",
+    "A and B do not control for git metadata or filesystem cache across repetitions; speed is descriptive only."
+  ],
+  "records": [
+    {
+      "seed": 20261106,
+      "controls": {
+        "seed": 20261106,
+        "git_commit": "455dbb3bb03cc086d8d0cea259af87366a356807",
+        "full_text_gate_pass": true,
+        "baseline_direct_tree_sha256": "1de3d7f8def84cc6e78dff04e4125ef917c9281ab60d831c9cefe7e4ec7243c8",
+        "archive_committed_no_dirty": true,
+        "metadata_false_invalidation_A": true,
+        "metadata_stable_B": true,
+        "dirty_mutation_detected_A": true,
+        "dirty_mutation_omitted_B": true,
+        "post_commit_both_change": true,
+        "archive_corruption_detected_B": true,
+        "snapshot_available_without_source_B": true,
+        "missing_fulltext_rejected_external_gate": true,
+        "no_unrelated_host_files": true
+      },
+      "measurements": [
+        {
+          "rep": 0,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 3.0096,
+            "cpu_ms": 2.963,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.5359,
+            "cpu_ms": 1.585,
+            "peak_rss_kib_cumulative": 20212,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 1,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.7489,
+            "cpu_ms": 2.728,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.1435,
+            "cpu_ms": 2.202,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 2,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 3.6728,
+            "cpu_ms": 3.632,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.2269,
+            "cpu_ms": 2.209,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 3,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.987,
+            "cpu_ms": 2.937,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.7625,
+            "cpu_ms": 1.796,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 4,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.651,
+            "cpu_ms": 2.603,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.0774,
+            "cpu_ms": 2.12,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        }
+      ],
+      "archive_bytes": 10240
+    },
+    {
+      "seed": 20261107,
+      "controls": {
+        "seed": 20261107,
+        "git_commit": "6c346c4645d766bea8e552edfcf8b904a69c9e33",
+        "full_text_gate_pass": true,
+        "baseline_direct_tree_sha256": "3ce75aa4a3b9e73d912234ca9ae8897543704b053f94c5dd5a51c295d8e5e446",
+        "archive_committed_no_dirty": true,
+        "metadata_false_invalidation_A": true,
+        "metadata_stable_B": true,
+        "dirty_mutation_detected_A": true,
+        "dirty_mutation_omitted_B": true,
+        "post_commit_both_change": true,
+        "archive_corruption_detected_B": true,
+        "snapshot_available_without_source_B": true,
+        "missing_fulltext_rejected_external_gate": true,
+        "no_unrelated_host_files": true
+      },
+      "measurements": [
+        {
+          "rep": 0,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 3.0529,
+            "cpu_ms": 2.971,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.9793,
+            "cpu_ms": 2.029,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 1,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.5029,
+            "cpu_ms": 2.464,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.7831,
+            "cpu_ms": 1.815,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 2,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.4993,
+            "cpu_ms": 2.482,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.6725,
+            "cpu_ms": 1.71,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 3,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 3.3297,
+            "cpu_ms": 3.209,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.7957,
+            "cpu_ms": 1.831,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 4,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.6991,
+            "cpu_ms": 2.681,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.883,
+            "cpu_ms": 1.917,
+            "peak_rss_kib_cumulative": 20368,
+            "bytes_out": 10240
+          }
+        }
+      ],
+      "archive_bytes": 10240
+    },
+    {
+      "seed": 20261108,
+      "controls": {
+        "seed": 20261108,
+        "git_commit": "71afc959afe68656e8a42c03c881fccbf5a778ee",
+        "full_text_gate_pass": true,
+        "baseline_direct_tree_sha256": "cbdce0345ba432f0aae077f7ee481fa0e36b73972ab5c4f0e426e98b08e902e9",
+        "archive_committed_no_dirty": true,
+        "metadata_false_invalidation_A": true,
+        "metadata_stable_B": true,
+        "dirty_mutation_detected_A": true,
+        "dirty_mutation_omitted_B": true,
+        "post_commit_both_change": true,
+        "archive_corruption_detected_B": true,
+        "snapshot_available_without_source_B": true,
+        "missing_fulltext_rejected_external_gate": true,
+        "no_unrelated_host_files": true
+      },
+      "measurements": [
+        {
+          "rep": 0,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 3.0968,
+            "cpu_ms": 3.075,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.0955,
+            "cpu_ms": 2.021,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 1,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.3661,
+            "cpu_ms": 2.357,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.7504,
+            "cpu_ms": 1.784,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 2,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.466,
+            "cpu_ms": 2.424,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.5852,
+            "cpu_ms": 1.637,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 3,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.6347,
+            "cpu_ms": 2.591,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.6511,
+            "cpu_ms": 2.022,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 4,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.49,
+            "cpu_ms": 2.444,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.821,
+            "cpu_ms": 1.875,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        }
+      ],
+      "archive_bytes": 10240
+    },
+    {
+      "seed": 20261109,
+      "controls": {
+        "seed": 20261109,
+        "git_commit": "017b44159cb5ec49003f9d2e78199cd2db011623",
+        "full_text_gate_pass": true,
+        "baseline_direct_tree_sha256": "6b97d931b3d36ffbd7e9573209cdb6e8d3975e8c4af547ca0b758bc207ee8011",
+        "archive_committed_no_dirty": true,
+        "metadata_false_invalidation_A": true,
+        "metadata_stable_B": true,
+        "dirty_mutation_detected_A": true,
+        "dirty_mutation_omitted_B": true,
+        "post_commit_both_change": true,
+        "archive_corruption_detected_B": true,
+        "snapshot_available_without_source_B": true,
+        "missing_fulltext_rejected_external_gate": true,
+        "no_unrelated_host_files": true
+      },
+      "measurements": [
+        {
+          "rep": 0,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.445,
+            "cpu_ms": 2.435,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.8918,
+            "cpu_ms": 1.894,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 1,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.6426,
+            "cpu_ms": 2.613,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.7618,
+            "cpu_ms": 1.804,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 2,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.8748,
+            "cpu_ms": 2.845,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.0322,
+            "cpu_ms": 2.06,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 3,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.7963,
+            "cpu_ms": 2.733,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.855,
+            "cpu_ms": 1.889,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 4,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 2.3642,
+            "cpu_ms": 2.342,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.6547,
+            "cpu_ms": 1.675,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        }
+      ],
+      "archive_bytes": 10240
+    },
+    {
+      "seed": 20261110,
+      "controls": {
+        "seed": 20261110,
+        "git_commit": "2db546f7428db55596caf5d710b00bbfc87211de",
+        "full_text_gate_pass": true,
+        "baseline_direct_tree_sha256": "6a960a3aca48f79be71ef003eb3461d06e1a5417064e0806e9009246218b7290",
+        "archive_committed_no_dirty": true,
+        "metadata_false_invalidation_A": true,
+        "metadata_stable_B": true,
+        "dirty_mutation_detected_A": true,
+        "dirty_mutation_omitted_B": true,
+        "post_commit_both_change": true,
+        "archive_corruption_detected_B": true,
+        "snapshot_available_without_source_B": true,
+        "missing_fulltext_rejected_external_gate": true,
+        "no_unrelated_host_files": true
+      },
+      "measurements": [
+        {
+          "rep": 0,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.4654,
+            "cpu_ms": 2.45,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.0488,
+            "cpu_ms": 1.991,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 1,
+          "order": [
+            "B",
+            "A"
+          ],
+          "A": {
+            "wall_ms": 3.218,
+            "cpu_ms": 3.17,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.6174,
+            "cpu_ms": 1.653,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 2,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.3088,
+            "cpu_ms": 2.291,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 2.0191,
+            "cpu_ms": 2.033,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 3,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 2.8931,
+            "cpu_ms": 2.836,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.8903,
+            "cpu_ms": 1.93,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        },
+        {
+          "rep": 4,
+          "order": [
+            "A",
+            "B"
+          ],
+          "A": {
+            "wall_ms": 3.2295,
+            "cpu_ms": 3.215,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 0
+          },
+          "B": {
+            "wall_ms": 1.7452,
+            "cpu_ms": 1.773,
+            "peak_rss_kib_cumulative": 20496,
+            "bytes_out": 10240
+          }
+        }
+      ],
+      "archive_bytes": 10240
+    }
+  ]
+}

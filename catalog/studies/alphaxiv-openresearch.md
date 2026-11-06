@@ -6,24 +6,29 @@
 
 ## Текущий обзор
 
-[alphaxiv-openresearch-review](../../reviews/alphaxiv-openresearch/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Pinned source implementation and architecture were reviewed; no benchmark or end-to-end execution. Local execution may have network and host-authority effects; article extraction has stated full-text limitations.
+[alphaxiv-openresearch-provenance-ab-20261106](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) — BOUNDED_CODE_REVIEW. Original OpenResearch v0.2.24 built offline and 8 compute tests passed; 25x2 provenance A/B ran actual paper2project tree_hash against source-derived git archive proxy. No direct SourceSnapshot::create call, orx agent/SQLite/supervisor E2E, live paper retrieval or production benefit. No production approval.
 
 ## Версии и история обзоров
 
 - [alphaxiv-openresearch-review](../../reviews/alphaxiv-openresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d](https://github.com/alphaXiv/OpenResearch/tree/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d).
+- [alphaxiv-openresearch-provenance-ab-20261106](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: alphaxiv-openresearch-review. Версии: [23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d](https://github.com/alphaXiv/OpenResearch/tree/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d).
 
 ## Применимость к проектам
 
 Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-- [dsh-paper2agent](../../projects/dsh-paper2agent.md): DOCUMENTED_CANDIDATE; PROJECT_PROFILE_MATCH / VERIFIED_SOURCE_SEAM / NEEDS_EVIDENCE / LAB_NOT_RUN. Отдельный Python research-to-project инструмент уже содержит src/paper2project/execution.py:251–275 pinned source/input tree hash; :308–318 isolated Podman run; docs/product/PIPELINE.md описывает Stage 4–6, но не полноценный внедрённый E2E. У OpenResearch есть полезные механизмы Git snapshot/run lineage для сравнения подходов Ограничения: Документальная оценка из явной колонки целевых проектов; исходники и эффект проекта этой миграцией не проверялись. Следующий тест: Минимальный тест и ограничения сохранены в процитированной строке источника. [Основание](../../reviews/alphaxiv-openresearch/2026-11-04.md); предыдущая оценка: нет.
+- [dsh-paper2agent](../../projects/dsh-paper2agent.md): DOCUMENTED_CANDIDATE; DOCUMENTED_CANDIDATE / PROVENANCE_ARCHIVE_OPTION_ONLY. Source-derived Git archive is recoverable after original source checkout deletion; current paper2project tree_hash detects dirty files but contains only digest. Real project provenance improvement is not proven. Ограничения: No source-level integration executed, no original orx SourceSnapshot Rust API E2E; avoid replacing existing Podman executor. Full text requires independent gating; model and production performance unmeasured. Следующий тест: Owner-approved disposable project A/B only after concrete replay failure: pin exact clone revision, compare current hash/Podman against optional content-addressed commit tar with explicit dirty preflight, rehydrate after checkout deletion, enforce full-text and independent state oracles, measure IO/retention/rollback. [Основание](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md); предыдущая оценка: alphaxiv-openresearch-document-dsh-paper2agent.
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- bk014-openresearch-provenance-ab-20261106: SYNTHETIC / OBSERVED. Pinned source code OpenResearch cargo build PASS and author compute tests 8/8; pinned original paper2project tree_hash executed; 5 seeds x5 source-derived git archive proxy pairs with deterministic content oracle, 5/5 metadata/dirty/commit/corrupt/persisted archive and independent missing full text negative controls. Actual Rust SourceSnapshot::create, SQLite/daemon, agent/model backend, network, arbitrary code execution, real full-text paper checks and project integration NOT tested. A/B has intentionally different contract and tiny fixtures; speed is descriptive only. [Артефакт](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) · [Артефакт](../../data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) · [Артефакт](../../experiments/2026-11-06-bk014-openresearch-provenance-ab.py) · [Артефакт](../../data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt)
 
 ## Ссылки из исходной карточки
 
 Это ссылки на материалы, а не автоматическое подтверждение связи методов или собственного эксперимента.
 
 - [reviews/alphaxiv-openresearch/2026-11-04.md](../../reviews/alphaxiv-openresearch/2026-11-04.md)
+- [reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md)
+- [experiments/2026-11-06-bk014-openresearch-provenance-ab.py](../../experiments/2026-11-06-bk014-openresearch-provenance-ab.py)
+- [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](../../data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json)
+- [data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt](../../data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt)
