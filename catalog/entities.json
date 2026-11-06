@@ -330,12 +330,15 @@
       "kind": "engineering",
       "card": "studies/cursor-token-efficiency.md",
       "primary_url": "https://cursor.com/blog/improved-token-efficiency",
-      "current_review_id": "cursor-token-efficiency-primary-2026-11-05",
+      "current_review_id": "cursor-token-efficiency-zcode-council-20261107",
       "fit_coverage": "PARTIAL",
-      "card_body_sha256": "f8db572df897bfa4425f79f2c139d435e9b662f5ab0f43d455281ec6fef980ab",
+      "card_body_sha256": "9c49ee4e1fbec9084f999452c51eac47fa3b3a2078b87c96e17a8b2d1556eae4",
       "linked_materials": [
         "archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md",
-        "portfolio/historical/project-fit.md"
+        "portfolio/historical/project-fit.md",
+        "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+        "experiments/2026-11-07-bk021-tool-context-proxy.py",
+        "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json"
       ]
     },
     {
@@ -3628,6 +3631,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Original OpenResearch v0.2.24 built offline and 8 compute tests passed; 25x2 provenance A/B ran actual paper2project tree_hash against source-derived git archive proxy. No direct SourceSnapshot::create call, orx agent/SQLite/supervisor E2E, live paper retrieval or production benefit. No production approval.",
       "supersedes": "alphaxiv-openresearch-review"
+    },
+    {
+      "id": "cursor-token-efficiency-zcode-council-20261107",
+      "study_ids": [
+        "cursor-token-efficiency"
+      ],
+      "version_ids": [
+        "cursor-token-efficiency-observed-html-2026-11-05"
+      ],
+      "date": "2026-11-07",
+      "document": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Original full public Cursor article read and HTML/text SHA pinned. Synthetic 52-template×5 repeated tool-description character proxy and four sequential ZCode GLM-5.3-Flash specialist/chair roles; first chair failed tool budget; corrected chair tool check succeeded but reported 6 negative examples versus independent 20 due truncated preview. No provider-token/Cursor 7% replication, real tool selection, project integration or model-quality A/B.",
+      "supersedes": "cursor-token-efficiency-primary-2026-11-05"
     }
   ],
   "experiments": [
@@ -3900,6 +3917,22 @@
         "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json",
         "experiments/2026-11-06-bk014-openresearch-provenance-ab.py",
         "data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt"
+      ]
+    },
+    {
+      "id": "bk021-cursor-tool-context-council-20261107",
+      "study_ids": [
+        "cursor-token-efficiency"
+      ],
+      "review_id": "cursor-token-efficiency-zcode-council-20261107",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "5 permutations of 52 in-memory fixture tasks across 12 descriptions, 3 policies: static 260/260 1,085,775 chars, ideal oracle 260/260 538,875 chars, keyword 220/260 532,305 chars (40 misses; 20 negative cases). 4-role sequential ZCode council actually invoked bounded tools, 3 initial members valid, first chair failed budget, corrected chair independently audited and issued no-production verdict; GPT-6 precommitted analysis caught negative preview count error.",
+      "limitations": "Only char-size synthetic proxy, gold oracle unrealistic, 52 repeated templates not independent; model calls confined to research deliberation and sandbox tools, not model tool-choice evaluation; 4 roles share one provider model; no metered GPT-6 reasoning cost, no fair council efficiency comparison; failed protocol and truncated tool summary. No production permission or code changes.",
+      "artifacts": [
+        "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+        "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json",
+        "experiments/2026-11-07-bk021-tool-context-proxy.py"
       ]
     }
   ],

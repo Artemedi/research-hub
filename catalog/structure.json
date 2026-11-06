@@ -1379,6 +1379,20 @@
       "title": "BK-014 original Rust compute unit tests, 8 PASS",
       "kind": "data",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "title": "BK-021 Cursor token efficiency independent GPT-6 versus ZCode council",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json",
+      "title": "BK-021 synthetic tool-context measures and council verdict/audit",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

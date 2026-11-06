@@ -18,6 +18,7 @@
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |
 | [Covert Assistance — Helpful LLM Agents Evade Oversight — полнотекстовая научная проверка](covert-assistance/2026-11-05-full-text.md) | 2026-11-05 |
 | [Cursor — инженерный источник и пределы доказательств](cursor-token-efficiency/2026-11-05-primary.md) | 2026-11-05 |
+| [BK-021 Cursor token efficiency independent GPT-6 versus ZCode council](cursor-token-efficiency/2026-11-07-council-vs-single.md) | 2026-11-07 |
 | [CVE-2026-82533 — аудит риска текущей установки DSH](cve-2026-82533/2026-11-06-readonly-risk.md) | 2026-11-06 |
 | [DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка](drag/2026-11-05-full-text.md) | 2026-11-05 |
 | [DRAG — offline evidence gate and adversarial validation](drag/2026-11-06-evidence-gate-ab.md) | 2026-11-06 |

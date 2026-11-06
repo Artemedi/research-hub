@@ -39,6 +39,7 @@
 - [2026-11-06-drag-retrieval-depth-ab.py](2026-11-06-drag-retrieval-depth-ab.py)
 - [2026-11-06-limbo-telegrambot-policy-ab.py](2026-11-06-limbo-telegrambot-policy-ab.py)
 - [2026-11-06-rrsi-validation-harness2-ab.py](2026-11-06-rrsi-validation-harness2-ab.py)
+- [2026-11-07-bk021-tool-context-proxy.py](2026-11-07-bk021-tool-context-proxy.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)
 - [bk011-simurg/check-fixture.py](bk011-simurg/check-fixture.py)
 - [bk019-skill-doctor/attribution-fixture.py](bk019-skill-doctor/attribution-fixture.py)

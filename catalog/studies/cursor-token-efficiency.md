@@ -6,12 +6,13 @@
 
 ## Текущий обзор
 
-[cursor-token-efficiency-primary-2026-11-05](../../reviews/cursor-token-efficiency/2026-11-05-primary.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Полная авторская engineering-статья прочитана и сверена с HTML-снимком; производственные улучшения AUTHOR_REPORTED, независимые A/B и интеграция в локальные проекты NOT_RUN. Исторический DSH review сохранён.
+[cursor-token-efficiency-zcode-council-20261107](../../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Original full public Cursor article read and HTML/text SHA pinned. Synthetic 52-template×5 repeated tool-description character proxy and four sequential ZCode GLM-5.3-Flash specialist/chair roles; first chair failed tool budget; corrected chair tool check succeeded but reported 6 negative examples versus independent 20 due truncated preview. No provider-token/Cursor 7% replication, real tool selection, project integration or model-quality A/B.
 
 ## Версии и история обзоров
 
 - [cursor-token-efficiency-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://cursor.com/blog/improved-token-efficiency).
 - [cursor-token-efficiency-primary-2026-11-05](../../reviews/cursor-token-efficiency/2026-11-05-primary.md), 2026-11-05; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [htmlsha256:b3acfeaf56c9f2100b212ad1b28c0cffc2340a1f915fd85dba0b7c222fc81466](https://cursor.com/blog/improved-token-efficiency).
+- [cursor-token-efficiency-zcode-council-20261107](../../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md), 2026-11-07; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: cursor-token-efficiency-primary-2026-11-05. Версии: [htmlsha256:b3acfeaf56c9f2100b212ad1b28c0cffc2340a1f915fd85dba0b7c222fc81466](https://cursor.com/blog/improved-token-efficiency).
 
 ## Применимость к проектам
 
@@ -22,7 +23,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- bk021-cursor-tool-context-council-20261107: SYNTHETIC / OBSERVED. 5 permutations of 52 in-memory fixture tasks across 12 descriptions, 3 policies: static 260/260 1,085,775 chars, ideal oracle 260/260 538,875 chars, keyword 220/260 532,305 chars (40 misses; 20 negative cases). 4-role sequential ZCode council actually invoked bounded tools, 3 initial members valid, first chair failed budget, corrected chair independently audited and issued no-production verdict; GPT-6 precommitted analysis caught negative preview count error. Only char-size synthetic proxy, gold oracle unrealistic, 52 repeated templates not independent; model calls confined to research deliberation and sandbox tools, not model tool-choice evaluation; 4 roles share one provider model; no metered GPT-6 reasoning cost, no fair council efficiency comparison; failed protocol and truncated tool summary. No production permission or code changes. [Артефакт](../../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) · [Артефакт](../../data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json) · [Артефакт](../../experiments/2026-11-07-bk021-tool-context-proxy.py)
 
 ## Ссылки из исходной карточки
 
@@ -30,3 +31,6 @@
 
 - [archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md)
 - [portfolio/historical/project-fit.md](../../portfolio/historical/project-fit.md)
+- [reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md](../../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md)
+- [experiments/2026-11-07-bk021-tool-context-proxy.py](../../experiments/2026-11-07-bk021-tool-context-proxy.py)
+- [data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json](../../data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json)

@@ -1,0 +1,307 @@
+{
+  "study": "BK-021 Cursor token efficiency; ZCode council vs GPT-6 independent review",
+  "date": "2026-11-07",
+  "source_url": "https://cursor.com/blog/improved-token-efficiency",
+  "source_html_sha256": "8dd43830988dfd560cc8e40f9f72e1768c503abc263ed55cf89d51c273df7526",
+  "source_text_sha256": "5f67fe27a2a817f9d06fe8b11616310732d7a4de07c6f12f784b0bb8f187a55f",
+  "method": "Three sequential GLM-5.3-Flash specialists with bounded fixture tools and a sequential chair; separate precommitted GPT-6 analysis of the same public article and tool fixture; first chair failed, second limited chair passed.",
+  "independent_gpt6": {
+    "summary": {
+      "static": {
+        "tasks": 260,
+        "oracle_coverage": 260,
+        "misses": 0,
+        "total_chars": 1085775,
+        "mean_chars": 4176.06,
+        "extraneous_tools": 2860,
+        "negative_with_rare_false_exposure": 20
+      },
+      "oracle": {
+        "tasks": 260,
+        "oracle_coverage": 260,
+        "misses": 0,
+        "total_chars": 538875,
+        "mean_chars": 2072.6,
+        "extraneous_tools": 860,
+        "negative_with_rare_false_exposure": 0
+      },
+      "keyword": {
+        "tasks": 260,
+        "oracle_coverage": 220,
+        "misses": 40,
+        "total_chars": 532305,
+        "mean_chars": 2047.33,
+        "extraneous_tools": 880,
+        "negative_with_rare_false_exposure": 20
+      }
+    },
+    "savings": {
+      "oracle_vs_static": 50.37,
+      "keyword_vs_static": 50.97
+    },
+    "assertions": {
+      "audit_all_15_runs": true,
+      "mutant_aggregate_rejected": true,
+      "mutant_missing_set_rejected": true
+    },
+    "sample_limit": "52 unique templates reshuffled across 5 seeds, NOT 260 independent tasks",
+    "analysis_fixture_cpu_ms": 6.186,
+    "model_tokens_and_research_wall_time": "not metered; synthetic CPU time is not comparable to council wall time",
+    "precommitted_rubric": [
+      "distinguishes reported 7% total cost from independently reproduced result",
+      "qualifies 46.9% as MCP-invoking sessions only",
+      "recognizes 60% applies to static tool description tokens",
+      "recognizes 20% is cold-cache miss RATE",
+      "recognizes 1.6% is cached-read-token subset",
+      "recognizes 66% is system prompt reduction",
+      "labels local char proxy as not actual model/provider tokens",
+      "detects rare synonym false negatives and negation false positives",
+      "requires independent tool-quality and safety oracle before deployment",
+      "states limited source details and declines production approval"
+    ],
+    "verdict": "SIMULATED_CONTEXT_SAVINGS_REAL; ROUTER_RECALL_FAILURE; CURSOR_7PCT_NOT_REPRODUCED; NO_DEPLOYMENT"
+  },
+  "zcode_council": {
+    "model": "glm-5.3-flash",
+    "plan": "unofficial local ZCode Start Plan",
+    "roles": [
+      {
+        "role": "evidence",
+        "valid": true,
+        "model_calls": 3,
+        "tools_acknowledged": 8,
+        "tools_requested_estimate": 8,
+        "unacknowledged_tool_ids_min": 0,
+        "wall_s": 64.62,
+        "input_tokens": 7385,
+        "output_tokens": 2244,
+        "final_conclusion_excerpt": "# Отчёт совета BK-021\n\n**SOURCE_CLAIMS** (источник: [cursor.com/blog/improved-token-efficiency](https://cursor.com/blog/improved-token-efficiency), SHA256 5f67fe27…87a55f, разделы overview и tools прочитаны полностью):\n- **7%** — знаменатель: полные расходы токенов пользователей, эффект ВСЕХ изменений харнесса (сборка запросов, переиспользование контекста, разделение работы), не только динамическая загрузка.\n- **46.9%** — знаменатель: общие токены только в сессиях, вызвавших MCP-инструмент.\n- **60%** — знаменатель: только токены описаний в статическом контексте встроенных инструментов.\n- **20%** — знаменатель: до"
+      },
+      {
+        "role": "experimentalist",
+        "valid": true,
+        "model_calls": 3,
+        "tools_acknowledged": 10,
+        "tools_requested_estimate": 15,
+        "unacknowledged_tool_ids_min": 5,
+        "wall_s": 123.33,
+        "input_tokens": 7939,
+        "output_tokens": 5139,
+        "final_conclusion_excerpt": "## BK-021 — отчёт экспериментатора\n\n**SOURCE_CLAIMS** — Cursor, [cursor.com/blog/improved-token-efficiency](https://cursor.com/blog/improved-token-efficiency) (полный extract, SHA-256 5f67fe27…): суммарно −7% стоимости токенов без потери качества; каждый встроенный инструмент нужен в <20% диалогов; вынос MCP-инструментов в динамический контекст дал −46.9% токенов в сессиях с MCP-вызовом; вынос встроенных инструментов срезал −60% токенов описаний статического контекста. Это данные блога вендора, не рецензируемая публикация.\n\n**TESTS_EXECUTED** — я сам вызвал: `run_fixture` для keyword, static, oracle (seed=all, 5 "
+      },
+      {
+        "role": "skeptic",
+        "valid": true,
+        "model_calls": 3,
+        "tools_acknowledged": 9,
+        "tools_requested_estimate": 9,
+        "unacknowledged_tool_ids_min": 0,
+        "wall_s": 97.96,
+        "input_tokens": 7149,
+        "output_tokens": 3657,
+        "final_conclusion_excerpt": "## Отчёт BK-021 (независимый критик/безопасник)\n\n**SOURCE_CLAIMS.** Источник: [Cursor blog — improved token efficiency](https://cursor.com/blog/improved-token-efficiency) (sha256 5f67fe27…855f, полная выгрузка). Раздел cache: явные cache-breakpoints (с GPT-5.6), «фантомное» пользовательское сообщение, снижение cold-cache-промахов на **20%**. Раздел subagents: изоляция контекста субагентов с «налогом координации»; убраны навязчивые подсказки к субагентам. Заявленные 7% (production) и 46.9% (бенчмарк) в прочитанных разделах **отсутствуют** — сравнивать их с моей метрикой нельзя: разные знаменатели (production-токен"
+      },
+      {
+        "role": "chair",
+        "valid": false,
+        "model_calls": 3,
+        "tools_acknowledged": 13,
+        "tools_requested_estimate": 18,
+        "unacknowledged_tool_ids_min": 5,
+        "wall_s": 80.69,
+        "input_tokens": 7366,
+        "output_tokens": 2822,
+        "final_conclusion_excerpt": ""
+      }
+    ],
+    "initial_cycle": {
+      "completed_specialists": 3,
+      "initial_chair_valid": false,
+      "total_wall_s": 366.6,
+      "input_tokens": 29839,
+      "output_tokens": 13862,
+      "unacknowledged_tool_use_ids_minimum": 10
+    },
+    "corrected_chair": {
+      "valid": true,
+      "audit_tool_executions": 1,
+      "tool_ids_fully_acknowledged": true,
+      "wall_s": 72.39,
+      "input_tokens": 11986,
+      "output_tokens": 2916,
+      "verdict": "# Итоговый вердикт совета BK-021\n\n**source_checks.** Независимый прогон verify_all сошёлся со всеми тремя отчётами: static 260/260 (1 085 775 симв., 2 860 лишних экспозиций), oracle 260/260 (538 875 симв., **−50,37%**, 0 ложных экспозиций на негативах), keyword 220/260 (**40 промахов, 15,4%**; 532 305 симв.; 6 ложных экспозиций). Агрегатная порча и подделка missing-set отвергнуты во всех arm — целостность данных подтверждена. `source_metrics_replicated=false`: цифры Cursor (7%, 46,9%, 60%, 20% cold-cache, 1,6%) не воспроизведены и не воспроизводимы в этой установке.\n\n**Ограничение конфликта источников.** Метрики вендора и метрики фикстуры несопоставимы напрямую: у Cursor — токены production-трафика и собственные знаменатели (сессии с MCP, токены описаний, cache-read); у нас — символы синтетических промптов. «−50,4%» oracle — это верхняя граница на символах, а не подтверждение 7% или 60% Cursor. Заявления Cursor **неэмпиричны для данного совета**: это блог вендора без рецензирования, сырых данных и воспроизводимой методологии; мы принимаем их только как самоотчёт. Дополнительно: свидетель-эксперт прочитал лишь 2 из 7 разделов и потому не нашёл «1,6%» (сокращение нумерации строк — она есть в тексте статьи), а «20%» он ошибочно свёл к доле диалогов, тогда как в статье это снижение cold-cache-промахов. Скептик дал корректное прочтение; расхождение — ошибка интерпретации источника, не данных.\n\n**actual_runs.** Все вызовы реальны (8–10 на участника, расхождение в подсчёте вызовов между экспертами незначимо). Экспериментатор честно disclose: первая партия вернулась без вывода и была перезапущена. model_calls=0 — поведение LLM не измерялось.\n\n**disagreements.** По данным расхождений нет — все три отчёта совпали с verify_all. Разошлись в акцентах: свидетель считает keyword «неприемлемым», экспериментатор — «бракующим 15,4% кейсов», скептик — «опасным без fallback». Это согласуется: рекомендация едина — keyword отклонить.\n\n**Ошибки keyword-роутера (фальсификация гипотезы «безвредной экономии»).** Гипотеза опровергнута: строковый матчинг теряет 40/260 кейсов на парафразах («make a point-in-time copy» → snapshot_db, «notify a colleague» → send_notice, «revert deployment» → rollback_release, «visualize metrics» → render_chart, «inspect kernel events» → trace_kernel), на rare-подвыборке — 50% промахов, плюс 6 ложных экспозиций на негативах (риск tool-hallucination). При этом static безопасен, но в 2× дороже; oracle недостижим как реальный селектор.\n\n**evidence_gaps.** Символы ≠ токены; 52 шаблона × 5 сидов; ноль LLM-вызовов; оценка GPT-6 отсутствовала в материалах совета — суждений о ней не выносим; разделы статьи прочитаны фрагментарно разными участниками.\n\n**verdict.** Динамическая загрузка инструментов **обоснована только при семантическом селекторе** (oracle-профиль: −50,4% символов, 100% покрытие, 0 ложных экспозиций). Naive keyword — отклонить. Внутренняя валидность высокая, внешняя — ограничена.\n\n**deployment_gate.** Production rollout **не разрешён**. Условия: shadow-режим семантического роутера; авто-fallback на static при любом промахе; A/B на реальной модели (tool-call ошибки, качество, задержка); экономия ≥20% на скользящем окне.\n\n**next_experiment.** Прогнать семантический роутер на held-out шаблонах с реальной токенизацией и LLM-исполнением, сравнить с oracle-границей.",
+      "audit": {
+        "verified": true,
+        "arms": {
+          "static": {
+            "tasks": 260,
+            "correct": 260,
+            "misses": 0,
+            "context_chars": 1085775,
+            "extra_tools": 2860,
+            "negative_false_exposure_count": 6,
+            "miss_examples": [],
+            "aggregate_corruption_rejected": true,
+            "missing_mutant_rejected": true
+          },
+          "oracle": {
+            "tasks": 260,
+            "correct": 260,
+            "misses": 0,
+            "context_chars": 538875,
+            "extra_tools": 860,
+            "negative_false_exposure_count": 0,
+            "miss_examples": [],
+            "aggregate_corruption_rejected": true,
+            "missing_mutant_rejected": true
+          },
+          "keyword": {
+            "tasks": 260,
+            "correct": 220,
+            "misses": 40,
+            "context_chars": 532305,
+            "extra_tools": 880,
+            "negative_false_exposure_count": 6,
+            "miss_examples": [
+              {
+                "id": "snapshot_db-1",
+                "required": [
+                  "snapshot_db"
+                ],
+                "available": [
+                  "edit_file",
+                  "read_file",
+                  "search_text",
+                  "shell_check"
+                ],
+                "request": "Case 1: please make a point-in-time copy on synthetic fixture only."
+              },
+              {
+                "id": "send_notice-1",
+                "required": [
+                  "send_notice"
+                ],
+                "available": [
+                  "edit_file",
+                  "read_file",
+                  "search_text",
+                  "shell_check"
+                ],
+                "request": "Case 1: please notify a colleague on synthetic fixture only."
+              },
+              {
+                "id": "rollback_release-1",
+                "required": [
+                  "rollback_release"
+                ],
+                "available": [
+                  "edit_file",
+                  "read_file",
+                  "search_text",
+                  "shell_check"
+                ],
+                "request": "Case 1: please revert deployment on synthetic fixture only."
+              }
+            ],
+            "aggregate_corruption_rejected": true,
+            "missing_mutant_rejected": true
+          }
+        },
+        "oracle_char_reduction_pct": 50.37,
+        "keyword_char_reduction_pct": 50.97,
+        "model_calls_in_fixture": 0,
+        "source_metrics_replicated": false,
+        "caveat": "characters, 52 distinct templates permuted five times; not provider tokens or real quality"
+      }
+    },
+    "total_with_rework": {
+      "wall_s": 438.99,
+      "input_tokens": 41825,
+      "output_tokens": 16778,
+      "model_calls": 14
+    },
+    "successful_path_excluding_initial_failed_chair": {
+      "wall_s": 358.3,
+      "input_tokens": 34459,
+      "output_tokens": 13956
+    }
+  },
+  "independent_reviewer_findings": {
+    "shared_major_verdict": "Reject naive keyword router, consider dynamic selection only with quality/safety gates; local context savings are NOT reproduction of Cursor production 7%",
+    "council_numeric_error": {
+      "reported_negative_false_exposures": 6,
+      "verified_negative_false_exposures": 20,
+      "unique_negative_fixtures": 4,
+      "cause": "Tool returned only first six examples; the council equated length of examples array with total count"
+    },
+    "council_source_error_caught_by_chair": "Evidence specialist misidentified 20% cache-miss-rate reduction as rare tool usage frequency; chair corrected it",
+    "protocol_issue": "Initial chair exhausted tool budget; initial role experimentalist had unacknowledged tool_use IDs because harness had five-result slice. Corrected chair acknowledged all calls with exactly one bounded audit.",
+    "rubric": [
+      {
+        "criterion": "distinguishes reported 7% total cost from independently reproduced result",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "qualifies 46.9% as MCP-invoking sessions only",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "recognizes 60% applies to static tool description tokens",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "recognizes 20% is cold-cache miss RATE",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "recognizes 1.6% is cached-read-token subset",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "recognizes 66% is system prompt reduction",
+        "chair_pass": false,
+        "note": "Chair did not explicitly restate 66% system prompt trim"
+      },
+      {
+        "criterion": "labels local char proxy as not actual model/provider tokens",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "detects rare synonym false negatives and negation false positives",
+        "chair_pass": true,
+        "note": "Based on final chair output; keyword errors caught qualitatively but negative frequency incorrect"
+      },
+      {
+        "criterion": "requires independent tool-quality and safety oracle before deployment",
+        "chair_pass": true,
+        "note": ""
+      },
+      {
+        "criterion": "states limited source details and declines production approval",
+        "chair_pass": true,
+        "note": ""
+      }
+    ],
+    "rubric_pass_count": 9,
+    "verdict": "BOUNDED_SYNTHETIC_PROXY_AND_LIVE_COUNCIL_OPERATIONAL_PASS_WITH_NUMERIC_AND_PROTOCOL_FAILURES; NO_PRODUCTION_APPROVAL"
+  },
+  "limitations": [
+    "All four ZCode roles are one GLM model family, not independent model providers",
+    "Sequential council; no parallel speed-up or apples-to-apples GPT-6 model token baseline measured",
+    "Tool fixture is deterministic and does not measure actual model tool selection, price, provider caching or safety",
+    "Five seeds merely permute 52 repeated prompts, not independent sample",
+    "Character proxy is not exact tokenizer or production 7 percent result",
+    "No real project code, private files, secrets or production integrations shown to council",
+    "No actual billing attribution to ZCode free buckets",
+    "Role first chair failed, recovered with strictly limited audit; first council tool protocol had missing tool_result acknowledgements"
+  ],
+  "artifacts": {
+    "experiment": "experiments/2026-11-07-bk021-tool-context-proxy.py"
+  }
+}

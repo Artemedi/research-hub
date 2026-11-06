@@ -5,7 +5,7 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives; BK-009 2026-11-06 official full text pinned, 5-pair live Astra A/B, 46.72% fewer input tokens, no project integration; BK-014 2026-11-06 pinned Rust OpenResearch 8 tests plus 5x5 provenance proxy A/B no orx E2E",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis; BK-005 2026-11-06 original code + 500 synthetic chain proxy, no quality advantage, validator false negatives; BK-009 2026-11-06 official full text pinned, 5-pair live Astra A/B, 46.72% fewer input tokens, no project integration; BK-014 2026-11-06 pinned Rust OpenResearch 8 tests plus 5x5 provenance proxy A/B no orx E2E; BK-021 2026-11-07 ZCode council 3 specialists+corrected chair, independent GPT-6 synthetic proxy, no production A/B",
   "count_by_status": {
     "проверен экспериментально": 17,
     "ожидает проверки": 0,
@@ -13,7 +13,7 @@
     "разобран": 29
   },
   "mapped_study_cards": 33,
-  "mapped_experimental_items": 23,
+  "mapped_experimental_items": 24,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -30,7 +30,8 @@
     "BK-002: isolated local-only port TeamAI B pass functional E2E but FAIL file-write allowlist; 35 extra tool/home paths in disposable HOME. Test source SHA not published, no deployment approval.",
     "BK-005 source components only: original chain updater/validator on synthetic 500 chains, independent DFS 500/500, API response error_count:0 false negatives; no model API or SFT; no production approval.",
     "BK-009 exact live gpt-6-astra: 5 paired synthetic tasks, 5/5 functional each arm, fewer input tokens all five B vs intentionally verbose A, 4/5 faster; no causal factor isolation or real AGENTS/skill modification.",
-    "BK-014: owner tree_hash actual, OpenResearch git archive source-derived proxy, 25 pairs; archive recovery vs metadata/dirty tradeoff; full text externally gated, no approval to integrate or replace Podman."
+    "BK-014: owner tree_hash actual, OpenResearch git archive source-derived proxy, 25 pairs; archive recovery vs metadata/dirty tradeoff; full text externally gated, no approval to integrate or replace Podman.",
+    "BK-021: full source + 5x52 synthetic tool context comparison and 4-role sequential ZCode council; 40 keyword misses, 20 negative examples; GPT-6 corrected truncated 6-count; no production approval."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -386,15 +387,17 @@
       "telegram_title_recovered": "Cursor improved token efficiency",
       "source_url": "https://cursor.com/blog/improved-token-efficiency",
       "source_kind": "Engineering article",
-      "source_audit_evidence": "PREVIOUS_ENGINEERING_REVIEW",
+      "source_audit_evidence": "CURSOR_FULL_PRIMARY_HTML_8dd4383; STATIC_260_OF_260; ORACLE_260_OF_260; KEYWORD_220_OF_260; NEGATIVE_CASES_20; ZCODE_3_SPECIALISTS_AND_CORRECTED_CHAIR; FIRST_CHAIR_BUDGET_FAIL; GPT6_INDEPENDENT_COUNT_CORRECTION",
       "initial_priority_2026_11_03": "A",
       "status": "разобран",
-      "disposition": "SOURCE_REVIEWED_ONLY",
-      "status_reason_ru": "Инженерная статья Cursor ранее разобрана в research-hub; экономия токенов локально не воспроизводилась.",
+      "disposition": "BOUNDED_ZCODE_COUNCIL_SAME_MODEL_AND_SYNTHETIC_TOOL_CONTEXT_AB_NO_ADOPTION",
+      "status_reason_ru": "Проверена полная инженерная статья Cursor. 12 synthetic tools ×52 шаблона ×5 перестановок: static 260/260; ideal-oracle dynamic 260/260 и -50.37% символов; keyword dynamic 220/260 и 20 отрицательных примеров лишнего раскрытия. Три GLM-5.3-Flash аналитика реально вызывали ограниченные проверочные инструменты; первый председатель не прошёл tool budget, исправленный председатель проверил все arm и вынес no-production. GPT-6 независимо выявил ошибку совета: 6 показанных примеров вместо полного count 20. Ни авторские -7% стоимости, ни реальные model/tool quality не воспроизводились; только исследовательский статус. См. reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
       "hub_study_card": "studies/cursor-token-efficiency.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/cursor-token-efficiency.md",
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_report": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "hub_review_report": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md"
     },
     {
       "id": "BK-022",

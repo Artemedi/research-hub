@@ -27,3 +27,11 @@ Cursor reports 7% total token-cost reduction on its traffic; reduced static tool
 - Actual integration point: `NEEDS_EVIDENCE` pending current target repository @ SHA and precise source lines.
 - Recheck full-source version and methods before a fresh cross-project recommendation; separate paper reported results from measured local benefit.
 - Approval: `RESEARCH_ONLY`; no production, runtime or permission changes are authorized.
+
+## 2026-11-07 — независимая проверка GPT-6 и ZCode-совет
+
+[Полный отчёт BK-021](../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) · [исполняемый синтетический benchmark](../experiments/2026-11-07-bk021-tool-context-proxy.py) · [машинный результат](../data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json).
+
+На полном первоисточнике Cursor и отдельном локальном симуляторе 12 tools/52 шаблона ×5 перестановок static сохраняет 260/260 доступных нужных инструментов, ideal-oracle dynamic — 260/260 с −50,37% символов контекста, наивный keyword dynamic — 220/260 с −50,97% символов. Негативный контроль обнаружил **20 случаев лишнего раскрытия редкого инструмента на отрицательных формулировках**. Это **символы, не реальные модельные токены**, и 5 seeds повторяют одни шаблоны. Авторский production −7% не воспроизведён.
+
+Три GLM-5.3-Flash эксперта ZCode выполнили разрешённые tool calls и подготовили независимые заключения; первый председатель не прошёл лимит инструментов, второй подтвердил основные числа одним независимым аудитом и вынес решение **NO_PRODUCTION_APPROVAL**. GPT-6 нашёл ошибку совета: из усечённого preview он счёл лишь 6 отрицательных примеров вместо 20. Совокупный бюджет 14 ZCode model calls: **41 825 input / 16 778 output токенов, 438,99 сек** включая переделку. Время/токены самого GPT-6 не измерены, поэтому **не доказано**, что рой эффективнее одного агента. Для `dsh-runtime` и `HermesAgent` оставлен только исследовательский кандидат с требованием shadow A/B на реальных инструментах, без правок проектов.
