@@ -32,6 +32,7 @@
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
 | [Inspektor Gadget — разрешения eBPF](inspektor-gadget/2026-11-04.md) | 2026-11-04 |
 | [BK-041 — проверка системного допуска](inspektor-gadget/2026-11-06-privilege-gate.md) | 2026-11-06 |
+| [BK-041 privileged Podman eBPF trace audit](inspektor-gadget/2026-11-06-privileged-podman-trace.md) | 2026-11-06 |
 | [IPFire fireperf — TCP loopback](ipfire-fireperf/2026-11-04.md) | 2026-11-04 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |
 | [Karpathy autoresearch — исходники и ограничения](karpathy-autoresearch/2026-11-04.md) | 2026-11-04 |

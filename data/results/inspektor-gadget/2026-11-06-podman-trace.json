@@ -1,0 +1,147 @@
+{
+  "study": "BK-041",
+  "version": "v0.57.0",
+  "ig_archive_sha256": "f5e3233c6c1ffc3ad068326913e11def23c7cef6c764e585c2205cda0e2f76f1",
+  "oci_digest": "9182278eb6a11b6e2d59a748674b646a8512b715d3563ec3afdf340a2f55d435",
+  "scope": "Rootless Podman demo, network=none, 40 synthetic exec and 5 negative, root IG with OCI pinned, no argv",
+  "trials": [
+    {
+      "phase": "comm",
+      "filter": [
+        "--comm",
+        "bk041exec"
+      ],
+      "expected_exec": 40,
+      "negative_exec": 5,
+      "observed_events": 0,
+      "matched_comm": 0,
+      "unexpected_negative": 0,
+      "distinct_event_pids": 0,
+      "unparsed_json_lines": 0,
+      "baseline_workload_seconds": 0.10276,
+      "traced_workload_seconds": 0.13088,
+      "relative_workload_delta_pct": 27.36,
+      "ig_wall_seconds": 21.693,
+      "ig_ready_lag_seconds": 1.114,
+      "ig_exit": 0,
+      "trace_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_trace_only_synthetic_filtered": true
+    },
+    {
+      "phase": "expr",
+      "filter": [
+        "--filter.exec",
+        "proc.comm==bk041exec"
+      ],
+      "expected_exec": 40,
+      "negative_exec": 5,
+      "observed_events": 40,
+      "matched_comm": 40,
+      "unexpected_negative": 0,
+      "distinct_event_pids": 40,
+      "unparsed_json_lines": 0,
+      "baseline_workload_seconds": 0.10276,
+      "traced_workload_seconds": 0.09922,
+      "relative_workload_delta_pct": -3.44,
+      "ig_wall_seconds": 21.597,
+      "ig_ready_lag_seconds": 1.0,
+      "ig_exit": 0,
+      "trace_sha256": "37644e43539c6472b89eb1c196a404a5aa8236f80c4dcf0e6586395e06c02fad",
+      "raw_trace_only_synthetic_filtered": true
+    },
+    {
+      "phase": "repeat-2",
+      "filter": [
+        "--filter.exec",
+        "proc.comm==bk041exec"
+      ],
+      "expected_exec": 40,
+      "negative_exec": 5,
+      "observed_events": 40,
+      "matched_comm": 40,
+      "unexpected_negative": 0,
+      "distinct_event_pids": 40,
+      "unparsed_json_lines": 0,
+      "baseline_workload_seconds": 0.10276,
+      "traced_workload_seconds": 0.09774,
+      "relative_workload_delta_pct": -4.89,
+      "ig_wall_seconds": 21.598,
+      "ig_ready_lag_seconds": 1.002,
+      "ig_exit": 0,
+      "trace_sha256": "333d0d33489ae621c5054fbb9841c4574eed4fc27d6ee9c8bd68055c35ab3e31",
+      "raw_trace_only_synthetic_filtered": true
+    },
+    {
+      "phase": "repeat-3",
+      "filter": [
+        "--filter.exec",
+        "proc.comm==bk041exec"
+      ],
+      "expected_exec": 40,
+      "negative_exec": 5,
+      "observed_events": 40,
+      "matched_comm": 40,
+      "unexpected_negative": 0,
+      "distinct_event_pids": 40,
+      "unparsed_json_lines": 0,
+      "baseline_workload_seconds": 0.10276,
+      "traced_workload_seconds": 0.10234,
+      "relative_workload_delta_pct": -0.41,
+      "ig_wall_seconds": 21.599,
+      "ig_ready_lag_seconds": 0.999,
+      "ig_exit": 0,
+      "trace_sha256": "9224dac3591fad1d4fc74623d341aabf7a9db7bcc1ee1aef814c7dba3a77e017",
+      "raw_trace_only_synthetic_filtered": true
+    },
+    {
+      "phase": "repeat-4",
+      "filter": [
+        "--filter.exec",
+        "proc.comm==bk041exec"
+      ],
+      "expected_exec": 40,
+      "negative_exec": 5,
+      "observed_events": 40,
+      "matched_comm": 40,
+      "unexpected_negative": 0,
+      "distinct_event_pids": 40,
+      "unparsed_json_lines": 0,
+      "baseline_workload_seconds": 0.10276,
+      "traced_workload_seconds": 0.10514,
+      "relative_workload_delta_pct": 2.32,
+      "ig_wall_seconds": 21.606,
+      "ig_ready_lag_seconds": 1.003,
+      "ig_exit": 0,
+      "trace_sha256": "c2d2508953f4e37ba8812e3f12351b8677ce51ba26fcbaab10801739a933bb9e",
+      "raw_trace_only_synthetic_filtered": true
+    },
+    {
+      "phase": "repeat-5",
+      "filter": [
+        "--filter.exec",
+        "proc.comm==bk041exec"
+      ],
+      "expected_exec": 40,
+      "negative_exec": 5,
+      "observed_events": 40,
+      "matched_comm": 40,
+      "unexpected_negative": 0,
+      "distinct_event_pids": 40,
+      "unparsed_json_lines": 0,
+      "baseline_workload_seconds": 0.10276,
+      "traced_workload_seconds": 0.11688,
+      "relative_workload_delta_pct": 13.74,
+      "ig_wall_seconds": 21.569,
+      "ig_ready_lag_seconds": 1.005,
+      "ig_exit": 0,
+      "trace_sha256": "53e92c9f61a43fad8b028f06fa8a86d22978286f19103d21f115ea6c25e37a7a",
+      "raw_trace_only_synthetic_filtered": true
+    }
+  ],
+  "limits": [
+    "One baseline, nonrandomized latency; no causal overhead estimate",
+    "No kernel dropped-event counter, BPF map audit, systemwide CPU/IO",
+    "Not a database/production test",
+    "Host processes outside containers were not traced"
+  ]
+}

@@ -25,6 +25,8 @@
 - [2026-11-05-bk065-isolated-gui.sh](2026-11-05-bk065-isolated-gui.sh)
 - [2026-11-06-agent-config-citation-locality-ab.py](2026-11-06-agent-config-citation-locality-ab.py)
 - [2026-11-06-bk034-wikipg-autoloop-oracle.py](2026-11-06-bk034-wikipg-autoloop-oracle.py)
+- [2026-11-06-bk041-host-diagnostic.py](2026-11-06-bk041-host-diagnostic.py)
+- [2026-11-06-bk041-podman-trace.py](2026-11-06-bk041-podman-trace.py)
 - [2026-11-06-bk064-poster-probe.cjs](2026-11-06-bk064-poster-probe.cjs)
 - [2026-11-06-drag-abstention-multihop-ab.py](2026-11-06-drag-abstention-multihop-ab.py)
 - [2026-11-06-drag-evidence-ood-stress.py](2026-11-06-drag-evidence-ood-stress.py)

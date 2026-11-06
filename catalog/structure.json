@@ -1273,6 +1273,34 @@
       "title": "BK-064 — generated plugin manifest",
       "kind": "data",
       "date": "2026-11-06"
+    },
+    {
+      "to": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "title": "BK-041 privileged Podman eBPF trace audit",
+      "kind": "review",
+      "date": "2026-11-06",
+      "from": null
+    },
+    {
+      "to": "data/results/inspektor-gadget/2026-11-06-podman-trace.json",
+      "title": "BK-041 Podman exec synthetic results",
+      "kind": "data",
+      "date": "2026-11-06",
+      "from": null
+    },
+    {
+      "to": "data/results/inspektor-gadget/2026-11-06-host-diagnostics.json",
+      "title": "BK-041 host diagnostic negative results",
+      "kind": "data",
+      "date": "2026-11-06",
+      "from": null
+    },
+    {
+      "to": "data/results/inspektor-gadget/2026-11-06-host-pilot.json",
+      "title": "BK-041 host initial pilot",
+      "kind": "data",
+      "date": "2026-11-06",
+      "from": null
     }
   ]
 }

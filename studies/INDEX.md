@@ -39,7 +39,7 @@
 | [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04 / hyperresearch-review](../reviews/hyperresearch/2026-11-04.md) |
 | [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
-| [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) |
+| [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) · [2026-11-06 / inspektor-gadget-podman-20261106](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) |
 | [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04 / ipfire-fireperf-review](../reviews/ipfire-fireperf/2026-11-04.md) |
 | [JevAgentHarness](jevagentharness.md) | [2026-11-03 / jevagentharness-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04 / julia-1-review](../reviews/julia-1/2026-11-04.md) |

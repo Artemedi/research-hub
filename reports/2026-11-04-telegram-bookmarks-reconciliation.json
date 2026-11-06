@@ -5,10 +5,10 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat",
   "count_by_status": {
-    "проверен экспериментально": 15,
-    "ожидает проверки": 1,
+    "проверен экспериментально": 16,
+    "ожидает проверки": 0,
     "исключён": 19,
     "разобран": 30
   },
@@ -25,7 +25,8 @@
     "The earlier BK-062/065 source-gate reports were partial and remain historical. Their dated follow-ups verify bounded components only; hub_experiment_report is a link field, not proof of full-system reproduction.",
     "BK-063 full official engineering article was recovered on 2026-11-05; orchestrator source and independent result reproduction remain unavailable.",
     "BK-034 lab validates only real Wiki_PG autoloop.sh in disposable toy worktrees with fake scripted agent, not AI LABS video/runtime, Karpathy GPU experiment, actual LLM, or production.",
-    "BK-064 is 'разобран', NOT 'проверен экспериментально' for actual DSH Creator workflow. Model generation was from external Codex CLI and testing was synthetic/isolated."
+    "BK-064 is 'разобран', NOT 'проверен экспериментально' for actual DSH Creator workflow. Model generation was from external Codex CLI and testing was synthetic/isolated.",
+    "BK-041 full eBPF verified ONLY for disposable rootless Podman synthetic exec 5x40/40 using filter.exec, not --comm; never publish raw JSON args/paths; no production or overhead claims."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -707,17 +708,17 @@
       "telegram_title_recovered": "Inspektor Gadget eBPF",
       "source_url": "https://github.com/inspektor-gadget/inspektor-gadget",
       "source_kind": "Linux observability",
-      "source_audit_evidence": "REPO_CONFIRMED",
+      "source_audit_evidence": "RELEASE_SHA_VERIFIED; ROOT_BPF_ATTACHED; PODMAN_FILTER_EXEC_5x40_OF_40_PASS; NEGATIVE_0_OF_25; COMM_FILTER_0_OF_40; JSON_ARGS_PRIVACY_RISK",
       "initial_priority_2026_11_03": "A",
-      "status": "ожидает проверки",
-      "disposition": "RELEASE_VERIFIED_OS_AUTH_REQUIRED_PRIVILEGED_BPF_NOT_RUN",
-      "status_reason_ru": "Владелец разрешил привилегированный опыт, v0.57.0 и SHA подтверждены, но Linux потребовал пароль: BPF attach, точность и overhead НЕ проверены. См. reviews/inspektor-gadget/2026-11-06-privilege-gate.md.",
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_ROOTLESS_PODMAN_EBPF_VERIFIED_FILTER_EXEC_5x40_NOT_PRODUCTION",
+      "status_reason_ru": "Привилегированный pinned trace_exec в rootless Podman: --filter.exec 5×40/40 синтетических exec, 0/25 ложных совпадений; --comm и host пробы 0/40. JSON содержит args и пути несмотря на --fields; overhead, безопасность и интеграция AKUZ не подтверждены. См. reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md.",
       "hub_study_card": "studies/inspektor-gadget.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/inspektor-gadget.md",
-      "hub_experiment_report": "reviews/inspektor-gadget/2026-11-04.md",
-      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-04.md",
-      "hub_review_report": "reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-06-privilege-gate.md"
+      "hub_experiment_report": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "hub_review_report": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md"
     },
     {
       "id": "BK-042",

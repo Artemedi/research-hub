@@ -513,14 +513,20 @@
       "card": "studies/inspektor-gadget.md",
       "title": "Inspektor Gadget",
       "fit_coverage": "PARTIAL",
-      "current_review_id": "inspektor-gadget-review",
+      "current_review_id": "inspektor-gadget-podman-20261106",
       "id": "inspektor-gadget",
       "primary_url": "https://github.com/inspektor-gadget/inspektor-gadget",
-      "card_body_sha256": "f77b02ef1b484c2a8356f71320ec7691724624d4efe69ba1f934f47d8490ac04",
+      "card_body_sha256": "05a353c4e35adce9d9c0c74f28e9c86de052d80aed8e228d905388dcbb6a0c8f",
       "linked_materials": [
         "reviews/inspektor-gadget/2026-11-04.md",
         "experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py",
-        "data/results/inspektor-gadget/2026-11-04.json"
+        "data/results/inspektor-gadget/2026-11-04.json",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+        "data/results/inspektor-gadget/2026-11-06-podman-trace.json",
+        "data/results/inspektor-gadget/2026-11-06-host-diagnostics.json",
+        "data/results/inspektor-gadget/2026-11-06-host-pilot.json",
+        "experiments/2026-11-06-bk041-podman-trace.py",
+        "experiments/2026-11-06-bk041-host-diagnostic.py"
       ]
     },
     {
@@ -3509,6 +3515,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Официальные 7 примеров и локальный Cordis source; Codex CLI вместо реального Creator, mock React/Slots, 9/9 synthetic checks, DSH Creator E2E NOT_RUN due unpatched vulnerable runtime.",
       "supersedes": null
+    },
+    {
+      "id": "inspektor-gadget-podman-20261106",
+      "study_ids": [
+        "inspektor-gadget"
+      ],
+      "version_ids": [
+        "inspektor-gadget-version"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic Podman 5×40/40 with filter.exec; 0/25 negative; --comm and host 0/40. No real DBA, safety or overhead verification.",
+      "supersedes": "inspektor-gadget-review"
     }
   ],
   "experiments": [
@@ -3693,6 +3713,25 @@
         "data/fixtures/dsh-creator/2026-11-06/code.client.js",
         "data/fixtures/dsh-creator/2026-11-06/manifest.json",
         "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md"
+      ]
+    },
+    {
+      "id": "bk041-ig-podman-exec-20261106",
+      "study_ids": [
+        "inspektor-gadget"
+      ],
+      "review_id": "inspektor-gadget-podman-20261106",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Privileged pinned IG v0.57.0 trace_exec on rootless Podman, filter.exec 5×40/40, zero of 25 negative; --comm 0/40, host 0/40.",
+      "limitations": "JSON leaks arguments despite --fields; no raw traces published. Not production-ready or an overhead estimate, no BPF kernel drop counters.",
+      "artifacts": [
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+        "data/results/inspektor-gadget/2026-11-06-podman-trace.json",
+        "data/results/inspektor-gadget/2026-11-06-host-diagnostics.json",
+        "data/results/inspektor-gadget/2026-11-06-host-pilot.json",
+        "experiments/2026-11-06-bk041-podman-trace.py",
+        "experiments/2026-11-06-bk041-host-diagnostic.py"
       ]
     }
   ],
@@ -12615,6 +12654,48 @@
       "source_line": 47,
       "source_excerpt": "| **agent-skills** | DOCUMENTED_CANDIDATE: QA rubric и cordis-plugin-development contract пригодны для будущей проверки генерации плагинов | Не создавать новый глобальный skill; добавить проверку source provenance/permissions/cleanup лишь после измерения на нескольких независимых fixtures |",
       "supersedes": null
+    },
+    {
+      "id": "bk041-ig-podman-20261106-AKUZ",
+      "study_id": "inspektor-gadget",
+      "project_id": "AKUZ",
+      "review_id": "inspektor-gadget-podman-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "BOUNDED_EBPF_VERIFIED / CONDITIONAL_CANDIDATE",
+      "evidence": "BOUNDED_EBPF_VERIFIED / CONDITIONAL_CANDIDATE",
+      "reason": "Successful synthetic Podman trace supports potential fit, but project code and actual integration not tested.",
+      "limitations": "No production database/source integration, no overhead and no privacy-safe real-world collection.",
+      "next_test": "After owner approval: isolated PostgreSQL Podman A/B plus scoped event oracle, CPU/RAM/IO, redact all JSON and inspect source seam.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Source-level integration seam in actual target not tested.",
+      "source_document": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "source_line": 43,
+      "source_excerpt": "| BK-041 Inspektor Gadget | `AKUZ` | `BOUNDED_EBPF_VERIFIED / CONDITIONAL_CANDIDATE` | Linux/PostgreSQL: потенциальный supplemental evidence для exec, file/network RCA; **только container synthetic exec проверен**. Перед production — разрешение владельца, независимая source-level интеграционная точка, ограничение данных, контроль overhead и отката; Windows MSSQL вне области |",
+      "supersedes": "inspektor-gadget-document-AKUZ"
+    },
+    {
+      "id": "bk041-ig-podman-20261106-sequential-rca",
+      "study_id": "inspektor-gadget",
+      "project_id": "sequential-rca",
+      "review_id": "inspektor-gadget-podman-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / INTEGRATION_NOT_TESTED",
+      "evidence": "DOCUMENTED_CANDIDATE / INTEGRATION_NOT_TESTED",
+      "reason": "Successful synthetic Podman trace supports potential fit, but project code and actual integration not tested.",
+      "limitations": "No production database/source integration, no overhead and no privacy-safe real-world collection.",
+      "next_test": "Inspect actual parser schema and test sanitized offline evidence import.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Source-level integration seam in actual target not tested.",
+      "source_document": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "source_line": 44,
+      "source_excerpt": "| BK-041 Inspektor Gadget | `sequential-rca` | `DOCUMENTED_CANDIDATE / INTEGRATION_NOT_TESTED` | Возможный offline evidence формат для timestamp+PID+source при безопасной redaction; schema/parser, цепь атрибуции и актуальный source-code seam НЕ проверялись; не внедрять |",
+      "supersedes": "inspektor-gadget-document-sequential-rca"
     }
   ],
   "current_assessments": [
@@ -13791,12 +13872,12 @@
     {
       "study_id": "inspektor-gadget",
       "project_id": "AKUZ",
-      "assessment_id": "inspektor-gadget-document-AKUZ"
+      "assessment_id": "bk041-ig-podman-20261106-AKUZ"
     },
     {
       "study_id": "inspektor-gadget",
       "project_id": "sequential-rca",
-      "assessment_id": "inspektor-gadget-document-sequential-rca"
+      "assessment_id": "bk041-ig-podman-20261106-sequential-rca"
     },
     {
       "study_id": "ipfire-fireperf",

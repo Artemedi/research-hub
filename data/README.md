@@ -22,6 +22,9 @@
 | [data/results/dsh-superagent-prototype/2026-11-05.json](results/dsh-superagent-prototype/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/exactly-once-limbo/2026-11-04.json](results/exactly-once-limbo/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](results/inspektor-gadget/2026-11-06-host-diagnostics.json) | Результат ограниченной проверки |
+| [data/results/inspektor-gadget/2026-11-06-host-pilot.json](results/inspektor-gadget/2026-11-06-host-pilot.json) | Результат ограниченной проверки |
+| [data/results/inspektor-gadget/2026-11-06-podman-trace.json](results/inspektor-gadget/2026-11-06-podman-trace.json) | Результат ограниченной проверки |
 | [data/results/ipfire-fireperf/2026-11-04.json](results/ipfire-fireperf/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json](results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |

@@ -6,22 +6,23 @@
 
 ## Текущий обзор
 
-[inspektor-gadget-review](../../reviews/inspektor-gadget/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
+[inspektor-gadget-podman-20261106](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) — BOUNDED_CODE_REVIEW. Synthetic Podman 5×40/40 with filter.exec; 0/25 negative; --comm and host 0/40. No real DBA, safety or overhead verification.
 
 ## Версии и история обзоров
 
 - [inspektor-gadget-review](../../reviews/inspektor-gadget/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
+- [inspektor-gadget-podman-20261106](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: inspektor-gadget-review. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
 
 ## Применимость к проектам
 
 Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-- [AKUZ](../../projects/AKUZ.md): DOCUMENTED_CANDIDATE; кандидат. Для Linux PostgreSQL это кандидат на точечное, ограниченное по времени собирание дополнительных доказательств: trace_open для доступа к файлам, trace_exec для дочерних процессов, TCP/DNS Gadgets для системных сетевых событий. Сопоставлять с pg_stat_activity, pg_stat_io, системными журналами, pid/cgroup и метриками Prometheus. Ни один eBPF-trace не является SQL-планом, не заменяет EXPLAIN (ANALYZE, BUFFERS) и не даёт автоматически причинно-следственного доказательства. Ограничения: Документальная исследовательская оценка, не подтверждённая интеграция. The cited source states only the documentary scope shown; it does not establish source-level integration or measured project benefit. Следующий тест: Follow the bounded next step in the cited source; project revision/hash not normalized. [Основание](../../reviews/inspektor-gadget/2026-11-04.md); предыдущая оценка: нет.
-- [sequential-rca](../../projects/sequential-rca.md): DOCUMENTED_CANDIDATE; пригодность условная. Для sequential-rca пригодность условная: только как офлайновый evidence-формат, если отдельно подтвердить подходящий schema/parser interface и контракт timestamp/source attribution. Привязка к текущим конкретным строкам RCA-кода не проверена. Для Windows MSSQL этот Linux eBPF-инструмент напрямую не подходит (нужны ETW/PerfMon/SQL extended events); нельзя объявлять единое решение на обе СУБД. Ограничения: Документальная исследовательская оценка, не подтверждённая интеграция. The cited source states only the documentary scope shown; it does not establish source-level integration or measured project benefit. Следующий тест: Follow the bounded next step in the cited source; project revision/hash not normalized. [Основание](../../reviews/inspektor-gadget/2026-11-04.md); предыдущая оценка: нет.
+- [AKUZ](../../projects/AKUZ.md): DOCUMENTED_CANDIDATE; BOUNDED_EBPF_VERIFIED / CONDITIONAL_CANDIDATE. Successful synthetic Podman trace supports potential fit, but project code and actual integration not tested. Ограничения: No production database/source integration, no overhead and no privacy-safe real-world collection. Следующий тест: After owner approval: isolated PostgreSQL Podman A/B plus scoped event oracle, CPU/RAM/IO, redact all JSON and inspect source seam. [Основание](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md); предыдущая оценка: inspektor-gadget-document-AKUZ.
+- [sequential-rca](../../projects/sequential-rca.md): DOCUMENTED_CANDIDATE; DOCUMENTED_CANDIDATE / INTEGRATION_NOT_TESTED. Successful synthetic Podman trace supports potential fit, but project code and actual integration not tested. Ограничения: No production database/source integration, no overhead and no privacy-safe real-world collection. Следующий тест: Inspect actual parser schema and test sanitized offline evidence import. [Основание](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md); предыдущая оценка: inspektor-gadget-document-sequential-rca.
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- bk041-ig-podman-exec-20261106: SYNTHETIC / OBSERVED. Privileged pinned IG v0.57.0 trace_exec on rootless Podman, filter.exec 5×40/40, zero of 25 negative; --comm 0/40, host 0/40. JSON leaks arguments despite --fields; no raw traces published. Not production-ready or an overhead estimate, no BPF kernel drop counters. [Артефакт](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) · [Артефакт](../../data/results/inspektor-gadget/2026-11-06-podman-trace.json) · [Артефакт](../../data/results/inspektor-gadget/2026-11-06-host-diagnostics.json) · [Артефакт](../../data/results/inspektor-gadget/2026-11-06-host-pilot.json) · [Артефакт](../../experiments/2026-11-06-bk041-podman-trace.py) · [Артефакт](../../experiments/2026-11-06-bk041-host-diagnostic.py)
 
 ## Ссылки из исходной карточки
 
@@ -30,3 +31,9 @@
 - [reviews/inspektor-gadget/2026-11-04.md](../../reviews/inspektor-gadget/2026-11-04.md)
 - [experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py](../../experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py)
 - [data/results/inspektor-gadget/2026-11-04.json](../../data/results/inspektor-gadget/2026-11-04.json)
+- [reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md)
+- [data/results/inspektor-gadget/2026-11-06-podman-trace.json](../../data/results/inspektor-gadget/2026-11-06-podman-trace.json)
+- [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](../../data/results/inspektor-gadget/2026-11-06-host-diagnostics.json)
+- [data/results/inspektor-gadget/2026-11-06-host-pilot.json](../../data/results/inspektor-gadget/2026-11-06-host-pilot.json)
+- [experiments/2026-11-06-bk041-podman-trace.py](../../experiments/2026-11-06-bk041-podman-trace.py)
+- [experiments/2026-11-06-bk041-host-diagnostic.py](../../experiments/2026-11-06-bk041-host-diagnostic.py)

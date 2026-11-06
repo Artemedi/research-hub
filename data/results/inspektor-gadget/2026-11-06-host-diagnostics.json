@@ -1,0 +1,61 @@
+{
+  "study": "BK-041",
+  "date": "2026-11-06",
+  "release_archive_sha256": "f5e3233c6c1ffc3ad068326913e11def23c7cef6c764e585c2205cda0e2f76f1",
+  "gadget_oci_manifest_sha256": "9182278eb6a11b6e2d59a748674b646a8512b715d3563ec3afdf340a2f55d435",
+  "unprivileged_workload_uid": 1000,
+  "scope": "Host root ig run; UID and comm/expr prefilter; synthetic C test executable only; no command arguments",
+  "cases": [
+    {
+      "phase": "comm",
+      "filter": [
+        "--comm",
+        "bk041exec"
+      ],
+      "ig_exit": 0,
+      "expected": 40,
+      "seen_events": 0,
+      "matched_unique_pids": 0,
+      "missing": 40,
+      "negative_control_runs": 5,
+      "negative_control_seen": 0,
+      "invalid_json_lines": 0,
+      "baseline_seconds": 2.547376,
+      "traced_seconds": 2.547679,
+      "tracer_wall_seconds": 41.457,
+      "stderr_bytes": 52620,
+      "startup_wait_seconds": 23,
+      "trace_filename": "diagnostic-comm-exec.jsonl",
+      "evidence_limits": "Trace attach was not independently probed; missing events may reflect filter, readiness, or kernel loss."
+    },
+    {
+      "phase": "expr",
+      "filter": [
+        "--filter-expr.exec",
+        "proc.comm == \"bk041exec\""
+      ],
+      "ig_exit": 0,
+      "expected": 40,
+      "seen_events": 0,
+      "matched_unique_pids": 0,
+      "missing": 40,
+      "negative_control_runs": 5,
+      "negative_control_seen": 0,
+      "invalid_json_lines": 0,
+      "baseline_seconds": 2.547291,
+      "traced_seconds": 2.548355,
+      "tracer_wall_seconds": 41.108,
+      "stderr_bytes": 52117,
+      "startup_wait_seconds": 23,
+      "trace_filename": "diagnostic-expr-exec.jsonl",
+      "evidence_limits": "Trace attach was not independently probed; missing events may reflect filter, readiness, or kernel loss."
+    }
+  ],
+  "caveats": [
+    "No production process selected; filters are limited to test executable",
+    "No independently measured BPF attach time; 23s readiness delay is heuristic",
+    "No kernel event loss counters, RSS, kernel maps, or true p95 inference",
+    "Baseline-vs-traced timings are sequential and not a randomized A/B",
+    "No per-process real workload claims"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "v0.57.0",
+  "binary_archive_sha256": "f5e3233c6c1ffc3ad068326913e11def23c7cef6c764e585c2205cda0e2f76f1",
+  "gadget_manifest_sha256": "9182278eb6a11b6e2d59a748674b646a8512b715d3563ec3afdf340a2f55d435",
+  "scope": "root eBPF trace_exec, synthetic executable comm only, no process args",
+  "trials": [
+    {
+      "trial": 1,
+      "uid": 1000,
+      "tag": "bk041exec",
+      "gadget": "ghcr.io/inspektor-gadget/gadget/trace_exec@sha256:9182278eb6a11b6e2d59a748674b646a8512b715d3563ec3afdf340a2f55d435",
+      "expected_execs": 40,
+      "observed_events": 0,
+      "matched_distinct_pids": 0,
+      "missing_execs": 40,
+      "negative_control_expected": 5,
+      "negative_control_seen": 0,
+      "duplicate_events": 0,
+      "non_json_log_lines": 0,
+      "baseline_workload_seconds": 0.048896,
+      "traced_workload_seconds": 0.049227,
+      "relative_workload_delta_pct": 0.68,
+      "tracer_wall_seconds": 29.407,
+      "ig_exit_status": 0,
+      "trace_file": "trace-01.jsonl"
+    }
+  ],
+  "limitations": [
+    "host-level capture with kernel filter --comm and --uid; filter correctness checked by negative control",
+    "tracer emits only comm,pid,parent.pid,uid,timestamp, no args",
+    "baseline and tracer loops are sequential, not randomized; timing deltas descriptive",
+    "kernel map/link inventory and per-event loss counter were not measured",
+    "systemwide CPU/RAM/IO and production DBA impact were not measured"
+  ]
+}
