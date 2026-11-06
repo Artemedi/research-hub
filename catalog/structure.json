@@ -1216,6 +1216,13 @@
       "title": "DRAG offline A/B — abstention, graph evidence and OOD stress",
       "kind": "portfolio",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "title": "Unreal Agent — первоисточники и проверка стоимости",
+      "kind": "review",
+      "date": "2026-11-06"
     }
   ]
 }

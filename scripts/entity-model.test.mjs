@@ -41,7 +41,10 @@ test('project and study views expose the same current decision and limits', () =
     assert.ok(pages.get(file).includes(a.decision)); assert.ok(pages.get(file).includes(a.evidence));
   }
   assert.ok(pages.get('catalog/studies/unreal-agent.md').includes('NOT_MIGRATED') === false);
-  assert.ok(pages.get('catalog/studies/unreal-agent.md').includes('Это не NO_FIT'));
+  const unreal = original.assessments.find(a => a.id === 'unreal-bk025-20261106-dsh-runtime');
+  for (const file of ['catalog/studies/unreal-agent.md', 'projects/dsh-runtime.md']) {
+    assert.ok(pages.get(file).includes(unreal.decision)); assert.ok(pages.get(file).includes(unreal.evidence));
+  }
 });
 test('Hyra article hash and coverage are not presented as source-code verification', () => {
   const r = original.reviews.find(r => r.id === 'hyra-2-primary');

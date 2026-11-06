@@ -37,22 +37,17 @@
     },
     {
       "id": "unreal-agent",
-      "title": "Unreal Agent — исходное видео",
+      "title": "Unreal Agent — видео и инженерный обзор",
       "kind": "video",
       "card": "studies/unreal-agent-bk025.md",
       "primary_url": "https://www.youtube.com/watch?v=eFBSlgXG3U0",
-      "current_review_id": "unreal-access",
-      "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
-      "card_body_sha256": "d9950697926ba2f811dbeffb020b2a2054ea702e0b5056f1d9f12cc7da3ec213",
+      "current_review_id": "unreal-source-audit-2026-11-06",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "399b065d59d4b37e3773ef449d439d2543df5dbe80cf17c3a2a9aa5382cbd96c",
       "linked_materials": [
-        "reviews/unreal-agent/2026-11-04.md"
-      ],
-      "fit_summary": {
-        "status": "UNKNOWN",
-        "document": "studies/unreal-agent-bk025.md",
-        "line": 8,
-        "excerpt": "- **Метод и соответствие проектам:** `UNKNOWN / NEEDS_EVIDENCE`. Проверены профили всего портфеля; без содержимого оригинала нельзя подтвердить ни один предметный match. Backlinks отсутствуют; запуск и проверка стоимости `NOT_RUN`."
-      }
+        "reviews/unreal-agent/2026-11-04.md",
+        "reviews/unreal-agent/2026-11-06-source-audit.md"
+      ]
     },
     {
       "id": "rrsi",
@@ -1216,7 +1211,7 @@
       "study_id": "unreal-agent",
       "ref": null,
       "url": "https://www.youtube.com/watch?v=eFBSlgXG3U0",
-      "unknown_reason": "Версия исходного видео не установлена; полный текст недоступен."
+      "unknown_reason": "Версия оригинального YouTube-видео не установлена; пользовательский транскрипт независимо не сверялся."
     },
     {
       "id": "rrsi-v3",
@@ -1924,6 +1919,12 @@
       "ref": "6868817518876de8fd170c6a8354daca273b6191",
       "url": "https://github.com/google-research/harness2/tree/6868817518876de8fd170c6a8354daca273b6191",
       "unknown_reason": null
+    },
+    {
+      "id": "unreal-agent-a5f3-20261106",
+      "study_id": "unreal-agent",
+      "ref": "a5f3fd13032737142916523ae4344c392292f9d5",
+      "url": "https://github.com/unreallabsai/unreal-agent/tree/a5f3fd13032737142916523ae4344c392292f9d5"
     }
   ],
   "reviews": [
@@ -3435,6 +3436,21 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Offline synthetic schema, held-out seeds and posthoc adversarial formats only; not author DRAG_QPP/SFT; structured metadata and link IDs are artificial; no verified project seam, no LLM or production.",
       "supersedes": null
+    },
+    {
+      "id": "unreal-source-audit-2026-11-06",
+      "study_ids": [
+        "unreal-agent"
+      ],
+      "version_ids": [
+        "unreal-unknown",
+        "unreal-agent-a5f3-20261106"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Официальная статья и pinned Go исходники изучены; YouTube-видео не аутентифицировано, Harbor не подтверждает счета Unreal Agent; Go tests, paid A/B и runtime E2E не запускались.",
+      "supersedes": "unreal-access"
     }
   ],
   "experiments": [
@@ -12233,6 +12249,132 @@
       "source_line": 65,
       "source_excerpt": "**Вердикт:** `ADOPT_SELECTION_DISCIPLINE_NOT_AUTO_EVOLUTION`. Для `agent-config` — отдельно и хирургически исправить проверку местоположения цитаты после регрессионных тестов. Для `dsh-runtime` — не добавлять RRSI/Harness² engine поверх существующего verifier, пока нет воспроизводимого offline-replay набора реальных traces и immutable holdout. В production-контур не направлять агента, который меняет собственные prompts/tools без независимого oracle и отдельного approval.",
       "supersedes": null
+    },
+    {
+      "id": "unreal-bk025-20261106-dsh-runtime",
+      "study_id": "unreal-agent",
+      "project_id": "dsh-runtime",
+      "review_id": "unreal-source-audit-2026-11-06",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "CANDIDATE",
+      "evidence": "Node/TS Cordis agent-loop",
+      "reason": "Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение.",
+      "limitations": "Только исходники Unreal Agent и проектный профиль; текущий implementation seam, correctness, latency и стоимость не измерены.",
+      "next_test": "Сверить текущий owning-repo HEAD и измерить конкретный tool scheduling bottleneck в disposable offline fixture; тестировать только после security gate.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Активный runtime target и точная интеграционная граница самостоятельно не подтверждены.",
+      "source_document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_line": 51,
+      "source_excerpt": "| **[dsh-runtime](https://github.com/Artemedi/dsh-runtime)** — главный `CANDIDATE` | Собственный Node/TS Cordis agent-loop: tool orchestration, context compression и long-session continuation непосредственно соответствуют источнику | Сначала сравнить с уже имеющимся `benchmarks/agent-continuation/` и event loop на **pinned HEAD**; исключить уже реализованный event-driven подход. **CVE-2026-82533 остаётся единственным P0 приоритетом безопасности; эксперимент без патча — только disposable/offline** |",
+      "supersedes": null
+    },
+    {
+      "id": "unreal-bk025-20261106-agent-config",
+      "study_id": "unreal-agent",
+      "project_id": "agent-config",
+      "review_id": "unreal-source-audit-2026-11-06",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "MEASUREMENT_CANDIDATE",
+      "evidence": "Agent hooks",
+      "reason": "Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение.",
+      "limitations": "Только исходники Unreal Agent и проектный профиль; текущий implementation seam, correctness, latency и стоимость не измерены.",
+      "next_test": "Сверить текущий owning-repo HEAD и измерить конкретный tool scheduling bottleneck в disposable offline fixture; тестировать только после security gate.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Активный runtime target и точная интеграционная граница самостоятельно не подтверждены.",
+      "source_document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_line": 52,
+      "source_excerpt": "| **[agent-config](https://github.com/Artemedi/agent-config)** — `MEASUREMENT_CANDIDATE` | Agent hooks, review и trace могут служить сборщиком метрик повторных poll-turns и token taxonomy | Конфигурируемые hooks не равны асинхронному runtime; **не** переносить сюда Go coordinator |",
+      "supersedes": null
+    },
+    {
+      "id": "unreal-bk025-20261106-hermesagent",
+      "study_id": "unreal-agent",
+      "project_id": "HermesAgent",
+      "review_id": "unreal-source-audit-2026-11-06",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SECONDARY_TRIAGE",
+      "evidence": "Gateway scheduling",
+      "reason": "Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение.",
+      "limitations": "Только исходники Unreal Agent и проектный профиль; текущий implementation seam, correctness, latency и стоимость не измерены.",
+      "next_test": "Сверить текущий owning-repo HEAD и измерить конкретный tool scheduling bottleneck в disposable offline fixture; тестировать только после security gate.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Активный runtime target и точная интеграционная граница самостоятельно не подтверждены.",
+      "source_document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_line": 53,
+      "source_excerpt": "| **[HermesAgent](https://github.com/Artemedi/HermesAgent)** — `SECONDARY_TRIAGE` | Gateway scheduling и длительные tools потенциально создают лишние status turns | Это git-tracked live config, не SDK; без логов провайдера и symbol-level seam нельзя утверждать, что он сейчас делает model-based polling |",
+      "supersedes": null
+    },
+    {
+      "id": "unreal-bk025-20261106-sequential-rca",
+      "study_id": "unreal-agent",
+      "project_id": "sequential-rca",
+      "review_id": "unreal-source-audit-2026-11-06",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SECONDARY_TRIAGE",
+      "evidence": "read-only evidence requests",
+      "reason": "Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение.",
+      "limitations": "Только исходники Unreal Agent и проектный профиль; текущий implementation seam, correctness, latency и стоимость не измерены.",
+      "next_test": "Сверить текущий owning-repo HEAD и измерить конкретный tool scheduling bottleneck в disposable offline fixture; тестировать только после security gate.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Активный runtime target и точная интеграционная граница самостоятельно не подтверждены.",
+      "source_document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_line": 54,
+      "source_excerpt": "| **[sequential-rca](https://github.com/Artemedi/sequential-rca)** — `SECONDARY_TRIAGE` | Несвязанные read-only evidence requests при DBA расследованиях можно потенциально распараллелить | Но текущий offline evidence gateway и логические зависимости требуют более сильного проверенного seam; не вызывать SQL/production |",
+      "supersedes": null
+    },
+    {
+      "id": "unreal-bk025-20261106-akuz",
+      "study_id": "unreal-agent",
+      "project_id": "AKUZ",
+      "review_id": "unreal-source-audit-2026-11-06",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_NO_FIT",
+      "source_decision": "NO_DIRECT_FIT",
+      "evidence": "NO_DIRECT_FIT",
+      "reason": "У исследуемого механизма нет прямого предметного контракта с проектом.",
+      "limitations": "Только исходники Unreal Agent и проектный профиль; текущий implementation seam, correctness, latency и стоимость не измерены.",
+      "next_test": null,
+      "next_test_reason": "Отдельный эксперимент не нужен без появления прямого целевого контракта.",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Активный runtime target и точная интеграционная граница самостоятельно не подтверждены.",
+      "source_document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_line": 56,
+      "source_excerpt": "| **[AKUZ](https://github.com/Artemedi/AKUZ)** и **[TelegramBot](https://github.com/Artemedi/TelegramBot)** — `NO_DIRECT_FIT` | Ни OLTP SQL план, ни публикация video digest не улучшаются сами по себе от замены agent-loop | Возможная польза только через другие агентные компоненты; не создавать прямых backlinks |",
+      "supersedes": null
+    },
+    {
+      "id": "unreal-bk025-20261106-telegrambot",
+      "study_id": "unreal-agent",
+      "project_id": "TelegramBot",
+      "review_id": "unreal-source-audit-2026-11-06",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_NO_FIT",
+      "source_decision": "NO_DIRECT_FIT",
+      "evidence": "NO_DIRECT_FIT",
+      "reason": "У исследуемого механизма нет прямого предметного контракта с проектом.",
+      "limitations": "Только исходники Unreal Agent и проектный профиль; текущий implementation seam, correctness, latency и стоимость не измерены.",
+      "next_test": null,
+      "next_test_reason": "Отдельный эксперимент не нужен без появления прямого целевого контракта.",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Активный runtime target и точная интеграционная граница самостоятельно не подтверждены.",
+      "source_document": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "source_line": 56,
+      "source_excerpt": "| **[AKUZ](https://github.com/Artemedi/AKUZ)** и **[TelegramBot](https://github.com/Artemedi/TelegramBot)** — `NO_DIRECT_FIT` | Ни OLTP SQL план, ни публикация video digest не улучшаются сами по себе от замены agent-loop | Возможная польза только через другие агентные компоненты; не создавать прямых backlinks |",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -14035,6 +14177,36 @@
       "study_id": "harness2",
       "project_id": "dsh-runtime",
       "assessment_id": "harness2-document-dsh-runtime"
+    },
+    {
+      "study_id": "unreal-agent",
+      "project_id": "dsh-runtime",
+      "assessment_id": "unreal-bk025-20261106-dsh-runtime"
+    },
+    {
+      "study_id": "unreal-agent",
+      "project_id": "agent-config",
+      "assessment_id": "unreal-bk025-20261106-agent-config"
+    },
+    {
+      "study_id": "unreal-agent",
+      "project_id": "HermesAgent",
+      "assessment_id": "unreal-bk025-20261106-hermesagent"
+    },
+    {
+      "study_id": "unreal-agent",
+      "project_id": "sequential-rca",
+      "assessment_id": "unreal-bk025-20261106-sequential-rca"
+    },
+    {
+      "study_id": "unreal-agent",
+      "project_id": "AKUZ",
+      "assessment_id": "unreal-bk025-20261106-akuz"
+    },
+    {
+      "study_id": "unreal-agent",
+      "project_id": "TelegramBot",
+      "assessment_id": "unreal-bk025-20261106-telegrambot"
     }
   ],
   "relations": [

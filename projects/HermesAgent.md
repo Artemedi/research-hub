@@ -32,6 +32,7 @@
 | [youtube-skills](../catalog/studies/youtube-skills.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | - Проекты: agent-skills, HermesAgent, TelegramBot — условные сценарии, PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE. Нет установки навыка и production approval. Обзор и план. | [Обзор](../reviews/youtube-skills/2026-11-04.md) · [Основание](../studies/youtube-skills.md) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Gateway configuration, не DSH runtime source; нет доказанного plugin seam Superagent. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [agent-risk](../catalog/studies/agent-risk.md) | DOCUMENTED_CANDIDATE | P1 / PROJECT_PROFILE_MATCH | Pre-change gate: логи, snapshot и неизвестные продолжения; harm/utility и воспроизводимость | [Обзор](../studies/agent-risk.md) · [Основание](../portfolio/2026-10-12--2026-10-19/project-fit.md) |
+| [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_CANDIDATE | Gateway scheduling | Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

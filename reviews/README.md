@@ -59,6 +59,7 @@
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [Understand Anything — граф и SQL parser](understand-anything/2026-11-04.md) | 2026-11-04 |
 | [Unreal Agent — доступность исходного видео](unreal-agent/2026-11-04.md) | 2026-11-04 |
+| [Unreal Agent — первоисточники и проверка стоимости](unreal-agent/2026-11-06-source-audit.md) | 2026-11-06 |
 | [Unsloth — обучение decision model](unsloth-decision-model/2026-11-04.md) | 2026-11-04 |
 | [Agent Desktop — ссылки и разрешения](vercel-agent-desktop/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [Agent Desktop — изолированная проверка Wayland](vercel-agent-desktop/2026-11-05-wayland.md) | 2026-11-05 |

@@ -6,7 +6,7 @@
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: PARTIAL.
 - [REA — Reverse Engineer Anything](rea.md); project fit: MIGRATED.
-- [Unreal Agent — исходное видео](unreal-agent.md); project fit: NO_DOCUMENTED_ASSESSMENT.
+- [Unreal Agent — видео и инженерный обзор](unreal-agent.md); project fit: PARTIAL.
 - [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md); project fit: PARTIAL.
 - [Harness² — Recursive Agent Harnessing for an Open World](harness2.md); project fit: PARTIAL.
 - [Hyra 2.0](hyra-2.md); project fit: MIGRATED.

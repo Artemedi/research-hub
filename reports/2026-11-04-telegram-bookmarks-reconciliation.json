@@ -5,12 +5,12 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub, BK-062/063/065 follow-up evidence 2026-11-05; other records retain recorded evidence",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence",
   "count_by_status": {
     "проверен экспериментально": 14,
-    "ожидает проверки": 4,
+    "ожидает проверки": 3,
     "исключён": 19,
-    "разобран": 28
+    "разобран": 29
   },
   "mapped_study_cards": 31,
   "mapped_experimental_items": 17,
@@ -435,17 +435,17 @@
       "telegram_title_recovered": "Unreal Agent cost vs Codex video",
       "source_url": "https://www.youtube.com/watch?v=eFBSlgXG3U0",
       "source_kind": "Video testimony",
-      "source_audit_evidence": "USER_FULL_TRANSCRIPT_AVAILABLE_PRIMARY_UNVERIFIED",
+      "source_audit_evidence": "OFFICIAL_FULL_ENGINEERING_ARTICLE_SOURCE_PINNED; ORIGINAL_VIDEO_UNVERIFIED",
       "initial_priority_2026_11_03": "A",
-      "status": "ожидает проверки",
-      "disposition": "USER_TRANSCRIPT_AVAILABLE_PRIMARY_VIDEO_NOT_VERIFIED",
-      "status_reason_ru": "Пользователь предоставил полный по структуре текст/таймкоды; исходное YouTube-видео не перепроверено. Авторский benchmark не воспроизводился. См. reviews/telegram-transcripts/2026-11-06-user-provided.md.",
+      "status": "разобран",
+      "disposition": "SOURCE_REVIEWED_COST_AB_NOT_RUN",
+      "status_reason_ru": "Полная официальная статья от 22.09.2026 и Go-источники Unreal Agent @a5f3fd1 изучены; публичный Harbor не позволяет независимо воспроизвести суммы стоимости Unreal. Исходное видео BK-025 не аутентифицировано, функциональный A/B не выполнялся. См. reviews/unreal-agent/2026-11-06-source-audit.md.",
       "hub_study_card": "studies/unreal-agent-bk025.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/unreal-agent-bk025.md",
       "hub_experiment_report": null,
       "hub_experiment_url": null,
-      "hub_review_report": "reviews/unreal-agent/2026-11-04.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/unreal-agent/2026-11-04.md"
+      "hub_review_report": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/unreal-agent/2026-11-06-source-audit.md"
     },
     {
       "id": "BK-026",
