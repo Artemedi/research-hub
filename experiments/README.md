@@ -24,6 +24,8 @@
 - [2026-11-05-bk065-gui-probe.py](2026-11-05-bk065-gui-probe.py)
 - [2026-11-05-bk065-isolated-gui.sh](2026-11-05-bk065-isolated-gui.sh)
 - [2026-11-06-agent-config-citation-locality-ab.py](2026-11-06-agent-config-citation-locality-ab.py)
+- [2026-11-06-drag-abstention-multihop-ab.py](2026-11-06-drag-abstention-multihop-ab.py)
+- [2026-11-06-drag-evidence-ood-stress.py](2026-11-06-drag-evidence-ood-stress.py)
 - [2026-11-06-drag-retrieval-depth-ab.py](2026-11-06-drag-retrieval-depth-ab.py)
 - [2026-11-06-limbo-telegrambot-policy-ab.py](2026-11-06-limbo-telegrambot-policy-ab.py)
 - [2026-11-06-rrsi-validation-harness2-ab.py](2026-11-06-rrsi-validation-harness2-ab.py)
@@ -38,3 +40,4 @@
 - [bk048-understand-anything/sql-fixture.mjs](bk048-understand-anything/sql-fixture.mjs)
 - [bk050-chartli/normalize-fixture.mjs](bk050-chartli/normalize-fixture.mjs)
 - [bk053-yahont/id-fixture.py](bk053-yahont/id-fixture.py)
+- [tests/test_drag_evidence_gate.py](tests/test_drag_evidence_gate.py)

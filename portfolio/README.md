@@ -12,6 +12,7 @@
 | [Решение BK-041/BK-064/CVE — лабораторные проверки и риск](2026-11-06/review.md) | 2026-11-06 |
 | [Начало воспроизводимых offline A/B — пилот и очередь](2026-11-06/offline-ab-pilot.md) | 2026-11-06 |
 | [Offline A/B — LIMBO и RRSI/Harness²: вторые пилоты](2026-11-06/offline-ab-followup.md) | 2026-11-06 |
+| [DRAG offline A/B — abstention, graph evidence and OOD stress](2026-11-06/offline-ab-evidence-gate.md) | 2026-11-06 |
 | [DRAG offline A/B — итог и отрицательные контроли](2026-11-06/offline-ab-drag.md) | 2026-11-06 |
 | [Приоритетная очередь интеграций — безопасность DSH, Creator Mode и Inspektor Gadget](2026-11-06/integration-priority.md) | 2026-11-06 |
 | [Проверенные версии источников и внешние блокировки](2026-11-05/source-version-gates.md) | 2026-11-05 |

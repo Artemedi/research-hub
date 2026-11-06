@@ -1202,6 +1202,20 @@
       "title": "DRAG offline A/B — итог и отрицательные контроли",
       "kind": "portfolio",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/drag/2026-11-06-evidence-gate-ab.md",
+      "title": "DRAG — offline evidence gate and adversarial validation",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-06/offline-ab-evidence-gate.md",
+      "title": "DRAG offline A/B — abstention, graph evidence and OOD stress",
+      "kind": "portfolio",
+      "date": "2026-11-06"
     }
   ]
 }

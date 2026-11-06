@@ -3421,6 +3421,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Own Python BM25 and DRAG-inspired routing only; no upstream DRAG_QPP/SFT, model, perplexity or real project workload. Synthetic data; no integration approved.",
       "supersedes": null
+    },
+    {
+      "id": "drag-evidence-guard-ab-2026-11-06",
+      "study_ids": [
+        "drag"
+      ],
+      "version_ids": [
+        "verified-drag-2026-11-05"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/drag/2026-11-06-evidence-gate-ab.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Offline synthetic schema, held-out seeds and posthoc adversarial formats only; not author DRAG_QPP/SFT; structured metadata and link IDs are artificial; no verified project seam, no LLM or production.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -3535,6 +3549,41 @@
         "experiments/2026-11-06-drag-retrieval-depth-ab.py",
         "data/results/drag/2026-11-06-retrieval-depth-ab.json",
         "reviews/drag/2026-11-06-retrieval-ab.md"
+      ]
+    },
+    {
+      "id": "drag-evidence-guard-holdout-ab-2026-11-06",
+      "study_ids": [
+        "drag"
+      ],
+      "review_id": "drag-evidence-guard-ab-2026-11-06",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "3 dev seeds choose threshold 1.0 before 5 sealed new seed holdouts 20261211-15. 96 generated docs and 84 queries per seed, 180 positives/240 negatives total. Five arms on same BM25; baseline recall@3 75%, complete 66.7%, negative abstention 0%, citation precision 14.3%; schema+linked-runbook 100% on all these synthetic metrics, +10.7% CPU/wall. Wrong-link negative fails as expected; original first run invalidated and archived.",
+      "limitations": "Not original DRAG; in-memory graph by direct link rather than second ranked retrieval, and exact machine-readable metadata built with same schema across calibration and holdout. Only synthetic oracle, no independent human labels. Tokens/VRAM N/A and API cost 0 due no model calls; do not transfer scores.",
+      "artifacts": [
+        "experiments/2026-11-06-drag-abstention-multihop-ab.py",
+        "experiments/tests/test_drag_evidence_gate.py",
+        "data/results/drag/2026-11-06-abstention-multihop-ab.json",
+        "data/results/drag/2026-11-06-invalidated-parser-run.json",
+        "reviews/drag/2026-11-06-evidence-gate-ab.md"
+      ]
+    },
+    {
+      "id": "drag-evidence-gate-ood-stress-2026-11-06",
+      "study_ids": [
+        "drag"
+      ],
+      "review_id": "drag-evidence-guard-ab-2026-11-06",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Posthoc adversarial stress on five new seeds 20261231-35: baseline vs frozen schema+link guard. kind= to kind: format shift preserves BM25 top-3, but guarded positive coverage drops to 0% while negative abstention stays 100%. Inserting four forged schema-compatible observation docs per incident drops guard citation precision to 0%, positive coverage to 66.7%. Explicitly severe synthetic stress and not a blind holdout.",
+      "limitations": "Not representative incident frequency or trusted-source corpus; spoofed documents injected with 4:1 prevalence and no content provenance. Same-script synthetic oracle, no original DRAG models or real project data. Token and VRAM metrics N/A.",
+      "artifacts": [
+        "experiments/2026-11-06-drag-evidence-ood-stress.py",
+        "data/results/drag/2026-11-06-evidence-ood-stress.json",
+        "experiments/tests/test_drag_evidence_gate.py",
+        "reviews/drag/2026-11-06-evidence-gate-ab.md"
       ]
     }
   ],
