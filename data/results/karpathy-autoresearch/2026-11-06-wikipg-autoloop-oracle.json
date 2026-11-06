@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-06",
+  "scope": "actual Wiki_PG autoloop.sh orchestration, isolated toy git worktrees + scripted mock agent; NOT real AI or Wiki_PG app",
+  "origin_project": "Artemedi/Wiki_PG",
+  "origin_ref": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "script_path": "scripts/autoloop.sh",
+  "script_git_blob_sha1": "02efc45529089c9e15688b92421d3e87a807318c",
+  "source_from": "GitHub authenticated connector",
+  "runs": 6,
+  "results": [
+    {
+      "case": "domain-only",
+      "seed": 17,
+      "locked_checks": 11,
+      "locked_check_digest_stable": true,
+      "round_results": [
+        "pass"
+      ],
+      "outcome": "pass",
+      "heldout_ui_oracle_pass": false,
+      "agent_rounds": 1,
+      "lessons_result": [],
+      "wall_seconds": 0.45906,
+      "child_cpu_seconds": 0.45966,
+      "child_peak_rss_kb_hiwater": 51420,
+      "tokens": null,
+      "cost_usd": 0,
+      "gpu_vram_mb": null,
+      "disk_io_bytes": null,
+      "trial_commit": "1bc974de16c112b7de43e972785d4786b9865d51"
+    },
+    {
+      "case": "domain-only",
+      "seed": 23,
+      "locked_checks": 11,
+      "locked_check_digest_stable": true,
+      "round_results": [
+        "pass"
+      ],
+      "outcome": "pass",
+      "heldout_ui_oracle_pass": false,
+      "agent_rounds": 1,
+      "lessons_result": [],
+      "wall_seconds": 0.45343,
+      "child_cpu_seconds": 0.45534,
+      "child_peak_rss_kb_hiwater": 51576,
+      "tokens": null,
+      "cost_usd": 0,
+      "gpu_vram_mb": null,
+      "disk_io_bytes": null,
+      "trial_commit": "dcdf4545ae25360a130d628dedd940ecfb40ef65"
+    },
+    {
+      "case": "domain-only",
+      "seed": 41,
+      "locked_checks": 11,
+      "locked_check_digest_stable": true,
+      "round_results": [
+        "pass"
+      ],
+      "outcome": "pass",
+      "heldout_ui_oracle_pass": false,
+      "agent_rounds": 1,
+      "lessons_result": [],
+      "wall_seconds": 0.44935,
+      "child_cpu_seconds": 0.45084,
+      "child_peak_rss_kb_hiwater": 51960,
+      "tokens": null,
+      "cost_usd": 0,
+      "gpu_vram_mb": null,
+      "disk_io_bytes": null,
+      "trial_commit": "10506b1ffd2b078e38f43c39b780c0968d562c02"
+    },
+    {
+      "case": "complete",
+      "seed": 17,
+      "locked_checks": 12,
+      "locked_check_digest_stable": true,
+      "round_results": [
+        "fail",
+        "pass"
+      ],
+      "outcome": "pass",
+      "heldout_ui_oracle_pass": true,
+      "agent_rounds": 2,
+      "lessons_result": [
+        "committed"
+      ],
+      "wall_seconds": 0.91922,
+      "child_cpu_seconds": 0.91974,
+      "child_peak_rss_kb_hiwater": 51960,
+      "tokens": null,
+      "cost_usd": 0,
+      "gpu_vram_mb": null,
+      "disk_io_bytes": null,
+      "trial_commit": "7503d64d6f994879b4112da80fb68d11162351aa"
+    },
+    {
+      "case": "complete",
+      "seed": 23,
+      "locked_checks": 12,
+      "locked_check_digest_stable": true,
+      "round_results": [
+        "fail",
+        "pass"
+      ],
+      "outcome": "pass",
+      "heldout_ui_oracle_pass": true,
+      "agent_rounds": 2,
+      "lessons_result": [
+        "committed"
+      ],
+      "wall_seconds": 0.91778,
+      "child_cpu_seconds": 0.91671,
+      "child_peak_rss_kb_hiwater": 51960,
+      "tokens": null,
+      "cost_usd": 0,
+      "gpu_vram_mb": null,
+      "disk_io_bytes": null,
+      "trial_commit": "78d0ac2caf572a35458a5855b6cc28a2251e7dc7"
+    },
+    {
+      "case": "complete",
+      "seed": 41,
+      "locked_checks": 12,
+      "locked_check_digest_stable": true,
+      "round_results": [
+        "fail",
+        "pass"
+      ],
+      "outcome": "pass",
+      "heldout_ui_oracle_pass": true,
+      "agent_rounds": 2,
+      "lessons_result": [
+        "committed"
+      ],
+      "wall_seconds": 0.98664,
+      "child_cpu_seconds": 0.98585,
+      "child_peak_rss_kb_hiwater": 51960,
+      "tokens": null,
+      "cost_usd": 0,
+      "gpu_vram_mb": null,
+      "disk_io_bytes": null,
+      "trial_commit": "595930be68ac0ec3517703b0e99d4323885db5ce"
+    }
+  ],
+  "summary": {
+    "domain-only": {
+      "runs": 3,
+      "passes": 3,
+      "heldout_ui_passes": 0,
+      "locked_oracle_tamper_survived": 0,
+      "median_wall_s": 0.45343
+    },
+    "complete": {
+      "runs": 3,
+      "passes": 3,
+      "heldout_ui_passes": 3,
+      "locked_oracle_tamper_survived": 0,
+      "median_wall_s": 0.91922
+    }
+  },
+  "limits": [
+    "not original video code; video author source not obtained",
+    "not real model autonomy; scripted deterministic agent with scripted correction",
+    "separate independent UI oracle was not part of approved checks in domain-only",
+    "same-UID Git/worktree is not a security sandbox",
+    "CPU/RSS are subprocess aggregate; no disk IO, GPU, or paid tokens measured",
+    "n=3 timing samples, descriptive only"
+  ]
+}

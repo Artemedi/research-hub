@@ -5,15 +5,15 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent",
   "count_by_status": {
-    "проверен экспериментально": 14,
-    "ожидает проверки": 3,
+    "проверен экспериментально": 15,
+    "ожидает проверки": 2,
     "исключён": 19,
     "разобран": 29
   },
   "mapped_study_cards": 31,
-  "mapped_experimental_items": 17,
+  "mapped_experimental_items": 18,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -23,7 +23,8 @@
     "Original Telegram chronology is reconstructed from the preserved audit; the original Telegram message byte stream was not available for independent comparison.",
     "BK-041 has a permission-gate lab report but is still AWAITING a real eBPF tracer experiment. Linked reports do not imply successful target-capability verification.",
     "The earlier BK-062/065 source-gate reports were partial and remain historical. Their dated follow-ups verify bounded components only; hub_experiment_report is a link field, not proof of full-system reproduction.",
-    "BK-063 full official engineering article was recovered on 2026-11-05; orchestrator source and independent result reproduction remain unavailable."
+    "BK-063 full official engineering article was recovered on 2026-11-05; orchestrator source and independent result reproduction remain unavailable.",
+    "BK-034 lab validates only real Wiki_PG autoloop.sh in disposable toy worktrees with fake scripted agent, not AI LABS video/runtime, Karpathy GPU experiment, actual LLM, or production."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -587,15 +588,15 @@
       "telegram_title_recovered": "Karpathy-loop / AutoResearch video",
       "source_url": "https://www.youtube.com/watch?v=qLfSDQ5NGh0",
       "source_kind": "Video tutorial",
-      "source_audit_evidence": "USER_FULL_TRANSCRIPT_AVAILABLE_PRIMARY_UNVERIFIED",
+      "source_audit_evidence": "USER_TRANSCRIPT_UNVERIFIED; PINNED_KARPATHY_REPO; WIKIPG_ACTUAL_LOOP_BOUNDED_LAB",
       "initial_priority_2026_11_03": "A",
-      "status": "ожидает проверки",
-      "disposition": "USER_TRANSCRIPT_AVAILABLE_RELATED_REPO_REVIEWED",
-      "status_reason_ru": "Полный пользовательский транскрипт получен, но само видео независимо недоступно; auto-loop и locked oracle не воспроизводились. См. reviews/telegram-transcripts/2026-11-06-user-provided.md.",
-      "hub_experiment_report": null,
-      "hub_experiment_url": null,
-      "hub_review_report": "reviews/karpathy-autoresearch/2026-11-04.md",
-      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/karpathy-autoresearch/2026-11-04.md",
+      "status": "проверен экспериментально",
+      "disposition": "BOUNDED_LAB_SCRIPTED_WIKIPG_LOOP_ONLY",
+      "status_reason_ru": "Оригинальный Karpathy repo разобран; видео AI LABS не удостоверено. Шесть toy запусков реального Wiki_PG autoloop.sh с фиктивным scripted агентом подтвердили false accept при неполном oracle и восстановление locked tests. Без real LLM, авторского AI LABS setup и 10x; см. reviews/karpathy-autoresearch/2026-11-06-loop-audit.md.",
+      "hub_experiment_report": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "hub_review_report": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
       "related_study_card": "studies/karpathy-autoresearch.md",
       "related_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/karpathy-autoresearch.md",
       "hub_study_card": null,

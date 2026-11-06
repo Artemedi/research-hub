@@ -42,7 +42,7 @@
 | [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04 / ipfire-fireperf-review](../reviews/ipfire-fireperf/2026-11-04.md) |
 | [JevAgentHarness](jevagentharness.md) | [2026-11-03 / jevagentharness-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04 / julia-1-review](../reviews/julia-1/2026-11-04.md) |
-| [Karpathy autoresearch — цикл экспериментов на одной GPU](karpathy-autoresearch.md) | [2026-11-04 / karpathy-autoresearch-review](../reviews/karpathy-autoresearch/2026-11-04.md) |
+| [Karpathy AutoResearch и BK-034 — цикл экспериментов и приложение AI LABS](karpathy-autoresearch.md) | [2026-11-04 / karpathy-autoresearch-review](../reviews/karpathy-autoresearch/2026-11-04.md) · [2026-11-06 / karpathy-autoresearch-loop-audit-20261106](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |
 | [KVSET — The KV Cache Working Set](kvset.md) | [2026-09-28 / kvset-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-05 / fulltext-kvset-2026-11-05](../reviews/kvset/2026-11-05-full-text.md) |
 | [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | [2026-10-05 / kvtether-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-kvtether-2026-11-05](../reviews/kvtether/2026-11-05-full-text.md) |
 | [LAGO](lago.md) | [2026-11-03 / lago-review](../portfolio/2026-10-12--2026-10-19/review.md) |

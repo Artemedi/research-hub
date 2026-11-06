@@ -1223,6 +1223,20 @@
       "title": "Unreal Agent — первоисточники и проверка стоимости",
       "kind": "review",
       "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "title": "BK-034 Karpathy/AI LABS and Wiki_PG autoloop",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json",
+      "title": "BK-034 frozen oracle synthetic metrics",
+      "kind": "data",
+      "date": "2026-11-06"
     }
   ]
 }

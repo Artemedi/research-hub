@@ -555,14 +555,15 @@
     {
       "kind": "engineering",
       "card": "studies/karpathy-autoresearch.md",
-      "title": "Karpathy autoresearch — цикл экспериментов на одной GPU",
+      "title": "Karpathy AutoResearch и BK-034 — циклы и проверка",
       "fit_coverage": "PARTIAL",
-      "current_review_id": "karpathy-autoresearch-review",
+      "current_review_id": "karpathy-autoresearch-loop-audit-20261106",
       "id": "karpathy-autoresearch",
       "primary_url": "https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117",
-      "card_body_sha256": "8860a1627ff5752d7135226841bc31c6bb449c56de97d4b7ded5729c86b650ca",
+      "card_body_sha256": "2f62399ab6f7be509cf2f955f221d6f2dc6cdb02b8505f005903fe21a487589a",
       "linked_materials": [
-        "reviews/karpathy-autoresearch/2026-11-04.md"
+        "reviews/karpathy-autoresearch/2026-11-04.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md"
       ]
     },
     {
@@ -1925,6 +1926,13 @@
       "study_id": "unreal-agent",
       "ref": "a5f3fd13032737142916523ae4344c392292f9d5",
       "url": "https://github.com/unreallabsai/unreal-agent/tree/a5f3fd13032737142916523ae4344c392292f9d5"
+    },
+    {
+      "id": "bk034-ai-labs-video-unverified",
+      "study_id": "karpathy-autoresearch",
+      "ref": null,
+      "url": "https://www.youtube.com/watch?v=qLfSDQ5NGh0",
+      "unknown_reason": "Оригинальный YouTube-поток и AI LABS setup не проверены; есть пользовательский полный транскрипт."
     }
   ],
   "reviews": [
@@ -3451,6 +3459,21 @@
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Официальная статья и pinned Go исходники изучены; YouTube-видео не аутентифицировано, Harbor не подтверждает счета Unreal Agent; Go tests, paid A/B и runtime E2E не запускались.",
       "supersedes": "unreal-access"
+    },
+    {
+      "id": "karpathy-autoresearch-loop-audit-20261106",
+      "study_ids": [
+        "karpathy-autoresearch"
+      ],
+      "version_ids": [
+        "karpathy-autoresearch-version",
+        "bk034-ai-labs-video-unverified"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Оригинальный AutoResearch проверен статически; видео AI LABS не прочитано независимо, author code недоступен; реальный Wiki_PG autoloop.sh проверен 6 раз на toy Git worktree с scripted fake agent, не LLM.",
+      "supersedes": "karpathy-autoresearch-review"
     }
   ],
   "experiments": [
@@ -3600,6 +3623,22 @@
         "data/results/drag/2026-11-06-evidence-ood-stress.json",
         "experiments/tests/test_drag_evidence_gate.py",
         "reviews/drag/2026-11-06-evidence-gate-ab.md"
+      ]
+    },
+    {
+      "id": "bk034-wikipg-locked-oracle-toy-20261106",
+      "study_ids": [
+        "karpathy-autoresearch"
+      ],
+      "review_id": "karpathy-autoresearch-loop-audit-20261106",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "OBSERVED",
+      "scope": "Real Wiki_PG autoloop.sh @d55721bb; 6 toy worktrees, three seeds/group. 11/11 domain PASS with missing UI (heldout 0/3); approved integration test rejects tampering in round 1; corrected scripted round 2 passes in 3/3; locked test digest unchanged 6/6.",
+      "limitations": "Scripted fake agent, synthetic app, not original AI LABS implementation, not real LLM/instruction learning, not a security sandbox or production workload. No GPU, paid tokens, or real benefit.",
+      "artifacts": [
+        "experiments/2026-11-06-bk034-wikipg-autoloop-oracle.py",
+        "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md"
       ]
     }
   ],
@@ -12375,6 +12414,111 @@
       "source_line": 56,
       "source_excerpt": "| **[AKUZ](https://github.com/Artemedi/AKUZ)** и **[TelegramBot](https://github.com/Artemedi/TelegramBot)** — `NO_DIRECT_FIT` | Ни OLTP SQL план, ни публикация video digest не улучшаются сами по себе от замены agent-loop | Возможная польза только через другие агентные компоненты; не создавать прямых backlinks |",
       "supersedes": null
+    },
+    {
+      "id": "bk034-loop-20261106-wiki_pg",
+      "study_id": "karpathy-autoresearch",
+      "project_id": "Wiki_PG",
+      "review_id": "karpathy-autoresearch-loop-audit-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SOURCE_SEAM_VERIFIED / BOUNDED_LAB",
+      "evidence": "SOURCE_SEAM_VERIFIED / BOUNDED_LAB",
+      "reason": "Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте.",
+      "limitations": "Toy run validates only Wiki_PG script under mock agent; project code/production integration and full video unverified.",
+      "next_test": "Extend existing pre-approved checks to integration paths; hidden oracle and no live DB",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Не было полного project-runtime end-to-end, только закрепленный публичный исходник/профиль.",
+      "source_document": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_line": 52,
+      "source_excerpt": "| **`Wiki_PG`** | `SOURCE_SEAM_VERIFIED / BOUNDED_LAB` — [авторский `scripts/autoloop.sh`](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/scripts/autoloop.sh), [guide](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/docs/autoloop.md); **уже реализовано** | Не писать новый loop; расширить pre-approved checks на public entry points и интеграционный путь, предусмотреть независимый hidden oracle; отдельно threat-model внешний venv |",
+      "supersedes": null
+    },
+    {
+      "id": "bk034-loop-20261106-agent-skills",
+      "study_id": "karpathy-autoresearch",
+      "project_id": "agent-skills",
+      "review_id": "karpathy-autoresearch-loop-audit-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "EXISTING_DRAFT_SKILL / DOCUMENTED_CANDIDATE",
+      "evidence": "EXISTING_DRAFT_SKILL / DOCUMENTED_CANDIDATE",
+      "reason": "Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте.",
+      "limitations": "Toy run validates only Wiki_PG script under mock agent; project code/production integration and full video unverified.",
+      "next_test": "A/B test entrypoint and mutation checks before modifying existing wikipg-write-checks",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Не было полного project-runtime end-to-end, только закрепленный публичный исходник/профиль.",
+      "source_document": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_line": 53,
+      "source_excerpt": "| **`agent-skills`** | `EXISTING_DRAFT_SKILL / DOCUMENTED_CANDIDATE` — [snapshot `wikipg-write-checks`](https://github.com/Artemedi/agent-skills/blob/163d928460247d3d40a936504fda8d5d82ae7cc2/project-skills/wikipg/wikipg-write-checks/SKILL.md) уже требует заранее написать failing tests | Если редактировать skill, добавить пункт проверки wiring/CLI/UI/negative mutations, но сначала A/B на реальных обезличенных задачах Wiki_PG; не дублировать skill |",
+      "supersedes": null
+    },
+    {
+      "id": "bk034-loop-20261106-dsh-paper2agent",
+      "study_id": "karpathy-autoresearch",
+      "project_id": "dsh-paper2agent",
+      "review_id": "karpathy-autoresearch-loop-audit-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DESIGN-FIT / NO_INTEGRATION",
+      "evidence": "DESIGN-FIT / NO_INTEGRATION",
+      "reason": "Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте.",
+      "limitations": "Toy run validates only Wiki_PG script under mock agent; project code/production integration and full video unverified.",
+      "next_test": "Frozen holdout in Stage 6; do not implement loop framework",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Не было полного project-runtime end-to-end, только закрепленный публичный исходник/профиль.",
+      "source_document": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_line": 54,
+      "source_excerpt": "| **`dsh-paper2agent`** | `DESIGN-FIT / NO_INTEGRATION` — [Stage 4–6 pipeline](https://github.com/Artemedi/dsh-paper2agent/blob/6d82a42175a71d3327b773df88f1da0707efe43c/docs/product/PIPELINE.md) уже описывает проверяемые опыты и owner gate | Сохранить независимый holdout и immutability policy при проектировании Stage 6; без доступа к production |",
+      "supersedes": "karpathy-autoresearch-document-dsh-paper2agent"
+    },
+    {
+      "id": "bk034-loop-20261106-dsh-team-context",
+      "study_id": "karpathy-autoresearch",
+      "project_id": "dsh-team-context",
+      "review_id": "karpathy-autoresearch-loop-audit-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "GOVERNANCE_FIT / NOT_ORACLE_OWNER",
+      "evidence": "GOVERNANCE_FIT / NOT_ORACLE_OWNER",
+      "reason": "Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте.",
+      "limitations": "Toy run validates only Wiki_PG script under mock agent; project code/production integration and full video unverified.",
+      "next_test": "Govern reviewed lessons; independent oracle remains project-local",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Не было полного project-runtime end-to-end, только закрепленный публичный исходник/профиль.",
+      "source_document": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_line": 55,
+      "source_excerpt": "| **`dsh-team-context`** | `GOVERNANCE_FIT / NOT_ORACLE_OWNER` — [docs/architecture.md](https://github.com/Artemedi/dsh-team-context/blob/373ba695512052753b1a9eb2183bac30ea795016/docs/architecture.md) отделяет project-local fixtures от общего knowledge-plane | Возможен журнал learning candidates и доказательств, но **не** автоматическая правка глобальных governance-правил без review |",
+      "supersedes": "karpathy-autoresearch-document-dsh-team-context"
+    },
+    {
+      "id": "bk034-loop-20261106-dsh-runtime",
+      "study_id": "karpathy-autoresearch",
+      "project_id": "dsh-runtime",
+      "review_id": "karpathy-autoresearch-loop-audit-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SECONDARY_CANDIDATE / NOT_VERIFIED",
+      "evidence": "SECONDARY_CANDIDATE / NOT_VERIFIED",
+      "reason": "Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте.",
+      "limitations": "Toy run validates only Wiki_PG script under mock agent; project code/production integration and full video unverified.",
+      "next_test": "After P0 security remediation check if an independent evaluator is missing",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Не было полного project-runtime end-to-end, только закрепленный публичный исходник/профиль.",
+      "source_document": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_line": 56,
+      "source_excerpt": "| **`dsh-runtime`** | `SECONDARY_CANDIDATE / NOT_VERIFIED` — Cordis agent-loop и уже существующие benchmarks требуют точного owning seam | **Приоритет P0 — CVE-2026-82533**; только после фикса и isolated runtime рассматривать opt-in frozen-oracle adjudicator. Не ставить BK-034 как P1 |",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -13491,12 +13635,12 @@
     {
       "study_id": "karpathy-autoresearch",
       "project_id": "dsh-paper2agent",
-      "assessment_id": "karpathy-autoresearch-document-dsh-paper2agent"
+      "assessment_id": "bk034-loop-20261106-dsh-paper2agent"
     },
     {
       "study_id": "karpathy-autoresearch",
       "project_id": "dsh-team-context",
-      "assessment_id": "karpathy-autoresearch-document-dsh-team-context"
+      "assessment_id": "bk034-loop-20261106-dsh-team-context"
     },
     {
       "study_id": "local-knowledge-graph",
@@ -14207,6 +14351,21 @@
       "study_id": "unreal-agent",
       "project_id": "TelegramBot",
       "assessment_id": "unreal-bk025-20261106-telegrambot"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "project_id": "Wiki_PG",
+      "assessment_id": "bk034-loop-20261106-wiki_pg"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "project_id": "agent-skills",
+      "assessment_id": "bk034-loop-20261106-agent-skills"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "project_id": "dsh-runtime",
+      "assessment_id": "bk034-loop-20261106-dsh-runtime"
     }
   ],
   "relations": [

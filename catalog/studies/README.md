@@ -42,7 +42,7 @@
 - [IPFire fireperf](ipfire-fireperf.md); project fit: PARTIAL.
 - [JevAgentHarness](jevagentharness.md); project fit: PARTIAL.
 - [Julia 1 — типизированная модель выбора](julia-1.md); project fit: PARTIAL.
-- [Karpathy autoresearch — цикл экспериментов на одной GPU](karpathy-autoresearch.md); project fit: PARTIAL.
+- [Karpathy AutoResearch и BK-034 — циклы и проверка](karpathy-autoresearch.md); project fit: PARTIAL.
 - [KVSET — The KV Cache Working Set](kvset.md); project fit: PARTIAL.
 - [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md); project fit: NO_DOCUMENTED_ASSESSMENT.
 - [LAGO](lago.md); project fit: PARTIAL.
