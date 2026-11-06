@@ -1,0 +1,705 @@
+{
+  "experiment": "RRSI real selector + explicit validation guard; Harness2 pool negative control",
+  "source_revisions": {
+    "rrsi": "be50316e1db05914068a973f322770ef08ed7ba1",
+    "harness2": "6868817518876de8fd170c6a8354daca273b6191",
+    "agent_config": "489e074ab0daaadb732673c193047172a3744862"
+  },
+  "run_count": 5,
+  "samples_per_run": {
+    "training": 40,
+    "validation": 25,
+    "sealed_holdout": 40
+  },
+  "host": {
+    "python": "3.14.8",
+    "kernel": "6.18.56-ogc1.1.fc44.x86_64"
+  },
+  "scores_mean_sealed_holdout": {
+    "baseline": 0.455,
+    "memorizer": 0.455,
+    "locality": 0.705
+  },
+  "all_negative_controls_pass": true,
+  "runs": [
+    {
+      "seed": 20261106,
+      "holdout_mix": {
+        "valid_exact": 4,
+        "valid_neighbor": 4,
+        "wrong_line": 10,
+        "fabricated_quote": 10,
+        "false_behavior": 12
+      },
+      "fixture_hashes": {
+        "train": "47da5a5bfe3a672a0d0c5136d2a5dd369f9fe1729bf2219677d7a506ad696023",
+        "validation": "14b14fa5b7a35137234bc7392d4e08d0d5e88e62e278a4685ffafcbed8e88d73",
+        "holdout": "71258b7d02f6fb9ec0d4d2f6194f9641c363db0d6a45fa351ad8b81c26994d64"
+      },
+      "training": {
+        "baseline": {
+          "n": 40,
+          "correct": 24,
+          "accuracy": 0.6,
+          "false_accept": 16,
+          "negative_count": 24
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 40,
+          "accuracy": 1.0,
+          "false_accept": 0,
+          "negative_count": 24
+        },
+        "locality": {
+          "n": 40,
+          "correct": 32,
+          "accuracy": 0.8,
+          "false_accept": 8,
+          "negative_count": 24
+        }
+      },
+      "validation": {
+        "baseline": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "memorizer": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "locality": {
+          "n": 25,
+          "correct": 20,
+          "accuracy": 0.8,
+          "false_accept": 5,
+          "negative_count": 15
+        }
+      },
+      "holdout": {
+        "baseline": {
+          "n": 40,
+          "correct": 18,
+          "accuracy": 0.45,
+          "false_accept": 22,
+          "negative_count": 32
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 18,
+          "accuracy": 0.45,
+          "false_accept": 22,
+          "negative_count": 32
+        },
+        "locality": {
+          "n": 40,
+          "correct": 28,
+          "accuracy": 0.7,
+          "false_accept": 12,
+          "negative_count": 32
+        }
+      },
+      "naive_selected": "memorizer",
+      "validation_guard_selected": "locality",
+      "selector_latency_us": {
+        "naive": 73.911,
+        "guarded": 46.341
+      },
+      "selection_decisions": {
+        "naive": {
+          "memorizer": {
+            "admissible": true,
+            "reason": "admissible: gain +0.4000 > delta 0.0200; cost change +0.000 <= budget 16.100 (beta0 0.1 + beta1 40.0 * dS)"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        },
+        "guarded": {
+          "memorizer": {
+            "admissible": false,
+            "reason": "domain guard violated: held-out validation gain < 0.10"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        }
+      },
+      "harness2_pool": {
+        "parallel": [
+          "agg1",
+          "agg2"
+        ],
+        "sequential": [
+          "c1",
+          "c2"
+        ],
+        "baseline_in_pool": false
+      },
+      "wall_ms": 47.581,
+      "cpu_ms": 47.308,
+      "python_peak_alloc_bytes": 423459,
+      "rss_process_highwater_kib": 30712,
+      "proc_io_delta": {
+        "rchar": 197298,
+        "wchar": 59731,
+        "read_bytes": 0,
+        "write_bytes": 0
+      }
+    },
+    {
+      "seed": 20261107,
+      "holdout_mix": {
+        "valid_exact": 6,
+        "valid_neighbor": 3,
+        "wrong_line": 8,
+        "fabricated_quote": 11,
+        "false_behavior": 12
+      },
+      "fixture_hashes": {
+        "train": "80e075fae9ccc83ffdc48bfda3e4826b3486b4c502c99a2143c93996e31e4045",
+        "validation": "d47a721a8546cbbcf3b7bd36011c635df79d3d7fbcd4dcee2c2e248cc3e1dc77",
+        "holdout": "cb751b7477f34a266ec2996c52a477c9de27adf44c33f45922121c70fee641fc"
+      },
+      "training": {
+        "baseline": {
+          "n": 40,
+          "correct": 24,
+          "accuracy": 0.6,
+          "false_accept": 16,
+          "negative_count": 24
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 40,
+          "accuracy": 1.0,
+          "false_accept": 0,
+          "negative_count": 24
+        },
+        "locality": {
+          "n": 40,
+          "correct": 32,
+          "accuracy": 0.8,
+          "false_accept": 8,
+          "negative_count": 24
+        }
+      },
+      "validation": {
+        "baseline": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "memorizer": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "locality": {
+          "n": 25,
+          "correct": 20,
+          "accuracy": 0.8,
+          "false_accept": 5,
+          "negative_count": 15
+        }
+      },
+      "holdout": {
+        "baseline": {
+          "n": 40,
+          "correct": 20,
+          "accuracy": 0.5,
+          "false_accept": 20,
+          "negative_count": 31
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 20,
+          "accuracy": 0.5,
+          "false_accept": 20,
+          "negative_count": 31
+        },
+        "locality": {
+          "n": 40,
+          "correct": 28,
+          "accuracy": 0.7,
+          "false_accept": 12,
+          "negative_count": 31
+        }
+      },
+      "naive_selected": "memorizer",
+      "validation_guard_selected": "locality",
+      "selector_latency_us": {
+        "naive": 53.561,
+        "guarded": 52.521
+      },
+      "selection_decisions": {
+        "naive": {
+          "memorizer": {
+            "admissible": true,
+            "reason": "admissible: gain +0.4000 > delta 0.0200; cost change +0.000 <= budget 16.100 (beta0 0.1 + beta1 40.0 * dS)"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        },
+        "guarded": {
+          "memorizer": {
+            "admissible": false,
+            "reason": "domain guard violated: held-out validation gain < 0.10"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        }
+      },
+      "harness2_pool": {
+        "parallel": [
+          "agg1",
+          "agg2"
+        ],
+        "sequential": [
+          "c1",
+          "c2"
+        ],
+        "baseline_in_pool": false
+      },
+      "wall_ms": 44.98,
+      "cpu_ms": 44.68,
+      "python_peak_alloc_bytes": 375215,
+      "rss_process_highwater_kib": 30840,
+      "proc_io_delta": {
+        "rchar": 179298,
+        "wchar": 59731,
+        "read_bytes": 0,
+        "write_bytes": 0
+      }
+    },
+    {
+      "seed": 20261108,
+      "holdout_mix": {
+        "valid_exact": 3,
+        "valid_neighbor": 5,
+        "wrong_line": 12,
+        "fabricated_quote": 9,
+        "false_behavior": 11
+      },
+      "fixture_hashes": {
+        "train": "d26630fd98c14102b4a01f41532c5b66cee5eb0e58acd1d04f3df0e3043581bb",
+        "validation": "22ceb2d0545bc04c2252be62139810f42725f3f30b948fadf071900ac92d8e45",
+        "holdout": "a65b6e75094c8a5b239212362f1a13df01fe49836409ac8f5478a3b8c4059cb9"
+      },
+      "training": {
+        "baseline": {
+          "n": 40,
+          "correct": 24,
+          "accuracy": 0.6,
+          "false_accept": 16,
+          "negative_count": 24
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 40,
+          "accuracy": 1.0,
+          "false_accept": 0,
+          "negative_count": 24
+        },
+        "locality": {
+          "n": 40,
+          "correct": 32,
+          "accuracy": 0.8,
+          "false_accept": 8,
+          "negative_count": 24
+        }
+      },
+      "validation": {
+        "baseline": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "memorizer": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "locality": {
+          "n": 25,
+          "correct": 20,
+          "accuracy": 0.8,
+          "false_accept": 5,
+          "negative_count": 15
+        }
+      },
+      "holdout": {
+        "baseline": {
+          "n": 40,
+          "correct": 17,
+          "accuracy": 0.425,
+          "false_accept": 23,
+          "negative_count": 32
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 17,
+          "accuracy": 0.425,
+          "false_accept": 23,
+          "negative_count": 32
+        },
+        "locality": {
+          "n": 40,
+          "correct": 29,
+          "accuracy": 0.725,
+          "false_accept": 11,
+          "negative_count": 32
+        }
+      },
+      "naive_selected": "memorizer",
+      "validation_guard_selected": "locality",
+      "selector_latency_us": {
+        "naive": 53.311,
+        "guarded": 37.531
+      },
+      "selection_decisions": {
+        "naive": {
+          "memorizer": {
+            "admissible": true,
+            "reason": "admissible: gain +0.4000 > delta 0.0200; cost change +0.000 <= budget 16.100 (beta0 0.1 + beta1 40.0 * dS)"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        },
+        "guarded": {
+          "memorizer": {
+            "admissible": false,
+            "reason": "domain guard violated: held-out validation gain < 0.10"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        }
+      },
+      "harness2_pool": {
+        "parallel": [
+          "agg1",
+          "agg2"
+        ],
+        "sequential": [
+          "c1",
+          "c2"
+        ],
+        "baseline_in_pool": false
+      },
+      "wall_ms": 45.484,
+      "cpu_ms": 45.202,
+      "python_peak_alloc_bytes": 378414,
+      "rss_process_highwater_kib": 30968,
+      "proc_io_delta": {
+        "rchar": 179293,
+        "wchar": 59729,
+        "read_bytes": 0,
+        "write_bytes": 0
+      }
+    },
+    {
+      "seed": 20261109,
+      "holdout_mix": {
+        "valid_exact": 5,
+        "valid_neighbor": 5,
+        "wrong_line": 7,
+        "fabricated_quote": 11,
+        "false_behavior": 12
+      },
+      "fixture_hashes": {
+        "train": "935fd853885b6ebb080d9c2ca98b20f63d7d418699f80c5553bbe8db2eff3c94",
+        "validation": "41737c6a542b99f6f9ab72d006f7c16b72f417280cf387a78334a05523e6db56",
+        "holdout": "34d849b891f70c7c6f9afb3ecf01a30767cd9cb90ee868945130d69c41584d3c"
+      },
+      "training": {
+        "baseline": {
+          "n": 40,
+          "correct": 24,
+          "accuracy": 0.6,
+          "false_accept": 16,
+          "negative_count": 24
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 40,
+          "accuracy": 1.0,
+          "false_accept": 0,
+          "negative_count": 24
+        },
+        "locality": {
+          "n": 40,
+          "correct": 32,
+          "accuracy": 0.8,
+          "false_accept": 8,
+          "negative_count": 24
+        }
+      },
+      "validation": {
+        "baseline": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "memorizer": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "locality": {
+          "n": 25,
+          "correct": 20,
+          "accuracy": 0.8,
+          "false_accept": 5,
+          "negative_count": 15
+        }
+      },
+      "holdout": {
+        "baseline": {
+          "n": 40,
+          "correct": 21,
+          "accuracy": 0.525,
+          "false_accept": 19,
+          "negative_count": 30
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 21,
+          "accuracy": 0.525,
+          "false_accept": 19,
+          "negative_count": 30
+        },
+        "locality": {
+          "n": 40,
+          "correct": 28,
+          "accuracy": 0.7,
+          "false_accept": 12,
+          "negative_count": 30
+        }
+      },
+      "naive_selected": "memorizer",
+      "validation_guard_selected": "locality",
+      "selector_latency_us": {
+        "naive": 54.682,
+        "guarded": 38.94
+      },
+      "selection_decisions": {
+        "naive": {
+          "memorizer": {
+            "admissible": true,
+            "reason": "admissible: gain +0.4000 > delta 0.0200; cost change +0.000 <= budget 16.100 (beta0 0.1 + beta1 40.0 * dS)"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        },
+        "guarded": {
+          "memorizer": {
+            "admissible": false,
+            "reason": "domain guard violated: held-out validation gain < 0.10"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        }
+      },
+      "harness2_pool": {
+        "parallel": [
+          "agg1",
+          "agg2"
+        ],
+        "sequential": [
+          "c1",
+          "c2"
+        ],
+        "baseline_in_pool": false
+      },
+      "wall_ms": 44.26,
+      "cpu_ms": 43.957,
+      "python_peak_alloc_bytes": 363613,
+      "rss_process_highwater_kib": 30968,
+      "proc_io_delta": {
+        "rchar": 179296,
+        "wchar": 59730,
+        "read_bytes": 0,
+        "write_bytes": 0
+      }
+    },
+    {
+      "seed": 20261110,
+      "holdout_mix": {
+        "valid_exact": 4,
+        "valid_neighbor": 3,
+        "wrong_line": 13,
+        "fabricated_quote": 8,
+        "false_behavior": 12
+      },
+      "fixture_hashes": {
+        "train": "9bd095c207379b890590c766153694b89b1efde8e063baf03abc87e54ba5dd11",
+        "validation": "ac4f094839e1a59e24c10999b1fa800cfc74bbb4fbeceea3434bc4bd43af2dbb",
+        "holdout": "1a3ae753d9c6fd09063ec3e7350434e15aa33e9442a3cdf15ba5295ce4f54683"
+      },
+      "training": {
+        "baseline": {
+          "n": 40,
+          "correct": 24,
+          "accuracy": 0.6,
+          "false_accept": 16,
+          "negative_count": 24
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 40,
+          "accuracy": 1.0,
+          "false_accept": 0,
+          "negative_count": 24
+        },
+        "locality": {
+          "n": 40,
+          "correct": 32,
+          "accuracy": 0.8,
+          "false_accept": 8,
+          "negative_count": 24
+        }
+      },
+      "validation": {
+        "baseline": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "memorizer": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "false_accept": 10,
+          "negative_count": 15
+        },
+        "locality": {
+          "n": 25,
+          "correct": 20,
+          "accuracy": 0.8,
+          "false_accept": 5,
+          "negative_count": 15
+        }
+      },
+      "holdout": {
+        "baseline": {
+          "n": 40,
+          "correct": 15,
+          "accuracy": 0.375,
+          "false_accept": 25,
+          "negative_count": 33
+        },
+        "memorizer": {
+          "n": 40,
+          "correct": 15,
+          "accuracy": 0.375,
+          "false_accept": 25,
+          "negative_count": 33
+        },
+        "locality": {
+          "n": 40,
+          "correct": 28,
+          "accuracy": 0.7,
+          "false_accept": 12,
+          "negative_count": 33
+        }
+      },
+      "naive_selected": "memorizer",
+      "validation_guard_selected": "locality",
+      "selector_latency_us": {
+        "naive": 54.191,
+        "guarded": 37.581
+      },
+      "selection_decisions": {
+        "naive": {
+          "memorizer": {
+            "admissible": true,
+            "reason": "admissible: gain +0.4000 > delta 0.0200; cost change +0.000 <= budget 16.100 (beta0 0.1 + beta1 40.0 * dS)"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        },
+        "guarded": {
+          "memorizer": {
+            "admissible": false,
+            "reason": "domain guard violated: held-out validation gain < 0.10"
+          },
+          "locality": {
+            "admissible": true,
+            "reason": "admissible: gain +0.2000 > delta 0.0200; cost change +0.000 <= budget 8.100 (beta0 0.1 + beta1 40.0 * dS)"
+          }
+        }
+      },
+      "harness2_pool": {
+        "parallel": [
+          "agg1",
+          "agg2"
+        ],
+        "sequential": [
+          "c1",
+          "c2"
+        ],
+        "baseline_in_pool": false
+      },
+      "wall_ms": 45.18,
+      "cpu_ms": 44.87,
+      "python_peak_alloc_bytes": 365993,
+      "rss_process_highwater_kib": 30968,
+      "proc_io_delta": {
+        "rchar": 179317,
+        "wchar": 59737,
+        "read_bytes": 0,
+        "write_bytes": 0
+      }
+    }
+  ],
+  "llm_calls": 0,
+  "tokens": "N/A",
+  "api_cost_usd": 0,
+  "vram": "N/A; CPU-only",
+  "limitations": [
+    "No RRSI proposal-generation models, evolutionary loop, or original benchmark replicated.",
+    "Memorizer intentionally overfits synthetic task IDs; not generated by a real agent.",
+    "Validation guard is external and was NOT activated by upstream default.",
+    "Holdout is synthetic deterministic class-distribution shift; no blind human labels.",
+    "Harness2 original selection_pool only; no probes, model execution or compose.",
+    "Synthetic token cost rule is a unit negative control, NOT observed inference usage.",
+    "Microsecond selector latency depends on Python runtime, filesystem fixtures, instrumentation.",
+    "Process RSS highwater is shared, not per-arm; VRAM/tokens N/A, real cost not measured."
+  ]
+}

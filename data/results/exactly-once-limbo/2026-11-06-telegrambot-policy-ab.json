@@ -1,0 +1,1130 @@
+{
+  "experiment": "LIMBO/TelegramBot paired synthetic A/B tradeoff",
+  "telegrambot_sha": "b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e",
+  "real_target_main_send_telegram_used": true,
+  "source_module_sha256": "96ef4a27fd26def1254a9c69bfb896cd24e1eb175fe11b54f02db7158e3c9de2",
+  "seed_count": 5,
+  "cases_per_mode_per_seed": 20,
+  "fault_modes": [
+    "success",
+    "timeout_pre",
+    "timeout_post",
+    "http500_pre",
+    "http500_post",
+    "timeout_late",
+    "duplicate_delivery",
+    "crash_after_ack",
+    "state_lost_after_ack"
+  ],
+  "arm_definitions": {
+    "real_auto_retry": "Pinned TelegramBot main() twice; existing state only.",
+    "sidecar_pending_no_retry": "COUNTERFACTUAL wrapper pre-writes an external PENDING marker, blocks ALL auto retry; DOES NOT modify TelegramBot source.",
+    "hypothetical_server_idempotency": "COUNTERFACTUAL fake service deduplicates by simulated logical video key; Telegram Bot API does NOT provide that contract."
+  },
+  "totals": {
+    "real_auto_retry": {
+      "cases": 900,
+      "exactly_one": 300,
+      "duplicate_cases": 600,
+      "missing_cases": 0,
+      "manual_review_cases": 0,
+      "actual_target_http_calls": 1600
+    },
+    "sidecar_pending_no_retry": {
+      "cases": 900,
+      "exactly_one": 600,
+      "duplicate_cases": 100,
+      "missing_cases": 200,
+      "manual_review_cases": 700,
+      "actual_target_http_calls": 900
+    },
+    "hypothetical_server_idempotency": {
+      "cases": 900,
+      "exactly_one": 900,
+      "duplicate_cases": 0,
+      "missing_cases": 0,
+      "manual_review_cases": 0,
+      "actual_target_http_calls": 1600
+    }
+  },
+  "runs": [
+    {
+      "seed": 20261106,
+      "case_order_sha256": "11e6681b80b139144173615883f9a8e2ebc0df11098ea6e7a01e0870cd882eee",
+      "arm_order": [
+        "real_auto_retry",
+        "sidecar_pending_no_retry",
+        "hypothetical_server_idempotency"
+      ],
+      "arms": {
+        "real_auto_retry": {
+          "cases": 180,
+          "exactly_one": 60,
+          "duplicate_cases": 120,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7217,
+          "latency_ms_p95": 1.1028,
+          "wall_ms": 143.224,
+          "cpu_ms": 142.364,
+          "python_peak_alloc_bytes": 284955,
+          "process_rss_highwater_kib": 54128,
+          "proc_io_delta": {
+            "rchar": 13100,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "sidecar_pending_no_retry": {
+          "cases": 180,
+          "exactly_one": 120,
+          "duplicate_cases": 20,
+          "missing_cases": 40,
+          "manual_review_cases": 140,
+          "actual_target_http_calls": 180,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.4222,
+          "latency_ms_p95": 0.7015,
+          "wall_ms": 95.311,
+          "cpu_ms": 94.736,
+          "python_peak_alloc_bytes": 274121,
+          "process_rss_highwater_kib": 54384,
+          "proc_io_delta": {
+            "rchar": 13206,
+            "wchar": 13100,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "hypothetical_server_idempotency": {
+          "cases": 180,
+          "exactly_one": 180,
+          "duplicate_cases": 0,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7086,
+          "latency_ms_p95": 1.0008,
+          "wall_ms": 139.933,
+          "cpu_ms": 139.119,
+          "python_peak_alloc_bytes": 234523,
+          "process_rss_highwater_kib": 54384,
+          "proc_io_delta": {
+            "rchar": 13106,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261107,
+      "case_order_sha256": "2072d0b86f15f023fdef4d4c3701aee63b066374f4b38b5f1622754e337b8eab",
+      "arm_order": [
+        "hypothetical_server_idempotency",
+        "sidecar_pending_no_retry",
+        "real_auto_retry"
+      ],
+      "arms": {
+        "hypothetical_server_idempotency": {
+          "cases": 180,
+          "exactly_one": 180,
+          "duplicate_cases": 0,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7074,
+          "latency_ms_p95": 1.0001,
+          "wall_ms": 139.672,
+          "cpu_ms": 138.034,
+          "python_peak_alloc_bytes": 244384,
+          "process_rss_highwater_kib": 54768,
+          "proc_io_delta": {
+            "rchar": 13107,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "sidecar_pending_no_retry": {
+          "cases": 180,
+          "exactly_one": 120,
+          "duplicate_cases": 20,
+          "missing_cases": 40,
+          "manual_review_cases": 140,
+          "actual_target_http_calls": 180,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.41,
+          "latency_ms_p95": 0.6804,
+          "wall_ms": 92.916,
+          "cpu_ms": 92.349,
+          "python_peak_alloc_bytes": 271126,
+          "process_rss_highwater_kib": 54768,
+          "proc_io_delta": {
+            "rchar": 13207,
+            "wchar": 13100,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "real_auto_retry": {
+          "cases": 180,
+          "exactly_one": 60,
+          "duplicate_cases": 120,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.6956,
+          "latency_ms_p95": 0.9927,
+          "wall_ms": 136.911,
+          "cpu_ms": 136.108,
+          "python_peak_alloc_bytes": 221989,
+          "process_rss_highwater_kib": 54768,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261108,
+      "case_order_sha256": "e65e90b041ed4a9578976a7058e662b6dad7755dbae30119f9c6a718889d32b3",
+      "arm_order": [
+        "real_auto_retry",
+        "sidecar_pending_no_retry",
+        "hypothetical_server_idempotency"
+      ],
+      "arms": {
+        "real_auto_retry": {
+          "cases": 180,
+          "exactly_one": 60,
+          "duplicate_cases": 120,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.6946,
+          "latency_ms_p95": 0.9774,
+          "wall_ms": 137.043,
+          "cpu_ms": 135.556,
+          "python_peak_alloc_bytes": 212447,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "sidecar_pending_no_retry": {
+          "cases": 180,
+          "exactly_one": 120,
+          "duplicate_cases": 20,
+          "missing_cases": 40,
+          "manual_review_cases": 140,
+          "actual_target_http_calls": 180,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.4128,
+          "latency_ms_p95": 0.6901,
+          "wall_ms": 93.549,
+          "cpu_ms": 92.985,
+          "python_peak_alloc_bytes": 244939,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13208,
+            "wchar": 13100,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "hypothetical_server_idempotency": {
+          "cases": 180,
+          "exactly_one": 180,
+          "duplicate_cases": 0,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7595,
+          "latency_ms_p95": 1.0867,
+          "wall_ms": 162.834,
+          "cpu_ms": 161.913,
+          "python_peak_alloc_bytes": 289230,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261109,
+      "case_order_sha256": "4247db2306a82d62bf7dea7f774198ebfd028e307c4b26e1ff35ae7e3d56a99c",
+      "arm_order": [
+        "hypothetical_server_idempotency",
+        "sidecar_pending_no_retry",
+        "real_auto_retry"
+      ],
+      "arms": {
+        "hypothetical_server_idempotency": {
+          "cases": 180,
+          "exactly_one": 180,
+          "duplicate_cases": 0,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7135,
+          "latency_ms_p95": 0.9971,
+          "wall_ms": 140.757,
+          "cpu_ms": 139.106,
+          "python_peak_alloc_bytes": 225387,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "sidecar_pending_no_retry": {
+          "cases": 180,
+          "exactly_one": 120,
+          "duplicate_cases": 20,
+          "missing_cases": 40,
+          "manual_review_cases": 140,
+          "actual_target_http_calls": 180,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.4167,
+          "latency_ms_p95": 0.6978,
+          "wall_ms": 94.376,
+          "cpu_ms": 93.778,
+          "python_peak_alloc_bytes": 224796,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13208,
+            "wchar": 13100,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "real_auto_retry": {
+          "cases": 180,
+          "exactly_one": 60,
+          "duplicate_cases": 120,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7064,
+          "latency_ms_p95": 1.0074,
+          "wall_ms": 139.096,
+          "cpu_ms": 138.276,
+          "python_peak_alloc_bytes": 240891,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261110,
+      "case_order_sha256": "ee7df3a87f784dc922e7d0e83aa49ae7c528a9b09e4096a7c101c926f9e0fae7",
+      "arm_order": [
+        "real_auto_retry",
+        "sidecar_pending_no_retry",
+        "hypothetical_server_idempotency"
+      ],
+      "arms": {
+        "real_auto_retry": {
+          "cases": 180,
+          "exactly_one": 60,
+          "duplicate_cases": 120,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.6962,
+          "latency_ms_p95": 1.0075,
+          "wall_ms": 137.661,
+          "cpu_ms": 136.127,
+          "python_peak_alloc_bytes": 247462,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "sidecar_pending_no_retry": {
+          "cases": 180,
+          "exactly_one": 120,
+          "duplicate_cases": 20,
+          "missing_cases": 40,
+          "manual_review_cases": 140,
+          "actual_target_http_calls": 180,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 20
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 20,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.4247,
+          "latency_ms_p95": 0.712,
+          "wall_ms": 94.63,
+          "cpu_ms": 94.079,
+          "python_peak_alloc_bytes": 248753,
+          "process_rss_highwater_kib": 54896,
+          "proc_io_delta": {
+            "rchar": 13208,
+            "wchar": 13100,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        },
+        "hypothetical_server_idempotency": {
+          "cases": 180,
+          "exactly_one": 180,
+          "duplicate_cases": 0,
+          "missing_cases": 0,
+          "manual_review_cases": 0,
+          "actual_target_http_calls": 320,
+          "by_fault": {
+            "success": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_pre": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "http500_post": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "timeout_late": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "duplicate_delivery": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "crash_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            },
+            "state_lost_after_ack": {
+              "cases": 20,
+              "duplicate_cases": 0,
+              "missing_cases": 0
+            }
+          },
+          "latency_ms_p50": 0.7161,
+          "latency_ms_p95": 1.0115,
+          "wall_ms": 140.772,
+          "cpu_ms": 139.961,
+          "python_peak_alloc_bytes": 214497,
+          "process_rss_highwater_kib": 55024,
+          "proc_io_delta": {
+            "rchar": 13108,
+            "wchar": 25960,
+            "read_bytes": 0,
+            "write_bytes": 0
+          }
+        }
+      }
+    }
+  ],
+  "no_real_network_calls": true,
+  "llm_calls": 0,
+  "tokens": "N/A",
+  "api_cost_usd": 0,
+  "vram": "N/A, CPU-only",
+  "host": {
+    "python": "3.11.16",
+    "kernel": "6.18.56-ogc1.1.fc44.x86_64"
+  },
+  "limitations": [
+    "All faults and their equal class frequencies are synthetic, not Telegram incident frequencies.",
+    "Policy wrapper is not deployed. It uses an imagined persistent sidecar marker; durability/fencing/reconciliation are not implemented.",
+    "Hypothetical server-side idempotency is NOT offered by Telegram sendMessage.",
+    "Duplicate delivery is an injected service fault; sidecar cannot suppress it.",
+    "Transport latency, real network IO, message deletion/editing, real user payloads, bot rate limits, and multi-host concurrency NOT tested.",
+    "Timing includes fake transport, Python mocks, temporary local files and tracemalloc instrumentation; not network p95.",
+    "Shared process peak RSS is not per-arm cost; token/GPU results are N/A, not zero savings."
+  ]
+}

@@ -23,6 +23,7 @@
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |
 | [Where Does Exactly-Once Live? / LIMBO — полнотекстовая научная проверка](exactly-once-limbo/2026-11-05-full-text.md) | 2026-11-05 |
+| [LIMBO / TelegramBot — synthetic A/B политик доставки](exactly-once-limbo/2026-11-06-policy-ab.md) | 2026-11-06 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
@@ -47,6 +48,7 @@
 | [REA — границы статического анализа](reverse-engineer-anything/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [RRSI и Harness² — переобучение при отборе](rrsi-harness2/2026-11-04.md) | 2026-11-04 |
 | [Полный текст RRSI — метод и ограничения](rrsi/2026-11-05-full-text.md) | 2026-11-05 |
+| [RRSI / Harness² — повторяемый A/B на validation и holdout](rrsi/2026-11-06-validation-ab.md) | 2026-11-06 |
 | [TrinMedicalBot — A/B и внедрение Challenger v2](sequential-diagnosis-language-models/2026-11-05-challenger.md) | 2026-11-05 |
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
