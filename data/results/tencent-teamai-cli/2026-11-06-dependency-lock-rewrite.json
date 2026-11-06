@@ -1,0 +1,8 @@
+{
+  "from": "https://mirrors.tencent.com/npm/",
+  "to": "https://registry.npmjs.org/",
+  "count": 307,
+  "original_lock_sha256": "57260332049299a4e816fb7014ca3e7b2c86c7c0b9b7bc7ab3f4008f7183e293",
+  "rewritten_lock_sha256": "169ee7079de8239ff2502f2a9e963f8101d5d51b5cfb7a773d10adc921ba50e4",
+  "scope": "disposable test checkout, SRI remains verified by npm ci"
+}

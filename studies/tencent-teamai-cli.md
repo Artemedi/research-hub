@@ -18,3 +18,11 @@
 **Main risks:** unconditional trust in canonical provider's published skills/governance in fork; upstream team scripts may execute on member machines, and Codex hooks may be rewritten. Project review, pinning and isolated workspace validation must precede adoption. For an existing single-machine workflow, extra sync complexity may be YAGNI.
 
 **Full evidence:** [source review and 45-card mapping](../reviews/tencent-teamai-cli/2026-11-04.md) • [Telegram 65-item status ledger](../collections/telegram/README.md). No reproducible performance benchmark executed; a minimal isolated A/B plan is in the report.
+
+## 2026-11-06 — изолированный A/B на локальном owner port
+
+[Эксперимент с real CLI, Git+symlink baseline и независимым oracle](../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) · [Python runner](../experiments/2026-11-06-bk002-teamai-distribution-ab.py) · [машинный результат](../data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json).
+
+Source **локальный, не опубликованный SHA** `teamai-cli-port-upstream@e5a0bb5901f4b1c78d7b1e28a2ba43e1cbe86db4` — это не upstream и не доступный GitHub commit. На isolated build/unit/E2E/typecheck/lint: 38/38 unit, 7/7 E2E, build/typecheck/lint PASS. Пять seeds × восемь этапов для каждой ветки; functional file-hash oracle 40/40 в обеих, B schema/governance gate PASS.
+
+При выбранном минимальном только-.claude профиле B создал **35 разных путей за пределами допустимых `.claude/` / `.teamai/`** (файлы shell profile, AGENTS, Codex/OpenClaw/pi hooks и skill copies). Это поведение в disposable HOME, а не доказательство уязвимости; требование нулевых неожиданных записей **FAIL**. Wall p50 A 16.05 ms против B 753.773 ms, p95 A 17.936 против B 824.895 — feature-unequal synthetic CLI comparison, не token/LLM productivity benchmark. **Решение: `FUNCTIONAL_PASS / SCOPE_GATE_FAIL / NO_PRODUCTION_APPROVAL`**; нет внедрения и release proposal.

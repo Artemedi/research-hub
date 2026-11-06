@@ -1301,6 +1301,27 @@
       "kind": "data",
       "date": "2026-11-06",
       "from": null
+    },
+    {
+      "from": null,
+      "to": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "title": "BK-002 TeamAI CLI independent distribution and scope A/B",
+      "kind": "review",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json",
+      "title": "BK-002 TeamAI 5-seed actual CLI versus Git symlink measurements",
+      "kind": "data",
+      "date": "2026-11-06"
+    },
+    {
+      "from": null,
+      "to": "data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json",
+      "title": "BK-002 test-only NPM lock URL provenance",
+      "kind": "data",
+      "date": "2026-11-06"
     }
   ]
 }

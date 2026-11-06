@@ -24,6 +24,7 @@
 - [2026-11-05-bk065-gui-probe.py](2026-11-05-bk065-gui-probe.py)
 - [2026-11-05-bk065-isolated-gui.sh](2026-11-05-bk065-isolated-gui.sh)
 - [2026-11-06-agent-config-citation-locality-ab.py](2026-11-06-agent-config-citation-locality-ab.py)
+- [2026-11-06-bk002-teamai-distribution-ab.py](2026-11-06-bk002-teamai-distribution-ab.py)
 - [2026-11-06-bk034-wikipg-autoloop-oracle.py](2026-11-06-bk034-wikipg-autoloop-oracle.py)
 - [2026-11-06-bk041-host-diagnostic.py](2026-11-06-bk041-host-diagnostic.py)
 - [2026-11-06-bk041-podman-trace.py](2026-11-06-bk041-podman-trace.py)

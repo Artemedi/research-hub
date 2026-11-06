@@ -5,7 +5,7 @@
   "source_raw_telegram_export_available": false,
   "source_record_count": 65,
   "unique_source_url_count": 63,
-  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat",
+  "tracked_hub_state": "Artemedi/research-hub; BK-025 official engineering/source review 2026-11-06; BK-062/063/065 follow-up evidence 2026-11-05; remaining records retain recorded evidence; BK-034 2026-11-06 bounded Wiki_PG lab with scripted agent; BK-064 external Codex generated plugin isolated Cordis mock test 2026-11-06; BK-041 2026-11-06 privileged Podman synthetic 5x40/40, raw JSON privacy caveat; BK-002 2026-11-06 5-seed actual local TeamAI CLI A/B scope FAIL; Wiki_PG owner-suggested eBPF hypothesis",
   "count_by_status": {
     "проверен экспериментально": 16,
     "ожидает проверки": 0,
@@ -13,7 +13,7 @@
     "разобран": 30
   },
   "mapped_study_cards": 32,
-  "mapped_experimental_items": 19,
+  "mapped_experimental_items": 20,
   "notes": [
     "An experiment verifies only its explicitly declared bounded fixtures, not the full upstream claims.",
     "Excluded = removed from the CURRENT active backlog (priority C) or exact duplicate (D); an excluded paper may already have a completed full-text source review.",
@@ -26,7 +26,8 @@
     "BK-063 full official engineering article was recovered on 2026-11-05; orchestrator source and independent result reproduction remain unavailable.",
     "BK-034 lab validates only real Wiki_PG autoloop.sh in disposable toy worktrees with fake scripted agent, not AI LABS video/runtime, Karpathy GPU experiment, actual LLM, or production.",
     "BK-064 is 'разобран', NOT 'проверен экспериментально' for actual DSH Creator workflow. Model generation was from external Codex CLI and testing was synthetic/isolated.",
-    "BK-041 full eBPF verified ONLY for disposable rootless Podman synthetic exec 5x40/40 using filter.exec, not --comm; never publish raw JSON args/paths; no production or overhead claims."
+    "BK-041 full eBPF verified ONLY for disposable rootless Podman synthetic exec 5x40/40 using filter.exec, not --comm; never publish raw JSON args/paths; no production or overhead claims.",
+    "BK-002: isolated local-only port TeamAI B pass functional E2E but FAIL file-write allowlist; 35 extra tool/home paths in disposable HOME. Test source SHA not published, no deployment approval."
   ],
   "not_from_original_telegram_list_but_experimented_in_research_hub": [
     {
@@ -70,15 +71,17 @@
       "telegram_title_recovered": "Tencent TeamAI CLI",
       "source_url": "https://github.com/Tencent/teamai-cli",
       "source_kind": "Open-source software",
-      "source_audit_evidence": "REPO_AND_TREE",
+      "source_audit_evidence": "UPSTREAM_SOURCE_PIN; OWNER_LOCAL_PORT_e5a0bb59; UNIT_38_OF_38; CLI_E2E_7_OF_7; TYPECHECK_LINT_PASS; A_B_5x8_PER_ARM; SCOPE_35_EXTRA_FILES_FAIL",
       "initial_priority_2026_11_03": "A",
       "status": "разобран",
-      "disposition": "SOURCE_REVIEWED_NO_RUNTIME_TEST",
-      "status_reason_ru": "Официальные исходники, полная документация и собственный fork сверены по SHA и общей базе: 13 fork commits ahead, 732 behind upstream, сухой merge даёт 6 content conflicts. 45 проектных профилей рассмотрены; подтверждены три тематических соответствия. npm/CLI/E2E не запускались.",
+      "disposition": "REAL_CLI_BOUNDED_AB_FUNCTIONAL_PASS_SCOPE_GATE_FAIL_LOCAL_UNPUBLISHED_PORT",
+      "status_reason_ru": "Реальный локальный не опубликованный порт TeamAI e5a0bb59 в изолированном Podman: сборка, 38/38 unit, 7/7 CLI Git E2E, typecheck, lint PASS; 5×8 A/B: обе ветки точны по SHA, TeamAI p50 753.773ms vs простой Git+symlink 16.050ms, но 35 extra paths вне минимального профиля => scope gate FAIL. Никакого внедрения. См. reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md.",
       "hub_study_card": "studies/tencent-teamai-cli.md",
       "hub_study_url": "https://github.com/Artemedi/research-hub/blob/main/studies/tencent-teamai-cli.md",
-      "hub_experiment_report": null,
-      "hub_experiment_url": null
+      "hub_experiment_report": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "hub_experiment_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "hub_review_report": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "hub_review_url": "https://github.com/Artemedi/research-hub/blob/main/reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md"
     },
     {
       "id": "BK-003",

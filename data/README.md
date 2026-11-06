@@ -29,4 +29,6 @@
 | [data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json](results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
+| [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |
+| [data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json](results/tencent-teamai-cli/2026-11-06-distribution-ab.json) | Результат ограниченной проверки |
 | [data/results/vercel-agent-desktop/2026-11-05.json](results/vercel-agent-desktop/2026-11-05.json) | Результат ограниченной проверки |

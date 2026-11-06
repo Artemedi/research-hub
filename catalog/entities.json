@@ -1058,11 +1058,14 @@
       "kind": "engineering",
       "card": "studies/tencent-teamai-cli.md",
       "primary_url": "https://github.com/Tencent/teamai-cli",
-      "current_review_id": "tencent-teamai-cli-review",
+      "current_review_id": "bk002-teamai-cli-distribution-ab-20261106",
       "fit_coverage": "PARTIAL",
-      "card_body_sha256": "46a6e51fdcbf62b2fdae054f191d318e9f89846661fe81e4879be23fb26796ad",
+      "card_body_sha256": "acb03c0b0ee616c300b55ab1d732e907946194d0a7ca034b3a6d1f0caf5a8199",
       "linked_materials": [
-        "reviews/tencent-teamai-cli/2026-11-04.md"
+        "reviews/tencent-teamai-cli/2026-11-04.md",
+        "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+        "experiments/2026-11-06-bk002-teamai-distribution-ab.py",
+        "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json"
       ]
     },
     {
@@ -3529,6 +3532,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic Podman 5×40/40 with filter.exec; 0/25 negative; --comm and host 0/40. No real DBA, safety or overhead verification.",
       "supersedes": "inspektor-gadget-review"
+    },
+    {
+      "id": "bk002-teamai-cli-distribution-ab-20261106",
+      "study_ids": [
+        "tencent-teamai-cli"
+      ],
+      "version_ids": [
+        "tencent-teamai-cli-version"
+      ],
+      "date": "2026-11-06",
+      "document": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Tested local-only owner port e5a0bb5901f4b1c78d7b1e28a2ba43e1cbe86db4, NOT the linked public upstream version; version_ids names source lineage only. 38 unit + 7 E2E pass; 5 seeds x8 phases/arm; TeamAI write-scope gate FAIL with 35 extra paths in disposable HOME. No production or multi-host proof.",
+      "supersedes": "tencent-teamai-cli-review"
     }
   ],
   "experiments": [
@@ -3732,6 +3749,23 @@
         "data/results/inspektor-gadget/2026-11-06-host-pilot.json",
         "experiments/2026-11-06-bk041-podman-trace.py",
         "experiments/2026-11-06-bk041-host-diagnostic.py"
+      ]
+    },
+    {
+      "id": "bk002-teamai-cli-distribution-ab-20261106",
+      "study_ids": [
+        "tencent-teamai-cli"
+      ],
+      "review_id": "bk002-teamai-cli-distribution-ab-20261106",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Owner local port TeamAI CLI isolated offline: build, 38/38 unit, 7/7 Git E2E, typecheck and lint pass; 5 seeds ×8 stage/arm; Git+symlink vs actual CLI 40/40 functional each; candidate scope gate FAIL with 35 distinct disallowed home paths.",
+      "limitations": "Local port SHA not published; source not replayable from public GitHub. Baseline not feature-parity nor human-reviewed, no real credentials/home/services; benchmark not production agent performance, RSS is cumulative and I/O counters not physical bytes. No installation.",
+      "artifacts": [
+        "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+        "experiments/2026-11-06-bk002-teamai-distribution-ab.py",
+        "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json",
+        "data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json"
       ]
     }
   ],
@@ -12696,6 +12730,90 @@
       "source_line": 44,
       "source_excerpt": "| BK-041 Inspektor Gadget | `sequential-rca` | `DOCUMENTED_CANDIDATE / INTEGRATION_NOT_TESTED` | Возможный offline evidence формат для timestamp+PID+source при безопасной redaction; schema/parser, цепь атрибуции и актуальный source-code seam НЕ проверялись; не внедрять |",
       "supersedes": "inspektor-gadget-document-sequential-rca"
+    },
+    {
+      "id": "bk002-teamai-distribution-ab-20261106-dsh-team-context",
+      "study_id": "tencent-teamai-cli",
+      "project_id": "dsh-team-context",
+      "review_id": "bk002-teamai-cli-distribution-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "BOUNDED_CLI_CONTRACT_PASS / SCOPE_GATE_FAIL",
+      "evidence": "BOUNDED_CLI_CONTRACT_PASS / SCOPE_GATE_FAIL",
+      "reason": "Source-reviewed candidate with real isolated local-only port CLI test, but the default multi-tool write scope violated this experiment's narrow allowlist; no verified benefit on this project.",
+      "limitations": "No project production code installed or modified, source branch unavailable on GitHub, 35 unapproved paths in fake HOME; CLI run not equivalent to a user-approved multi-client install.",
+      "next_test": "Separate owner gate: pin published reviewed source, restrict actual destination tool sets, enforce zero unexpected writes and rollback; compare feature-equal multi-host sync with Git+symlink.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project-specific source integration and actual multi-host value not tested.",
+      "source_document": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "source_line": 58,
+      "source_excerpt": "| BK-002 TeamAI | `dsh-team-context` | `BOUNDED_CLI_CONTRACT_PASS / SCOPE_GATE_FAIL` | Source and E2E confirm schema/governance; нужен явный allowlist / opt-in к клиентским путям и тест zero unauthorized writes на точном конфиге |",
+      "supersedes": "tencent-teamai-cli-document-dsh-team-context"
+    },
+    {
+      "id": "bk002-teamai-distribution-ab-20261106-agent-skills",
+      "study_id": "tencent-teamai-cli",
+      "project_id": "agent-skills",
+      "review_id": "bk002-teamai-cli-distribution-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NO_MEASURED_ADVANTAGE",
+      "evidence": "DOCUMENTED_CANDIDATE / NO_MEASURED_ADVANTAGE",
+      "reason": "Source-reviewed candidate with real isolated local-only port CLI test, but the default multi-tool write scope violated this experiment's narrow allowlist; no verified benefit on this project.",
+      "limitations": "No project production code installed or modified, source branch unavailable on GitHub, 35 unapproved paths in fake HOME; CLI run not equivalent to a user-approved multi-client install.",
+      "next_test": "Separate owner gate: pin published reviewed source, restrict actual destination tool sets, enforce zero unexpected writes and rollback; compare feature-equal multi-host sync with Git+symlink.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project-specific source integration and actual multi-host value not tested.",
+      "source_document": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "source_line": 59,
+      "source_excerpt": "| BK-002 TeamAI | `agent-skills` | `DOCUMENTED_CANDIDATE / NO_MEASURED_ADVANTAGE` | Оценить 2-хостовый deployment, local-wins override, rollback, hook injection, операционную стоимость против существующего symlink+Git |",
+      "supersedes": "tencent-teamai-cli-document-agent-skills"
+    },
+    {
+      "id": "bk002-teamai-distribution-ab-20261106-teamai-cli",
+      "study_id": "tencent-teamai-cli",
+      "project_id": "teamai-cli",
+      "review_id": "bk002-teamai-cli-distribution-ab-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "LOCAL_PORT_TESTED / PUBLIC_UPSTREAM_NOT_REBASED",
+      "evidence": "LOCAL_PORT_TESTED / PUBLIC_UPSTREAM_NOT_REBASED",
+      "reason": "Source-reviewed candidate with real isolated local-only port CLI test, but the default multi-tool write scope violated this experiment's narrow allowlist; no verified benefit on this project.",
+      "limitations": "No project production code installed or modified, source branch unavailable on GitHub, 35 unapproved paths in fake HOME; CLI run not equivalent to a user-approved multi-client install.",
+      "next_test": "Separate owner gate: pin published reviewed source, restrict actual destination tool sets, enforce zero unexpected writes and rollback; compare feature-equal multi-host sync with Git+symlink.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project-specific source integration and actual multi-host value not tested.",
+      "source_document": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "source_line": 60,
+      "source_excerpt": "| BK-002 TeamAI | `teamai-cli` | `LOCAL_PORT_TESTED / PUBLIC_UPSTREAM_NOT_REBASED` | Опубликовать проверяемый SHA после peer review, отдельно разрешить merge conflicts и оценить совместимость версий без потери Team Context и без неожиданных writes |",
+      "supersedes": "tencent-teamai-cli-document-teamai-cli"
+    },
+    {
+      "id": "bk041-ebpf-wikipg-hypothesis-20261106",
+      "study_id": "inspektor-gadget",
+      "project_id": "Wiki_PG",
+      "review_id": "inspektor-gadget-podman-20261106",
+      "date": "2026-11-06",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "OWNER_SUGGESTION / PROFILE_HYPOTHESIS_ONLY",
+      "evidence": "OWNER_SUGGESTION / PROFILE_HYPOTHESIS_ONLY",
+      "reason": "User suggested evaluating eBPF event evidence for Wiki_PG PostgreSQL diagnostics; this is a research hypothesis, not established source-level fit.",
+      "limitations": "Verified eBPF experiment only synthetic container trace_exec (5×40/40). No Wiki_PG parser/producer or query-to-PID correlation evaluated. Raw JSON may leak process args/paths.",
+      "next_test": "Read-only inspect Wiki_PG ingestion/source provenance; isolated PostgreSQL Podman with PID/cgroup/timestamp independent oracle, redaction, CPU/RAM/IO/BPF and source attribution tests before any integration.",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Specific Wiki_PG source/API ingestion seam and production relevance not verified.",
+      "source_document": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "source_line": 53,
+      "source_excerpt": "| BK-041 Inspektor Gadget | `Wiki_PG` | `OWNER_SUGGESTION / PROFILE_HYPOTHESIS_ONLY` | В disposable PostgreSQL-контейнере с фиксированными PID/QueryID/временем проверить, даёт ли точечный eBPF trace_exec/trace_open полезные системные факты для Wiki_PG; определить точный ingest/source-provenance contract по исходникам Wiki_PG; запретить raw JSON argv/path, измерить CPU/RAM/IO/BPF и независимый oracle. Без внедрения |",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -14022,17 +14140,17 @@
     {
       "study_id": "tencent-teamai-cli",
       "project_id": "dsh-team-context",
-      "assessment_id": "tencent-teamai-cli-document-dsh-team-context"
+      "assessment_id": "bk002-teamai-distribution-ab-20261106-dsh-team-context"
     },
     {
       "study_id": "tencent-teamai-cli",
       "project_id": "agent-skills",
-      "assessment_id": "tencent-teamai-cli-document-agent-skills"
+      "assessment_id": "bk002-teamai-distribution-ab-20261106-agent-skills"
     },
     {
       "study_id": "tencent-teamai-cli",
       "project_id": "teamai-cli",
-      "assessment_id": "tencent-teamai-cli-document-teamai-cli"
+      "assessment_id": "bk002-teamai-distribution-ab-20261106-teamai-cli"
     },
     {
       "study_id": "toolgrad",
@@ -14553,6 +14671,11 @@
       "study_id": "dsh-creator-mode",
       "project_id": "agent-skills",
       "assessment_id": "bk064-creator-offline-20261106-agent-skills"
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "project_id": "Wiki_PG",
+      "assessment_id": "bk041-ebpf-wikipg-hypothesis-20261106"
     }
   ],
   "relations": [

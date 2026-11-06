@@ -44,3 +44,12 @@ Gadget был закреплён digest, контейнер создан **до*
 | BK-041 Inspektor Gadget | `sequential-rca` | `DOCUMENTED_CANDIDATE / INTEGRATION_NOT_TESTED` | Возможный offline evidence формат для timestamp+PID+source при безопасной redaction; schema/parser, цепь атрибуции и актуальный source-code seam НЕ проверялись; не внедрять |
 
 **Решение реестра:** `проверен экспериментально` **строго в границах 5×40 rootless Podman synthetic exec через `--filter.exec`**, а не «внедрён», «низкий overhead», «готов к RCA» или «безопасен для production». Функциональная пригодность доказана; практический эффект на проектах пока гипотеза. Следующий эксперимент, если потребуется: isolated PostgreSQL Podman workload с независимой нагрузкой, 5–10 рандомизированных A/B, perf/CPU/memory/IO/BPF counters + проверенный sanitizing, и отдельная source review причин `--comm` нулевого результата.
+
+
+## Дополнительная проектная гипотеза владельца: Wiki_PG (06.11.2026)
+
+| Исследование | Target ID | Решение | Следующий опыт |
+| --- | --- | --- | --- |
+| BK-041 Inspektor Gadget | `Wiki_PG` | `OWNER_SUGGESTION / PROFILE_HYPOTHESIS_ONLY` | В disposable PostgreSQL-контейнере с фиксированными PID/QueryID/временем проверить, даёт ли точечный eBPF trace_exec/trace_open полезные системные факты для Wiki_PG; определить точный ingest/source-provenance contract по исходникам Wiki_PG; запретить raw JSON argv/path, измерить CPU/RAM/IO/BPF и независимый oracle. Без внедрения |
+
+Это **предложение пользователя**, а не положительная source-level интеграционная оценка. В настоящем BK-041 проверен только synthetic container trace_exec, а не события PostgreSQL, привязка к конкретному SQL-запросу или действующий парсер Wiki_PG. Статус `DOCUMENTED_CANDIDATE` означает только исследовательскую гипотезу, не новую функцию и не deployment approval.

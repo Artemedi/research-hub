@@ -11,7 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | shared knowledge: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
-| [tencent-teamai-cli](../catalog/studies/tencent-teamai-cli.md) | DOCUMENTED_CANDIDATE | SOURCE_REVIEWED / PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / LAB_NOT_RUN / NO_PRODUCTION_APPROVAL | Owner project fit: dsh-team-context (canonical skills/governance provider), agent-skills (currently portable Codex skills installed with symlinks), teamai-cli (reference fork with owner-maintained adapter). Status SOURCE_REVIEWED / PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / LAB_NOT_RUN / NO_PRODUCTION_APPROVAL. Other 42 project cards screened at profile level, no backlinks without stronger evidence. | [Обзор](../reviews/tencent-teamai-cli/2026-11-04.md) · [Основание](../studies/tencent-teamai-cli.md) |
+| [tencent-teamai-cli](../catalog/studies/tencent-teamai-cli.md) | DOCUMENTED_CANDIDATE | LOCAL_PORT_TESTED / PUBLIC_UPSTREAM_NOT_REBASED | Source-reviewed candidate with real isolated local-only port CLI test, but the default multi-tool write scope violated this experiment's narrow allowlist; no verified benefit on this project. | [Обзор](../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) · [Основание](../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) |
 
 ## Соответствие не подтверждено или применение отложено
 
