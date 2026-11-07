@@ -57,6 +57,8 @@
 - [goal-aware-dynamic-collaboration/2026-11-07-council.py](goal-aware-dynamic-collaboration/2026-11-07-council.py)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs](goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py](goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py)
+- [kvtether/2026-11-07-event-oracle.py](kvtether/2026-11-07-event-oracle.py)
+- [kvtether/2026-11-07-event-order.mjs](kvtether/2026-11-07-event-order.mjs)
 - [research-portfolio/2026-11-07-claude-swarm-critics.py](research-portfolio/2026-11-07-claude-swarm-critics.py)
 - [research-portfolio/2026-11-07-claude-swarm-failure-e2e.mjs](research-portfolio/2026-11-07-claude-swarm-failure-e2e.mjs)
 - [research-portfolio/2026-11-07-claude-swarm-recovery.patch.gz](research-portfolio/2026-11-07-claude-swarm-recovery.patch.gz)

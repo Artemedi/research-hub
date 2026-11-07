@@ -58,6 +58,7 @@
 | [BK-034 Karpathy/AI LABS and Wiki_PG autoloop](karpathy-autoresearch/2026-11-06-loop-audit.md) | 2026-11-06 |
 | [KVSET — The KV Cache Working Set — полнотекстовая научная проверка](kvset/2026-11-05-full-text.md) | 2026-11-05 |
 | [KVTether — KV Cache Lifecycle Management in ReAct Agents — полнотекстовая научная проверка](kvtether/2026-11-05-full-text.md) | 2026-11-05 |
+| [KVTether full-source lifecycle ordering contract and backend adoption gate](kvtether/2026-11-07-event-order.md) | 2026-11-07 |
 | [Local Knowledge Graph — граф рассуждений](local-knowledge-graph/2026-11-04.md) | 2026-11-04 |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка](maadbench/2026-11-05-full-text.md) | 2026-11-05 |
 | [MCP Toolbox и Wiki_PG — настройки PostgreSQL](mcp-toolbox-postgres/2026-11-04.md) | 2026-11-04 |

@@ -1799,6 +1799,27 @@
       "title": "Two blocked ZCode model critiques of GAD coordination lab",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/kvtether/2026-11-07-event-order.md",
+      "title": "KVTether full-source lifecycle ordering contract and backend adoption gate",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/kvtether/2026-11-07-event-order.json",
+      "title": "Twenty-five KVTether synthetic event export ordering and five corruptions",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/kvtether/2026-11-07-event-oracle.json",
+      "title": "Independent Python hash-chain oracle for two hundred synthetic KV lifecycle events",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-07",
+  "study": "kvtether",
+  "original_result_sha256": "f286776db4e5b54770df24f139b5e35c6ffadac867d0be4c897789e823da77ff",
+  "sequences_replayed": 25,
+  "events_checked": 200,
+  "negative_controls": 5,
+  "mutation_rejected": true,
+  "status": "PASS_INDEPENDENT_SYNTHETIC_CHAIN_ORACLE",
+  "limitation": "Verifies synthetic ordering/hash reconstruction, not KVTether source or real KV engine"
+}
