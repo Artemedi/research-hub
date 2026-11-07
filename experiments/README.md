@@ -51,4 +51,8 @@
 - [bk048-understand-anything/sql-fixture.mjs](bk048-understand-anything/sql-fixture.mjs)
 - [bk050-chartli/normalize-fixture.mjs](bk050-chartli/normalize-fixture.mjs)
 - [bk053-yahont/id-fixture.py](bk053-yahont/id-fixture.py)
+- [research-portfolio/controller.py](research-portfolio/controller.py)
+- [research-portfolio/coverage.py](research-portfolio/coverage.py)
+- [research-portfolio/render-project-matrix.py](research-portfolio/render-project-matrix.py)
+- [research-portfolio/source-audit.py](research-portfolio/source-audit.py)
 - [tests/test_drag_evidence_gate.py](tests/test_drag_evidence_gate.py)

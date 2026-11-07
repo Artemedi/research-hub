@@ -1393,6 +1393,76 @@
       "title": "BK-021 synthetic tool-context measures and council verdict/audit",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/review.md",
+      "title": "Portfolio 83-source comprehensive access and evidence-gap audit",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/project-fit.md",
+      "title": "83-study × 45-project explicit assessment and NOT_EVALUATED coverage",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "docs/research-orchestrator.md",
+      "title": "Multi-study research orchestration architecture and acceptance contract",
+      "kind": "guide",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-source-audit.json",
+      "title": "Public source reachability and full-text machine-screening for 83 studies",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-coverage.json",
+      "title": "83 × 45 explicit project-assessment matrix (NOT_EVALUATED preserved)",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-controller.json",
+      "title": "Two-worker deterministic 249-node research DAG evidence gate audit",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-source-heads.json",
+      "title": "Public Github HEAD pin freshness check for twenty sources",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-five-full-sources.json",
+      "title": "Five public arxiv full-text extraction hashes and section headings",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-source-alternates.json",
+      "title": "Legal alternative author PDF access check and code-source links",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-zcode-screening.json",
+      "title": "ZCode advisory analyst and critic screening outcomes, circuit breaker after 8 of 31",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

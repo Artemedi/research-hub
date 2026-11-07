@@ -1,0 +1,1779 @@
+{
+  "model_calls": 0,
+  "network_calls": 0,
+  "source_count": 83,
+  "stages": [
+    "access_check",
+    "project_matrix_check",
+    "review_gate"
+  ],
+  "task_executions": 249,
+  "physical_workers_limit": 2,
+  "peak_physical_workers": 2,
+  "decision_counts": {
+    "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT": 3,
+    "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT": 3,
+    "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT": 50,
+    "REWORK_PIN_AND_TEST_SOURCE_CODE": 20,
+    "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE": 7
+  },
+  "events": [
+    {
+      "study_id": "cera-moa",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "kvtether",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "random-attention",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "cera-moa",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "kvtether",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "random-attention",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "cera-moa",
+      "stage": "review_gate",
+      "result": "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT"
+    },
+    {
+      "study_id": "kvtether",
+      "stage": "review_gate",
+      "result": "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT"
+    },
+    {
+      "study_id": "random-attention",
+      "stage": "review_gate",
+      "result": "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT"
+    },
+    {
+      "study_id": "hyra-2",
+      "stage": "access_check",
+      "result": "SOURCE_ACCESS_NEEDS_MANUAL_RESOLUTION"
+    },
+    {
+      "study_id": "sequential-diagnosis-language-models",
+      "stage": "access_check",
+      "result": "LEGAL_AUTHOR_FULL_TEXT_ALTERNATE_AVAILABLE"
+    },
+    {
+      "study_id": "warp-skill-doctor",
+      "stage": "access_check",
+      "result": "SOURCE_ACCESS_NEEDS_MANUAL_RESOLUTION"
+    },
+    {
+      "study_id": "sequential-diagnosis-language-models",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "hyra-2",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "warp-skill-doctor",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "sequential-diagnosis-language-models",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "hyra-2",
+      "stage": "review_gate",
+      "result": "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT"
+    },
+    {
+      "study_id": "warp-skill-doctor",
+      "stage": "review_gate",
+      "result": "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "agent-risk",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "agent-transfer-protocol",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "agentic-self-awareness",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "alphaxiv-openresearch",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "anthropic-agent-automations",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "behavior-beyond-text",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "benchshield",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "bird-rl",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "chartli",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "claude-swarm",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "concordat",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "covert-assistance",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "cursor-token-efficiency",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "cve-2026-82533-technical-disclosure",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "daedalus",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "decision-geometry-harness",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "drag",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "exactly-once-limbo",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "experienceindex",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "geoagent",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "goal-aware-dynamic-collaboration",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "harness2",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "harnesssecurity-bench",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "htn-orchestrate",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "hyperresearch",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "ipfire-fireperf",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "jevagentharness",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "julia-1",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "kvset",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "lago",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "local-knowledge-graph",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "maadbench",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "matoi",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "mcp-toolbox-postgres",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "memory-centric-continual-learning",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "memcomposer",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "memscope",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "microsoft-skill-recorder",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "novafabric",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "open-steps",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "package-hallucination-rule-files",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "paper2agent",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "pgbot",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "poisoned-skills",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "polar",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "rea",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "realm",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "recap",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "remory",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "red-teaming-auto-mode",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "rrsi",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "reva",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "self-replicating-prompt-injections",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "silent-cue-loss",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "simurg",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "squidagent",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "statecomp",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "swrouter",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "tencent-teamai-cli",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "toolgrad",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "transferable-tool-selection",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "trust-region-injection",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "understand-anything",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "unreal-agent",
+      "stage": "access_check",
+      "result": "TRANSCRIPT_NOT_VERIFIED"
+    },
+    {
+      "study_id": "unsloth-decision-model",
+      "stage": "access_check",
+      "result": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED"
+    },
+    {
+      "study_id": "vercel-agent-desktop",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "veriharness",
+      "stage": "access_check",
+      "result": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED"
+    },
+    {
+      "study_id": "yahont-ce",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "youtube-skills",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "zero-code",
+      "stage": "access_check",
+      "result": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "agent-risk",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "agent-transfer-protocol",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "agentic-self-awareness",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "alphaxiv-openresearch",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "anthropic-agent-automations",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "behavior-beyond-text",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "benchshield",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "bird-rl",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "chartli",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "claude-swarm",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "concordat",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "covert-assistance",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "cursor-token-efficiency",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "cve-2026-82533-technical-disclosure",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "daedalus",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "decision-geometry-harness",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "drag",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "exactly-once-limbo",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "experienceindex",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "geoagent",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "goal-aware-dynamic-collaboration",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "harness2",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "harnesssecurity-bench",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "htn-orchestrate",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "hyperresearch",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "ipfire-fireperf",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "jevagentharness",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "julia-1",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "kvset",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "lago",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "local-knowledge-graph",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "maadbench",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "matoi",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "mcp-toolbox-postgres",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "memory-centric-continual-learning",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "memcomposer",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "memscope",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "microsoft-skill-recorder",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "novafabric",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "open-steps",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "package-hallucination-rule-files",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "paper2agent",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "pgbot",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "poisoned-skills",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "rea",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "polar",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "recap",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "remory",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "realm",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "rrsi",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "reva",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "red-teaming-auto-mode",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "self-replicating-prompt-injections",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "silent-cue-loss",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "squidagent",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "simurg",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "statecomp",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "tencent-teamai-cli",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "swrouter",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "toolgrad",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "transferable-tool-selection",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "trust-region-injection",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "understand-anything",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "unreal-agent",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "unsloth-decision-model",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "vercel-agent-desktop",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "veriharness",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "yahont-ce",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "youtube-skills",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "zero-code",
+      "stage": "project_matrix_check",
+      "result": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agent-risk",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agent-transfer-protocol",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agentic-self-awareness",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "alphaxiv-openresearch",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "anthropic-agent-automations",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "behavior-beyond-text",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "benchshield",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "bird-rl",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "chartli",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "claude-swarm",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "concordat",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "covert-assistance",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "cursor-token-efficiency",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "cve-2026-82533-technical-disclosure",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "daedalus",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "decision-geometry-harness",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "drag",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "exactly-once-limbo",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "experienceindex",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "geoagent",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "goal-aware-dynamic-collaboration",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "harness2",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "harnesssecurity-bench",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "htn-orchestrate",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "hyperresearch",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "ipfire-fireperf",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "jevagentharness",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "julia-1",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "kvset",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "lago",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "local-knowledge-graph",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "maadbench",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "matoi",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "mcp-toolbox-postgres",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "memory-centric-continual-learning",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "memcomposer",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "memscope",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "microsoft-skill-recorder",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "novafabric",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "open-steps",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "package-hallucination-rule-files",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "paper2agent",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "pgbot",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "poisoned-skills",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "rea",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "polar",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "recap",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "remory",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "realm",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "rrsi",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "reva",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "red-teaming-auto-mode",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "self-replicating-prompt-injections",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "silent-cue-loss",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "squidagent",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "simurg",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "statecomp",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "tencent-teamai-cli",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "swrouter",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "toolgrad",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "transferable-tool-selection",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "trust-region-injection",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "understand-anything",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "unreal-agent",
+      "stage": "review_gate",
+      "result": "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT"
+    },
+    {
+      "study_id": "unsloth-decision-model",
+      "stage": "review_gate",
+      "result": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "vercel-agent-desktop",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "veriharness",
+      "stage": "review_gate",
+      "result": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "yahont-ce",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "youtube-skills",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "zero-code",
+      "stage": "review_gate",
+      "result": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    }
+  ],
+  "study_state": [
+    {
+      "study_id": "agent-error-dataset",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agent-risk",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agent-transfer-protocol",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "agentic-self-awareness",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "alphaxiv-openresearch",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "anthropic-agent-automations",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "behavior-beyond-text",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "benchshield",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "bird-rl",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "cera-moa",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT"
+    },
+    {
+      "study_id": "chartli",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "claude-swarm",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "concordat",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "covert-assistance",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "cursor-token-efficiency",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "cve-2026-82533-technical-disclosure",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "daedalus",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "decision-geometry-harness",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "drag",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "exactly-once-limbo",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "experienceindex",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "geoagent",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "goal-aware-dynamic-collaboration",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "gpt6-astra-skills-prompts",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "harness2",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "harnesssecurity-bench",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "htn-orchestrate",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "hyperresearch",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "hyra-2",
+      "access_check": "SOURCE_ACCESS_NEEDS_MANUAL_RESOLUTION",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT"
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "ipfire-fireperf",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "jevagentharness",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "julia-1",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "kvset",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "kvtether",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT"
+    },
+    {
+      "study_id": "lago",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "local-knowledge-graph",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "maadbench",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "matoi",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "mcp-toolbox-postgres",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "memcomposer",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "memory-centric-continual-learning",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "memscope",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "microsoft-skill-recorder",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "novafabric",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "open-steps",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "package-hallucination-rule-files",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "paper2agent",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "pgbot",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "poisoned-skills",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "polar",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "random-attention",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_45_PROJECT_TRIAGE_WITHOUT_INFERRED_FIT"
+    },
+    {
+      "study_id": "rea",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "realm",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "recap",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "red-teaming-auto-mode",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "remory",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "reva",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "rrsi",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "self-replicating-prompt-injections",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "sequential-diagnosis-language-models",
+      "access_check": "LEGAL_AUTHOR_FULL_TEXT_ALTERNATE_AVAILABLE",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "silent-cue-loss",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "simurg",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "squidagent",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "statecomp",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "swrouter",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "tencent-teamai-cli",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "toolgrad",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "transferable-tool-selection",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "trust-region-injection",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "understand-anything",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "unreal-agent",
+      "access_check": "TRANSCRIPT_NOT_VERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT"
+    },
+    {
+      "study_id": "unsloth-decision-model",
+      "access_check": "PUBLIC_ARTICLE_READABLE_STRUCTURE_UNVERIFIED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_INDEPENDENT_SOURCE_AND_TEST_COVERAGE"
+    },
+    {
+      "study_id": "vercel-agent-desktop",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "veriharness",
+      "access_check": "SOURCE_STRUCTURALLY_READABLE_NOT_SCIENTIFIC_REVIEWED",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "HOLD_PRIOR_REVIEW_UNCHANGED_NO_NEW_DEPLOYMENT"
+    },
+    {
+      "study_id": "warp-skill-doctor",
+      "access_check": "SOURCE_ACCESS_NEEDS_MANUAL_RESOLUTION",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_LEGAL_FULL_SOURCE_OR_TRANSCRIPT"
+    },
+    {
+      "study_id": "yahont-ce",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "youtube-skills",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    },
+    {
+      "study_id": "zero-code",
+      "access_check": "PUBLIC_REPOSITORY_REACHABLE_CODE_REVIEW_PENDING",
+      "project_matrix_check": "MATRIX_CONSISTENCY_CONFIRMED_NOT_FIT_APPROVAL",
+      "review_gate": "REWORK_PIN_AND_TEST_SOURCE_CODE"
+    }
+  ],
+  "scope": "DETERMINISTIC_METADATA_REVIEW_CONTROLLER_NOT_SCIENTIFIC_REPRODUCTION",
+  "registry_sha": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+  "source_scan_sha256": "6fb7291bd65a7c997fc3ac1181232352b678495788a790d509ad41cccb8d0f27",
+  "coverage_sha256": "1dd31b4e768413023e5891520b4af02ae95cd6d063c01118e75ea7acdeb4a42d",
+  "review_outcome": "NO_NEW_PRODUCTION_APPROVAL",
+  "limitations": [
+    "No ZCode model calls were performed in this particular scheduler audit",
+    "Source accessibility is not independent full-text methodological reading",
+    "Project matrix validates consistency of prior assessments, not every candidate's fit",
+    "Deterministic stage scores are gate decisions, not author-reported experiment replications",
+    "No changes to original research outcomes or private project source code"
+  ]
+}

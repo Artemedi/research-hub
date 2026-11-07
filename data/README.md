@@ -32,6 +32,13 @@
 | [data/results/ipfire-fireperf/2026-11-04.json](results/ipfire-fireperf/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json](results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-controller.json](results/research-portfolio/2026-11-07-controller.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-coverage.json](results/research-portfolio/2026-11-07-coverage.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-five-full-sources.json](results/research-portfolio/2026-11-07-five-full-sources.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-source-alternates.json](results/research-portfolio/2026-11-07-source-alternates.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-source-audit.json](results/research-portfolio/2026-11-07-source-audit.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-source-heads.json](results/research-portfolio/2026-11-07-source-heads.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-zcode-screening.json](results/research-portfolio/2026-11-07-zcode-screening.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json](results/tencent-teamai-cli/2026-11-06-distribution-ab.json) | Результат ограниченной проверки |

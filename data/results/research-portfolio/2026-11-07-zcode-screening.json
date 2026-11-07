@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-07",
+  "purpose": "ZCode two-role public source CARD screening attempt, not scientific paper review",
+  "targeted": 31,
+  "attempted": 8,
+  "completed_advisory_analyst_plus_critic": 1,
+  "blocked_or_incomplete": 7,
+  "unattempted_after_circuit_breaker": 23,
+  "stop_reason": "FIVE_CONSECUTIVE_INCOMPLETE_ANALYST_OR_CRITIC",
+  "model_calls": 14,
+  "successful_response_reported_tokens": 18811,
+  "source_type": "public existing research-hub card excerpt, NOT original full article",
+  "model_access": "ZCode GLM-5.3-Flash via unofficial Start Plan wrapper",
+  "privacy": "No private project cards, original full protected papers, keys or real production data sent",
+  "conclusions": [
+    "One expert+critic metadata screening completion was on random-attention; source-level implementation hypothesis only, NOT a verified scientific conclusion",
+    "No project fit approvals and no new scientific evidence deduced",
+    "Provider and response failures make full 31-target autonomous review blocked",
+    "All 83 studies nonetheless have separate offline machine access and matrix coverage checks",
+    "Retries are limited and the circuit breaker fired as designed"
+  ],
+  "rows": [
+    {
+      "study_id": "cera-moa",
+      "public_source_access": "FULL_HTML_MACHINE_ACCESSIBLE",
+      "prior_review_claim": "FULL_TEXT_REVIEWED",
+      "analyst_status": "BLOCKED",
+      "critic_status": "NOT_RUN",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false
+    },
+    {
+      "study_id": "kvtether",
+      "public_source_access": "FULL_HTML_MACHINE_ACCESSIBLE",
+      "prior_review_claim": "FULL_TEXT_REVIEWED",
+      "analyst_status": "PASS",
+      "critic_status": "BLOCKED",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false,
+      "advisory_priority": "P2",
+      "advisory_next_source_gate": "FULL_TEXT_METHODS_RESULTS_LIMITATIONS"
+    },
+    {
+      "study_id": "random-attention",
+      "public_source_access": "FULL_HTML_MACHINE_ACCESSIBLE",
+      "prior_review_claim": "FULL_TEXT_REVIEWED",
+      "analyst_status": "PASS",
+      "critic_status": "PASS",
+      "bounded_screening_status": "TRIAGE_DUAL_PASS",
+      "source_fully_reviewed_by_models": false,
+      "advisory_priority": "P2",
+      "advisory_next_source_gate": "SOURCE_CODE_AND_TESTS",
+      "advisory_critic_verdict": "TRIAGE_ACCEPT"
+    },
+    {
+      "study_id": "chartli",
+      "public_source_access": "GITHUB_REPOSITORY_LANDING_AVAILABLE_NOT_FULL_CODE_REVIEW",
+      "prior_review_claim": "PARTIAL_SOURCE_REVIEW",
+      "analyst_status": "BLOCKED",
+      "critic_status": "NOT_RUN",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false
+    },
+    {
+      "study_id": "claude-swarm",
+      "public_source_access": "GITHUB_REPOSITORY_LANDING_AVAILABLE_NOT_FULL_CODE_REVIEW",
+      "prior_review_claim": "PARTIAL_SOURCE_REVIEW",
+      "analyst_status": "PASS",
+      "critic_status": "BLOCKED",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false,
+      "advisory_priority": "P2",
+      "advisory_next_source_gate": "SOURCE_CODE_AND_TESTS"
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "public_source_access": "GITHUB_REPOSITORY_LANDING_AVAILABLE_NOT_FULL_CODE_REVIEW",
+      "prior_review_claim": "PARTIAL_SOURCE_REVIEW",
+      "analyst_status": "BLOCKED",
+      "critic_status": "NOT_RUN",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false
+    },
+    {
+      "study_id": "hyperresearch",
+      "public_source_access": "GITHUB_REPOSITORY_LANDING_AVAILABLE_NOT_FULL_CODE_REVIEW",
+      "prior_review_claim": "PARTIAL_SOURCE_REVIEW",
+      "analyst_status": "BLOCKED",
+      "critic_status": "NOT_RUN",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false
+    },
+    {
+      "study_id": "ipfire-fireperf",
+      "public_source_access": "PRIMARY_HTML_TEXT_AVAILABLE",
+      "prior_review_claim": "PARTIAL_SOURCE_REVIEW",
+      "analyst_status": "PASS",
+      "critic_status": "BLOCKED",
+      "bounded_screening_status": "BLOCKED_OR_INCOMPLETE",
+      "source_fully_reviewed_by_models": false,
+      "advisory_priority": "P2",
+      "advisory_next_source_gate": "SOURCE_CODE_AND_TESTS"
+    }
+  ]
+}

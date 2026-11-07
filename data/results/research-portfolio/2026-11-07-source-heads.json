@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-07",
+  "method": "git ls-remote HEAD for publicly linked GitHub sources",
+  "scope": "freshness metadata, NOT source audit or code test",
+  "repos_checked": 20,
+  "observed_HEAD_count": 20,
+  "explicit_primary_url_pin_changed": 2,
+  "limitations": [
+    "Public HEAD today does not invalidate historical pinned reviews",
+    "HEAD does not prove compatibility, code quality or production readiness",
+    "Private project source revisions are intentionally not exported"
+  ],
+  "entries": [
+    {
+      "study_id": "alphaxiv-openresearch",
+      "repo": "alphaXiv/OpenResearch",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "76e111820ceb74231b47f0cbce71167d6a1777d6",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "chartli",
+      "repo": "ahmadawais/chartli",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "3b39b97aeb564646437b2b7501b60541994d7575",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "claude-swarm",
+      "repo": "cj-vana/claude-swarm",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "31f19199bf3557cda4860231186a06b72c8edb94",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "repo": "deepseek-ai/dsh-superagent-prototype",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "8c32a9dc5d72c033816c6a8110b37f40cf94fba4",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "hyperresearch",
+      "repo": "jordan-gibbs/hyperresearch",
+      "declared_primary_url_pin": "aece65f9307197119629beacf8aeaf8cc80e999a",
+      "observed_public_HEAD": "d4725a2bc384bc9c49f86d2032307bbfd6f3327e",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": true,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "repo": "inspektor-gadget/inspektor-gadget",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "447ef9f64106d2298c36984a26a67b2a271289e2",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "repo": "karpathy/autoresearch",
+      "declared_primary_url_pin": "228791fb499afffb54b46200aca536f79142f117",
+      "observed_public_HEAD": "228791fb499afffb54b46200aca536f79142f117",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "local-knowledge-graph",
+      "repo": "punnerud/Local_Knowledge_Graph",
+      "declared_primary_url_pin": "58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+      "observed_public_HEAD": "58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "mcp-toolbox-postgres",
+      "repo": "googleapis/mcp-toolbox",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "8d54da0d2c4069937f62654f3262f3f46fae850d",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "microsoft-skill-recorder",
+      "repo": "microsoft/skill-recorder",
+      "declared_primary_url_pin": "505c97ae47be5642c0e1b44ebb8d1c1530c298fa",
+      "observed_public_HEAD": "505c97ae47be5642c0e1b44ebb8d1c1530c298fa",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "open-steps",
+      "repo": "kharmanskyi/open-steps",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "4fa744ba8ea06ccf128a39853824c46ac391dd00",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "pgbot",
+      "repo": "pgrundev/pgbot",
+      "declared_primary_url_pin": "826531fefd7d13b4381327acd4cce5be98bd71eb",
+      "observed_public_HEAD": "826531fefd7d13b4381327acd4cce5be98bd71eb",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "rea",
+      "repo": "morluto/rea",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "abfccc0683e73ee396087309ab98c78c9f6dde4b",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "simurg",
+      "repo": "doofzoff/SIMURG",
+      "declared_primary_url_pin": "2831a92359cdaf1b38cc14f55e74251e09a91e0b",
+      "observed_public_HEAD": "2831a92359cdaf1b38cc14f55e74251e09a91e0b",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "tencent-teamai-cli",
+      "repo": "Tencent/teamai-cli",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "b4e8ed55d8a4844842bd85317af82af88360e264",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "understand-anything",
+      "repo": "Egonex-AI/Understand-Anything",
+      "declared_primary_url_pin": "4e6d3299017a7432da15957874992837a315c5b4",
+      "observed_public_HEAD": "98d6dca712407b8cbf0bca21b539c197e5a7825c",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": true,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "vercel-agent-desktop",
+      "repo": "vercel-labs/agent-desktop",
+      "declared_primary_url_pin": null,
+      "observed_public_HEAD": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "yahont-ce",
+      "repo": "pipedude/yahont-ce",
+      "declared_primary_url_pin": "367b48da9de2d296f905aca4bf0eb384043bf643",
+      "observed_public_HEAD": "367b48da9de2d296f905aca4bf0eb384043bf643",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "youtube-skills",
+      "repo": "ZeroPointRepo/youtube-skills",
+      "declared_primary_url_pin": "4f7994b94e7d5e250c3b51102d609992e04d5d0d",
+      "observed_public_HEAD": "4f7994b94e7d5e250c3b51102d609992e04d5d0d",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    },
+    {
+      "study_id": "zero-code",
+      "repo": "0-SOFT/0-CODE",
+      "declared_primary_url_pin": "47f6a81724e87ff5e916f0eb146516d801a8fb28",
+      "observed_public_HEAD": "47f6a81724e87ff5e916f0eb146516d801a8fb28",
+      "state": "HEAD_VERIFIED",
+      "head_differs_from_explicit_url_pin": false,
+      "full_source_review_performed": false
+    }
+  ]
+}
