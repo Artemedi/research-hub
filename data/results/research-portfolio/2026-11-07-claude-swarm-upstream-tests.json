@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-07",
+  "study": "claude-swarm",
+  "source_repo": "cj-vana/claude-swarm",
+  "source_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "test_environment": {
+    "container": "docker.io/library/node:22",
+    "image_id": "6622b5ce13429346f91fcdb936ec2e026ccc28465409fd25b7f79c623e7a20af",
+    "node_version": "v22.23.2",
+    "runtime_network": "none",
+    "dependency_restore": "npm ci --ignore-scripts --no-audit --no-fund; network available only during dependency restore",
+    "production_credentials_used": false,
+    "real_claude_worker_calls": 0
+  },
+  "build_command": "npm run build",
+  "build_exit": 0,
+  "test_command": "npm test -- --reporter=default",
+  "test_exit": 0,
+  "test_files": {
+    "src/utils/prompt-templates.test.ts": 46,
+    "src/workers/confidence.test.ts": 40,
+    "src/utils/git-verification.test.ts": 21
+  },
+  "tests_total": 107,
+  "tests_passed": 107,
+  "tests_failed": 0,
+  "build_test_log_sha256": "6f3354d109ce613e924c79e043add84863a88f47b01a6846df64c3efb83d8c74",
+  "source_boundary": {
+    "file": "src/workers/manager.ts",
+    "line": 63,
+    "default_permission_mode": "bypassPermissions",
+    "environment_override": "CLAUDE_SWARM_PERMISSION_MODE",
+    "default_worker_tools": "Bash,Read,Write,Edit,Glob,Grep"
+  },
+  "limits": [
+    "The three upstream tests cover Git verification, confidence and prompt templates, not live worker lifecycle",
+    "No tmux failure, workspace conflict, enforcement fallback or state replay was tested",
+    "Default bypassPermissions is a source-level finding; no live Claude authorization was used",
+    "No target DSH project or production git tree was changed"
+  ]
+}

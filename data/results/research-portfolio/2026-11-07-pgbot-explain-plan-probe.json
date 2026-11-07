@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-07",
+  "study": "pgbot",
+  "experiment": "EXPLAIN-only read-only transaction planner-time execution",
+  "source_repo": "pgrundev/pgbot",
+  "source_pin": "826531fefd7d13b4381327acd4cce5be98bd71eb",
+  "source_observation": "internal/plan/fetch.go calls ReadOnlyTx and SimpleQuery of EXPLAIN (FORMAT JSON) SELECT",
+  "image": "docker.io/library/postgres:18",
+  "image_id": "79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "network": "none",
+  "published_ports": 0,
+  "credentials": "ephemeral synthetic only",
+  "production_db_touched": false,
+  "server_version_num": "180006",
+  "cases": {
+    "immutable_explain_read_only": {
+      "exit_code": 0,
+      "elapsed_ms": 94,
+      "notice_detected": true,
+      "stdout_sha256": "dc4bd196fe2f1f0058ce9c9215006c269e56d0db87cc868399096aede5f4a3e0",
+      "stderr_tail": "NOTICE:  PLANNER_IMMUTABLE_CALLED\n"
+    },
+    "volatile_explain_read_only": {
+      "exit_code": 0,
+      "elapsed_ms": 96,
+      "notice_detected": false,
+      "stdout_sha256": "db6afbcccfc7cc39e119b7d647bf988f61a7cc5c214975094fa917ea42493595",
+      "stderr_tail": ""
+    },
+    "pg_sleep_explain_read_only": {
+      "exit_code": 0,
+      "elapsed_ms": 94,
+      "notice_detected": false,
+      "stdout_sha256": "dc4bd196fe2f1f0058ce9c9215006c269e56d0db87cc868399096aede5f4a3e0",
+      "stderr_tail": ""
+    }
+  },
+  "conclusion": "Read-only plan-only EXPLAIN can invoke a user-defined IMMUTABLE function during constant folding. This does not mean the SELECT plan is executed wholesale; it invalidates an absolute assertion that no user function body can run while planning.",
+  "limits": [
+    "Only a synthetic user-defined IMMUTABLE function with RAISE NOTICE was tested in PostgreSQL 18",
+    "No destructive side effect, no file access, network, or privilege escalation was attempted",
+    "Real risk depends on EXECUTE rights, trusted language/procedure implementation and connection role",
+    "pgbot code was reviewed at its pinned commit, but its binary was not used in this isolated SQL proof",
+    "Planning itself may evaluate IMMUTABLE expressions, even inside a READ ONLY transaction"
+  ]
+}

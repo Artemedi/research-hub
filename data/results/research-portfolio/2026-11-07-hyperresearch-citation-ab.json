@@ -1,0 +1,919 @@
+{
+  "date": "2026-11-07",
+  "study": "hyperresearch",
+  "source_repo": "jordan-gibbs/hyperresearch",
+  "pinned_commit": "aece65f9307197119629beacf8aeaf8cc80e999a",
+  "source_file": "src/hyperresearch/core/citecheck.py",
+  "source_sha256": "53405db780de66866e8b3131f7a99edc1341832095fcc7b0888eaae69684a465",
+  "experiment": "125 synthetic citation/note pairs using actual upstream triage_pairs",
+  "balanced_base_prompts": 25,
+  "cases": 125,
+  "supported_ground_truth": 25,
+  "unsupported_ground_truth": 100,
+  "original_mechanical_true_positive": 25,
+  "original_unsupported_auto_pass": 75,
+  "original_false_auto_pass_rate_of_synthetic_unsupported": 0.75,
+  "conservative_exact_only_true_positive": 25,
+  "conservative_exact_only_unsupported_auto_pass": 0,
+  "per_class": {
+    "contradiction_never": {
+      "supported-mechanical": 25
+    },
+    "explicit_denial": {
+      "supported-mechanical": 25
+    },
+    "supported_exact": {
+      "supported-mechanical": 25
+    },
+    "unrelated": {
+      "needs-llm": 25
+    },
+    "wrong_entity": {
+      "supported-mechanical": 25
+    }
+  },
+  "test_construction": "5 actors x 5 clauses; exact, never, other-entity, explicit-denial, unrelated",
+  "limits": [
+    "Synthetic deliberately adversarial input, not a natural-citation prevalence estimate",
+    "Strict comparator only changes the mechanical auto-pass decision; it requires downstream LLM review of non-exact paraphrases",
+    "Tested isolated triage_pairs() loaded from pinned source with stubbed external dependencies",
+    "No production Hyperresearch or project integration used, no model calls, no score of downstream LLM classifier"
+  ],
+  "fixtures": [
+    {
+      "id": "0-0-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-0-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-0-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-0-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-0-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-1-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-1-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-1-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-1-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-1-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-2-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-2-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-2-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-2-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-2-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-3-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-3-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-3-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-3-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-3-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-4-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "0-4-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-4-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-4-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "0-4-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-0-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-0-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-0-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-0-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-0-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-1-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-1-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-1-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-1-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-1-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-2-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-2-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-2-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-2-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-2-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-3-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-3-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-3-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-3-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-3-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-4-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "1-4-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-4-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-4-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "1-4-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-0-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-0-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-0-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-0-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-0-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-1-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-1-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-1-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-1-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-1-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-2-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-2-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-2-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-2-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-2-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-3-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-3-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-3-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-3-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-3-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-4-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "2-4-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-4-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-4-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "2-4-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-0-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-0-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-0-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-0-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-0-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-1-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-1-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-1-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-1-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-1-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-2-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-2-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-2-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-2-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-2-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-3-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-3-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-3-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-3-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-3-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-4-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "3-4-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-4-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-4-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "3-4-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-0-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-0-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-0-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-0-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-0-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-1-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-1-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-1-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-1-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-1-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-2-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-2-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-2-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-2-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-2-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-3-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-3-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-3-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-3-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-3-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-4-supported_exact",
+      "expected_supported": true,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "supported-mechanical",
+      "unsupported_auto_pass": false
+    },
+    {
+      "id": "4-4-contradiction_never",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-4-wrong_entity",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-4-explicit_denial",
+      "expected_supported": false,
+      "original_verdict": "supported-mechanical",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": true
+    },
+    {
+      "id": "4-4-unrelated",
+      "expected_supported": false,
+      "original_verdict": "needs-llm",
+      "conservative_verdict": "needs-llm",
+      "unsupported_auto_pass": false
+    }
+  ]
+}

@@ -10,6 +10,7 @@
 | --- | --- |
 | [Five logical critic council opinions over public source screening](../portfolio/2026-11-07/cluster-critics.md) | 2026-11-07 |
 | [31 source-grounded research micro-swarm review (advisory; not independent science)](../portfolio/2026-11-07/mass-swarm-review.md) | 2026-11-07 |
+| [Follow-up four-source evidence and independent technical acceptance](../portfolio/2026-11-07/next-evidence-round2.md) | 2026-11-07 |
 | [83-study × 45-project explicit assessment and NOT_EVALUATED coverage](../portfolio/2026-11-07/project-fit.md) | 2026-11-07 |
 | [Portfolio 83-source comprehensive access and evidence-gap audit](../portfolio/2026-11-07/review.md) | 2026-11-07 |
 | [GPT-6 independent senior review of thirty-one source-scope screenings](../portfolio/2026-11-07/senior-review.md) | 2026-11-07 |

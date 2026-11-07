@@ -1512,6 +1512,41 @@
       "title": "Five grouped source-screening critic verdicts with withheld scientific approval",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/next-evidence-round2.md",
+      "title": "Follow-up four-source evidence and independent technical acceptance",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-hyperresearch-citation-ab.json",
+      "title": "Pinned Hyperresearch synthetic citation-triage A/B on 125 labeled pairs",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-pgbot-explain-plan-probe.json",
+      "title": "PostgreSQL 18 read-only planner IMMUTABLE-function negative controls",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-toolbox-30-settings.json",
+      "title": "MCP Toolbox v1.15.0 thirty PostgreSQL GUC read-only oracle checks",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json",
+      "title": "Pinned Claude Swarm TypeScript build and 107 upstream unit-test results",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

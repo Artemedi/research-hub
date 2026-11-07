@@ -70,3 +70,35 @@ Offline repository verification remains:
     git diff --check
 
 Do not invoke the ZCode executor from routine repository tests or CI.
+
+## 2026-11-07 next evidence round: four bounded source experiments
+
+The [follow-up report](../../portfolio/2026-11-07/next-evidence-round2.md)
+covers a controlled 125-case Hyperresearch citation-triage test, a disposable
+PostgreSQL 18 planner semantics probe, upstream Claude Swarm build+107 tests
+in an offline Node runtime, and a real 30-GUC MCP Toolbox stdio comparison.
+
+- Hyperresearch: pin jordan-gibbs/hyperresearch to
+  aece65f9307197119629beacf8aeaf8cc80e999a, then run:
+  `HYPER_PIN=/path/to/pinned-repo OUTPUT=/tmp/hyper.json python3 -B
+  experiments/research-portfolio/2026-11-07-hyperresearch-citation-ab.py`
+  (Python 3 stdlib only, source imports stubbed).
+- pgbot: run `python3 -B
+  experiments/research-portfolio/2026-11-07-pgbot-explain-plan-probe.py`
+  with rootless Podman and a local cached `postgres:18` image. No host
+  database or PostgreSQL port is used.
+- Claude Swarm: pin cj-vana/claude-swarm to
+  31f19199bf3557cda4860231186a06b72c8edb94. In disposable worktree,
+  `npm ci --ignore-scripts` during dependency restore, then
+  `npm run build && npm test` inside a Node 22 container with `--network none`.
+  These are the original upstream tests, not independent worker-E2E tests.
+- Toolbox: verify the v1.15.0 official binary against SHA-256
+  `f6fac005c39898a379523700727a2a3d0a2828f579bec22cc0efe74e0652062d`,
+  create an isolated Python `mcp` SDK venv, then run
+  `TOOLBOX_LAB_DIR=/path/to/binary-and-venv OUTPUT=/tmp/guc.json
+  python3 -B experiments/research-portfolio/2026-11-07-toolbox-30-settings.py`.
+  The script launches only a no-network disposable PG18 container, creates
+  an unprivileged synthetic role, runs fixed parameterized SQL and cleans up.
+
+No experiment authorizes production changes. Neither partial excerpt analysis,
+a passing structure check, nor successful unit tests are a scientific oracle.

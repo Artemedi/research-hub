@@ -1,0 +1,259 @@
+{
+  "date": "2026-11-07",
+  "study": "mcp-toolbox-postgres",
+  "toolbox_version": "1.15.0+binary.linux.amd64.8e8e569",
+  "toolbox_binary_sha256": "f6fac005c39898a379523700727a2a3d0a2828f579bec22cc0efe74e0652062d",
+  "postgres_image": "docker.io/library/postgres:18",
+  "postgres_image_id": "79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "network": "none",
+  "published_ports": 0,
+  "private_project_credentials_used": false,
+  "tool_spec": "fixed SELECT FROM pg_catalog.pg_settings WHERE name = $1; one bind param",
+  "setting_count": 30,
+  "distinct_settings": [
+    "max_connections",
+    "shared_buffers",
+    "work_mem",
+    "maintenance_work_mem",
+    "autovacuum",
+    "autovacuum_naptime",
+    "autovacuum_vacuum_scale_factor",
+    "autovacuum_analyze_scale_factor",
+    "autovacuum_freeze_max_age",
+    "vacuum_freeze_min_age",
+    "checkpoint_timeout",
+    "max_wal_size",
+    "min_wal_size",
+    "wal_level",
+    "wal_compression",
+    "wal_buffers",
+    "synchronous_commit",
+    "synchronous_standby_names",
+    "max_replication_slots",
+    "max_wal_senders",
+    "hot_standby",
+    "idle_in_transaction_session_timeout",
+    "statement_timeout",
+    "lock_timeout",
+    "deadlock_timeout",
+    "effective_cache_size",
+    "random_page_cost",
+    "seq_page_cost",
+    "effective_io_concurrency",
+    "max_parallel_workers"
+  ],
+  "separate_direct_sql_oracle": true,
+  "oracle_count": 30,
+  "matched_count": 30,
+  "negative_input_cases": [
+    {
+      "kind": "no_match",
+      "is_error": false,
+      "no_sql_ddl_executed": true
+    },
+    {
+      "kind": "no_match",
+      "is_error": false,
+      "no_sql_ddl_executed": true
+    },
+    {
+      "kind": "no_match_or_rejected",
+      "is_error": true,
+      "no_sql_ddl_executed": true
+    }
+  ],
+  "fixture_count_before_after": "1/1",
+  "role_insert_denied": true,
+  "call_latency_median_ms": 0.826,
+  "call_latency_observed_p95_ms": 1.059,
+  "latency_note": "one MCP call per GUC, no warmup/statistical benchmark",
+  "results": [
+    {
+      "name": "max_connections",
+      "oracle_sha256": "9f321fb1dc2c4f5f0862ffc6bbe5e6b0e38ef480baa8cfe17c57d6d20089d124",
+      "match": true,
+      "call_elapsed_ms": 2.027
+    },
+    {
+      "name": "shared_buffers",
+      "oracle_sha256": "b8a5b519af45ea099d272648b40e18301365ba777e411679aeba1f0f29d154d1",
+      "match": true,
+      "call_elapsed_ms": 1.059
+    },
+    {
+      "name": "work_mem",
+      "oracle_sha256": "75bcc2689f88ab7232d3d3a0935884798a58925ec290fcce637a27d10e177000",
+      "match": true,
+      "call_elapsed_ms": 0.931
+    },
+    {
+      "name": "maintenance_work_mem",
+      "oracle_sha256": "d90589cbdbd052ffde90db832ab3350b8307d1de0ed079489646dd00bd9f64ba",
+      "match": true,
+      "call_elapsed_ms": 0.793
+    },
+    {
+      "name": "autovacuum",
+      "oracle_sha256": "cb0deb04326321f97f1f47bbce20d822d8a4c7f96a9a25417894dc852fef9990",
+      "match": true,
+      "call_elapsed_ms": 0.753
+    },
+    {
+      "name": "autovacuum_naptime",
+      "oracle_sha256": "4337b89fe9d70e53ee21c96c850bb8d817546d3a9aa4f99e15d68d6904ccff9e",
+      "match": true,
+      "call_elapsed_ms": 0.76
+    },
+    {
+      "name": "autovacuum_vacuum_scale_factor",
+      "oracle_sha256": "79219abbc8d13e9f800c63adb318153c0a727dbde7cc18171709a4cd829951c2",
+      "match": true,
+      "call_elapsed_ms": 0.76
+    },
+    {
+      "name": "autovacuum_analyze_scale_factor",
+      "oracle_sha256": "af5e8369ed8e3e44e2e5f21261fb11269f62ec37c12661d4281794667f18676d",
+      "match": true,
+      "call_elapsed_ms": 0.743
+    },
+    {
+      "name": "autovacuum_freeze_max_age",
+      "oracle_sha256": "ca96d690b93d9703172d0d16c74fa017474a4892653dd875339cbbd0c9a2cadb",
+      "match": true,
+      "call_elapsed_ms": 0.724
+    },
+    {
+      "name": "vacuum_freeze_min_age",
+      "oracle_sha256": "c03c5340248921243c1789155c3b4c26428ab0a55896ea1bddad46f1be603024",
+      "match": true,
+      "call_elapsed_ms": 0.773
+    },
+    {
+      "name": "checkpoint_timeout",
+      "oracle_sha256": "bcde82bd8af8e62feb49aa677b426383ac581634a41942fcc5c86c1a8e45c388",
+      "match": true,
+      "call_elapsed_ms": 0.889
+    },
+    {
+      "name": "max_wal_size",
+      "oracle_sha256": "3a1343258d92843f17434db55df05629e4aa842eb8f3a15da68f1773b45e2a49",
+      "match": true,
+      "call_elapsed_ms": 1.02
+    },
+    {
+      "name": "min_wal_size",
+      "oracle_sha256": "26be9710b0744da1cba109f0ad356fba2821e5832c6822752333cf5c35da19d1",
+      "match": true,
+      "call_elapsed_ms": 1.083
+    },
+    {
+      "name": "wal_level",
+      "oracle_sha256": "0d1ac5eb9873ca8e9149d6e32aaeda8243c4fe55339a8021ef14eabb4258f8ef",
+      "match": true,
+      "call_elapsed_ms": 0.815
+    },
+    {
+      "name": "wal_compression",
+      "oracle_sha256": "aee11e965f3a0e525d9b2ef884b74820eef742b5a9785cd7a8baff76ef2484ac",
+      "match": true,
+      "call_elapsed_ms": 0.812
+    },
+    {
+      "name": "wal_buffers",
+      "oracle_sha256": "c13b5dfe940c8863c5341a0de686d0679df5cd82d51a271365dc834985da08c6",
+      "match": true,
+      "call_elapsed_ms": 0.827
+    },
+    {
+      "name": "synchronous_commit",
+      "oracle_sha256": "0886afed1924bb51e0a1b192aba90ca61f77cb4f8782fff0fe8a447f4a58eec6",
+      "match": true,
+      "call_elapsed_ms": 0.878
+    },
+    {
+      "name": "synchronous_standby_names",
+      "oracle_sha256": "1e76b13752efe23845569248f9c70e89be97c01ee2dbc9eb520115b37b27baaa",
+      "match": true,
+      "call_elapsed_ms": 0.845
+    },
+    {
+      "name": "max_replication_slots",
+      "oracle_sha256": "6e3ca086565c876bd254c84faf4e5fa8935da8e6e3b72f05035f0c6173f69986",
+      "match": true,
+      "call_elapsed_ms": 0.852
+    },
+    {
+      "name": "max_wal_senders",
+      "oracle_sha256": "25b5a530ce8d6da15779e97f6950ea4c4edd0cadc40b5bd5dc1f32b8a2fcfe42",
+      "match": true,
+      "call_elapsed_ms": 0.825
+    },
+    {
+      "name": "hot_standby",
+      "oracle_sha256": "765c7017eebb369f8ec6f401e03365dde9eb781873470b7bd4ed244354188af4",
+      "match": true,
+      "call_elapsed_ms": 0.96
+    },
+    {
+      "name": "idle_in_transaction_session_timeout",
+      "oracle_sha256": "4a724754bc09a7dd931df0c786f3b0e028a4d65a60be25590335965b32034767",
+      "match": true,
+      "call_elapsed_ms": 0.861
+    },
+    {
+      "name": "statement_timeout",
+      "oracle_sha256": "03ffaaacf11aaa96225a366e4b3237f18b69cc342a38c38bab7b4c645e1857e9",
+      "match": true,
+      "call_elapsed_ms": 0.852
+    },
+    {
+      "name": "lock_timeout",
+      "oracle_sha256": "4630d7ebea8ea2f8b61fd1beec6a3cab49c423758e3837e1fd23b1714d20d94c",
+      "match": true,
+      "call_elapsed_ms": 0.82
+    },
+    {
+      "name": "deadlock_timeout",
+      "oracle_sha256": "19f65f9530c4edf06553214067d63932c0f51936febc3a5305b70fd565935aca",
+      "match": true,
+      "call_elapsed_ms": 0.813
+    },
+    {
+      "name": "effective_cache_size",
+      "oracle_sha256": "1aef5ff8f2769e37958d77df006f91f6c4d91954676d812059e33a10a6e3bb07",
+      "match": true,
+      "call_elapsed_ms": 0.801
+    },
+    {
+      "name": "random_page_cost",
+      "oracle_sha256": "2f8a54eb75b7f7eca56ee165b72548ed8a5238e934a43e608adedaa316a698bd",
+      "match": true,
+      "call_elapsed_ms": 0.779
+    },
+    {
+      "name": "seq_page_cost",
+      "oracle_sha256": "90dc8cc2cc9318cc8a21f81d638cb2a59e5f16d049baa9811e1437ae927a2de5",
+      "match": true,
+      "call_elapsed_ms": 0.796
+    },
+    {
+      "name": "effective_io_concurrency",
+      "oracle_sha256": "ab2faa2eeec0ab7c70082f0a4ec21214825896b8344195d68d61e3de1296d6f2",
+      "match": true,
+      "call_elapsed_ms": 0.88
+    },
+    {
+      "name": "max_parallel_workers",
+      "oracle_sha256": "7828c2935481c09ecc8cf229374c047dee099cffd85d7ab49cf14d845563c478",
+      "match": true,
+      "call_elapsed_ms": 0.944
+    }
+  ],
+  "limits": [
+    "Only 30 predefined read-only pg_settings names on synthetic PG18 were tested",
+    "Raw SQL source is controlled by researcher; never exposed generic execute_sql",
+    "Wiki_PG snapshot functionality is not tested in this run; previous 4-GUC lab is separate",
+    "Backend uses PostgreSQL role-grants and parameterized fixed statement, not string validation",
+    "No external PostgreSQL network, production table or secret was used"
+  ]
+}
