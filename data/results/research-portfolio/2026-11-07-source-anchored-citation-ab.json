@@ -1,0 +1,535 @@
+{
+  "date": "2026-11-07",
+  "study": "clean pinned dsh-paper2agent + arXiv full HTML citation entailment A/B",
+  "target_source_pin": "6d82a42175a71d3327b773df88f1da0707efe43c",
+  "papers": {
+    "2610.22195": {
+      "url": "https://arxiv.org/html/2610.22195",
+      "html_sha256": "db0746b460b880aab51e9a9d3878a32ae6690bacc3807774ba581963b970f7db",
+      "title": "HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration",
+      "method_sections_available": true,
+      "results_sections_available": true,
+      "explicit_limitations_section_found": false
+    },
+    "2610.30418": {
+      "url": "https://arxiv.org/html/2610.30418",
+      "html_sha256": "80b01bba9c64a4bee86dec3badaccc39e8e801121c0610544affb5e67cfe190a",
+      "title": "Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems",
+      "method_sections_available": true,
+      "results_sections_available": true,
+      "explicit_limitations_section_found": true
+    }
+  },
+  "passages": {
+    "htn-sample": {
+      "source_id": "2610.22195",
+      "section_title": "Appendix A Experimental Details",
+      "anchor": "A1",
+      "paragraph_sha256": "07444be1ec481330b1d6a8c4c2b5089b6363b3b030f6fcdbb9fd5ef164c55fa5",
+      "chars": 307
+    },
+    "htn-judge": {
+      "source_id": "2610.22195",
+      "section_title": "A.3 Evaluation Judges",
+      "anchor": "A1.SS3",
+      "paragraph_sha256": "dfea123219bc1c27a43ecb6313cfcb4a67a099ce56f1835fa43ad1dfc4b346d2",
+      "chars": 213
+    },
+    "htn-result": {
+      "source_id": "2610.22195",
+      "section_title": "4.2 Main Results",
+      "anchor": "S4.SS2",
+      "paragraph_sha256": "595ca335c4df61e701df7a8d522a2dc97ce69ac9001d61279d3f42f9e3ac6ed2",
+      "chars": 806
+    },
+    "htn-method": {
+      "source_id": "2610.22195",
+      "section_title": "3.2 Result-Informed Planning",
+      "anchor": "S3.SS2",
+      "paragraph_sha256": "e89ad60e93a441d54adfabac61f01b49eab6d28ace36e121145a8a26bfb1e411",
+      "chars": 1266
+    },
+    "mosaic-benchmark": {
+      "source_id": "2610.30418",
+      "section_title": "3.1 Synthetic benchmark",
+      "anchor": "S3.SS1",
+      "paragraph_sha256": "70869ed8cbaf3c710a18308db4621cedf92f9f4cee94a971782b082bc76201f8",
+      "chars": 746
+    },
+    "mosaic-factor": {
+      "source_id": "2610.30418",
+      "section_title": "3.1 Synthetic benchmark",
+      "anchor": "S3.SS1",
+      "paragraph_sha256": "109efd25e04daae529c242dcadcddd32b37f84761d7f6909a655267e04d321e8",
+      "chars": 630
+    },
+    "mosaic-annotation": {
+      "source_id": "2610.30418",
+      "section_title": "4 Human Annotation and Automated Measurement",
+      "anchor": "S4",
+      "paragraph_sha256": "03c51128080ebfaa84d4f73ba44229faef073dac51b1d570ac8e3914a38a6bb8",
+      "chars": 626
+    },
+    "mosaic-limit": {
+      "source_id": "2610.30418",
+      "section_title": "Limitations",
+      "anchor": "Sx1",
+      "paragraph_sha256": "7ddebcdb9dd57fffe8f1255ad30330e6e777b29366aa797b120ce70ca7a69f79",
+      "chars": 706
+    }
+  },
+  "cases_total": 32,
+  "oracle_supported": 16,
+  "oracle_unsupported": 16,
+  "target_structural_acceptances": 32,
+  "external_exact_gate_support": 5,
+  "role_invocations": 8,
+  "roles_completed": 8,
+  "roles_blocked": 0,
+  "council_evaluated": 32,
+  "council_true_auto_supported": 16,
+  "council_false_auto_supported": 0,
+  "role_metrics": {
+    "source_reviewer": {
+      "evaluated": 32,
+      "true_auto_supported": 16,
+      "false_auto_supported": 0,
+      "abstentions": 0
+    },
+    "counterexample_critic": {
+      "evaluated": 32,
+      "true_auto_supported": 16,
+      "false_auto_supported": 0,
+      "abstentions": 0
+    }
+  },
+  "total_provider_wall_ms": 137236.3,
+  "median_call_ms": 16848.6,
+  "usage_sum": {
+    "input_tokens": 6008,
+    "output_tokens": 6193,
+    "cache_read_input_tokens": 7552
+  },
+  "role_receipts": {
+    "0-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "d1fbe32528c00db41b1b61fd97c8eed122abbaec9da49a57500476e62c616cab",
+      "response_sha256": "3ee3a83f1b7b61764b10d23e6b55656ad3ffc51c168eb048060c53147790c61f",
+      "usage": {
+        "input_tokens": 532,
+        "output_tokens": 1002,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "0-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "180f15caf7af5e923d3d738f6204390b791225a7178b1cd5e3696685e185f534",
+      "response_sha256": "ed5bd9260087a3bf4a910a52e0e211c0392c113828fde732c3d9adbe8072c4b8",
+      "usage": {
+        "input_tokens": 1557,
+        "output_tokens": 777,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "1-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "9c9cde6f9c8cd0d7866d59b57a6a73ea8042aee6d5ff5cc7b226fedcb0e4c3d0",
+      "response_sha256": "d1323cc9d5e3601747976236c3daa1b4c8d0c09d4ea5e588924767f335d7eb15",
+      "usage": {
+        "input_tokens": 816,
+        "output_tokens": 796,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "1-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "34a18748cb1ec8edc123581b035b8b58a994b21b8d36cf9a8dc07a0dc8ce729c",
+      "response_sha256": "77b9e006c95c057c6006ee6d3f7df14aa5327df1f8bc8777d65e55a5adfba93e",
+      "usage": {
+        "input_tokens": 817,
+        "output_tokens": 643,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "2-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "ddf3b781551d313fa70520e863a7a45ce9c78ea8b128c5eb69c3f1dfbbfa4daf",
+      "response_sha256": "637b574d8288f479358691cb8b0e3812e6a14d48cceaf615d2faf56f4a8a813c",
+      "usage": {
+        "input_tokens": 552,
+        "output_tokens": 559,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "2-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "3639a0bb3de6d916736b9e5f7330bea9e1effcf1a3cc397383285e7f905a29ec",
+      "response_sha256": "abdbdf6d4a390140924412f34aaf80d0cc7e3383d1a165ffe0452a7b0b20f392",
+      "usage": {
+        "input_tokens": 681,
+        "output_tokens": 470,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "3-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "d55916d96190558cd8580eb291ab47108ecae201b330d2580aa168b47cffd55a",
+      "response_sha256": "4d0935f4629fd079cc8a5c0177cc6063fc571dc7d2c647f7f53836d3ed13d531",
+      "usage": {
+        "input_tokens": 526,
+        "output_tokens": 958,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "3-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "b0fccce5399162173a13e477df42841415dc80949144905431df6227321cc8bb",
+      "response_sha256": "89ff2b69ebaf700b3cfc1b1640ae9c119a71d4fcada2311e88ef6cd072e6f824",
+      "usage": {
+        "input_tokens": 527,
+        "output_tokens": 988,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    }
+  },
+  "case_results": [
+    {
+      "id": "0-0",
+      "source_key": "htn-sample",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "0-1",
+      "source_key": "htn-sample",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "0-2",
+      "source_key": "htn-sample",
+      "category": "swapped_number",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "0-3",
+      "source_key": "htn-sample",
+      "category": "added_unsubstantiated",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-0",
+      "source_key": "htn-judge",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "1-1",
+      "source_key": "htn-judge",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "1-2",
+      "source_key": "htn-judge",
+      "category": "wrong_benchmark",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-3",
+      "source_key": "htn-judge",
+      "category": "wrong_benchmark",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-0",
+      "source_key": "htn-result",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "2-1",
+      "source_key": "htn-result",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "2-2",
+      "source_key": "htn-result",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-3",
+      "source_key": "htn-result",
+      "category": "reversal",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-0",
+      "source_key": "htn-method",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "3-1",
+      "source_key": "htn-method",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "3-2",
+      "source_key": "htn-method",
+      "category": "negation",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-3",
+      "source_key": "htn-method",
+      "category": "negation",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-0",
+      "source_key": "mosaic-benchmark",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "4-1",
+      "source_key": "mosaic-benchmark",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "4-2",
+      "source_key": "mosaic-benchmark",
+      "category": "wrong_population",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-3",
+      "source_key": "mosaic-benchmark",
+      "category": "wrong_domain",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-0",
+      "source_key": "mosaic-factor",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "5-1",
+      "source_key": "mosaic-factor",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "5-2",
+      "source_key": "mosaic-factor",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-3",
+      "source_key": "mosaic-factor",
+      "category": "wrong_factor",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "6-0",
+      "source_key": "mosaic-annotation",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "6-1",
+      "source_key": "mosaic-annotation",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "6-2",
+      "source_key": "mosaic-annotation",
+      "category": "wrong_population",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "6-3",
+      "source_key": "mosaic-annotation",
+      "category": "unsupported_extrapolation",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "7-0",
+      "source_key": "mosaic-limit",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "7-1",
+      "source_key": "mosaic-limit",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "7-2",
+      "source_key": "mosaic-limit",
+      "category": "overclaim",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "7-3",
+      "source_key": "mosaic-limit",
+      "category": "overclaim",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    }
+  ],
+  "limitations": [
+    "Author-crafted claim labels and anchors, not an independently annotated random corpus",
+    "Full source HTML files were checked by digest; ZCode saw only selected paragraphs",
+    "HTML pin is content digest; arXiv pages can later change and block reproduction",
+    "HTN paper lacks an explicit Limitations heading; no full scientific review claimed",
+    "Same provider model family for both roles; model agreement not independent oracle",
+    "No measure of true scientific conclusions, retrieval quality, or multi-hop grounding",
+    "No production integration or change to target project, no model tools or private data",
+    "The target submit_analysis is structural validation, not an entailment classifier"
+  ]
+}

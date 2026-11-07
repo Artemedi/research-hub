@@ -46,6 +46,7 @@
 | [data/results/research-portfolio/2026-11-07-pgbot-explain-plan-probe.json](results/research-portfolio/2026-11-07-pgbot-explain-plan-probe.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-pgplanner-timeout-ab.json](results/research-portfolio/2026-11-07-pgplanner-timeout-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-alternates.json](results/research-portfolio/2026-11-07-source-alternates.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-source-anchored-citation-ab.json](results/research-portfolio/2026-11-07-source-anchored-citation-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-audit.json](results/research-portfolio/2026-11-07-source-audit.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-heads.json](results/research-portfolio/2026-11-07-source-heads.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-toolbox-30-settings.json](results/research-portfolio/2026-11-07-toolbox-30-settings.json) | Результат ограниченной проверки |

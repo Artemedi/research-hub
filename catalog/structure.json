@@ -1617,6 +1617,20 @@
       "title": "Two incomplete ZCode criticisms of upstream Claude Swarm worker failure cases",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/source-anchored-citation-ab.md",
+      "title": "Source-anchored real-paper citation entailment A/B and ZCode council",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-source-anchored-citation-ab.json",
+      "title": "Two full arXiv HTMLs: 32 authored citation cases and eight ZCode role calls",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }
