@@ -2002,6 +2002,55 @@
       "title": "Two XML parsers and finite coordinate checks on Chartli source output",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/closure-coverage-pass.md",
+      "title": "Evidence provenance and truthful remaining gates across 83 research cards",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/hyperresearch/2026-11-07-upstream-tests.md",
+      "title": "Pinned upstream Hyperresearch 54 test execution and existing citation limits",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-evidence-coverage-83.json",
+      "title": "Verified review provenance, file hashes and boundaries for all 83 cards",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-eight-source-manifest.json",
+      "title": "Eight full arXiv HTML pins with selected method result and limitation excerpt hashes",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-eight-source-zcode-advisory.json",
+      "title": "ZCode research swarm stopped after three provider failures without acceptance",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-eight-source-zcode-oracle.json",
+      "title": "Independent source SHA oracle and failed model role accounting",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/hyperresearch/2026-11-07-upstream-tests.json",
+      "title": "54 pinned upstream Hyperresearch core tests and resource receipts",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

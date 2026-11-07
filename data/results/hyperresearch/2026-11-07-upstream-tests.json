@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-07",
+  "study": "hyperresearch",
+  "source_pin": "aece65f9307197119629beacf8aeaf8cc80e999a",
+  "file_sha256": {
+    "tests/test_core/test_claims_and_embed.py": "0d44ba20bc2ff1247135850aa0c2a294850838a979c7bfa57ab697d2d7a1a2ab",
+    "tests/test_core/test_source_ranking.py": "1edd23c944867140cab025b0a3ff8cc8402ced4d65a297069b132bb2b38be77d",
+    "src/hyperresearch/core/citecheck.py": "53405db780de66866e8b3131f7a99edc1341832095fcc7b0888eaae69684a465"
+  },
+  "original_test_paths": [
+    "tests/test_core/test_claims_and_embed.py",
+    "tests/test_core/test_source_ranking.py"
+  ],
+  "test_count": 54,
+  "test_pass_count": 54,
+  "pytest_exit_code": 0,
+  "test_stdout_sha256": "92295b0fc8c365eeec63cb280b6f7d3e27385895ff2f0098073b8c696eb46d80",
+  "test_collected_stdout_sha256": "43c5821524d26320ec181106ee0401faee916d89f4eba631e06a072fb0adde63",
+  "pytest_plugin_autoload_disabled": true,
+  "network_requests_made_by_test_controller": 0,
+  "package_install_performed": false,
+  "elapsed_ms": 1264.2,
+  "local_child_cpu_s": 2.0676,
+  "source_tree_modified": false,
+  "status": "PINNED_UPSTREAM_54_TESTS_PASS",
+  "independent_semantic_citation_verification": false,
+  "limitations": [
+    "Two existing upstream suites, 54 tests, not complete project test suite",
+    "Upstream test success is neither independent citation truth nor production safety",
+    "Prior synthetic support false positives remain unresolved",
+    "No installation of Hyperresearch or live model, network provider or target project integration",
+    "CPU excludes remote workloads (none used), elapsed includes subprocess startup"
+  ]
+}

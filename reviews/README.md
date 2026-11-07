@@ -12,6 +12,7 @@
 | [Claude Swarm source-pinned worktree and worker-outcome repair A/B](../portfolio/2026-11-07/claude-swarm-repair-ab.md) | 2026-11-07 |
 | [20 distinct public research tasks: direct ZCode, fixed council and adaptive Claude Swarm](../portfolio/2026-11-07/claude-zcode-dag20-audit.md) | 2026-11-07 |
 | [Claude Swarm to ZCode restricted worker bridge: live pilot and repository skill](../portfolio/2026-11-07/claude-zcode-swarm-skill-pilot.md) | 2026-11-07 |
+| [Evidence provenance and truthful remaining gates across 83 research cards](../portfolio/2026-11-07/closure-coverage-pass.md) | 2026-11-07 |
 | [Five logical critic council opinions over public source screening](../portfolio/2026-11-07/cluster-critics.md) | 2026-11-07 |
 | [31 source-grounded research micro-swarm review (advisory; not independent science)](../portfolio/2026-11-07/mass-swarm-review.md) | 2026-11-07 |
 | [Follow-up four-source evidence and independent technical acceptance](../portfolio/2026-11-07/next-evidence-round2.md) | 2026-11-07 |
@@ -52,6 +53,7 @@
 | [BK-009 original Astra guidance full-text and five-pair live A/B](gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) | 2026-11-06 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
+| [Pinned upstream Hyperresearch 54 test execution and existing citation limits](hyperresearch/2026-11-07-upstream-tests.md) | 2026-11-07 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
 | [Inspektor Gadget — разрешения eBPF](inspektor-gadget/2026-11-04.md) | 2026-11-04 |
 | [BK-041 — проверка системного допуска](inspektor-gadget/2026-11-06-privilege-gate.md) | 2026-11-06 |

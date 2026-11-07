@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-07",
+  "status": "ZCODE_ADVISORY_NOT_SCIENTIFIC_ACCEPT",
+  "source_manifest_sha256": "0eb4d4415ce7ec1c83c426d6e033b115723cab19b5c84b0822c9b6bfe9fc73be",
+  "planned_calls": 8,
+  "attempted_calls": 3,
+  "completed_calls": 0,
+  "physical_concurrency": 1,
+  "model_tools_enabled": false,
+  "roles": [
+    "source_grounder",
+    "method_falsifier"
+  ],
+  "calls": [
+    {
+      "role": "source_grounder",
+      "batch": 0,
+      "ids": [
+        "agent-risk",
+        "agentic-self-awareness"
+      ],
+      "prompt_sha256": "029e323691f38c5c7033850845591af2ef61644f2557b091ae5905bf797f40bb",
+      "status": "BLOCKED_PROVIDER",
+      "error": "TIMEOUT",
+      "elapsed_ms": 52055.5,
+      "local_cpu_user_s": 0.107,
+      "local_cpu_sys_s": 0.019,
+      "local_fs_blocks": 0
+    },
+    {
+      "role": "method_falsifier",
+      "batch": 0,
+      "ids": [
+        "agent-risk",
+        "agentic-self-awareness"
+      ],
+      "prompt_sha256": "dda55f94ddf3598ed5e73c0fb148654d4be472b2b24a3bf17967b41e5c239fb6",
+      "status": "BLOCKED_PROVIDER",
+      "exit_code": 1,
+      "raw_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": "NONZERO_EXIT",
+      "elapsed_ms": 12899.8,
+      "local_cpu_user_s": 0.16,
+      "local_cpu_sys_s": 0.025,
+      "local_fs_blocks": 0
+    },
+    {
+      "role": "source_grounder",
+      "batch": 1,
+      "ids": [
+        "memscope",
+        "harnesssecurity-bench"
+      ],
+      "prompt_sha256": "5d88626c488e437b9d88110e8ba23cf7b7b78b9b09862ad1b27158496095a85d",
+      "status": "BLOCKED_PROVIDER",
+      "exit_code": 1,
+      "raw_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": "NONZERO_EXIT",
+      "elapsed_ms": 12595.1,
+      "local_cpu_user_s": 0.172,
+      "local_cpu_sys_s": 0.034,
+      "local_fs_blocks": 0
+    }
+  ],
+  "interpretation": "Same model family acting in two roles; no independent author claim verification or production approval",
+  "limitations": [
+    "Models receive excerpted public full-text HTML paragraphs, not complete research archives",
+    "Distinct roles are not independently trained human experts",
+    "Author-reported results remain author-reported even if roles agree",
+    "Literal quote locality is independently checked in separate verifier",
+    "No project/private files or tool executions sent to ZCode"
+  ]
+}

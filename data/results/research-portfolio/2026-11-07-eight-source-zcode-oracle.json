@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-07",
+  "status": "MODEL_ADVISORY_QUOTE_LOCALITY_ONLY",
+  "manifest_sha256": "0eb4d4415ce7ec1c83c426d6e033b115723cab19b5c84b0822c9b6bfe9fc73be",
+  "model_sha256": "17e84ed188873dc50136190ba26ff5880306b84aba941206a686a039a274fe8c",
+  "completed_model_calls": 0,
+  "total_model_calls": 3,
+  "grounded_short_quotes": 0,
+  "ungrounded_short_quotes": 0,
+  "failed_model_calls": 3,
+  "negative_missing_quote_rejected": true,
+  "full_text_sha_verified": 8,
+  "evaluations": [
+    {
+      "batch": 0,
+      "role": "method_falsifier",
+      "status": "BLOCKED_PROVIDER",
+      "error": "NONZERO_EXIT",
+      "checked": 0
+    },
+    {
+      "batch": 0,
+      "role": "source_grounder",
+      "status": "BLOCKED_PROVIDER",
+      "error": "TIMEOUT",
+      "checked": 0
+    },
+    {
+      "batch": 1,
+      "role": "source_grounder",
+      "status": "BLOCKED_PROVIDER",
+      "error": "NONZERO_EXIT",
+      "checked": 0
+    }
+  ],
+  "scientific_accept_claims": 0,
+  "independent_model_families": 1,
+  "limitations": [
+    "Verbatim quote locality does not validate interpretation, empirical accuracy or completeness",
+    "Source extracted snippets are public and may miss context from the complete paper",
+    "Author-reported numerical results are not independently rerun",
+    "Two roles use the same ZCode model family; agreement is not independent truth"
+  ]
+}

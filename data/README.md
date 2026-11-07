@@ -48,6 +48,7 @@
 | [data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json](results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json) | Результат ограниченной проверки |
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json](results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json) | Результат ограниченной проверки |
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json](results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json) | Результат ограниченной проверки |
+| [data/results/hyperresearch/2026-11-07-upstream-tests.json](results/hyperresearch/2026-11-07-upstream-tests.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](results/inspektor-gadget/2026-11-06-host-diagnostics.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-pilot.json](results/inspektor-gadget/2026-11-06-host-pilot.json) | Результат ограниченной проверки |
@@ -74,6 +75,10 @@
 | [data/results/research-portfolio/2026-11-07-cluster-critics.json](results/research-portfolio/2026-11-07-cluster-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-controller.json](results/research-portfolio/2026-11-07-controller.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-coverage.json](results/research-portfolio/2026-11-07-coverage.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-eight-source-manifest.json](results/research-portfolio/2026-11-07-eight-source-manifest.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-eight-source-zcode-advisory.json](results/research-portfolio/2026-11-07-eight-source-zcode-advisory.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-eight-source-zcode-oracle.json](results/research-portfolio/2026-11-07-eight-source-zcode-oracle.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-evidence-coverage-83.json](results/research-portfolio/2026-11-07-evidence-coverage-83.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-five-full-sources.json](results/research-portfolio/2026-11-07-five-full-sources.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-hyperresearch-citation-ab.json](results/research-portfolio/2026-11-07-hyperresearch-citation-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-mass-anchor-audit.json](results/research-portfolio/2026-11-07-mass-anchor-audit.json) | Результат ограниченной проверки |

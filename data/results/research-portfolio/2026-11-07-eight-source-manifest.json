@@ -1,0 +1,240 @@
+{
+  "date": "2026-11-07",
+  "status": "EIGHT_PINNED_FULL_HTML_SOURCE_PACKETS_PREPARED",
+  "full_legal_html_available": 8,
+  "batch_count": 4,
+  "items_per_batch": 2,
+  "sources": [
+    {
+      "id": "agent-risk",
+      "source_url": "https://arxiv.org/html/2610.16280v1",
+      "full_html_sha256": "00efdbf5d47fa0fd5895c1bed6211302a477c2183f066959496f02ca7bc45d72",
+      "full_html_bytes": 1465903,
+      "passages": {
+        "method": {
+          "heading": "2 Problem Formulation",
+          "passage_sha256": "4172e95a2139bdb74858440409e05cdade3fe77e0acc2f59b270a0a57e0fbde0",
+          "character_count": 1100,
+          "present": true
+        },
+        "results": {
+          "heading": "4 Applying the Framework in a Sandbox",
+          "passage_sha256": "a116225680e98567044587e0f1be4ff9803fe04669bb43b8bf96755a9c2752cb",
+          "character_count": 970,
+          "present": true
+        },
+        "limits": {
+          "heading": "Limitations",
+          "passage_sha256": "eb0f947af6ebe24b0f3546e5a687799c09e0c1b2e0f09857b9f04c6253f1b68f",
+          "character_count": 1100,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "agentic-self-awareness",
+      "source_url": "https://arxiv.org/html/2610.19226v1",
+      "full_html_sha256": "2b4273b6c050456134604714bbc091b6242193ab47e58b1d18e31814673ff913",
+      "full_html_bytes": 366089,
+      "passages": {
+        "method": {
+          "heading": "2 Method",
+          "passage_sha256": "e5d9b697237052bcb95757b34b885cbdbc022ad36c91bbdc3118ff253b26b057",
+          "character_count": 967,
+          "present": true
+        },
+        "results": {
+          "heading": "3 Experiments",
+          "passage_sha256": "b96745a2fbbf7a9f9ed52727747628589baa589e09e496298f07de34bb24af83",
+          "character_count": 1100,
+          "present": true
+        },
+        "limits": {
+          "heading": "A.6 Limitations",
+          "passage_sha256": "816989d12d192e0dd51daf04ce3975581e0e9622633cecc504d9fa9172d2be05",
+          "character_count": 975,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "memscope",
+      "source_url": "https://arxiv.org/html/2610.21170v1",
+      "full_html_sha256": "b0401a1ed64e01aa0ecfe68b2ec035037434ceaf2723ad98324dd2329742bdc6",
+      "full_html_bytes": 476308,
+      "passages": {
+        "method": {
+          "heading": "3 Method",
+          "passage_sha256": "7ba291eae73f3ad99440c31c91e91c025b45e33f1b333ce12c5e22c6ffdfd92f",
+          "character_count": 941,
+          "present": true
+        },
+        "results": {
+          "heading": "4 Experiments",
+          "passage_sha256": "7a35c3b7ccea1bcfbe0ec46da17d29300d565f81e9c7d4d295afea9fa60c9455",
+          "character_count": 1100,
+          "present": true
+        },
+        "limits": {
+          "heading": null,
+          "passage_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "character_count": 0,
+          "present": false
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "harnesssecurity-bench",
+      "source_url": "https://arxiv.org/html/2610.07639v1",
+      "full_html_sha256": "c1dd3f5e0445f7f19aec877c4e529a854df17b0ea71488e45c4f9a8fc2ec2812",
+      "full_html_bytes": 1515683,
+      "passages": {
+        "method": {
+          "heading": "6 Benchmark Evaluation",
+          "passage_sha256": "c9e3204741d1fe8d8af9be3e76571f3b9bc4a3f5e2466fb6336269ff37a0b712",
+          "character_count": 1100,
+          "present": true
+        },
+        "results": {
+          "heading": "3.3 Results",
+          "passage_sha256": "f1316bc9731d9b1391d045747946ba67b8bf712cf93e8d9486541c5516c1e542",
+          "character_count": 1100,
+          "present": true
+        },
+        "limits": {
+          "heading": "7 Discussion and Limitations",
+          "passage_sha256": "dcc2bd37f45dcb056f7a24d2ff1c9743bbe947de604f98fec1fa8c410aff0f5c",
+          "character_count": 1100,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "matoi",
+      "source_url": "https://arxiv.org/html/2610.21394v1",
+      "full_html_sha256": "1077ad83aa736627e0a5dd7a8d46ef97591cf4d0862aa5b78a9d05e4cf533a4c",
+      "full_html_bytes": 563884,
+      "passages": {
+        "method": {
+          "heading": "21 External Validity and Further Evaluation",
+          "passage_sha256": "d3b7c478534fb9557314e34683ac6233b71e9f70f2f320bce62557ce4912e0b7",
+          "character_count": 1100,
+          "present": true
+        },
+        "results": {
+          "heading": "9.4 Local real-process results",
+          "passage_sha256": "6c1ad3c60d0b21c260fc4c5ac55c25d45eea06ce98e7eb81c4620d74e53ec0ae",
+          "character_count": 1100,
+          "present": true
+        },
+        "limits": {
+          "heading": "22 Discussion and Limitations",
+          "passage_sha256": "7802ed71c1a515edadc020093447091b076fe312ebf4edf44afeac8c8096d734",
+          "character_count": 1100,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "poisoned-skills",
+      "source_url": "https://arxiv.org/html/2610.37738v1",
+      "full_html_sha256": "ed0857f1d2c1a920ab884533fb95bf18157f4495464dd86472b6e29b7236a989",
+      "full_html_bytes": 81512,
+      "passages": {
+        "method": {
+          "heading": "2 Method",
+          "passage_sha256": "b38aa3bf6c1363fedd3324a9da66674403e95967f022709ecb45d6cd8fb3dd4a",
+          "character_count": 918,
+          "present": true
+        },
+        "results": {
+          "heading": "3 Results",
+          "passage_sha256": "6ed947ad020b7b1f6f0c0d2d90ae56fbe3f4b828188de0ea5cba36d1e7eaab1e",
+          "character_count": 989,
+          "present": true
+        },
+        "limits": {
+          "heading": "4 Discussion and Limitations",
+          "passage_sha256": "20c99d4fef32dc03e7e696a0b90a7fe193a1ff9f8069333d1def5fcfb0d6e91d",
+          "character_count": 1100,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "trust-region-injection",
+      "source_url": "https://arxiv.org/html/2610.38867v1",
+      "full_html_sha256": "2968b28363d1928a91f448bca8c9b0e52a36a52efa52c9693b5c66a31177117c",
+      "full_html_bytes": 437191,
+      "passages": {
+        "method": {
+          "heading": "3 Methodology",
+          "passage_sha256": "ee7c3b80c6416b5f9a8d096c8f46bd54014d13185c2535a5a00966afc3cfb26d",
+          "character_count": 1100,
+          "present": true
+        },
+        "results": {
+          "heading": "4 Experiments",
+          "passage_sha256": "f17b890b7f414b20189e58fd23b361c9ec831d294994c0984ad0792869c01f44",
+          "character_count": 1100,
+          "present": true
+        },
+        "limits": {
+          "heading": "Appendix E Limitations",
+          "passage_sha256": "5e53a808779323a33af00839ecdf6f6705af947f48049114705db160e0d9184a",
+          "character_count": 1015,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    },
+    {
+      "id": "red-teaming-auto-mode",
+      "source_url": "https://arxiv.org/html/2609.19587v2",
+      "full_html_sha256": "32c529e7df37b9a411758da8edb962d640f9182df6251dfd602db7caeaa444b0",
+      "full_html_bytes": 298481,
+      "passages": {
+        "method": {
+          "heading": "3 Approach",
+          "passage_sha256": "05c3609f06fba7b094a8c6b5c19ee8ab535154aa11158d6443a6a56277b9e338",
+          "character_count": 1100,
+          "present": true
+        },
+        "results": {
+          "heading": "4 Results",
+          "passage_sha256": "991d238b510a2f44ecb1cb795f3ace0b52b204faec28ce62450f2c290dcc3b03",
+          "character_count": 1100,
+          "present": true
+        },
+        "limits": {
+          "heading": "5 Limitations",
+          "passage_sha256": "f6cbad16910c3720d51c4a99157c9f716597a6681e78a1eaf2a863484f7fea4b",
+          "character_count": 795,
+          "present": true
+        }
+      },
+      "full_text_read_for_extraction": true,
+      "author_claims_not_experimentally_reproduced": true
+    }
+  ],
+  "no_article_fulltext_distributed": true,
+  "method_note": "Short source excerpts are advisory model inputs; every author claim requires separate external verification before status changes",
+  "limitations": [
+    "String-excerpt selection does not independently verify all results or appendix limitations",
+    "All full public HTML lives only in temporary runtime, not redistributed",
+    "This extraction does not itself reproduce scientific experiments"
+  ]
+}

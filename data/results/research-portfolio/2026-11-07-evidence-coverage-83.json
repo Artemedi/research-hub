@@ -1,0 +1,2318 @@
+{
+  "date": "2026-11-07",
+  "source_repository": "Artemedi/research-hub",
+  "catalog_scope": "83 canonical studies, excluding generated INDEX.md",
+  "research_hub_git_sha": "cf3e5291da1452751500131e5c6817c3f325a456",
+  "source_files_hash_enforced": true,
+  "card_count": 83,
+  "review_provenance_counts": {
+    "DATED_SOURCE_REVIEW": 51,
+    "WEEKLY_PORTFOLIO_REVIEW": 30,
+    "HISTORIC_SOURCE_REVIEW": 1,
+    "DATED_ALIAS_REVIEW": 1
+  },
+  "cards_without_individual_dated_reviews": 32,
+  "documentary_review_provenance_found": 83,
+  "scientific_replication_verified_by_this_audit": 0,
+  "new_project_fits": 0,
+  "data_only": true,
+  "items": [
+    {
+      "id": "agent-error-dataset",
+      "card": "studies/agent-error-dataset.md",
+      "card_sha256": "43ab7d4934a73b45befec451ebf3f4eefd5fc280d5e88d81ab7231fcace0ea91",
+      "review_provenance": "reviews/agent-error-dataset/2026-11-05-full-text.md",
+      "review_sha256": "5807d16eda4957f7da10146d27abda1703bfbd5f3cec335755643f83fab438ba",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/agent-error-dataset/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.40111"
+      ],
+      "source_url_count": 6,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "agent-mosaic",
+      "card": "studies/agent-mosaic.md",
+      "card_sha256": "601f4d10cff2962b2e579bce0781b6596ddfc9e88433b99d66e10f7822f899f5",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.30418"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "agent-risk",
+      "card": "studies/agent-risk.md",
+      "card_sha256": "b01ae56f378c6fc9322eed5211a352d4aeea95edf9ecadfcb0e81eb383ec6e9a",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.16280"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "agent-transfer-protocol",
+      "card": "studies/agent-transfer-protocol.md",
+      "card_sha256": "14dd3585b4fb5f54d5cdba1087a00728ff907c90526373a4eef85695421af2bf",
+      "review_provenance": "portfolio/2026-10-27--2026-11-02/review.md",
+      "review_sha256": "ed761842a02f1326a91690ce5fcdf3532cf9e22ce0b595eba1c359787a5529ed",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.38398"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-27--2026-11-02/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-27--2026-11-02/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "agentic-self-awareness",
+      "card": "studies/agentic-self-awareness.md",
+      "card_sha256": "fdbb32eb12228e15e502af062c97d6d6ee0d592649e199e31b7e4fe1ac87a66a",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.19226"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "alphaxiv-openresearch",
+      "card": "studies/alphaxiv-openresearch.md",
+      "card_sha256": "2116b46a36ed95bdd56d23d0acad6c575b45d452b5b7ac747caa128eefea9b21",
+      "review_provenance": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "review_sha256": "b83837f1f771612200be6621402fa667b59b9cddfab9f72b3baf262a33caa838",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/alphaxiv-openresearch/2026-11-04.md",
+        "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 9,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-06-bk014-openresearch-provenance-ab.py"
+      ],
+      "result_links_in_card": [
+        "data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt",
+        "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "anthropic-agent-automations",
+      "card": "studies/anthropic-agent-automations.md",
+      "card_sha256": "8d7d35b01ccbb24c8c0e7026b4c86bb027b0b4e447effd86d21be2b1f3ac80a8",
+      "review_provenance": "reviews/anthropic-agent-automations/2026-11-04.md",
+      "review_sha256": "3d9d2b5658db0474edab566997a60ed0a4c4cd39552c7cc9998e60b63910c4a4",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/anthropic-agent-automations/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "behavior-beyond-text",
+      "card": "studies/behavior-beyond-text.md",
+      "card_sha256": "0289c2eb60e648f479c17ac79c787c19f80e0a204e36c7e5e98c2014ca0ee539",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.28982"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "benchshield",
+      "card": "studies/benchshield.md",
+      "card_sha256": "7c4643ca9605a3c03bdc5110959022043b1d6d641616ad228f29d995f6af34df",
+      "review_provenance": "reviews/benchshield/2026-11-04.md",
+      "review_sha256": "94b18174d1c70086f4fc98141bf851c35b61530ccd335509192563bec967dc13",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/benchshield/2026-11-04.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.11028"
+      ],
+      "source_url_count": 3,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-benchshield-reward-integrity-replay.py"
+      ],
+      "result_links_in_card": [
+        "data/results/benchshield/2026-11-04.json"
+      ],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_INDEPENDENTLY_REPRODUCED",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "bird-rl",
+      "card": "studies/bird-rl.md",
+      "card_sha256": "b971cf8feb49f9e533b82d77a489cd92ca828c0dbbc1adcb9793cb570f06f9ca",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.29426"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "cera-moa",
+      "card": "studies/cera-moa.md",
+      "card_sha256": "fe7c3b606ebeba4b3c9998e9bed8f6104b6cfeabfc505c6a6e29d70e3d2cf401",
+      "review_provenance": "reviews/cera-moa/2026-11-05-full-text.md",
+      "review_sha256": "49d8667173321bd321af52f799b2f3bc2d1df49fb98c1920b6de6abcebd33c98",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/cera-moa/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.18779"
+      ],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NO_CURRENT_TARGET",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "chartli",
+      "card": "studies/chartli.md",
+      "card_sha256": "32a61b6ce54c8e16b7f7e7a787aeb37ace5a454c09f1181e665ada5e8345b5e6",
+      "review_provenance": "reviews/chartli/2026-11-07-svg-validation.md",
+      "review_sha256": "0d6361e164300e2131cd2f314ccf5707be68ef63b020be54a26ac9c731e870a4",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/chartli/2026-11-04.md",
+        "reviews/chartli/2026-11-07-svg-validation.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "claude-swarm",
+      "card": "studies/claude-swarm.md",
+      "card_sha256": "ac3a8e05eadc5b2a5e418b30159c9503f033c8c8c5590ea1f6e94a106b48169d",
+      "review_provenance": "reviews/claude-swarm/2026-11-04.md",
+      "review_sha256": "99607131eb5f54afdfa84d2b7c777477250561be535c1e679bf4b62cb894c5cf",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/claude-swarm/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "concordat",
+      "card": "studies/concordat.md",
+      "card_sha256": "ed0df4b4e0246a6a734a88eedc919ddf4b3e92d4c381cd1e491bbb4dc71e73ad",
+      "review_provenance": "portfolio/2026-10-27--2026-11-02/review.md",
+      "review_sha256": "ed761842a02f1326a91690ce5fcdf3532cf9e22ce0b595eba1c359787a5529ed",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.37461"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-27--2026-11-02/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-27--2026-11-02/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "covert-assistance",
+      "card": "studies/covert-assistance.md",
+      "card_sha256": "e004b78ddbd5516a1920f310e23b7c6804aa18b84f9db740aa590150780b3573",
+      "review_provenance": "reviews/covert-assistance/2026-11-05-full-text.md",
+      "review_sha256": "0d74e83a808ce1f1048c4f6ba8f8425e63b9f85a1f9acf3d9bccc640ff2f3e7d",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/covert-assistance/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.39050"
+      ],
+      "source_url_count": 6,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "cursor-token-efficiency",
+      "card": "studies/cursor-token-efficiency.md",
+      "card_sha256": "952ff914410002fe97dbacec39ab2d88b0cb715d74ec5c37e873ab2505dc3734",
+      "review_provenance": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "review_sha256": "5b9519d728c4ac2c1eba3544d9420d6c342466451d7a2de47466b0f315ca3cca",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/cursor-token-efficiency/2026-11-05-primary.md",
+        "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 4,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-07-bk021-tool-context-proxy.py"
+      ],
+      "result_links_in_card": [
+        "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json"
+      ],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "cve-2026-82533-technical-disclosure",
+      "card": "studies/cve-2026-82533-technical-disclosure.md",
+      "card_sha256": "60cafd4bc481934cfb144e77821b7975d9f27faefb6a6e12d5644b9b1152abd8",
+      "review_provenance": "portfolio/2026-09-03--2026-09-15/review.md",
+      "review_sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_PRIMARY_TECHNICAL_DISCLOSURE_READ"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "daedalus",
+      "card": "studies/daedalus.md",
+      "card_sha256": "bb8db77dc0cefc69f00c62e4ec98dc5b3ef0134176221d1b61c5ae2abb643b02",
+      "review_provenance": "portfolio/2026-10-06--2026-10-12/review.md",
+      "review_sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.08048"
+      ],
+      "source_url_count": 3,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "decision-geometry-harness",
+      "card": "studies/decision-geometry-harness.md",
+      "card_sha256": "79a28e5346e027d45a151c64ca9971956c19252305be4c8fd28f551a096e00b6",
+      "review_provenance": "reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md",
+      "review_sha256": "d2aecb9dd92893a9e03f4ef6d590afdfb49afe2b9cda2be16e4f2532c723a826",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/decision-geometry-harness/2026-11-07-bandit-countercheck.md",
+        "reviews/decision-geometry-harness/2026-11-07-interface-order-ab.md",
+        "reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.37255"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-27--2026-11-02/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-27--2026-11-02/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "drag",
+      "card": "studies/drag.md",
+      "card_sha256": "05c91e85f0ca7eff5a2f018df39d0c14ce5ca735e3527f0c6692ef23f3bd20be",
+      "review_provenance": "reviews/drag/2026-11-06-retrieval-ab.md",
+      "review_sha256": "110cc942e4521978d2ae2858dee79e9c5103c752acbea3fd640d23d6c9cc5356",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/drag/2026-11-05-full-text.md",
+        "reviews/drag/2026-11-06-evidence-gate-ab.md",
+        "reviews/drag/2026-11-06-retrieval-ab.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.17709"
+      ],
+      "source_url_count": 6,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "dsh-creator-mode",
+      "card": "studies/dsh-creator-mode.md",
+      "card_sha256": "d7a76b4a8967a66bc43ddffd8b9e9c800fe3060d48190ca33c2b7583655585fc",
+      "review_provenance": "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+      "review_sha256": "fe9666143a0121008a4702dc08a33927901408ca9266f5e0b4b478ce4d948cf1",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+        "reviews/dsh-creator-mode/2026-11-06-local-probe.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-06-bk064-poster-probe.cjs"
+      ],
+      "result_links_in_card": [
+        "data/results/dsh-creator/2026-11-06-offline-poster-probe.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "dsh-superagent-prototype",
+      "card": "studies/dsh-superagent-prototype.md",
+      "card_sha256": "3326a5da1a3e868e51e2d9ad09728d350aa47e8920c6a7e0eacbaecbf42e8f91",
+      "review_provenance": "reviews/dsh-superagent-prototype/2026-11-05.md",
+      "review_sha256": "e6ba8b5f132c3db16f1586c9bf4831a89da66e053674b8670b60a5c75199b6dd",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/dsh-superagent-prototype/2026-11-05.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-05-bk060-core-offline.mjs"
+      ],
+      "result_links_in_card": [
+        "data/results/dsh-superagent-prototype/2026-11-05.json"
+      ],
+      "project_fit_links_in_card": [
+        "data/project-fit/dsh-superagent-prototype/2026-11-05.json"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE",
+        "BLOCKED",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "exactly-once-limbo",
+      "card": "studies/exactly-once-limbo.md",
+      "card_sha256": "4365d03c540012e1a14c55a263e0ee3e761bc9456dd4b8bff8ed779181345ab3",
+      "review_provenance": "reviews/exactly-once-limbo/2026-11-06-policy-ab.md",
+      "review_sha256": "51bd0c2d57873337dbe9e1f78c6e2b9abd1dfa155c862595c08f242d651ef224",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/exactly-once-limbo/2026-11-04.md",
+        "reviews/exactly-once-limbo/2026-11-05-full-text.md",
+        "reviews/exactly-once-limbo/2026-11-06-policy-ab.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.29095"
+      ],
+      "source_url_count": 6,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-limbo-telegrambot-send-retry.py"
+      ],
+      "result_links_in_card": [
+        "data/results/exactly-once-limbo/2026-11-04.json"
+      ],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "experienceindex",
+      "card": "studies/experienceindex.md",
+      "card_sha256": "800e48e01b33aa2ff45a238f761b9f243fd5fee01daf438ae0d3f862ddd236dc",
+      "review_provenance": "reviews/experienceindex/2026-11-07.md",
+      "review_sha256": "d0354bcd7d645441f87d9f7524e5d570fe9307f409bcde8f69333d5a11c2a0ba",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/experienceindex/2026-11-07.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.10091"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "geoagent",
+      "card": "studies/geoagent.md",
+      "card_sha256": "97aa564539b6847ecce8461539a3e702d545c23a9bd60067b110adbc1d1a0e83",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.31096"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "goal-aware-dynamic-collaboration",
+      "card": "studies/goal-aware-dynamic-collaboration.md",
+      "card_sha256": "a609e8bf866384aa08fe7ad97de4394ddcb204e74cef84e13f2752f5a94afb20",
+      "review_provenance": "reviews/goal-aware-dynamic-collaboration/2026-11-07.md",
+      "review_sha256": "9bf328ccac726d21247b9899a9ecb7730ece2d8238e6bda6d89fa7d26a56285c",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/goal-aware-dynamic-collaboration/2026-11-07.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.39193"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-27--2026-11-02/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-27--2026-11-02/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "gpt6-astra-skills-prompts",
+      "card": "studies/gpt6-astra-skills-prompts.md",
+      "card_sha256": "676a959ef5a4f34a82e91fafa24c21fd1554f52046f44d7599fb4d28a8fe65a5",
+      "review_provenance": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "review_sha256": "7c6fda5cdd6c7facacedc122a89c54c55a2aa1649e96b05178e2a475a02ccb94",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-06-bk009-astra/prepare.py",
+        "experiments/2026-11-06-bk009-astra/run-ab.py",
+        "experiments/2026-11-06-bk009-astra/score-ab.py"
+      ],
+      "result_links_in_card": [
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json",
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "harness2",
+      "card": "studies/harness2.md",
+      "card_sha256": "f45fb633e25ae4e73c28a28dc3bf6c50a392a5a292bf604d415bde5c17979e34",
+      "review_provenance": "reviews/harness2/2026-11-05-full-text.md",
+      "review_sha256": "f04959044a6527b82486c26afd4fe0564b7d3369cc9ed7f47201a0ab6ddfb785",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/harness2/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.14224"
+      ],
+      "source_url_count": 4,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-rrsi-harness2-selector-smoke.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "harnesssecurity-bench",
+      "card": "studies/harnesssecurity-bench.md",
+      "card_sha256": "8e83cb65225cece70a05fc08ca8f6c3057564b5ed785d94060f6b52674772ca7",
+      "review_provenance": "portfolio/2026-10-06--2026-10-12/review.md",
+      "review_sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.07639"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "htn-orchestrate",
+      "card": "studies/htn-orchestrate.md",
+      "card_sha256": "d1fdb46e765b518e15cfa7dc54545248fb757ed16374ca77a5f8e861f17dd21b",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.22195"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "hyperresearch",
+      "card": "studies/hyperresearch.md",
+      "card_sha256": "1571c6448e74f3006a1f1c7e98b2cf4276d7795dcb8703a619be7a8f534df90d",
+      "review_provenance": "reviews/hyperresearch/2026-11-04.md",
+      "review_sha256": "b84b43194d165adddfbab1cc14f67f377d89ef851f3c4147f15fff23e092e0bf",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/hyperresearch/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN",
+        "AUTHOR_REPORTED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "hyra-2",
+      "card": "studies/hyra-2.md",
+      "card_sha256": "f3d6888bbeb1116abe0d25b43c2090423e47fbca5b2e77ebdd7be1e13fe2a556",
+      "review_provenance": "reviews/hyra-2/2026-11-05.md",
+      "review_sha256": "f56deeff0daa9b985531798527cbeb8d04b38ba5b7d005ee252aeca48fb5a4e7",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/hyra-2/2026-11-05.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "data/project-fit/hyra-2/2026-11-05.json"
+      ],
+      "markers_in_card_not_verdict": [
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "inspektor-gadget",
+      "card": "studies/inspektor-gadget.md",
+      "card_sha256": "de39ca2885e9c0decd94d8c1119dd83788ce810644b4d22d5e35a8064a6fe78e",
+      "review_provenance": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "review_sha256": "ad8a068b83f19e95d581944000bffa81087d37720a8ac5bba49cf329370c296f",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/inspektor-gadget/2026-11-04.md",
+        "reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-bk041-inspektor-gadget-permission-gate.py",
+        "experiments/2026-11-06-bk041-host-diagnostic.py",
+        "experiments/2026-11-06-bk041-podman-trace.py"
+      ],
+      "result_links_in_card": [
+        "data/results/inspektor-gadget/2026-11-04.json",
+        "data/results/inspektor-gadget/2026-11-06-host-diagnostics.json",
+        "data/results/inspektor-gadget/2026-11-06-host-pilot.json",
+        "data/results/inspektor-gadget/2026-11-06-podman-trace.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "ipfire-fireperf",
+      "card": "studies/ipfire-fireperf.md",
+      "card_sha256": "3c936cf7191504796ae6ea268d499e87335dc0a45133a71818756cbd4a2ba998",
+      "review_provenance": "reviews/ipfire-fireperf/2026-11-04.md",
+      "review_sha256": "44887954098d7edf10c15a91a82d3d3491d9641e18dbb2022a1d75d570da754f",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/ipfire-fireperf/2026-11-04.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-bk059-fireperf-loopback-lab.py"
+      ],
+      "result_links_in_card": [
+        "data/results/ipfire-fireperf/2026-11-04.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "jevagentharness",
+      "card": "studies/jevagentharness.md",
+      "card_sha256": "834d7f52d226e8e5e2cde8fec74bfcef0b3d4ae78ff2dbf2be7ba97787a0765f",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.21412"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED",
+        "NO_FIT"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "julia-1",
+      "card": "studies/julia-1.md",
+      "card_sha256": "955de8d926ce25428621eed14e0d10f19515c5a9bfe5b3a1814f31cca961a3ac",
+      "review_provenance": "reviews/julia-1/2026-11-04.md",
+      "review_sha256": "6b70681e68043d629e3465a77adcec49c9c43f0153aa4447da8f820bd8cf8939",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/julia-1/2026-11-04.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "karpathy-autoresearch",
+      "card": "studies/karpathy-autoresearch.md",
+      "card_sha256": "83fc2dd301bf2499646dd29906d5600cfba1714f3b06f512e0de4c2992cafaed",
+      "review_provenance": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "review_sha256": "e61c09aa16d0294f5cfecbc98b58164ef3d141a5ca76360136b4c00e4fcf8594",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/karpathy-autoresearch/2026-11-04.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-06-bk034-wikipg-autoloop-oracle.py"
+      ],
+      "result_links_in_card": [
+        "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "kvset",
+      "card": "studies/kvset.md",
+      "card_sha256": "f97bbe709be3854c65be0b109153b336a6c54d9eb469e12307e473f5eebcc849",
+      "review_provenance": "reviews/kvset/2026-11-05-full-text.md",
+      "review_sha256": "334a459174c7dbc114e9961b17c5db6c143a3d2724e5c7d4b54ebd9a9eb66374",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/kvset/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.27746"
+      ],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "kvtether",
+      "card": "studies/kvtether.md",
+      "card_sha256": "4f9462acdd09ed532d3c1400903820184b985fd295feb0b7c8dcebc5b0fc2b04",
+      "review_provenance": "reviews/kvtether/2026-11-07-event-order.md",
+      "review_sha256": "37ca16e0b5b1893f4a3b4533de420d7ec11799dafd2d89072b5c2c248ccdff8f",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/kvtether/2026-11-05-full-text.md",
+        "reviews/kvtether/2026-11-07-event-order.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.39819"
+      ],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NO_CURRENT_TARGET",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "lago",
+      "card": "studies/lago.md",
+      "card_sha256": "07464fd5b69a5dc07561ea51848062581aab4ce9a8a57306326eef7ed0ed5bdf",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.19843"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "local-knowledge-graph",
+      "card": "studies/local-knowledge-graph.md",
+      "card_sha256": "715236f58ea1ee6fe955799e96ff32023ff9aae3fde82f97a3adf89c6302d1e2",
+      "review_provenance": "reviews/local-knowledge-graph/2026-11-04.md",
+      "review_sha256": "0811931cf330a5b59637147024897ea7855e45caabf40c2750e2e7b86cda636d",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/local-knowledge-graph/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/bk024-local-knowledge-graph/paths-fixture.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "maadbench",
+      "card": "studies/maadbench.md",
+      "card_sha256": "fa23969989c314881fac822c34a903806fd05a4c288ec655cf4fe1cd6cf49c84",
+      "review_provenance": "reviews/maadbench/2026-11-05-full-text.md",
+      "review_sha256": "f54ee44daf0f779647b0427c2d58795f7b718f199b256d882b8f1c5f2fe2788f",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/maadbench/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.36556"
+      ],
+      "source_url_count": 6,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "matoi",
+      "card": "studies/matoi.md",
+      "card_sha256": "032c6865c18a869f7e5b2f066a09dae126009161d681a0a1d5a85e48f86c4bf3",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.21394"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "mcp-toolbox-postgres",
+      "card": "studies/mcp-toolbox-postgres.md",
+      "card_sha256": "cbeec87b08ac2d10af2be90ff6ba4c2f7e7e85d42f9687aa9807d6a38e637965",
+      "review_provenance": "reviews/mcp-toolbox-postgres/2026-11-04.md",
+      "review_sha256": "4536a552e8d95e0dab5724ff8222160a635f4404af8a9ba1bba5da175a69bba5",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/mcp-toolbox-postgres/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 5,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-mcp-toolbox-wikipg-compare.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "memcomposer",
+      "card": "studies/memcomposer.md",
+      "card_sha256": "43d616d1ae26d5717383573a10940ea15482b1e2c310263e5b2fecdf616ba135",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.21091"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "memory-centric-continual-learning",
+      "card": "studies/memory-centric-continual-learning.md",
+      "card_sha256": "51c3d35d27d650646b9f2ded950d97de13b56fc0c2fa357a04d299458e653297",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.29357"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "memscope",
+      "card": "studies/memscope.md",
+      "card_sha256": "dc34f7e08bd01e2dd0e3b89f9e8af2ad46bb0590a029a05c292a7a1f2b3b82a2",
+      "review_provenance": "portfolio/2026-10-12--2026-10-19/review.md",
+      "review_sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.21170"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-12--2026-10-19/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-12--2026-10-19/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "microsoft-skill-recorder",
+      "card": "studies/microsoft-skill-recorder.md",
+      "card_sha256": "eaa586853ad4c61983dc762830129f09e1f80168fe76fb5bea877d45a8b45d12",
+      "review_provenance": "reviews/microsoft-skill-recorder/2026-11-04.md",
+      "review_sha256": "c25d83013c8c1692b1bf58b0d309690038311da0b9d5e4d7481516ceb8220888",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/microsoft-skill-recorder/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/bk022-skill-recorder/pii-fixture.mjs"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "novafabric",
+      "card": "studies/novafabric.md",
+      "card_sha256": "353feea5c0ca74181f1ed4f08565fd54a37dc2252aa77000daa58ab7429aef23",
+      "review_provenance": "reviews/novafabric/2026-11-04.md",
+      "review_sha256": "4c2e75af439f9bfde75ba4481e85eebd3158c595ec3d9aea0d670536c58d942a",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/novafabric/2026-11-04.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.12582",
+        "2610.34594"
+      ],
+      "source_url_count": 4,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-novafabric-independent-bundle-verify.py",
+        "experiments/2026-11-04-novafabric-real-capsule-lab.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_INDEPENDENTLY_REPRODUCED",
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "open-steps",
+      "card": "studies/open-steps.md",
+      "card_sha256": "baa28dcdf4efa8c68354d9bc7b73cb72d94ce5168803548bcba0163e0eb6bba7",
+      "review_provenance": "reviews/open-steps/2026-11-04.md",
+      "review_sha256": "ca1401363c88df2044af73625ffb3be3ca896891b46f6a667ba3eec8a79963b2",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/open-steps/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/bk006-open-steps/fingerprint-fixture.sh"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "collections/telegram/preliminary-project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "BLOCKED",
+        "AUTHOR_REPORTED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "package-hallucination-rule-files",
+      "card": "studies/package-hallucination-rule-files.md",
+      "card_sha256": "b0bf2ab61a6b0f2d240b532e184ceeedac4bc30dab7c0eedc8e6effeac7a70cc",
+      "review_provenance": "portfolio/2026-10-06--2026-10-12/review.md",
+      "review_sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.09264"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "paper2agent",
+      "card": "studies/paper2agent.md",
+      "card_sha256": "4023c7bcaf5155cc4057e2b17b98546675a29c289376e9702e6315222a9ca9fb",
+      "review_provenance": "reviews/paper2agent/2026-11-05-full-text.md",
+      "review_sha256": "c7c0e7181e14921aa03f17ef76e25b613860cecfe3a59790b7c616810bea161c",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/paper2agent/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 5,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "pgbot",
+      "card": "studies/pgbot.md",
+      "card_sha256": "673b80f2062d386c190eff1cdb7d48e6ba27d1ded574212eaaba13b992726f44",
+      "review_provenance": "reviews/pgbot/2026-11-04.md",
+      "review_sha256": "a93921f62f8f26d5b3be6e74de5b3324a4a861454628d6436c1470defae0a6fe",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/pgbot/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 5,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-pgbot-verify.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "poisoned-skills",
+      "card": "studies/poisoned-skills.md",
+      "card_sha256": "6f102458f43840543b297d8f729ef187143f408a2e0e52dea34776a13828e957",
+      "review_provenance": "portfolio/2026-10-27--2026-11-02/review.md",
+      "review_sha256": "ed761842a02f1326a91690ce5fcdf3532cf9e22ce0b595eba1c359787a5529ed",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.37738"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-27--2026-11-02/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-27--2026-11-02/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "polar",
+      "card": "studies/polar.md",
+      "card_sha256": "f45d6797c9591f054f05ea1c773ac1c9720214757b102b9b3191976c760c6ad4",
+      "review_provenance": "portfolio/2026-10-06--2026-10-12/review.md",
+      "review_sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.08082"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "random-attention",
+      "card": "studies/random-attention.md",
+      "card_sha256": "316fb97425ef1bac4b9d3bc4b9311cc03aa277835d2b9166d0c86eca3e86bca6",
+      "review_provenance": "portfolio/2026-09-03--2026-09-15/review.md",
+      "review_sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.03430"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_INDEPENDENTLY_REPRODUCED",
+        "NO_CURRENT_TARGET"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "realm",
+      "card": "studies/realm.md",
+      "card_sha256": "67601d891905dff4dd1b816d35a9cc961d597b48cae4adeeaec171b62a1988ff",
+      "review_provenance": "reviews/realm/2026-11-05-full-text.md",
+      "review_sha256": "f26c8cca8db36243e0d25485398a106bbc30d75356739f894e3d89c371ef9390",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/realm/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.16053"
+      ],
+      "source_url_count": 5,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "recap",
+      "card": "studies/recap.md",
+      "card_sha256": "f0f66703646e4b84d89e46486ea32960630b5b2b960c87c9d3a7ea0df295eb66",
+      "review_provenance": "reviews/recap/2026-11-05-full-text.md",
+      "review_sha256": "e32fe4f0aa80247bf8d72a87308c33303c777a4e9b03371f92f0860eb7883260",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/recap/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.40118"
+      ],
+      "source_url_count": 6,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "red-teaming-auto-mode",
+      "card": "studies/red-teaming-auto-mode.md",
+      "card_sha256": "3e7dddef6450b88535f8e0494374a0d3c7b5f62ba06c6528c5b061441a36b574",
+      "review_provenance": "portfolio/2026-09-03--2026-09-15/review.md",
+      "review_sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.19587"
+      ],
+      "source_url_count": 8,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "PDF_APPENDICES_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "remory",
+      "card": "studies/remory.md",
+      "card_sha256": "2b60896823b235bbb16686296b07de3f14ed9f1b053512f9738ba547528a029b",
+      "review_provenance": "portfolio/2026-10-06--2026-10-12/review.md",
+      "review_sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.11287"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "reva",
+      "card": "studies/reva.md",
+      "card_sha256": "8d393b8d193a077883456eb533db8349e7289c86fe0aa24d3270bc93b8d5bee6",
+      "review_provenance": "portfolio/2026-09-03--2026-09-15/review.md",
+      "review_sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.11209"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_INDEPENDENTLY_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "reverse-engineer-anything",
+      "card": "studies/reverse-engineer-anything.md",
+      "card_sha256": "a41626afcb3d8a6cffcd2ee5edd689eeed30db7387bf6f1294f03dfa845bd29b",
+      "review_provenance": "reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md",
+      "review_sha256": "e08de3a8b0799da41db46b964752ced29a28dcfccf2104cadcff47ab90c83553",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/reverse-engineer-anything/2026-11-05-pe-layout.md",
+        "reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 0,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "data/project-fit/reverse-engineer-anything/2026-11-05.json"
+      ],
+      "markers_in_card_not_verdict": [],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "rrsi",
+      "card": "studies/rrsi.md",
+      "card_sha256": "3a404adfabb8c4c291412e557412a96ef61a8408368670a6e57ea88bef255360",
+      "review_provenance": "reviews/rrsi/2026-11-06-validation-ab.md",
+      "review_sha256": "f9ae71110d659018e460bd759bd72cd118113479d42ad4317f2754b037546817",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/rrsi/2026-11-05-full-text.md",
+        "reviews/rrsi/2026-11-06-validation-ab.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.24972"
+      ],
+      "source_url_count": 4,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-rrsi-harness2-selector-smoke.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "self-replicating-prompt-injections",
+      "card": "studies/self-replicating-prompt-injections.md",
+      "card_sha256": "4f8029e8e8f4c95bb83d4403356a75228a71b03764651d957df7ad35735c039c",
+      "review_provenance": "archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md",
+      "review_sha256": "18b0466fc6081a033c32d66c4b452d610cbd26003216e6761ebabbd4973a3193",
+      "review_mode": "HISTORIC_SOURCE_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 5,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_PUBLIC_DISCLOSURE_REVIEW_RECORDED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "sequential-diagnosis-language-models",
+      "card": "studies/sequential-diagnosis-language-models.md",
+      "card_sha256": "537b8ba082da1be732f36b6c390ac1357d098242751c6cc9615052de8186ae6b",
+      "review_provenance": "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md",
+      "review_sha256": "8a006b8c4a20fd4ab273c2f468064ad607a29b69e439803b74bfc5d6555ae441",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md",
+        "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2506.22405"
+      ],
+      "source_url_count": 12,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN",
+        "AUTHOR_REPORTED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "silent-cue-loss",
+      "card": "studies/silent-cue-loss.md",
+      "card_sha256": "95d489b2872fa4b5e67412516c0506029b24248872c61bb26f17736940f90229",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.30026"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "simurg",
+      "card": "studies/simurg.md",
+      "card_sha256": "cc5b7cf33502cc9520e0b329b3f6693ff865d500d4905f8aec8ca7f12ef2ff0c",
+      "review_provenance": "reviews/simurg/2026-11-07-hash-stability.md",
+      "review_sha256": "ca762e957a5ecbb9727cfef07dc84e941cfb77814ed091037aa07c548ae1241b",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/simurg/2026-11-04.md",
+        "reviews/simurg/2026-11-07-hash-stability.md"
+      ],
+      "source_category_heuristic": "TECHNICAL_PAPER_OTHER",
+      "source_arxiv_ids": [],
+      "source_url_count": 4,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/bk011-simurg/check-fixture.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "collections/telegram/preliminary-project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "BLOCKED",
+        "AUTHOR_REPORTED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "squidagent",
+      "card": "studies/squidagent.md",
+      "card_sha256": "449b17405f60b5dd066f09ee91aa36f7197195e6fe86d1a915ef9cacb0cb5b5a",
+      "review_provenance": "portfolio/2026-10-06--2026-10-12/review.md",
+      "review_sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.08647"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-06--2026-10-12/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "statecomp",
+      "card": "studies/statecomp.md",
+      "card_sha256": "1c8d36813b832719fc3931c5064a30663d2331f1f70cd633a2cb32f15a3959db",
+      "review_provenance": "reviews/statecomp/2026-11-05-full-text.md",
+      "review_sha256": "792755a0d4f3c08269d053f8939e07c84d6915b009500c03cf143e1848ff571d",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/statecomp/2026-11-05-full-text.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.27298"
+      ],
+      "source_url_count": 4,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "swrouter",
+      "card": "studies/swrouter.md",
+      "card_sha256": "f3820d7138269a858b4104775553e7ab3fbe99211f0b3aac9442bdc3797b5cbf",
+      "review_provenance": "portfolio/2026-09-03--2026-09-15/review.md",
+      "review_sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2609.11414"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_INDEPENDENTLY_REPRODUCED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "tencent-teamai-cli",
+      "card": "studies/tencent-teamai-cli.md",
+      "card_sha256": "9dc4315403dd2c0613a9f8ba7a20e407f4bf6a5bcdf00468df15c50baaa5f3da",
+      "review_provenance": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "review_sha256": "4d8c00b1582441e474d0c58ac5b1620a6aa8e653300b9f2497d8aacc61a0e6e4",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/tencent-teamai-cli/2026-11-04.md",
+        "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 2,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-06-bk002-teamai-distribution-ab.py"
+      ],
+      "result_links_in_card": [
+        "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json"
+      ],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "toolgrad",
+      "card": "studies/toolgrad.md",
+      "card_sha256": "a75653f4ff358630bf9a1a31e3d766910de30645c4fd017c456a9f78787fe0a2",
+      "review_provenance": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "review_sha256": "55ff986aa89ecdb2e3de603a77f35e026a2059c27aa2589ce197b11005d0cd91",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/toolgrad/2026-11-06-chain-validation-ab.md"
+      ],
+      "source_category_heuristic": "TECHNICAL_PAPER_OTHER",
+      "source_arxiv_ids": [],
+      "source_url_count": 3,
+      "portfolio_review_links": [
+        "portfolio/2026-09-03--2026-09-15/review.md"
+      ],
+      "experiment_links_in_card": [
+        "experiments/2026-11-06-bk005-toolgrad-chain-validation-ab.py"
+      ],
+      "result_links_in_card": [
+        "data/results/toolgrad/2026-11-06-chain-validation-ab.json"
+      ],
+      "project_fit_links_in_card": [
+        "portfolio/2026-09-03--2026-09-15/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED",
+        "NOT_INDEPENDENTLY_REPRODUCED",
+        "NO_PRODUCTION_APPROVAL"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "transferable-tool-selection",
+      "card": "studies/transferable-tool-selection.md",
+      "card_sha256": "86045117db7fa6549ef251a42d5e743562b4b2acd500f5eae02ee1f7a8898755",
+      "review_provenance": "portfolio/2026-10-20--2026-10-26/review.md",
+      "review_sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.31483"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-20--2026-10-26/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-20--2026-10-26/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "trust-region-injection",
+      "card": "studies/trust-region-injection.md",
+      "card_sha256": "24ef0165d97a5305159f066d97465905ae554183c74fa51652987013d33b6a0f",
+      "review_provenance": "portfolio/2026-10-27--2026-11-02/review.md",
+      "review_sha256": "ed761842a02f1326a91690ce5fcdf3532cf9e22ce0b595eba1c359787a5529ed",
+      "review_mode": "WEEKLY_PORTFOLIO_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.38867"
+      ],
+      "source_url_count": 2,
+      "portfolio_review_links": [
+        "portfolio/2026-10-27--2026-11-02/review.md"
+      ],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/2026-10-27--2026-11-02/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "FULL_TEXT_REVIEWED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "understand-anything",
+      "card": "studies/understand-anything.md",
+      "card_sha256": "06ed1a852600069f1dc210dcb1ba3cf8aeaa6697939ac191d6dbc3197515caf0",
+      "review_provenance": "reviews/understand-anything/2026-11-04.md",
+      "review_sha256": "b321a66375f04849b4edbfca740c143412ae0e6962473dcc174a975b5f7f33eb",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/understand-anything/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "unreal-agent-bk025",
+      "card": "studies/unreal-agent-bk025.md",
+      "card_sha256": "ac387e4edd7199604bdd265eb358bc7fa278a51697a0939da8a36bbbe32670fa",
+      "review_provenance": "reviews/unreal-agent/2026-11-06-source-audit.md",
+      "review_sha256": "b70db4fe8aa1087d3c727881ee7ef00968c7a9e340a98b5cd4129e571a79686d",
+      "review_mode": "DATED_ALIAS_REVIEW",
+      "all_dated_card_reviews": [],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 4,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "unsloth-decision-model",
+      "card": "studies/unsloth-decision-model.md",
+      "card_sha256": "6364ebc1e1007de8ffd694d7228507cc692951063a166d65d2309ebad877b1ff",
+      "review_provenance": "reviews/unsloth-decision-model/2026-11-04.md",
+      "review_sha256": "673cc4c2ecbcc2a2843676b2cb8af7e7bac22fcafbe10a6f126ed5c92fac25fc",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/unsloth-decision-model/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN",
+        "AUTHOR_REPORTED"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "vercel-agent-desktop",
+      "card": "studies/vercel-agent-desktop.md",
+      "card_sha256": "1ca5475c5a4dc5a30738adb4c9fd0ebe952f1091540d6023b18cef4a41011b87",
+      "review_provenance": "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+      "review_sha256": "84615751430fdecee2f512737f7b44de097d850e07f55b3a6936e912be1af8a3",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md",
+        "reviews/vercel-agent-desktop/2026-11-05-wayland.md"
+      ],
+      "source_category_heuristic": "OTHER_PRIMARY_SOURCE",
+      "source_arxiv_ids": [],
+      "source_url_count": 0,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "data/project-fit/vercel-agent-desktop/2026-11-05.json"
+      ],
+      "markers_in_card_not_verdict": [],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "veriharness",
+      "card": "studies/veriharness.md",
+      "card_sha256": "f88b85a4744bed6720b6fb56ea3bd7f5c10eacf17e89fa5ef78872d576c2cf0f",
+      "review_provenance": "reviews/veriharness/2026-11-06-citation-locality-ab.md",
+      "review_sha256": "7defee55825137251525879287e07ab22fdab77660e2ab9f268dbe415452e331",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/veriharness/2026-11-04.md",
+        "reviews/veriharness/2026-11-05-full-text.md",
+        "reviews/veriharness/2026-11-06-citation-locality-ab.md"
+      ],
+      "source_category_heuristic": "SCIENTIFIC_PREPRINT_OR_ARTICLE",
+      "source_arxiv_ids": [
+        "2610.00972"
+      ],
+      "source_url_count": 8,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/2026-11-04-veriharness-offline-replay.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [
+        "portfolio/historical/project-fit.md"
+      ],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "warp-skill-doctor",
+      "card": "studies/warp-skill-doctor.md",
+      "card_sha256": "19a3659ee310a47f4c9a759799c156ddc8b949263c7bae91159de59f4ba2cac6",
+      "review_provenance": "reviews/warp-skill-doctor/2026-11-04.md",
+      "review_sha256": "b0e8f9eb4a28d04f7cef3376684adbf4c3583375c43383f368acc9c6790cd4fc",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/warp-skill-doctor/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 3,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [
+        "experiments/bk019-skill-doctor/attribution-fixture.py"
+      ],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "LAB_VERIFIED",
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "yahont-ce",
+      "card": "studies/yahont-ce.md",
+      "card_sha256": "666ab7481f2bc4bb0aefc8e38263d52eae8efedeffc9f82b543c2d654e1b3973",
+      "review_provenance": "reviews/yahont-ce/2026-11-04.md",
+      "review_sha256": "1a3f2a21752a3a0b05d08151a9e3037abd10b3532bfb97df8a91f09daf2f3317",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/yahont-ce/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "youtube-skills",
+      "card": "studies/youtube-skills.md",
+      "card_sha256": "b07108ad64d30fa86e049bd9af83989f02103438a63218dad8a80906b982a775",
+      "review_provenance": "reviews/youtube-skills/2026-11-04.md",
+      "review_sha256": "5e48761d8b391d2884febb340ae24418b9e0c4ea27a34e5773c6ba18da4896d5",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/youtube-skills/2026-11-04.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NEEDS_EVIDENCE",
+        "NOT_RUN"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    },
+    {
+      "id": "zero-code",
+      "card": "studies/zero-code.md",
+      "card_sha256": "805a1b94c21471b413b2986d2cc509ed71d18c1682d56a992828e37b9b4c6962",
+      "review_provenance": "reviews/zero-code/2026-11-07-jsonc-countercheck.md",
+      "review_sha256": "4fe32884671f51481e4f03819f88d5509aec49479d66f84e5505c13452a4a359",
+      "review_mode": "DATED_SOURCE_REVIEW",
+      "all_dated_card_reviews": [
+        "reviews/zero-code/2026-11-04.md",
+        "reviews/zero-code/2026-11-07-jsonc-countercheck.md"
+      ],
+      "source_category_heuristic": "ENGINEERING_OR_TECHNICAL_DISCLOSURE",
+      "source_arxiv_ids": [],
+      "source_url_count": 1,
+      "portfolio_review_links": [],
+      "experiment_links_in_card": [],
+      "result_links_in_card": [],
+      "project_fit_links_in_card": [],
+      "markers_in_card_not_verdict": [
+        "NO_PRODUCTION_APPROVAL",
+        "NEEDS_EVIDENCE"
+      ],
+      "research_gate": "DOCUMENTARY_EVIDENCE_LOCATED_NOT_SCIENTIFIC_VERIFIED",
+      "project_gate": "NO_NEW_PROJECT_FIT_ASSESSED_IN_THIS_INVENTORY"
+    }
+  ],
+  "limitations": [
+    "This audit verifies local review-document provenance, not whether the review accurately read the complete external source",
+    "Some reports review multiple sources; a link alone does not independently establish that each paper was experimentally reproduced",
+    "Marker words are copied as metadata, not reinterpreted as scientific verdicts",
+    "Existing projects, source bodies, original reviews and assessment histories remain unmodified"
+  ],
+  "status": "ALL_83_DOCUMENTARY_REVIEW_PATHS_LOCATED_REPLICATION_SEPARATE"
+}
