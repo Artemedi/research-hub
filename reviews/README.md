@@ -101,5 +101,6 @@
 | [Warp Skill Doctor — атрибуция и приватность](warp-skill-doctor/2026-11-04.md) | 2026-11-04 |
 | [Yahont CE — поиск, ACL и лицензия](yahont-ce/2026-11-04.md) | 2026-11-04 |
 | [youtube-skills — инструкции и внешние зависимости](youtube-skills/2026-11-04.md) | 2026-11-04 |
+| [YouTube Skills pinned API and secret bootstrap instructions boundary audit](youtube-skills/2026-11-07-provider-boundary.md) | 2026-11-07 |
 | [0-CODE — состояние и фильтры](zero-code/2026-11-04.md) | 2026-11-04 |
 | [0-CODE pinned JSONC parser conformance and duplicate-key consumer boundary](zero-code/2026-11-07-jsonc-countercheck.md) | 2026-11-07 |

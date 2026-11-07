@@ -116,6 +116,8 @@
 - [simurg/2026-11-07-hash-stability.py](simurg/2026-11-07-hash-stability.py)
 - [simurg/2026-11-07-hash-worker.py](simurg/2026-11-07-hash-worker.py)
 - [tests/test_drag_evidence_gate.py](tests/test_drag_evidence_gate.py)
+- [youtube-skills/2026-11-07-pinned-provider-boundary.py](youtube-skills/2026-11-07-pinned-provider-boundary.py)
+- [youtube-skills/2026-11-07-provider-boundary-oracle.py](youtube-skills/2026-11-07-provider-boundary-oracle.py)
 - [zero-code/2026-11-07-jsonc-fixtures.py](zero-code/2026-11-07-jsonc-fixtures.py)
 - [zero-code/2026-11-07-jsonc-oracle.py](zero-code/2026-11-07-jsonc-oracle.py)
 - [zero-code/2026-11-07-jsonc-runner.mjs](zero-code/2026-11-07-jsonc-runner.mjs)

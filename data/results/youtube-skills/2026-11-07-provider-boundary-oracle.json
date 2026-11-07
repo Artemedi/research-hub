@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-07",
+  "study": "youtube-skills",
+  "source_pin": "4f7994b94e7d5e250c3b51102d609992e04d5d0d",
+  "manifest_sha256": "03399ad83285c66544bf605100d524674ce7d4de51e078fd8054755505bf288c",
+  "tracks_exact_60_markdown_documents": true,
+  "provider_source_code_in_skill_folders": 0,
+  "independently_pinned_skills": 24,
+  "auth_guide_sha_verified": 24,
+  "required_key_contract_verified": 24,
+  "synthetic_mutations_rejected": 2,
+  "network_actions_run": 0,
+  "verdict": "SOURCE_BOUNDARY_AND_SECRET_BOOTSTRAP_AUDITED_NO_PROVIDER_TEST",
+  "limits": [
+    "Independent re-read and SHA check of bundled text, not independent third-party API behavior",
+    "No credential collection, registration, API requests, live transcript or user profile changes",
+    "No proof of actual security defect or key leakage; guidance only exposes an operational hazard",
+    "Cannot infer compatibility, latency, costs or quality for claimed platforms"
+  ]
+}

@@ -102,5 +102,7 @@
 | [data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json](results/tencent-teamai-cli/2026-11-06-distribution-ab.json) | Результат ограниченной проверки |
 | [data/results/toolgrad/2026-11-06-chain-validation-ab.json](results/toolgrad/2026-11-06-chain-validation-ab.json) | Результат ограниченной проверки |
 | [data/results/vercel-agent-desktop/2026-11-05.json](results/vercel-agent-desktop/2026-11-05.json) | Результат ограниченной проверки |
+| [data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json](results/youtube-skills/2026-11-07-provider-boundary-oracle.json) | Результат ограниченной проверки |
+| [data/results/youtube-skills/2026-11-07-provider-boundary.json](results/youtube-skills/2026-11-07-provider-boundary.json) | Результат ограниченной проверки |
 | [data/results/zero-code/2026-11-07-jsonc-oracle.json](results/zero-code/2026-11-07-jsonc-oracle.json) | Результат ограниченной проверки |
 | [data/results/zero-code/2026-11-07-jsonc.json](results/zero-code/2026-11-07-jsonc.json) | Результат ограниченной проверки |

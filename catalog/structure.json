@@ -2051,6 +2051,27 @@
       "title": "54 pinned upstream Hyperresearch core tests and resource receipts",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/youtube-skills/2026-11-07-provider-boundary.md",
+      "title": "YouTube Skills pinned API and secret bootstrap instructions boundary audit",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/youtube-skills/2026-11-07-provider-boundary.json",
+      "title": "Pinned 24 skills and 60 Markdown files with shared API key guide manifest",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json",
+      "title": "Independent SHA and source contract checks for YouTube Skills API boundary",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }
