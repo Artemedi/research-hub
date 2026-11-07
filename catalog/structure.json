@@ -1666,6 +1666,20 @@
       "title": "Two additional full arXiv HTMLs, 32 authored citation claims and ZCode council",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/claude-zcode-swarm-skill-pilot.md",
+      "title": "Claude Swarm to ZCode restricted worker bridge: live pilot and repository skill",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-swarm-pilot.json",
+      "title": "Direct ZCode versus patched Claude Swarm routing of eight public-source claims",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

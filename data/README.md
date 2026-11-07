@@ -37,6 +37,7 @@
 | [data/results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json](results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-repair-council.json](results/research-portfolio/2026-11-07-claude-swarm-repair-council.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json](results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-swarm-pilot.json](results/research-portfolio/2026-11-07-claude-zcode-swarm-pilot.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-cluster-critics.json](results/research-portfolio/2026-11-07-cluster-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-controller.json](results/research-portfolio/2026-11-07-controller.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-coverage.json](results/research-portfolio/2026-11-07-coverage.json) | Результат ограниченной проверки |

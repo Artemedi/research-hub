@@ -16,6 +16,8 @@ New sources must also follow `docs/data-model.md` and register explicit entities
 
 Do not append changelog-style lists to the root README. It links stable section indexes. Generated files begin with a comment naming `scripts/build-catalog.mjs` and must not receive manual additions.
 
+For evidence-gated portfolio swarms and the experimental Claude Swarm → ZCode bridge, use the repository-local skill in `.agents/skills/research-swarm-orchestrator/SKILL.md`. It is a bounded lab workflow, not authorization for unattended or production execution.
+
 After edits:
 
 ```sh

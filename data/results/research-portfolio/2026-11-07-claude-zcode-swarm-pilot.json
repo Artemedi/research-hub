@@ -1,0 +1,297 @@
+{
+  "date": "2026-11-07",
+  "goal": "Same public-source citation task direct ZCode vs patched Claude Swarm CLI shim",
+  "upstream_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "repair_patch_sha256": "84a6ac46a2de4f66af9df6950a826a1e5880d3f348289f7ff9c2d9a2c1fd97a9",
+  "source_urls": [
+    "https://arxiv.org/html/2609.40111",
+    "https://arxiv.org/html/2609.11028"
+  ],
+  "roles": [
+    "reviewer",
+    "falsifier"
+  ],
+  "public_cases": 8,
+  "oracle_supported": 4,
+  "oracle_unsupported": 4,
+  "adapters": "actual patched WorkerManager + no-tool ZCode CLI shim; not native Claude Swarm ZCode support",
+  "physical_zcode_parallelism": 1,
+  "workspace": "disposable synthetic git and tmux; no real Claude calls",
+  "independent_oracle": "author preset claim entailment labels, not independent human review",
+  "all_calls_completed": true,
+  "all_correct_against_authored_labels": true,
+  "safe_permission_override_tested": true,
+  "findings": [
+    {
+      "role": "reviewer",
+      "source_worktree_created": true,
+      "cli_invokes_local_adapter": true,
+      "default_bypass_absent": true,
+      "legacy_marker_absent": true
+    },
+    {
+      "role": "falsifier",
+      "source_worktree_created": true,
+      "cli_invokes_local_adapter": true,
+      "default_bypass_absent": true,
+      "legacy_marker_absent": true
+    }
+  ],
+  "trials": {
+    "direct": [
+      {
+        "role": "reviewer",
+        "status": "COMPLETE",
+        "prompt_sha256": "5013e61061ae13f97a30a4f4d5d70b005372d6c0ac2690448a717601bafc628c",
+        "response_sha256": "d6607030e3ea006e95bbc4217febeb48c419c543169325ad3cf63ac82ef1e44b",
+        "elapsed_ms": 15758,
+        "usage": {
+          "input_tokens": 21,
+          "output_tokens": 700,
+          "cache_read_input_tokens": 1728,
+          "server_tool_use": {
+            "web_search_requests": 0
+          },
+          "service_tier": "standard"
+        },
+        "model": "glm-5.3-flash",
+        "metrics": {
+          "correct": 8,
+          "wrong": 0,
+          "abstentions": 0,
+          "false_supported": 0,
+          "true_supported": 4,
+          "total": 8
+        },
+        "labels": [
+          {
+            "id": "aed-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "aed-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-4",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-4",
+            "decision": "NOT_SUPPORTED"
+          }
+        ]
+      },
+      {
+        "role": "falsifier",
+        "status": "COMPLETE",
+        "prompt_sha256": "5013e61061ae13f97a30a4f4d5d70b005372d6c0ac2690448a717601bafc628c",
+        "response_sha256": "1846779bf1175d8cf5a6a1f42d894faf9091318a1340e5b376cf18c8145764de",
+        "elapsed_ms": 14134,
+        "usage": {
+          "input_tokens": 21,
+          "output_tokens": 773,
+          "cache_read_input_tokens": 1728,
+          "server_tool_use": {
+            "web_search_requests": 0
+          },
+          "service_tier": "standard"
+        },
+        "model": "glm-5.3-flash",
+        "metrics": {
+          "correct": 8,
+          "wrong": 0,
+          "abstentions": 0,
+          "false_supported": 0,
+          "true_supported": 4,
+          "total": 8
+        },
+        "labels": [
+          {
+            "id": "aed-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "aed-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-4",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-4",
+            "decision": "NOT_SUPPORTED"
+          }
+        ]
+      }
+    ],
+    "swarm": [
+      {
+        "role": "reviewer",
+        "status": "COMPLETE",
+        "worker_status": "completed",
+        "prompt_sha256": "5013e61061ae13f97a30a4f4d5d70b005372d6c0ac2690448a717601bafc628c",
+        "response_sha256": "3fd5b93028df5c62b46272e1d3f1b11a42b137831b5952d8d3fe42df81165358",
+        "elapsed_ms": 19189,
+        "provider_elapsed_ms": 19101,
+        "usage": {
+          "input_tokens": 21,
+          "output_tokens": 786,
+          "cache_read_input_tokens": 1728,
+          "server_tool_use": {
+            "web_search_requests": 0
+          },
+          "service_tier": "standard"
+        },
+        "model": "glm-5.3-flash",
+        "metrics": {
+          "correct": 8,
+          "wrong": 0,
+          "abstentions": 0,
+          "false_supported": 0,
+          "true_supported": 4,
+          "total": 8
+        },
+        "labels": [
+          {
+            "id": "aed-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "aed-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-4",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-4",
+            "decision": "NOT_SUPPORTED"
+          }
+        ]
+      },
+      {
+        "role": "falsifier",
+        "status": "COMPLETE",
+        "worker_status": "completed",
+        "prompt_sha256": "5013e61061ae13f97a30a4f4d5d70b005372d6c0ac2690448a717601bafc628c",
+        "response_sha256": "c6757a948137d0ea78eb231b4c0da287bfd57bdf162fd54ad1da6f4f57aabe60",
+        "elapsed_ms": 15504,
+        "provider_elapsed_ms": 15348,
+        "usage": {
+          "input_tokens": 21,
+          "output_tokens": 641,
+          "cache_read_input_tokens": 1728,
+          "server_tool_use": {
+            "web_search_requests": 0
+          },
+          "service_tier": "standard"
+        },
+        "model": "glm-5.3-flash",
+        "metrics": {
+          "correct": 8,
+          "wrong": 0,
+          "abstentions": 0,
+          "false_supported": 0,
+          "true_supported": 4,
+          "total": 8
+        },
+        "labels": [
+          {
+            "id": "aed-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "aed-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "aed-4",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-1",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-2",
+            "decision": "NOT_SUPPORTED"
+          },
+          {
+            "id": "bench-3",
+            "decision": "SUPPORTED"
+          },
+          {
+            "id": "bench-4",
+            "decision": "NOT_SUPPORTED"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Only two roles repeated same eight deliberately authored public-source claims",
+    "Model prompt SHA equality controls contents; context envelopes are not identical",
+    "Mock adapter is not hardened from a malicious same-UID process; no filesystem sandbox",
+    "Claude Swarm still has bypassPermissions default upstream, overridden explicitly here",
+    "Output .done and .exit files are mutable by workers; not security attestation",
+    "Worker startup and resource costs in the lab do not generalize to production",
+    "No private research cards, model tools, production SQL, target code changes or automatic adoption",
+    "Model provider outages lead to BLOCKED_PROVIDER; never fabricate acceptance"
+  ],
+  "decision": "ACCEPT_BOUNDED_PILOT"
+}
