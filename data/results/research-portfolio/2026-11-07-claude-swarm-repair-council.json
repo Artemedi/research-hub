@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-07",
+  "study": "claude-swarm",
+  "source_evidence_sha256": "4710fc861fd2dca299137f0bce044a606858f89e556f1f20202c9d7501f2f34b",
+  "patch_sha256": "84a6ac46a2de4f66af9df6950a826a1e5880d3f348289f7ff9c2d9a2c1fd97a9",
+  "physical_workers": 1,
+  "roles": [
+    {
+      "role": "lifecycle_skeptic",
+      "prompt_sha256": "db185f5a0720fb2169ffb528acd06023fc5f0e01ce2adf7733ee1f773be2b092",
+      "status": "BLOCKED_PROVIDER",
+      "elapsed_ms": 65068.4,
+      "failure": "TIMEOUT"
+    },
+    {
+      "role": "security_skeptic",
+      "prompt_sha256": "bed7b5e30226280b67ab39a8414d9baefaa05b15b43a4e5c7515ad871b1e0954",
+      "status": "BLOCKED_PROVIDER",
+      "elapsed_ms": 14898.4,
+      "exit_code": 1,
+      "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failure": "NONZERO_EXIT"
+    }
+  ],
+  "completed": 0,
+  "blocked": 2,
+  "limits": [
+    "Advisory model review does not override Git/tmux evidence",
+    "Both roles use same provider/model family",
+    "No tools executed by agents"
+  ]
+}

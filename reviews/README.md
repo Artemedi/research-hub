@@ -9,6 +9,7 @@
 | Обзор | Дата записи |
 | --- | --- |
 | [Claude Swarm Git worktree and tmux mock failure-injection counterchecks](../portfolio/2026-11-07/claude-swarm-failure-injection.md) | 2026-11-07 |
+| [Claude Swarm source-pinned worktree and worker-outcome repair A/B](../portfolio/2026-11-07/claude-swarm-repair-ab.md) | 2026-11-07 |
 | [Five logical critic council opinions over public source screening](../portfolio/2026-11-07/cluster-critics.md) | 2026-11-07 |
 | [31 source-grounded research micro-swarm review (advisory; not independent science)](../portfolio/2026-11-07/mass-swarm-review.md) | 2026-11-07 |
 | [Follow-up four-source evidence and independent technical acceptance](../portfolio/2026-11-07/next-evidence-round2.md) | 2026-11-07 |
@@ -16,6 +17,7 @@
 | [Portfolio 83-source comprehensive access and evidence-gap audit](../portfolio/2026-11-07/review.md) | 2026-11-07 |
 | [GPT-6 independent senior review of thirty-one source-scope screenings](../portfolio/2026-11-07/senior-review.md) | 2026-11-07 |
 | [Source-anchored real-paper citation entailment A/B and ZCode council](../portfolio/2026-11-07/source-anchored-citation-ab.md) | 2026-11-07 |
+| [Full-text citation A/B extended to Agent Error Dataset and BenchShield](../portfolio/2026-11-07/source-anchored-extension.md) | 2026-11-07 |
 | [Target-path citation and PostgreSQL planner resource counterchecks](../portfolio/2026-11-07/target-counterchecks-round3.md) | 2026-11-07 |
 | [Clean-source ZCode citation council and real MCP SQL security boundary](../portfolio/2026-11-07/target-counterchecks-round4.md) | 2026-11-07 |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |

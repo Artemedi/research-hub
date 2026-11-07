@@ -34,6 +34,8 @@
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-critics.json](results/research-portfolio/2026-11-07-claude-swarm-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json](results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json](results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-swarm-repair-council.json](results/research-portfolio/2026-11-07-claude-swarm-repair-council.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json](results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-cluster-critics.json](results/research-portfolio/2026-11-07-cluster-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-controller.json](results/research-portfolio/2026-11-07-controller.json) | Результат ограниченной проверки |
@@ -47,6 +49,7 @@
 | [data/results/research-portfolio/2026-11-07-pgplanner-timeout-ab.json](results/research-portfolio/2026-11-07-pgplanner-timeout-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-alternates.json](results/research-portfolio/2026-11-07-source-alternates.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-anchored-citation-ab.json](results/research-portfolio/2026-11-07-source-anchored-citation-ab.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-source-anchored-extension.json](results/research-portfolio/2026-11-07-source-anchored-extension.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-audit.json](results/research-portfolio/2026-11-07-source-audit.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-heads.json](results/research-portfolio/2026-11-07-source-heads.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-toolbox-30-settings.json](results/research-portfolio/2026-11-07-toolbox-30-settings.json) | Результат ограниченной проверки |

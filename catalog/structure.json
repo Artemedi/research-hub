@@ -1631,6 +1631,41 @@
       "title": "Two full arXiv HTMLs: 32 authored citation cases and eight ZCode role calls",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/claude-swarm-repair-ab.md",
+      "title": "Claude Swarm source-pinned worktree and worker-outcome repair A/B",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json",
+      "title": "Isolated Claude Swarm patch with 19 Git and tmux fault-injection oracles",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-swarm-repair-council.json",
+      "title": "Two blocked advisory ZCode reviews for Claude Swarm repair patch",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/source-anchored-extension.md",
+      "title": "Full-text citation A/B extended to Agent Error Dataset and BenchShield",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-source-anchored-extension.json",
+      "title": "Two additional full arXiv HTMLs, 32 authored citation claims and ZCode council",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

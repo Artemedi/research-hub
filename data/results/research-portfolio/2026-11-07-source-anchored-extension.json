@@ -1,0 +1,535 @@
+{
+  "date": "2026-11-07",
+  "study": "clean pinned dsh-paper2agent + arXiv full HTML citation entailment A/B",
+  "target_source_pin": "6d82a42175a71d3327b773df88f1da0707efe43c",
+  "papers": {
+    "2609.40111": {
+      "url": "https://arxiv.org/html/2609.40111",
+      "html_sha256": "31af8d0a1d4da3a4c4184def8fed7e6f76a6483005804f0868133b682d7aab14",
+      "title": "Agent Error Dataset: Scaling 50,000 Error–Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training",
+      "method_sections_available": true,
+      "results_sections_available": true,
+      "explicit_limitations_section_found": true
+    },
+    "2609.11028": {
+      "url": "https://arxiv.org/html/2609.11028",
+      "html_sha256": "36ae9bbdd32fb65d502a9644f7e2905b166cdc620d843b8724ce47b510da74b6",
+      "title": "BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure",
+      "method_sections_available": true,
+      "results_sections_available": true,
+      "explicit_limitations_section_found": false
+    }
+  },
+  "passages": {
+    "aed-pipeline": {
+      "source_id": "2609.40111",
+      "section_title": "3.2 AET: a five-stage data generation pipeline",
+      "anchor": "S3.SS2",
+      "paragraph_sha256": "fe82ad33c0abe6c756355e827510329b23d17fc6c831819a332be04415216da8",
+      "chars": 1388
+    },
+    "aed-limits": {
+      "source_id": "2609.40111",
+      "section_title": "Appendix A Limitations and Reproducibility",
+      "anchor": "A1",
+      "paragraph_sha256": "28f9ef6920757810c76809af60911957a774e5a6e141efabd4a241c6a35a32cd",
+      "chars": 329
+    },
+    "aed-multiplicity": {
+      "source_id": "2609.40111",
+      "section_title": "Appendix B Dataset analysis and corrective evidence",
+      "anchor": "A2",
+      "paragraph_sha256": "4bc2f812bf2916adab62bbadcda8368a65ce30d845f41effa6f7ad0d83c12102",
+      "chars": 281
+    },
+    "aed-machine-judges": {
+      "source_id": "2609.40111",
+      "section_title": "G.1 Independent labeling-method study",
+      "anchor": "A7.SS1",
+      "paragraph_sha256": "5920ace7aec90bca0ac84d6ca677039e46afd8ceec057b6bca45f3a4892f5216",
+      "chars": 727
+    },
+    "bench-events": {
+      "source_id": "2609.11028",
+      "section_title": "3.3. Pipeline",
+      "anchor": "S3.SS3",
+      "paragraph_sha256": "dc23220d2b6f7f9e35da03bde2293d02c89981a20580fe07c074785c1be6a43e",
+      "chars": 331
+    },
+    "bench-trials": {
+      "source_id": "2609.11028",
+      "section_title": "6.3. RQ2",
+      "anchor": "S6.SS3",
+      "paragraph_sha256": "80b15a8f0ced022cc96eea17636b388ee55780842b64d56e426237249a7629b0",
+      "chars": 637
+    },
+    "bench-lifecycle-limit": {
+      "source_id": "2609.11028",
+      "section_title": "7. Discussion",
+      "anchor": "S7",
+      "paragraph_sha256": "a79c6ee1ce2481d3dafd0b08c862f9a8ac3f70112bb3f8026274d3b3b88cc0e1",
+      "chars": 465
+    },
+    "bench-control-plane": {
+      "source_id": "2609.11028",
+      "section_title": "Appendix D A vector below the benchmark",
+      "anchor": "A4",
+      "paragraph_sha256": "85a1244f0ec5e96eff4bc3b5c4f9db69acdacab5a0a9689194e38f3c389e7572",
+      "chars": 581
+    }
+  },
+  "cases_total": 32,
+  "oracle_supported": 16,
+  "oracle_unsupported": 16,
+  "target_structural_acceptances": 32,
+  "external_exact_gate_support": 6,
+  "role_invocations": 8,
+  "roles_completed": 8,
+  "roles_blocked": 0,
+  "council_evaluated": 32,
+  "council_true_auto_supported": 16,
+  "council_false_auto_supported": 0,
+  "role_metrics": {
+    "source_reviewer": {
+      "evaluated": 32,
+      "true_auto_supported": 16,
+      "false_auto_supported": 0,
+      "abstentions": 0
+    },
+    "counterexample_critic": {
+      "evaluated": 32,
+      "true_auto_supported": 16,
+      "false_auto_supported": 0,
+      "abstentions": 0
+    }
+  },
+  "total_provider_wall_ms": 116483.6,
+  "median_call_ms": 14793.4,
+  "usage_sum": {
+    "input_tokens": 6468,
+    "output_tokens": 5967,
+    "cache_read_input_tokens": 6912
+  },
+  "role_receipts": {
+    "0-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "f190656ca90d16d1eeafc101ab3a67ddf469d021008e1554529aa20c458578d2",
+      "response_sha256": "59d2ba677aac6bd88e3b41c11086c7feb91d44d57bd7d5b7a799558cd40588ab",
+      "usage": {
+        "input_tokens": 1748,
+        "output_tokens": 839,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "0-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "c54616c6cf36cea6f1c8957ed98581097e4396c89323f7087a6d2a7edabd0f5e",
+      "response_sha256": "921c6ec6b613ad041b53c3b92332f7ba234e29815b061b8e59f5cdb4593ed433",
+      "usage": {
+        "input_tokens": 1749,
+        "output_tokens": 833,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "1-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "f0a78b22fa93988427a86fc87735e80d98c7f1d9669da9eb6d7a1a329d15a26f",
+      "response_sha256": "229550ec1de3e7111cea70b32e1e7063e6a5ead013bbb6208367e2caadc7650f",
+      "usage": {
+        "input_tokens": 550,
+        "output_tokens": 769,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "1-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "e5ca95aa2aeb8cc1cf199fdb6b083d9ac060de48d5ad42214189fcb51b24171a",
+      "response_sha256": "1e411b649a658a0d47b1789da2665195973f0886c415a69e82fba885b557300d",
+      "usage": {
+        "input_tokens": 551,
+        "output_tokens": 719,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "2-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "f07a6ac5a50a37a9c9f86ddf7ae7e77047d2bdf2e399a8a9649005a7dd481ad0",
+      "response_sha256": "5b5955ed18c1bae9c9f3744aab056e061152d3cc7b3800ddd85175c16608d2f7",
+      "usage": {
+        "input_tokens": 444,
+        "output_tokens": 598,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "2-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "22d9772d8cf7b8bd1290d1ed786a7ebaef59a3cfe83c9f5c883e604183906357",
+      "response_sha256": "c4411a762a52ce4a2b4b06d75a3d09d9c3a1fc4198608ab29e4dc6efb81db330",
+      "usage": {
+        "input_tokens": 445,
+        "output_tokens": 494,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "3-counterexample_critic": {
+      "status": "COMPLETE",
+      "prompt_sha256": "c14acd9f9552433acc019dc01f7f8d068c32d23dc05956ca9fb6473c3107f763",
+      "response_sha256": "5a2d70ef56e0f7c4fdb4c36e698ecfe4e7553b0955ac16c230b2ea84aa11c6c1",
+      "usage": {
+        "input_tokens": 490,
+        "output_tokens": 886,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    },
+    "3-source_reviewer": {
+      "status": "COMPLETE",
+      "prompt_sha256": "6e026323823d89e1d6038b025acdca7b77a9fa1c8b5c2b7b0679113ded7c4dd1",
+      "response_sha256": "34cf4543286fd1b1e1ece50e52c7befe0c05cddeb99aa853d9639808344df30a",
+      "usage": {
+        "input_tokens": 491,
+        "output_tokens": 829,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "failure": null
+    }
+  },
+  "case_results": [
+    {
+      "id": "0-0",
+      "source_key": "aed-pipeline",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "0-1",
+      "source_key": "aed-pipeline",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "0-2",
+      "source_key": "aed-pipeline",
+      "category": "wrong_count",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "0-3",
+      "source_key": "aed-pipeline",
+      "category": "wrong_protocol",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-0",
+      "source_key": "aed-limits",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "1-1",
+      "source_key": "aed-limits",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "1-2",
+      "source_key": "aed-limits",
+      "category": "wrong_denominator",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-3",
+      "source_key": "aed-limits",
+      "category": "unsupported_extrapolation",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-0",
+      "source_key": "aed-multiplicity",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "2-1",
+      "source_key": "aed-multiplicity",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "2-2",
+      "source_key": "aed-multiplicity",
+      "category": "wrong_denominator",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-3",
+      "source_key": "aed-multiplicity",
+      "category": "wrong_multiplicity",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-0",
+      "source_key": "aed-machine-judges",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "3-1",
+      "source_key": "aed-machine-judges",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "3-2",
+      "source_key": "aed-machine-judges",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-3",
+      "source_key": "aed-machine-judges",
+      "category": "wrong_actor",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-0",
+      "source_key": "bench-events",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "4-1",
+      "source_key": "bench-events",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "4-2",
+      "source_key": "bench-events",
+      "category": "wrong_authority",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-3",
+      "source_key": "bench-events",
+      "category": "negation",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-0",
+      "source_key": "bench-trials",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "5-1",
+      "source_key": "bench-trials",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "5-2",
+      "source_key": "bench-trials",
+      "category": "wrong_control",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-3",
+      "source_key": "bench-trials",
+      "category": "wrong_count",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "6-0",
+      "source_key": "bench-lifecycle-limit",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "6-1",
+      "source_key": "bench-lifecycle-limit",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "6-2",
+      "source_key": "bench-lifecycle-limit",
+      "category": "overclaim",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "6-3",
+      "source_key": "bench-lifecycle-limit",
+      "category": "unsupported_extrapolation",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "7-0",
+      "source_key": "bench-control-plane",
+      "category": "direct",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "7-1",
+      "source_key": "bench-control-plane",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "source_reviewer": "SUPPORTED",
+      "counterexample_critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "7-2",
+      "source_key": "bench-control-plane",
+      "category": "wrong_outcome",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "7-3",
+      "source_key": "bench-control-plane",
+      "category": "wrong_scope",
+      "expected_supported": false,
+      "source_reviewer": "NOT_SUPPORTED",
+      "counterexample_critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    }
+  ],
+  "limitations": [
+    "Author-crafted claim labels and anchors, not an independently annotated random corpus",
+    "Full source HTML files were checked by digest; ZCode saw only selected paragraphs",
+    "HTML pin is content digest; arXiv pages can later change and block reproduction",
+    "HTN paper lacks an explicit Limitations heading; no full scientific review claimed",
+    "Same provider model family for both roles; model agreement not independent oracle",
+    "No measure of true scientific conclusions, retrieval quality, or multi-hop grounding",
+    "No production integration or change to target project, no model tools or private data",
+    "The target submit_analysis is structural validation, not an entailment classifier"
+  ]
+}

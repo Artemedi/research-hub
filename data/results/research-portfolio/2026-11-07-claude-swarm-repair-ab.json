@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-07",
+  "experiment": "pinned upstream Claude Swarm repair A/B",
+  "source_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "source_sha256": {
+    "src/workers/manager.ts": "1e3d61fab679960db5608df890a486823a877577bb28754ff4b0c989f8faebb8",
+    "src/workers/worktree-manager.ts": "583868ad3e95ff81345e8b3aa857c7543af56c0aedefa6c229ce250d3be172e8"
+  },
+  "test_mode": "built real upstream managers + synthetic Git, private tmux, fake CLI",
+  "real_claude_calls": 0,
+  "actual_target_project_modified": false,
+  "cases_total": 19,
+  "cases_passed": 19,
+  "cases_failed": [],
+  "cases": [
+    {
+      "name": "retry_rejected",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Dirty worktree must fail closed, never force-delete"
+    },
+    {
+      "name": "dirty_file_preserved",
+      "actual": "preserve me on retry\n",
+      "expected": "preserve me on retry\n",
+      "passed": true,
+      "meaning": "Worker uncommitted content survives the attempted retry"
+    },
+    {
+      "name": "original_worktree_unchanged",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Worktree directory survives"
+    },
+    {
+      "name": "manager_does_not_fallback_to_shared",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "meaning": "WorkerManager must propagate worktree creation error"
+    },
+    {
+      "name": "failed_spawn_kept_dirty_worktree",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Failed worktree startup must not delete old worker state"
+    },
+    {
+      "name": "lock_conflict_still_enforced",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Keep atomic file ownership guarantee"
+    },
+    {
+      "name": "probe-ok_session_specific_prompt",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Prompt directs marker to absolute session-qualified path"
+    },
+    {
+      "name": "probe-ok_status",
+      "actual": "completed",
+      "expected": "completed",
+      "passed": true,
+      "meaning": "Classify actual CLI exit independently of .done marker"
+    },
+    {
+      "name": "probe-ok_marker_exists",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Fake CLI created a session-scoped marker"
+    },
+    {
+      "name": "probe-ok_exit_code",
+      "actual": "0",
+      "expected": "0",
+      "passed": true,
+      "meaning": "CLI exit code is persisted correctly"
+    },
+    {
+      "name": "probe-ok_no_legacy_marker",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "meaning": "Worker did not use a shared stale feature marker"
+    },
+    {
+      "name": "probe-fail_session_specific_prompt",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Prompt directs marker to absolute session-qualified path"
+    },
+    {
+      "name": "probe-fail_status",
+      "actual": "crashed",
+      "expected": "crashed",
+      "passed": true,
+      "meaning": "Classify actual CLI exit independently of .done marker"
+    },
+    {
+      "name": "probe-fail_marker_exists",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "meaning": "Fake CLI created a session-scoped marker"
+    },
+    {
+      "name": "probe-fail_exit_code",
+      "actual": "7",
+      "expected": "7",
+      "passed": true,
+      "meaning": "CLI exit code is persisted correctly"
+    },
+    {
+      "name": "probe-fail_no_legacy_marker",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "meaning": "Worker did not use a shared stale feature marker"
+    },
+    {
+      "name": "untrusted_exit_marker_can_be_spoofed",
+      "actual": "completed",
+      "expected": "completed",
+      "passed": true,
+      "meaning": "Marker integrity is not a security guarantee against a malicious worker"
+    },
+    {
+      "name": "main_repo_head_unchanged",
+      "actual": "0dd0950693f9e2e6d6f449db4f606dafa2a35b29",
+      "expected": "0dd0950693f9e2e6d6f449db4f606dafa2a35b29",
+      "passed": true,
+      "meaning": "No commits in main synthetic repository"
+    },
+    {
+      "name": "original_dirty_content_remains",
+      "actual": "preserve me on retry\n",
+      "expected": "preserve me on retry\n",
+      "passed": true,
+      "meaning": "Independent runner did not disturb earlier worktree"
+    }
+  ],
+  "status": "BOUNDED_REPAIRED",
+  "remaining_risks": [
+    "No actual Claude tool-use permission sandbox; bypassPermissions default unchanged",
+    "Workers can write their own marker/exit file with Bash; markers are not a security attestation",
+    "Concurrent retries, hard-kill during filesystem writes and process ownership race not stress tested",
+    "Legacy non-worktree flows and plan/continuous mode not covered",
+    "No model-backed worker or target DSH runtime tested",
+    "Preserved dirty worktree requires explicit manual recovery; increases interruption overhead"
+  ]
+}
