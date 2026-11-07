@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-07",
+  "study": "experienceindex",
+  "source_pin": "082193a6d061df2b45b6e5fb1f7d7e958b7c45c3",
+  "initial_experiment_sha256": "933c14dda4c70eb17b74da87bc5f3b70ebbf55514a828bf8c11000d51178f9a3",
+  "independent_js_oracle": "git show commit:path + literal Markdown link + exact SHA and latest explicit review",
+  "cases_validated": 33,
+  "unexpected_cases": 0,
+  "injected_wrong_source_hash_rejected": true,
+  "navigation_hit_at5": {
+    "baseline": 32,
+    "augmented": 33
+  },
+  "limitation": "Checks href/path/hash and self-reported rank membership; it does not independently reproduce BM25 scoring or semantic relevance",
+  "status": "PASS_BOUNDED_NAVIGATION_PROVENANCE"
+}

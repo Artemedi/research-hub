@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "study": "experienceindex",
+  "source_html_sha256": "9d539dc4db6e33c4909a23291ec47e925f4aea23a2bff1dc7e5f2b9801988a35",
+  "lab_result_sha256": "7a832ceb393da50ae93857df3d32f57d5f5993e2f034eaf77c75c588a19a50df",
+  "roles": [
+    {
+      "role": "methodology",
+      "prompt_sha256": "3f6319e62e51c0a317dbde81d48579a8d6bd6619fd8695298ba162969740cdd3",
+      "status": "BLOCKED_PROVIDER",
+      "error": "TIMEOUT",
+      "elapsed_ms": 45048.8
+    },
+    {
+      "role": "adversarial",
+      "prompt_sha256": "164035e5f98e617e0943bc400ca8f8449109a9a138552308e6f3b0f95a417586",
+      "status": "BLOCKED_PROVIDER",
+      "elapsed_ms": 14087.2,
+      "exit_code": 1,
+      "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": "NONZERO_EXIT"
+    }
+  ],
+  "completed": 0,
+  "blocked": 2,
+  "physical_parallelism": 1,
+  "limitations": "Same model family for roles; advisory only; independent result is pinned Markdown/FS navigation oracle"
+}

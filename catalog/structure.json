@@ -1743,6 +1743,34 @@
       "title": "Five controls for transient tmux capture race and bounded worker-status retry",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/experienceindex/2026-11-07.md",
+      "title": "ExperienceIndex full-source method recheck and explicit-link retrieval A/B",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/experienceindex/2026-11-07-link-retrieval.json",
+      "title": "Thirty-three pinned public Markdown link navigation cases with four negative controls",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/experienceindex/2026-11-07-link-oracle.json",
+      "title": "Independent Node.js Git and SHA oracle for ExperienceIndex navigation A/B",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/experienceindex/2026-11-07-council.json",
+      "title": "Two failed ZCode advisory methodology and adversarial reviews of ExperienceIndex",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

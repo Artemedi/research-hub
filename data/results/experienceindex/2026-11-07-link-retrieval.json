@@ -1,0 +1,880 @@
+{
+  "date": "2026-11-07",
+  "source": "experienceindex",
+  "status": "BOUNDED_EXPLICIT_LINK_RETRIEVAL",
+  "research_hub_pin": "082193a6d061df2b45b6e5fb1f7d7e958b7c45c3",
+  "full_paper_url": "https://arxiv.org/html/2610.10091v1",
+  "full_paper_html_sha256": "9d539dc4db6e33c4909a23291ec47e925f4aea23a2bff1dc7e5f2b9801988a35",
+  "corpus_docs": 155,
+  "corpus_archive_bytes": 1136640,
+  "study_docs": 84,
+  "review_docs": 71,
+  "cases": 33,
+  "baseline_review_at5": 32,
+  "augmented_review_at5": 33,
+  "new_recovered": 1,
+  "regressions": 0,
+  "negative_oracles": {
+    "stale_source_hash": {
+      "observed": "stale_source_hash",
+      "passed": true
+    },
+    "stale_target_hash": {
+      "observed": "stale_target_hash",
+      "passed": true
+    },
+    "missing_target": {
+      "observed": "missing_target",
+      "passed": true
+    },
+    "wrong_namespace": {
+      "observed": "wrong_namespace",
+      "passed": true
+    }
+  },
+  "excluded": {
+    "no_same_source_edge": 50,
+    "out_of_namespace": 6
+  },
+  "structural_valid_but_not_latest_control": {
+    "source": "studies/alphaxiv-openresearch.md",
+    "accepted_alternate_target": "reviews/alphaxiv-openresearch/2026-11-04.md",
+    "expected_latest_target": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+    "structural_gate_accepted": true,
+    "semantic_relevance_established": false,
+    "disposition": "REQUIRES_RELEVANCE_AND_RECENCY_GATE"
+  },
+  "median_bm25_us": 112,
+  "median_link_us": 22,
+  "retrieval_design": "BM25 full Markdown text top5, with one explicit verified linked review after first top3 study card; both top5",
+  "oracle": "Exact link/path/sha of latest explicitly linked same-source review; not semantic or scientific relevance",
+  "cases_detail": [
+    {
+      "source": "studies/alphaxiv-openresearch.md",
+      "target": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+      "source_sha256": "2116b46a36ed95bdd56d23d0acad6c575b45d452b5b7ac747caa128eefea9b21",
+      "target_sha256": "b83837f1f771612200be6621402fa667b59b9cddfab9f72b3baf262a33caa838",
+      "query_sha256": "171de0e528376ee7b89590c330e90b73fd7fa5710b3b78dc81221a590f481dc8",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/alphaxiv-openresearch.md",
+        "reviews/alphaxiv-openresearch/2026-11-04.md",
+        "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/alphaxiv-openresearch.md",
+        "reviews/alphaxiv-openresearch/2026-11-04.md",
+        "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/anthropic-agent-automations.md",
+      "target": "reviews/anthropic-agent-automations/2026-11-04.md",
+      "source_sha256": "8d7d35b01ccbb24c8c0e7026b4c86bb027b0b4e447effd86d21be2b1f3ac80a8",
+      "target_sha256": "3d9d2b5658db0474edab566997a60ed0a4c4cd39552c7cc9998e60b63910c4a4",
+      "query_sha256": "df3ad857fcbffca12f271c94fc84ecd8b741a2bcb725598d8691b3b9ed2cbd52",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/anthropic-agent-automations.md",
+        "reviews/anthropic-agent-automations/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/red-teaming-auto-mode.md"
+      ],
+      "augmented_top5": [
+        "studies/anthropic-agent-automations.md",
+        "reviews/anthropic-agent-automations/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/red-teaming-auto-mode.md"
+      ]
+    },
+    {
+      "source": "studies/chartli.md",
+      "target": "reviews/chartli/2026-11-04.md",
+      "source_sha256": "32a61b6ce54c8e16b7f7e7a787aeb37ace5a454c09f1181e665ada5e8345b5e6",
+      "target_sha256": "c0c83eded7be6d7cddc8111a0af3fc42c1d8135e3fb4a835151cc8deeba9fa4b",
+      "query_sha256": "63004fd09d4dc8bd5ad9b8be9bf5aeecacc6259bdb87571637710cb0e34cd11f",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/chartli.md",
+        "studies/INDEX.md",
+        "reviews/chartli/2026-11-04.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/chartli.md",
+        "studies/INDEX.md",
+        "reviews/chartli/2026-11-04.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/claude-swarm.md",
+      "target": "reviews/claude-swarm/2026-11-04.md",
+      "source_sha256": "ac3a8e05eadc5b2a5e418b30159c9503f033c8c8c5590ea1f6e94a106b48169d",
+      "target_sha256": "99607131eb5f54afdfa84d2b7c777477250561be535c1e679bf4b62cb894c5cf",
+      "query_sha256": "5cd3b99b68fec017e7f411b8c8fc0c426162ca742ee5744212e9322e8a62bb0f",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/claude-swarm.md",
+        "reviews/claude-swarm/2026-11-04.md",
+        "reviews/README.md",
+        "studies/INDEX.md",
+        "studies/squidagent.md"
+      ],
+      "augmented_top5": [
+        "studies/claude-swarm.md",
+        "reviews/claude-swarm/2026-11-04.md",
+        "reviews/README.md",
+        "studies/INDEX.md",
+        "studies/squidagent.md"
+      ]
+    },
+    {
+      "source": "studies/cursor-token-efficiency.md",
+      "target": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+      "source_sha256": "952ff914410002fe97dbacec39ab2d88b0cb715d74ec5c37e873ab2505dc3734",
+      "target_sha256": "5b9519d728c4ac2c1eba3544d9420d6c342466451d7a2de47466b0f315ca3cca",
+      "query_sha256": "44911e2dbfc212f0195268d66b82c73b13f9dfee3d98876ae238d8d417c20faa",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "reviews/cursor-token-efficiency/2026-11-05-primary.md",
+        "studies/cursor-token-efficiency.md",
+        "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "reviews/cursor-token-efficiency/2026-11-05-primary.md",
+        "studies/cursor-token-efficiency.md",
+        "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/dsh-creator-mode.md",
+      "target": "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+      "source_sha256": "d7a76b4a8967a66bc43ddffd8b9e9c800fe3060d48190ca33c2b7583655585fc",
+      "target_sha256": "fe9666143a0121008a4702dc08a33927901408ca9266f5e0b4b478ce4d948cf1",
+      "query_sha256": "0c36b36c469ac19947d358150780cf494b208c2438009d17988c9dc156b1591a",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/dsh-creator-mode.md",
+        "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+        "reviews/README.md",
+        "studies/INDEX.md"
+      ],
+      "augmented_top5": [
+        "studies/dsh-creator-mode.md",
+        "reviews/dsh-creator-mode/2026-11-06-local-probe.md",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+        "reviews/README.md",
+        "studies/INDEX.md"
+      ]
+    },
+    {
+      "source": "studies/dsh-superagent-prototype.md",
+      "target": "reviews/dsh-superagent-prototype/2026-11-05.md",
+      "source_sha256": "3326a5da1a3e868e51e2d9ad09728d350aa47e8920c6a7e0eacbaecbf42e8f91",
+      "target_sha256": "e6ba8b5f132c3db16f1586c9bf4831a89da66e053674b8670b60a5c75199b6dd",
+      "query_sha256": "c4727f34768c684e6c03a98b90c19da3bc940c61a4d6ab291dca11e7db137e84",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/dsh-superagent-prototype.md",
+        "reviews/dsh-superagent-prototype/2026-11-05.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/agent-transfer-protocol.md"
+      ],
+      "augmented_top5": [
+        "studies/dsh-superagent-prototype.md",
+        "reviews/dsh-superagent-prototype/2026-11-05.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/agent-transfer-protocol.md"
+      ]
+    },
+    {
+      "source": "studies/exactly-once-limbo.md",
+      "target": "reviews/exactly-once-limbo/2026-11-04.md",
+      "source_sha256": "4365d03c540012e1a14c55a263e0ee3e761bc9456dd4b8bff8ed779181345ab3",
+      "target_sha256": "6feb67df6a092134bd10323882b1bae6569c643385b06d9865878b54a434e086",
+      "query_sha256": "8c878dcb21f8693d234fe5f1c4b9e70193cafe2f8a37d98d3c44168ca4a7af0d",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "reviews/exactly-once-limbo/2026-11-05-full-text.md",
+        "studies/exactly-once-limbo.md",
+        "reviews/exactly-once-limbo/2026-11-06-policy-ab.md",
+        "reviews/exactly-once-limbo/2026-11-04.md",
+        "studies/INDEX.md"
+      ],
+      "augmented_top5": [
+        "reviews/exactly-once-limbo/2026-11-05-full-text.md",
+        "studies/exactly-once-limbo.md",
+        "reviews/exactly-once-limbo/2026-11-06-policy-ab.md",
+        "reviews/exactly-once-limbo/2026-11-04.md",
+        "studies/INDEX.md"
+      ]
+    },
+    {
+      "source": "studies/gpt6-astra-skills-prompts.md",
+      "target": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+      "source_sha256": "676a959ef5a4f34a82e91fafa24c21fd1554f52046f44d7599fb4d28a8fe65a5",
+      "target_sha256": "7c6fda5cdd6c7facacedc122a89c54c55a2aa1649e96b05178e2a475a02ccb94",
+      "query_sha256": "c0e18458fa60126fcac41501f6f24e9115cfa8dab65ee288e948e9e02a8f084e",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/gpt6-astra-skills-prompts.md",
+        "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+        "reviews/README.md",
+        "studies/INDEX.md",
+        "studies/cursor-token-efficiency.md"
+      ],
+      "augmented_top5": [
+        "studies/gpt6-astra-skills-prompts.md",
+        "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+        "reviews/README.md",
+        "studies/INDEX.md",
+        "studies/cursor-token-efficiency.md"
+      ]
+    },
+    {
+      "source": "studies/hyperresearch.md",
+      "target": "reviews/hyperresearch/2026-11-04.md",
+      "source_sha256": "1571c6448e74f3006a1f1c7e98b2cf4276d7795dcb8703a619be7a8f534df90d",
+      "target_sha256": "b84b43194d165adddfbab1cc14f67f377d89ef851f3c4147f15fff23e092e0bf",
+      "query_sha256": "296e52ede00adcface6de8dd59422fa3621fcfd0a670925aa465a7d8faa1d3fc",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/hyperresearch.md",
+        "reviews/hyperresearch/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/harness2/2026-11-05-full-text.md",
+        "studies/experienceindex.md"
+      ],
+      "augmented_top5": [
+        "studies/hyperresearch.md",
+        "reviews/hyperresearch/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/harness2/2026-11-05-full-text.md",
+        "studies/experienceindex.md"
+      ]
+    },
+    {
+      "source": "studies/hyra-2.md",
+      "target": "reviews/hyra-2/2026-11-05.md",
+      "source_sha256": "f3d6888bbeb1116abe0d25b43c2090423e47fbca5b2e77ebdd7be1e13fe2a556",
+      "target_sha256": "f56deeff0daa9b985531798527cbeb8d04b38ba5b7d005ee252aeca48fb5a4e7",
+      "query_sha256": "9a14d23b78885f6f24b5c33f9600d8580302d68f91d4e8a24e0e8753827b4c38",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/hyra-2.md",
+        "reviews/hyra-2/2026-11-05.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/hyra-2.md",
+        "reviews/hyra-2/2026-11-05.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/inspektor-gadget.md",
+      "target": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+      "source_sha256": "de39ca2885e9c0decd94d8c1119dd83788ce810644b4d22d5e35a8064a6fe78e",
+      "target_sha256": "ad8a068b83f19e95d581944000bffa81087d37720a8ac5bba49cf329370c296f",
+      "query_sha256": "e045f97afbbf6d0aaab6c40583b881cc68f0af784cc23abbe75bda4e08173a56",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/inspektor-gadget.md",
+        "reviews/inspektor-gadget/2026-11-04.md",
+        "reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/inspektor-gadget.md",
+        "reviews/inspektor-gadget/2026-11-04.md",
+        "reviews/inspektor-gadget/2026-11-06-privilege-gate.md",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/ipfire-fireperf.md",
+      "target": "reviews/ipfire-fireperf/2026-11-04.md",
+      "source_sha256": "3c936cf7191504796ae6ea268d499e87335dc0a45133a71818756cbd4a2ba998",
+      "target_sha256": "44887954098d7edf10c15a91a82d3d3491d9641e18dbb2022a1d75d570da754f",
+      "query_sha256": "5e2c1baddf699c3f1d1e03a199fd728fd5d29999139a7bd571262d1250cfb8fc",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/ipfire-fireperf.md",
+        "reviews/ipfire-fireperf/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/ipfire-fireperf.md",
+        "reviews/ipfire-fireperf/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/julia-1.md",
+      "target": "reviews/julia-1/2026-11-04.md",
+      "source_sha256": "955de8d926ce25428621eed14e0d10f19515c5a9bfe5b3a1814f31cca961a3ac",
+      "target_sha256": "6b70681e68043d629e3465a77adcec49c9c43f0153aa4447da8f820bd8cf8939",
+      "query_sha256": "16ee835865d8ffd7a21edfe8573b775e7664916f3457a7463d484819f9c2ee32",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/julia-1.md",
+        "reviews/julia-1/2026-11-04.md",
+        "studies/INDEX.md",
+        "studies/jevagentharness.md",
+        "reviews/drag/2026-11-06-evidence-gate-ab.md"
+      ],
+      "augmented_top5": [
+        "studies/julia-1.md",
+        "reviews/julia-1/2026-11-04.md",
+        "studies/INDEX.md",
+        "studies/jevagentharness.md",
+        "reviews/drag/2026-11-06-evidence-gate-ab.md"
+      ]
+    },
+    {
+      "source": "studies/karpathy-autoresearch.md",
+      "target": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+      "source_sha256": "83fc2dd301bf2499646dd29906d5600cfba1714f3b06f512e0de4c2992cafaed",
+      "target_sha256": "e61c09aa16d0294f5cfecbc98b58164ef3d141a5ca76360136b4c00e4fcf8594",
+      "query_sha256": "9e311b209627b4df2fde2fd8ce3e38fccadac0de281f5ad5a47eade5d09f1d5c",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/karpathy-autoresearch.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+        "reviews/karpathy-autoresearch/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/karpathy-autoresearch.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+        "reviews/karpathy-autoresearch/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/local-knowledge-graph.md",
+      "target": "reviews/local-knowledge-graph/2026-11-04.md",
+      "source_sha256": "715236f58ea1ee6fe955799e96ff32023ff9aae3fde82f97a3adf89c6302d1e2",
+      "target_sha256": "0811931cf330a5b59637147024897ea7855e45caabf40c2750e2e7b86cda636d",
+      "query_sha256": "3ddc62d56c6d109d0ba9e734925e2fe4d59e67ea937d80b324ac9680888348e4",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/local-knowledge-graph.md",
+        "reviews/local-knowledge-graph/2026-11-04.md",
+        "reviews/understand-anything/2026-11-04.md",
+        "studies/understand-anything.md",
+        "studies/INDEX.md"
+      ],
+      "augmented_top5": [
+        "studies/local-knowledge-graph.md",
+        "reviews/local-knowledge-graph/2026-11-04.md",
+        "reviews/understand-anything/2026-11-04.md",
+        "studies/understand-anything.md",
+        "studies/INDEX.md"
+      ]
+    },
+    {
+      "source": "studies/mcp-toolbox-postgres.md",
+      "target": "reviews/mcp-toolbox-postgres/2026-11-04.md",
+      "source_sha256": "cbeec87b08ac2d10af2be90ff6ba4c2f7e7e85d42f9687aa9807d6a38e637965",
+      "target_sha256": "4536a552e8d95e0dab5724ff8222160a635f4404af8a9ba1bba5da175a69bba5",
+      "query_sha256": "c34a4f90f00c11b64958fc85daf7c24a60f7fd22dd2c57a85513738da4d1ea05",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/mcp-toolbox-postgres.md",
+        "reviews/mcp-toolbox-postgres/2026-11-04.md",
+        "studies/INDEX.md",
+        "studies/pgbot.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/mcp-toolbox-postgres.md",
+        "reviews/mcp-toolbox-postgres/2026-11-04.md",
+        "studies/INDEX.md",
+        "studies/pgbot.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/microsoft-skill-recorder.md",
+      "target": "reviews/microsoft-skill-recorder/2026-11-04.md",
+      "source_sha256": "eaa586853ad4c61983dc762830129f09e1f80168fe76fb5bea877d45a8b45d12",
+      "target_sha256": "c25d83013c8c1692b1bf58b0d309690038311da0b9d5e4d7481516ceb8220888",
+      "query_sha256": "79f8e1e216709a99e627576177c4a8bab22b15549664db278d1efe1397abf401",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/microsoft-skill-recorder.md",
+        "reviews/microsoft-skill-recorder/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/open-steps/2026-11-04.md"
+      ],
+      "augmented_top5": [
+        "studies/microsoft-skill-recorder.md",
+        "reviews/microsoft-skill-recorder/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/open-steps/2026-11-04.md"
+      ]
+    },
+    {
+      "source": "studies/novafabric.md",
+      "target": "reviews/novafabric/2026-11-04.md",
+      "source_sha256": "353feea5c0ca74181f1ed4f08565fd54a37dc2252aa77000daa58ab7429aef23",
+      "target_sha256": "4c2e75af439f9bfde75ba4481e85eebd3158c595ec3d9aea0d670536c58d942a",
+      "query_sha256": "364974e5e4a3431f54695aaa3029a9513af2b0c1ed1d53fe9a1ec3840d00ed23",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/novafabric.md",
+        "reviews/novafabric/2026-11-04.md",
+        "studies/INDEX.md",
+        "studies/agent-error-dataset.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/novafabric.md",
+        "reviews/novafabric/2026-11-04.md",
+        "studies/INDEX.md",
+        "studies/agent-error-dataset.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/open-steps.md",
+      "target": "reviews/open-steps/2026-11-04.md",
+      "source_sha256": "baa28dcdf4efa8c68354d9bc7b73cb72d94ce5168803548bcba0163e0eb6bba7",
+      "target_sha256": "ca1401363c88df2044af73625ffb3be3ca896891b46f6a667ba3eec8a79963b2",
+      "query_sha256": "5c14987d4b73e5625a7ec26b62c9ce6d5d06e2bea8d7bbf8f1420b31766de2f8",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/open-steps.md",
+        "studies/INDEX.md",
+        "reviews/open-steps/2026-11-04.md",
+        "reviews/unsloth-decision-model/2026-11-04.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md"
+      ],
+      "augmented_top5": [
+        "studies/open-steps.md",
+        "studies/INDEX.md",
+        "reviews/open-steps/2026-11-04.md",
+        "reviews/unsloth-decision-model/2026-11-04.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md"
+      ]
+    },
+    {
+      "source": "studies/pgbot.md",
+      "target": "reviews/pgbot/2026-11-04.md",
+      "source_sha256": "673b80f2062d386c190eff1cdb7d48e6ba27d1ded574212eaaba13b992726f44",
+      "target_sha256": "a93921f62f8f26d5b3be6e74de5b3324a4a861454628d6436c1470defae0a6fe",
+      "query_sha256": "69608efe419daf6d8a6d717ad72565c6d585c72b15ca2e526a54a5ddefdd51aa",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/pgbot.md",
+        "studies/INDEX.md",
+        "reviews/pgbot/2026-11-04.md",
+        "reviews/README.md",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md"
+      ],
+      "augmented_top5": [
+        "studies/pgbot.md",
+        "studies/INDEX.md",
+        "reviews/pgbot/2026-11-04.md",
+        "reviews/README.md",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md"
+      ]
+    },
+    {
+      "source": "studies/reverse-engineer-anything.md",
+      "target": "reviews/reverse-engineer-anything/2026-11-05-pe-layout.md",
+      "source_sha256": "a41626afcb3d8a6cffcd2ee5edd689eeed30db7387bf6f1294f03dfa845bd29b",
+      "target_sha256": "091ff1a96fa35008086058a28aac532b41fc0cd6c5c3b9c9f0fbe70c7731d437",
+      "query_sha256": "9fdf9402fbeb7e29ca61ee58cdae871153c09e6799be7095344cd93166c8838b",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/reverse-engineer-anything.md",
+        "reviews/reverse-engineer-anything/2026-11-05-pe-layout.md",
+        "reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/reverse-engineer-anything.md",
+        "reviews/reverse-engineer-anything/2026-11-05-pe-layout.md",
+        "reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/sequential-diagnosis-language-models.md",
+      "target": "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md",
+      "source_sha256": "537b8ba082da1be732f36b6c390ac1357d098242751c6cc9615052de8186ae6b",
+      "target_sha256": "8a006b8c4a20fd4ab273c2f468064ad607a29b69e439803b74bfc5d6555ae441",
+      "query_sha256": "532f278665a6c10bbb3ddc70bc278b3f311dfbcec3b78c85cf959c2b06653e1c",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/sequential-diagnosis-language-models.md",
+        "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md",
+        "reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/sequential-diagnosis-language-models.md",
+        "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md",
+        "reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/simurg.md",
+      "target": "reviews/simurg/2026-11-04.md",
+      "source_sha256": "cc5b7cf33502cc9520e0b329b3f6693ff865d500d4905f8aec8ca7f12ef2ff0c",
+      "target_sha256": "bc24cb8f2913e230c3a932d21a351254c469924d5f674492214de26734506989",
+      "query_sha256": "0d723f074e507f55c388442f8bb1b17c45873a28d52a44aaf7408545bcb110da",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/simurg.md",
+        "reviews/simurg/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md"
+      ],
+      "augmented_top5": [
+        "studies/simurg.md",
+        "reviews/simurg/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md"
+      ]
+    },
+    {
+      "source": "studies/tencent-teamai-cli.md",
+      "target": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+      "source_sha256": "9dc4315403dd2c0613a9f8ba7a20e407f4bf6a5bcdf00468df15c50baaa5f3da",
+      "target_sha256": "4d8c00b1582441e474d0c58ac5b1620a6aa8e653300b9f2497d8aacc61a0e6e4",
+      "query_sha256": "b08ceb922d5952d4ef94ea386e480058f88c9e4d89696e5c87bba213740cfa23",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/tencent-teamai-cli.md",
+        "reviews/tencent-teamai-cli/2026-11-04.md",
+        "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/tencent-teamai-cli.md",
+        "reviews/tencent-teamai-cli/2026-11-04.md",
+        "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/toolgrad.md",
+      "target": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+      "source_sha256": "a75653f4ff358630bf9a1a31e3d766910de30645c4fd017c456a9f78787fe0a2",
+      "target_sha256": "55ff986aa89ecdb2e3de603a77f35e026a2059c27aa2589ce197b11005d0cd91",
+      "query_sha256": "7d4aa89791fcc77db1edb5918ce7a5df6f8b4f616e0efdd28cec539f08a35e72",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/toolgrad.md",
+        "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+        "studies/INDEX.md",
+        "studies/agent-error-dataset.md",
+        "studies/veriharness.md"
+      ],
+      "augmented_top5": [
+        "studies/toolgrad.md",
+        "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+        "studies/INDEX.md",
+        "studies/agent-error-dataset.md",
+        "studies/veriharness.md"
+      ]
+    },
+    {
+      "source": "studies/understand-anything.md",
+      "target": "reviews/understand-anything/2026-11-04.md",
+      "source_sha256": "06ed1a852600069f1dc210dcb1ba3cf8aeaa6697939ac191d6dbc3197515caf0",
+      "target_sha256": "b321a66375f04849b4edbfca740c143412ae0e6962473dcc174a975b5f7f33eb",
+      "query_sha256": "3f1bfea6ddec28c7fc13d300eacb7c546bd7190bcbd5a32178c26ac5b45af60f",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/understand-anything.md",
+        "reviews/understand-anything/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/reverse-engineer-anything.md"
+      ],
+      "augmented_top5": [
+        "studies/understand-anything.md",
+        "reviews/understand-anything/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/reverse-engineer-anything.md"
+      ]
+    },
+    {
+      "source": "studies/unsloth-decision-model.md",
+      "target": "reviews/unsloth-decision-model/2026-11-04.md",
+      "source_sha256": "6364ebc1e1007de8ffd694d7228507cc692951063a166d65d2309ebad877b1ff",
+      "target_sha256": "673cc4c2ecbcc2a2843676b2cb8af7e7bac22fcafbe10a6f126ed5c92fac25fc",
+      "query_sha256": "b50b77c9a2a7a37cb0d55d30b119389898e802d50c35e600566c04f17a9c16c3",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/unsloth-decision-model.md",
+        "reviews/unsloth-decision-model/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/cera-moa.md"
+      ],
+      "augmented_top5": [
+        "studies/unsloth-decision-model.md",
+        "reviews/unsloth-decision-model/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "studies/cera-moa.md"
+      ]
+    },
+    {
+      "source": "studies/vercel-agent-desktop.md",
+      "target": "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+      "source_sha256": "1ca5475c5a4dc5a30738adb4c9fd0ebe952f1091540d6023b18cef4a41011b87",
+      "target_sha256": "84615751430fdecee2f512737f7b44de097d850e07f55b3a6936e912be1af8a3",
+      "query_sha256": "07863fdaf3bff353e727772f21f33434dec5388af4f445d5ef640dd8ba1e9c9d",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/vercel-agent-desktop.md",
+        "reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md",
+        "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ],
+      "augmented_top5": [
+        "studies/vercel-agent-desktop.md",
+        "reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md",
+        "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+        "studies/INDEX.md",
+        "reviews/README.md"
+      ]
+    },
+    {
+      "source": "studies/warp-skill-doctor.md",
+      "target": "reviews/warp-skill-doctor/2026-11-04.md",
+      "source_sha256": "19a3659ee310a47f4c9a759799c156ddc8b949263c7bae91159de59f4ba2cac6",
+      "target_sha256": "b0e8f9eb4a28d04f7cef3376684adbf4c3583375c43383f368acc9c6790cd4fc",
+      "query_sha256": "5a790e5c5924854dfca06ea34e2662d2d66681e52c7c8d973f427b07f98fe4ea",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/warp-skill-doctor.md",
+        "reviews/warp-skill-doctor/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/microsoft-skill-recorder/2026-11-04.md"
+      ],
+      "augmented_top5": [
+        "studies/warp-skill-doctor.md",
+        "reviews/warp-skill-doctor/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/microsoft-skill-recorder/2026-11-04.md"
+      ]
+    },
+    {
+      "source": "studies/yahont-ce.md",
+      "target": "reviews/yahont-ce/2026-11-04.md",
+      "source_sha256": "666ab7481f2bc4bb0aefc8e38263d52eae8efedeffc9f82b543c2d654e1b3973",
+      "target_sha256": "1a3f2a21752a3a0b05d08151a9e3037abd10b3532bfb97df8a91f09daf2f3317",
+      "query_sha256": "28232de9d26995c126de54aba9d993ca5589cf6e6a8652287322cd667b28cbfb",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/yahont-ce.md",
+        "reviews/yahont-ce/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/drag/2026-11-06-retrieval-ab.md"
+      ],
+      "augmented_top5": [
+        "studies/yahont-ce.md",
+        "reviews/yahont-ce/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/README.md",
+        "reviews/drag/2026-11-06-retrieval-ab.md"
+      ]
+    },
+    {
+      "source": "studies/youtube-skills.md",
+      "target": "reviews/youtube-skills/2026-11-04.md",
+      "source_sha256": "b07108ad64d30fa86e049bd9af83989f02103438a63218dad8a80906b982a775",
+      "target_sha256": "5e48761d8b391d2884febb340ae24418b9e0c4ea27a34e5773c6ba18da4896d5",
+      "query_sha256": "5d332d6d433dbf4c94ae78dc82c2cce8def58f61fc495ae218824be10962c02b",
+      "baseline_review_at5": true,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "already_found",
+      "baseline_top5": [
+        "studies/youtube-skills.md",
+        "reviews/youtube-skills/2026-11-04.md",
+        "reviews/telegram-transcripts/2026-11-06-user-provided.md",
+        "studies/INDEX.md",
+        "studies/karpathy-autoresearch.md"
+      ],
+      "augmented_top5": [
+        "studies/youtube-skills.md",
+        "reviews/youtube-skills/2026-11-04.md",
+        "reviews/telegram-transcripts/2026-11-06-user-provided.md",
+        "studies/INDEX.md",
+        "studies/karpathy-autoresearch.md"
+      ]
+    },
+    {
+      "source": "studies/zero-code.md",
+      "target": "reviews/zero-code/2026-11-04.md",
+      "source_sha256": "805a1b94c21471b413b2986d2cc509ed71d18c1682d56a992828e37b9b4c6962",
+      "target_sha256": "c3bdb65b87e42870978dec36f9d8c37045d98632fdf464fefa096a8e5d4bf84d",
+      "query_sha256": "0c28c4995fc9c3f280df48f093a411bd501d64e9386cd42cb916e5f799eb6434",
+      "baseline_review_at5": false,
+      "augmented_review_at5": true,
+      "seed_at3": true,
+      "reason": "expanded",
+      "baseline_top5": [
+        "studies/zero-code.md",
+        "studies/INDEX.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+        "studies/open-steps.md",
+        "studies/harness2.md"
+      ],
+      "augmented_top5": [
+        "studies/zero-code.md",
+        "reviews/zero-code/2026-11-04.md",
+        "studies/INDEX.md",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+        "studies/open-steps.md"
+      ]
+    }
+  ],
+  "limitations": [
+    "Explicit Markdown links substitute for learned artifact pair relations",
+    "Queries are source card headings; not a holdout human relevance taskset",
+    "No embeddings, LLM relevance gate, prompt injection, online learning or author method reproduction",
+    "A linked review need not be semantically relevant to any given query",
+    "This is navigation accuracy, not model answer accuracy, factual truth, or integration benefit",
+    "One pinned public hub snapshot, no private indexed project data"
+  ]
+}
