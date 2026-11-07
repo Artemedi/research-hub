@@ -74,7 +74,6 @@
 - [research-portfolio/2026-11-07-zcode-citation-council-ab.py](research-portfolio/2026-11-07-zcode-citation-council-ab.py)
 - [research-portfolio/2026-11-07-zcode-claude-cli-shim.mjs](research-portfolio/2026-11-07-zcode-claude-cli-shim.mjs)
 - [research-portfolio/2026-11-07-zcode-claude-cli-shim.test.mjs](research-portfolio/2026-11-07-zcode-claude-cli-shim.test.mjs)
-- [research-portfolio/__pycache__/2026-11-07-claude-zcode-tasks20.cpython-314.pyc](research-portfolio/__pycache__/2026-11-07-claude-zcode-tasks20.cpython-314.pyc)
 - [research-portfolio/audit-micro.py](research-portfolio/audit-micro.py)
 - [research-portfolio/cluster-critics.py](research-portfolio/cluster-critics.py)
 - [research-portfolio/controller.py](research-portfolio/controller.py)
