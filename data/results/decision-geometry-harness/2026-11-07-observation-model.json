@@ -1,0 +1,808 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "experiment": "Only JSON key order in nested model-facing state observation; exact tools, messages semantics and user intent retained",
+  "fixture_sha256": "eb06ec1eb46b29c952ca6d35fd26f054350275146ae6a5e0b0726c28b090a2d5",
+  "wires_sha256": "189f41bf1d6866bc62c028cc5cadf609b1d6ab82cbced1d148ddb70be8bbaa19",
+  "provider_probe_status": "COMPLETE_BUT_NOT_PART_OF_A_B",
+  "trial_order": [
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A"
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B"
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B"
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A"
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B"
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A"
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A"
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "B"
+    }
+  ],
+  "attempted_calls": 8,
+  "planned_calls": 8,
+  "successful_calls": 7,
+  "calls": [
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "prompt_sha256": "ed959369fe39cc6bbfbdcdbd7d96f6a38451c68b2b460f8dc56fac298420279b",
+      "wire_sha256": "ccdb60760f0ae68d3b9afecbf3d567ccd920a728bbed55c6009bfceeea4675ea",
+      "task_ids": [
+        "obs-none-2",
+        "obs-none-3",
+        "obs-runbook-2",
+        "obs-runbook-3",
+        "obs-job-3",
+        "obs-job-1",
+        "obs-pg-3",
+        "obs-pg-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "c6006df64436a34eacf2e741ccbb5a4c6b464447b8d9acfd9cf59a8b26654800",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 2565,
+        "output_tokens": 1231,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "obs-runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "obs-job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "obs-job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        },
+        {
+          "id": "obs-pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "obs-pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        }
+      ],
+      "response_text_sha256": "6d486faca0fb0a68a78927b9566fba7f073a1206d1f4b52ef10d4176110d19fe",
+      "elapsed_ms": 22072.8,
+      "child_cpu_user_s": 0.1407,
+      "child_cpu_sys_s": 0.0269,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87736
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "prompt_sha256": "c728619f23fde4a174632c55d74c45c5742fc72abc1127754eea3c55857692c3",
+      "wire_sha256": "4d93ffb261748881547d75370b1fbb67846e322dc9af26ef6a991ebd77f7bc86",
+      "task_ids": [
+        "obs-none-2",
+        "obs-none-3",
+        "obs-runbook-2",
+        "obs-runbook-3",
+        "obs-job-3",
+        "obs-job-1",
+        "obs-pg-3",
+        "obs-pg-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "513ba694999768dfb325197c74a0ccc5dfa0e9518f506cff2502ae3626d95391",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1366,
+        "output_tokens": 1039,
+        "cache_read_input_tokens": 1216,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "obs-runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "obs-job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "obs-job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        },
+        {
+          "id": "obs-pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "obs-pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        }
+      ],
+      "response_text_sha256": "d7803827ad49f5d9d685129958226a49f526cbd75fead312f6484b4e228f2a14",
+      "elapsed_ms": 18797.6,
+      "child_cpu_user_s": 0.1356,
+      "child_cpu_sys_s": 0.0314,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87736
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "prompt_sha256": "3bb0f92b85afe76403e46da079137a9a60ecd3545a2e613baec7850730ebe435",
+      "wire_sha256": "3a82ea2c3963cd9a59ec46581bcc76a62104f2c0498545697252f8513469def5",
+      "task_ids": [
+        "obs-sql-1",
+        "obs-sql-3",
+        "obs-artifact-2",
+        "obs-artifact-3",
+        "obs-file-2",
+        "obs-file-3",
+        "obs-sum-3",
+        "obs-sum-2"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "d0fcf94a2e588cc0c8009e49a92918e8b1ade85d33c20658f59f42b72b8c5e21",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1365,
+        "output_tokens": 956,
+        "cache_read_input_tokens": 1216,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "obs-sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "obs-artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "obs-artifact-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "obs-file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "obs-sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "obs-sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "084a1feeb05a8c1d675d8e24fdebf167fc7d442b3f9b859989cf994039c974ba",
+      "elapsed_ms": 17334.1,
+      "child_cpu_user_s": 0.133,
+      "child_cpu_sys_s": 0.0312,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87792
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "prompt_sha256": "50c26341730b7d2f456ba7b330c3a3890a764dd065a24f070f71dea8233e49b0",
+      "wire_sha256": "bd8ca23ecc3e3f150d29a1dd36811bd8a8fdec56ac889ef370ec0ef70e908ee3",
+      "task_ids": [
+        "obs-sql-1",
+        "obs-sql-3",
+        "obs-artifact-2",
+        "obs-artifact-3",
+        "obs-file-2",
+        "obs-file-3",
+        "obs-sum-3",
+        "obs-sum-2"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "c667bb192ffeb689ef549d27e8cd45afe6deead9e87e0e809d39b60253e05b03",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1284,
+        "output_tokens": 2073,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "obs-sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "obs-artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "obs-artifact-3",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "kv-order"
+          }
+        },
+        {
+          "id": "obs-file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "obs-file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "obs-sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "obs-sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "9dbf9f853ee42941de4f77225e9d9d00a8e6e2bba3da33308dd59d873aef2d0c",
+      "elapsed_ms": 44577.8,
+      "child_cpu_user_s": 0.1344,
+      "child_cpu_sys_s": 0.0343,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87964
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "prompt_sha256": "c728619f23fde4a174632c55d74c45c5742fc72abc1127754eea3c55857692c3",
+      "wire_sha256": "4d93ffb261748881547d75370b1fbb67846e322dc9af26ef6a991ebd77f7bc86",
+      "task_ids": [
+        "obs-none-2",
+        "obs-none-3",
+        "obs-runbook-2",
+        "obs-runbook-3",
+        "obs-job-3",
+        "obs-job-1",
+        "obs-pg-3",
+        "obs-pg-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "de68376bf4eb6d538af06dc852343728eb6245d4ecef8aabb5f0f5738483d9d1",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 22,
+        "output_tokens": 821,
+        "cache_read_input_tokens": 2560,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "obs-runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "obs-job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "obs-job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        },
+        {
+          "id": "obs-pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "obs-pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        }
+      ],
+      "response_text_sha256": "d7803827ad49f5d9d685129958226a49f526cbd75fead312f6484b4e228f2a14",
+      "elapsed_ms": 28144.7,
+      "child_cpu_user_s": 0.139,
+      "child_cpu_sys_s": 0.0262,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87964
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "prompt_sha256": "ed959369fe39cc6bbfbdcdbd7d96f6a38451c68b2b460f8dc56fac298420279b",
+      "wire_sha256": "ccdb60760f0ae68d3b9afecbf3d567ccd920a728bbed55c6009bfceeea4675ea",
+      "task_ids": [
+        "obs-none-2",
+        "obs-none-3",
+        "obs-runbook-2",
+        "obs-runbook-3",
+        "obs-job-3",
+        "obs-job-1",
+        "obs-pg-3",
+        "obs-pg-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "bb9a8130bcebf7c987b6f8f01a90f3152f6c5284371aac6935d57c52f7152765",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1285,
+        "output_tokens": 794,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "obs-runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "obs-runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "obs-job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "obs-job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        },
+        {
+          "id": "obs-pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "obs-pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        }
+      ],
+      "response_text_sha256": "88b53a4909003015e2e2d8353938cc26c4895058357652a37ab64df7c97361f0",
+      "elapsed_ms": 16352.4,
+      "child_cpu_user_s": 0.1458,
+      "child_cpu_sys_s": 0.022,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87964
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "prompt_sha256": "50c26341730b7d2f456ba7b330c3a3890a764dd065a24f070f71dea8233e49b0",
+      "wire_sha256": "bd8ca23ecc3e3f150d29a1dd36811bd8a8fdec56ac889ef370ec0ef70e908ee3",
+      "task_ids": [
+        "obs-sql-1",
+        "obs-sql-3",
+        "obs-artifact-2",
+        "obs-artifact-3",
+        "obs-file-2",
+        "obs-file-3",
+        "obs-sum-3",
+        "obs-sum-2"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "9a5f74f8e372b7017c625b398c1d87b9b7d5b825fca4f8adfc66fbfed8e33013",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 4,
+        "output_tokens": 2071,
+        "cache_read_input_tokens": 2560,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "obs-sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "obs-sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "obs-artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "obs-artifact-3",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "kv-order"
+          }
+        },
+        {
+          "id": "obs-file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "obs-file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "obs-sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "obs-sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "c86f579fab95a0b4fd58958cd3df8e3d7b1ae8a2f988c5726a9641b478e78574",
+      "elapsed_ms": 41046.1,
+      "child_cpu_user_s": 0.1403,
+      "child_cpu_sys_s": 0.0307,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87964
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "B",
+      "prompt_sha256": "3bb0f92b85afe76403e46da079137a9a60ecd3545a2e613baec7850730ebe435",
+      "wire_sha256": "3a82ea2c3963cd9a59ec46581bcc76a62104f2c0498545697252f8513469def5",
+      "task_ids": [
+        "obs-sql-1",
+        "obs-sql-3",
+        "obs-artifact-2",
+        "obs-artifact-3",
+        "obs-file-2",
+        "obs-file-3",
+        "obs-sum-3",
+        "obs-sum-2"
+      ],
+      "status": "BLOCKED_PROVIDER",
+      "error": "TIMEOUT",
+      "elapsed_ms": 52055.5,
+      "child_cpu_user_s": 0.1052,
+      "child_cpu_sys_s": 0.0212,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87964
+    }
+  ],
+  "total_wall_ms": 240381.0,
+  "p50_call_wall_ms": 25108.8,
+  "p95_call_wall_ms": 52055.5,
+  "model_tool_executions": 0,
+  "physical_parallelism": 1,
+  "limits": [
+    "ZCode receives DSH wire as data within a separate provider request, not native DSH tool calling",
+    "Sampling temperature and max tokens are fields inside quoted DSH request; ZCode wrapper may use other defaults",
+    "Two replicates are not enough for robust inference or statistical superiority",
+    "No authentic end-to-end task correctness, actual tool execution or production cost measured",
+    "No gold labels sent to the provider; expert blinded annotations not available",
+    "Subprocess CPU/RSS/IO excludes remote model service"
+  ]
+}

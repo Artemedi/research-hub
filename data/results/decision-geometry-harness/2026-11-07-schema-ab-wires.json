@@ -1,0 +1,1306 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "dsh_runtime_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "serializer_source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "fixture_sha256": "5f34fbc87c3b8f3df342696f1f1bc904f1114ed54b916c064a866ec544052024",
+  "variants": [
+    "A",
+    "B"
+  ],
+  "batch_count": 3,
+  "model_requested": "glm-5.3-flash",
+  "sampling_requested": {
+    "temperature": 0,
+    "max_tokens": 2500
+  },
+  "intervention": "Reverse tool-definition order AND order of properties within every tool; model-facing instructions and semantics identical",
+  "oracle_check": "Real dsh-runtime serializeRequest + canonical equality of tool semantics and exact messages",
+  "wires": [
+    {
+      "batch": 0,
+      "variant": "A",
+      "task_ids": [
+        "sum-3",
+        "none-2",
+        "runbook-2",
+        "pg-3",
+        "artifact-2",
+        "runbook-3",
+        "sql-1",
+        "runbook-1"
+      ],
+      "wire_sha256": "8d468ae9ddb86128815c1193cf1614d6bc84fdd575f0beab270d1ffe879b06d2",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router. For each task, select exactly one named tool, or NONE if the instruction explicitly needs no tool. Do not execute anything. Do not invent arguments. Return one result per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"tasks\":[{\"id\":\"sum-3\",\"instruction\":\"Select the sum tool with integer inputs [0, 100, 5].\"},{\"id\":\"none-2\",\"instruction\":\"Не вызывай инструменты. Просто отметь, что инструмент не нужен.\"},{\"id\":\"runbook-2\",\"instruction\":\"Найди инструкцию по topic=replica-delay, revision=v2.\"},{\"id\":\"pg-3\",\"instruction\":\"Inspect PostgreSQL relation named audit_log in schema demo.\"},{\"id\":\"artifact-2\",\"instruction\":\"Список данных для исследования study=schema-drift, kind=data.\"},{\"id\":\"runbook-3\",\"instruction\":\"Look up runbook revision v3 for topic=vacuum-stall.\"},{\"id\":\"sql-1\",\"instruction\":\"Inspect SQL execution plan query_id=771 in database AuditLab.\"},{\"id\":\"runbook-1\",\"instruction\":\"Find runbook for topic=backup-check, revision=v1.\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 0,
+      "variant": "B",
+      "task_ids": [
+        "sum-3",
+        "none-2",
+        "runbook-2",
+        "pg-3",
+        "artifact-2",
+        "runbook-3",
+        "sql-1",
+        "runbook-1"
+      ],
+      "wire_sha256": "72519d87943ed105bc97a39d4c21b27db3fb302821359d33385ca67708673e3f",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router. For each task, select exactly one named tool, or NONE if the instruction explicitly needs no tool. Do not execute anything. Do not invent arguments. Return one result per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"tasks\":[{\"id\":\"sum-3\",\"instruction\":\"Select the sum tool with integer inputs [0, 100, 5].\"},{\"id\":\"none-2\",\"instruction\":\"Не вызывай инструменты. Просто отметь, что инструмент не нужен.\"},{\"id\":\"runbook-2\",\"instruction\":\"Найди инструкцию по topic=replica-delay, revision=v2.\"},{\"id\":\"pg-3\",\"instruction\":\"Inspect PostgreSQL relation named audit_log in schema demo.\"},{\"id\":\"artifact-2\",\"instruction\":\"Список данных для исследования study=schema-drift, kind=data.\"},{\"id\":\"runbook-3\",\"instruction\":\"Look up runbook revision v3 for topic=vacuum-stall.\"},{\"id\":\"sql-1\",\"instruction\":\"Inspect SQL execution plan query_id=771 in database AuditLab.\"},{\"id\":\"runbook-1\",\"instruction\":\"Find runbook for topic=backup-check, revision=v1.\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  },
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  },
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  },
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  },
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 1,
+      "variant": "A",
+      "task_ids": [
+        "pg-1",
+        "sql-3",
+        "file-2",
+        "none-3",
+        "job-3",
+        "sum-2",
+        "artifact-3",
+        "job-1"
+      ],
+      "wire_sha256": "75d2ed99fa18f5a602f04a6a62a1f15a7b7456de7b67c69af42dd166a143761e",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router. For each task, select exactly one named tool, or NONE if the instruction explicitly needs no tool. Do not execute anything. Do not invent arguments. Return one result per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"tasks\":[{\"id\":\"pg-1\",\"instruction\":\"Get PostgreSQL relation statistics for schema=public, relation=events.\"},{\"id\":\"sql-3\",\"instruction\":\"Retrieve SQL plan for query_id=42 in database DemoDb.\"},{\"id\":\"file-2\",\"instruction\":\"Прочитай строки 35–42 файла src/agent.ts.\"},{\"id\":\"none-3\",\"instruction\":\"This is not a request to inspect SQL or files: select NONE.\"},{\"id\":\"job-3\",\"instruction\":\"Get execution status for job_id=job-007.\"},{\"id\":\"sum-2\",\"instruction\":\"Сложи инструментом числа [10, -3, 8].\"},{\"id\":\"artifact-3\",\"instruction\":\"List experiment artifacts associated with study=kv-order.\"},{\"id\":\"job-1\",\"instruction\":\"Find status for background job with job_id=job-104.\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 1,
+      "variant": "B",
+      "task_ids": [
+        "pg-1",
+        "sql-3",
+        "file-2",
+        "none-3",
+        "job-3",
+        "sum-2",
+        "artifact-3",
+        "job-1"
+      ],
+      "wire_sha256": "5963b61cf4d8b6392f5f6f150e887c01830b6e342335e953742b6bd6e4a17442",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router. For each task, select exactly one named tool, or NONE if the instruction explicitly needs no tool. Do not execute anything. Do not invent arguments. Return one result per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"tasks\":[{\"id\":\"pg-1\",\"instruction\":\"Get PostgreSQL relation statistics for schema=public, relation=events.\"},{\"id\":\"sql-3\",\"instruction\":\"Retrieve SQL plan for query_id=42 in database DemoDb.\"},{\"id\":\"file-2\",\"instruction\":\"Прочитай строки 35–42 файла src/agent.ts.\"},{\"id\":\"none-3\",\"instruction\":\"This is not a request to inspect SQL or files: select NONE.\"},{\"id\":\"job-3\",\"instruction\":\"Get execution status for job_id=job-007.\"},{\"id\":\"sum-2\",\"instruction\":\"Сложи инструментом числа [10, -3, 8].\"},{\"id\":\"artifact-3\",\"instruction\":\"List experiment artifacts associated with study=kv-order.\"},{\"id\":\"job-1\",\"instruction\":\"Find status for background job with job_id=job-104.\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  },
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  },
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  },
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  },
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 2,
+      "variant": "A",
+      "task_ids": [
+        "job-2",
+        "artifact-1",
+        "pg-2",
+        "sql-2",
+        "file-3",
+        "file-1",
+        "none-1",
+        "sum-1"
+      ],
+      "wire_sha256": "b1286c6ff8e6874480591dc7de3378f2c56ba410efc019fe507a8b7e9d1f45cc",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router. For each task, select exactly one named tool, or NONE if the instruction explicitly needs no tool. Do not execute anything. Do not invent arguments. Return one result per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"tasks\":[{\"id\":\"job-2\",\"instruction\":\"Проверь состояние задачи job_id=job-211.\"},{\"id\":\"artifact-1\",\"instruction\":\"List report artifacts for study=agent-sandbox.\"},{\"id\":\"pg-2\",\"instruction\":\"Получи статистику таблицы в PostgreSQL: schema=metrics, relation=samples.\"},{\"id\":\"sql-2\",\"instruction\":\"Покажи план SQL для query_id=772 в базе TestWarehouse.\"},{\"id\":\"file-3\",\"instruction\":\"Read README.md lines 1 to 5 inclusive.\"},{\"id\":\"file-1\",\"instruction\":\"Read docs/notes.md lines 10 through 14, inclusive.\"},{\"id\":\"none-1\",\"instruction\":\"Do not select or call any tool. This is only an acknowledgement.\"},{\"id\":\"sum-1\",\"instruction\":\"Use the sum tool on the numbers [4, 9, -2].\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 2,
+      "variant": "B",
+      "task_ids": [
+        "job-2",
+        "artifact-1",
+        "pg-2",
+        "sql-2",
+        "file-3",
+        "file-1",
+        "none-1",
+        "sum-1"
+      ],
+      "wire_sha256": "66a0dcf5e0700d7595d2961e3945ed3d9757a1c2f70a8fec090d1671d26f2966",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router. For each task, select exactly one named tool, or NONE if the instruction explicitly needs no tool. Do not execute anything. Do not invent arguments. Return one result per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"tasks\":[{\"id\":\"job-2\",\"instruction\":\"Проверь состояние задачи job_id=job-211.\"},{\"id\":\"artifact-1\",\"instruction\":\"List report artifacts for study=agent-sandbox.\"},{\"id\":\"pg-2\",\"instruction\":\"Получи статистику таблицы в PostgreSQL: schema=metrics, relation=samples.\"},{\"id\":\"sql-2\",\"instruction\":\"Покажи план SQL для query_id=772 в базе TestWarehouse.\"},{\"id\":\"file-3\",\"instruction\":\"Read README.md lines 1 to 5 inclusive.\"},{\"id\":\"file-1\",\"instruction\":\"Read docs/notes.md lines 10 through 14, inclusive.\"},{\"id\":\"none-1\",\"instruction\":\"Do not select or call any tool. This is only an acknowledgement.\"},{\"id\":\"sum-1\",\"instruction\":\"Use the sum tool on the numbers [4, 9, -2].\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  },
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  },
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  },
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  },
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    }
+  ],
+  "limitation": "The DeepSeek wire is passed as quoted data to a ZCode text-only model, not natively executed through the DSH provider or tool API"
+}

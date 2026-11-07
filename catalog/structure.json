@@ -1869,6 +1869,69 @@
       "title": "Independent Python gold oracle and duplicate-key checks for 0-CODE JSONC",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/decision-geometry-harness/2026-11-07-interface-order-ab.md",
+      "title": "Decision Geometry practical schema and observation order A/B using pinned DSH serializer and ZCode",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-schema-ab-fixtures.json",
+      "title": "Twenty-four preregistered read-only tool routing cases and exact gold labels",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-schema-ab-wires.json",
+      "title": "Real DSH serialized A/B tool descriptions and property order",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-schema-ab-model.json",
+      "title": "Twelve successful ZCode calls over paired DSH tool schema order",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-schema-ab-oracle.json",
+      "title": "Independent oracle: forty-eight exact paired tool decisions with zero drift",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-observation-fixtures.json",
+      "title": "Sixteen preregistered synthetic current requests with stale context observations",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-observation-wires.json",
+      "title": "Real DSH serialized A/B reordered observation fields with identical tool schemas",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-observation-model.json",
+      "title": "Eight ZCode observation calls with one preserved provider timeout",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-observation-oracle.json",
+      "title": "Independent oracle: twenty-four paired observations and one differing invalid result",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

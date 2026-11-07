@@ -1,0 +1,1336 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "experiment": "Reverse tool-definition order AND order of properties within every tool; model-facing instructions and semantics identical",
+  "fixture_sha256": "5f34fbc87c3b8f3df342696f1f1bc904f1114ed54b916c064a866ec544052024",
+  "wires_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "provider_probe_status": "COMPLETE_BUT_NOT_PART_OF_A_B",
+  "trial_order": [
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A"
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B"
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B"
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A"
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "variant": "A"
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "variant": "B"
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B"
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A"
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A"
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "B"
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "variant": "B"
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "variant": "A"
+    }
+  ],
+  "attempted_calls": 12,
+  "planned_calls": 12,
+  "successful_calls": 12,
+  "calls": [
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "prompt_sha256": "8c2499e9545ca87657a969321cb8445d7b963780daf52f7ef2ce7b1eb3a8e6a2",
+      "wire_sha256": "8d468ae9ddb86128815c1193cf1614d6bc84fdd575f0beab270d1ffe879b06d2",
+      "task_ids": [
+        "sum-3",
+        "none-2",
+        "runbook-2",
+        "pg-3",
+        "artifact-2",
+        "runbook-3",
+        "sql-1",
+        "runbook-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "30d1a63215108256d6800eb473db59fa71106a7cb512c6e174fa333e836061c9",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 2035,
+        "output_tokens": 872,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "runbook-1",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "backup-check",
+            "revision": "v1"
+          }
+        }
+      ],
+      "response_text_sha256": "3be3aafcef5ac871975ed471207c93f6a571995f328e346a4704d712afc9de9a",
+      "elapsed_ms": 17610.4,
+      "child_cpu_user_s": 0.1397,
+      "child_cpu_sys_s": 0.0336,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 87132
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "prompt_sha256": "de46a527b07e1c99b4698188dcfd31e3550ccec79da01c0eef2bf681475bca38",
+      "wire_sha256": "72519d87943ed105bc97a39d4c21b27db3fb302821359d33385ca67708673e3f",
+      "task_ids": [
+        "sum-3",
+        "none-2",
+        "runbook-2",
+        "pg-3",
+        "artifact-2",
+        "runbook-3",
+        "sql-1",
+        "runbook-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "68139b22820bcc811c1cb9277087e3b6329188f31359fb501274b1614a6fbbd4",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1843,
+        "output_tokens": 634,
+        "cache_read_input_tokens": 192,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "runbook-1",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "backup-check",
+            "revision": "v1"
+          }
+        }
+      ],
+      "response_text_sha256": "3be3aafcef5ac871975ed471207c93f6a571995f328e346a4704d712afc9de9a",
+      "elapsed_ms": 16813.9,
+      "child_cpu_user_s": 0.1425,
+      "child_cpu_sys_s": 0.0309,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "prompt_sha256": "7a593083b8f2a120c2f31c98ec7b1030e346972e660fca8e6f7f03b27d4c9f83",
+      "wire_sha256": "5963b61cf4d8b6392f5f6f150e887c01830b6e342335e953742b6bd6e4a17442",
+      "task_ids": [
+        "pg-1",
+        "sql-3",
+        "file-2",
+        "none-3",
+        "job-3",
+        "sum-2",
+        "artifact-3",
+        "job-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "177d0b80f9c879852f6bdbd7285b8413caf822099037cea42f4fa99422065ff4",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1829,
+        "output_tokens": 781,
+        "cache_read_input_tokens": 192,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        },
+        {
+          "id": "sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        },
+        {
+          "id": "artifact-3",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "kv-order",
+            "kind": "experiment"
+          }
+        },
+        {
+          "id": "job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        }
+      ],
+      "response_text_sha256": "81ba692045bd46bfce7b4f30ef5657649fb25b6f1dca872b6e802106d0d18fe4",
+      "elapsed_ms": 14676.0,
+      "child_cpu_user_s": 0.1423,
+      "child_cpu_sys_s": 0.0266,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "prompt_sha256": "b1a5946733cb054bd91bf6a7f57a7cd1d0372bf947d4edf4b18558f03490897f",
+      "wire_sha256": "75d2ed99fa18f5a602f04a6a62a1f15a7b7456de7b67c69af42dd166a143761e",
+      "task_ids": [
+        "pg-1",
+        "sql-3",
+        "file-2",
+        "none-3",
+        "job-3",
+        "sum-2",
+        "artifact-3",
+        "job-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "4a96a06f2242284752ca131d95513ada9270e951d27195805943440268a182b3",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 741,
+        "output_tokens": 690,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        },
+        {
+          "id": "sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        },
+        {
+          "id": "artifact-3",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "kv-order",
+            "kind": "experiment"
+          }
+        },
+        {
+          "id": "job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        }
+      ],
+      "response_text_sha256": "81ba692045bd46bfce7b4f30ef5657649fb25b6f1dca872b6e802106d0d18fe4",
+      "elapsed_ms": 13879.0,
+      "child_cpu_user_s": 0.1455,
+      "child_cpu_sys_s": 0.0287,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "variant": "A",
+      "prompt_sha256": "44ba0ea4d7564941f3fa945e7f6910b5d3ec23c0de5479b7f25b2c2bccf472c4",
+      "wire_sha256": "b1286c6ff8e6874480591dc7de3378f2c56ba410efc019fe507a8b7e9d1f45cc",
+      "task_ids": [
+        "job-2",
+        "artifact-1",
+        "pg-2",
+        "sql-2",
+        "file-3",
+        "file-1",
+        "none-1",
+        "sum-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "2ce87a2311463a84771e083d0abdee14f294ebf0d93c317bd7ab4e98c06bd939",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 750,
+        "output_tokens": 1017,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "job-2",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-211"
+          }
+        },
+        {
+          "id": "artifact-1",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "agent-sandbox",
+            "kind": "report"
+          }
+        },
+        {
+          "id": "pg-2",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "metrics",
+            "relation": "samples"
+          }
+        },
+        {
+          "id": "sql-2",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "TestWarehouse",
+            "query_id": "772"
+          }
+        },
+        {
+          "id": "file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "file-1",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "docs/notes.md",
+            "start_line": 10,
+            "end_line": 14
+          }
+        },
+        {
+          "id": "none-1",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "sum-1",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              4,
+              9,
+              -2
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "e2b2be4b2d10ba45e4d1d676af67abeaf1f6b6ec2c6d77834b44cdcf58e79066",
+      "elapsed_ms": 20043.6,
+      "child_cpu_user_s": 0.1545,
+      "child_cpu_sys_s": 0.0277,
+      "child_fs_inblock_delta": 112,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "variant": "B",
+      "prompt_sha256": "a70b1de0d6228a3f45c20f20b8d0aa186aa24ad55c3a79d9491c6672418d8838",
+      "wire_sha256": "66a0dcf5e0700d7595d2961e3945ed3d9757a1c2f70a8fec090d1671d26f2966",
+      "task_ids": [
+        "job-2",
+        "artifact-1",
+        "pg-2",
+        "sql-2",
+        "file-3",
+        "file-1",
+        "none-1",
+        "sum-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "dff3f5866e9f72666253716d7d8095872f86ed6c32035d3310d013cb2f33f046",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 750,
+        "output_tokens": 1248,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "job-2",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-211"
+          }
+        },
+        {
+          "id": "artifact-1",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "agent-sandbox",
+            "kind": "report"
+          }
+        },
+        {
+          "id": "pg-2",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "metrics",
+            "relation": "samples"
+          }
+        },
+        {
+          "id": "sql-2",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "TestWarehouse",
+            "query_id": "772"
+          }
+        },
+        {
+          "id": "file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "file-1",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "docs/notes.md",
+            "start_line": 10,
+            "end_line": 14
+          }
+        },
+        {
+          "id": "none-1",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "sum-1",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              4,
+              9,
+              -2
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "5aee1e0875e049fcd1fcfcc3d2ff98cc23fad6d13fc6367ee36dca56de37e30d",
+      "elapsed_ms": 19878.8,
+      "child_cpu_user_s": 0.1518,
+      "child_cpu_sys_s": 0.0321,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "prompt_sha256": "de46a527b07e1c99b4698188dcfd31e3550ccec79da01c0eef2bf681475bca38",
+      "wire_sha256": "72519d87943ed105bc97a39d4c21b27db3fb302821359d33385ca67708673e3f",
+      "task_ids": [
+        "sum-3",
+        "none-2",
+        "runbook-2",
+        "pg-3",
+        "artifact-2",
+        "runbook-3",
+        "sql-1",
+        "runbook-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "fc42e6a42382dcf542baa75dd78c9ea220ed436e34c20fbab849b8f532ea57c5",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 51,
+        "output_tokens": 1073,
+        "cache_read_input_tokens": 1984,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "runbook-1",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "backup-check",
+            "revision": "v1"
+          }
+        }
+      ],
+      "response_text_sha256": "3be3aafcef5ac871975ed471207c93f6a571995f328e346a4704d712afc9de9a",
+      "elapsed_ms": 34654.7,
+      "child_cpu_user_s": 0.1517,
+      "child_cpu_sys_s": 0.0312,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "prompt_sha256": "8c2499e9545ca87657a969321cb8445d7b963780daf52f7ef2ce7b1eb3a8e6a2",
+      "wire_sha256": "8d468ae9ddb86128815c1193cf1614d6bc84fdd575f0beab270d1ffe879b06d2",
+      "task_ids": [
+        "sum-3",
+        "none-2",
+        "runbook-2",
+        "pg-3",
+        "artifact-2",
+        "runbook-3",
+        "sql-1",
+        "runbook-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "714834d53c86021012e8b6e9b3318cbef4af0f38d33a6ae2a1e7652c0147004d",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 755,
+        "output_tokens": 691,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "sum-3",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              0,
+              100,
+              5
+            ]
+          }
+        },
+        {
+          "id": "none-2",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "runbook-2",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "replica-delay",
+            "revision": "v2"
+          }
+        },
+        {
+          "id": "pg-3",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "demo",
+            "relation": "audit_log"
+          }
+        },
+        {
+          "id": "artifact-2",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "schema-drift",
+            "kind": "data"
+          }
+        },
+        {
+          "id": "runbook-3",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "vacuum-stall",
+            "revision": "v3"
+          }
+        },
+        {
+          "id": "sql-1",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "AuditLab",
+            "query_id": "771"
+          }
+        },
+        {
+          "id": "runbook-1",
+          "tool": "find_runbook",
+          "arguments": {
+            "topic": "backup-check",
+            "revision": "v1"
+          }
+        }
+      ],
+      "response_text_sha256": "881546c8fa9661840c7101b1a5d55fe152090ed5f767413ffa5a485cd42eeb1b",
+      "elapsed_ms": 11633.5,
+      "child_cpu_user_s": 0.147,
+      "child_cpu_sys_s": 0.0291,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "prompt_sha256": "b1a5946733cb054bd91bf6a7f57a7cd1d0372bf947d4edf4b18558f03490897f",
+      "wire_sha256": "75d2ed99fa18f5a602f04a6a62a1f15a7b7456de7b67c69af42dd166a143761e",
+      "task_ids": [
+        "pg-1",
+        "sql-3",
+        "file-2",
+        "none-3",
+        "job-3",
+        "sum-2",
+        "artifact-3",
+        "job-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "a1252c8b71bfe475234c7f6fa262d7064da5c72df83fcd8efbdbea3910fb50f6",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 37,
+        "output_tokens": 580,
+        "cache_read_input_tokens": 1984,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        },
+        {
+          "id": "sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        },
+        {
+          "id": "artifact-3",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "kv-order",
+            "kind": "experiment"
+          }
+        },
+        {
+          "id": "job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        }
+      ],
+      "response_text_sha256": "7907080f471fdf8583dbe0f617432352cf73ffc5bfceaee6fe1b35fe71af046a",
+      "elapsed_ms": 11670.7,
+      "child_cpu_user_s": 0.1438,
+      "child_cpu_sys_s": 0.033,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "variant": "B",
+      "prompt_sha256": "7a593083b8f2a120c2f31c98ec7b1030e346972e660fca8e6f7f03b27d4c9f83",
+      "wire_sha256": "5963b61cf4d8b6392f5f6f150e887c01830b6e342335e953742b6bd6e4a17442",
+      "task_ids": [
+        "pg-1",
+        "sql-3",
+        "file-2",
+        "none-3",
+        "job-3",
+        "sum-2",
+        "artifact-3",
+        "job-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "12ed1e836629aed9c7c9cec13befa4c61d21d61a372eb684245b48d3586c3ad1",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 741,
+        "output_tokens": 1786,
+        "cache_read_input_tokens": 1280,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "pg-1",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "public",
+            "relation": "events"
+          }
+        },
+        {
+          "id": "sql-3",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "DemoDb",
+            "query_id": "42"
+          }
+        },
+        {
+          "id": "file-2",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "src/agent.ts",
+            "start_line": 35,
+            "end_line": 42
+          }
+        },
+        {
+          "id": "none-3",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "job-3",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-007"
+          }
+        },
+        {
+          "id": "sum-2",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              10,
+              -3,
+              8
+            ]
+          }
+        },
+        {
+          "id": "artifact-3",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "kv-order",
+            "kind": "experiment"
+          }
+        },
+        {
+          "id": "job-1",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-104"
+          }
+        }
+      ],
+      "response_text_sha256": "7907080f471fdf8583dbe0f617432352cf73ffc5bfceaee6fe1b35fe71af046a",
+      "elapsed_ms": 35650.9,
+      "child_cpu_user_s": 0.1694,
+      "child_cpu_sys_s": 0.0299,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "variant": "B",
+      "prompt_sha256": "a70b1de0d6228a3f45c20f20b8d0aa186aa24ad55c3a79d9491c6672418d8838",
+      "wire_sha256": "66a0dcf5e0700d7595d2961e3945ed3d9757a1c2f70a8fec090d1671d26f2966",
+      "task_ids": [
+        "job-2",
+        "artifact-1",
+        "pg-2",
+        "sql-2",
+        "file-3",
+        "file-1",
+        "none-1",
+        "sum-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "6d1df8bff260cbb36aeca499134becdec177a764f6f57452c9af177a25098e64",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 558,
+        "output_tokens": 1410,
+        "cache_read_input_tokens": 1472,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "job-2",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-211"
+          }
+        },
+        {
+          "id": "artifact-1",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "agent-sandbox",
+            "kind": "report"
+          }
+        },
+        {
+          "id": "pg-2",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "metrics",
+            "relation": "samples"
+          }
+        },
+        {
+          "id": "sql-2",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "TestWarehouse",
+            "query_id": "772"
+          }
+        },
+        {
+          "id": "file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "file-1",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "docs/notes.md",
+            "start_line": 10,
+            "end_line": 14
+          }
+        },
+        {
+          "id": "none-1",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "sum-1",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              4,
+              9,
+              -2
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "5aee1e0875e049fcd1fcfcc3d2ff98cc23fad6d13fc6367ee36dca56de37e30d",
+      "elapsed_ms": 22239.6,
+      "child_cpu_user_s": 0.153,
+      "child_cpu_sys_s": 0.0215,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "variant": "A",
+      "prompt_sha256": "44ba0ea4d7564941f3fa945e7f6910b5d3ec23c0de5479b7f25b2c2bccf472c4",
+      "wire_sha256": "b1286c6ff8e6874480591dc7de3378f2c56ba410efc019fe507a8b7e9d1f45cc",
+      "task_ids": [
+        "job-2",
+        "artifact-1",
+        "pg-2",
+        "sql-2",
+        "file-3",
+        "file-1",
+        "none-1",
+        "sum-1"
+      ],
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_response_sha256": "305cf6e4e728f9e919029d6ee3ef2e0ed29b949cfaad990e21afae02a5ce731b",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 46,
+        "output_tokens": 1188,
+        "cache_read_input_tokens": 1984,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "results": [
+        {
+          "id": "job-2",
+          "tool": "get_job_status",
+          "arguments": {
+            "job_id": "job-211"
+          }
+        },
+        {
+          "id": "artifact-1",
+          "tool": "list_experiment_artifacts",
+          "arguments": {
+            "study": "agent-sandbox",
+            "kind": "report"
+          }
+        },
+        {
+          "id": "pg-2",
+          "tool": "inspect_pg_relation",
+          "arguments": {
+            "schema": "metrics",
+            "relation": "samples"
+          }
+        },
+        {
+          "id": "sql-2",
+          "tool": "inspect_sql_plan",
+          "arguments": {
+            "database": "TestWarehouse",
+            "query_id": "772"
+          }
+        },
+        {
+          "id": "file-3",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "README.md",
+            "start_line": 1,
+            "end_line": 5
+          }
+        },
+        {
+          "id": "file-1",
+          "tool": "read_file_range",
+          "arguments": {
+            "path": "docs/notes.md",
+            "start_line": 10,
+            "end_line": 14
+          }
+        },
+        {
+          "id": "none-1",
+          "tool": "NONE",
+          "arguments": {}
+        },
+        {
+          "id": "sum-1",
+          "tool": "sum_numbers",
+          "arguments": {
+            "numbers": [
+              4,
+              9,
+              -2
+            ]
+          }
+        }
+      ],
+      "response_text_sha256": "da7d5f7c7dc9934546ca499b7486dac781972a48b8813d48ddf7c44622325588",
+      "elapsed_ms": 29595.3,
+      "child_cpu_user_s": 0.1487,
+      "child_cpu_sys_s": 0.0326,
+      "child_fs_inblock_delta": 0,
+      "child_fs_oublock_delta": 0,
+      "peak_child_rss_kib_upper_bound": 89544
+    }
+  ],
+  "total_wall_ms": 248346.4,
+  "p50_call_wall_ms": 18744.6,
+  "p95_call_wall_ms": 35650.9,
+  "model_tool_executions": 0,
+  "physical_parallelism": 1,
+  "limits": [
+    "ZCode receives DSH wire as data within a separate provider request, not native DSH tool calling",
+    "Sampling temperature and max tokens are fields inside quoted DSH request; ZCode wrapper may use other defaults",
+    "Two replicates are not enough for robust inference or statistical superiority",
+    "No authentic end-to-end task correctness, actual tool execution or production cost measured",
+    "No gold labels sent to the provider; expert blinded annotations not available",
+    "Subprocess CPU/RSS/IO excludes remote model service"
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "source_fixture_sha256": "5f34fbc87c3b8f3df342696f1f1bc904f1114ed54b916c064a866ec544052024",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "serializer_source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "case_count": 16,
+  "batch_size": 8,
+  "batches": 2,
+  "variants": [
+    "A",
+    "B"
+  ],
+  "replicates": 2,
+  "cases": [
+    {
+      "id": "obs-none-2",
+      "current_request": "Не вызывай инструменты. Просто отметь, что инструмент не нужен.",
+      "previous_observation": {
+        "last_tool": "read_file_range",
+        "summary": "Previous action selected read_file_range, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 7,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "NONE",
+      "expected_arguments": {}
+    },
+    {
+      "id": "obs-none-3",
+      "current_request": "This is not a request to inspect SQL or files: select NONE.",
+      "previous_observation": {
+        "last_tool": "read_file_range",
+        "summary": "Previous action selected read_file_range, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 8,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "NONE",
+      "expected_arguments": {}
+    },
+    {
+      "id": "obs-runbook-2",
+      "current_request": "Найди инструкцию по topic=replica-delay, revision=v2.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 9,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "find_runbook",
+      "expected_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      }
+    },
+    {
+      "id": "obs-runbook-3",
+      "current_request": "Look up runbook revision v3 for topic=vacuum-stall.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 10,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "find_runbook",
+      "expected_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      }
+    },
+    {
+      "id": "obs-job-3",
+      "current_request": "Get execution status for job_id=job-007.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 11,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "get_job_status",
+      "expected_arguments": {
+        "job_id": "job-007"
+      }
+    },
+    {
+      "id": "obs-job-1",
+      "current_request": "Find status for background job with job_id=job-104.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 12,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "get_job_status",
+      "expected_arguments": {
+        "job_id": "job-104"
+      }
+    },
+    {
+      "id": "obs-pg-3",
+      "current_request": "Inspect PostgreSQL relation named audit_log in schema demo.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 13,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "inspect_pg_relation",
+      "expected_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      }
+    },
+    {
+      "id": "obs-pg-1",
+      "current_request": "Get PostgreSQL relation statistics for schema=public, relation=events.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 14,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "inspect_pg_relation",
+      "expected_arguments": {
+        "schema": "public",
+        "relation": "events"
+      }
+    },
+    {
+      "id": "obs-sql-1",
+      "current_request": "Inspect SQL execution plan query_id=771 in database AuditLab.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 15,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "inspect_sql_plan",
+      "expected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      }
+    },
+    {
+      "id": "obs-sql-3",
+      "current_request": "Retrieve SQL plan for query_id=42 in database DemoDb.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 16,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "inspect_sql_plan",
+      "expected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      }
+    },
+    {
+      "id": "obs-artifact-2",
+      "current_request": "Список данных для исследования study=schema-drift, kind=data.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 17,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "list_experiment_artifacts",
+      "expected_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      }
+    },
+    {
+      "id": "obs-artifact-3",
+      "current_request": "List experiment artifacts associated with study=kv-order.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 18,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "list_experiment_artifacts",
+      "expected_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      }
+    },
+    {
+      "id": "obs-file-2",
+      "current_request": "Прочитай строки 35–42 файла src/agent.ts.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 19,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "read_file_range",
+      "expected_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      }
+    },
+    {
+      "id": "obs-file-3",
+      "current_request": "Read README.md lines 1 to 5 inclusive.",
+      "previous_observation": {
+        "last_tool": "sum_numbers",
+        "summary": "Previous action selected sum_numbers, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 20,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "read_file_range",
+      "expected_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      }
+    },
+    {
+      "id": "obs-sum-3",
+      "current_request": "Select the sum tool with integer inputs [0, 100, 5].",
+      "previous_observation": {
+        "last_tool": "find_runbook",
+        "summary": "Previous action selected find_runbook, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 21,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      }
+    },
+    {
+      "id": "obs-sum-2",
+      "current_request": "Сложи инструментом числа [10, -3, 8].",
+      "previous_observation": {
+        "last_tool": "find_runbook",
+        "summary": "Previous action selected find_runbook, but this historical result is not a request.",
+        "age": "stale"
+      },
+      "context_metadata": {
+        "iteration": 22,
+        "stage": "review",
+        "hint": "Use only current_request to select the next tool."
+      },
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      }
+    }
+  ],
+  "oracle": "fixed source-case exact tool and arguments; current_request authoritative",
+  "limitations": [
+    "16 authored synthetic current/stale contexts, not a real agent state transition",
+    "Historical field hints are artificial distractors and no tool was executed"
+  ]
+}

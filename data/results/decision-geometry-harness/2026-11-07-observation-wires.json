@@ -1,0 +1,879 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "dsh_runtime_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "serializer_source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "fixture_sha256": "eb06ec1eb46b29c952ca6d35fd26f054350275146ae6a5e0b0726c28b090a2d5",
+  "tool_source_wires_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "variants": [
+    "A",
+    "B"
+  ],
+  "batch_count": 2,
+  "model_requested": "glm-5.3-flash",
+  "sampling_requested": {
+    "temperature": 0,
+    "max_tokens": 2500
+  },
+  "intervention": "Only JSON key order in nested model-facing state observation; exact tools, messages semantics and user intent retained",
+  "oracle_check": "Actual dsh-runtime serializeRequest; deep sorted JSON equality of observation objects and exact tools schema equality",
+  "wires": [
+    {
+      "batch": 0,
+      "variant": "A",
+      "task_ids": [
+        "obs-none-2",
+        "obs-none-3",
+        "obs-runbook-2",
+        "obs-runbook-3",
+        "obs-job-3",
+        "obs-job-1",
+        "obs-pg-3",
+        "obs-pg-1"
+      ],
+      "wire_sha256": "ccdb60760f0ae68d3b9afecbf3d567ccd920a728bbed55c6009bfceeea4675ea",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router receiving structured state observations. For EACH observation, select a tool for current_request ONLY, or NONE if current_request explicitly says no tool. Historical previous_observation is stale, not the current instruction. Ignore order of JSON keys. Do not execute tools. Return exactly one selection and arguments per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"observations\":[{\"id\":\"obs-none-2\",\"current_request\":\"Не вызывай инструменты. Просто отметь, что инструмент не нужен.\",\"previous_observation\":{\"last_tool\":\"read_file_range\",\"summary\":\"Previous action selected read_file_range, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":7,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-none-3\",\"current_request\":\"This is not a request to inspect SQL or files: select NONE.\",\"previous_observation\":{\"last_tool\":\"read_file_range\",\"summary\":\"Previous action selected read_file_range, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":8,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-runbook-2\",\"current_request\":\"Найди инструкцию по topic=replica-delay, revision=v2.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":9,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-runbook-3\",\"current_request\":\"Look up runbook revision v3 for topic=vacuum-stall.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":10,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-job-3\",\"current_request\":\"Get execution status for job_id=job-007.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":11,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-job-1\",\"current_request\":\"Find status for background job with job_id=job-104.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":12,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-pg-3\",\"current_request\":\"Inspect PostgreSQL relation named audit_log in schema demo.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":13,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-pg-1\",\"current_request\":\"Get PostgreSQL relation statistics for schema=public, relation=events.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":14,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 0,
+      "variant": "B",
+      "task_ids": [
+        "obs-none-2",
+        "obs-none-3",
+        "obs-runbook-2",
+        "obs-runbook-3",
+        "obs-job-3",
+        "obs-job-1",
+        "obs-pg-3",
+        "obs-pg-1"
+      ],
+      "wire_sha256": "4d93ffb261748881547d75370b1fbb67846e322dc9af26ef6a991ebd77f7bc86",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router receiving structured state observations. For EACH observation, select a tool for current_request ONLY, or NONE if current_request explicitly says no tool. Historical previous_observation is stale, not the current instruction. Ignore order of JSON keys. Do not execute tools. Return exactly one selection and arguments per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"observations\":[{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":7},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected read_file_range, but this historical result is not a request.\",\"last_tool\":\"read_file_range\"},\"current_request\":\"Не вызывай инструменты. Просто отметь, что инструмент не нужен.\",\"id\":\"obs-none-2\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":8},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected read_file_range, but this historical result is not a request.\",\"last_tool\":\"read_file_range\"},\"current_request\":\"This is not a request to inspect SQL or files: select NONE.\",\"id\":\"obs-none-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":9},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Найди инструкцию по topic=replica-delay, revision=v2.\",\"id\":\"obs-runbook-2\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":10},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Look up runbook revision v3 for topic=vacuum-stall.\",\"id\":\"obs-runbook-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":11},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Get execution status for job_id=job-007.\",\"id\":\"obs-job-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":12},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Find status for background job with job_id=job-104.\",\"id\":\"obs-job-1\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":13},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Inspect PostgreSQL relation named audit_log in schema demo.\",\"id\":\"obs-pg-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":14},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Get PostgreSQL relation statistics for schema=public, relation=events.\",\"id\":\"obs-pg-1\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 1,
+      "variant": "A",
+      "task_ids": [
+        "obs-sql-1",
+        "obs-sql-3",
+        "obs-artifact-2",
+        "obs-artifact-3",
+        "obs-file-2",
+        "obs-file-3",
+        "obs-sum-3",
+        "obs-sum-2"
+      ],
+      "wire_sha256": "bd8ca23ecc3e3f150d29a1dd36811bd8a8fdec56ac889ef370ec0ef70e908ee3",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router receiving structured state observations. For EACH observation, select a tool for current_request ONLY, or NONE if current_request explicitly says no tool. Historical previous_observation is stale, not the current instruction. Ignore order of JSON keys. Do not execute tools. Return exactly one selection and arguments per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"observations\":[{\"id\":\"obs-sql-1\",\"current_request\":\"Inspect SQL execution plan query_id=771 in database AuditLab.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":15,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-sql-3\",\"current_request\":\"Retrieve SQL plan for query_id=42 in database DemoDb.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":16,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-artifact-2\",\"current_request\":\"Список данных для исследования study=schema-drift, kind=data.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":17,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-artifact-3\",\"current_request\":\"List experiment artifacts associated with study=kv-order.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":18,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-file-2\",\"current_request\":\"Прочитай строки 35–42 файла src/agent.ts.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":19,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-file-3\",\"current_request\":\"Read README.md lines 1 to 5 inclusive.\",\"previous_observation\":{\"last_tool\":\"sum_numbers\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":20,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-sum-3\",\"current_request\":\"Select the sum tool with integer inputs [0, 100, 5].\",\"previous_observation\":{\"last_tool\":\"find_runbook\",\"summary\":\"Previous action selected find_runbook, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":21,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}},{\"id\":\"obs-sum-2\",\"current_request\":\"Сложи инструментом числа [10, -3, 8].\",\"previous_observation\":{\"last_tool\":\"find_runbook\",\"summary\":\"Previous action selected find_runbook, but this historical result is not a request.\",\"age\":\"stale\"},\"context_metadata\":{\"iteration\":22,\"stage\":\"review\",\"hint\":\"Use only current_request to select the next tool.\"}}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    },
+    {
+      "batch": 1,
+      "variant": "B",
+      "task_ids": [
+        "obs-sql-1",
+        "obs-sql-3",
+        "obs-artifact-2",
+        "obs-artifact-3",
+        "obs-file-2",
+        "obs-file-3",
+        "obs-sum-3",
+        "obs-sum-2"
+      ],
+      "wire_sha256": "3a82ea2c3963cd9a59ec46581bcc76a62104f2c0498545697252f8513469def5",
+      "wire": {
+        "model": "glm-5.3-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a read-only tool router receiving structured state observations. For EACH observation, select a tool for current_request ONLY, or NONE if current_request explicitly says no tool. Historical previous_observation is stale, not the current instruction. Ignore order of JSON keys. Do not execute tools. Return exactly one selection and arguments per id."
+          },
+          {
+            "role": "user",
+            "content": "{\"observations\":[{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":15},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Inspect SQL execution plan query_id=771 in database AuditLab.\",\"id\":\"obs-sql-1\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":16},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Retrieve SQL plan for query_id=42 in database DemoDb.\",\"id\":\"obs-sql-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":17},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Список данных для исследования study=schema-drift, kind=data.\",\"id\":\"obs-artifact-2\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":18},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"List experiment artifacts associated with study=kv-order.\",\"id\":\"obs-artifact-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":19},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Прочитай строки 35–42 файла src/agent.ts.\",\"id\":\"obs-file-2\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":20},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected sum_numbers, but this historical result is not a request.\",\"last_tool\":\"sum_numbers\"},\"current_request\":\"Read README.md lines 1 to 5 inclusive.\",\"id\":\"obs-file-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":21},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected find_runbook, but this historical result is not a request.\",\"last_tool\":\"find_runbook\"},\"current_request\":\"Select the sum tool with integer inputs [0, 100, 5].\",\"id\":\"obs-sum-3\"},{\"context_metadata\":{\"hint\":\"Use only current_request to select the next tool.\",\"stage\":\"review\",\"iteration\":22},\"previous_observation\":{\"age\":\"stale\",\"summary\":\"Previous action selected find_runbook, but this historical result is not a request.\",\"last_tool\":\"find_runbook\"},\"current_request\":\"Сложи инструментом числа [10, -3, 8].\",\"id\":\"obs-sum-2\"}]}"
+          }
+        ],
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_sql_plan",
+              "description": "Read the SQL execution plan for the specified database and query_id (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "database": {
+                    "type": "string",
+                    "description": "Database name."
+                  },
+                  "query_id": {
+                    "type": "string",
+                    "description": "SQL query identifier."
+                  }
+                },
+                "required": [
+                  "database",
+                  "query_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "inspect_pg_relation",
+              "description": "Read PostgreSQL relation statistics for a specific schema and relation (read-only).",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "description": "PostgreSQL schema."
+                  },
+                  "relation": {
+                    "type": "string",
+                    "description": "PostgreSQL relation name."
+                  }
+                },
+                "required": [
+                  "schema",
+                  "relation"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_job_status",
+              "description": "Read status for a job ID without changing the job.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "job_id": {
+                    "type": "string",
+                    "description": "Exact job id."
+                  }
+                },
+                "required": [
+                  "job_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "list_experiment_artifacts",
+              "description": "List existing research artifacts by study and artifact kind.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "study": {
+                    "type": "string",
+                    "description": "Research study id."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "report",
+                      "data",
+                      "experiment"
+                    ],
+                    "description": "Artifact kind."
+                  }
+                },
+                "required": [
+                  "study",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "read_file_range",
+              "description": "Read an inclusive line range from a permitted synthetic file path, without editing.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Relative file path."
+                  },
+                  "start_line": {
+                    "type": "integer",
+                    "description": "First line inclusive."
+                  },
+                  "end_line": {
+                    "type": "integer",
+                    "description": "Last line inclusive."
+                  }
+                },
+                "required": [
+                  "path",
+                  "start_line",
+                  "end_line"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "find_runbook",
+              "description": "Find a runbook for a topic at an exact revision, without modifying it.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "description": "Runbook topic."
+                  },
+                  "revision": {
+                    "type": "string",
+                    "description": "Revision tag."
+                  }
+                },
+                "required": [
+                  "topic",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "description": "Select a calculator for an explicit array of integers.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "numbers": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Integers to sum."
+                  }
+                },
+                "required": [
+                  "numbers"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 2500
+      }
+    }
+  ],
+  "limitation": "DSH wire is passed as inert JSON to ZCode, not executed by native DSH agent process"
+}

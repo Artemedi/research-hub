@@ -1,0 +1,1245 @@
+{
+  "study": "decision-geometry-harness",
+  "date": "2026-11-07",
+  "test": "observation-field-order text-only ZCode surrogate",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "fixture_sha256": "eb06ec1eb46b29c952ca6d35fd26f054350275146ae6a5e0b0726c28b090a2d5",
+  "wire_sha256": "189f41bf1d6866bc62c028cc5cadf609b1d6ab82cbced1d148ddb70be8bbaa19",
+  "model_sha256": "2adffb641e083ecf16ce040d213f90b99ec6215f29e1656d4422b9e09324cf27",
+  "semantic_wire_invariant": true,
+  "tampered_observation_detected": true,
+  "tampered_answer_label_detected": true,
+  "by_variant": {
+    "A": {
+      "calls_complete": 4,
+      "calls_failed": 0,
+      "decisions": 32,
+      "exact_correct": 30,
+      "schema_valid": 30,
+      "wrong_tool": 0,
+      "stale_tool_leaks": 0,
+      "false_tool_on_none": 0,
+      "negative_cases": 4,
+      "median_call_ms": 31559.449999999997,
+      "input_tokens": 5138,
+      "output_tokens": 6169,
+      "cache_read_input_tokens": 5120
+    },
+    "B": {
+      "calls_complete": 3,
+      "calls_failed": 1,
+      "decisions": 24,
+      "exact_correct": 23,
+      "schema_valid": 24,
+      "wrong_tool": 1,
+      "stale_tool_leaks": 0,
+      "false_tool_on_none": 0,
+      "negative_cases": 4,
+      "median_call_ms": 18797.6,
+      "input_tokens": 2753,
+      "output_tokens": 2816,
+      "cache_read_input_tokens": 4992
+    }
+  },
+  "comparison": {
+    "paired": 24,
+    "both_correct": 23,
+    "A_only_correct": 0,
+    "B_only_correct": 0,
+    "both_wrong": 1,
+    "tool_changes": 1,
+    "argument_changes": 1
+  },
+  "scored": [
+    {
+      "id": "obs-none-2",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-none-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-2",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-007"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-1",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-104"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-1",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-none-2",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-none-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-2",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-007"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-1",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-104"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-3",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-1",
+      "replicate": 0,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sql-1",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "inspect_sql_plan",
+      "arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sql-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "inspect_sql_plan",
+      "arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-artifact-2",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "list_experiment_artifacts",
+      "arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-artifact-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": false,
+      "args_correct": false,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": false
+    },
+    {
+      "id": "obs-file-2",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "read_file_range",
+      "arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-file-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "read_file_range",
+      "arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sum-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "sum_numbers",
+      "arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sum-2",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "B",
+      "chosen_tool": "sum_numbers",
+      "arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sql-1",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "inspect_sql_plan",
+      "arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sql-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "inspect_sql_plan",
+      "arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-artifact-2",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "list_experiment_artifacts",
+      "arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-artifact-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "list_experiment_artifacts",
+      "arguments": {
+        "study": "kv-order"
+      },
+      "schema_valid": false,
+      "tool_correct": true,
+      "args_correct": false,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": false
+    },
+    {
+      "id": "obs-file-2",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "read_file_range",
+      "arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-file-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "read_file_range",
+      "arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sum-3",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "sum_numbers",
+      "arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sum-2",
+      "replicate": 0,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "sum_numbers",
+      "arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-none-2",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-none-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-2",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-007"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-1",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-104"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-1",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "B",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-none-2",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-none-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "NONE",
+      "arguments": {},
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": true,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-2",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-runbook-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "find_runbook",
+      "arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-007"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-job-1",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "get_job_status",
+      "arguments": {
+        "job_id": "job-104"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-3",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-pg-1",
+      "replicate": 1,
+      "batch": 0,
+      "variant": "A",
+      "chosen_tool": "inspect_pg_relation",
+      "arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sql-1",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "inspect_sql_plan",
+      "arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sql-3",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "inspect_sql_plan",
+      "arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-artifact-2",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "list_experiment_artifacts",
+      "arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-artifact-3",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "list_experiment_artifacts",
+      "arguments": {
+        "study": "kv-order"
+      },
+      "schema_valid": false,
+      "tool_correct": true,
+      "args_correct": false,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": false
+    },
+    {
+      "id": "obs-file-2",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "read_file_range",
+      "arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-file-3",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "read_file_range",
+      "arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sum-3",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "sum_numbers",
+      "arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    },
+    {
+      "id": "obs-sum-2",
+      "replicate": 1,
+      "batch": 1,
+      "variant": "A",
+      "chosen_tool": "sum_numbers",
+      "arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "tool_correct": true,
+      "args_correct": true,
+      "historical_tool_leak": false,
+      "negative": false,
+      "exact": true
+    }
+  ],
+  "paired_records": [
+    {
+      "id": "obs-none-2",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-none-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-runbook-2",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-runbook-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-job-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-job-1",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-pg-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-pg-1",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-sql-1",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-sql-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-artifact-2",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-artifact-3",
+      "replicate": 0,
+      "A_correct": false,
+      "B_correct": false,
+      "tool_changed": true,
+      "args_changed": true,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-file-2",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-file-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-sum-3",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-sum-2",
+      "replicate": 0,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-none-2",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-none-3",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-runbook-2",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-runbook-3",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-job-3",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-job-1",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-pg-3",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    },
+    {
+      "id": "obs-pg-1",
+      "replicate": 1,
+      "A_correct": true,
+      "B_correct": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_stale_tool": false,
+      "B_stale_tool": false
+    }
+  ],
+  "status": "PARTIAL_OBSERVATION_ORDER_LAB",
+  "limitations": [
+    "Two model repetitions on 16 authored synthetic cases, no held-out human annotations",
+    "Inert JSON observations included as user message text; no actual executing tool result or agent state",
+    "No native DSH provider request, no remote model temperature control",
+    "Only JSON key order changed; not natural-language observation format or full prompt topology",
+    "No production tool execution or service state"
+  ]
+}

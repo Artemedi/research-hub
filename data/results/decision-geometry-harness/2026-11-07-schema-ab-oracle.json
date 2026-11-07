@@ -1,0 +1,2623 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "serializer_source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "fixtures_sha256": "5f34fbc87c3b8f3df342696f1f1bc904f1114ed54b916c064a866ec544052024",
+  "wires_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "model_calls_sha256": "a35c962005258d15a76b3b31e9cb81e8a01ab65b1a0e7b738db39abfbfafc9b9",
+  "scenario_count": 24,
+  "replicates": 2,
+  "independent_wire_semantic_equivalence": true,
+  "negative_tampered_schema_detected": true,
+  "negative_tampered_label_detected": true,
+  "results_by_variant": {
+    "A": {
+      "completed_calls": 6,
+      "failed_calls": 0,
+      "scored_decisions": 48,
+      "tool_name_correct": 48,
+      "arguments_correct": 48,
+      "schema_valid": 48,
+      "exact_correct": 48,
+      "negative_cases": 6,
+      "negative_false_tool": 0,
+      "ru_exact": 16,
+      "en_exact": 32,
+      "p50_completed_call_ms": 15744.7,
+      "p95_completed_call_ms": 29595.3,
+      "reported_tokens": {
+        "input_tokens": 4364,
+        "output_tokens": 5038,
+        "cache_read_input_tokens": 7808
+      }
+    },
+    "B": {
+      "completed_calls": 6,
+      "failed_calls": 0,
+      "scored_decisions": 48,
+      "tool_name_correct": 48,
+      "arguments_correct": 48,
+      "schema_valid": 48,
+      "exact_correct": 48,
+      "negative_cases": 6,
+      "negative_false_tool": 0,
+      "ru_exact": 16,
+      "en_exact": 32,
+      "p50_completed_call_ms": 21059.199999999997,
+      "p95_completed_call_ms": 35650.9,
+      "reported_tokens": {
+        "input_tokens": 5772,
+        "output_tokens": 6932,
+        "cache_read_input_tokens": 6400
+      }
+    }
+  },
+  "paired_comparison": {
+    "eligible_paired_decisions": 48,
+    "a_only_correct": 0,
+    "b_only_correct": 0,
+    "both_correct": 48,
+    "both_wrong": 0,
+    "tool_selection_changes": 0,
+    "argument_changes": 0
+  },
+  "scored": [
+    {
+      "id": "sum-3",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-2",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-2",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-3",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-2",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-3",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-1",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-1",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-3",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-2",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-2",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-3",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-2",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-3",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-1",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-1",
+      "batch": 0,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-1",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-2",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-007"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-2",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-1",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-104"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-1",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-2",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-007"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-2",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-3",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-1",
+      "batch": 1,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-104"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-2",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-211"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-2",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-2",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-3",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-2",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-211"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-2",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-2",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-3",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-1",
+      "batch": 2,
+      "replicate": 0,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-3",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-2",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-2",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-3",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-2",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-3",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-1",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-1",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-3",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-2",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-2",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-3",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-2",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-3",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-1",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "runbook-1",
+      "batch": 0,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-1",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-2",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-007"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-2",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-1",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-104"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-1",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-2",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-007"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-2",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-3",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-1",
+      "batch": 1,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-104"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-2",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-211"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-2",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-2",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-3",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "B",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "job-2",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-211"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "artifact-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "pg-2",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sql-2",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "ru",
+      "negative": false,
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-3",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "file-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "none-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": true,
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    },
+    {
+      "id": "sum-1",
+      "batch": 2,
+      "replicate": 1,
+      "variant": "A",
+      "language": "en",
+      "negative": false,
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "tool_correct": true,
+      "arguments_correct": true,
+      "schema_valid": true,
+      "exact": true
+    }
+  ],
+  "pairs": [
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "sum-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "sum_numbers",
+      "b_tool": "sum_numbers",
+      "a_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "b_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "none-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "NONE",
+      "b_tool": "NONE",
+      "a_arguments": {},
+      "b_arguments": {},
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "runbook-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "find_runbook",
+      "b_tool": "find_runbook",
+      "a_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "b_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "pg-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_pg_relation",
+      "b_tool": "inspect_pg_relation",
+      "a_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "b_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "artifact-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "list_experiment_artifacts",
+      "b_tool": "list_experiment_artifacts",
+      "a_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "b_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "runbook-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "find_runbook",
+      "b_tool": "find_runbook",
+      "a_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "b_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "sql-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_sql_plan",
+      "b_tool": "inspect_sql_plan",
+      "a_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "b_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 0,
+      "id": "runbook-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "find_runbook",
+      "b_tool": "find_runbook",
+      "a_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "b_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "pg-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_pg_relation",
+      "b_tool": "inspect_pg_relation",
+      "a_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "b_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "sql-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_sql_plan",
+      "b_tool": "inspect_sql_plan",
+      "a_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "b_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "file-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "read_file_range",
+      "b_tool": "read_file_range",
+      "a_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "b_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "none-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "NONE",
+      "b_tool": "NONE",
+      "a_arguments": {},
+      "b_arguments": {},
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "job-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "get_job_status",
+      "b_tool": "get_job_status",
+      "a_arguments": {
+        "job_id": "job-007"
+      },
+      "b_arguments": {
+        "job_id": "job-007"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "sum-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "sum_numbers",
+      "b_tool": "sum_numbers",
+      "a_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "b_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "artifact-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "list_experiment_artifacts",
+      "b_tool": "list_experiment_artifacts",
+      "a_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "b_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 1,
+      "id": "job-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "get_job_status",
+      "b_tool": "get_job_status",
+      "a_arguments": {
+        "job_id": "job-104"
+      },
+      "b_arguments": {
+        "job_id": "job-104"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "job-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "get_job_status",
+      "b_tool": "get_job_status",
+      "a_arguments": {
+        "job_id": "job-211"
+      },
+      "b_arguments": {
+        "job_id": "job-211"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "artifact-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "list_experiment_artifacts",
+      "b_tool": "list_experiment_artifacts",
+      "a_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "b_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "pg-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_pg_relation",
+      "b_tool": "inspect_pg_relation",
+      "a_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "b_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "sql-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_sql_plan",
+      "b_tool": "inspect_sql_plan",
+      "a_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "b_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "file-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "read_file_range",
+      "b_tool": "read_file_range",
+      "a_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "b_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "file-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "read_file_range",
+      "b_tool": "read_file_range",
+      "a_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "b_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "none-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "NONE",
+      "b_tool": "NONE",
+      "a_arguments": {},
+      "b_arguments": {},
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 0,
+      "batch": 2,
+      "id": "sum-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "sum_numbers",
+      "b_tool": "sum_numbers",
+      "a_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "b_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "sum-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "sum_numbers",
+      "b_tool": "sum_numbers",
+      "a_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "b_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "none-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "NONE",
+      "b_tool": "NONE",
+      "a_arguments": {},
+      "b_arguments": {},
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "runbook-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "find_runbook",
+      "b_tool": "find_runbook",
+      "a_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "b_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "pg-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_pg_relation",
+      "b_tool": "inspect_pg_relation",
+      "a_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "b_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "artifact-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "list_experiment_artifacts",
+      "b_tool": "list_experiment_artifacts",
+      "a_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "b_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "runbook-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "find_runbook",
+      "b_tool": "find_runbook",
+      "a_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "b_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "sql-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_sql_plan",
+      "b_tool": "inspect_sql_plan",
+      "a_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "b_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 0,
+      "id": "runbook-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "find_runbook",
+      "b_tool": "find_runbook",
+      "a_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "b_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "pg-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_pg_relation",
+      "b_tool": "inspect_pg_relation",
+      "a_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "b_arguments": {
+        "schema": "public",
+        "relation": "events"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "sql-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_sql_plan",
+      "b_tool": "inspect_sql_plan",
+      "a_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "b_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "file-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "read_file_range",
+      "b_tool": "read_file_range",
+      "a_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "b_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "none-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "NONE",
+      "b_tool": "NONE",
+      "a_arguments": {},
+      "b_arguments": {},
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "job-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "get_job_status",
+      "b_tool": "get_job_status",
+      "a_arguments": {
+        "job_id": "job-007"
+      },
+      "b_arguments": {
+        "job_id": "job-007"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "sum-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "sum_numbers",
+      "b_tool": "sum_numbers",
+      "a_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "b_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "artifact-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "list_experiment_artifacts",
+      "b_tool": "list_experiment_artifacts",
+      "a_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "b_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 1,
+      "id": "job-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "get_job_status",
+      "b_tool": "get_job_status",
+      "a_arguments": {
+        "job_id": "job-104"
+      },
+      "b_arguments": {
+        "job_id": "job-104"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "job-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "get_job_status",
+      "b_tool": "get_job_status",
+      "a_arguments": {
+        "job_id": "job-211"
+      },
+      "b_arguments": {
+        "job_id": "job-211"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "artifact-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "list_experiment_artifacts",
+      "b_tool": "list_experiment_artifacts",
+      "a_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "b_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "pg-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_pg_relation",
+      "b_tool": "inspect_pg_relation",
+      "a_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "b_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "sql-2",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "inspect_sql_plan",
+      "b_tool": "inspect_sql_plan",
+      "a_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "b_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "file-3",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "read_file_range",
+      "b_tool": "read_file_range",
+      "a_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "b_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "file-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "read_file_range",
+      "b_tool": "read_file_range",
+      "a_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "b_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      },
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "none-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "NONE",
+      "b_tool": "NONE",
+      "a_arguments": {},
+      "b_arguments": {},
+      "different_selection": false,
+      "different_args": false
+    },
+    {
+      "replicate": 1,
+      "batch": 2,
+      "id": "sum-1",
+      "a_exact": true,
+      "b_exact": true,
+      "a_tool": "sum_numbers",
+      "b_tool": "sum_numbers",
+      "a_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "b_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "different_selection": false,
+      "different_args": false
+    }
+  ],
+  "status": "MODEL_ROUTING_SURROGATE_MEASURED",
+  "limitations": [
+    "Two correlated repetitions per authored item, not blind human expert labels",
+    "ZCode sees serialized DSH tool request as text, cannot call tools and does not execute agent loop",
+    "Provider owns actual sampling defaults; temperature:0 in quoted wire is not enforced",
+    "A/B changes BOTH tool order and field order, not independently factorial",
+    "No actual DSH provider model invocation, no production inference or tool execute",
+    "Only local subprocess CPU/IO and remote token usage reported; no backend GPU/IO cost",
+    "Tool correctness is pre-authored independent gold for clear synthetic requests"
+  ]
+}

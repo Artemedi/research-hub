@@ -1,0 +1,239 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "target": "dsh-runtime wire schema + ZCode text-only choice surrogate",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "serializer_source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "seed": 20261107,
+  "cases": [
+    {
+      "id": "sum-3",
+      "instruction": "Select the sum tool with integer inputs [0, 100, 5].",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      }
+    },
+    {
+      "id": "none-2",
+      "instruction": "Не вызывай инструменты. Просто отметь, что инструмент не нужен.",
+      "expected_tool": "NONE",
+      "expected_arguments": {}
+    },
+    {
+      "id": "runbook-2",
+      "instruction": "Найди инструкцию по topic=replica-delay, revision=v2.",
+      "expected_tool": "find_runbook",
+      "expected_arguments": {
+        "topic": "replica-delay",
+        "revision": "v2"
+      }
+    },
+    {
+      "id": "pg-3",
+      "instruction": "Inspect PostgreSQL relation named audit_log in schema demo.",
+      "expected_tool": "inspect_pg_relation",
+      "expected_arguments": {
+        "schema": "demo",
+        "relation": "audit_log"
+      }
+    },
+    {
+      "id": "artifact-2",
+      "instruction": "Список данных для исследования study=schema-drift, kind=data.",
+      "expected_tool": "list_experiment_artifacts",
+      "expected_arguments": {
+        "study": "schema-drift",
+        "kind": "data"
+      }
+    },
+    {
+      "id": "runbook-3",
+      "instruction": "Look up runbook revision v3 for topic=vacuum-stall.",
+      "expected_tool": "find_runbook",
+      "expected_arguments": {
+        "topic": "vacuum-stall",
+        "revision": "v3"
+      }
+    },
+    {
+      "id": "sql-1",
+      "instruction": "Inspect SQL execution plan query_id=771 in database AuditLab.",
+      "expected_tool": "inspect_sql_plan",
+      "expected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      }
+    },
+    {
+      "id": "runbook-1",
+      "instruction": "Find runbook for topic=backup-check, revision=v1.",
+      "expected_tool": "find_runbook",
+      "expected_arguments": {
+        "topic": "backup-check",
+        "revision": "v1"
+      }
+    },
+    {
+      "id": "pg-1",
+      "instruction": "Get PostgreSQL relation statistics for schema=public, relation=events.",
+      "expected_tool": "inspect_pg_relation",
+      "expected_arguments": {
+        "schema": "public",
+        "relation": "events"
+      }
+    },
+    {
+      "id": "sql-3",
+      "instruction": "Retrieve SQL plan for query_id=42 in database DemoDb.",
+      "expected_tool": "inspect_sql_plan",
+      "expected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      }
+    },
+    {
+      "id": "file-2",
+      "instruction": "Прочитай строки 35–42 файла src/agent.ts.",
+      "expected_tool": "read_file_range",
+      "expected_arguments": {
+        "path": "src/agent.ts",
+        "start_line": 35,
+        "end_line": 42
+      }
+    },
+    {
+      "id": "none-3",
+      "instruction": "This is not a request to inspect SQL or files: select NONE.",
+      "expected_tool": "NONE",
+      "expected_arguments": {}
+    },
+    {
+      "id": "job-3",
+      "instruction": "Get execution status for job_id=job-007.",
+      "expected_tool": "get_job_status",
+      "expected_arguments": {
+        "job_id": "job-007"
+      }
+    },
+    {
+      "id": "sum-2",
+      "instruction": "Сложи инструментом числа [10, -3, 8].",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      }
+    },
+    {
+      "id": "artifact-3",
+      "instruction": "List experiment artifacts associated with study=kv-order.",
+      "expected_tool": "list_experiment_artifacts",
+      "expected_arguments": {
+        "study": "kv-order",
+        "kind": "experiment"
+      }
+    },
+    {
+      "id": "job-1",
+      "instruction": "Find status for background job with job_id=job-104.",
+      "expected_tool": "get_job_status",
+      "expected_arguments": {
+        "job_id": "job-104"
+      }
+    },
+    {
+      "id": "job-2",
+      "instruction": "Проверь состояние задачи job_id=job-211.",
+      "expected_tool": "get_job_status",
+      "expected_arguments": {
+        "job_id": "job-211"
+      }
+    },
+    {
+      "id": "artifact-1",
+      "instruction": "List report artifacts for study=agent-sandbox.",
+      "expected_tool": "list_experiment_artifacts",
+      "expected_arguments": {
+        "study": "agent-sandbox",
+        "kind": "report"
+      }
+    },
+    {
+      "id": "pg-2",
+      "instruction": "Получи статистику таблицы в PostgreSQL: schema=metrics, relation=samples.",
+      "expected_tool": "inspect_pg_relation",
+      "expected_arguments": {
+        "schema": "metrics",
+        "relation": "samples"
+      }
+    },
+    {
+      "id": "sql-2",
+      "instruction": "Покажи план SQL для query_id=772 в базе TestWarehouse.",
+      "expected_tool": "inspect_sql_plan",
+      "expected_arguments": {
+        "database": "TestWarehouse",
+        "query_id": "772"
+      }
+    },
+    {
+      "id": "file-3",
+      "instruction": "Read README.md lines 1 to 5 inclusive.",
+      "expected_tool": "read_file_range",
+      "expected_arguments": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 5
+      }
+    },
+    {
+      "id": "file-1",
+      "instruction": "Read docs/notes.md lines 10 through 14, inclusive.",
+      "expected_tool": "read_file_range",
+      "expected_arguments": {
+        "path": "docs/notes.md",
+        "start_line": 10,
+        "end_line": 14
+      }
+    },
+    {
+      "id": "none-1",
+      "instruction": "Do not select or call any tool. This is only an acknowledgement.",
+      "expected_tool": "NONE",
+      "expected_arguments": {}
+    },
+    {
+      "id": "sum-1",
+      "instruction": "Use the sum tool on the numbers [4, 9, -2].",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      }
+    }
+  ],
+  "case_count": 24,
+  "batch_size": 8,
+  "batches": 3,
+  "variants": [
+    "A",
+    "B"
+  ],
+  "replicates": 2,
+  "oracle": "pre-registered authored exact tool name and JSON arguments; independent of model output",
+  "limitations": [
+    "One manually authored gold per scenario, not blinded expert adjudication",
+    "Synthetic, semantically disjoint tasks; not real agent tool executions"
+  ]
+}
