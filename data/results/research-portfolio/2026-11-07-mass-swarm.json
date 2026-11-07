@@ -1,0 +1,1673 @@
+{
+  "date": "2026-11-07",
+  "scope": "31 high-priority public-source research gap dossiers and ZCode micro-role screening",
+  "first_party_source_access_provenance": true,
+  "source_review_completed": false,
+  "project_fit_new_approvals": 0,
+  "independent_lab_replications": 0,
+  "production_approvals": 0,
+  "logical_roles_scheduled": 31,
+  "physical_model_concurrency": 1,
+  "model_family": "ZCode GLM-5.3-Flash; user Start Plan",
+  "source_counts": {
+    "PINNED_CODE_EXCERPTS_AVAILABLE": 19,
+    "SOURCE_TEXT_EXTRACTED": 10,
+    "SOURCE_TOO_SHORT_OR_LANDING": 1,
+    "READABLE_REPO_WITHOUT_VERIFIED_IMPLEMENTATION_EXCERPT": 1
+  },
+  "model_status_counts": {
+    "SCHEMA_PASS": 24,
+    "BLOCKED": 6,
+    "BLOCKED_SOURCE": 1
+  },
+  "model_calls": 30,
+  "reported_model_tokens": 65139,
+  "balance_remaining_deltas": {
+    "ZCode Start Plan|model:glm-5.3": 0,
+    "ZCODE WEEKEND BUILD|model:glm-5.3-flash": 0,
+    "ZCode Start Plan|model:glm-5.3-flash": -100974
+  },
+  "model_run_complete": true,
+  "limitations": [
+    "Model given short excerpts only; neither analyst nor external reviewer can claim to read full paper",
+    "Pinned public repository files not built or executed, no source seam verified",
+    "Project candidates from old assessments are not re-approved",
+    "No output is automatically a scientific fact, independent reproduction or production readiness",
+    "Public archive excludes raw source excerpts, private project registry and credentials"
+  ],
+  "studies": [
+    {
+      "study_id": "alphaxiv-openresearch",
+      "kind": "engineering",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "canonical_card": "studies/alphaxiv-openresearch.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "76e111820ceb74231b47f0cbce71167d6a1777d6",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "1fd26142ef2e9773f09afd4f69fb7107ab25042ac3556fcc3f7a4b6dd6ba9c18"
+        },
+        {
+          "path": "src/net.rs",
+          "kind": "SOURCE",
+          "sha256": "f296565b34675dd057fdae0b7deaba0ed9413ea4828f71b7bba4bd9d65231412"
+        },
+        {
+          "path": "src/commands/desktop_zoom.test.mjs",
+          "kind": "TEST",
+          "sha256": "44656ee45bb3ab4cc2c838c0fdb8ccadeca23991c3f0b5035cd6b5f313d5526e"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "BOUNDED_CODE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "dsh-paper2agent",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "alphaxiv-openresearch",
+        "anchor": "SOURCE:src/net.rs",
+        "claim": "Конструкция reqwest-клиентов централизована в src/net.rs: loopback_client() задаёт no_proxy() для локальных серверов, remote_client() учитывает HTTP(S)_PROXY/NO_PROXY для внешних хостов (мотивация — OR-352).",
+        "limitation": "Фрагмент не содержит сам clippy.toml — запрет сборки клиентов вне файла заявлен лишь комментарием; не видно call sites и нет тестов поведения прокси.",
+        "next_test": "На revision 76e1118 открыть clippy.toml и найти disallowed-methods для net::loopback_client/remote_client — независимый oracle: конфиг линтера, а не комментарий в коде.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "cera-moa",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2609.18779",
+      "canonical_card": "studies/cera-moa.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "91a1ffa0dff27ea221d38ed2b36f7845345ac6230e873bd837147b6a91183def",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": "Implementation Settings.",
+          "section": "method",
+          "excerpt_sha256": "f3238cae8c54179812ccf408466992ef3ae935c94cd0d4e4690b664e267e1c8f"
+        },
+        {
+          "heading": "4 Experiments",
+          "section": "result",
+          "excerpt_sha256": "1a2fd5f1feece9ec1b0a26f9ebf566962484bd719dc5282d49ce460bbd8d8b68"
+        },
+        {
+          "heading": "Appendix F Limitations",
+          "section": "limit",
+          "excerpt_sha256": "dfdc2f80ddc2ae1e25b47f845c5d05c45a1df4be540998447b33a7a085b3c754"
+        }
+      ],
+      "prior_review_access": "FULL_TEXT_REVIEWED",
+      "documented_previous_shortlist_not_new_fits": [],
+      "model_role": "LLM serving/caching engineer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "cera-moa",
+        "anchor": "method:Implementation Settings.",
+        "claim": "In the shared-base setting CERA-MoA runs N=4 LoRA agents on one 4B base model, aggregate ~4.4B parameters.",
+        "limitation": "Excerpt shows no accuracy or latency numbers; the RQ list asks questions without answers. Per Appendix F, the familiarity estimator scores only the initial user prompt, so multi-turn routing benefit does not follow.",
+        "next_test": "Rebuild 4-agent LoRA MoA on a 4B model; sum base+adapter checkpoints to verify ~4.4B against the paper's figure as independent oracle.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "chartli",
+      "kind": "engineering",
+      "url": "https://github.com/ahmadawais/chartli",
+      "canonical_card": "studies/chartli.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "3b39b97aeb564646437b2b7501b60541994d7575",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "4cd8af92b14130cdb844a4f0c86b3f3f9b93bb171a018b735a20c848cdbb1fb4"
+        },
+        {
+          "path": "src/index.ts",
+          "kind": "SOURCE",
+          "sha256": "7a11696b7414feab67e938e7a80bcf912799023b8721a2253320210595215f03"
+        },
+        {
+          "path": "tests/svg.test.ts",
+          "kind": "TEST",
+          "sha256": "8338658b66b0b0e5e942034e787eafde62f77003a4ae380017586a37b486dd7e"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "akuz-schema-inventory",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "akuzlogparser",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "chartli",
+        "anchor": "TEST:tests/svg.test.ts",
+        "claim": "Юнит-тесты (vitest) проверяют, что renderSvg для normalizeData([[0],[5],[10]]) возвращает строку, содержащую '<?xml version', '<svg', '</svg>' и '<circle'.",
+        "limitation": "Из выдержки не следует, что тесты проходят на ревизии 3b39b97a, что SVG валиден как XML и что диаграммы визуально корректны — проверки только string-containment.",
+        "next_test": "В чистой копии ревизии запустить vitest и дополнительно прогнать выведенный SVG через xmllint --noout как независимый oracle валидности XML.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "claude-swarm",
+      "kind": "engineering",
+      "url": "https://github.com/cj-vana/claude-swarm",
+      "canonical_card": "studies/claude-swarm.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "31f19199bf3557cda4860231186a06b72c8edb94",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "c8ed29ff4336a1b3b70f0db8d649a0998fb1a4b69413d56bc1ad9b39438bc397"
+        },
+        {
+          "path": "src/index.ts",
+          "kind": "SOURCE",
+          "sha256": "a73b2587bc8fda45e4411d27195b4f7f7e5b38fc2236767e6da72b808e96a58d"
+        },
+        {
+          "path": "src/workers/confidence.test.ts",
+          "kind": "TEST",
+          "sha256": "0fb2b9bd1c39957b02967520e8e9dab5f88351919e5243ed15c7600153fcad41"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "dsh-claude-primary-agent",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "wiki-tasks",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "claude-swarm",
+        "anchor": "SOURCE:src/index.ts",
+        "claim": "Точка входа реализует MCP-сервер, оркестрирующий параллельные worker-сессии Claude Code через tmux с персистентным состоянием в файлах (notebook pattern).",
+        "limitation": "Выдержка — только docstring шапки файла; работоспособность оркестрации, реальный запуск tmux-воркеров и прохождение тестов confidence из неё не следуют.",
+        "next_test": "Склонировать репозиторий на ревизии 31f1919, вычислить sha256 файла src/index.ts и сверить с 7e6cf91e…01124 из фрагмента.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "dsh-creator-mode",
+      "kind": "engineering",
+      "url": "https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html",
+      "canonical_card": "studies/dsh-creator-mode.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "779131ab562f2000735a0f07153cd3f0ed9b2b5c2c24d63484136b3634982481",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "result",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "opening",
+          "excerpt_sha256": "779131ab562f2000735a0f07153cd3f0ed9b2b5c2c24d63484136b3634982481"
+        }
+      ],
+      "prior_review_access": "BOUNDED_CODE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "BLOCKED",
+      "model_response": null,
+      "errors": [
+        "INVALID_OR_INCOMPLETE"
+      ],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "dsh-superagent-prototype",
+      "kind": "engineering",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "canonical_card": "studies/dsh-superagent-prototype.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "8c32a9dc5d72c033816c6a8110b37f40cf94fba4",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "737997cf5b7d4129f12ed5485ebbdd5e9d2ce3859a82ded6ac535d222327b713"
+        },
+        {
+          "path": "src/index.ts",
+          "kind": "SOURCE",
+          "sha256": "fbe2a1290be6f92f641592754e813a1fc0ffc164072a8ef2f1e57f8c151d44ec"
+        },
+        {
+          "path": "tests/docs.spec.ts",
+          "kind": "TEST",
+          "sha256": "097b973c5fc8c5a7496f8aed66f11da2e612f0af36c5bcd2f8bfbebc64d96b03"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "Wiki_PG",
+          "prior_decision": "CONDITIONAL_NEEDS_EVIDENCE"
+        },
+        {
+          "project_id": "Harness",
+          "prior_decision": "CONDITIONAL_NEEDS_EVIDENCE"
+        },
+        {
+          "project_id": "HermesAgent",
+          "prior_decision": "CONDITIONAL_NEEDS_EVIDENCE"
+        }
+      ],
+      "model_role": "Agent architecture reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "dsh-superagent-prototype",
+        "anchor": "README:README.md",
+        "claim": "Published dsh-superagent code is a reference-only research prototype, adapted for release and explicitly not identical to the implementation described in the paper.",
+        "limitation": "Excerpt names no diverging designs and shows no runtime behavior, code quality, or passing tests; no production readiness or paper-replication conclusion follows from it.",
+        "next_test": "Locate the paper's public text, list its architecture components, and compare against the inject list in SOURCE:src/index.ts; oracle: published paper, not repo README.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "hyperresearch",
+      "kind": "engineering",
+      "url": "https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a",
+      "canonical_card": "studies/hyperresearch.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "aece65f9307197119629beacf8aeaf8cc80e999a",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "8643716343fc69c7c4343c2a16ac298014f4f39f2c39a2cf00d26a4100e61af3"
+        },
+        {
+          "path": "src/hyperresearch/cli/main.py",
+          "kind": "SOURCE",
+          "sha256": "0c47584ad8960569ee659087fa1bbd6243b3e4d7de9d33a85f7d45e2706aa1d9"
+        },
+        {
+          "path": "tests/test_scholar/test_cli.py",
+          "kind": "TEST",
+          "sha256": "8e04670dafba76663bf22449d29b5da5f2fbdf755b30a11122241c23517953c9"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-paper2agent",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Agent architecture reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "hyperresearch",
+        "anchor": "TEST:tests/test_scholar/test_cli.py",
+        "claim": "Тесты scholar-CLI сознательно провайдер-агностичны: реестр подменяется фейками, CLI зависит только от абстракций (SearchProvider, Paper, ProviderError), поэтому тесты переживают добавление/удаление провайдеров и не требуют API-ключей.",
+        "limitation": "Во фрагменте видны лишь намерение тестов и импорты; не доказано, что продакшн-CLI проводит все вызовы через этот шов и что команды init/status/sync имеют такую же развязку.",
+        "next_test": "Прогнать pytest в песочнице без сети и ключей; независимый оракул — зелёный прогон плюс grep на отсутствие прямых импортов провайдеров вне реестра.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "inspektor-gadget",
+      "kind": "engineering",
+      "url": "https://github.com/inspektor-gadget/inspektor-gadget",
+      "canonical_card": "studies/inspektor-gadget.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "447ef9f64106d2298c36984a26a67b2a271289e2",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "bf2904657d77269d77253a0dfdcc197b489b55721ef6fbae81817bd583df6220"
+        },
+        {
+          "path": "internal/version/version.go",
+          "kind": "SOURCE",
+          "sha256": "5edc462b566edb7683770f64b5c06ef67a8e7076f49fe95da98f416b76d148d2"
+        },
+        {
+          "path": "internal/version/version_test.go",
+          "kind": "TEST",
+          "sha256": "a22f8d79cc15cb37f40cf6d6172c066668c79daa00d6b5cc0e0b9852234a532e"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "BOUNDED_CODE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "AKUZ",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "Wiki_PG",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "sequential-rca",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Security critic",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "inspektor-gadget",
+        "anchor": "TEST:internal/version/version_test.go",
+        "claim": "Репозиторий содержит тест package version_test, импортирующий regexp/testing — формат версии (semver) проверяется автотестом, а не только декларацией в version.go.",
+        "limitation": "Из выдержки не следует ничего о безопасности eBPF-зондов, цепочке поставки или статусе OpenSSF — README обрезан на «OpenSSF Best Practic», бейджи не верифицированы.",
+        "next_test": "Независимо открыть pkg.go.dev/inspektor-gadget и сверить, что TestVersion валидирует semver-regex и CI зелёный.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "ipfire-fireperf",
+      "kind": "engineering",
+      "url": "https://www.ipfire.org/fireperf",
+      "canonical_card": "studies/ipfire-fireperf.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "de264904bd63f7da5eb875bf23ecb0b2fac36c5865de216db784342bcd7bd6b3",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "result",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "opening",
+          "excerpt_sha256": "566a1640536649b237445e866bae268f55311227152fd2664c05bedab0c13733"
+        }
+      ],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "AKUZ",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "sequential-rca",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "PostgreSQL/DBA reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "ipfire-fireperf",
+        "anchor": "opening:OPENING",
+        "claim": "fireperf — генератор нагрузки в духе iperf3, но заточен под stateful-устройства: открывает сотни тысяч соединений в секунду и отчитывается по каждому, тогда как iperf3 мерит только полосу.",
+        "limitation": "«Line rate» и «сотни тысяч соединений» — маркетинговые заявления фрагмента; методика, стенд и независимые цифры не приведены, применимость к PostgreSQL-профилю нагрузки не показана.",
+        "next_test": "В изолированном стенде прогнать fireperf через nftables-шлюз и сверить его отчёт по соединениям со счётчиком conntrack (/proc/net/stat/nf_conntrack) как независимым оракулом.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "julia-1",
+      "kind": "engineering",
+      "url": "https://supersoniclabs.ai/julia-1/",
+      "canonical_card": "studies/julia-1.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "d871e0ffcea90029197a7f08d526dc630120016ffe8ef48ac3e244932b7f4146",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "result",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "opening",
+          "excerpt_sha256": "c5aaa76e039514053e8a5aca7294c7a6f2ee98ad1586fe19bd3e13abeaefd6d9"
+        }
+      ],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "9router",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "julia-1",
+        "anchor": "opening:OPENING",
+        "claim": "Анонс утверждает: Julia 1 — компактная decision-модель на базе mmBERT-small (144.3M параметров), работает на CPU и выбирает среди поданных с вопросом вариантов (классификация, ранжирование уровней, yes/no).",
+        "limitation": "Из выдержки не следуют метрики, сравнения с базлайнами, лицензия и воспроизводимость: «successes, failures, methods» лишь обещаны далее; sha и цифры не проверены.",
+        "next_test": "Сверить 144.3M и архитектуру с config.json/модель-картой jhu-clsp/mmBERT-small на Hugging Face как независимым oracle.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "karpathy-autoresearch",
+      "kind": "engineering",
+      "url": "https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117",
+      "canonical_card": "studies/karpathy-autoresearch.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "228791fb499afffb54b46200aca536f79142f117",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "3958fd4195ac2f98ed35c4eaa4f3028a335165ee24945e96426c408d25793a41"
+        },
+        {
+          "path": "train.py",
+          "kind": "SOURCE",
+          "sha256": "2954175f4ac42ad65164aef40910ef953789abcd05a5cc886ac9ba5a00814414"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "BOUNDED_CODE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "Wiki_PG",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "BLOCKED",
+      "model_response": null,
+      "errors": [
+        "INVALID_OR_INCOMPLETE"
+      ],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "kvtether",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2609.39819",
+      "canonical_card": "studies/kvtether.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "aaf41c45d123d0ca8dc5f1d90b4ab617020c71b28172904366eeaca0c3bd512d",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": "7. Implementation of KVTether",
+          "section": "method",
+          "excerpt_sha256": "1066874ff73d2ec83d6eb3a884a6dc7a770cc9b0cf3036395194e3dd8a5da7b4"
+        },
+        {
+          "heading": "8. Evaluation",
+          "section": "result",
+          "excerpt_sha256": "03ae33dbf54d8a99040754e40553d9bb1d2c4bf9874b7eb2643e1713965e517a"
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        }
+      ],
+      "prior_review_access": "FULL_TEXT_REVIEWED",
+      "documented_previous_shortlist_not_new_fits": [],
+      "model_role": "LLM serving/caching engineer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "kvtether",
+        "anchor": "method:7. Implementation of KVTether",
+        "claim": "The harness records primitive invocations synchronously and exports them asynchronously in the same order, keeping lifecycle export off the critical path while preserving event order for server-side replay.",
+        "limitation": "Excerpt gives no measured numbers; exact match of the reproduced tokenization to the engine's KV and behavior under export delays or failures are not shown.",
+        "next_test": "Perturb async export ordering on a fixed trace; assert server-side reconstructed event order equals the synchronous harness log (independent oracle).",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "local-knowledge-graph",
+      "kind": "engineering",
+      "url": "https://github.com/punnerud/Local_Knowledge_Graph/tree/58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+      "canonical_card": "studies/local-knowledge-graph.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "5816f3fa97a5747128fad2776d0928079c37bd62a21ba6e76c0dd8708ad56d66"
+        },
+        {
+          "path": "src/mpe_lkg/cli.py",
+          "kind": "SOURCE",
+          "sha256": "5d20d59812b72928da6d118ba068c15ce30c024d2f91e13dac167f4234fc43e4"
+        },
+        {
+          "path": "dev/tests/conftest.py",
+          "kind": "TEST",
+          "sha256": "94e0302ae05d5bb809ef4900fa52ecdc0e85b681f70b9f5fe4c18551a61e6624"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "sequential-rca",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "BLOCKED",
+      "model_response": null,
+      "errors": [
+        "INVALID_OR_INCOMPLETE"
+      ],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "mcp-toolbox-postgres",
+      "kind": "engineering",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "canonical_card": "studies/mcp-toolbox-postgres.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "8d54da0d2c4069937f62654f3262f3f46fae850d",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "085469cbe0da2a0eb2ebf18a1aceaf9d136c2798971ba53a23e32f6533d3f3ec"
+        },
+        {
+          "path": "internal/log/log.go",
+          "kind": "SOURCE",
+          "sha256": "c6d99a10ce17cb49dc82331ec48acafb29d9649f65f17e0a86cd1da79e168dfe"
+        },
+        {
+          "path": "internal/log/log_test.go",
+          "kind": "TEST",
+          "sha256": "a1c89cc86f2ee1324fee45732360a4c6e1632a7a5c84dafac97a44e51a6cd1dd"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "Wiki_PG",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "PostgreSQL/DBA reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "mcp-toolbox-postgres",
+        "anchor": "SOURCE:internal/log/log.go",
+        "claim": "Пакет internal/log реализован на стандартном log/slog: импорт log/slog в log.go вместе с bytes и encoding/json в log_test.go согласуется со структурным JSON-логированием и его тестами",
+        "limitation": "Выдержки обрезаны: не видно реализаций, уровней логирования и интеграции с Postgres; README подтверждает лишь брендинг и Apache-2.0",
+        "next_test": "Склонировать репо на revision 8d54da0 и запустить go test ./internal/log/ -v; oracle — код выхода go test, а не текст README",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "microsoft-skill-recorder",
+      "kind": "engineering",
+      "url": "https://github.com/microsoft/skill-recorder/tree/505c97ae47be5642c0e1b44ebb8d1c1530c298fa",
+      "canonical_card": "studies/microsoft-skill-recorder.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "505c97ae47be5642c0e1b44ebb8d1c1530c298fa",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "5a146ffb3d7d1829ed0143be703bce06f986cc10e8d0681a08b4f18c464ae827"
+        },
+        {
+          "path": "src/format.ts",
+          "kind": "SOURCE",
+          "sha256": "2e375931c3894ca87e12081c283f3521989abeec27779137ab25c9ed777aabe5"
+        },
+        {
+          "path": "src/skill-placement.test.ts",
+          "kind": "TEST",
+          "sha256": "f361a9fb4af2eb029e9e08cffb8a1a4cba841e8df2c42aaf930e7e709da6c346"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-config",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "microsoft-skill-recorder",
+        "anchor": "README:README.md",
+        "claim": "Skill Recorder — публичный инструмент Microsoft: записывает реальную рабочую сессию (клики, переключения окон и приложений, страницы, команды/вывод) и превращает её в skill, повторяемый AI-агентом.",
+        "limitation": "Это самоописание из README: выдержка не подтверждает, что запись работает как заявлено, как собираются и хранятся данные и является ли итоговый skill-артефакт переносимым; hash и revision не проверены мной.",
+        "next_test": "Склонировать публичный репозиторий в чистый каталог, git checkout 505c97ae47be5642c0e1b44ebb8d1c1530c298fa и сверить SHA-256 README.md с a853ba63…b57f14 — независимый oracle: локально вычисленный хеш.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "novafabric",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2609.12582",
+      "canonical_card": "studies/novafabric.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "5d95cf5954aaf99306f2fbb4909547b1c84eef0f0ec12d1365dd4b5665254fd2",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": "3.11 Deployment tiers and implementation status",
+          "section": "method",
+          "excerpt_sha256": "46ff03924e52f5cf62404932ba57c1af99b498b3d2086f4f84aa1ad9653ce092"
+        },
+        {
+          "heading": "4 Evaluation",
+          "section": "result",
+          "excerpt_sha256": "51c35933f2bf7d7089ab1807c3f62cb148618e254c5d5e34f3d24edf3937d7d3"
+        },
+        {
+          "heading": "4.11 Threats to validity and what we do not claim",
+          "section": "limit",
+          "excerpt_sha256": "e7e6f412714009e1a87e17301fba88ff73ceb23fd9fc1567e430304f2cd95506"
+        }
+      ],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "sequential-rca",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "hermes-akuz-agents",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Agent architecture reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "novafabric",
+        "anchor": "limit:4.11 Threats to validity and what we do not claim",
+        "claim": "Авторы сами фиксируют: накладные расходы захвата на CPU-хосте T1 неотличимы от нуля (CI [−10.5%, +16.9%] содержит ноль) из-за доминирования инференса — это утверждение о мощности теста, а не о нулевой стоимости.",
+        "limitation": "Из выдержки не следует, что стоимость захвата реально нулевая, и что масштаб 100M агентов доказан вне lineage-эксперимента на Azure VM.",
+        "next_test": "Замерить capture-overhead на GPU-хосте или с заглушенной моделью, N≥100 прогонов; независимый оракул — внешний счётчик времени/egress вне пайплайна.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "open-steps",
+      "kind": "engineering",
+      "url": "https://github.com/kharmanskyi/open-steps",
+      "canonical_card": "studies/open-steps.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "4fa744ba8ea06ccf128a39853824c46ac391dd00",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "7aabfb28293894094ae7f2c4b4924a7d315fe30d65f1c7317c8ca398716e0e32"
+        },
+        {
+          "path": "evals/score.py",
+          "kind": "SOURCE",
+          "sha256": "4075cd8fbed6cf1e713a6027a1e2bd3b6612100adec4335c7d1dc231b7601173"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-config",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "open-steps",
+        "anchor": "SOURCE:evals/score.py",
+        "claim": "Оценка дневных измерений выполняется локальным скриптом evals/score.py без AI-суждений, а перезапись README возможна только по явному флагу --readme, не как побочный эффект.",
+        "limitation": "Выдержка содержит лишь docstring и usage: сама логика скоринга, детерминизм и отсутствие AI-оценки в коде из фрагмента не следуют.",
+        "next_test": "Получить evals/score.py из публичного репозитория на ревизии 4fa744b независимо и сверить SHA-256 файла со значением sha из пакета.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "pgbot",
+      "kind": "engineering",
+      "url": "https://github.com/pgrundev/pgbot/tree/826531fefd7d13b4381327acd4cce5be98bd71eb",
+      "canonical_card": "studies/pgbot.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "826531fefd7d13b4381327acd4cce5be98bd71eb",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "1d084f8a5f342ca951a3a2c3d357b11e8ae09aa56f02c9e2e8d41386e63999d7"
+        },
+        {
+          "path": "internal/ai/plan.go",
+          "kind": "SOURCE",
+          "sha256": "bc63bfa3ce86036b8fcbc3213d3830adcbbf679f9a5dfcbb6546263d227049f5"
+        },
+        {
+          "path": "internal/ai/plan_test.go",
+          "kind": "TEST",
+          "sha256": "3362e2929253613f8dccf26624d1456cd2b83d063d91823419df0770b4e5d1b5"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "Wiki_PG",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "sequential-rca",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "hermes-akuz-agents",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "PostgreSQL/DBA reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "pgbot",
+        "anchor": "SOURCE:internal/ai/plan.go",
+        "claim": "Промпт объяснения плана строится только вокруг уже отрендеренного pgbot плана: EXPLAIN в plan-only форме, запрос не выполняется, модели явно запрещено придумывать узлы, таблицы, индексы и числа.",
+        "limitation": "Выдержка — только константа промпта и комментарий; не видно, что EXPLAIN реально вызывается без выполнения в рантайме, и нет доказательств фактического послушания модели этим ограничениям.",
+        "next_test": "Подать в BuildPlanPrompt план с единственным узлом Seq Scan и проверить ответ модели: не содержит ли Index Scan или чисел вне входа; oracle — множество узлов входного плана.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "random-attention",
+      "kind": "paper",
+      "url": "https://arxiv.org/abs/2609.03430",
+      "canonical_card": "studies/random-attention.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "4ef1603eeb8f6ece8b7b87a5cf49bf3400365a136deaa203490484ea04d1b644",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": "4 Experiments",
+          "section": "result",
+          "excerpt_sha256": "c6c0ae9d6e82638b8c5febbc901c5a90d5ea5938bb7a820ed6242aa73fe56acf"
+        },
+        {
+          "heading": "Appendix H Discussion and limitations",
+          "section": "limit",
+          "excerpt_sha256": "3c75c27e0e4e8184d486f5140386430c2bc65489fbf531cf45ea05cf92a9deed"
+        }
+      ],
+      "prior_review_access": "FULL_TEXT_REVIEWED",
+      "documented_previous_shortlist_not_new_fits": [],
+      "model_role": "LLM serving/caching engineer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "random-attention",
+        "anchor": "limit:Appendix H Discussion and limitations",
+        "claim": "Выдержка явно фиксирует главный вывод авторов: сигнал селекции KV почти ничего не даёт при eviction в decode-фазе длинного CoT-рассуждения, но сформулирован только для их режима (промпты ~сотни токенов, трассы до 32k, сжатие 2×–16×, 4 модели, 6 задач).",
+        "limitation": "Вывод агрегатный и ограничен training-free базлайнами; перенос на learned-политики, prefill-фазу и отдельные ячейки (4 из 80) из выдержки не следует.",
+        "next_test": "Независимый oracle: на одной модели и задаче при 4× сравнить uniform-random eviction с лучшим training-free базлайном, сверяя accuracy против воспроизведённого full-attention потолка.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "rea",
+      "kind": "engineering",
+      "url": "https://github.com/morluto/rea",
+      "canonical_card": "studies/reverse-engineer-anything.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "abfccc0683e73ee396087309ab98c78c9f6dde4b",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "26ab8638e6ebc45bc3f39fd37af2bdfb68845d7f310b3873dd4ba13ae6eb8db5"
+        },
+        {
+          "path": "src/main.ts",
+          "kind": "SOURCE",
+          "sha256": "6e482177f633f558af02fd7ddf75dbfec47b55f148f4a8b2cd3ac9fcc4dc9987"
+        },
+        {
+          "path": "src/config.test.ts",
+          "kind": "TEST",
+          "sha256": "ab2456510158f3d37ecfc6d3af1f37931f662a8deec8d81a666a9689bac6e745"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "psqlqa",
+          "prior_decision": "CONDITIONAL_NEEDS_EVIDENCE"
+        },
+        {
+          "project_id": "MyPartyIsGrinding",
+          "prior_decision": "RESEARCH_CANDIDATE_TARGET_NOT_MEASURED"
+        },
+        {
+          "project_id": "WarOfGenesisIdleLoot",
+          "prior_decision": "RESEARCH_CANDIDATE_TARGET_NOT_MEASURED"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "rea",
+        "anchor": "SOURCE:src/main.ts",
+        "claim": "Точка входа поднимает MCP-сервер через serveStdio, снапшотит окружение и фиксирует RECORDED_MCP_CATALOG_SHA256 — хеш каталога инструментов как якорь воспроизводимости конфигурации.",
+        "limitation": "Выдержка обрезана и не подтверждает запуск deferredRuntime, актуальность записанного каталога или работоспособность сервера; sha фрагмента — метаданные пакета, а не проверка.",
+        "next_test": "Независимо пересчитать SHA-256 файла src/main.ts в ревизии abfccc06 (sha256sum) и сверить с 5e54c306a528...; расхождение аннулирует якорь.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "self-replicating-prompt-injections",
+      "kind": "technical_disclosure",
+      "url": "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist",
+      "canonical_card": "studies/self-replicating-prompt-injections.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "c4147559211e314be94d30af677a0eb3707ef3c398f199bd6005f41015c5aca3",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "result",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "opening",
+          "excerpt_sha256": "8e661c51d58897897b62e17b0f67ccdd5ff7dc6c8a1ec08163a9370e2c994e77"
+        }
+      ],
+      "prior_review_access": "HISTORICAL_REVIEW_RECORDED",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "HermesAgent",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "agent-config",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Security critic",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "self-replicating-prompt-injections",
+        "anchor": "opening:OPENING",
+        "claim": "Authors report a novel prompt-injection variety that self-propagates like a worm, demonstrated only in simulated tool calls during training/eval; no impact outside that setting.",
+        "limitation": "Summary-level excerpt: no mechanism, trigger conditions, or target-agent details; nothing here establishes transferability to production systems, reproduction data, or any real incident.",
+        "next_test": "Cross-check dates, model name and worm claim verbatim against the vendor's official disclosure page plus one independent advisory.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "simurg",
+      "kind": "engineering",
+      "url": "https://github.com/doofzoff/SIMURG/blob/2831a92359cdaf1b38cc14f55e74251e09a91e0b/paper/simurg_paper.pdf",
+      "canonical_card": "studies/simurg.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "2831a92359cdaf1b38cc14f55e74251e09a91e0b",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "82426bb709fce1dc17ceb87918f1c09fdfd7c019dfec5f5a41a614d9b61b659c"
+        },
+        {
+          "path": "src/simurg/core.py",
+          "kind": "SOURCE",
+          "sha256": "8d0f7509146e62cbf0a1f485eb6e08935d014659e97f2157879178baf2dfa8cd"
+        },
+        {
+          "path": "tests/test_healing.py",
+          "kind": "TEST",
+          "sha256": "01043fcd676c4228667b6a3c9c9acf7f007de4f20b7fb0187ef557d3f685af9a"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "9router",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "simurg",
+        "anchor": "SOURCE:src/simurg/core.py",
+        "claim": "core.py декларирует process-stable hash для sketch/SimHash-оценителей, чтобы результаты бенчмарка воспроизводились между запусками.",
+        "limitation": "Фрагмент — только заголовочный комментарий: он не показывает реализацию хэша и не доказывает стабильность между процессами, версиями Python или платформами, как и любые результаты paper.",
+        "next_test": "Прогнать один фиксированный инпут через sketch/SimHash-оценитель в двух свежих процессах с разными PYTHONHASHSEED и сравнить вывод с внешним эталоном (sha256sum лога вне пакета).",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "tencent-teamai-cli",
+      "kind": "engineering",
+      "url": "https://github.com/Tencent/teamai-cli",
+      "canonical_card": "studies/tencent-teamai-cli.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "b4e8ed55d8a4844842bd85317af82af88360e264",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "57c3b0da986cda9fddc8941a0a6e4a981a8404fa77047e8255de01ed64b3d027"
+        },
+        {
+          "path": "src/index.ts",
+          "kind": "SOURCE",
+          "sha256": "4bfff61b4b82cd473ea9392d70cbbd85ef888aa6a80de4ae6691f133cc178bbf"
+        },
+        {
+          "path": "src/__tests__/agy.test.ts",
+          "kind": "TEST",
+          "sha256": "064280d94b6cefb84dc9c2fbea217479476731e128aff3ef419cacfabfb8f869"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "BOUNDED_CODE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "teamai-cli",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "BLOCKED",
+      "model_response": null,
+      "errors": [
+        "TIMEOUT_57S"
+      ],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "toolgrad",
+      "kind": "paper",
+      "url": "https://aclanthology.org/2026.findings-acl.950/",
+      "canonical_card": "studies/toolgrad.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "8b65b780378c34907b5181fe6a06366d1f19bb217036fa971305ae7632019f47",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "result",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "opening",
+          "excerpt_sha256": "7829c23e3ad06f9d044d058712d6806f96cca257171bc01394f0064aad84bed2"
+        }
+      ],
+      "prior_review_access": "BOUNDED_CODE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-paper2agent",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "BLOCKED",
+      "model_response": null,
+      "errors": [
+        "INVALID_OR_INCOMPLETE"
+      ],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "understand-anything",
+      "kind": "engineering",
+      "url": "https://github.com/Egonex-AI/Understand-Anything/tree/4e6d3299017a7432da15957874992837a315c5b4",
+      "canonical_card": "studies/understand-anything.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "4e6d3299017a7432da15957874992837a315c5b4",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "babfbcec859e8c92dba5afa54e688feceec6051fefa184dad9a11277f737bc1a"
+        },
+        {
+          "path": "understand-anything-plugin/src/index.ts",
+          "kind": "SOURCE",
+          "sha256": "155134e1b07942cac1cd1566cda9d4aebe9652820e2ff046542fee10dd0f58dd"
+        },
+        {
+          "path": "tests/skill/viewer/test_viewer.test.mjs",
+          "kind": "TEST",
+          "sha256": "c6fc6656eb5af91ff02fa2858f729a13627cd1f4a033e67a59c09581c8dbb75d"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "akuz-schema-inventory",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "MyWiki",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "understand-anything",
+        "anchor": "SOURCE:understand-anything-plugin/src/index.ts",
+        "claim": "Публичный API плагина реэкспортирует сборщики контекста для четырёх потоков: чат (buildChatContext, buildChatPrompt), дифф (buildDiffContext), объяснение (buildExplainContext) и онбординг (buildOnboardingGuide).",
+        "limitation": "Выдержка показывает только реэкспорты; реализация, корректность и заявленная в README связь с knowledge graph из этого фрагмента не следуют.",
+        "next_test": "Импортировать собранный index.js в чистый Node-процесс и сравнить фактический список экспортов с этим набором; oracle — независимый import, а не вывод сборки.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "unsloth-decision-model",
+      "kind": "engineering",
+      "url": "https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth",
+      "canonical_card": "studies/unsloth-decision-model.md",
+      "source_access_gate": "SOURCE_TEXT_EXTRACTED",
+      "pinned_revision": null,
+      "document_text_sha256": "b62ca8c8b255dd9a55daadb74c05544c8fa8fe74e6e580c213c1ce594047b21a",
+      "file_anchors": [],
+      "section_anchors": [
+        {
+          "heading": null,
+          "section": "method",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "result",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "limit",
+          "excerpt_sha256": null
+        },
+        {
+          "heading": null,
+          "section": "opening",
+          "excerpt_sha256": "4016126775a895664ce19e6afd9428a2ee46bd1dfc44b2feae0f5c4a90cb23f6"
+        }
+      ],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "9router",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "unsloth-decision-model",
+        "anchor": "opening:OPENING",
+        "claim": "Unsloth's docs describe fine-tuning small LLMs (Qwen3.5-0.8B) into decision models that score provided options and return a choice with probability, self-reporting BANKING77 accuracy 36%→73% and CLINC150 7%→74%.",
+        "limitation": "Truncated landing page: no dataset format, hyperparameters, holdout protocol, or checkpoint link; benchmarks are vendor-reported and the table is cut off, so reproducibility and fit for prior decisions are unverified.",
+        "next_test": "If a checkpoint is published, run an independent harness on a held-out BANKING77 split and compare measured accuracy against the claimed 73%.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "vercel-agent-desktop",
+      "kind": "engineering",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "canonical_card": "studies/vercel-agent-desktop.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "373b4616cbdb558318b5ad7b70b0a7086e58833d60646c36a81deae655d82365"
+        },
+        {
+          "path": "src/main.rs",
+          "kind": "SOURCE",
+          "sha256": "c2ae71fdebf53e293e491dde00d78fc4c34ab3ef22cf100462e461560d6c733b"
+        },
+        {
+          "path": "src/tests/cli_stdin.rs",
+          "kind": "TEST",
+          "sha256": "d8d22ec094c26212e3a092236286e797f95c78adac65e961e0388941b7eaf396"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "psqlqa",
+          "prior_decision": "PROFILE_CANDIDATE_NOT_VALIDATED"
+        },
+        {
+          "project_id": "Harness",
+          "prior_decision": "PROFILE_CANDIDATE_NOT_VALIDATED"
+        },
+        {
+          "project_id": "HermesAgent",
+          "prior_decision": "PROFILE_CANDIDATE_NOT_VALIDATED"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "BLOCKED",
+      "model_response": null,
+      "errors": [
+        "TIMEOUT_57S"
+      ],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "warp-skill-doctor",
+      "kind": "engineering",
+      "url": "https://www.warp.dev/skill-doctor",
+      "canonical_card": "studies/warp-skill-doctor.md",
+      "source_access_gate": "SOURCE_TOO_SHORT_OR_LANDING",
+      "pinned_revision": null,
+      "document_text_sha256": null,
+      "file_anchors": [],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-config",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Security critic",
+      "model_result": "BLOCKED_SOURCE",
+      "model_response": null,
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "yahont-ce",
+      "kind": "engineering",
+      "url": "https://github.com/pipedude/yahont-ce/tree/367b48da9de2d296f905aca4bf0eb384043bf643",
+      "canonical_card": "studies/yahont-ce.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "367b48da9de2d296f905aca4bf0eb384043bf643",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "b6731b930b38307c76d9c41bb791893be20d775c35898dfe3011f320c9327ccf"
+        },
+        {
+          "path": "backend/onyx/main.py",
+          "kind": "SOURCE",
+          "sha256": "32b95c0a9fa44b7ae703ab11c84146acdad8275970e5f8ac4124e6e93fa7f51e"
+        },
+        {
+          "path": ".agents/hooks/ensure_latest_main.py",
+          "kind": "TEST",
+          "sha256": "0b78fe261eee64a5a54250ae3f92f52daeaf75ce87545121e0aa07b370d00e32"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "Wiki_PG",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-team-context",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "MyWiki",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "yahont-ce",
+        "anchor": "SOURCE:backend/onyx/main.py",
+        "claim": "Репозиторий содержит Python-бэкенд на FastAPI/uvicorn: backend/onyx/main.py импортирует FastAPI, CORSMiddleware, Sentry-интеграции и GoogleOAuth2.",
+        "limitation": "Выдержка — только блок импортов: не подтверждает работоспособность приложения, эндпоинты, лицензию CE, воспроизводимость установки и связь с брендом Yahont из README.",
+        "next_test": "В свежем клоне на ревизии 367b48d сверить с независимым оракулом: манифест зависимостей backend объявляет fastapi/uvicorn, и файл main.py действительно инстанцирует FastAPI().",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "youtube-skills",
+      "kind": "engineering",
+      "url": "https://github.com/ZeroPointRepo/youtube-skills/tree/4f7994b94e7d5e250c3b51102d609992e04d5d0d",
+      "canonical_card": "studies/youtube-skills.md",
+      "source_access_gate": "READABLE_REPO_WITHOUT_VERIFIED_IMPLEMENTATION_EXCERPT",
+      "pinned_revision": "4f7994b94e7d5e250c3b51102d609992e04d5d0d",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "0cdaefaf0e7929871eff5df5ea622d027940a61e592f52a0fe0a60c519e7ec04"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "HermesAgent",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "agent-skills",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "TelegramBot",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "youtube-skills",
+        "anchor": "README:README.md",
+        "claim": "Проект реализует доступ к YouTube (транскрипты, поиск, каналы, плейлисты) через вызов внешнего API TranscriptAPI, отказываясь от yt-dlp и headless-браузеров из-за блокировки облачных IP.",
+        "limitation": "Выдержка — рекламный текст README: не подтверждает работоспособность API, качество и наличие исходников, лицензию, лимиты или устойчивость к блокировкам.",
+        "next_test": "В HEAD репозитория найти endpoint TranscriptAPI в коде (grep по базовому URL); независимый оракул — метаданные GitHub API/skills.sh для ZeroPointRepo/youtube-skills.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    },
+    {
+      "study_id": "zero-code",
+      "kind": "engineering",
+      "url": "https://github.com/0-SOFT/0-CODE/tree/47f6a81724e87ff5e916f0eb146516d801a8fb28",
+      "canonical_card": "studies/zero-code.md",
+      "source_access_gate": "PINNED_CODE_EXCERPTS_AVAILABLE",
+      "pinned_revision": "47f6a81724e87ff5e916f0eb146516d801a8fb28",
+      "document_text_sha256": null,
+      "file_anchors": [
+        {
+          "path": "README.md",
+          "kind": "README",
+          "sha256": "55275778320b55bfebf9e091130cf8f2ad53b9fcc82eb039023cc52bc527c9ac"
+        },
+        {
+          "path": "lib/jsonc.mjs",
+          "kind": "SOURCE",
+          "sha256": "f61414badb9ec40589ebb26655a4b109466c86e20a6e5d8b96add15bf7deb954"
+        },
+        {
+          "path": "tests/unit/codex.test.mjs",
+          "kind": "TEST",
+          "sha256": "8608c71ad3d9e2ce812ee37d9ec091b1b69f5903aa0787881628b68f44b41d5a"
+        }
+      ],
+      "section_anchors": [],
+      "prior_review_access": "PARTIAL_SOURCE_REVIEW",
+      "documented_previous_shortlist_not_new_fits": [
+        {
+          "project_id": "agent-config",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "dsh-runtime",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        },
+        {
+          "project_id": "wiki-tasks",
+          "prior_decision": "DOCUMENTED_CANDIDATE"
+        }
+      ],
+      "model_role": "Source and reproducibility reviewer",
+      "model_result": "SCHEMA_PASS",
+      "model_response": {
+        "id": "zero-code",
+        "anchor": "SOURCE:lib/jsonc.mjs",
+        "claim": "Выдержка parseJsonc показывает посимвольный препарсер: удаляет // и /* */ вне строк в двойных кавычках, сохраняя байты строк; вход не исполняется — только накапливается строка clean.",
+        "limitation": "Из усечённого фрагмента не следует обработка завершающих запятых, поведение на экранированных кавычках далее показанного кода и общая корректность парсера; это не аудит и не репликация.",
+        "next_test": "Прогнать parseJsonc на фиксированном корпусе кейсов (комментарии внутри строк, экранированные кавычки, переводы строк) и сравнить вывод с эталонным JSONC-парсером как независимым оракулом.",
+        "validation": "SCREENING_ONLY"
+      },
+      "errors": [],
+      "independent_source_claim_reviewed": false,
+      "new_project_fit_approved": false,
+      "author_experiment_reproduced": false,
+      "production_approved": false
+    }
+  ]
+}

@@ -1463,6 +1463,55 @@
       "title": "ZCode advisory analyst and critic screening outcomes, circuit breaker after 8 of 31",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/mass-swarm-review.md",
+      "title": "31 source-grounded research micro-swarm review (advisory; not independent science)",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-mass-swarm.json",
+      "title": "31 public source provenance dossiers and bounded ZCode role outcomes",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/README.md",
+      "title": "Bounded source-pack and micro-swarm reproduction instructions",
+      "kind": "guide",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-mass-anchor-audit.json",
+      "title": "Offline SHA and evidence-anchor checks for thirty-one ZCode research screenings",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/senior-review.md",
+      "title": "GPT-6 independent senior review of thirty-one source-scope screenings",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/cluster-critics.md",
+      "title": "Five logical critic council opinions over public source screening",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-cluster-critics.json",
+      "title": "Five grouped source-screening critic verdicts with withheld scientific approval",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

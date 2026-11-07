@@ -1,5 +1,6 @@
 # Research Portfolio — полный инвентаризационный проход 83 источников
 
+[Массовый разбор 31 источника с доказательными пробелами](mass-swarm-review.md) — отдельная модельная очередь и ограничения её проверки.
 **Дата:** 7 ноября 2026. **Глобальная карта:** приватный `project-registry@838b86a28fcaa3440eeddbe147b6188e0d177963`, 45 project cards. **Исходный публичный каталог:** `research-hub@3180d9c46914f2f54d2a21e642b7ec3efffa2b99`, 83 studies. Это **повторная проверка охвата**, а не заявление о новом научном эксперименте на каждом из 83 источников.
 
 **Сводная матрица для всех 83 источников:** [project-fit](project-fit.md). **Состояние диспетчера:** [архитектура](../../docs/research-orchestrator.md). **Machine-readable evidence:** [доступ к источникам](../../data/results/research-portfolio/2026-11-07-source-audit.json), [83×45](../../data/results/research-portfolio/2026-11-07-coverage.json), [249 DAG stages](../../data/results/research-portfolio/2026-11-07-controller.json), [проверка HEAD](../../data/results/research-portfolio/2026-11-07-source-heads.json). Различие между scan, source reading, author claims и independent verification обязательно.
