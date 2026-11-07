@@ -10,6 +10,7 @@
 | --- | --- |
 | [Claude Swarm Git worktree and tmux mock failure-injection counterchecks](../portfolio/2026-11-07/claude-swarm-failure-injection.md) | 2026-11-07 |
 | [Claude Swarm source-pinned worktree and worker-outcome repair A/B](../portfolio/2026-11-07/claude-swarm-repair-ab.md) | 2026-11-07 |
+| [20 distinct public research tasks: direct ZCode, fixed council and adaptive Claude Swarm](../portfolio/2026-11-07/claude-zcode-dag20-audit.md) | 2026-11-07 |
 | [Claude Swarm to ZCode restricted worker bridge: live pilot and repository skill](../portfolio/2026-11-07/claude-zcode-swarm-skill-pilot.md) | 2026-11-07 |
 | [Five logical critic council opinions over public source screening](../portfolio/2026-11-07/cluster-critics.md) | 2026-11-07 |
 | [31 source-grounded research micro-swarm review (advisory; not independent science)](../portfolio/2026-11-07/mass-swarm-review.md) | 2026-11-07 |

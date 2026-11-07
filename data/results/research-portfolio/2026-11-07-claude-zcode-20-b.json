@@ -1,0 +1,1474 @@
+{
+  "date": "2026-11-07",
+  "experiment": "Claude Swarm / ZCode twenty distinct evidence-task pilot",
+  "mode": "b",
+  "mode_description": "B fixed independent-call unanimous council",
+  "source_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "task_manifest_sha256": "5f307bb9934c14370c735d9f5c3cebebbd476ff66c933773ac6170000aceb3d9",
+  "task_manifest_public_id": "2026-11-07-claude-zcode-tasks20-manifest.json",
+  "source_paper_pins": {
+    "2610.22195": {
+      "url": "https://arxiv.org/html/2610.22195",
+      "html_sha256": "db0746b460b880aab51e9a9d3878a32ae6690bacc3807774ba581963b970f7db"
+    },
+    "2610.30418": {
+      "url": "https://arxiv.org/html/2610.30418",
+      "html_sha256": "80b01bba9c64a4bee86dec3badaccc39e8e801121c0610544affb5e67cfe190a"
+    },
+    "2609.40111": {
+      "url": "https://arxiv.org/html/2609.40111",
+      "html_sha256": "31af8d0a1d4da3a4c4184def8fed7e6f76a6483005804f0868133b682d7aab14"
+    },
+    "2609.11028": {
+      "url": "https://arxiv.org/html/2609.11028",
+      "html_sha256": "36ae9bbdd32fb65d502a9644f7e2905b166cdc620d843b8724ce47b510da74b6"
+    }
+  },
+  "batch_size_tasks": 2,
+  "batch_count": 10,
+  "task_count": 20,
+  "claim_count": 40,
+  "provider_calls": 20,
+  "completed_calls": 20,
+  "blocked_calls": 0,
+  "verified_tasks": 20,
+  "blocked_tasks": 0,
+  "false_supported": 0,
+  "all_claims_correct": 40,
+  "abstentions": 0,
+  "total_claims": 40,
+  "call_elapsed_ms_p50": 10893,
+  "call_elapsed_ms_p95": 19889,
+  "batch_wall_ms_p50": 22738,
+  "batch_wall_ms_p95": 36642,
+  "summed_call_wall_ms": 247368,
+  "reported_usage": {
+    "input_tokens": 1452,
+    "output_tokens": 10084,
+    "cache_read_input_tokens": 33216
+  },
+  "local_runner_rusage_delta": {
+    "user_cpu_us": 25190,
+    "system_cpu_us": 13579,
+    "fs_read_ops": 0,
+    "fs_write_ops": 0,
+    "max_rss_kb": 62116
+  },
+  "first_started_at": "2026-11-07T11:53:53.210Z",
+  "physical_zcode_parallelism": 1,
+  "oracle_kind": "author-written labels, not blinded independent expert adjudication",
+  "role_receipts": [
+    {
+      "mode": "b",
+      "batch": 0,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "73718953370691cfb28b09db7bc02c1ab05c59fef205d41bd0f356fb861f6cc9",
+      "elapsed_ms": 10652,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 414,
+        "output_tokens": 431,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "1341ba802b028d33aa9abc71a92a13262e3484f0815aef5505294fae4552dce3",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-dual-layer-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-dual-layer-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "htn-rebuild-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-rebuild-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 0,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "73718953370691cfb28b09db7bc02c1ab05c59fef205d41bd0f356fb861f6cc9",
+      "elapsed_ms": 16857,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 30,
+        "output_tokens": 548,
+        "cache_read_input_tokens": 1536,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "f90450471f425c5a833112c3d7c9604723935126a8f1fff348b1384c4698f14d",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-dual-layer-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-dual-layer-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "htn-rebuild-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-rebuild-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 1,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "8d7eb0ff61ffa3690e7d1570fc7b4ec8ca8a4e21b1526a87a2014d3b76151e07",
+      "elapsed_ms": 7458,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 12,
+        "output_tokens": 318,
+        "cache_read_input_tokens": 1728,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "0354b738eddf1ccf59e2959d82447718c7f6296792826a80469573bb2b2f3345",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-benchmarks-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-benchmarks-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "htn-readiness-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-readiness-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 1,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "8d7eb0ff61ffa3690e7d1570fc7b4ec8ca8a4e21b1526a87a2014d3b76151e07",
+      "elapsed_ms": 9184,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 12,
+        "output_tokens": 397,
+        "cache_read_input_tokens": 1728,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "976b16f566eedad00adc9490e425c2d7845e3b08de975ff7661bc980c3c6da29",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-benchmarks-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-benchmarks-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "htn-readiness-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-readiness-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 2,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "2435992c81e491adb32cd9dd55284561b16a491b5bc1c06d8e292698140c37ff",
+      "elapsed_ms": 7209,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 472,
+        "output_tokens": 356,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "19de250c005414f5de7d39a22702c8d404c23624bc70a2108af7e54126bf64ab",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-waves-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-waves-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-acl-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-acl-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 2,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "2435992c81e491adb32cd9dd55284561b16a491b5bc1c06d8e292698140c37ff",
+      "elapsed_ms": 8769,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 24,
+        "output_tokens": 357,
+        "cache_read_input_tokens": 1600,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "a3a78f68eb1059d327a3f0027719d70e2458675048e31c7bb7363890c8d83ff1",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-waves-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-waves-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-acl-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-acl-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 3,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "a1c69e7c6d25b2afa5a10a42ddf6fb69461a668e2c861adb7e9607fcc9218054",
+      "elapsed_ms": 10893,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 32,
+        "output_tokens": 436,
+        "cache_read_input_tokens": 1536,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "df30aba8969ff3f3d10ddf804760f29a6cfca39f8141b725f586afa64db3636f",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "mosaic-filter-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-filter-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-safeguard-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-safeguard-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 3,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "a1c69e7c6d25b2afa5a10a42ddf6fb69461a668e2c861adb7e9607fcc9218054",
+      "elapsed_ms": 8489,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 32,
+        "output_tokens": 342,
+        "cache_read_input_tokens": 1536,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "0ed1a43005fe67471ed1b99f5f0e60cc573473a666444cdb4ee192d999090474",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "mosaic-filter-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-filter-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-safeguard-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-safeguard-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 4,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "913b959ab088c83f545f8b9999eba2830fbe7f31e5e163eeb767349f9455995e",
+      "elapsed_ms": 16651,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 711,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "1fe17d238605b14eabb11d0474c70eb650f3b882acf50eb50614feac453d76b3",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "mosaic-factor-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-factor-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-examples-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-examples-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 4,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "913b959ab088c83f545f8b9999eba2830fbe7f31e5e163eeb767349f9455995e",
+      "elapsed_ms": 9577,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 383,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "a205261801f7c4f3c40015b79fa48b159ff640573569465aea3cfc07791cad9b",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "mosaic-factor-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-factor-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-examples-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-examples-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 5,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "24ee9e780a4440e0a6c1f17f7e1611567c004c2fea077c6d07be637cb33a0141",
+      "elapsed_ms": 12202,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 365,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "50cb645f65f9ec2a138a4ff65907ea4d8a3810bd708ea79ffecc13da2683c14b",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-size-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-size-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "aed-replay-gain-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-replay-gain-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 5,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "24ee9e780a4440e0a6c1f17f7e1611567c004c2fea077c6d07be637cb33a0141",
+      "elapsed_ms": 7264,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 304,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "49ec86e3946fb017f3e31c04ebe6fc8714605edc432c3d34de5aafd2127b97ca",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-size-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-size-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "aed-replay-gain-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-replay-gain-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 6,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "71451746e2647ab2c12c9c4f03bed29a1b04c6910b032c1f6e4bdddf8d30d3af",
+      "elapsed_ms": 12458,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 50,
+        "output_tokens": 633,
+        "cache_read_input_tokens": 1600,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "5620259a8c3d92d6e805aa4629988d94f1da461130392dafd49c39ee3839e7f9",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-failure-scope-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-failure-scope-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "aed-record-fields-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-record-fields-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 6,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "71451746e2647ab2c12c9c4f03bed29a1b04c6910b032c1f6e4bdddf8d30d3af",
+      "elapsed_ms": 10279,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 50,
+        "output_tokens": 528,
+        "cache_read_input_tokens": 1600,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "04e78e1c0829cb684d3aa435219bc3284440cbdcac619fcf3d1e647921e40c98",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-failure-scope-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-failure-scope-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "aed-record-fields-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-record-fields-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 7,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "21adf4b1f2d42e9dcff61a74597a58f00cab14c61caafc673ef23550b26a8f4d",
+      "elapsed_ms": 12975,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 46,
+        "output_tokens": 440,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "f13bfc4d7179410dd39a6fee8b9894845f6c5b5ffb5a1a601066e21577db5ead",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-pair-versus-run-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-pair-versus-run-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-boundary-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-boundary-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 7,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "21adf4b1f2d42e9dcff61a74597a58f00cab14c61caafc673ef23550b26a8f4d",
+      "elapsed_ms": 19889,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 46,
+        "output_tokens": 721,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "699242601f83ff613ff6bd215f15f04c2efe36d304f2cb38a282d6edd44fe4a6",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-pair-versus-run-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-pair-versus-run-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-boundary-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-boundary-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 8,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "54857312a08ac9ad1a2207e4f90555dc0024b747530baaa2ae73d5836f5f8d89",
+      "elapsed_ms": 12436,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 45,
+        "output_tokens": 470,
+        "cache_read_input_tokens": 1792,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "324ed7dda92c37c18c281ad4d6abca811b21bceb0d6017fe867ea02a94c02ec3",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "bench-complexity-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-complexity-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-bindings-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-bindings-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 8,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "54857312a08ac9ad1a2207e4f90555dc0024b747530baaa2ae73d5836f5f8d89",
+      "elapsed_ms": 24205,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 45,
+        "output_tokens": 1031,
+        "cache_read_input_tokens": 1792,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "e10c7e420e1162037a01f761068e01989ebe96425defec85cd932f5790267811",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "bench-complexity-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-complexity-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-bindings-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-bindings-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 9,
+      "role": "council-1",
+      "status": "COMPLETE",
+      "prompt_sha256": "28f1f0cbfa000d28df40074c82bfdcc90b27b4da3cbd5738438543dfa69f8a80",
+      "elapsed_ms": 13526,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 37,
+        "output_tokens": 550,
+        "cache_read_input_tokens": 1664,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "78c4cea9fd6b444c45a8173e039ed397e15d31422f09c8956b0b588f5cf01d6d",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "bench-runtime-events-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-runtime-events-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-semantics-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-semantics-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "b",
+      "batch": 9,
+      "role": "council-2",
+      "status": "COMPLETE",
+      "prompt_sha256": "28f1f0cbfa000d28df40074c82bfdcc90b27b4da3cbd5738438543dfa69f8a80",
+      "elapsed_ms": 16395,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 37,
+        "output_tokens": 763,
+        "cache_read_input_tokens": 1664,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "05e1c88a441e0bd85e1ff86655893f6c55a3d259fa5aa01b9365829ffd2c766c",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "bench-runtime-events-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-runtime-events-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-semantics-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-semantics-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "batch": 0,
+      "task_ids": [
+        "htn-dual-layer",
+        "htn-rebuild"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 27511,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "htn-dual-layer",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-dual-layer-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-dual-layer-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "htn-rebuild",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-rebuild-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-rebuild-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 1,
+      "task_ids": [
+        "htn-benchmarks",
+        "htn-readiness"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 16643,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "htn-benchmarks",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-benchmarks-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-benchmarks-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "htn-readiness",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-readiness-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-readiness-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 2,
+      "task_ids": [
+        "htn-waves",
+        "mosaic-acl"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 15979,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "htn-waves",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-waves-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-waves-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "mosaic-acl",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-acl-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-acl-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 3,
+      "task_ids": [
+        "mosaic-filter",
+        "mosaic-safeguard"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 19384,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "mosaic-filter",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-filter-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-filter-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "mosaic-safeguard",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-safeguard-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-safeguard-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 4,
+      "task_ids": [
+        "mosaic-factor",
+        "mosaic-examples"
+      ],
+      "predeclared_risk": true,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 26229,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "mosaic-factor",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-factor-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-factor-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "mosaic-examples",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-examples-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-examples-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 5,
+      "task_ids": [
+        "aed-size",
+        "aed-replay-gain"
+      ],
+      "predeclared_risk": true,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 19467,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "aed-size",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-size-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-size-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "aed-replay-gain",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-replay-gain-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-replay-gain-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 6,
+      "task_ids": [
+        "aed-failure-scope",
+        "aed-record-fields"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 22738,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "aed-failure-scope",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-failure-scope-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-failure-scope-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "aed-record-fields",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-record-fields-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-record-fields-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 7,
+      "task_ids": [
+        "aed-pair-versus-run",
+        "bench-boundary"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 32864,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "aed-pair-versus-run",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-pair-versus-run-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-pair-versus-run-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "bench-boundary",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-boundary-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-boundary-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 8,
+      "task_ids": [
+        "bench-complexity",
+        "bench-bindings"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 36642,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "bench-complexity",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-complexity-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-complexity-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "bench-bindings",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-bindings-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-bindings-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 9,
+      "task_ids": [
+        "bench-runtime-events",
+        "bench-semantics"
+      ],
+      "predeclared_risk": false,
+      "escalated": true,
+      "requested_escalation": false,
+      "call_count": 2,
+      "wall_ms": 29921,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "bench-runtime-events",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-runtime-events-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-runtime-events-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "bench-semantics",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-semantics-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-semantics-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    }
+  ],
+  "caveats": [
+    "The 20 tasks contain distinct paper paragraphs but share four source papers",
+    "Two claim labels per task are author-generated in advance; model never receives labels",
+    "Two-task batches mean per-task independent latency distributions cannot be inferred",
+    "Role calls use the same model family and no independent human expert adjudication",
+    "Budget differences A/B/C are intentional tradeoff rather than fixed-cost comparison",
+    "Runner CPU and RSS exclude child ZCode and tmux process resources",
+    "No arbitrary tools, production, private sources, clinical records, real Claude agent, or direct source edits",
+    "No automatic production approval; faults and incomplete results remain BLOCKED"
+  ]
+}

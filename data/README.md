@@ -37,7 +37,15 @@
 | [data/results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json](results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-repair-council.json](results/research-portfolio/2026-11-07-claude-swarm-repair-council.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json](results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-20-a.json](results/research-portfolio/2026-11-07-claude-zcode-20-a.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-20-b.json](results/research-portfolio/2026-11-07-claude-zcode-20-b.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-20-c-initial.json](results/research-portfolio/2026-11-07-claude-zcode-20-c-initial.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-20-c.json](results/research-portfolio/2026-11-07-claude-zcode-20-c.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-dag20-summary.json](results/research-portfolio/2026-11-07-claude-zcode-dag20-summary.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-failure-recovery.json](results/research-portfolio/2026-11-07-claude-zcode-failure-recovery.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-zcode-swarm-pilot.json](results/research-portfolio/2026-11-07-claude-zcode-swarm-pilot.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-tasks20-manifest.json](results/research-portfolio/2026-11-07-claude-zcode-tasks20-manifest.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-zcode-tmux-race.json](results/research-portfolio/2026-11-07-claude-zcode-tmux-race.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-cluster-critics.json](results/research-portfolio/2026-11-07-cluster-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-controller.json](results/research-portfolio/2026-11-07-controller.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-coverage.json](results/research-portfolio/2026-11-07-coverage.json) | Результат ограниченной проверки |

@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-07",
+  "study": "Synthetic tmux list-sessions/capture-pane race",
+  "source_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "cases_total": 5,
+  "passed": 5,
+  "cases": [
+    {
+      "id": "capture_failure_returns_not_found",
+      "actual": "not_found",
+      "expected": "not_found",
+      "passed": true
+    },
+    {
+      "id": "tmux_fault_consumed",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "retry_recovers_completed",
+      "actual": "completed",
+      "expected": "completed",
+      "passed": true
+    },
+    {
+      "id": "done_exit_markers_agree",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "main_ref_not_mutated",
+      "actual": "f0ffc29e1bf1c7a54b377802a293ce66772021a8",
+      "expected": "f0ffc29e1bf1c7a54b377802a293ce66772021a8",
+      "passed": true
+    }
+  ],
+  "first_status": "not_found",
+  "after_retry": "completed",
+  "model_calls": 0,
+  "production_writes": 0,
+  "limitation": "Injected capture-pane failure, not real kernel scheduling race; same-UID completion files are not security attestations"
+}

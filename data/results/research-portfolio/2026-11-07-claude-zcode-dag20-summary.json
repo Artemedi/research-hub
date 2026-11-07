@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-07",
+  "study": "Claude Swarm plus ZCode research task scheduler A/B/C",
+  "source_upstream": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "source_paper_pins": {
+    "2610.22195": {
+      "url": "https://arxiv.org/html/2610.22195",
+      "html_sha256": "db0746b460b880aab51e9a9d3878a32ae6690bacc3807774ba581963b970f7db"
+    },
+    "2610.30418": {
+      "url": "https://arxiv.org/html/2610.30418",
+      "html_sha256": "80b01bba9c64a4bee86dec3badaccc39e8e801121c0610544affb5e67cfe190a"
+    },
+    "2609.40111": {
+      "url": "https://arxiv.org/html/2609.40111",
+      "html_sha256": "31af8d0a1d4da3a4c4184def8fed7e6f76a6483005804f0868133b682d7aab14"
+    },
+    "2609.11028": {
+      "url": "https://arxiv.org/html/2609.11028",
+      "html_sha256": "36ae9bbdd32fb65d502a9644f7e2905b166cdc620d843b8724ce47b510da74b6"
+    }
+  },
+  "fixture_manifest_sha256": "dad0b8086cb7b3c6005bd2ac55a4c90ca9197086f0eba5eb76f5025ffc968926",
+  "tasks_unique": 20,
+  "source_paragraphs_distinct": 20,
+  "claim_labels": 40,
+  "source_papers": 4,
+  "model_family": "glm-5.3-flash",
+  "tool_permissions": "no model tools, public research paragraphs only",
+  "concurrency": 1,
+  "first_prompt_digest_same_a_b_c": true,
+  "oracle": "author-annotated claim entailment in full arXiv HTML; not blinded independent expert",
+  "metrics": {
+    "a": {
+      "task_pass": 20,
+      "task_total": 20,
+      "claim_correct": 40,
+      "claim_total": 40,
+      "false_supported": 0,
+      "abstentions": 0,
+      "provider_calls": 10,
+      "completed_calls": 10,
+      "blocked_calls": 0,
+      "status_counts": {
+        "COMPLETE": 10
+      },
+      "call_p50_ms": 10858,
+      "call_p95_ms": 15607,
+      "batch_p50_ms": 10859,
+      "batch_p95_ms": 15607,
+      "sum_call_elapsed_ms": 115029,
+      "reported_usage": {
+        "input_tokens": 7222,
+        "output_tokens": 4880,
+        "cache_read_input_tokens": 10112
+      },
+      "adaptive_escalations": null,
+      "task_files": [
+        "htn-dual-layer",
+        "htn-rebuild",
+        "htn-benchmarks",
+        "htn-readiness",
+        "htn-waves",
+        "mosaic-acl",
+        "mosaic-filter",
+        "mosaic-safeguard",
+        "mosaic-factor",
+        "mosaic-examples",
+        "aed-size",
+        "aed-replay-gain",
+        "aed-failure-scope",
+        "aed-record-fields",
+        "aed-pair-versus-run",
+        "bench-boundary",
+        "bench-complexity",
+        "bench-bindings",
+        "bench-runtime-events",
+        "bench-semantics"
+      ],
+      "runner_rusage": {
+        "user_cpu_us": 13644,
+        "system_cpu_us": 7568,
+        "fs_read_ops": 0,
+        "fs_write_ops": 0,
+        "max_rss_kb": 55328
+      }
+    },
+    "b": {
+      "task_pass": 20,
+      "task_total": 20,
+      "claim_correct": 40,
+      "claim_total": 40,
+      "false_supported": 0,
+      "abstentions": 0,
+      "provider_calls": 20,
+      "completed_calls": 20,
+      "blocked_calls": 0,
+      "status_counts": {
+        "COMPLETE": 20
+      },
+      "call_p50_ms": 10893,
+      "call_p95_ms": 19889,
+      "batch_p50_ms": 22738,
+      "batch_p95_ms": 36642,
+      "sum_call_elapsed_ms": 247368,
+      "reported_usage": {
+        "input_tokens": 1452,
+        "output_tokens": 10084,
+        "cache_read_input_tokens": 33216
+      },
+      "adaptive_escalations": null,
+      "task_files": [
+        "htn-dual-layer",
+        "htn-rebuild",
+        "htn-benchmarks",
+        "htn-readiness",
+        "htn-waves",
+        "mosaic-acl",
+        "mosaic-filter",
+        "mosaic-safeguard",
+        "mosaic-factor",
+        "mosaic-examples",
+        "aed-size",
+        "aed-replay-gain",
+        "aed-failure-scope",
+        "aed-record-fields",
+        "aed-pair-versus-run",
+        "bench-boundary",
+        "bench-complexity",
+        "bench-bindings",
+        "bench-runtime-events",
+        "bench-semantics"
+      ],
+      "runner_rusage": {
+        "user_cpu_us": 25190,
+        "system_cpu_us": 13579,
+        "fs_read_ops": 0,
+        "fs_write_ops": 0,
+        "max_rss_kb": 62116
+      }
+    },
+    "c": {
+      "task_pass": 20,
+      "task_total": 20,
+      "claim_correct": 40,
+      "claim_total": 40,
+      "false_supported": 0,
+      "abstentions": 0,
+      "provider_calls": 17,
+      "completed_calls": 17,
+      "blocked_calls": 0,
+      "status_counts": {
+        "COMPLETE": 17
+      },
+      "call_p50_ms": 11829,
+      "call_p95_ms": 23298,
+      "batch_p50_ms": 0,
+      "batch_p95_ms": 30697,
+      "sum_call_elapsed_ms": 218484,
+      "reported_usage": {
+        "input_tokens": 528,
+        "output_tokens": 7969,
+        "cache_read_input_tokens": 29184
+      },
+      "adaptive_escalations": 7,
+      "task_files": [
+        "htn-dual-layer",
+        "htn-rebuild",
+        "htn-benchmarks",
+        "htn-readiness",
+        "htn-waves",
+        "mosaic-acl",
+        "mosaic-filter",
+        "mosaic-safeguard",
+        "mosaic-factor",
+        "mosaic-examples",
+        "aed-size",
+        "aed-replay-gain",
+        "aed-failure-scope",
+        "aed-record-fields",
+        "aed-pair-versus-run",
+        "bench-boundary",
+        "bench-complexity",
+        "bench-bindings",
+        "bench-runtime-events",
+        "bench-semantics"
+      ],
+      "runner_rusage": {
+        "user_cpu_us": 365163,
+        "system_cpu_us": 226195,
+        "fs_read_ops": 0,
+        "fs_write_ops": 0,
+        "max_rss_kb": 71788
+      }
+    }
+  },
+  "crash_injection": {
+    "reproduced_cases": 17,
+    "matched_oracle": 17,
+    "not_security_attestation": true,
+    "source": "2026-11-07-claude-zcode-failure-recovery.json",
+    "tmux_race_injection_cases": 5,
+    "tmux_race_reproduced": 5
+  },
+  "checkpoint_resume": {
+    "a_hits": 10,
+    "b_hits": 20,
+    "c_hits": 17,
+    "a_new_provider_calls": 0,
+    "b_new_provider_calls": 0,
+    "c_new_provider_calls": 0,
+    "tampered_prompt_hash_rejected": true
+  },
+  "initial_adaptive_failure": {
+    "task_count_blocked": 2,
+    "batch": 8,
+    "reason": "not_found",
+    "initial_elapsed_ms": 27088,
+    "rework": "bounded retry of transient WorkerManager not_found; same input checksum",
+    "additional_historical_worker_attempts": 1,
+    "final_adaptive_verified": 20
+  },
+  "decision": "ACCEPT_BOUNDED_20_TASK_PILOT_AFTER_REWORK",
+  "project_adoption_approved": false,
+  "caveats": [
+    "Twenty unique paragraphs drawn from four known papers, not 20 independent sources",
+    "Author labels do not constitute blinded independent human adjudication",
+    "The fixed council repeats the same prompt with the same model family",
+    "Adaptive logic uses predeclared risk routing, not a validated multi-project scheduler",
+    "Batch latency and per-task success are correlated and cannot be treated as 20 independent latency samples",
+    "Cache effects and sequential A then B then C order confound performance comparison",
+    "CPU/RSS figures cover Node orchestrator only, not full ZCode or tmux child processes",
+    "Marker/exit files and checkpoints are same-UID writable and not security proofs",
+    "Only synthetic crash injection and manual recovery; no real power loss or distributed failure",
+    "No private data, target repo mutation, clinical text, production approval or full-paper re-review"
+  ]
+}

@@ -1,0 +1,1074 @@
+{
+  "date": "2026-11-07",
+  "experiment": "Claude Swarm / ZCode twenty distinct evidence-task pilot",
+  "mode": "a",
+  "mode_description": "A direct single ZCode",
+  "source_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "task_manifest_sha256": "5f307bb9934c14370c735d9f5c3cebebbd476ff66c933773ac6170000aceb3d9",
+  "task_manifest_public_id": "2026-11-07-claude-zcode-tasks20-manifest.json",
+  "source_paper_pins": {
+    "2610.22195": {
+      "url": "https://arxiv.org/html/2610.22195",
+      "html_sha256": "db0746b460b880aab51e9a9d3878a32ae6690bacc3807774ba581963b970f7db"
+    },
+    "2610.30418": {
+      "url": "https://arxiv.org/html/2610.30418",
+      "html_sha256": "80b01bba9c64a4bee86dec3badaccc39e8e801121c0610544affb5e67cfe190a"
+    },
+    "2609.40111": {
+      "url": "https://arxiv.org/html/2609.40111",
+      "html_sha256": "31af8d0a1d4da3a4c4184def8fed7e6f76a6483005804f0868133b682d7aab14"
+    },
+    "2609.11028": {
+      "url": "https://arxiv.org/html/2609.11028",
+      "html_sha256": "36ae9bbdd32fb65d502a9644f7e2905b166cdc620d843b8724ce47b510da74b6"
+    }
+  },
+  "batch_size_tasks": 2,
+  "batch_count": 10,
+  "task_count": 20,
+  "claim_count": 40,
+  "provider_calls": 10,
+  "completed_calls": 10,
+  "blocked_calls": 0,
+  "verified_tasks": 20,
+  "blocked_tasks": 0,
+  "false_supported": 0,
+  "all_claims_correct": 40,
+  "abstentions": 0,
+  "total_claims": 40,
+  "call_elapsed_ms_p50": 10858,
+  "call_elapsed_ms_p95": 15607,
+  "batch_wall_ms_p50": 10859,
+  "batch_wall_ms_p95": 15607,
+  "summed_call_wall_ms": 115029,
+  "reported_usage": {
+    "input_tokens": 7222,
+    "output_tokens": 4880,
+    "cache_read_input_tokens": 10112
+  },
+  "local_runner_rusage_delta": {
+    "user_cpu_us": 13644,
+    "system_cpu_us": 7568,
+    "fs_read_ops": 0,
+    "fs_write_ops": 0,
+    "max_rss_kb": 55328
+  },
+  "first_started_at": "2026-11-07T11:51:26.999Z",
+  "physical_zcode_parallelism": 1,
+  "oracle_kind": "author-written labels, not blinded independent expert adjudication",
+  "role_receipts": [
+    {
+      "mode": "a",
+      "batch": 0,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "73718953370691cfb28b09db7bc02c1ab05c59fef205d41bd0f356fb861f6cc9",
+      "elapsed_ms": 8521,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 1566,
+        "output_tokens": 351,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "c841d9d289f547685013d00dfe29679c329d0caa7a55d95c43bd2fde75b45323",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-dual-layer-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-dual-layer-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "htn-rebuild-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-rebuild-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 1,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "8d7eb0ff61ffa3690e7d1570fc7b4ec8ca8a4e21b1526a87a2014d3b76151e07",
+      "elapsed_ms": 15410,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 716,
+        "output_tokens": 637,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "8f8182ec64f0846f45e92407ff338339c93250078096c77b17826fcf42cc14fb",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-benchmarks-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-benchmarks-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "htn-readiness-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-readiness-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 2,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "2435992c81e491adb32cd9dd55284561b16a491b5bc1c06d8e292698140c37ff",
+      "elapsed_ms": 10838,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 600,
+        "output_tokens": 435,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "f554ed9f55e2e60e1d7e40b69fe87fdc808bcc1cdf0aa99f2cb1d6f093171236",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "htn-waves-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "htn-waves-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-acl-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-acl-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 3,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "a1c69e7c6d25b2afa5a10a42ddf6fb69461a668e2c861adb7e9607fcc9218054",
+      "elapsed_ms": 6947,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 416,
+        "output_tokens": 359,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "8bbcec3f66ca11211929877529f22ed6ea78e05dec76cbbd6ca3ab4c4bba5fcf",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "mosaic-filter-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-filter-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-safeguard-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-safeguard-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 4,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "913b959ab088c83f545f8b9999eba2830fbe7f31e5e163eeb767349f9455995e",
+      "elapsed_ms": 10858,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 721,
+        "output_tokens": 420,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "c8667cd965f6aff3f9f7ba0bdfb146884366bfcff1592b550f7f93756d14d949",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "mosaic-factor-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-factor-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "mosaic-examples-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "mosaic-examples-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 5,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "24ee9e780a4440e0a6c1f17f7e1611567c004c2fea077c6d07be637cb33a0141",
+      "elapsed_ms": 11527,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 721,
+        "output_tokens": 383,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "ff5420055ed92c12adf4ec4675656c1d8e3a75e8c0b3252b7b9b0cb0362c2f06",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-size-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-size-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "aed-replay-gain-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-replay-gain-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 6,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "71451746e2647ab2c12c9c4f03bed29a1b04c6910b032c1f6e4bdddf8d30d3af",
+      "elapsed_ms": 13337,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 498,
+        "output_tokens": 541,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "d08059fd06254b3984689db5563c4399682103b24f9fedab313a188912d3a2a5",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-failure-scope-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-failure-scope-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "aed-record-fields-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-record-fields-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 7,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "21adf4b1f2d42e9dcff61a74597a58f00cab14c61caafc673ef23550b26a8f4d",
+      "elapsed_ms": 8473,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 750,
+        "output_tokens": 410,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "dc954345b5dc5bdd9f00ddfa1b57da22b18f9ce256f7f82f7dc8530c45801be9",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "aed-pair-versus-run-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "aed-pair-versus-run-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-boundary-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-boundary-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 8,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "54857312a08ac9ad1a2207e4f90555dc0024b747530baaa2ae73d5836f5f8d89",
+      "elapsed_ms": 15607,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 685,
+        "output_tokens": 712,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "73c69ae01fdf1ce18bfc619a1b7ca1da2cf3fd672dc1b163533bdf696d64ed19",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "bench-complexity-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-complexity-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-bindings-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-bindings-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "batch": 9,
+      "role": "solo",
+      "status": "COMPLETE",
+      "prompt_sha256": "28f1f0cbfa000d28df40074c82bfdcc90b27b4da3cbd5738438543dfa69f8a80",
+      "elapsed_ms": 13511,
+      "provider_elapsed_ms": null,
+      "usage": {
+        "input_tokens": 549,
+        "output_tokens": 632,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "model": "glm-5.3-flash",
+      "response_sha256": "02a6ea9a7a45a5b6d5f1f987a1a1eb57dfbfb45687b1023e5049b2400297f338",
+      "reason": null,
+      "worker_status": null,
+      "labels": [
+        {
+          "id": "bench-runtime-events-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-runtime-events-no",
+          "decision": "NOT_SUPPORTED"
+        },
+        {
+          "id": "bench-semantics-yes",
+          "decision": "SUPPORTED"
+        },
+        {
+          "id": "bench-semantics-no",
+          "decision": "NOT_SUPPORTED"
+        }
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "batch": 0,
+      "task_ids": [
+        "htn-dual-layer",
+        "htn-rebuild"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 8523,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "htn-dual-layer",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-dual-layer-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-dual-layer-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "htn-rebuild",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-rebuild-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-rebuild-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 1,
+      "task_ids": [
+        "htn-benchmarks",
+        "htn-readiness"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 15410,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "htn-benchmarks",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-benchmarks-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-benchmarks-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "htn-readiness",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-readiness-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-readiness-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 2,
+      "task_ids": [
+        "htn-waves",
+        "mosaic-acl"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 10838,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "htn-waves",
+          "paper_id": "2610.22195",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "htn-waves-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "htn-waves-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "mosaic-acl",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-acl-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-acl-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 3,
+      "task_ids": [
+        "mosaic-filter",
+        "mosaic-safeguard"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 6948,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "mosaic-filter",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-filter-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-filter-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "mosaic-safeguard",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-safeguard-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-safeguard-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 4,
+      "task_ids": [
+        "mosaic-factor",
+        "mosaic-examples"
+      ],
+      "predeclared_risk": true,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 10859,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "mosaic-factor",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-factor-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-factor-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "mosaic-examples",
+          "paper_id": "2610.30418",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "mosaic-examples-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "mosaic-examples-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 5,
+      "task_ids": [
+        "aed-size",
+        "aed-replay-gain"
+      ],
+      "predeclared_risk": true,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 11527,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "aed-size",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-size-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-size-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "aed-replay-gain",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-replay-gain-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-replay-gain-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 6,
+      "task_ids": [
+        "aed-failure-scope",
+        "aed-record-fields"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 13338,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "aed-failure-scope",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-failure-scope-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-failure-scope-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "aed-record-fields",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-record-fields-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-record-fields-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 7,
+      "task_ids": [
+        "aed-pair-versus-run",
+        "bench-boundary"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 8473,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "aed-pair-versus-run",
+          "paper_id": "2609.40111",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "aed-pair-versus-run-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "aed-pair-versus-run-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "bench-boundary",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-boundary-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-boundary-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 8,
+      "task_ids": [
+        "bench-complexity",
+        "bench-bindings"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 15607,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "bench-complexity",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-complexity-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-complexity-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "bench-bindings",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-bindings-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-bindings-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    },
+    {
+      "batch": 9,
+      "task_ids": [
+        "bench-runtime-events",
+        "bench-semantics"
+      ],
+      "predeclared_risk": false,
+      "escalated": false,
+      "requested_escalation": false,
+      "call_count": 1,
+      "wall_ms": 13511,
+      "complete": true,
+      "tasks": [
+        {
+          "task_id": "bench-runtime-events",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-runtime-events-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-runtime-events-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        },
+        {
+          "task_id": "bench-semantics",
+          "paper_id": "2609.11028",
+          "correct_claims": 2,
+          "rejected_false_supported": 1,
+          "false_supported": 0,
+          "abstentions": 0,
+          "blocked": false,
+          "verified": true,
+          "decisions": [
+            {
+              "id": "bench-semantics-yes",
+              "expected": "SUPPORTED",
+              "observed": "SUPPORTED"
+            },
+            {
+              "id": "bench-semantics-no",
+              "expected": "NOT_SUPPORTED",
+              "observed": "NOT_SUPPORTED"
+            }
+          ]
+        }
+      ],
+      "oracle_verified": true
+    }
+  ],
+  "caveats": [
+    "The 20 tasks contain distinct paper paragraphs but share four source papers",
+    "Two claim labels per task are author-generated in advance; model never receives labels",
+    "Two-task batches mean per-task independent latency distributions cannot be inferred",
+    "Role calls use the same model family and no independent human expert adjudication",
+    "Budget differences A/B/C are intentional tradeoff rather than fixed-cost comparison",
+    "Runner CPU and RSS exclude child ZCode and tmux process resources",
+    "No arbitrary tools, production, private sources, clinical records, real Claude agent, or direct source edits",
+    "No automatic production approval; faults and incomplete results remain BLOCKED"
+  ]
+}

@@ -58,4 +58,12 @@ git diff --check
 ```
 Also run relevant build/lint for changed scripts, inspect staged files and sensitive paths, commit only research-hub, push, and verify exact-SHA CI.
 
-Evidence: [original Claude Swarm defects](../../../portfolio/2026-11-07/claude-swarm-failure-injection.md), [bounded recovery patch](../../../portfolio/2026-11-07/claude-swarm-repair-ab.md), [four-paper citation A/B](../../../portfolio/2026-11-07/source-anchored-extension.md). The live bridge pilot report must be consulted for current status and limitations.
+## Verified 20-task pilot and next gate (2026-11-07)
+
+Read the [20-task A/B/C audit](../../../portfolio/2026-11-07/claude-zcode-dag20-audit.md) before choosing the orchestration mode. The source-pinned pilot used 20 different public paragraphs (40 authored labels, four full papers): direct ZCode A = 10 completed calls; redundant fixed council B = 20; risk-adaptive Claude Swarm C = 17 completed calls after one failed worker-status attempt and targeted REWORK. All three ended 20/20 against the **author-generated** oracle; extra council calls did not improve measured accuracy. Use **direct ZCode** as the default for simple claim checks and use patched Claude Swarm only for controlled coordination/recovery experiments.
+
+The study reproduced 17/17 synthetic failure controls, a 5/5 injected tmux capture failure/recovery, and checkpoint replay (A/B/C: 10/20/17 hits, **zero new model calls**). The upstream `checkWorker` can transiently return `not_found` when the session disappears between tmux checks; the **lab coordinator only** may retry that status **up to three times**, then fail closed. Never interpret an arbitrary `.done` or `.exit` as externally verified success. The raw worker markers and checkpoint files are same-UID writable, so no security guarantee is implied.
+
+**The production gate is still unmet:** no independent blinded expert labels, no full child-process CPU/RAM/IO budget, no demonstrated advantage over the cheaper direct path, no malicious-worker sandbox or distributed crash-proof coordinator. Do not enable unattended worker tools or change target projects. Future experiments must add genuinely new evidence, not rerun these accepted batches.
+
+Evidence: [original Claude Swarm defects](../../../portfolio/2026-11-07/claude-swarm-failure-injection.md), [bounded recovery patch](../../../portfolio/2026-11-07/claude-swarm-repair-ab.md), [four-paper citation A/B](../../../portfolio/2026-11-07/source-anchored-extension.md).

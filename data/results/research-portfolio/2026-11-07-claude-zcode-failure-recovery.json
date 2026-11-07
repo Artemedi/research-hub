@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-07",
+  "study": "Claude Swarm bounded failure/recovery injection",
+  "source_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "cases_total": 17,
+  "matched_oracle": 17,
+  "cases": [
+    {
+      "id": "nonzero_exit_does_not_complete",
+      "actual": "crashed",
+      "expected": "crashed",
+      "matched": true,
+      "note": "An exit-7 mock with a done marker must not count as success"
+    },
+    {
+      "id": "failed_worker_dirty_progress_preserved",
+      "actual": "uncommitted worker progress\n",
+      "expected": "uncommitted worker progress\n",
+      "matched": true,
+      "note": "Crash does not silently remove a partial file"
+    },
+    {
+      "id": "stale_lock_blocks_new_worker",
+      "actual": true,
+      "expected": true,
+      "matched": true,
+      "note": "File lock remains until recovery explicitly releases it"
+    },
+    {
+      "id": "same_feature_retry_rejected",
+      "actual": false,
+      "expected": false,
+      "matched": true,
+      "note": "Cannot destroy active dirty worktree by retrying feature id"
+    },
+    {
+      "id": "same_feature_dirty_retained",
+      "actual": true,
+      "expected": true,
+      "matched": true,
+      "note": "Worktree data is intact after rejected retry"
+    },
+    {
+      "id": "checkpoint_matches_original",
+      "actual": "61d9b3088f305e29aaf59f0fc8e50063d5a3391f242982dd94ea7eb20dc6ba77",
+      "expected": "61d9b3088f305e29aaf59f0fc8e50063d5a3391f242982dd94ea7eb20dc6ba77",
+      "matched": true,
+      "note": "Owner checkpoint before explicit clean"
+    },
+    {
+      "id": "explicit_lock_recovery",
+      "actual": true,
+      "expected": true,
+      "matched": true,
+      "note": "Manual release allows new worker to claim file"
+    },
+    {
+      "id": "failed_exit_marker_is_7",
+      "actual": "7",
+      "expected": "7",
+      "matched": true,
+      "note": "Shell observes actual nonzero CLI exit"
+    },
+    {
+      "id": "failed_worker_done_exists",
+      "actual": true,
+      "expected": true,
+      "matched": true,
+      "note": "Presence of done alone is not sufficient for acceptance"
+    },
+    {
+      "id": "forged_exit_can_fool_manager",
+      "actual": "completed",
+      "expected": "completed",
+      "matched": true,
+      "note": "Same-UID worker could rewrite its exit file; security gap remains"
+    },
+    {
+      "id": "external_oracle_rejects_false_success",
+      "actual": false,
+      "expected": false,
+      "matched": true,
+      "note": "Model-independent checker refuses completion with no validated result"
+    },
+    {
+      "id": "new_unique_worker_completes",
+      "actual": "completed",
+      "expected": "completed",
+      "matched": true,
+      "note": "Explicitly new task id can recover without resetting crashed worktree"
+    },
+    {
+      "id": "oracle_correct_result",
+      "actual": "[{\"id\":\"case-yes\",\"decision\":\"SUPPORTED\"},{\"id\":\"case-no\",\"decision\":\"NOT_SUPPORTED\"}]",
+      "expected": "[{\"id\":\"case-yes\",\"decision\":\"SUPPORTED\"},{\"id\":\"case-no\",\"decision\":\"NOT_SUPPORTED\"}]",
+      "matched": true,
+      "note": "External fixture oracle verifies both outcomes"
+    },
+    {
+      "id": "accepted_id_duplicate_rejected",
+      "actual": false,
+      "expected": false,
+      "matched": true,
+      "note": "A worktree that already exists prevents unverified duplicate processing"
+    },
+    {
+      "id": "one_evidence_file_only",
+      "actual": 1,
+      "expected": 1,
+      "matched": true,
+      "note": "Only one result file is accepted after recovery"
+    },
+    {
+      "id": "main_repo_head_unchanged",
+      "actual": "d6ecb4a4cc9be97c2c4fcd40ecb8f4b323644ed1",
+      "expected": "d6ecb4a4cc9be97c2c4fcd40ecb8f4b323644ed1",
+      "matched": true,
+      "note": "Main synthetic Git branch unchanged"
+    },
+    {
+      "id": "failed_dirty_still_available_after_success",
+      "actual": true,
+      "expected": true,
+      "matched": true,
+      "note": "Recovery cannot silently destroy prior worker progress"
+    }
+  ],
+  "independent_oracle": "synthetic mock exit codes, FS content SHA, Git refs, external fixed JSON",
+  "model_calls": 0,
+  "real_project_changes": 0,
+  "status": "BOUNDED_RECOVERY_REPRODUCED",
+  "limitations": [
+    "One local Unix UID; worker can forge own exit/done marker",
+    "Manual explicit releaseAll and new task ID; not automatic fault-tolerant scheduler",
+    "No distributed crash recovery, power loss, retries, or concurrent file races",
+    "No real model, credentials, production repository or private data",
+    "Original dirty worktree is retained until separate owner-approved cleanup"
+  ]
+}

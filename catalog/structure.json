@@ -1680,6 +1680,69 @@
       "title": "Direct ZCode versus patched Claude Swarm routing of eight public-source claims",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/claude-zcode-dag20-audit.md",
+      "title": "20 distinct public research tasks: direct ZCode, fixed council and adaptive Claude Swarm",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-tasks20-manifest.json",
+      "title": "Source-pinned twenty task manifest with author-labeled claims",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-20-a.json",
+      "title": "Twenty research tasks with direct single ZCode calls",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-20-b.json",
+      "title": "Twenty research tasks with a two-call fixed ZCode council",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-20-c-initial.json",
+      "title": "Initial adaptive Claude Swarm run containing blocked worker-status result",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-20-c.json",
+      "title": "Reworked adaptive Claude Swarm twenty-task results",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-dag20-summary.json",
+      "title": "A B C comparison with input equality, token and failure costs and checkpoint recovery",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-failure-recovery.json",
+      "title": "Seventeen synthetic crash, dirty worktree, lock and duplicate-worker controls",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-zcode-tmux-race.json",
+      "title": "Five controls for transient tmux capture race and bounded worker-status retry",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

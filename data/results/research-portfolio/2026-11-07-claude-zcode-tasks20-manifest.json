@@ -1,0 +1,476 @@
+{
+  "date": "2026-11-07",
+  "purpose": "20 distinct research claim-evidence tasks, two authored claims per source passage",
+  "oracle_kind": "author-written labels before ZCode; not blinded expert adjudication",
+  "papers": {
+    "2610.22195": {
+      "url": "https://arxiv.org/html/2610.22195",
+      "html_sha256": "db0746b460b880aab51e9a9d3878a32ae6690bacc3807774ba581963b970f7db"
+    },
+    "2610.30418": {
+      "url": "https://arxiv.org/html/2610.30418",
+      "html_sha256": "80b01bba9c64a4bee86dec3badaccc39e8e801121c0610544affb5e67cfe190a"
+    },
+    "2609.40111": {
+      "url": "https://arxiv.org/html/2609.40111",
+      "html_sha256": "31af8d0a1d4da3a4c4184def8fed7e6f76a6483005804f0868133b682d7aab14"
+    },
+    "2609.11028": {
+      "url": "https://arxiv.org/html/2609.11028",
+      "html_sha256": "36ae9bbdd32fb65d502a9644f7e2905b166cdc620d843b8724ce47b510da74b6"
+    }
+  },
+  "task_count": 20,
+  "source_passages_distinct": 20,
+  "claims_total": 40,
+  "gold_supported": 20,
+  "gold_not_supported": 20,
+  "tasks": [
+    {
+      "id": "htn-dual-layer",
+      "paper": "2610.22195",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "a9226d25863bc7236f7e1442de13222da8edcf45a1a68c69f7b92731ea7500af",
+      "paragraph_length": 442,
+      "gold": {
+        "htn-dual-layer-yes": "SUPPORTED",
+        "htn-dual-layer-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "htn-dual-layer-yes",
+          "claim": "Global task planning and local multi-worker subtask execution are separated."
+        },
+        {
+          "id": "htn-dual-layer-no",
+          "claim": "Every worker performs global task planning; no local orchestrator exists."
+        }
+      ]
+    },
+    {
+      "id": "htn-rebuild",
+      "paper": "2610.22195",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "05138c1d449323d4aecc97a225a3232f290017667d749bd2b4b7d40ad1a733ec",
+      "paragraph_length": 397,
+      "gold": {
+        "htn-rebuild-yes": "SUPPORTED",
+        "htn-rebuild-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "htn-rebuild-yes",
+          "claim": "Rebuilding the task network retains supported evidence from completed work."
+        },
+        {
+          "id": "htn-rebuild-no",
+          "claim": "Rebuilding discards all evidence from previously completed subtasks."
+        }
+      ]
+    },
+    {
+      "id": "htn-benchmarks",
+      "paper": "2610.22195",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "9c2443bb3c10ac13e87faf7ba17c756c7ea746dc553e5ecbac14c35ad3b785e4",
+      "paragraph_length": 553,
+      "gold": {
+        "htn-benchmarks-yes": "SUPPORTED",
+        "htn-benchmarks-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "htn-benchmarks-yes",
+          "claim": "The evaluation spans five benchmarks including web research and scientific reasoning."
+        },
+        {
+          "id": "htn-benchmarks-no",
+          "claim": "The evaluation only measures one benchmark from a single domain."
+        }
+      ]
+    },
+    {
+      "id": "htn-readiness",
+      "paper": "2610.22195",
+      "section": "3 Method",
+      "section_id": "S3",
+      "paragraph_sha256": "41b671904ca768905e1f83b25b2dfcb6a6396d2ef38431791aa987f88dc4252e",
+      "paragraph_length": 430,
+      "gold": {
+        "htn-readiness-yes": "SUPPORTED",
+        "htn-readiness-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "htn-readiness-yes",
+          "claim": "A leaf must be pending and have completed prerequisites before execution."
+        },
+        {
+          "id": "htn-readiness-no",
+          "claim": "A leaf may execute while its required prerequisites remain pending."
+        }
+      ]
+    },
+    {
+      "id": "htn-waves",
+      "paper": "2610.22195",
+      "section": "3 Method",
+      "section_id": "S3",
+      "paragraph_sha256": "8cbbe81b058a8aa7afd6be81eec711f8a87e984f4bb578f70115d382da33eee0",
+      "paragraph_length": 569,
+      "gold": {
+        "htn-waves-yes": "SUPPORTED",
+        "htn-waves-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "htn-waves-yes",
+          "claim": "Ready executable leaves are dispatched in a parallel wave before the next planning round."
+        },
+        {
+          "id": "htn-waves-no",
+          "claim": "The next planning round begins before the current execution wave settles."
+        }
+      ]
+    },
+    {
+      "id": "mosaic-acl",
+      "paper": "2610.30418",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "9022b470c109e501a1185abe75782391a6a620097e28656c978ddd3eba62f6b8",
+      "paragraph_length": 364,
+      "gold": {
+        "mosaic-acl-yes": "SUPPORTED",
+        "mosaic-acl-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "mosaic-acl-yes",
+          "claim": "Compliance with individual document permissions does not preclude revealing an unauthorized composite conclusion."
+        },
+        {
+          "id": "mosaic-acl-no",
+          "claim": "Access controls on each document make inferential disclosure impossible."
+        }
+      ]
+    },
+    {
+      "id": "mosaic-filter",
+      "paper": "2610.30418",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "a3e67c6aa3389b51c23d08c7ca8d4b9cf6869e1dc282ed4acf60cdec7f728451",
+      "paragraph_length": 404,
+      "gold": {
+        "mosaic-filter-yes": "SUPPORTED",
+        "mosaic-filter-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "mosaic-filter-yes",
+          "claim": "Filtering documents alone may leave information leakage through combinations of authorized facts."
+        },
+        {
+          "id": "mosaic-filter-no",
+          "claim": "Retrieval filtering always eliminates compositional confidentiality risks."
+        }
+      ]
+    },
+    {
+      "id": "mosaic-safeguard",
+      "paper": "2610.30418",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "ac4da72f1571244419a8e2665de0b2dcbf9f07d85a8e9a0a89eed6d07648c0e3",
+      "paragraph_length": 411,
+      "gold": {
+        "mosaic-safeguard-yes": "SUPPORTED",
+        "mosaic-safeguard-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "mosaic-safeguard-yes",
+          "claim": "Under both tested safeguards roughly one-third of simulated answers still exposed the composite."
+        },
+        {
+          "id": "mosaic-safeguard-no",
+          "claim": "Both safeguards eliminated every simulated composite disclosure."
+        }
+      ]
+    },
+    {
+      "id": "mosaic-factor",
+      "paper": "2610.30418",
+      "section": "3 Benchmark and Experimental Design",
+      "section_id": "S3",
+      "paragraph_sha256": "109efd25e04daae529c242dcadcddd32b37f84761d7f6909a655267e04d321e8",
+      "paragraph_length": 630,
+      "gold": {
+        "mosaic-factor-yes": "SUPPORTED",
+        "mosaic-factor-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "mosaic-factor-yes",
+          "claim": "Three intents and three binary factors produce 24 configurations."
+        },
+        {
+          "id": "mosaic-factor-no",
+          "claim": "The benchmark experiment has only eight configurations with no intent variation."
+        }
+      ]
+    },
+    {
+      "id": "mosaic-examples",
+      "paper": "2610.30418",
+      "section": "3 Benchmark and Experimental Design",
+      "section_id": "S3",
+      "paragraph_sha256": "70869ed8cbaf3c710a18308db4621cedf92f9f4cee94a971782b082bc76201f8",
+      "paragraph_length": 746,
+      "gold": {
+        "mosaic-examples-yes": "SUPPORTED",
+        "mosaic-examples-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "mosaic-examples-yes",
+          "claim": "The thirty generated examples are distributed ten each across three domains."
+        },
+        {
+          "id": "mosaic-examples-no",
+          "claim": "All thirty examples are drawn from actual classified records."
+        }
+      ]
+    },
+    {
+      "id": "aed-size",
+      "paper": "2609.40111",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "87f5a6391afd7e4049693d634fa83b3b9900b3e132626f67870b8f316b74412f",
+      "paragraph_length": 636,
+      "gold": {
+        "aed-size-yes": "SUPPORTED",
+        "aed-size-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "aed-size-yes",
+          "claim": "AED is described as containing 50,228 error-diagnosis pairs across 33 environments."
+        },
+        {
+          "id": "aed-size-no",
+          "claim": "The reported AED release contains only 5,228 error-diagnosis pairs."
+        }
+      ]
+    },
+    {
+      "id": "aed-replay-gain",
+      "paper": "2609.40111",
+      "section": "1 Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "24ada76d4f8c660119b368d61d47bf411172ca1218c7eebf5646d3b1b8129232",
+      "paragraph_length": 749,
+      "gold": {
+        "aed-replay-gain-yes": "SUPPORTED",
+        "aed-replay-gain-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "aed-replay-gain-yes",
+          "claim": "First-proposal correction improved matched replay pass rate by 32.7 percentage points."
+        },
+        {
+          "id": "aed-replay-gain-no",
+          "claim": "First-proposal correction reduced matched replay pass rate by 32.7 percentage points."
+        }
+      ]
+    },
+    {
+      "id": "aed-failure-scope",
+      "paper": "2609.40111",
+      "section": "3 Agent Error Dataset",
+      "section_id": "S3",
+      "paragraph_sha256": "45dc592fb9b457faf25d00f11c125b6650c93db2ba9f29cce6d3e5f472d58bc1",
+      "paragraph_length": 337,
+      "gold": {
+        "aed-failure-scope-yes": "SUPPORTED",
+        "aed-failure-scope-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "aed-failure-scope-yes",
+          "claim": "An unsuccessful terminal outcome alone does not identify a trace-supported avoidable agent decision."
+        },
+        {
+          "id": "aed-failure-scope-no",
+          "claim": "An unsuccessful terminal outcome automatically pinpoints the precise avoidable agent action."
+        }
+      ]
+    },
+    {
+      "id": "aed-record-fields",
+      "paper": "2609.40111",
+      "section": "3 Agent Error Dataset",
+      "section_id": "S3",
+      "paragraph_sha256": "c5ac1dd914f09391fe4388a11eea6142cc9ccdf5956e3fe34a34161b671ba359",
+      "paragraph_length": 657,
+      "gold": {
+        "aed-record-fields-yes": "SUPPORTED",
+        "aed-record-fields-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "aed-record-fields-yes",
+          "claim": "Each record links a failed trace with a diagnosis, proposed correction and review data."
+        },
+        {
+          "id": "aed-record-fields-no",
+          "claim": "AED stores only final rewards and contains no action-observation traces."
+        }
+      ]
+    },
+    {
+      "id": "aed-pair-versus-run",
+      "paper": "2609.40111",
+      "section": "3 Agent Error Dataset",
+      "section_id": "S3",
+      "paragraph_sha256": "bff04f803880e4d9f3a4afc7be168e50169f63e9424c3b41b416d77dc9d5bbc7",
+      "paragraph_length": 918,
+      "gold": {
+        "aed-pair-versus-run-yes": "SUPPORTED",
+        "aed-pair-versus-run-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "aed-pair-versus-run-yes",
+          "claim": "Additional diagnoses of a single failed run increase the pair count but not run count."
+        },
+        {
+          "id": "aed-pair-versus-run-no",
+          "claim": "Every new diagnosis necessarily corresponds to a new independently executed run."
+        }
+      ]
+    },
+    {
+      "id": "bench-boundary",
+      "paper": "2609.11028",
+      "section": "1. Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "6cabfc0d7ad06f7c0f1c4ae0e09d9c823a18be439d2221d70e088138d4b4f85b",
+      "paragraph_length": 571,
+      "gold": {
+        "bench-boundary-yes": "SUPPORTED",
+        "bench-boundary-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "bench-boundary-yes",
+          "claim": "Even a mathematically correct scoring function may report a misleading result if its inputs were compromised."
+        },
+        {
+          "id": "bench-boundary-no",
+          "claim": "A mathematically correct score formula alone guarantees benchmark reward integrity."
+        }
+      ]
+    },
+    {
+      "id": "bench-complexity",
+      "paper": "2609.11028",
+      "section": "1. Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "f3d748042313f4a4f9ce3f713b0d047b48b5af4470a01e2663ea677189a34682",
+      "paragraph_length": 901,
+      "gold": {
+        "bench-complexity-yes": "SUPPORTED",
+        "bench-complexity-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "bench-complexity-yes",
+          "claim": "A useful lifecycle abstraction must be finite yet detailed enough for recorded evidence to check."
+        },
+        {
+          "id": "bench-complexity-no",
+          "claim": "The framework models every container operation because doing so is computationally trivial."
+        }
+      ]
+    },
+    {
+      "id": "bench-bindings",
+      "paper": "2609.11028",
+      "section": "1. Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "40d3dcfe5696af506dca3a4d4af6f854ae055b070cbd73ffdec559ea77c0ca51",
+      "paragraph_length": 623,
+      "gold": {
+        "bench-bindings-yes": "SUPPORTED",
+        "bench-bindings-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "bench-bindings-yes",
+          "claim": "BenchShield derives infrastructure facts from backend configuration rather than replacing the backend."
+        },
+        {
+          "id": "bench-bindings-no",
+          "claim": "BenchShield requires replacing the entire benchmark backend with a new one."
+        }
+      ]
+    },
+    {
+      "id": "bench-runtime-events",
+      "paper": "2609.11028",
+      "section": "1. Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "d54473d6028f029b2a3c40ad2b4204999894e9430e5274d6635e7b67ff5c9e99",
+      "paragraph_length": 676,
+      "gold": {
+        "bench-runtime-events-yes": "SUPPORTED",
+        "bench-runtime-events-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "bench-runtime-events-yes",
+          "claim": "Runtime lifecycle checking processes structural events as they arrive to identify violations early."
+        },
+        {
+          "id": "bench-runtime-events-no",
+          "claim": "Structural events are checked only after reward calculation has finished."
+        }
+      ]
+    },
+    {
+      "id": "bench-semantics",
+      "paper": "2609.11028",
+      "section": "1. Introduction",
+      "section_id": "S1",
+      "paragraph_sha256": "9889e8d63a67f81887440977745fbd21968e18714f1fb0ed6774c9bf1dd5b438",
+      "paragraph_length": 440,
+      "gold": {
+        "bench-semantics-yes": "SUPPORTED",
+        "bench-semantics-no": "NOT_SUPPORTED"
+      },
+      "claims": [
+        {
+          "id": "bench-semantics-yes",
+          "claim": "The model enforces six structural invariants but records a seventh semantic obligation without enforcing it."
+        },
+        {
+          "id": "bench-semantics-no",
+          "claim": "The model checker fully enforces the seventh semantic obligation along with the six structural ones."
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "The complete source HTML is verified by SHA and stays outside published Git",
+    "Only 20 deliberately selected paragraphs; task labels are author-written",
+    "Model input excludes gold labels; no private or clinical records",
+    "Multiple tasks from each paper may share context and are not independent sampling units"
+  ]
+}
