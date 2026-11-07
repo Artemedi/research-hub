@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "input_sha256": "6a5c7c2562fb380117ec17882283e4a128968c8f0eec3aeb49316b6771d068df",
+  "wire_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "native_tool_use_and_continue_valid": 2,
+  "strict_final_shape_correct": 1,
+  "final_result_content_correct": 2,
+  "mutation_rejected": true,
+  "untrusted_tools_executed": 0,
+  "status": "PASS_BOUND_TWO_NATIVE_TOOL_RESULT_ROUNDTRIPS_WITH_FORMAT_DEVIATION",
+  "limitations": [
+    "Uses Anthropic native provider via ZCode, not DSH DeepSeek adapter",
+    "Tool results are hardcoded synthetic constants; actual tools never run",
+    "One final response returned a nested object instead of preregistered scalar",
+    "Two smoke scenarios provide no reliability or cost confidence"
+  ]
+}

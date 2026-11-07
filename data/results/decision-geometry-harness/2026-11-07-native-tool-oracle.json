@@ -1,0 +1,866 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "serializer_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "fixture_sha256": "5f34fbc87c3b8f3df342696f1f1bc904f1114ed54b916c064a866ec544052024",
+  "wire_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "native_result_sha256": "8fc733aed0ada293211e6c0bc303f311850e907e4c509407ad95736a04d07f96",
+  "schema_mutation_rejected": true,
+  "required_argument_mutation_rejected": true,
+  "variant": {
+    "A": {
+      "calls_attempted": 20,
+      "calls_complete": 20,
+      "calls_blocked": 0,
+      "decisions": 20,
+      "native_tool_use": 17,
+      "name_correct": 19,
+      "arguments_correct": 20,
+      "schema_valid": 20,
+      "exact_correct": 19,
+      "no_tool_total": 3,
+      "spurious_tool_calls_on_none": 0,
+      "p50_elapsed_ms": 6616.75,
+      "p95_elapsed_ms": 8030.8,
+      "provider_usage": {
+        "input_tokens": 2508,
+        "output_tokens": 1424,
+        "cache_read_input_tokens": 35136
+      },
+      "local_child_cpu_s": 2.848,
+      "local_child_io_blocks": 0
+    },
+    "B": {
+      "calls_attempted": 20,
+      "calls_complete": 19,
+      "calls_blocked": 1,
+      "decisions": 19,
+      "native_tool_use": 16,
+      "name_correct": 19,
+      "arguments_correct": 19,
+      "schema_valid": 19,
+      "exact_correct": 19,
+      "no_tool_total": 3,
+      "spurious_tool_calls_on_none": 0,
+      "p50_elapsed_ms": 6077.6,
+      "p95_elapsed_ms": 8019.9,
+      "provider_usage": {
+        "input_tokens": 2357,
+        "output_tokens": 1168,
+        "cache_read_input_tokens": 33408
+      },
+      "local_child_cpu_s": 2.874,
+      "local_child_io_blocks": 0
+    }
+  },
+  "paired": {
+    "paired_tasks": 19,
+    "both_exact": 18,
+    "only_A": 0,
+    "only_B": 1,
+    "both_wrong": 0,
+    "different_tool": 1,
+    "different_arguments": 0
+  },
+  "scored": [
+    {
+      "id": "none-1",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": false,
+      "expected_none": true,
+      "chosen_name": "NONE",
+      "chosen_args": {},
+      "model_txt": "NONE"
+    },
+    {
+      "id": "none-1",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": false,
+      "expected_none": true,
+      "chosen_name": "NONE",
+      "chosen_args": {},
+      "model_txt": "NONE"
+    },
+    {
+      "id": "pg-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_pg_relation",
+      "chosen_args": {
+        "relation": "audit_log",
+        "schema": "demo"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "pg-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_pg_relation",
+      "chosen_args": {
+        "relation": "audit_log",
+        "schema": "demo"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "job-1",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "get_job_status",
+      "chosen_args": {
+        "job_id": "job-104"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "job-1",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "get_job_status",
+      "chosen_args": {
+        "job_id": "job-104"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sql-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_sql_plan",
+      "chosen_args": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sql-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_sql_plan",
+      "chosen_args": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "job-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "get_job_status",
+      "chosen_args": {
+        "job_id": "job-007"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "job-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "get_job_status",
+      "chosen_args": {
+        "job_id": "job-007"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "file-2",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "read_file_range",
+      "chosen_args": {
+        "end_line": 42,
+        "path": "src/agent.ts",
+        "start_line": 35
+      },
+      "model_txt": null
+    },
+    {
+      "id": "file-2",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "read_file_range",
+      "chosen_args": {
+        "end_line": 42,
+        "path": "src/agent.ts",
+        "start_line": 35
+      },
+      "model_txt": null
+    },
+    {
+      "id": "none-2",
+      "variant": "A",
+      "name_correct": false,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": false,
+      "native_tool_use": false,
+      "expected_none": true,
+      "chosen_name": "TEXT",
+      "chosen_args": {},
+      "model_txt": "ПРОЧЬ"
+    },
+    {
+      "id": "none-2",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": false,
+      "expected_none": true,
+      "chosen_name": "NONE",
+      "chosen_args": {},
+      "model_txt": "NONE"
+    },
+    {
+      "id": "artifact-1",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "list_experiment_artifacts",
+      "chosen_args": {
+        "kind": "report",
+        "study": "agent-sandbox"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "artifact-1",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "list_experiment_artifacts",
+      "chosen_args": {
+        "kind": "report",
+        "study": "agent-sandbox"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "pg-1",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_pg_relation",
+      "chosen_args": {
+        "relation": "events",
+        "schema": "public"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "pg-1",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_pg_relation",
+      "chosen_args": {
+        "relation": "events",
+        "schema": "public"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sum-2",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "sum_numbers",
+      "chosen_args": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sum-2",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "sum_numbers",
+      "chosen_args": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "model_txt": null
+    },
+    {
+      "id": "runbook-1",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "find_runbook",
+      "chosen_args": {
+        "revision": "v1",
+        "topic": "backup-check"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "runbook-1",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "find_runbook",
+      "chosen_args": {
+        "revision": "v1",
+        "topic": "backup-check"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "runbook-2",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "find_runbook",
+      "chosen_args": {
+        "revision": "v2",
+        "topic": "replica-delay"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "runbook-2",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "find_runbook",
+      "chosen_args": {
+        "revision": "v2",
+        "topic": "replica-delay"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sum-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "sum_numbers",
+      "chosen_args": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sum-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "sum_numbers",
+      "chosen_args": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sql-1",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_sql_plan",
+      "chosen_args": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "sql-1",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "inspect_sql_plan",
+      "chosen_args": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "artifact-2",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "list_experiment_artifacts",
+      "chosen_args": {
+        "kind": "data",
+        "study": "schema-drift"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "artifact-2",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "list_experiment_artifacts",
+      "chosen_args": {
+        "kind": "data",
+        "study": "schema-drift"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "runbook-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "find_runbook",
+      "chosen_args": {
+        "revision": "v3",
+        "topic": "vacuum-stall"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "runbook-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "find_runbook",
+      "chosen_args": {
+        "revision": "v3",
+        "topic": "vacuum-stall"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "none-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": false,
+      "expected_none": true,
+      "chosen_name": "NONE",
+      "chosen_args": {},
+      "model_txt": "NONE"
+    },
+    {
+      "id": "none-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": false,
+      "expected_none": true,
+      "chosen_name": "NONE",
+      "chosen_args": {},
+      "model_txt": "NONE"
+    },
+    {
+      "id": "file-3",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "read_file_range",
+      "chosen_args": {
+        "end_line": 5,
+        "path": "README.md",
+        "start_line": 1
+      },
+      "model_txt": null
+    },
+    {
+      "id": "file-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "read_file_range",
+      "chosen_args": {
+        "end_line": 5,
+        "path": "README.md",
+        "start_line": 1
+      },
+      "model_txt": null
+    },
+    {
+      "id": "artifact-3",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "list_experiment_artifacts",
+      "chosen_args": {
+        "kind": "experiment",
+        "study": "kv-order"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "job-2",
+      "variant": "B",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "get_job_status",
+      "chosen_args": {
+        "job_id": "job-211"
+      },
+      "model_txt": null
+    },
+    {
+      "id": "job-2",
+      "variant": "A",
+      "name_correct": true,
+      "args_correct": true,
+      "schema_valid": true,
+      "exact": true,
+      "native_tool_use": true,
+      "expected_none": false,
+      "chosen_name": "get_job_status",
+      "chosen_args": {
+        "job_id": "job-211"
+      },
+      "model_txt": null
+    }
+  ],
+  "pairs": [
+    {
+      "id": "none-1",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": false,
+      "B_native": false
+    },
+    {
+      "id": "pg-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "job-1",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "sql-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "job-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "file-2",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "none-2",
+      "A_exact": false,
+      "B_exact": true,
+      "tool_changed": true,
+      "args_changed": false,
+      "A_native": false,
+      "B_native": false
+    },
+    {
+      "id": "artifact-1",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "pg-1",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "sum-2",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "runbook-1",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "runbook-2",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "sum-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "sql-1",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "artifact-2",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "runbook-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "none-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": false,
+      "B_native": false
+    },
+    {
+      "id": "file-3",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    },
+    {
+      "id": "job-2",
+      "A_exact": true,
+      "B_exact": true,
+      "tool_changed": false,
+      "args_changed": false,
+      "A_native": true,
+      "B_native": true
+    }
+  ],
+  "status": "PARTIAL_NATIVE_TOOL_USE_AB",
+  "limitations": [
+    "Real ZCode native tool_use via Anthropic Messages, NOT DSH native DeepSeek transport",
+    "Exact DSH schema converted into Anthropic input_schema, without real tool execution",
+    "One provider sample per case/variant, no fixed decoding seeds or independent human gold",
+    "Twenty authored cases and three NONE controls, not a representative production workload",
+    "A/B swaps both function order and property order",
+    "No real provider GPU metrics, no actual end-to-end agent task correctness"
+  ]
+}

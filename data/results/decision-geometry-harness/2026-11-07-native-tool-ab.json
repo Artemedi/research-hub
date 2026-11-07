@@ -1,0 +1,1266 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "experiment": "native Anthropic tool_use from pinned DSH serializer tool definitions",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "original_fixtures_sha256": "5f34fbc87c3b8f3df342696f1f1bc904f1114ed54b916c064a866ec544052024",
+  "original_dsh_wires_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "task_ids": [
+    "none-1",
+    "pg-3",
+    "job-1",
+    "sql-3",
+    "job-3",
+    "file-2",
+    "none-2",
+    "artifact-1",
+    "pg-1",
+    "sum-2",
+    "runbook-1",
+    "runbook-2",
+    "sum-3",
+    "sql-1",
+    "artifact-2",
+    "runbook-3",
+    "none-3",
+    "file-3",
+    "artifact-3",
+    "job-2"
+  ],
+  "plan_calls": 40,
+  "attempted_calls": 40,
+  "complete_calls": 39,
+  "provider_proprietary_tools_executed": 0,
+  "physical_parallelism": 1,
+  "variant_tool_definition_equivalence": true,
+  "request_model": "GLM-5.3-Flash-Trial (ZCode default)",
+  "rules": "20 tasks; paired A/B reversed order by task index; provider native tool-use; no model gold",
+  "calls": [
+    {
+      "id": "none-1",
+      "variant": "A",
+      "request_sha256": "0441677cee1a5d632bfbb68591dee33d829321bb8b5e3c887671cd92f9e36dfe",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "e125c00599aeb2c8b17c06b6a8d2b6ec25c0e5865c5eb7a94bc2902efd39bbfd",
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "response_kind": "native_no_tool_text",
+      "model_visible_text": "NONE",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1883,
+        "output_tokens": 105,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7165.1,
+      "cpu_user_s": 0.113,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "none-1",
+      "variant": "B",
+      "request_sha256": "4fd23cd96bcb1ea40028d8fdc2a37742a81b7bf22b992c9e306ce3a32bd57110",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "2c2f1d8431cb993ee24f9914a8d736918ee03f8e509a39c56c0cb2eb8963890d",
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "response_kind": "native_no_tool_text",
+      "model_visible_text": "NONE",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 1883,
+        "output_tokens": 36,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7939.5,
+      "cpu_user_s": 0.12,
+      "cpu_sys_s": 0.029,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "pg-3",
+      "variant": "B",
+      "request_sha256": "cc4e38b1ed875ab842d92327c3408e958566958c95fa7ec007b6a726e05c4271",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "0955333517baad6e2faa9981d8262e52388dc454dca084669df7224de2e45e8e",
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "relation": "audit_log",
+        "schema": "demo"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 67,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6238.7,
+      "cpu_user_s": 0.124,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "pg-3",
+      "variant": "A",
+      "request_sha256": "e8567bc08abdc8ca8e2fab2571e1d4966159ad02754575bad64e96340f1d47e6",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "e4ea32318cb6ab9b529c7c050002872e799b98a43069cb65e525df986f292981",
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "relation": "audit_log",
+        "schema": "demo"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 151,
+        "output_tokens": 71,
+        "cache_read_input_tokens": 1728,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7682.5,
+      "cpu_user_s": 0.128,
+      "cpu_sys_s": 0.026,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "job-1",
+      "variant": "A",
+      "request_sha256": "fe338103a0a87f9ed87e4d4cb8f6dd30b23bfafa0ff26420d6f3a80e79f14ebf",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "82b8ed726972f12bafb89a30a795759e657646c3c52172eba81413c0dabec7c6",
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-104"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 42,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 8099.6,
+      "cpu_user_s": 0.112,
+      "cpu_sys_s": 0.035,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "job-1",
+      "variant": "B",
+      "request_sha256": "5b085ff02d21ee971dece863da639285298baddf2a0e57abc967ec16e9cb12ab",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "6f5c1a25abf54417986c7c6fa6ebd8ff9509fd89c226f7cc2c86bcbb8376e3bd",
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-104"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 42,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6213.7,
+      "cpu_user_s": 0.109,
+      "cpu_sys_s": 0.035,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sql-3",
+      "variant": "B",
+      "request_sha256": "c63fea59245b72849394d59b6edf05d442511e3c40e39f4cac7b104e9b00c34f",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "e3aad6f5a8ee2b7e26bdeeb1050021e7a9fa5de6cd0a7bba3afc026e8dc5ecde",
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 78,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5416.5,
+      "cpu_user_s": 0.116,
+      "cpu_sys_s": 0.026,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sql-3",
+      "variant": "A",
+      "request_sha256": "48d2ab9ed86c8e68596369253159e06434aece641431976102c7ab13f9e0474c",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "43c647be8334bcc1d0bf7bad43760a6956b2f269af66c4d25b755faf8184f035",
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "DemoDb",
+        "query_id": "42"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 71,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6565.9,
+      "cpu_user_s": 0.117,
+      "cpu_sys_s": 0.024,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "job-3",
+      "variant": "A",
+      "request_sha256": "d6f7a2a1057ccc83f46e15807d3bdc71aa9134b15cf8870fb848af9678f0fd89",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "e457fe369cf74f8c7aa4fd00f7aa29203d1138111222b85b9032fbf452aa321a",
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-007"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 24,
+        "output_tokens": 56,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5364.7,
+      "cpu_user_s": 0.122,
+      "cpu_sys_s": 0.019,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "job-3",
+      "variant": "B",
+      "request_sha256": "14cece29378c96f9a73711dda328305f1885865abe45faa5f182998ce581f601",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "f2d117d137418887413d34fc5e914c5662d91947396b491b3a5c702f2e14e116",
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-007"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 24,
+        "output_tokens": 76,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 3315.8,
+      "cpu_user_s": 0.118,
+      "cpu_sys_s": 0.024,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "file-2",
+      "variant": "B",
+      "request_sha256": "37ab096b9476ee779c4a2705ed1597dab8e240b9b9542d3dbd10672cdc14dcf8",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "0c593b12520fed65bd1b9ba16f76a4b3e908176648b653f46dfcb4618422e84b",
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "end_line": 42,
+        "path": "src/agent.ts",
+        "start_line": 35
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 81,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5014.8,
+      "cpu_user_s": 0.112,
+      "cpu_sys_s": 0.033,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "file-2",
+      "variant": "A",
+      "request_sha256": "fe3670d356227e4aa80a771b62e9b4a579ba3322cc0b44cf0fcde520b5274262",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "956870c56dc7021fbaa137e3526d03b8606077fe349b20d4380180457cd86feb",
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "end_line": 42,
+        "path": "src/agent.ts",
+        "start_line": 35
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 78,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5217.1,
+      "cpu_user_s": 0.115,
+      "cpu_sys_s": 0.028,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "none-2",
+      "variant": "A",
+      "request_sha256": "891560108f8b9e4a8c091d95820714c5fdec481c28962ce9eaf8d7fc11693d20",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "a577fcf24652cf8d7427879452c5416af48cc3bd6ebb2473f2a3dbcfb126ade3",
+      "selected_tool": "TEXT",
+      "selected_arguments": {},
+      "response_kind": "native_no_tool_text",
+      "model_visible_text": "ПРОЧЬ",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 49,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5683.1,
+      "cpu_user_s": 0.119,
+      "cpu_sys_s": 0.022,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "none-2",
+      "variant": "B",
+      "request_sha256": "ad6d7942f101b7000f27efbf87a935faf553c9e2b57f492602086b8d5d374567",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "6b9371a0a9b2ba1fca9b18f4ac707471b0e8d9589ef4475f738a4008ddb3ac13",
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "response_kind": "native_no_tool_text",
+      "model_visible_text": "NONE",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 47,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6097.9,
+      "cpu_user_s": 0.11,
+      "cpu_sys_s": 0.028,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "artifact-1",
+      "variant": "B",
+      "request_sha256": "4b0f13e7aee320ae419e627df4e98c0ea0cf9c748145ef69da8d231ce323789f",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "f081ab4544518db241594c46128ab79491d8d50f6e6384c585b2d79a76d34e68",
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "kind": "report",
+        "study": "agent-sandbox"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 62,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5673.2,
+      "cpu_user_s": 0.118,
+      "cpu_sys_s": 0.022,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "artifact-1",
+      "variant": "A",
+      "request_sha256": "b57a6f447251039f8381df91f4a0bf490c6df9ca6e883a119205568738618afe",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "f2c8cd54cd0682810deb41334de6a3a8d07c8ca4252ec009acc72a004d458f99",
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "kind": "report",
+        "study": "agent-sandbox"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 75,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6638.5,
+      "cpu_user_s": 0.112,
+      "cpu_sys_s": 0.027,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "pg-1",
+      "variant": "A",
+      "request_sha256": "b9c86d93efa7cb8c6d612f50f34d1064380421ca4510c43ef8e350121d35f77c",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "f92b65a75b56971b3d152d3a713ef544efd2d6b8969bf3869623d2634bf1ff92",
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "relation": "events",
+        "schema": "public"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 54,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 4805.4,
+      "cpu_user_s": 0.109,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "pg-1",
+      "variant": "B",
+      "request_sha256": "494fc4f65ca3c018eb15f525e8207d14c7945bf011fb4f83af27cba6d322e140",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "f53942ec8de3bca2551738f4b6fac58951383cfa30951241dccd2d5ecac85725",
+      "selected_tool": "inspect_pg_relation",
+      "selected_arguments": {
+        "relation": "events",
+        "schema": "public"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 57,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 8019.9,
+      "cpu_user_s": 0.111,
+      "cpu_sys_s": 0.028,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sum-2",
+      "variant": "B",
+      "request_sha256": "59766cabbff065787eff6a134f47a2f37b8b0258092b930cade6107a3279be1c",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "d8a277e451b42a95144c1aa297d449a4fd898b4ba27e7f6a8958acf861b19293",
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 70,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5331.6,
+      "cpu_user_s": 0.115,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sum-2",
+      "variant": "A",
+      "request_sha256": "cbbb4814cc82abf4871c31071f10cf8e5650b7478732ecf7aff882289664f879",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "a1c6d23d0f8b1ecb5d55615c947efc76dd801a25d9436de210ae1e589c5af6fd",
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          10,
+          -3,
+          8
+        ]
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 62,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7226.4,
+      "cpu_user_s": 0.117,
+      "cpu_sys_s": 0.022,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "runbook-1",
+      "variant": "A",
+      "request_sha256": "1fec6837aa4380a0bad3f0e40ea6f9dd084489b0bc06c469f73ae5d8d99f6bfb",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "85fb7bca5df75f3ed8f26adbf579e7e35ce6d90677e8ef49c0a40c4425aaab72",
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "revision": "v1",
+        "topic": "backup-check"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 52,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 8030.8,
+      "cpu_user_s": 0.113,
+      "cpu_sys_s": 0.025,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "runbook-1",
+      "variant": "B",
+      "request_sha256": "33eb9618e5c8981340114689ca4080818c810ad47a910ddb12ab5442c6bb5e24",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "8b4c82b1e816252099e4723edd84d0c1e011cb47e0b79b1bc6e51cb5c2265d67",
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "revision": "v1",
+        "topic": "backup-check"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 54,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6167.1,
+      "cpu_user_s": 0.114,
+      "cpu_sys_s": 0.027,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "runbook-2",
+      "variant": "B",
+      "request_sha256": "b003247337e15c3f67e8f556b5b06b1188c4409153136c661e5b744e72bf204c",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "e8d4440530203f954f01054c9f888a544b725eb6a9a949fec847395de0afcbeb",
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "revision": "v2",
+        "topic": "replica-delay"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 29,
+        "output_tokens": 57,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5300.9,
+      "cpu_user_s": 0.112,
+      "cpu_sys_s": 0.029,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "runbook-2",
+      "variant": "A",
+      "request_sha256": "654cd8b5d7be0f154d808550b4937617ed0ff157da0fbc8b9cf65558286254a3",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "4e8a80f85c89ea13d1b5a0d607842e63024b5e7e3368517429dd16aa3fcabacb",
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "revision": "v2",
+        "topic": "replica-delay"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 29,
+        "output_tokens": 59,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6463.5,
+      "cpu_user_s": 0.11,
+      "cpu_sys_s": 0.029,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sum-3",
+      "variant": "A",
+      "request_sha256": "b85bbb7d0ca60f30213ccfe5b3ab925336d37aa7b9491b1395c0978f2b2ec8e8",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "8b0803014863e27ab4de4a937e9e850c2ee8f373ad4fb686e5204d5067df2fef",
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 29,
+        "output_tokens": 59,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 4692.0,
+      "cpu_user_s": 0.114,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sum-3",
+      "variant": "B",
+      "request_sha256": "d47dee06f9f2f69431358910533d80aa98320d6762e4db41979699ca6de378b2",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "b4c647dc4c3040da3d44487c9b8c5150d1aa4053e5c9b3ac16dcf4ccffa6a8a6",
+      "selected_tool": "sum_numbers",
+      "selected_arguments": {
+        "numbers": [
+          0,
+          100,
+          5
+        ]
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 29,
+        "output_tokens": 63,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6186.4,
+      "cpu_user_s": 0.113,
+      "cpu_sys_s": 0.026,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sql-1",
+      "variant": "B",
+      "request_sha256": "587d305f501967e428236a6a5ef001f76589e65607433a7d72816fc79a5db56d",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "74e5650ebf9eb3b80b632c6b21537bfe6bc04105abcbcfc09b71ecd0cb578718",
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 81,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6077.6,
+      "cpu_user_s": 0.118,
+      "cpu_sys_s": 0.022,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "sql-1",
+      "variant": "A",
+      "request_sha256": "9672211493f3144822b2aa279d0137737757c9f7ee16082a4d8aa3dcfcb172d4",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "512994b9de32813182cae1f58c1e942546b1d9c3879fb9041d88fb5c1a1227b8",
+      "selected_tool": "inspect_sql_plan",
+      "selected_arguments": {
+        "database": "AuditLab",
+        "query_id": "771"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 73,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7681.5,
+      "cpu_user_s": 0.112,
+      "cpu_sys_s": 0.032,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "artifact-2",
+      "variant": "A",
+      "request_sha256": "3332c1bd078fe3f357b52e9d41e258903e940d943a8fab36c548783f7db80042",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "7e8eb1a8aa21995a33ed71d343521a369f80a42907b262ad0974a3e8ff54b0af",
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "kind": "data",
+        "study": "schema-drift"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 82,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7791.5,
+      "cpu_user_s": 0.119,
+      "cpu_sys_s": 0.022,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "artifact-2",
+      "variant": "B",
+      "request_sha256": "7e25fc142d23a8a7f4228cf53c55b09c9a94a0f51082c3c62bef06f9ed4d3756",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "6cc984a5e4b9eb8a05f78fa30a5fc7a53b054b156c29a0b26887d3c4b874dab1",
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "kind": "data",
+        "study": "schema-drift"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 69,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5937.3,
+      "cpu_user_s": 0.115,
+      "cpu_sys_s": 0.027,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "runbook-3",
+      "variant": "B",
+      "request_sha256": "f943873a7c1dd170475387f2ab2df37cb4a3240c149cb210a2ab8d36cf8f2675",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "ebff264ccc10d8fa0109365f4c5232d9648606ec15ebb14e3715e7e63419d462",
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "revision": "v3",
+        "topic": "vacuum-stall"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 61,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6412.3,
+      "cpu_user_s": 0.114,
+      "cpu_sys_s": 0.027,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "runbook-3",
+      "variant": "A",
+      "request_sha256": "7df79a4fe38925d1a76dd096be9fa523f99b0ae87add12588c7f9b63392123bd",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "7baf553daad86017dc309af977866dcaef2f64589b367bfbea501731d03edccd",
+      "selected_tool": "find_runbook",
+      "selected_arguments": {
+        "revision": "v3",
+        "topic": "vacuum-stall"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 28,
+        "output_tokens": 74,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5059.9,
+      "cpu_user_s": 0.111,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "none-3",
+      "variant": "A",
+      "request_sha256": "0888a1ac9547e3a0ef23c9947ff474c8af77fe0f3706a34b44dc2e0af94759ee",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "b6d722a9882543c16dc92c0ffaf6244743eb31b2c0bbd2eb772148688f6b548f",
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "response_kind": "native_no_tool_text",
+      "model_visible_text": "NONE",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 81,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 4596.4,
+      "cpu_user_s": 0.106,
+      "cpu_sys_s": 0.032,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "none-3",
+      "variant": "B",
+      "request_sha256": "a25e45bab8a278553d677101f8ecf68bb67a0db81c525c6338e4580c5f94f536",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "3db9ad0ed44dc610a595256e5c75d28a0a99d48bc0c49a5a104a575005acdf36",
+      "selected_tool": "NONE",
+      "selected_arguments": {},
+      "response_kind": "native_no_tool_text",
+      "model_visible_text": "NONE",
+      "model": "glm-5.3-flash",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 37,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 5263.5,
+      "cpu_user_s": 0.119,
+      "cpu_sys_s": 0.024,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "file-3",
+      "variant": "B",
+      "request_sha256": "74c2e6279b51c716426fd3ace616494569adb1a8c32bf451c9fde5069f977617",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "df7b3ffb9c431f14c040aa5eaafd33918c142af1ac0ce51f4e6c23e48a658cfe",
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "end_line": 5,
+        "path": "README.md",
+        "start_line": 1
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 24,
+        "output_tokens": 86,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6130.7,
+      "cpu_user_s": 0.123,
+      "cpu_sys_s": 0.021,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "file-3",
+      "variant": "A",
+      "request_sha256": "7ceaa0c376cd4ab63a5cc48805fdb3e4ff35f8ea87044697f94f36462c6f52de",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "68c27afd23604f123b9d75e27dc201ea2ff46c15d04483dea22407f2105c72bf",
+      "selected_tool": "read_file_range",
+      "selected_arguments": {
+        "end_line": 5,
+        "path": "README.md",
+        "start_line": 1
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 24,
+        "output_tokens": 72,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 7015.8,
+      "cpu_user_s": 0.118,
+      "cpu_sys_s": 0.027,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "artifact-3",
+      "variant": "A",
+      "request_sha256": "c5731027212e9b9674adf927503ac4dec9bdd24dd5816d3c3c0ac443a90d4136",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "78026f3b36c5fc316949b47b8630576931c22e77e1e64eb66bfafc4fbb0197b6",
+      "selected_tool": "list_experiment_artifacts",
+      "selected_arguments": {
+        "kind": "experiment",
+        "study": "kv-order"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 139,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6595.0,
+      "cpu_user_s": 0.125,
+      "cpu_sys_s": 0.022,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "artifact-3",
+      "variant": "B",
+      "request_sha256": "dd0df778cbd5952b07aa901ef2d284c46c719e66fa2e1879488d4bae87dba66e",
+      "status": "INVALID_RESPONSE",
+      "exit_code": 0,
+      "raw_provider_sha256": "433bced779d3105b1fb2cd544ad5f8fae57c77e021c7ab1ad56a1a950302c3f3",
+      "error": "ValueError",
+      "error_detail": "NON_SINGLE_TOOL_USE",
+      "elapsed_ms": 10194.4,
+      "cpu_user_s": 0.138,
+      "cpu_sys_s": 0.026,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "job-2",
+      "variant": "B",
+      "request_sha256": "e6001a503ae001e103abfadca54ad7c50edac33ba215579c816f2a60a125cbe0",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "4bbbc0aefa9c859fd56b6c85d3dda085ba948d6a43be66b0c4295e05004717ce",
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-211"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 25,
+        "output_tokens": 44,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 4481.5,
+      "cpu_user_s": 0.111,
+      "cpu_sys_s": 0.03,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    },
+    {
+      "id": "job-2",
+      "variant": "A",
+      "request_sha256": "d129e96c1570f41b84baeb1566baf5b5921134a6c0a6b14a46acb14ebd845ee3",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "raw_provider_sha256": "c2da97509c94c0bec0c916cb531edd2553b74ecd3d8721f28ff1524dcc543f7e",
+      "selected_tool": "get_job_status",
+      "selected_arguments": {
+        "job_id": "job-211"
+      },
+      "response_kind": "native_tool_use",
+      "provider_tool_use_id_present": true,
+      "model": "glm-5.3-flash",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 25,
+        "output_tokens": 70,
+        "cache_read_input_tokens": 1856,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6640.1,
+      "cpu_user_s": 0.121,
+      "cpu_sys_s": 0.023,
+      "local_inblocks": 0,
+      "local_oublocks": 0
+    }
+  ],
+  "limitations": [
+    "Provider protocol is ZCode Anthropic Messages, not DSH DeepSeek model adapter",
+    "DSH tool schemas converted losslessly to Anthropic input_schema; DSH runtime never executed a tool",
+    "One model reply per variant and case, no hard temperature/seed control",
+    "No live tool results, side effects or permissions, so end-to-end agent correctness is unmeasured",
+    "Twenty authored synthetic tasks, not blind human labels or deployed workload",
+    "No actual provider-GPU resource telemetry; local CPU/IO measures CLI child only",
+    "A/B reverses both tool definition order and properties order, not a factorial decomposition"
+  ]
+}

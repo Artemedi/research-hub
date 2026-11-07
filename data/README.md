@@ -23,6 +23,10 @@
 | [data/results/decision-geometry-harness/2026-11-07-bandit-oracle.json](results/decision-geometry-harness/2026-11-07-bandit-oracle.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit.json](results/decision-geometry-harness/2026-11-07-bandit.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-council.json](results/decision-geometry-harness/2026-11-07-council.json) | Результат ограниченной проверки |
+| [data/results/decision-geometry-harness/2026-11-07-native-tool-ab.json](results/decision-geometry-harness/2026-11-07-native-tool-ab.json) | Результат ограниченной проверки |
+| [data/results/decision-geometry-harness/2026-11-07-native-tool-continuation-oracle.json](results/decision-geometry-harness/2026-11-07-native-tool-continuation-oracle.json) | Результат ограниченной проверки |
+| [data/results/decision-geometry-harness/2026-11-07-native-tool-continuation.json](results/decision-geometry-harness/2026-11-07-native-tool-continuation.json) | Результат ограниченной проверки |
+| [data/results/decision-geometry-harness/2026-11-07-native-tool-oracle.json](results/decision-geometry-harness/2026-11-07-native-tool-oracle.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-observation-fixtures.json](results/decision-geometry-harness/2026-11-07-observation-fixtures.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-observation-model.json](results/decision-geometry-harness/2026-11-07-observation-model.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-observation-oracle.json](results/decision-geometry-harness/2026-11-07-observation-oracle.json) | Результат ограниченной проверки |

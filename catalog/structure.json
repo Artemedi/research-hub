@@ -1932,6 +1932,41 @@
       "title": "Independent oracle: twenty-four paired observations and one differing invalid result",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md",
+      "title": "Decision Geometry native provider tool-use A/B and inert tool-result continuation",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-native-tool-ab.json",
+      "title": "Forty ZCode native provider tool-use A/B trials from pinned DSH schemas",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-native-tool-oracle.json",
+      "title": "Independent schema and authored-gold oracle for nineteen native tool-use pairs",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-native-tool-continuation.json",
+      "title": "Two synthetic native tool-use and tool-result provider roundtrips",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-native-tool-continuation-oracle.json",
+      "title": "Independent tool-result oracle including one strict final format violation",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

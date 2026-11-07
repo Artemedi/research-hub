@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "scenario": "Anthropic provider native tool_use and synthetic tool_result continuation",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "source_sha256": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+  "wire_sha256": "1a3bbe029374e27fbd59ac48d6c7c3a3065280fa57eb6424e533e1953dea6360",
+  "cases": [
+    {
+      "id": "sum",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "expected_final": 11,
+      "round1_status": "COMPLETE",
+      "round1_stop": "tool_use",
+      "round1_model": "glm-5.3-flash",
+      "round1_usage": {
+        "input_tokens": 1857,
+        "output_tokens": 82,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "round1_sha256": "d20ed3651df853ae1e396104d66f889eb83b614ed913db842da7089768087245",
+      "round1_elapsed_ms": 6549.7,
+      "tool_call_count": 1,
+      "observed_tool": "sum_numbers",
+      "observed_arguments": {
+        "numbers": [
+          4,
+          9,
+          -2
+        ]
+      },
+      "round2_status": "COMPLETE",
+      "round2_stop": "end_turn",
+      "round2_model": "glm-5.3-flash",
+      "round2_usage": {
+        "input_tokens": 158,
+        "output_tokens": 39,
+        "cache_read_input_tokens": 1728,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "round2_sha256": "82907392d0afe4eabbb5ec610ee8c42bbfd1eb013e371f24ac54596fb261f839",
+      "round2_elapsed_ms": 7002.4,
+      "returned_final": {
+        "result": 11
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "id": "job",
+      "expected_tool": "get_job_status",
+      "expected_arguments": {
+        "job_id": "job-104"
+      },
+      "expected_final": "complete",
+      "round1_status": "COMPLETE",
+      "round1_stop": "tool_use",
+      "round1_model": "glm-5.3-flash",
+      "round1_usage": {
+        "input_tokens": 130,
+        "output_tokens": 37,
+        "cache_read_input_tokens": 1728,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "round1_sha256": "49350b1c2f40faa105694be2a0bb757c99aa88bd7737cfa6da69098fff01f7b9",
+      "round1_elapsed_ms": 4293.9,
+      "tool_call_count": 1,
+      "observed_tool": "get_job_status",
+      "observed_arguments": {
+        "job_id": "job-104"
+      },
+      "round2_status": "COMPLETE",
+      "round2_stop": "end_turn",
+      "round2_model": "glm-5.3-flash",
+      "round2_usage": {
+        "input_tokens": 98,
+        "output_tokens": 52,
+        "cache_read_input_tokens": 1792,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "round2_sha256": "6a7cd384d2980354e0f409c53f31e299e5e63ac85ea62e13d8474695010e3111",
+      "round2_elapsed_ms": 5347.4,
+      "returned_final": {
+        "result": {
+          "job_id": "job-104",
+          "state": "complete"
+        }
+      },
+      "status": "COMPLETE"
+    }
+  ],
+  "planned": 2,
+  "completed": 2,
+  "tool_execution": "none; fake result supplied from independent hardcoded constants",
+  "status": "BOUNDED_NATIVE_TOOL_ROUNDTRIP",
+  "limits": [
+    "Model native provider: ZCode Anthropic, not DSH DeepSeek adapter",
+    "No real host tool code executed; injected tool results are synthetic",
+    "Two smoke cases do not establish end-to-end production reliability",
+    "No user/private data or environment credentials sent"
+  ]
+}
