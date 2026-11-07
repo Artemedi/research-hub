@@ -19,6 +19,8 @@
 | [data/project-fit/vercel-agent-desktop/2026-11-05.json](project-fit/vercel-agent-desktop/2026-11-05.json) | Матрица project fit |
 | [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-04.json](results/benchshield/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/chartli/2026-11-07-svg-fixtures.json](results/chartli/2026-11-07-svg-fixtures.json) | Результат ограниченной проверки |
+| [data/results/chartli/2026-11-07-svg-oracle.json](results/chartli/2026-11-07-svg-oracle.json) | Результат ограниченной проверки |
 | [data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json](results/cursor-token-efficiency/2026-11-07-council-vs-single.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit-oracle.json](results/decision-geometry-harness/2026-11-07-bandit-oracle.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit.json](results/decision-geometry-harness/2026-11-07-bandit.json) | Результат ограниченной проверки |

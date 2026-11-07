@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-07",
+  "study": "chartli",
+  "source_pin": "3b39b97aeb564646437b2b7501b60541994d7575",
+  "source_file_sha256": {
+    "src/utils/svg.ts": "81b05c1000e389b80e11a87f09e74e889a899462e14cd322e9f259acb431db7e",
+    "src/utils/normalize.ts": "98adfcf1ebb0aa7793c194b1eb5e8e484004c52288fad0a692bee6c21503a438"
+  },
+  "case_count": 16,
+  "testcases": [
+    {
+      "id": "single_circles",
+      "file": "single_circles.svg",
+      "raw_svg_sha256": "236066e9c1f7c8d93a9741048f3ff89bea0fe4e16757059d32fd22f395a768b3",
+      "bytes": 1061,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "single_lines",
+      "file": "single_lines.svg",
+      "raw_svg_sha256": "3275ccc35272fb130eb0bac4981562e4767a615fcd74ebb755408f92b5ae87d2",
+      "bytes": 936,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "multi_circles_legend",
+      "file": "multi_circles_legend.svg",
+      "raw_svg_sha256": "166bc7b654767cd65b6b36b66ca41661f9b65db69acf652e72424a31ec1a650e",
+      "bytes": 1727,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "multi_lines_legend",
+      "file": "multi_lines_legend.svg",
+      "raw_svg_sha256": "a4aba1f7834044acd35e60a7a55e2c97c3a57118e0063693b32b7f917ac8b495",
+      "bytes": 1477,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "escaped_x_y_labels",
+      "file": "escaped_x_y_labels.svg",
+      "raw_svg_sha256": "79eb4aaee2b62ae01cfb9afe32c950f504f88209d774cfa2dab760cf2729b562",
+      "bytes": 2007,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "escaped_legend",
+      "file": "escaped_legend.svg",
+      "raw_svg_sha256": "b0c96acd904d36f5181a3d637910d47a5e8002491973bd9741eefb6e8ff7189f",
+      "bytes": 1792,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "empty",
+      "file": "empty.svg",
+      "raw_svg_sha256": "cb125f6b9f0498eed43912fa6a46628d60f6a9cd67c64ee776c17841ac238e54",
+      "bytes": 850,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "single_point",
+      "file": "single_point.svg",
+      "raw_svg_sha256": "5cbf375a5aab985d4ef0438c8c559191d0dd34329bf19845e2c441ebff63d51f",
+      "bytes": 914,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "flat_three",
+      "file": "flat_three.svg",
+      "raw_svg_sha256": "1e51c75116ac907133c7c84eadf84226babfa8d8770235203d9238a9baa45fe1",
+      "bytes": 1062,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "negative_values",
+      "file": "negative_values.svg",
+      "raw_svg_sha256": "7bb08dee8e5d9558a09b944334e47f6b73ac35c6be800fff4e5dfc53648dc95f",
+      "bytes": 1063,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "ragged_rows",
+      "file": "ragged_rows.svg",
+      "raw_svg_sha256": "658374621672ceeb0e0f38e8d38727583dfc20e3611afbf48fbfcbed1f556204",
+      "bytes": 1288,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "nonfinite_nan",
+      "file": "nonfinite_nan.svg",
+      "raw_svg_sha256": "10b9504798a20195eb96f1fedb95acd82671b29f2b5706de33a82a92291a07c0",
+      "bytes": 1059,
+      "literal_nan": true,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "nonfinite_inf",
+      "file": "nonfinite_inf.svg",
+      "raw_svg_sha256": "76707770fe4bad311da684a169413d4b3d4f0cecb901281dfcf93c89361ed586",
+      "bytes": 1060,
+      "literal_nan": true,
+      "literal_infinity": false,
+      "xml_control": false
+    },
+    {
+      "id": "bad_control_series",
+      "file": "bad_control_series.svg",
+      "raw_svg_sha256": "f83b4180155bfe54b1d4799bec20a334303501a74d3cb0ccc2ffcbd998a89419",
+      "bytes": 1730,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": true
+    },
+    {
+      "id": "bad_control_x",
+      "file": "bad_control_x.svg",
+      "raw_svg_sha256": "8ecc6375fea858183332294b3fe44ee9662e6c118a3588cd5e18a5754170e9ab",
+      "bytes": 1166,
+      "literal_nan": false,
+      "literal_infinity": false,
+      "xml_control": true
+    },
+    {
+      "id": "large_exponent",
+      "file": "large_exponent.svg",
+      "raw_svg_sha256": "41457989792fbe943f6b06e00c282dbc93ee358609e787052c9df7606c8c3eb3",
+      "bytes": 1060,
+      "literal_nan": true,
+      "literal_infinity": false,
+      "xml_control": false
+    }
+  ],
+  "limitation": "Original TS renderer on synthetic inputs; no browser, Rust renderer or full CLI executed"
+}

@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-07",
+  "study": "chartli",
+  "source_pin": "3b39b97aeb564646437b2b7501b60541994d7575",
+  "fixture_manifest_sha256": "c3e0ddf14311b480f02ce7148bf22c9b1ef7b7da6246797abe49f94f6565d883",
+  "total": 16,
+  "well_formed_xml": 14,
+  "finite_numeric_svg": 11,
+  "invalid_xml_cases": [
+    "bad_control_series",
+    "bad_control_x"
+  ],
+  "invalid_numeric_geometry_cases": [
+    "large_exponent",
+    "nonfinite_inf",
+    "nonfinite_nan"
+  ],
+  "mutation_checks": {
+    "mismatched_svg_close_tag_rejected": true,
+    "nonfinite_coordinate_rejected": true
+  },
+  "cases": [
+    {
+      "id": "single_circles",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "236066e9c1f7c8d93a9741048f3ff89bea0fe4e16757059d32fd22f395a768b3"
+    },
+    {
+      "id": "single_lines",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 0,
+      "polyline_elements": 1,
+      "svg_sha256": "3275ccc35272fb130eb0bac4981562e4767a615fcd74ebb755408f92b5ae87d2"
+    },
+    {
+      "id": "multi_circles_legend",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 8,
+      "polyline_elements": 0,
+      "svg_sha256": "166bc7b654767cd65b6b36b66ca41661f9b65db69acf652e72424a31ec1a650e"
+    },
+    {
+      "id": "multi_lines_legend",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 2,
+      "polyline_elements": 2,
+      "svg_sha256": "a4aba1f7834044acd35e60a7a55e2c97c3a57118e0063693b32b7f917ac8b495"
+    },
+    {
+      "id": "escaped_x_y_labels",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "79eb4aaee2b62ae01cfb9afe32c950f504f88209d774cfa2dab760cf2729b562"
+    },
+    {
+      "id": "escaped_legend",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 8,
+      "polyline_elements": 0,
+      "svg_sha256": "b0c96acd904d36f5181a3d637910d47a5e8002491973bd9741eefb6e8ff7189f"
+    },
+    {
+      "id": "empty",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 0,
+      "polyline_elements": 0,
+      "svg_sha256": "cb125f6b9f0498eed43912fa6a46628d60f6a9cd67c64ee776c17841ac238e54"
+    },
+    {
+      "id": "single_point",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 1,
+      "polyline_elements": 0,
+      "svg_sha256": "5cbf375a5aab985d4ef0438c8c559191d0dd34329bf19845e2c441ebff63d51f"
+    },
+    {
+      "id": "flat_three",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "1e51c75116ac907133c7c84eadf84226babfa8d8770235203d9238a9baa45fe1"
+    },
+    {
+      "id": "negative_values",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "7bb08dee8e5d9558a09b944334e47f6b73ac35c6be800fff4e5dfc53648dc95f"
+    },
+    {
+      "id": "ragged_rows",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": true,
+      "circle_elements": 6,
+      "polyline_elements": 0,
+      "svg_sha256": "658374621672ceeb0e0f38e8d38727583dfc20e3611afbf48fbfcbed1f556204"
+    },
+    {
+      "id": "nonfinite_nan",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": false,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "10b9504798a20195eb96f1fedb95acd82671b29f2b5706de33a82a92291a07c0"
+    },
+    {
+      "id": "nonfinite_inf",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": false,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "76707770fe4bad311da684a169413d4b3d4f0cecb901281dfcf93c89361ed586"
+    },
+    {
+      "id": "bad_control_series",
+      "xml_well_formed": false,
+      "finite_numeric_geometry": false,
+      "circle_elements": null,
+      "polyline_elements": null,
+      "svg_sha256": "f83b4180155bfe54b1d4799bec20a334303501a74d3cb0ccc2ffcbd998a89419"
+    },
+    {
+      "id": "bad_control_x",
+      "xml_well_formed": false,
+      "finite_numeric_geometry": false,
+      "circle_elements": null,
+      "polyline_elements": null,
+      "svg_sha256": "8ecc6375fea858183332294b3fe44ee9662e6c118a3588cd5e18a5754170e9ab"
+    },
+    {
+      "id": "large_exponent",
+      "xml_well_formed": true,
+      "finite_numeric_geometry": false,
+      "circle_elements": 3,
+      "polyline_elements": 0,
+      "svg_sha256": "41457989792fbe943f6b06e00c282dbc93ee358609e787052c9df7606c8c3eb3"
+    }
+  ],
+  "status": "BOUNDED_SVG_XML_AND_NUMERIC_ORACLE",
+  "limits": [
+    "XML well-formedness and finite geometry are necessary but not sufficient for browser SVG rendering",
+    "Source renderer called via tsx, not built CLI or Rust renderer",
+    "Sixteen constructed cases, not natural numeric datasets or a statistical rendering benchmark",
+    "No model-generated code or user data inspected"
+  ]
+}

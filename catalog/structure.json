@@ -1981,6 +1981,27 @@
       "title": "Four Python hash-seed processes, GNU b2sum and independent sketch/SimHash oracle",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/chartli/2026-11-07-svg-validation.md",
+      "title": "Chartli pinned TS SVG renderer and independent XML plus finite-geometry audit",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/chartli/2026-11-07-svg-fixtures.json",
+      "title": "Sixteen synthetic SVG renderings with source pin and file hashes",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/chartli/2026-11-07-svg-oracle.json",
+      "title": "Two XML parsers and finite coordinate checks on Chartli source output",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }
