@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-07",
+  "scope": "advisory two-role scrutiny of bounded synthetic MCP Toolbox results",
+  "source_json_sha256": "b3bd55c6bc64cf6e376e96cae6c9b85c71de08961f187e50dfb3abdfcdf467bc",
+  "physical_workers": 1,
+  "roles_completed": 1,
+  "roles_blocked": 1,
+  "roles": [
+    {
+      "role": "security_falsifier",
+      "prompt_sha256": "fe7dfb0e507c8bd1c9a39bd79d73f0e59eb403d840be81da61279a477c5a6771",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "elapsed_ms": 34491.19,
+      "response_sha256": "fd6abd716c1e3d71ca32ea7de69a9685d5f1b6322c15c30b23f04c438e894374",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 1425,
+        "output_tokens": 1234,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "advisory": {
+        "decision": "ACCEPT_BOUNDED",
+        "largest_remaining_gap": "Adversarial coverage is one input class: 6 of 11 checks are the identical injection_or_invalid_name check, and get_safe_setting has zero adversarial coverage. All 11 passes validate only malformed/invalid arguments to 3 allowlisted tools; semantically valid but hostile arguments (e.g., unqualified names resolved via a manipulated search_path, EXPLAIN ANALYZE on attacker-chosen statements) are untested, and the shadow-catalog control used an isolated fake table rather than a real schema-resolution path.",
+        "next_independent_oracle": "Drive the real MCP server with semantically valid adversarial arguments: set a role-controlled search_path pointing at an attacker schema and submit unqualified names plus EXPLAIN ANALYZE through explain_planner/explain_volatile, asserting the shadow catalog is still ignored, the volatile function does not execute, and revoke_execute still denies — under the same timeout and no-network constraints."
+      }
+    },
+    {
+      "role": "methodology_critic",
+      "prompt_sha256": "7526f7c26df03bd6ccbea323617f587bce290b7923ea9a49851d5a7ce574c8fa",
+      "status": "BLOCKED_PROVIDER",
+      "failure": "TIMEOUT",
+      "elapsed_ms": 50053.53
+    }
+  ],
+  "interpretation": "Model roles are advisory, not independent security test or oracle"
+}

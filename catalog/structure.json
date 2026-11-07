@@ -1568,6 +1568,34 @@
       "title": "PostgreSQL read-only EXPLAIN timeout and EXECUTE grant A/B",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/target-counterchecks-round4.md",
+      "title": "Clean-source ZCode citation council and real MCP SQL security boundary",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-zcode-citation-council-ab.json",
+      "title": "Pinned target citation A/B: 36 synthetic cases and twelve ZCode role calls",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-toolbox-mcp-security-ab.json",
+      "title": "Actual MCP Toolbox PostgreSQL security and planner-boundary negative controls",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-toolbox-security-critics.json",
+      "title": "Two ZCode advisory critic statuses for the bounded MCP Toolbox security lab",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

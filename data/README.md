@@ -47,6 +47,9 @@
 | [data/results/research-portfolio/2026-11-07-source-audit.json](results/research-portfolio/2026-11-07-source-audit.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-source-heads.json](results/research-portfolio/2026-11-07-source-heads.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-toolbox-30-settings.json](results/research-portfolio/2026-11-07-toolbox-30-settings.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-toolbox-mcp-security-ab.json](results/research-portfolio/2026-11-07-toolbox-mcp-security-ab.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-toolbox-security-critics.json](results/research-portfolio/2026-11-07-toolbox-security-critics.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-zcode-citation-council-ab.json](results/research-portfolio/2026-11-07-zcode-citation-council-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-zcode-screening.json](results/research-portfolio/2026-11-07-zcode-screening.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |

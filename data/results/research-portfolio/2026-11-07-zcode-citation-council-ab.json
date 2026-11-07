@@ -1,0 +1,584 @@
+{
+  "date": "2026-11-07",
+  "target": "dsh-paper2agent",
+  "target_clean_pin": "6d82a42175a71d3327b773df88f1da0707efe43c",
+  "target_core_sha256": "95ea03c7fabbc586ac29e073f16ab5a6e1b5c10b8388f619afec4d3125e6ee79",
+  "synthetic_cases": 36,
+  "oracle_supported": 12,
+  "oracle_unsupported": 24,
+  "baseline_structural_accepts": 36,
+  "baseline_not_semantic_approval": true,
+  "exact_only_auto_supported": 6,
+  "exact_only_false_auto_support": 0,
+  "roles": [
+    "grounded_reviewer",
+    "adversarial_falsifier"
+  ],
+  "physical_workers": 1,
+  "role_runs": 12,
+  "provider_completions": 12,
+  "provider_blocked": 0,
+  "council_evaluated": 36,
+  "council_auto_supported": 12,
+  "council_false_auto_support": 0,
+  "council_true_auto_support": 12,
+  "role_metrics": {
+    "grounded_reviewer": {
+      "evaluated": 36,
+      "supported_oracle": 12,
+      "auto_supported": 12,
+      "false_auto_support": 0,
+      "true_auto_support": 12,
+      "abstained": 0
+    },
+    "adversarial_falsifier": {
+      "evaluated": 36,
+      "supported_oracle": 12,
+      "auto_supported": 12,
+      "false_auto_support": 0,
+      "true_auto_support": 12,
+      "abstained": 0
+    }
+  },
+  "provider_usage": {
+    "0-adversarial_falsifier": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 601,
+        "output_tokens": 469,
+        "cache_read_input_tokens": 768,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 12002.4,
+      "prompt_sha256": "29a5c9e81e19f6810489be72b51c9c9a38469034496c79706caa628653e66295",
+      "response_sha256": "b3da707838fff9ed9b70be4230ce0b2689e742215f8af342b47ada85b471d6ec",
+      "failure": null
+    },
+    "0-grounded_reviewer": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 1364,
+        "output_tokens": 325,
+        "cache_read_input_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 11021.0,
+      "prompt_sha256": "d2be0c8b226d24742bcae5967aab7cf005d12e0391d0767b6fbd78386e0af81e",
+      "response_sha256": "ad71c0521b0d6357e270c6531fe68e91b6eb83c2a0a3faf28c7367d524edb373",
+      "failure": null
+    },
+    "1-adversarial_falsifier": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 343,
+        "output_tokens": 695,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 15619.9,
+      "prompt_sha256": "afc9d7ceb2472eaf117ca76f0856576c4a332ecc26bd9c248b3ac52e42f4ccaf",
+      "response_sha256": "08f6755e1a4324db8c07aedc21ac5a18075ea243595da951e93c5e70cb7baac7",
+      "failure": null
+    },
+    "1-grounded_reviewer": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 594,
+        "output_tokens": 345,
+        "cache_read_input_tokens": 768,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 11151.5,
+      "prompt_sha256": "00db222a8c2956441858b413b02f8799797b0da21b7d9fba1d26a2e80a1c6ff4",
+      "response_sha256": "16d173dc9df1a4d004dc4c9ff399180f3fe1a278ee6845e48b412e6925181ab7",
+      "failure": null
+    },
+    "2-adversarial_falsifier": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 206,
+        "output_tokens": 350,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 11055.9,
+      "prompt_sha256": "570565bf956378b4f6ba6844dd2cb8fa3ebc8884722079424e04ea0e0b7f52fc",
+      "response_sha256": "4dcfd073ceb2e4939422c9f3480b0b33959687afc3688dd86d60ad6feebfe0a3",
+      "failure": null
+    },
+    "2-grounded_reviewer": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 329,
+        "output_tokens": 230,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 6766.8,
+      "prompt_sha256": "19336a87bf6d30b58c7feae80635901f8eae2ea439e922192c40ee714bcf58cb",
+      "response_sha256": "60b020309c5cb71936bc97ab8d8f187a7e8de4a98df8bed0ed825e019cceeb51",
+      "failure": null
+    },
+    "3-adversarial_falsifier": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 215,
+        "output_tokens": 785,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 20009.1,
+      "prompt_sha256": "d4e9ae8092fc726e2105e11aeaa5fd4f14e02caa7fb1067fed591a5322940f5c",
+      "response_sha256": "9d75b9f14634d021760d92a1041ca53de697bd679758a6a6e6e805905690a52b",
+      "failure": null
+    },
+    "3-grounded_reviewer": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 338,
+        "output_tokens": 272,
+        "cache_read_input_tokens": 1024,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 9140.1,
+      "prompt_sha256": "ce00caa39acb9bc85a748ff317ba6707380839710f2374e5d3ee096d826911ca",
+      "response_sha256": "a6de3841b08c0d96bf8ed9e0babc676ddf53b0ed0c0e33b33c41649bbdc13c64",
+      "failure": null
+    },
+    "4-adversarial_falsifier": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 219,
+        "output_tokens": 576,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 15544.8,
+      "prompt_sha256": "3a81e115c9fe509bb3f59b171883d4a8414cb70a11b7c7f5c03d2c3c0e398708",
+      "response_sha256": "c20e4cea352eb75cc5c5a5501e808d0d46c26a4b1bb5b1566bc18903034a0e95",
+      "failure": null
+    },
+    "4-grounded_reviewer": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 214,
+        "output_tokens": 328,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 9564.8,
+      "prompt_sha256": "5e9885e7e18ae555010adfa15dff9e3ee074c9394d5e4c8df657aa1b51ddde94",
+      "response_sha256": "0fdb23ea0bfb59951dfebc1337247ebdd044920317794684964b58444ed936dc",
+      "failure": null
+    },
+    "5-adversarial_falsifier": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 228,
+        "output_tokens": 361,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 9148.5,
+      "prompt_sha256": "d1a2b07e28a5cde5147838e614d6fde0a0bfe59414962279bff000c8455111e1",
+      "response_sha256": "a21ddae3cecb72c794e5c796b6adf7a8c07ddd4077f6b07a077d9fbff93b3a5f",
+      "failure": null
+    },
+    "5-grounded_reviewer": {
+      "status": "COMPLETE",
+      "model": "glm-5.3-flash",
+      "usage": {
+        "input_tokens": 223,
+        "output_tokens": 298,
+        "cache_read_input_tokens": 1152,
+        "server_tool_use": {
+          "web_search_requests": 0
+        },
+        "service_tier": "standard"
+      },
+      "elapsed_ms": 8499.1,
+      "prompt_sha256": "922da66dd78c4dc3b432256ee403191005ea10034a147df50302c4f9ae9c2cac",
+      "response_sha256": "e7f4f968e1b4e48a39982c0105a4735f1412208e1e3aaceaefcde68bdbe75b72",
+      "failure": null
+    }
+  },
+  "case_verdicts": [
+    {
+      "id": "0-exact",
+      "category": "exact",
+      "expected_supported": true,
+      "exact_gate_auto_pass": true,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "0-paraphrase",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "exact_gate_auto_pass": false,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "0-contradiction",
+      "category": "contradiction",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "0-wrong_number",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "0-wrong_entity",
+      "category": "wrong_entity",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "0-unrelated",
+      "category": "unrelated",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-exact",
+      "category": "exact",
+      "expected_supported": true,
+      "exact_gate_auto_pass": true,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "1-paraphrase",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "exact_gate_auto_pass": false,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "1-contradiction",
+      "category": "contradiction",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-wrong_number",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-wrong_entity",
+      "category": "wrong_entity",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "1-unrelated",
+      "category": "unrelated",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-exact",
+      "category": "exact",
+      "expected_supported": true,
+      "exact_gate_auto_pass": true,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "2-paraphrase",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "exact_gate_auto_pass": false,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "2-contradiction",
+      "category": "contradiction",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-wrong_number",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-wrong_entity",
+      "category": "wrong_entity",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "2-unrelated",
+      "category": "unrelated",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-exact",
+      "category": "exact",
+      "expected_supported": true,
+      "exact_gate_auto_pass": true,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "3-paraphrase",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "exact_gate_auto_pass": false,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "3-contradiction",
+      "category": "contradiction",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-wrong_number",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-wrong_entity",
+      "category": "wrong_entity",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "3-unrelated",
+      "category": "unrelated",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-exact",
+      "category": "exact",
+      "expected_supported": true,
+      "exact_gate_auto_pass": true,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "4-paraphrase",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "exact_gate_auto_pass": false,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "4-contradiction",
+      "category": "contradiction",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-wrong_number",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-wrong_entity",
+      "category": "wrong_entity",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "4-unrelated",
+      "category": "unrelated",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-exact",
+      "category": "exact",
+      "expected_supported": true,
+      "exact_gate_auto_pass": true,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "5-paraphrase",
+      "category": "paraphrase",
+      "expected_supported": true,
+      "exact_gate_auto_pass": false,
+      "reviewer": "SUPPORTED",
+      "critic": "SUPPORTED",
+      "council_auto_supported": true
+    },
+    {
+      "id": "5-contradiction",
+      "category": "contradiction",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-wrong_number",
+      "category": "wrong_number",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-wrong_entity",
+      "category": "wrong_entity",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    },
+    {
+      "id": "5-unrelated",
+      "category": "unrelated",
+      "expected_supported": false,
+      "exact_gate_auto_pass": false,
+      "reviewer": "NOT_SUPPORTED",
+      "critic": "NOT_SUPPORTED",
+      "council_auto_supported": false
+    }
+  ],
+  "limits": [
+    "All labels and source lines are deliberately authored synthetic oracle examples",
+    "Inputs to ZCode are only public synthetic facts and claims; no tools or private documents",
+    "No blinded natural-science held-out annotations or replication of source article",
+    "Target is a clean local git-archive of a pinned remote commit, not uncommitted worktree",
+    "Submission accepts structural citation scope; it is not a semantic support verdict",
+    "Council auto-supported requires both votes; missing role calls remain BLOCKED",
+    "No model integration into project, production changes, patient data or project approvals"
+  ]
+}

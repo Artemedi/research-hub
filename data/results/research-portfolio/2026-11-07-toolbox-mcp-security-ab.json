@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-07",
+  "study": "MCP Toolbox PostgreSQL and pgbot planner-boundary follow-up",
+  "toolbox_sha256": "f6fac005c39898a379523700727a2a3d0a2828f579bec22cc0efe74e0652062d",
+  "image": "docker.io/library/postgres:18",
+  "image_id": "79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "network": "none",
+  "published_ports": 0,
+  "host_mounts": 0,
+  "credential_scope": "ephemeral synthetic only",
+  "production_database_touched": false,
+  "tool_allowlist": [
+    "explain_planner",
+    "explain_volatile",
+    "get_safe_setting"
+  ],
+  "direct_catalog_value": "100",
+  "shadow_catalog_value": "999999",
+  "observer_insert_denied": true,
+  "fixture_count_before_after": "1/1",
+  "mcp_tool_count": 3,
+  "checks_total": 11,
+  "checks_passed": 11,
+  "checks": [
+    {
+      "name": "qualified_catalog_ignores_shadow",
+      "passed": true,
+      "observed_equals_real": true,
+      "shadow_value": "999999",
+      "real_value": "100"
+    },
+    {
+      "name": "injection_or_invalid_name",
+      "input_sha256": "cda5c63385da6d44134c5740302b8396c8f7cef28c31ad3216a5b602a12576f1",
+      "passed": true,
+      "mcp_error": false
+    },
+    {
+      "name": "injection_or_invalid_name",
+      "input_sha256": "ffb6cc2d196a958ceb6a32a3671d4a44b455f4cbda3d0faf913a799a9516eaf8",
+      "passed": true,
+      "mcp_error": false
+    },
+    {
+      "name": "injection_or_invalid_name",
+      "input_sha256": "ff2ae866e4712100c0efeb231ab4d2d8249df0674575a3804c69fd0b8c091fef",
+      "passed": true,
+      "mcp_error": false
+    },
+    {
+      "name": "injection_or_invalid_name",
+      "input_sha256": "7f3afc2f44c3a845f9ed882445a53d5b646103fd6fd1051be8b19d4f48f1a460",
+      "passed": true,
+      "mcp_error": false
+    },
+    {
+      "name": "injection_or_invalid_name",
+      "input_sha256": "adf2a59d188065b95c29827fd09c5c7a132308cc14da57343630c7111739298c",
+      "passed": true,
+      "mcp_error": false
+    },
+    {
+      "name": "injection_or_invalid_name",
+      "input_sha256": "bf45d156a49574b68c88dad3a81892f4edf5ce3b7e432516cc963e182eddef64",
+      "passed": true,
+      "mcp_error": false
+    },
+    {
+      "name": "planner_timeout_via_real_mcp",
+      "passed": true,
+      "mcp_error": true,
+      "contains_timeout": true,
+      "elapsed_ms": 81.07
+    },
+    {
+      "name": "volatile_explain_no_function_exec",
+      "passed": true,
+      "elapsed_ms": 0.99
+    },
+    {
+      "name": "revoke_execute_via_real_mcp",
+      "passed": true,
+      "mcp_error": true
+    },
+    {
+      "name": "mcp_connection_recovers_after_errors",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "A single allowlisted synthetic tool config; not arbitrary agent-generated SQL",
+    "Planner function is artificial PL/pgSQL with pg_sleep and no destructive effects",
+    "Strict statement_timeout applies to this PostgreSQL role and simple test",
+    "Namespace shadow is an isolated fake catalog table, not a real attack on privileged code",
+    "No actual pgbot executable, Wiki_PG integration, network, privileged extensions or clinical data",
+    "Wall-clock timings contain subprocess/stdio overhead and are not production latency"
+  ]
+}
