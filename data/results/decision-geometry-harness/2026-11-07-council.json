@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "study": "decision-geometry-harness",
+  "source_html_sha256": "5e37b2455cbe94cf1abbf932d28c96e5ee9f9bff18a547c76f1541387a58e4ce",
+  "lab_results_sha256": "aa8f8b99c7b342e7d1312e0ed97eacc7e70a20b0dca454dd8907fab25f898006",
+  "physical_parallelism": 1,
+  "roles": [
+    {
+      "role": "methods",
+      "status": "BLOCKED_PROVIDER",
+      "prompt_sha256": "a1520dddf3d15fa335e8d80af752caf01da7f0a305c18c7917f986d4b4bf257b",
+      "error": "TIMEOUT",
+      "elapsed_ms": 45048.99
+    },
+    {
+      "role": "falsifier",
+      "status": "BLOCKED_PROVIDER",
+      "prompt_sha256": "826dc7b5e0fb9a17171ff1c60028b6fa7b4f45f2825bc60c26334734dc79c415",
+      "elapsed_ms": 14929.58,
+      "return_code": 1,
+      "raw_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": "NONZERO_EXIT"
+    }
+  ],
+  "completed": 0,
+  "blocked": 2,
+  "decision_authority": "NONE; Decimal oracle and pinned author solver decide bounded lab only"
+}

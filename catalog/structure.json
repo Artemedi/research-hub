@@ -1820,6 +1820,34 @@
       "title": "Independent Python hash-chain oracle for two hundred synthetic KV lifecycle events",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/decision-geometry-harness/2026-11-07-bandit-countercheck.md",
+      "title": "Decision Geometry exact two-action bandit source reproduction and project-fit gate",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-bandit.json",
+      "title": "Thirty bandit calculations using pinned author soft-MDP solver and scalar analytic oracle",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-bandit-oracle.json",
+      "title": "Independent 70-digit Decimal oracle and negative mutations for thirty Decision Geometry bandits",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-07-council.json",
+      "title": "Two blocked ZCode scientific critics of Decision Geometry bandit laboratory evidence",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

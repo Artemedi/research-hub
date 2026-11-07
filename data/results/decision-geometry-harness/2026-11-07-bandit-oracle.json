@@ -1,0 +1,18 @@
+{
+  "study": "decision-geometry-harness",
+  "date": "2026-11-07",
+  "source_pin": "c91d859c21f38f10e358091265eea6e571e23e47",
+  "source_sha256": "485f954eddf8b674f842ff7dbb723e17600d755ae47417a93bd9a8e8e565d15d",
+  "paper_html_sha256": "5e37b2455cbe94cf1abbf932d28c96e5ee9f9bff18a547c76f1541387a58e4ce",
+  "input_results_sha256": "aa8f8b99c7b342e7d1312e0ed97eacc7e70a20b0dca454dd8907fab25f898006",
+  "verified_cases": 30,
+  "reversals_verified": 15,
+  "mutation_controls_rejected": 2,
+  "independent_math": "decimal.Decimal prec=70 scalar KL/logsumexp; does not import official solver",
+  "status": "PASS_EXACT_DECIMAL_ORACLE",
+  "limitations": [
+    "Rechecks mathematical bandit outputs, not model-training outcomes",
+    "Checks reported stochastic samples against expected 5SE interval rather than replaying their RNG draws",
+    "Shared theorem assumptions are not an independent scientific peer review"
+  ]
+}
