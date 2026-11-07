@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-07",
+  "study": "simurg",
+  "source_pin": "2831a92359cdaf1b38cc14f55e74251e09a91e0b",
+  "file_sha256": {
+    "src/simurg/core.py": "8d0f7509146e62cbf0a1f485eb6e08935d014659e97f2157879178baf2dfa8cd",
+    "src/simurg/signals/sketch.py": "453a24545e0ae0150d05526a5c8e5d32eb761d97e7b5b6b1b9e7d11f76c4a841",
+    "src/simurg/signals/simhash.py": "419bf411f7fb18bfe89bd16ef271ce7f5be16b3344ef6724fa19ce4d0be94e3a"
+  },
+  "worker_source_sha256": "25349d0bbf5e9c1c1b77cdbdb528647653359cbfeffccb727d41213d722ffaa6",
+  "pythonhashseed_cases": [
+    0,
+    1,
+    42,
+    1337
+  ],
+  "cross_process_checks_passed": 4,
+  "unkeyed_external_b2sum_checks": 10,
+  "seeded_hash_oracle": "Python standard hashlib.blake2b, independent of source function",
+  "unkeyed_hash_oracle": "GNU b2sum -l 64, independent implementation/process",
+  "sketch_oracle": "reconstructed independent count-min bucket arrays with keyed hashes",
+  "simhash_oracle": "independent per-token window and 64-bit majority recomputation",
+  "records": [
+    {
+      "pythonhashseed": 0,
+      "source_result_sha256": "ac0cd6cf73303719fe8ab93be0b466d25e3c4041d1bd5690e45067a1c808b3f0",
+      "native_builtin_hash_control": 7414172266752367592,
+      "matches_external_oracle": true
+    },
+    {
+      "pythonhashseed": 1,
+      "source_result_sha256": "ac0cd6cf73303719fe8ab93be0b466d25e3c4041d1bd5690e45067a1c808b3f0",
+      "native_builtin_hash_control": 4302319769664595345,
+      "matches_external_oracle": true
+    },
+    {
+      "pythonhashseed": 42,
+      "source_result_sha256": "ac0cd6cf73303719fe8ab93be0b466d25e3c4041d1bd5690e45067a1c808b3f0",
+      "native_builtin_hash_control": 3839915301328717931,
+      "matches_external_oracle": true
+    },
+    {
+      "pythonhashseed": 1337,
+      "source_result_sha256": "ac0cd6cf73303719fe8ab93be0b466d25e3c4041d1bd5690e45067a1c808b3f0",
+      "native_builtin_hash_control": -6623482491813047930,
+      "matches_external_oracle": true
+    }
+  ],
+  "expected_unkeyed": {
+    "postgresql": 3675082697783525249,
+    "SQL Server": 18332341490714600003,
+    "повторение": 4756234203739524295,
+    "audit": 2690857810514352492,
+    "alpha": 11099342189553124947,
+    "beta": 12551039221781777427,
+    "123456": 13748574911024723759,
+    "🙂": 13229221042092380345,
+    "schema": 16141741506500451651,
+    "cache": 5870847178621941450
+  },
+  "expected_sketch_columns": {
+    "schema": [
+      182,
+      123,
+      250,
+      222
+    ],
+    "cache": [
+      9,
+      214,
+      97,
+      126
+    ],
+    "query": [
+      238,
+      201,
+      211,
+      157
+    ],
+    "vacuum": [
+      57,
+      112,
+      111,
+      18
+    ]
+  },
+  "expected_sketch_additions": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    3,
+    2,
+    3,
+    4,
+    1,
+    5,
+    4
+  ],
+  "expected_simhash_snapshots": [
+    {
+      "value": 3675082697783525249,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 3603025060787528193,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 8215002767726620355,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 2450389669705287745,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 3603311732670467651,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 2450108744488586307,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 13693345214219030083,
+      "baseline": null,
+      "drift": 0.0
+    },
+    {
+      "value": 13114632112346104835,
+      "baseline": 13114632112346104835,
+      "drift": 0.0
+    },
+    {
+      "value": 11961710590558340163,
+      "baseline": 13114632112346104835,
+      "drift": 0.0625
+    },
+    {
+      "value": 11674113533104299075,
+      "baseline": 13114632112346104835,
+      "drift": 0.15625
+    },
+    {
+      "value": 11530051089386921283,
+      "baseline": 13114632112346104835,
+      "drift": 0.296875
+    },
+    {
+      "value": 11530051089990898755,
+      "baseline": 13114632112346104835,
+      "drift": 0.296875
+    }
+  ],
+  "negative_controls": {
+    "builtin_hash_changes_with_seed": true,
+    "tampered_stable_hash_rejected": true,
+    "tampered_simhash_result_rejected": true
+  },
+  "status": "PASS_BOUNDED_CROSS_PROCESS_STABILITY",
+  "limitations": [
+    "4 distinct PYTHONHASHSEED processes and 12 tokens, not statistical detector accuracy",
+    "No SIMURG streaming guard, false-alarm calibration, AUROC or LLM exercised here",
+    "Hashlib based independent keyed oracle uses the same public BLAKE2b algorithm",
+    "Cross-process determinism is required for reproducible sketch buckets but does not prove collision resistance or semantic similarity",
+    "No actual dsh-runtime or 9router integration, security enforcement or production workload"
+  ]
+}

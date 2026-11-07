@@ -80,6 +80,7 @@
 | [TrinMedicalBot — A/B и внедрение Challenger v2](sequential-diagnosis-language-models/2026-11-05-challenger.md) | 2026-11-05 |
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
+| [SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck](simurg/2026-11-07-hash-stability.md) | 2026-11-07 |
 | [StateComp — State-Conditioned Context Compression — полнотекстовая научная проверка](statecomp/2026-11-05-full-text.md) | 2026-11-05 |
 | [BK-025/034 — пользовательские транскрипты и ограничения](telegram-transcripts/2026-11-06-user-provided.md) | 2026-11-06 |
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |

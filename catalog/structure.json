@@ -1967,6 +1967,20 @@
       "title": "Independent tool-result oracle including one strict final format violation",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/simurg/2026-11-07-hash-stability.md",
+      "title": "SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/simurg/2026-11-07-hash-stability.json",
+      "title": "Four Python hash-seed processes, GNU b2sum and independent sketch/SimHash oracle",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }
