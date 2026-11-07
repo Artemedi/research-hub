@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-07",
+  "study": "zero-code",
+  "source_pin": "47f6a81724e87ff5e916f0eb146516d801a8fb28",
+  "source_file_sha256": "f61414badb9ec40589ebb26655a4b109466c86e20a6e5d8b96add15bf7deb954",
+  "original_results_sha256": "e495947daa4b9a6dff11b284ceb99d41acfde6586af921e4f200e5a373abda1a",
+  "independent_standard_json_gold": "Python json.dumps original values, not parsed JavaScript result",
+  "valid_cases_verified": 120,
+  "invalid_cases_verified": 24,
+  "strict_duplicate_key_route_verified": true,
+  "mutations_rejected": 2,
+  "status": "PASS_BOUNDED_JSONC_BEHAVIOR",
+  "limitations": [
+    "Gold JSONC valid grammar is generated from Python values, not a complete independent JSONC specification",
+    "Twenty distinct base objects across six syntactic styles, not independent realistic project configs",
+    "Duplicate rejection is specific to native-json inspect; other consumers may be more permissive",
+    "No full supervisor or tool-permission integration validated"
+  ]
+}

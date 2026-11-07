@@ -96,3 +96,6 @@
 - [research-portfolio/source-audit.py](research-portfolio/source-audit.py)
 - [research-portfolio/source-packs.py](research-portfolio/source-packs.py)
 - [tests/test_drag_evidence_gate.py](tests/test_drag_evidence_gate.py)
+- [zero-code/2026-11-07-jsonc-fixtures.py](zero-code/2026-11-07-jsonc-fixtures.py)
+- [zero-code/2026-11-07-jsonc-oracle.py](zero-code/2026-11-07-jsonc-oracle.py)
+- [zero-code/2026-11-07-jsonc-runner.mjs](zero-code/2026-11-07-jsonc-runner.mjs)

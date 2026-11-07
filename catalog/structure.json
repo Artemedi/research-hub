@@ -1848,6 +1848,27 @@
       "title": "Two blocked ZCode scientific critics of Decision Geometry bandit laboratory evidence",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/zero-code/2026-11-07-jsonc-countercheck.md",
+      "title": "0-CODE pinned JSONC parser conformance and duplicate-key consumer boundary",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/zero-code/2026-11-07-jsonc.json",
+      "title": "120 valid and 24 malformed JSONC synthetic cases on original 0-CODE parser",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/zero-code/2026-11-07-jsonc-oracle.json",
+      "title": "Independent Python gold oracle and duplicate-key checks for 0-CODE JSONC",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }
