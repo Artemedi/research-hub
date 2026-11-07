@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "study": "goal-aware-dynamic-collaboration",
+  "original_experiment_sha256": "46c14636da76df68244b1213f85a4c4e783604c6f99f9309d3afa75c78d65c7f",
+  "source_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "source_file_sha256": "a726081289a2f7a848f69109a750db3ead0d95b88ab0adfdae0477f749b8f490",
+  "graph_checked": 35,
+  "workflow_checked": 35,
+  "oracle_checks_passed": 70,
+  "mutation_rejected": true,
+  "status": "PASS_SEPARATE_DECLARATIVE_ORACLE",
+  "limitations": [
+    "Verifier checks pinned source hash and recorded per-case outputs, not graph algorithm independently",
+    "All expectations are predefined synthetic categories, not external human expert judgments",
+    "No genuine GAD model workers or production system exercised"
+  ]
+}

@@ -1771,6 +1771,34 @@
       "title": "Two failed ZCode advisory methodology and adversarial reviews of ExperienceIndex",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/goal-aware-dynamic-collaboration/2026-11-07.md",
+      "title": "GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-guard.json",
+      "title": "Thirty-five real dsh-runtime graph vectors and thirty-five synthetic root gate cases",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json",
+      "title": "Independent Python oracle for GAD graph and root acceptance fixtures",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/goal-aware-dynamic-collaboration/2026-11-07-council.json",
+      "title": "Two blocked ZCode model critiques of GAD coordination lab",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

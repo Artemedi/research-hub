@@ -26,6 +26,9 @@
 | [data/results/experienceindex/2026-11-07-council.json](results/experienceindex/2026-11-07-council.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-07-link-oracle.json](results/experienceindex/2026-11-07-link-oracle.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-07-link-retrieval.json](results/experienceindex/2026-11-07-link-retrieval.json) | Результат ограниченной проверки |
+| [data/results/goal-aware-dynamic-collaboration/2026-11-07-council.json](results/goal-aware-dynamic-collaboration/2026-11-07-council.json) | Результат ограниченной проверки |
+| [data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-guard.json](results/goal-aware-dynamic-collaboration/2026-11-07-dag-guard.json) | Результат ограниченной проверки |
+| [data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json](results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json) | Результат ограниченной проверки |
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json](results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json) | Результат ограниченной проверки |
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json](results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |

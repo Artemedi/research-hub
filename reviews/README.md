@@ -44,6 +44,7 @@
 | [Where Does Exactly-Once Live? / LIMBO — полнотекстовая научная проверка](exactly-once-limbo/2026-11-05-full-text.md) | 2026-11-05 |
 | [LIMBO / TelegramBot — synthetic A/B политик доставки](exactly-once-limbo/2026-11-06-policy-ab.md) | 2026-11-06 |
 | [ExperienceIndex full-source method recheck and explicit-link retrieval A/B](experienceindex/2026-11-07.md) | 2026-11-07 |
+| [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](goal-aware-dynamic-collaboration/2026-11-07.md) | 2026-11-07 |
 | [BK-009 original Astra guidance full-text and five-pair live A/B](gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) | 2026-11-06 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |

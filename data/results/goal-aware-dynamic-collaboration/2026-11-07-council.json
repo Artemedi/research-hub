@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "study": "goal-aware-dynamic-collaboration",
+  "source_html_sha256": "ad645b18bc07875c15fadece1002d012f7eae4d3d2fecb3119a715eb99ff2b4f",
+  "lab_json_sha256": "46c14636da76df68244b1213f85a4c4e783604c6f99f9309d3afa75c78d65c7f",
+  "physical_parallelism": 1,
+  "roles": [
+    {
+      "role": "methods",
+      "prompt_sha256": "2da7daa2d808b024d732f117c16715a5fc25f4eaaed78607c7990fc5f9488ee5",
+      "status": "BLOCKED_PROVIDER",
+      "error": "TIMEOUT",
+      "elapsed_ms": 40043.9
+    },
+    {
+      "role": "falsifier",
+      "prompt_sha256": "7e2931644dc77b5a06afc5a9aeee8c32212d83ffdb0fa6145240ff42d83da92e",
+      "status": "BLOCKED_PROVIDER",
+      "elapsed_ms": 14476.2,
+      "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "return_code": 1,
+      "error": "NONZERO_EXIT"
+    }
+  ],
+  "completed": 0,
+  "blocked": 2,
+  "limitation": "Model opinion is not an independent acceptance oracle"
+}

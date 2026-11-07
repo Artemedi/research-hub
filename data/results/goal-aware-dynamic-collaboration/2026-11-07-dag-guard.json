@@ -1,0 +1,715 @@
+{
+  "date": "2026-11-07",
+  "study": "goal-aware-dynamic-collaboration",
+  "full_paper_url": "https://arxiv.org/html/2610.39193v1",
+  "full_paper_html_sha256": "ad645b18bc07875c15fadece1002d012f7eae4d3d2fecb3119a715eb99ff2b4f",
+  "dsh_runtime_pin": "3feed5d0d9a8a0f8e75c0a63f37b530d6eebc5dc",
+  "source_file": "packages/experimental/agent-team/src/task-graph.ts",
+  "source_sha256": "a726081289a2f7a848f69109a750db3ead0d95b88ab0adfdae0477f749b8f490",
+  "graph_vectors_total": 35,
+  "graph_vectors_passed": 35,
+  "graph_negative_vectors": 25,
+  "workflow_cases": 35,
+  "workflow_expected_accept": 5,
+  "workflow_guarded_accept": 5,
+  "naive_false_accept": 30,
+  "guarded_false_accept": 0,
+  "all_global_evidence_items": 210,
+  "scoped_verified_evidence_items": 55,
+  "flat_unrelated_items": 140,
+  "execution": "actual upstream TS graph validator via Node transform-types + deterministic external fake receipts",
+  "oracle": "fixed authored graph-error and root-acceptance labels; independent of model; not natural production workload",
+  "vectors": [
+    {
+      "id": "linear-0",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "diamond-0",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "duplicate-0",
+      "expected": "duplicate",
+      "observed": "duplicate",
+      "matched": true
+    },
+    {
+      "id": "self-0",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "missing-0",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "deleted-0",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "cycle-0",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "linear-1",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "diamond-1",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "duplicate-1",
+      "expected": "duplicate",
+      "observed": "duplicate",
+      "matched": true
+    },
+    {
+      "id": "self-1",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "missing-1",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "deleted-1",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "cycle-1",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "linear-2",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "diamond-2",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "duplicate-2",
+      "expected": "duplicate",
+      "observed": "duplicate",
+      "matched": true
+    },
+    {
+      "id": "self-2",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "missing-2",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "deleted-2",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "cycle-2",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "linear-3",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "diamond-3",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "duplicate-3",
+      "expected": "duplicate",
+      "observed": "duplicate",
+      "matched": true
+    },
+    {
+      "id": "self-3",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "missing-3",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "deleted-3",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "cycle-3",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "linear-4",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "diamond-4",
+      "expected": "PASS",
+      "observed": "PASS",
+      "matched": true
+    },
+    {
+      "id": "duplicate-4",
+      "expected": "duplicate",
+      "observed": "duplicate",
+      "matched": true
+    },
+    {
+      "id": "self-4",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    },
+    {
+      "id": "missing-4",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "deleted-4",
+      "expected": "missing",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "cycle-4",
+      "expected": "cycle",
+      "observed": "cycle",
+      "matched": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "clean-0",
+      "kind": "clean",
+      "expected": true,
+      "naive_accepted": true,
+      "guarded_accepted": true,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "unverified-0",
+      "kind": "unverified",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "unverified:write"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "stale-0",
+      "kind": "stale",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "stale:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "crossscope-0",
+      "kind": "crossscope",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "scope:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "rootfail-0",
+      "kind": "rootfail",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": false
+    },
+    {
+      "id": "missing_dep-0",
+      "kind": "missing_dep",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing:missing-0"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "missing_acceptance-0",
+      "kind": "missing_acceptance",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing_goal_or_acceptance"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "clean-1",
+      "kind": "clean",
+      "expected": true,
+      "naive_accepted": true,
+      "guarded_accepted": true,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "unverified-1",
+      "kind": "unverified",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "unverified:write"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "stale-1",
+      "kind": "stale",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "stale:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "crossscope-1",
+      "kind": "crossscope",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "scope:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "rootfail-1",
+      "kind": "rootfail",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": false
+    },
+    {
+      "id": "missing_dep-1",
+      "kind": "missing_dep",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing:missing-1"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "missing_acceptance-1",
+      "kind": "missing_acceptance",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing_goal_or_acceptance"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "clean-2",
+      "kind": "clean",
+      "expected": true,
+      "naive_accepted": true,
+      "guarded_accepted": true,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "unverified-2",
+      "kind": "unverified",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "unverified:write"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "stale-2",
+      "kind": "stale",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "stale:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "crossscope-2",
+      "kind": "crossscope",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "scope:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "rootfail-2",
+      "kind": "rootfail",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": false
+    },
+    {
+      "id": "missing_dep-2",
+      "kind": "missing_dep",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing:missing-2"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "missing_acceptance-2",
+      "kind": "missing_acceptance",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing_goal_or_acceptance"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "clean-3",
+      "kind": "clean",
+      "expected": true,
+      "naive_accepted": true,
+      "guarded_accepted": true,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "unverified-3",
+      "kind": "unverified",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "unverified:write"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "stale-3",
+      "kind": "stale",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "stale:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "crossscope-3",
+      "kind": "crossscope",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "scope:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "rootfail-3",
+      "kind": "rootfail",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": false
+    },
+    {
+      "id": "missing_dep-3",
+      "kind": "missing_dep",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing:missing-3"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "missing_acceptance-3",
+      "kind": "missing_acceptance",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing_goal_or_acceptance"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "clean-4",
+      "kind": "clean",
+      "expected": true,
+      "naive_accepted": true,
+      "guarded_accepted": true,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "unverified-4",
+      "kind": "unverified",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "unverified:write"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "stale-4",
+      "kind": "stale",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "stale:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "crossscope-4",
+      "kind": "crossscope",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "scope:audit"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 1,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "rootfail-4",
+      "kind": "rootfail",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": false
+    },
+    {
+      "id": "missing_dep-4",
+      "kind": "missing_dep",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing:missing-4"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    },
+    {
+      "id": "missing_acceptance-4",
+      "kind": "missing_acceptance",
+      "expected": false,
+      "naive_accepted": true,
+      "guarded_accepted": false,
+      "errors": [
+        "missing_goal_or_acceptance"
+      ],
+      "flat_context_items": 6,
+      "scoped_context_items": 2,
+      "irrelevant_flat_items": 4,
+      "root_verified": true
+    }
+  ],
+  "status": "BOUNDED_GRAPH_AND_ROOT_GATE_VERIFIED",
+  "caveats": [
+    "Real dsh-runtime graph validator tested but GAD controller/LLM not implemented or executed",
+    "Naive accept-all self-report baseline is intentionally weak, not a measured MAS comparator",
+    "Synthetic receipt hash and scopes are trusted in one process, not cryptographic worker isolation",
+    "No autonomous model tool calls, large coding benchmarks or genuine long-horizon task accuracy",
+    "No live tool I/O, production secrets or user data, and no edits to dsh-runtime",
+    "Root acceptance and dependency filtering are local lab logic, not existing dsh-runtime behavior"
+  ]
+}
