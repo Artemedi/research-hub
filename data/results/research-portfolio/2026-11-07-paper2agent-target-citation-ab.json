@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-07",
+  "experiment": "current dsh-paper2agent App.submit_analysis synthetic target-path A/B",
+  "source_file": "src/paper2project/core.py",
+  "source_file_sha256": "5c6e468d045e3fd91f1503c6c69e818e80c416aee119f0b6c96a508b5a7daa87",
+  "source_git_head": "890db42da86c307606195256ad898367b1e1a4f2",
+  "source_tree_clean": false,
+  "source_snapshot": "local tree; exact file SHA pins citation implementation, not all dependencies",
+  "cases": 150,
+  "supported_oracle": 50,
+  "unsupported_oracle": 100,
+  "baseline_unsupported_payload_accepted": 100,
+  "conservative_exact_unsupported_auto_pass": 0,
+  "conservative_exact_supported_auto_pass": 25,
+  "supported_paraphrases_deferred": 25,
+  "per_class": {
+    "exact": {
+      "cases": 25,
+      "supported_oracle": 25,
+      "baseline_payload_accepted": 25,
+      "exact_auto_pass": 25,
+      "baseline_unsupported_payload_accepted": 0,
+      "exact_unsupported_auto_pass": 0
+    },
+    "explicit_denial": {
+      "cases": 25,
+      "supported_oracle": 0,
+      "baseline_payload_accepted": 25,
+      "exact_auto_pass": 0,
+      "baseline_unsupported_payload_accepted": 25,
+      "exact_unsupported_auto_pass": 0
+    },
+    "never": {
+      "cases": 25,
+      "supported_oracle": 0,
+      "baseline_payload_accepted": 25,
+      "exact_auto_pass": 0,
+      "baseline_unsupported_payload_accepted": 25,
+      "exact_unsupported_auto_pass": 0
+    },
+    "positive_paraphrase": {
+      "cases": 25,
+      "supported_oracle": 25,
+      "baseline_payload_accepted": 25,
+      "exact_auto_pass": 0,
+      "baseline_unsupported_payload_accepted": 0,
+      "exact_unsupported_auto_pass": 0
+    },
+    "unrelated": {
+      "cases": 25,
+      "supported_oracle": 0,
+      "baseline_payload_accepted": 25,
+      "exact_auto_pass": 0,
+      "baseline_unsupported_payload_accepted": 25,
+      "exact_unsupported_auto_pass": 0
+    },
+    "wrong_entity": {
+      "cases": 25,
+      "supported_oracle": 0,
+      "baseline_payload_accepted": 25,
+      "exact_auto_pass": 0,
+      "baseline_unsupported_payload_accepted": 25,
+      "exact_unsupported_auto_pass": 0
+    }
+  },
+  "negative_controls": {
+    "invalid_line_range": "rejected",
+    "forged_quote": "rejected",
+    "unscoped_document": "rejected",
+    "missing_quote": "accepted"
+  },
+  "latency_median_ms": {
+    "baseline_ms": 1.64179,
+    "exact_gate_ms": 0.00348
+  },
+  "model_calls": 0,
+  "project_files_modified": false,
+  "limits": [
+    "Deliberately adversarial synthetic cases, not prevalence on scientific papers",
+    "Baseline validates source scope/range and optional literal quote, not claim entailment",
+    "Exact-only comparator is external to target; it was NOT integrated or tested with an LLM review path",
+    "Positive paraphrases are deferred, not scored as false rejections of semantic verification",
+    "Uncommitted source requires a separately preserved snapshot for full reproducibility",
+    "No private project data, real databases, model API calls or production changes"
+  ]
+}

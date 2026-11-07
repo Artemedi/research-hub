@@ -1547,6 +1547,27 @@
       "title": "Pinned Claude Swarm TypeScript build and 107 upstream unit-test results",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/target-counterchecks-round3.md",
+      "title": "Target-path citation and PostgreSQL planner resource counterchecks",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-paper2agent-target-citation-ab.json",
+      "title": "Target dsh-paper2agent citation acceptance synthetic A/B",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-pgplanner-timeout-ab.json",
+      "title": "PostgreSQL read-only EXPLAIN timeout and EXECUTE grant A/B",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

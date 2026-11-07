@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-07",
+  "study": "pgbot / PostgreSQL agent SQL security",
+  "experiment": "EXPLAIN (FORMAT JSON) read-only planner-time delay; timeout and GRANT/REVOKE",
+  "image": "docker.io/library/postgres:18",
+  "image_id": "79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "network": "none",
+  "published_ports": 0,
+  "host_mounts": 0,
+  "production_database_touched": false,
+  "credentials": "disposable synthetic only",
+  "cases": {
+    "no_timeout": {
+      "exit_code": 0,
+      "elapsed_ms": 390.25,
+      "planner_notice": true,
+      "statement_timeout": false,
+      "permission_denied": false,
+      "stdout_sha256": "dc4bd196fe2f1f0058ce9c9215006c269e56d0db87cc868399096aede5f4a3e0",
+      "stderr_tail": "NOTICE:  SYNTHETIC_PLANNER_DELAY\n"
+    },
+    "strict_timeout": {
+      "exit_code": 3,
+      "elapsed_ms": 167.4,
+      "planner_notice": false,
+      "statement_timeout": true,
+      "permission_denied": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "ERROR:  canceling statement due to statement timeout\nCONTEXT:  SQL statement \"SELECT pg_sleep(0.30)\"\nPL/pgSQL function planner_delay() line 3 at PERFORM\n"
+    },
+    "volatile_explain_control": {
+      "exit_code": 0,
+      "elapsed_ms": 84.81,
+      "planner_notice": false,
+      "statement_timeout": false,
+      "permission_denied": false,
+      "stdout_sha256": "db6afbcccfc7cc39e119b7d647bf988f61a7cc5c214975094fa917ea42493595",
+      "stderr_tail": ""
+    },
+    "execute_revoked": {
+      "exit_code": 3,
+      "elapsed_ms": 87.76,
+      "planner_notice": false,
+      "statement_timeout": false,
+      "permission_denied": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "ERROR:  permission denied for function planner_delay\n"
+    }
+  },
+  "conclusion": "A mislabeled IMMUTABLE function can impose execution latency during EXPLAIN READ ONLY; statement_timeout and role EXECUTE grants bound the tested case. EXPLAIN without ANALYZE is not an execution sandbox.",
+  "limits": [
+    "Only synthetic PL/pgSQL RAISE NOTICE and pg_sleep; no destructive side effects",
+    "The real pgbot binary, arbitrary SQL tool wrappers and MCP clients were not invoked",
+    "Wall time includes psql/podman overhead; this is not a performance benchmark",
+    "No network, file, privilege escalation or adversarial extension execution tested",
+    "Statement timeout and EXECUTE revocation are complementary controls, not a universal policy"
+  ]
+}

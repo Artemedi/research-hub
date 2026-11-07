@@ -14,6 +14,7 @@
 | [83-study × 45-project explicit assessment and NOT_EVALUATED coverage](../portfolio/2026-11-07/project-fit.md) | 2026-11-07 |
 | [Portfolio 83-source comprehensive access and evidence-gap audit](../portfolio/2026-11-07/review.md) | 2026-11-07 |
 | [GPT-6 independent senior review of thirty-one source-scope screenings](../portfolio/2026-11-07/senior-review.md) | 2026-11-07 |
+| [Target-path citation and PostgreSQL planner resource counterchecks](../portfolio/2026-11-07/target-counterchecks-round3.md) | 2026-11-07 |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |
