@@ -2,7 +2,7 @@
 
 # AKUZ
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/AKUZ/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/AKUZ/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -22,5 +22,6 @@
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | DBA-материалы: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Смешанная DBA-база; нет выделенного coding-agent task runtime или безопасного benchmark для Superagent. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_NO_FIT | NO_DIRECT_FIT | У исследуемого механизма нет прямого предметного контракта с проектом. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Смешанная DBA/application база; в профиле нет agentic cross-document answer boundary. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

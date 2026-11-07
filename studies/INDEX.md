@@ -10,7 +10,7 @@
 | --- | --- |
 | [0-CODE — автономные циклы разработки](zero-code.md) | [2026-11-04 / zero-code-review](../reviews/zero-code/2026-11-04.md) |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md) | [2026-10-05 / agent-error-dataset-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-agent-error-dataset-2026-11-05](../reviews/agent-error-dataset/2026-11-05-full-text.md) |
-| [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | [2026-11-03 / agent-mosaic-review](agent-mosaic.md) |
+| [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | [2026-11-03 / agent-mosaic-review](agent-mosaic.md) · [2026-11-07 / agent-mosaic-composite-gate-20261107](../reviews/agent-mosaic/2026-11-07-composite-gate.md) |
 | [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [2026-11-03 / agent-transfer-protocol-review](agent-transfer-protocol.md) |
 | [agent-risk](agent-risk.md) | [2026-11-03 / agent-risk-review](agent-risk.md) |
 | [Agentic Self-Awareness](agentic-self-awareness.md) | [2026-11-03 / agentic-self-awareness-review](agentic-self-awareness.md) |

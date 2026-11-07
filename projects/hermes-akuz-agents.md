@@ -2,7 +2,7 @@
 
 # hermes-akuz-agents
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -23,6 +23,7 @@
 | [squidagent](../catalog/studies/squidagent.md) | DOCUMENTED_CANDIDATE | P2 / FIT_HYPOTHESIS | Отдельно измерить выгоду распараллеливания и стоимость согласования в многоагентных задачах; нельзя автоматически переносить 2,6× из benchmark авторов | [Обзор](../studies/squidagent.md) · [Основание](../portfolio/2026-10-06--2026-10-12/project-fit.md) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Конфигурация multi-agent DBA handoff; перенос Mandate/queue в Hermes требует собственного adapter и benchmark. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [agentic-self-awareness](../catalog/studies/agentic-self-awareness.md) | DOCUMENTED_CANDIDATE | P1 / PROJECT_PROFILE_MATCH | Воздержание при недостатке фактов без ложного отказа на выполнимой задаче | [Обзор](../studies/agentic-self-awareness.md) · [Основание](../portfolio/2026-10-12--2026-10-19/project-fit.md) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Multi-agent handoff создаёт потенциальный путь накопления фактов, но профиль не документирует source labels, clearance или output gate. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

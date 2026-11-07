@@ -2,7 +2,7 @@
 
 # concept-loom-desktop
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/concept-loom-desktop/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/concept-loom-desktop/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -19,5 +19,6 @@
 | [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | desktop learning: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
 | [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | desktop learning: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Обучение/оценивание ответов; coding-agent lifecycle не является методом обучения. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Learning/coach application; профиль не задаёт защищённый multi-document knowledge boundary. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

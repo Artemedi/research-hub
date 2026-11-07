@@ -2,7 +2,7 @@
 
 # Wiki_PG
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/Wiki_PG/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/Wiki_PG/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -23,6 +23,7 @@
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Возможна диспетчеризация DBA-задач, но не подтверждён безопасный task-to-action контракт; read-only/PHI ограничения. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [karpathy-autoresearch](../catalog/studies/karpathy-autoresearch.md) | DOCUMENTED_CANDIDATE | SOURCE_SEAM_VERIFIED / BOUNDED_LAB | Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте. | [Обзор](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) · [Основание](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |
 | [inspektor-gadget](../catalog/studies/inspektor-gadget.md) | DOCUMENTED_CANDIDATE | OWNER_SUGGESTION / PROFILE_HYPOTHESIS_ONLY | User suggested evaluating eBPF event evidence for Wiki_PG PostgreSQL diagnostics; this is a research hypothesis, not established source-level fit. | [Обзор](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) · [Основание](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Hybrid retrieval и MCP смежны, но профиль не задаёт защищённые cross-source отношения или модель классификации; требуется конкретный workload и source audit. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

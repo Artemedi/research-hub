@@ -2,7 +2,7 @@
 
 # dsh-claude-primary-agent
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -14,6 +14,7 @@
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | primary-driver lifecycle: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
 | [claude-swarm](../catalog/studies/claude-swarm.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | \| Claude Swarm \| dsh-claude-primary-agent \| driver@6253550:8–20 уже имеет SDK query, разрешения и abort \| Работающий primary driver — не совместимый swarm API; нельзя переносить bypass permissions \| mocked lifecycle + permission/abort negative controls \| PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE \| | [Обзор](../reviews/claude-swarm/2026-11-04.md) · [Основание](../reviews/claude-swarm/2026-11-04.md) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Session resume/cancellation и permission propagation — конкретный lifecycle contract; совместимость и process ownership требуют теста. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Agent SDK integration может оказаться runtime boundary, но профиль не подтверждает cross-document retrieval или provenance contract. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

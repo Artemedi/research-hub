@@ -2072,6 +2072,55 @@
       "title": "Independent SHA and source contract checks for YouTube Skills API boundary",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-mosaic/2026-11-07-composite-gate.md",
+      "title": "Agent Mosaic — полнотекстовый follow-up и synthetic composite-gate lab",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/agent-mosaic-project-fit.md",
+      "title": "Agent Mosaic — project fit по 45 PROJECT.md",
+      "kind": "project-fit",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-mosaic/2026-11-07-composite-gate.json",
+      "title": "Agent Mosaic — synthetic composite-gate results",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json",
+      "title": "Agent Mosaic — independent oracle verification",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json",
+      "title": "Agent Mosaic — machine-readable project-fit matrix",
+      "kind": "project-fit",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-mosaic/2026-11-07-composite-gate.py",
+      "title": "Agent Mosaic — reproducible synthetic composite-gate experiment",
+      "kind": "guide",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-mosaic/2026-11-07-composite-gate-oracle.py",
+      "title": "Agent Mosaic — independent synthetic oracle",
+      "kind": "guide",
+      "date": "2026-11-07"
     }
   ]
 }

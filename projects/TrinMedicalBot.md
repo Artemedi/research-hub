@@ -2,7 +2,7 @@
 
 # TrinMedicalBot
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/03-automations/TrinMedicalBot/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/TrinMedicalBot/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -10,7 +10,7 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Медицинский assistant profile с внешним retrieval: риск композиционного раскрытия прямо релевантен, но это профиль, а не runtime; клинические данные и production не использовались. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

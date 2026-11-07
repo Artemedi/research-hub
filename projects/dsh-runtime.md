@@ -2,7 +2,7 @@
 
 # dsh-runtime
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-runtime/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-runtime/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -48,6 +48,7 @@
 | [karpathy-autoresearch](../catalog/studies/karpathy-autoresearch.md) | DOCUMENTED_CANDIDATE | SECONDARY_CANDIDATE / NOT_VERIFIED | Точная область соответствия и ограничение в строке source review; это не доказанная эффективность на проекте. | [Обзор](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) · [Основание](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |
 | [dsh-creator-mode](../catalog/studies/dsh-creator-mode.md) | DOCUMENTED_CANDIDATE | SOURCE_SEAM / CONDITIONAL_CANDIDATE | Документальный fit на основании Codex mock Client contract и project profile; эффект на рабочем проекте не измерен. | [Обзор](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) · [Основание](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) |
 | [gpt6-astra-skills-prompts](../catalog/studies/gpt6-astra-skills-prompts.md) | DOCUMENTED_CANDIDATE | MODEL_SPECIFIC_PROMPT_HYPOTHESIS / P0_BLOCKER_UNCHANGED | OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested. | [Обзор](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) · [Основание](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Агентный runtime и tool orchestration — вероятная точка enforcement на выпуске ответа; конкретный output hook на текущем исходнике не закреплён. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

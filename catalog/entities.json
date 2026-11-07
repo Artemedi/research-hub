@@ -139,7 +139,7 @@
       "kind": "paper",
       "card": "studies/agent-mosaic.md",
       "primary_url": "https://arxiv.org/abs/2610.30418",
-      "current_review_id": "agent-mosaic-review",
+      "current_review_id": "agent-mosaic-composite-gate-20261107",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "3b6225fb90a48f3c9765d7f8d9153c8cddaedeee79ac6b3ef07ed3da7ef84327",
       "linked_materials": [
@@ -3645,6 +3645,20 @@
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Original full public Cursor article read and HTML/text SHA pinned. Synthetic 52-template×5 repeated tool-description character proxy and four sequential ZCode GLM-5.3-Flash specialist/chair roles; first chair failed tool budget; corrected chair tool check succeeded but reported 6 negative examples versus independent 20 due truncated preview. No provider-token/Cursor 7% replication, real tool selection, project integration or model-quality A/B.",
       "supersedes": "cursor-token-efficiency-primary-2026-11-05"
+    },
+    {
+      "id": "agent-mosaic-composite-gate-20261107",
+      "study_ids": [
+        "agent-mosaic"
+      ],
+      "version_ids": [
+        "agent-mosaic-version"
+      ],
+      "date": "2026-11-07",
+      "document": "reviews/agent-mosaic/2026-11-07-composite-gate.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Author-reported 10,800 simulation outputs and 1,440 live harness outputs were not reproduced. Independent synthetic policy-contract lab ran 30 cases x9 outputs; separate oracle passed 270/270. No LLM, target project source integration, production data or production approval.",
+      "supersedes": "agent-mosaic-review"
     }
   ],
   "experiments": [
@@ -3934,278 +3948,298 @@
         "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json",
         "experiments/2026-11-07-bk021-tool-context-proxy.py"
       ]
+    },
+    {
+      "id": "agent-mosaic-composite-gate-lab-20261107",
+      "study_ids": [
+        "agent-mosaic"
+      ],
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "30 synthetic cases across three abstract domains x9 output patterns =270; compared document ACL, structured claim/provenance gate and deterministic output-bound gate. Oracle labels 90 ALLOW, 120 DENY, 60 INCONCLUSIVE; independent checker PASS 270/270. Output-bound gate: zero false disclosure releases, zero unverified releases, 90/90 safe outputs released, 120 INCONCLUSIVE.",
+      "limitations": "No LLM, Hermes, Pi, retrieval, target project source, network, real records or production. Oracle uses exact synthetic markers and fixture provenance, not general semantic claim extraction. Output-bound renderer is a proposed contract, not an implementation. Author benchmark results NOT_REPRODUCED.",
+      "artifacts": [
+        "reviews/agent-mosaic/2026-11-07-composite-gate.md",
+        "experiments/agent-mosaic/2026-11-07-composite-gate.py",
+        "experiments/agent-mosaic/2026-11-07-composite-gate-oracle.py",
+        "data/results/agent-mosaic/2026-11-07-composite-gate.json",
+        "data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json",
+        "portfolio/2026-11-07/agent-mosaic-project-fit.md",
+        "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+      ]
     }
   ],
   "projects": [
     {
       "id": "AKUZ",
       "title": "AKUZ",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/AKUZ/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/AKUZ/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "Wiki_PG",
       "title": "Wiki_PG",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/Wiki_PG/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/Wiki_PG/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "akuz-issue",
       "title": "akuz-issue",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/akuz-issue/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-issue/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "akuz-optimizer-twin",
       "title": "akuz-optimizer-twin",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/akuz-optimizer-twin/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-optimizer-twin/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "akuz-schema-inventory",
       "title": "akuz-schema-inventory",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/akuz-schema-inventory/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-schema-inventory/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "akuzlogparser",
       "title": "akuzlogparser",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/akuzlogparser/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuzlogparser/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "psqlqa",
       "title": "psqlqa",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/psqlqa/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/psqlqa/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "sequential-rca",
       "title": "sequential-rca",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/01-dba-akuz/sequential-rca/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/sequential-rca/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "9router",
       "title": "9router",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/9router/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/9router/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "Harness",
       "title": "Harness",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/Harness/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/Harness/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "HermesAgent",
       "title": "HermesAgent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/HermesAgent/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/HermesAgent/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "TencentDB-Agent-Memory",
       "title": "TencentDB-Agent-Memory",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/TencentDB-Agent-Memory/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/TencentDB-Agent-Memory/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "agent-config",
       "title": "agent-config",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/agent-config/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/agent-config/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "agent-skills",
       "title": "agent-skills",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/agent-skills/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/agent-skills/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "bitvec-dsh",
       "title": "bitvec-dsh",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/bitvec-dsh/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/bitvec-dsh/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "claude-code-docs",
       "title": "claude-code-docs",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/claude-code-docs/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/claude-code-docs/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "deepseek-harness",
       "title": "deepseek-harness",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/deepseek-harness/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/deepseek-harness/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "dsh-claude-primary-agent",
       "title": "dsh-claude-primary-agent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "dsh-runtime",
       "title": "dsh-runtime",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-runtime/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-runtime/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "dsh-team-context",
       "title": "dsh-team-context",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-team-context/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-team-context/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "dsh",
       "title": "dsh",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "free-router",
       "title": "free-router",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/free-router/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/free-router/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "hermes-akuz-agents",
       "title": "hermes-akuz-agents",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "teamai-cli",
       "title": "teamai-cli",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/teamai-cli/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/teamai-cli/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "TelegramBot",
       "title": "TelegramBot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/03-automations/TelegramBot/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/TelegramBot/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "TrinMedicalBot",
       "title": "TrinMedicalBot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/03-automations/TrinMedicalBot/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/TrinMedicalBot/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "confluence-wiki-backups",
       "title": "confluence-wiki-backups",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/03-automations/confluence-wiki-backups/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/confluence-wiki-backups/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "wiki-tasks",
       "title": "wiki-tasks",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/03-automations/wiki-tasks/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/wiki-tasks/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "MyPartyIsGrinding",
       "title": "MyPartyIsGrinding",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/MyPartyIsGrinding/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/MyPartyIsGrinding/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "MyWiki",
       "title": "MyWiki",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/MyWiki/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/MyWiki/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "WarOfGenesisIdleLoot",
       "title": "WarOfGenesisIdleLoot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/WarOfGenesisIdleLoot/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/WarOfGenesisIdleLoot/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "anastasia-wiki-bot",
       "title": "anastasia-wiki-bot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/anastasia-wiki-bot/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/anastasia-wiki-bot/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "concept-loom-desktop",
       "title": "concept-loom-desktop",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/concept-loom-desktop/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/concept-loom-desktop/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "game-localization-guide",
       "title": "game-localization-guide",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/04-personal-games/game-localization-guide/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/game-localization-guide/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "MS-SQL",
       "title": "MS-SQL",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/MS-SQL/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/MS-SQL/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "Postgres14book",
       "title": "Postgres14book",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/Postgres14book/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/Postgres14book/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "SQL-Server-First-Responder-Kit",
       "title": "SQL-Server-First-Responder-Kit",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/SQL-Server-First-Responder-Kit/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/SQL-Server-First-Responder-Kit/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "SQLServerTools",
       "title": "SQLServerTools",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/SQLServerTools/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/SQLServerTools/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "gitignore",
       "title": "gitignore",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/gitignore/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/gitignore/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "sqlserver-kit",
       "title": "sqlserver-kit",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/sqlserver-kit/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/sqlserver-kit/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "tigertoolbox",
       "title": "tigertoolbox",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/tigertoolbox/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/tigertoolbox/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "uuid-vs-auto-increment",
       "title": "uuid-vs-auto-increment",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/05-external-references/uuid-vs-auto-increment/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/uuid-vs-auto-increment/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "dsh-paper2agent",
       "title": "dsh-paper2agent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/06-independent-research/dsh-paper2agent/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/06-independent-research/dsh-paper2agent/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "paper2agent-index",
       "title": "paper2agent-index",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/06-independent-research/paper2agent-index/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/06-independent-research/paper2agent-index/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     },
     {
       "id": "developer-safe-dotnet-core",
       "title": "developer-safe-dotnet-core",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md",
-      "registry_revision": "0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md",
+      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
     }
   ],
   "assessments": [
@@ -13149,6 +13183,771 @@
       "source_line": 60,
       "source_excerpt": "| BK-014 OpenResearch | `dsh-paper2agent` | B позволяет сохранить точную версию committed source + digest и восстановить её без исходного checkout; A фиксирует текущие файлы и обнаруживает dirty change | `DOCUMENTED_CANDIDATE / PROVENANCE_ARCHIVE_OPTION_ONLY`. При доказанном дефекте воспроизведения — добавить минимальный **неизменяемый source tar** и manifest `commit/digest/size` как **дополнение** к существующим `tree_hash` и Podman; сначала определить независимый raw-vs-committed invariant, dirty preflight, archive size limit/retention, repeated offline test |",
       "supersedes": "alphaxiv-openresearch-document-dsh-paper2agent"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "AKUZ",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Смешанная DBA/application база; в профиле нет agentic cross-document answer boundary.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "4dd957bf4bb9348e07dc86382e45d2a72ea1ed22bf6bc438c450ad945291059a",
+      "id": "agent-mosaic-2026-11-07-akuz",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "Wiki_PG",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Hybrid retrieval и MCP смежны, но профиль не задаёт защищённые cross-source отношения или модель классификации; требуется конкретный workload и source audit.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "0c70c5add04a9be90c9b5b65662b7b67417b8a47b0c1211e8120999547f8b14f",
+      "id": "agent-mosaic-2026-11-07-wiki-pg",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuz-issue",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Incident evidence и DBA playbooks; профиль не показывает agent runtime, выпускающий ответы из нескольких закрытых источников.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "79a7732ba4dc87fa92763be007d61a3b27e790b928f6a9e5d96cb17a535d5f19",
+      "id": "agent-mosaic-2026-11-07-akuz-issue",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuz-optimizer-twin",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Локальный optimizer twin решает fidelity статистик/планов, а не confidentiality в agent synthesis.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "3a83fb70cb581ecd26f76b329eb75082f028bcf716ba8780fee11dcd0afaac2e",
+      "id": "agent-mosaic-2026-11-07-akuz-optimizer-twin",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuz-schema-inventory",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Read-only schema inventory и dependency graphs; нет agentic final-output boundary.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "58c594566af3420c10a87f212031ea6961c0d7f76893291b53dcdfc0022cef6a",
+      "id": "agent-mosaic-2026-11-07-akuz-schema-inventory",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuzlogparser",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Streaming log parsing/reporting; не multi-document LLM output path.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "f47a0c913a0bd6b5fe1f8dfc824e7b3c78c2272dc569610ff4e7b739ec8ccdc9",
+      "id": "agent-mosaic-2026-11-07-akuzlogparser",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "psqlqa",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний fork анализатора планов; нет собственного downstream agent output boundary.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "eb5ca078d08818de82011fa5cccbe597e1d2fb36e99007b768e4ca3623249121",
+      "id": "agent-mosaic-2026-11-07-psqlqa",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "sequential-rca",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Offline RCA workflow; в профиле нет агентного synthesis boundary.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "e23ff05fa4693d8103d86360bc0bd9a1dbe63c2ddf1e222f4472bc9656314d79",
+      "id": "agent-mosaic-2026-11-07-sequential-rca",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "9router",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Provider/model routing не классифицирует содержание и не контролирует итоговый текст.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "2097f6227a651ee3e5a60af673c96cf4c513b75a8ee433c7a8f0875190ba64b4",
+      "id": "agent-mosaic-2026-11-07-9router",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "Harness",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Интеграционная probe-область подходит для будущего synthetic test, но не является владельцем final-answer enforcement.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "7f1a3315c9030a57f301207071625e90543cc7e7e7b75781382bf389589d1213",
+      "id": "agent-mosaic-2026-11-07-harness",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "HermesAgent",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Gateway/tool configuration смежна с исследованием, но конфигурация не равна runtime output gate; live результат авторов не переносится на текущую установку.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "7b4daf99adb5d4b7d359712e62771becec1568b1bb7c27dc47705f982fdcbe25",
+      "id": "agent-mosaic-2026-11-07-hermesagent",
+      "supersedes": "agent-mosaic-document-HermesAgent",
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "TencentDB-Agent-Memory",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний memory reference; не собственный runtime и не владелец выпуска ответа.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "df85954c09953cf4fd25d757b0dbecf9b15d0826be46dae45a0059db9cfe2eff",
+      "id": "agent-mosaic-2026-11-07-tencentdb-agent-memory",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "agent-config",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Prompt/hook rules могут быть одним слоем защиты, но авторские результаты показывают остаточное раскрытие при headers/rules; самостоятельный enforcement не доказан.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "fb9b7f24c686ca73556bfcfc80873b20eb8028faa83354b3a35515709196df28",
+      "id": "agent-mosaic-2026-11-07-agent-config",
+      "supersedes": "agent-mosaic-document-agent-config",
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "agent-skills",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Skills могут задавать правила, но не обеспечивают детерминированный контроль финального текста.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "1edc7b56cecf6e68a0509a7747144161e3d65d61ab2877b6b7a63b47dd9b7c8b",
+      "id": "agent-mosaic-2026-11-07-agent-skills",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "bitvec-dsh",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Latent-state bridge и обучение; не относится к cross-source disclosure enforcement.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "f7e26cc68d2ab3ec80d195dd06ce936e1fc0fd6a478d0513aacdf7e8eb274b2a",
+      "id": "agent-mosaic-2026-11-07-bitvec-dsh",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "claude-code-docs",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Архив документации, не исполняемый agent runtime.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "8f86928aba10db99bb82cdcfb12fbd5b4416007d648b68decd213ce0556e8739",
+      "id": "agent-mosaic-2026-11-07-claude-code-docs",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "deepseek-harness",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Upstream tracking reference; собственный runtime выделен отдельно.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "2adfe86fb8b2c98ef56da191e86aaa59648771af8afa863537e433a91241b6a5",
+      "id": "agent-mosaic-2026-11-07-deepseek-harness",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONTROL_PLANE_REFERENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Control-plane governance и owner approvals полезны для gate процесса, но не являются runtime enforcement point.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "f0ec1ccf1cfd068da6d99825defa11bf87edc83ae43ba325e29eca7c05fef823",
+      "id": "agent-mosaic-2026-11-07-dsh",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-claude-primary-agent",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Agent SDK integration может оказаться runtime boundary, но профиль не подтверждает cross-document retrieval или provenance contract.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "7fa50e746b8d440fd2c8a8acef3c3b12c996db03b3f62214a2dd19ab5d4b719d",
+      "id": "agent-mosaic-2026-11-07-dsh-claude-primary-agent",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-runtime",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Агентный runtime и tool orchestration — вероятная точка enforcement на выпуске ответа; конкретный output hook на текущем исходнике не закреплён.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": "Locate and pin the final answer emission hook, then run the same synthetic output-bound A/B with an independent oracle and fail-closed release.",
+      "next_test_reason": "Runtime is the likely enforcement layer, but the exact source hook and consumer contract remain unverified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "8bd746ced6f1709e832536590801105338791f92abfeaf519f80dc9c05a7d7ab",
+      "id": "agent-mosaic-2026-11-07-dsh-runtime",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-team-context",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Контур governed knowledge/retrieval — возможный владелец source labels и provenance; финальный ответ выпускает runtime, а claim-level gate пока не подтверждён.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": "Pin the current retrieval contract and test source labels/provenance on synthetic fact pairs; do not treat the knowledge plane as the final output gate.",
+      "next_test_reason": "Source labels/provenance may belong in the knowledge plane, but final-answer enforcement is outside that boundary.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "868b73b440a261e66c61fcef4ab664cc0d36446272cbae783900193ddd68e940",
+      "id": "agent-mosaic-2026-11-07-dsh-team-context",
+      "supersedes": "agent-mosaic-document-dsh-team-context",
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "free-router",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Legacy routing reference; маршрутизация провайдера не контролирует композицию содержимого.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "5605450c358853ffdf3a4429bee88f5d09c2aacad289ac466898577a0fe17af8",
+      "id": "agent-mosaic-2026-11-07-free-router",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "hermes-akuz-agents",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Multi-agent handoff создаёт потенциальный путь накопления фактов, но профиль не документирует source labels, clearance или output gate.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "9fb60ca689db5acbb7bcec9841480ba304e39473a7bb492ac6b6f68c174bc16d",
+      "id": "agent-mosaic-2026-11-07-hermes-akuz-agents",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "teamai-cli",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний fork синхронизации знаний/rules; не собственный output gate.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "1bbd30d1e46108bb63d81fc5a32eb19b2b7ac4c27359ed201984b89384543d32",
+      "id": "agent-mosaic-2026-11-07-teamai-cli",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "TelegramBot",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Scheduled video publication; нет конфиденциального agent retrieval/output workload.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "bdcb47f08cc29c8973e34a20e26a02d7259162fb322a7b91311b534a7650d419",
+      "id": "agent-mosaic-2026-11-07-telegrambot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "TrinMedicalBot",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Медицинский assistant profile с внешним retrieval: риск композиционного раскрытия прямо релевантен, но это профиль, а не runtime; клинические данные и production не использовались.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": "Run only a synthetic multi-document confidentiality suite against a pinned, isolated answer-release path; keep clinical quality and real records out of scope.",
+      "next_test_reason": "Profile-level risk match only; no runtime integration or clinical evaluation was performed.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "4c344023433d8025d19acd35423940c1de05d08b94c1e2c1b575aae8c365bb22",
+      "id": "agent-mosaic-2026-11-07-trinmedicalbot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "confluence-wiki-backups",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Backup/restore repository; целостность резервных копий не является agent answer-release control.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "b44da358681864318e4e3e728669cbfd1efe6e6a3e7e4ca951d11455b493a377",
+      "id": "agent-mosaic-2026-11-07-confluence-wiki-backups",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "wiki-tasks",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Persistent memory/task state смежны с накоплением фактов, но защищённый multi-source corpus и final-output owner не подтверждены.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "Revisit only after a concrete multi-source confidentiality workload and pinned output boundary are identified.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "e483f1dd9be38dbb3d7b3700b3713ff05ce0fb63af5e3fa03227e7dfd2fe3933",
+      "id": "agent-mosaic-2026-11-07-wiki-tasks",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "MyPartyIsGrinding",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Game modification project; нет соответствующего agentic confidential corpus.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "93a57825dcc754a61b4a6b573ffc21b47ccd71d4e75af5cea4bb59319b443d08",
+      "id": "agent-mosaic-2026-11-07-mypartyisgrinding",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "MyWiki",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Личная offline wiki; профиль не подтверждает agentic multi-source answer pipeline.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "997e6df2f06a981aa2525f31d5f6723e5d5d621c5bac3061b12e7e4a578ee63b",
+      "id": "agent-mosaic-2026-11-07-mywiki",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "WarOfGenesisIdleLoot",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Game modification project; нет соответствующего agentic confidential corpus.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "a4de7fb45f88fd16274360e5ad07eed15fc0f2b9e67af5414a1c6e232be0ef81",
+      "id": "agent-mosaic-2026-11-07-warofgenesisidleloot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "anastasia-wiki-bot",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "DEFERRED",
+      "evidence": "NOT_EVALUATED",
+      "reason": "Назначение проекта в профиле не подтверждено; без source evidence fit не оценивается.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "NOT_EVALUATED; no inference from missing profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "5dfaf723cb56ce93dad39e3e0f2c7651e206b21c8c2faa22b6cc124845ddf365",
+      "id": "agent-mosaic-2026-11-07-anastasia-wiki-bot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "concept-loom-desktop",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Learning/coach application; профиль не задаёт защищённый multi-document knowledge boundary.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "75d5941cfbe983c8b1fe985c051d555b604a5297ccdefc68eda99ae917a42687",
+      "id": "agent-mosaic-2026-11-07-concept-loom-desktop",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "game-localization-guide",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Localization workflow; не agentic confidential synthesis.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "171b64a2d2e7e0f95ca7f2319591eccc013b289e86a397603d251c1def1b7a28",
+      "id": "agent-mosaic-2026-11-07-game-localization-guide",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "MS-SQL",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний набор SQL-скриптов; нет agentic cross-document answer path.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "0b5d3ed27845574f9ce4377a204f64a08ef22e57fa85e36b25a4806ee07c455e",
+      "id": "agent-mosaic-2026-11-07-ms-sql",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "Postgres14book",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Fork книги; справочный материал, не runtime.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "1cc34dab52451dc705acef9e4e24517599c9aa8f22cc7b9e44db6b82df8c2770",
+      "id": "agent-mosaic-2026-11-07-postgres14book",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "SQL-Server-First-Responder-Kit",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний diagnostic kit; не agentic retrieval/output owner.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "25a7a0b0f5f291e1354946cd184f5a01e1e86596ad575251268a9e1b7da2bc9c",
+      "id": "agent-mosaic-2026-11-07-sql-server-first-responder-kit",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "SQLServerTools",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний maintenance toolkit; нет multi-source agent boundary.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "b4f450fb317c67b22f62d482d922756e9feaa930716a41ddd7cc01227168fc17",
+      "id": "agent-mosaic-2026-11-07-sqlservertools",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "gitignore",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Справочные шаблоны ignore; не agent runtime.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "6e180749cc98846cf6616eb5bebc336e7b9294899f5f7541d4e30c9a53ef4e84",
+      "id": "agent-mosaic-2026-11-07-gitignore",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "sqlserver-kit",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний SQL reference toolkit; нет agentic output path.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "395cc0df73dd5049fa6d6d0754b6dcf924e919b80805f342565e917f872c1b1a",
+      "id": "agent-mosaic-2026-11-07-sqlserver-kit",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "tigertoolbox",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний Microsoft toolbox; не agent runtime.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "351a8817a4d9310e848aa52746351811a084b2bb2304b8b06d39bdc87a5546bc",
+      "id": "agent-mosaic-2026-11-07-tigertoolbox",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "uuid-vs-auto-increment",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний benchmark по индексам; предметно не связан с composite disclosure.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "b4e424a4604e13035277ac101dbc3743193f26b3b50bf8b9870ff0bafc677b01",
+      "id": "agent-mosaic-2026-11-07-uuid-vs-auto-increment",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-paper2agent",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Исследовательский paper-to-agent инструмент; не runtime, обрабатывающий защищённые пользовательские источники.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "1e4dcf589b963531156e6d942373cb0ae50609a7dda5773467e48ffa5d16ab10",
+      "id": "agent-mosaic-2026-11-07-dsh-paper2agent",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "paper2agent-index",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Derived index; не самостоятельный agent runtime или output enforcement layer.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "No current implementation target for this source based on the project profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "ca472f0bb9346cfe1219852ab3dce49c4e087b2fca3fd5138387ab7601104839",
+      "id": "agent-mosaic-2026-11-07-paper2agent-index",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "developer-safe-dotnet-core",
+      "review_id": "agent-mosaic-composite-gate-20261107",
+      "date": "2026-11-07",
+      "decision": "DEFERRED",
+      "evidence": "NOT_EVALUATED",
+      "reason": "В карточке нет Research-to-Project профиля и доступного source snapshot; оценка не выполнялась.",
+      "limitations": "45-card profile triage only. No project integration, target runtime experiment, production data or production approval. Private PROJECT.md bodies were not copied.",
+      "next_test": null,
+      "next_test_reason": "NOT_EVALUATED; no inference from missing profile.",
+      "project_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+      "project_card_sha256": "382dac3061773fddd677dbcafd6725fb317421507a2bb193c0a8e79e8a64de6d",
+      "id": "agent-mosaic-2026-11-07-developer-safe-dotnet-core",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
     }
   ],
   "current_assessments": [
@@ -13841,21 +14640,6 @@
       "study_id": "agent-error-dataset",
       "project_id": "sequential-rca",
       "assessment_id": "agent-error-dataset-document-sequential-rca"
-    },
-    {
-      "study_id": "agent-mosaic",
-      "project_id": "agent-config",
-      "assessment_id": "agent-mosaic-document-agent-config"
-    },
-    {
-      "study_id": "agent-mosaic",
-      "project_id": "dsh-team-context",
-      "assessment_id": "agent-mosaic-document-dsh-team-context"
-    },
-    {
-      "study_id": "agent-mosaic",
-      "project_id": "HermesAgent",
-      "assessment_id": "agent-mosaic-document-HermesAgent"
     },
     {
       "study_id": "agent-transfer-protocol",
@@ -15031,6 +15815,231 @@
       "study_id": "gpt6-astra-skills-prompts",
       "project_id": "dsh-runtime",
       "assessment_id": "bk009-gpt6-astra-live-ab-20261106-dsh-runtime"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "AKUZ",
+      "assessment_id": "agent-mosaic-2026-11-07-akuz"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "Wiki_PG",
+      "assessment_id": "agent-mosaic-2026-11-07-wiki-pg"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuz-issue",
+      "assessment_id": "agent-mosaic-2026-11-07-akuz-issue"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuz-optimizer-twin",
+      "assessment_id": "agent-mosaic-2026-11-07-akuz-optimizer-twin"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuz-schema-inventory",
+      "assessment_id": "agent-mosaic-2026-11-07-akuz-schema-inventory"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "akuzlogparser",
+      "assessment_id": "agent-mosaic-2026-11-07-akuzlogparser"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "psqlqa",
+      "assessment_id": "agent-mosaic-2026-11-07-psqlqa"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "sequential-rca",
+      "assessment_id": "agent-mosaic-2026-11-07-sequential-rca"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "9router",
+      "assessment_id": "agent-mosaic-2026-11-07-9router"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "Harness",
+      "assessment_id": "agent-mosaic-2026-11-07-harness"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "HermesAgent",
+      "assessment_id": "agent-mosaic-2026-11-07-hermesagent"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "TencentDB-Agent-Memory",
+      "assessment_id": "agent-mosaic-2026-11-07-tencentdb-agent-memory"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "agent-config",
+      "assessment_id": "agent-mosaic-2026-11-07-agent-config"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "agent-skills",
+      "assessment_id": "agent-mosaic-2026-11-07-agent-skills"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "bitvec-dsh",
+      "assessment_id": "agent-mosaic-2026-11-07-bitvec-dsh"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "claude-code-docs",
+      "assessment_id": "agent-mosaic-2026-11-07-claude-code-docs"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "deepseek-harness",
+      "assessment_id": "agent-mosaic-2026-11-07-deepseek-harness"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh",
+      "assessment_id": "agent-mosaic-2026-11-07-dsh"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-claude-primary-agent",
+      "assessment_id": "agent-mosaic-2026-11-07-dsh-claude-primary-agent"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-runtime",
+      "assessment_id": "agent-mosaic-2026-11-07-dsh-runtime"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-team-context",
+      "assessment_id": "agent-mosaic-2026-11-07-dsh-team-context"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "free-router",
+      "assessment_id": "agent-mosaic-2026-11-07-free-router"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "hermes-akuz-agents",
+      "assessment_id": "agent-mosaic-2026-11-07-hermes-akuz-agents"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "teamai-cli",
+      "assessment_id": "agent-mosaic-2026-11-07-teamai-cli"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "TelegramBot",
+      "assessment_id": "agent-mosaic-2026-11-07-telegrambot"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "TrinMedicalBot",
+      "assessment_id": "agent-mosaic-2026-11-07-trinmedicalbot"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "confluence-wiki-backups",
+      "assessment_id": "agent-mosaic-2026-11-07-confluence-wiki-backups"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "wiki-tasks",
+      "assessment_id": "agent-mosaic-2026-11-07-wiki-tasks"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "MyPartyIsGrinding",
+      "assessment_id": "agent-mosaic-2026-11-07-mypartyisgrinding"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "MyWiki",
+      "assessment_id": "agent-mosaic-2026-11-07-mywiki"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "WarOfGenesisIdleLoot",
+      "assessment_id": "agent-mosaic-2026-11-07-warofgenesisidleloot"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "anastasia-wiki-bot",
+      "assessment_id": "agent-mosaic-2026-11-07-anastasia-wiki-bot"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "concept-loom-desktop",
+      "assessment_id": "agent-mosaic-2026-11-07-concept-loom-desktop"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "game-localization-guide",
+      "assessment_id": "agent-mosaic-2026-11-07-game-localization-guide"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "MS-SQL",
+      "assessment_id": "agent-mosaic-2026-11-07-ms-sql"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "Postgres14book",
+      "assessment_id": "agent-mosaic-2026-11-07-postgres14book"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "SQL-Server-First-Responder-Kit",
+      "assessment_id": "agent-mosaic-2026-11-07-sql-server-first-responder-kit"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "SQLServerTools",
+      "assessment_id": "agent-mosaic-2026-11-07-sqlservertools"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "gitignore",
+      "assessment_id": "agent-mosaic-2026-11-07-gitignore"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "sqlserver-kit",
+      "assessment_id": "agent-mosaic-2026-11-07-sqlserver-kit"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "tigertoolbox",
+      "assessment_id": "agent-mosaic-2026-11-07-tigertoolbox"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "uuid-vs-auto-increment",
+      "assessment_id": "agent-mosaic-2026-11-07-uuid-vs-auto-increment"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "agent-mosaic-2026-11-07-dsh-paper2agent"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "paper2agent-index",
+      "assessment_id": "agent-mosaic-2026-11-07-paper2agent-index"
+    },
+    {
+      "study_id": "agent-mosaic",
+      "project_id": "developer-safe-dotnet-core",
+      "assessment_id": "agent-mosaic-2026-11-07-developer-safe-dotnet-core"
     }
   ],
   "relations": [

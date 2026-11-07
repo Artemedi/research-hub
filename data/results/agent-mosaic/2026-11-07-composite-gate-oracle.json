@@ -1,0 +1,31 @@
+{
+  "independent_verification": "PASS",
+  "rows_checked": 270,
+  "oracle_counts": {
+    "ALLOW": 90,
+    "DENY": 120,
+    "INCONCLUSIVE": 60
+  },
+  "arms": {
+    "document_acl_only": {
+      "actual_allow": 240,
+      "actual_inconclusive": 30,
+      "denied_output_abstained_not_classified": 30,
+      "false_disclosure_release": 90,
+      "unverified_release": 60
+    },
+    "structured_claim_gate": {
+      "actual_allow": 120,
+      "actual_deny": 60,
+      "actual_inconclusive": 90,
+      "denied_output_abstained_not_classified": 30,
+      "false_disclosure_release": 30
+    },
+    "output_bound_gate": {
+      "actual_allow": 90,
+      "actual_deny": 60,
+      "actual_inconclusive": 120,
+      "denied_output_abstained_not_classified": 60
+    }
+  }
+}

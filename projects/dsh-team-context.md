@@ -2,7 +2,7 @@
 
 # dsh-team-context
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/02-agents-dsh/dsh-team-context/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-team-context/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -11,7 +11,6 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [hyra-2](../catalog/studies/hyra-2.md) | ARCHITECTURAL_REFERENCE_CANDIDATE | VERIFIED_DOCUMENTED_CONTRACT / HYPOTHESIS_BENEFIT | Current documented knowledge/governance promotion boundary verified; no runtime scheduler ownership or measured benefit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
-| [agent-mosaic](../catalog/studies/agent-mosaic.md) | DOCUMENTED_CANDIDATE | P1_SYNTHETIC_DISCLOSURE / NEEDS_EVIDENCE | \| Agent Mosaic — Composite Disclosure Risk \| dsh-team-context, HermesAgent, agent-config \| Synthetic compound-disclosure controls around knowledge retrieval (team context), gateway/tool outputs (Hermes), and agent rules (agent-config); never test on private data \| 30 fictional composite facts; document ACL vs output fact rule, disclosure/false denial and cost \| P1_SYNTHETIC_DISCLOSURE / NEEDS_EVIDENCE \| | [Обзор](../studies/agent-mosaic.md) · [Основание](../portfolio/2026-10-20--2026-10-26/project-fit.md) |
 | [daedalus](../catalog/studies/daedalus.md) | DOCUMENTED_CANDIDATE | P2 / CONDITIONAL_FIT | Self-practice для отбраковки и проверки процедурных навыков; только отдельный resettable test environment, не изменяемая online-память боевого агента | [Обзор](../studies/daedalus.md) · [Основание](../portfolio/2026-10-06--2026-10-12/project-fit.md) |
 | [drag](../catalog/studies/drag.md) | DOCUMENTED_CANDIDATE | P2_PROFILE_MATCH_RETRIEVAL_BENCH | Оптимизация retrieval depth и генерации при ограниченном бюджете | [Обзор](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [Основание](../portfolio/historical/project-fit.md) |
 | [experienceindex](../catalog/studies/experienceindex.md) | DOCUMENTED_CANDIDATE | P1 / FIT_HYPOTHESIS | Artifact-linked retrieval: версии документов, связи между источниками, пропущенные документы и stale facts. paper2agent-index — только производный индекс, не новое source of truth | [Обзор](../studies/experienceindex.md) · [Основание](../portfolio/2026-10-06--2026-10-12/project-fit.md) |
@@ -32,6 +31,7 @@
 | [yahont-ce](../catalog/studies/yahont-ce.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | - Проекты: Wiki_PG, dsh-team-context, MyWiki — кандидаты для независимого retrieval/ACL сравнения, PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE, не рекомендация переноса корпуса. Обзор, NO_PRODUCTION_APPROVAL. | [Обзор](../reviews/yahont-ce/2026-11-04.md) · [Основание](../studies/yahont-ce.md) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Governance знания соприкасаются с policy, но это не task executor и не готовый integration seam. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [gpt6-astra-skills-prompts](../catalog/studies/gpt6-astra-skills-prompts.md) | DOCUMENTED_CANDIDATE | SKILL_GOVERNANCE_HYPOTHESIS / CONTRACT_NOT_TESTED | OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested. | [Обзор](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) · [Основание](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Контур governed knowledge/retrieval — возможный владелец source labels и provenance; финальный ответ выпускает runtime, а claim-level gate пока не подтверждён. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

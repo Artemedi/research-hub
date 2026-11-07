@@ -2,7 +2,7 @@
 
 # developer-safe-dotnet-core
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md); ревизия 0e80ec6ecbf52173b899c0cc037a5ee076e2d1b1. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -24,5 +24,6 @@
 | --- | --- | --- | --- | --- |
 | [hyra-2](../catalog/studies/hyra-2.md) | NO_CONFIRMED_FIT | AUTHOR_STATED / NEEDS_SOURCE_CODE | внешний .NET core brief: No concrete research-task governance/promotion workload established from the profile; author output domains alone do not establish a reusable method fit. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | AUTHOR_STATED / NEEDS_SOURCE_CODE | внешний .NET core brief: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [agent-mosaic](../catalog/studies/agent-mosaic.md) | DEFERRED | NOT_EVALUATED | В карточке нет Research-to-Project профиля и доступного source snapshot; оценка не выполнялась. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

@@ -40,6 +40,8 @@
 - [2026-11-06-limbo-telegrambot-policy-ab.py](2026-11-06-limbo-telegrambot-policy-ab.py)
 - [2026-11-06-rrsi-validation-harness2-ab.py](2026-11-06-rrsi-validation-harness2-ab.py)
 - [2026-11-07-bk021-tool-context-proxy.py](2026-11-07-bk021-tool-context-proxy.py)
+- [agent-mosaic/2026-11-07-composite-gate-oracle.py](agent-mosaic/2026-11-07-composite-gate-oracle.py)
+- [agent-mosaic/2026-11-07-composite-gate.py](agent-mosaic/2026-11-07-composite-gate.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)
 - [bk011-simurg/check-fixture.py](bk011-simurg/check-fixture.py)
 - [bk019-skill-doctor/attribution-fixture.py](bk019-skill-doctor/attribution-fixture.py)
