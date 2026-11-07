@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-07",
+  "study": "claude-swarm",
+  "upstream_pin": "31f19199bf3557cda4860231186a06b72c8edb94",
+  "upstream_files_sha256": {
+    "src/workers/manager.ts": "9a1d571ea0c93ee2b8cc8cc384e188a8ad1efdbb3d10089bff6c6c9dcc0abc72",
+    "src/workers/worktree-manager.ts": "97699fa054e1247348bf973e545ff55131335d74d0a5ad2cef922aaacba625b6",
+    "src/workers/lock-manager.ts": "1ed2e3559662aa03c05bf2f59775d210d26c8177dfd9281afbc393f87e2d8b20"
+  },
+  "environment": {
+    "isolated_git_repository": true,
+    "isolated_tmux_socket": true,
+    "synthetic_claude_cli": true,
+    "real_claude_calls": 0,
+    "production_sources_modified": false,
+    "upstream_modified": false
+  },
+  "tests": [
+    {
+      "id": "parallel_worktrees_are_distinct",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Parallel workers receive different Git worktree paths"
+    },
+    {
+      "id": "uncommitted_files_isolated",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Each worker sees its own uncommitted files"
+    },
+    {
+      "id": "atomic_lock_conflict",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "A second feature cannot acquire a held file lock"
+    },
+    {
+      "id": "orphan_lock_blocks_after_worker_loss",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Without explicit recovery stale locks persist (not automatic lease expiry)"
+    },
+    {
+      "id": "manual_lock_recovery",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Explicit releaseAll permits progress; no automatic recovery proved"
+    },
+    {
+      "id": "retry_resets_uncommitted_changes",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Uncommitted edits are discarded by removeWorktree(force) then recreation"
+    },
+    {
+      "id": "retry_branch_reset_to_base",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "The recreated branch points to original HEAD; no recovery checkpoint"
+    },
+    {
+      "id": "default_permission_mode_bypass",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Default generated wrapper requests bypassPermissions (source + runtime)"
+    },
+    {
+      "id": "default_allowed_tools_include_bash",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "Default generated flags permit Bash and write-capable tools"
+    },
+    {
+      "id": "worktree_relative_done_exists",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "A cooperative mock worker followed the relative .done instruction"
+    },
+    {
+      "id": "main_done_file_missing",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "The manager looks for .done under the main project rather than the worktree"
+    },
+    {
+      "id": "successful_worktree_worker_misclassified_crashed",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "A successful mock with a .done in its worktree is reported crashed"
+    },
+    {
+      "id": "failed_worker_done_marker_false_completion",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "A fake worker exiting nonzero after writing main .done is marked completed"
+    },
+    {
+      "id": "failed_cli_logged_exit_marker",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "The shell wrapper reports WORKER_EXITED after a failed CLI pipeline"
+    },
+    {
+      "id": "main_git_head_unchanged",
+      "observed": true,
+      "oracle": true,
+      "oracle_met": true,
+      "interpretation": "No execution changed the synthetic main Git HEAD"
+    }
+  ],
+  "tests_total": 15,
+  "matched_oracle": 15,
+  "unexpected_results": [],
+  "source_scope": "Upstream production WorkerManager / WorktreeManager / TaskLockManager code",
+  "risks": [
+    "Retry of same feature ID recreates worktree forcibly and loses uncommitted work",
+    "Relative .done path under worktree does not match manager main-repo lookup",
+    "A .done marker in main directory is trusted even after simulated CLI failure",
+    "Generated CLI defaults bypassPermissions with Bash/Write/Edit enabled",
+    "Locks remain after worker loss until explicit release"
+  ],
+  "limitations": [
+    "All workers use controlled fake claude CLI, no model execution or real credentials",
+    "No actual DSH runtime worker integration or production worktree was exercised",
+    "A single synthetic git repository, no concurrent race stress or crash at disk layer",
+    "Tests verify observed failure modes, not full coverage of all real-world errors",
+    "Source code is pinned; dependencies built locally via npm ci --ignore-scripts"
+  ]
+}

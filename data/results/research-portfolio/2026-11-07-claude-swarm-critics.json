@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-07",
+  "study": "claude-swarm",
+  "evidence_sha256": "55c5ca2fec340f1106686a7241be6fa4884da2e3e79ececc4680f5a3adaed3d9",
+  "physical_workers": 1,
+  "roles": [
+    {
+      "role": "safety_critic",
+      "prompt_sha256": "6da2dbb2620384d71cf8ac8647659fbc12a3e302328628a9f90ae7e0ba950287",
+      "status": "BLOCKED_PROVIDER",
+      "failure": "TIMEOUT",
+      "elapsed_ms": 50053.3
+    },
+    {
+      "role": "failure_critic",
+      "prompt_sha256": "b4e9309ec6359afa5e974bcc1d4a8cd3bdd3d00e98170e21d712612a5f79253a",
+      "status": "BLOCKED_PROVIDER",
+      "failure": "TIMEOUT",
+      "elapsed_ms": 50054.1
+    }
+  ],
+  "completed": 0,
+  "blocked": 2,
+  "limitation": "ZCode is advisory model criticism; deterministic Git/tmux oracles are independent"
+}

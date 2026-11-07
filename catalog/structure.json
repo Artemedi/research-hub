@@ -1596,6 +1596,27 @@
       "title": "Two ZCode advisory critic statuses for the bounded MCP Toolbox security lab",
       "kind": "data",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-07/claude-swarm-failure-injection.md",
+      "title": "Claude Swarm Git worktree and tmux mock failure-injection counterchecks",
+      "kind": "review",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json",
+      "title": "Upstream Claude Swarm fifteen deterministic worktree, lock and worker outcome cases",
+      "kind": "data",
+      "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-07-claude-swarm-critics.json",
+      "title": "Two incomplete ZCode criticisms of upstream Claude Swarm worker failure cases",
+      "kind": "data",
+      "date": "2026-11-07"
     }
   ]
 }

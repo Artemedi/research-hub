@@ -32,6 +32,8 @@
 | [data/results/ipfire-fireperf/2026-11-04.json](results/ipfire-fireperf/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json](results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-swarm-critics.json](results/research-portfolio/2026-11-07-claude-swarm-critics.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json](results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json](results/research-portfolio/2026-11-07-claude-swarm-upstream-tests.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-cluster-critics.json](results/research-portfolio/2026-11-07-cluster-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-controller.json](results/research-portfolio/2026-11-07-controller.json) | Результат ограниченной проверки |
