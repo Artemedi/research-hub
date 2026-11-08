@@ -1,0 +1,18 @@
+{
+  "author_reported_arithmetic_checks_recomputed": true,
+  "below_threshold_all_agents_fallback_count": 3645,
+  "independent_case_digest_sha256": "e504d861b314678f8c8509b3c6b43a68de5bc76f235b6f19433f5fe2f9e8599d",
+  "limitations": [
+    "Oracle regenerates synthetic inputs and recomputes the paper rule; it does not validate model quality or learned familiarity scores.",
+    "Author benchmark measurements remain AUTHOR_REPORTED / NOT_REPRODUCED."
+  ],
+  "matches_experiment_digest": true,
+  "mode_counts": {
+    "inference": 2500,
+    "training": 7500
+  },
+  "oracle_id": "cera-moa-routing-independent-oracle-20261108",
+  "scope": "Independent deterministic oracle for the routing contract and arithmetic only; not author-result reproduction.",
+  "status": "PASS",
+  "verified_cases": 10000
+}

@@ -2170,6 +2170,55 @@
       "title": "Agent Error Dataset — machine-readable 45-project profile matrix",
       "kind": "data",
       "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "reviews/cera-moa/2026-11-08-routing-contract.md",
+      "title": "CERA-MoA — routing contract и актуальная оценка применимости",
+      "kind": "review",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-08/cera-moa-project-fit.md",
+      "title": "CERA-MoA — актуальная матрица применимости к 45 проектам",
+      "kind": "project-fit",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/cera-moa/2026-11-08-project-fit.json",
+      "title": "CERA-MoA — machine-readable 45-project fit matrix",
+      "kind": "data",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "experiments/cera-moa/2026-11-08-routing-contract.py",
+      "title": "CERA-MoA — synthetic cumulative-threshold routing contract",
+      "kind": "guide",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "experiments/cera-moa/2026-11-08-independent-oracle.py",
+      "title": "CERA-MoA — independent routing-contract oracle",
+      "kind": "guide",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/results/cera-moa/2026-11-08-routing-contract.json",
+      "title": "CERA-MoA — 10,000 synthetic routing scenarios",
+      "kind": "data",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/results/cera-moa/2026-11-08-independent-oracle.json",
+      "title": "CERA-MoA — independent verification of 10,000 routing scenarios",
+      "kind": "data",
+      "date": "2026-11-08"
     }
   ]
 }

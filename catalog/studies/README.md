@@ -21,7 +21,7 @@
 - [Anthropic — scheduled agent automations](anthropic-agent-automations.md); project fit: PARTIAL.
 - [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md); project fit: PARTIAL.
 - [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md); project fit: PARTIAL.
-- [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md); project fit: NO_DOCUMENTED_ASSESSMENT.
+- [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md); project fit: PARTIAL.
 - [Chartli — числовые графики в терминале](chartli.md); project fit: PARTIAL.
 - [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md); project fit: PARTIAL.
 - [Concordat — Typed Sessions for LLM Agents](concordat.md); project fit: PARTIAL.

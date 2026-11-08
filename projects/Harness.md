@@ -21,5 +21,6 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | интеграционный workspace: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
+| [cera-moa](../catalog/studies/cera-moa.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Test/evaluation harness может измерять систему, но не владеет hidden-state model backend и LoRA policies. | [Обзор](../reviews/cera-moa/2026-11-08-routing-contract.md) · [Основание](../data/project-fit/cera-moa/2026-11-08-project-fit.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

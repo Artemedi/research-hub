@@ -55,6 +55,8 @@
 - [bk048-understand-anything/sql-fixture.mjs](bk048-understand-anything/sql-fixture.mjs)
 - [bk050-chartli/normalize-fixture.mjs](bk050-chartli/normalize-fixture.mjs)
 - [bk053-yahont/id-fixture.py](bk053-yahont/id-fixture.py)
+- [cera-moa/2026-11-08-independent-oracle.py](cera-moa/2026-11-08-independent-oracle.py)
+- [cera-moa/2026-11-08-routing-contract.py](cera-moa/2026-11-08-routing-contract.py)
 - [chartli/2026-11-07-svg-fixtures.mts](chartli/2026-11-07-svg-fixtures.mts)
 - [chartli/2026-11-07-svg-oracle.py](chartli/2026-11-07-svg-oracle.py)
 - [decision-geometry-harness/2026-11-07-bandit-oracle.py](decision-geometry-harness/2026-11-07-bandit-oracle.py)

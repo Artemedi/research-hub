@@ -1,0 +1,52 @@
+{
+  "author_reported_arithmetic_checks": {
+    "adaptive_vs_top1_token_increase_pct": 12.9168,
+    "adaptive_vs_top2_id_delta_pp": -0.1,
+    "adaptive_vs_top2_ood_delta_pp": 0.3,
+    "adaptive_vs_top2_token_reduction_pct": 44.8099,
+    "heterogeneous_ood_at_grpo_mean": 69.05,
+    "heterogeneous_ood_cera_mean": 71.8333,
+    "heterogeneous_ood_delta_pp": 2.7833,
+    "qwen_ood_at_grpo_mean": 71.5,
+    "qwen_ood_cera_mean": 72.7833,
+    "qwen_ood_delta_pp": 1.2833,
+    "reported_heterogeneous_ood_mean_rounds_to_71_8": true,
+    "reported_qwen_ood_mean_rounds_to_72_8": true,
+    "reported_top2_token_reduction_rounds_to_44_8_pct": true,
+    "router_vs_native_batch1_pct": 0.8791,
+    "router_vs_vllm_batch32_pct": 7.7033,
+    "vllm_comparison_batch_sizes_match": false
+  },
+  "below_threshold_all_agents_fallback_count": 3645,
+  "case_count": 10000,
+  "case_digest_sha256": "e504d861b314678f8c8509b3c6b43a68de5bc76f235b6f19433f5fe2f9e8599d",
+  "edge_controls": {
+    "below_threshold_selects_all": true,
+    "inference_uses_familiarity_order": true,
+    "priority_order_not_familiarity_order": true,
+    "stable_tie_break_by_index": true
+  },
+  "experiment_id": "cera-moa-routing-contract-20261108",
+  "limitations": [
+    "No author code, weights, datasets, hidden states, LoRA adapters, RL training, or benchmark tasks were executed.",
+    "Synthetic familiarity values are generated from bounded distances; they do not model a trained familiarity estimator.",
+    "Arithmetic checks verify only the calculation from author-reported table values, not the underlying measurements.",
+    "No target project or production runtime was modified or exercised."
+  ],
+  "minimal_prefix_contract_checks": 10000,
+  "mode_counts": {
+    "inference": 2500,
+    "training": 7500
+  },
+  "scope": "Synthetic deterministic routing-rule contract plus arithmetic recomputation of values printed in the paper tables.",
+  "seed": 20261108,
+  "selected_agent_count_histogram": {
+    "1": 2175,
+    "2": 2147,
+    "3": 2304,
+    "4": 3374
+  },
+  "source_sha256": "13f6536287ff7ebec0a21663f4d21fc61ce05c82d14ab14448f4080bed18bf0f",
+  "source_url": "https://arxiv.org/html/2609.18779v1",
+  "status": "PASS"
+}

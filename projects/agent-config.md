@@ -38,5 +38,6 @@
 | --- | --- | --- | --- | --- |
 | [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | конфигурация и hooks: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
 | [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Конфигурация и hooks не владеют trace-grounded diagnosis/replay. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
+| [cera-moa](../catalog/studies/cera-moa.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Конфигурация/agent layer поверх провайдеров; нет контроля model weights, hidden states и совместного RL/LoRA training. | [Обзор](../reviews/cera-moa/2026-11-08-routing-contract.md) · [Основание](../data/project-fit/cera-moa/2026-11-08-project-fit.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

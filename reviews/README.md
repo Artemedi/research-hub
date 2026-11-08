@@ -31,6 +31,7 @@
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
 | [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
+| [CERA-MoA — routing contract и актуальная оценка применимости](cera-moa/2026-11-08-routing-contract.md) | 2026-11-08 |
 | [Chartli — parser и отображение](chartli/2026-11-04.md) | 2026-11-04 |
 | [Chartli pinned TS SVG renderer and independent XML plus finite-geometry audit](chartli/2026-11-07-svg-validation.md) | 2026-11-07 |
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |

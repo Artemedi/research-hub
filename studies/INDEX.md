@@ -19,7 +19,7 @@
 | [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [2026-11-03 / behavior-beyond-text-review](behavior-beyond-text.md) |
 | [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | [2026-11-03 / bird-rl-review](bird-rl.md) |
-| [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / cera-moa-full-text-2026-11-05](../reviews/cera-moa/2026-11-05-full-text.md) |
+| [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / cera-moa-full-text-2026-11-05](../reviews/cera-moa/2026-11-05-full-text.md) · [2026-11-08 / cera-moa-routing-contract-20261108](../reviews/cera-moa/2026-11-08-routing-contract.md) |
 | [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04 / chartli-review](../reviews/chartli/2026-11-04.md) |
 | [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md) | [2026-11-04 / claude-swarm-review](../reviews/claude-swarm/2026-11-04.md) |
 | [Concordat — Typed Sessions for LLM Agents](concordat.md) | [2026-11-03 / concordat-review](concordat.md) |

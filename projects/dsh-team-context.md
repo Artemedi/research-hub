@@ -40,5 +40,6 @@
 | --- | --- | --- | --- | --- |
 | [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | knowledge/governance: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | knowledge/governance: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [cera-moa](../catalog/studies/cera-moa.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Knowledge/context retrieval plane не является trainable inference backend и не владеет весами specialist policies. | [Обзор](../reviews/cera-moa/2026-11-08-routing-contract.md) · [Основание](../data/project-fit/cera-moa/2026-11-08-project-fit.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.
