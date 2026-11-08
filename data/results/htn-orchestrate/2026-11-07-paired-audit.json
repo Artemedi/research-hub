@@ -1,0 +1,285 @@
+{
+  "study_id": "htn-orchestrate",
+  "date": "2026-11-07",
+  "paper_source": "https://arxiv.org/abs/2610.22195",
+  "prior_pdf_v1_hash_from_hub": "781ff3cd5f16673d7f7b9f8a2cb6a8381d6eb5e1332c6e55bed2dcbbd300b452",
+  "upstream_source": {
+    "repo": "ycdeng-ntu/htn-orchestrate",
+    "sha": "0bccf18d813298e5c2a33961dbf56b907bd8b133",
+    "inspected": [
+      "workflows/dynamic_htn_informed_research/htn/task_tree.py:68-90",
+      "workflows/dynamic_htn_informed_research/htn/task_tree.py:142-158",
+      "workflows/dynamic_htn_informed_research/htn/task_node.py:15-55",
+      "workflows/dynamic_htn_informed_research/htn/epoch.py:1-150",
+      "tests/workflows/dynamic_htn_informed_research/test_epoch_recovery.py:59-150",
+      "tests/workflows/dynamic_htn_informed_research/test_result_informed_planning.py:1-150"
+    ],
+    "upstream_tests_run": true,
+    "boundary": "Static code/test inspection; not upstream test execution, not runtime coverage or performance benchmark",
+    "upstream_test_execution": {
+      "date": "2026-11-08",
+      "modules": [
+        "tests/workflows/dynamic_htn_informed_research/test_result_informed_planning.py",
+        "tests/workflows/dynamic_htn_informed_research/test_epoch_recovery.py"
+      ],
+      "passed": 43,
+      "failed": 0,
+      "skipped": 0,
+      "environment": "Python 3.14.8; pytest 9.2.0; pytest-asyncio 1.4.1.post1 installed only under /tmp/htn-test-deps",
+      "warning": "One AnyIO deprecation warning for pytest CallSpec2 alias; no test failures",
+      "scope": "Two targeted upstream modules only; full upstream suite and monorepo build not run"
+    }
+  },
+  "project_fit": {
+    "project_registry_sha": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86",
+    "status": "PROFILE_MATCH_NEEDS_CURRENT_SOURCE_SEAM_AND_HELD_OUT_AB",
+    "new_backlinks": 0,
+    "historical_experiment_registry_sha": "838b86a28fcaa3440eeddbe147b6188e0d177963",
+    "project_registry_profile_set_sha256": "220d181737e91bb15b8ee371fd08889be1e19a81fa56d8b7c217d5a78f4ecc73",
+    "shortlist_from_current_45_profile_matrix": [
+      "dsh-runtime",
+      "hermes-akuz-agents"
+    ]
+  },
+  "table_basis": "Appendix C.3 Table 11, 200 paired BrowseComp tasks, one run per variant",
+  "method": "exact conditional McNemar (two-sided binomial on discordant tasks); independent brute-force topological oracle",
+  "paired_results": {
+    "upfront_decomposition": {
+      "both_correct": 176,
+      "htn_only_correct": 8,
+      "ablation_only_correct": 5,
+      "both_incorrect": 11,
+      "difference_percentage_points": 1.5,
+      "two_sided_exact_mcnemar_p": 0.5810546875,
+      "n_discordant": 13,
+      "paper_full_correct": 184,
+      "paper_variant_correct": 181,
+      "is_p_less_0_05": false
+    },
+    "single_agent_leaf": {
+      "both_correct": 172,
+      "htn_only_correct": 12,
+      "ablation_only_correct": 7,
+      "both_incorrect": 9,
+      "difference_percentage_points": 2.5,
+      "two_sided_exact_mcnemar_p": 0.359283447265625,
+      "n_discordant": 19,
+      "paper_full_correct": 184,
+      "paper_variant_correct": 179,
+      "is_p_less_0_05": false
+    },
+    "no_rebuilding": {
+      "both_correct": 175,
+      "htn_only_correct": 9,
+      "ablation_only_correct": 4,
+      "both_incorrect": 12,
+      "difference_percentage_points": 2.5,
+      "two_sided_exact_mcnemar_p": 0.266845703125,
+      "n_discordant": 13,
+      "paper_full_correct": 184,
+      "paper_variant_correct": 179,
+      "is_p_less_0_05": false
+    }
+  },
+  "synthetic_dag": {
+    "cases": 30,
+    "passes": 30,
+    "valid": 20,
+    "cycles": 5,
+    "missing_evidence": 5,
+    "resume_idempotence_cases": 20,
+    "resume_idempotence_pass": 20,
+    "scope": "Independent static-DAG surrogate only; NOT HTN-Orchestrate source code, LLM, or paper benchmark",
+    "case_results": [
+      {
+        "case": "valid_0",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_1",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_2",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_3",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_4",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_5",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_6",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_7",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_8",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_9",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_10",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_11",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_12",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_13",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_14",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_15",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_16",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_17",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_18",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "valid_19",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "case": "cycle_0",
+        "expected": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "observed": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "passed": true
+      },
+      {
+        "case": "cycle_1",
+        "expected": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "observed": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "passed": true
+      },
+      {
+        "case": "cycle_2",
+        "expected": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "observed": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "passed": true
+      },
+      {
+        "case": "cycle_3",
+        "expected": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "observed": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "passed": true
+      },
+      {
+        "case": "cycle_4",
+        "expected": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "observed": "BLOCKED_CYCLE_OR_DEPENDENCY",
+        "passed": true
+      },
+      {
+        "case": "missing_0",
+        "expected": "NEEDS_EVIDENCE",
+        "observed": "NEEDS_EVIDENCE",
+        "passed": true
+      },
+      {
+        "case": "missing_1",
+        "expected": "NEEDS_EVIDENCE",
+        "observed": "NEEDS_EVIDENCE",
+        "passed": true
+      },
+      {
+        "case": "missing_2",
+        "expected": "NEEDS_EVIDENCE",
+        "observed": "NEEDS_EVIDENCE",
+        "passed": true
+      },
+      {
+        "case": "missing_3",
+        "expected": "NEEDS_EVIDENCE",
+        "observed": "NEEDS_EVIDENCE",
+        "passed": true
+      },
+      {
+        "case": "missing_4",
+        "expected": "NEEDS_EVIDENCE",
+        "observed": "NEEDS_EVIDENCE",
+        "passed": true
+      }
+    ]
+  },
+  "verdict": "NO_SIGNIFICANT_PAIRED_ABLATION_GAIN_AT_0_05_IN_PUBLISHED_200_SUBSET; HTN_TARGET_BENEFIT_NOT_REPRODUCED",
+  "limitations": [
+    "Statistical test reuses author-reported paired counts; does not independently reproduce outcomes",
+    "No multiple-testing correction required for the negative nominal p<0.05 finding; no claim of equality",
+    "200-question ablation subset not full 1266-question benchmark",
+    "Synthetic cases test a simpler dependency-gated DAG only; do not imply HTN is ineffective in dynamic research",
+    "No local target repository benchmark, model calls, latency, tokens or cost measured"
+  ],
+  "review_updated_on": "2026-11-08"
+}

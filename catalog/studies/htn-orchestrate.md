@@ -6,22 +6,23 @@
 
 ## Текущий обзор
 
-[htn-orchestrate-review](../../portfolio/2026-10-12--2026-10-19/review.md) — FULL_TEXT_REVIEWED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
+[htn-orchestrate-paired-audit-followup-20261108](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) — PARTIAL_SOURCE_REVIEW. The full-text review remains the 2026-11-03 record. This follow-up reanalyses author-published paired counts and a previously executed independent static-DAG surrogate; two targeted upstream test modules at pinned SHA passed 43/43. It does not reproduce raw author outcomes, run the full upstream suite or establish target project benefit.
 
 ## Версии и история обзоров
 
 - [htn-orchestrate-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.22195v1).
+- [htn-orchestrate-paired-audit-followup-20261108](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md), 2026-11-08; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.22195v1).
 
 ## Применимость к проектам
 
 Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-- [dsh-runtime](../../projects/dsh-runtime.md): DOCUMENTED_CANDIDATE; P2 / PROJECT_PROFILE_MATCH. Deferred decomposition/replan при реальных зависимостях; измерить HTN vs простой DAG и стоимость согласования Ограничения: Документальная исследовательская оценка, не подтверждённая интеграция. Candidate appears in the matrix target-project column; source-level integration seam and measured benefit are not established. Следующий тест: See the offline test described in the source row; project pin/hash not normalized. [Основание](../../portfolio/2026-10-12--2026-10-19/project-fit.md); предыдущая оценка: нет.
-- [hermes-akuz-agents](../../projects/hermes-akuz-agents.md): DOCUMENTED_CANDIDATE; P2 / PROJECT_PROFILE_MATCH. Deferred decomposition/replan при реальных зависимостях; измерить HTN vs простой DAG и стоимость согласования Ограничения: Документальная исследовательская оценка, не подтверждённая интеграция. Candidate appears in the matrix target-project column; source-level integration seam and measured benefit are not established. Следующий тест: See the offline test described in the source row; project pin/hash not normalized. [Основание](../../portfolio/2026-10-12--2026-10-19/project-fit.md); предыдущая оценка: нет.
+- [dsh-runtime](../../projects/dsh-runtime.md): DOCUMENTED_CANDIDATE; PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE. The current project profile has a direct thematic match to hierarchical multi-agent task orchestration; no source-level integration seam or measured benefit is established. Ограничения: Profile-level documentary match only. Current target source code and tests were not inspected; no integration or production approval. Следующий тест: Held-out A/B на 20–50 зависимых задачах: single agent vs fixed DAG vs HTN, independent oracle, dependency violations, rework, latency/tokens/cost. [Основание](../../portfolio/2026-11-08/htn-orchestrate-project-fit.md); предыдущая оценка: htn-orchestrate-document-dsh-runtime.
+- [hermes-akuz-agents](../../projects/hermes-akuz-agents.md): DOCUMENTED_CANDIDATE; PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE. The current project profile has a direct thematic match to hierarchical multi-agent task orchestration; no source-level integration seam or measured benefit is established. Ограничения: Profile-level documentary match only. Current target source code and tests were not inspected; no integration or production approval. Следующий тест: Подтвердить runtime seam и offline runner; только затем held-out A/B с independent oracle. [Основание](../../portfolio/2026-11-08/htn-orchestrate-project-fit.md); предыдущая оценка: htn-orchestrate-document-hermes-akuz-agents.
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- htn-orchestrate-static-dag-20261107: SYNTHETIC / PASS. Previously executed 2026-11-07 independent static-DAG surrogate: 20 valid DAGs, 5 cyclic graphs and 5 missing-evidence graphs matched a separate brute-force topological-order oracle (30/30); 20/20 valid-DAG resume-idempotence checks passed. Exact McNemar p-values were recalculated from author-reported Appendix C.3 Table 11 paired counts, not raw outcomes. The surrogate is not the original HTN implementation and does not exercise LLM planning, dynamic decomposition, actual epoch recovery, BrowseComp or performance. Two targeted upstream test modules passed 43/43; full upstream suite and monorepo build were not run. No latency, token, cost, CPU or RAM measurements. [Артефакт](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) · [Артефакт](../../experiments/htn-orchestrate/2026-11-07-offline-audit.py) · [Артефакт](../../data/results/htn-orchestrate/2026-11-07-paired-audit.json) · [Артефакт](../../portfolio/2026-11-08/htn-orchestrate-project-fit.md) · [Артефакт](../../data/project-fit/htn-orchestrate/2026-11-08-project-fit.json)
 
 ## Ссылки из исходной карточки
 

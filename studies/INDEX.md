@@ -37,7 +37,7 @@
 | [GPT-6 Astra — Rethinking skills and prompts (BK-009)](gpt6-astra-skills-prompts.md) | [2026-11-06 / bk009-gpt6-astra-live-ab-20261106](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
 | [HarnessSecurity-Bench](harnesssecurity-bench.md) | [2026-11-03 / harnesssecurity-bench-review](harnesssecurity-bench.md) |
 | [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / harness2-full-text-2026-11-05](../reviews/harness2/2026-11-05-full-text.md) · [2026-11-06 / rrsi-harness2-selector-ab-2026-11-06](../reviews/rrsi/2026-11-06-validation-ab.md) |
-| [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) · [2026-11-08 / htn-orchestrate-paired-audit-followup-20261108](../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) |
 | [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04 / hyperresearch-review](../reviews/hyperresearch/2026-11-04.md) |
 | [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
 | [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) · [2026-11-06 / inspektor-gadget-podman-20261106](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) |

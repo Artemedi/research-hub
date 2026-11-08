@@ -2254,6 +2254,41 @@
       "title": "Understand Anything — machine-readable profile triage",
       "kind": "data",
       "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md",
+      "title": "HTN-Orchestrate — paired ablation and synthetic DAG follow-up",
+      "kind": "review",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "experiments/htn-orchestrate/2026-11-07-offline-audit.py",
+      "title": "HTN-Orchestrate — offline paired-statistics and DAG audit",
+      "kind": "guide",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/results/htn-orchestrate/2026-11-07-paired-audit.json",
+      "title": "HTN-Orchestrate — paired-count and synthetic DAG evidence",
+      "kind": "data",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+      "title": "HTN-Orchestrate — current 45-profile shortlist",
+      "kind": "project-fit",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/htn-orchestrate/2026-11-08-project-fit.json",
+      "title": "HTN-Orchestrate — machine-readable project fit",
+      "kind": "data",
+      "date": "2026-11-08"
     }
   ]
 }

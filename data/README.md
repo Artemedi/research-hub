@@ -15,6 +15,7 @@
 | [data/project-fit/agent-mosaic/2026-11-07-composite-gate.json](project-fit/agent-mosaic/2026-11-07-composite-gate.json) | Матрица project fit |
 | [data/project-fit/cera-moa/2026-11-08-project-fit.json](project-fit/cera-moa/2026-11-08-project-fit.json) | Матрица project fit |
 | [data/project-fit/dsh-superagent-prototype/2026-11-05.json](project-fit/dsh-superagent-prototype/2026-11-05.json) | Матрица project fit |
+| [data/project-fit/htn-orchestrate/2026-11-08-project-fit.json](project-fit/htn-orchestrate/2026-11-08-project-fit.json) | Матрица project fit |
 | [data/project-fit/hyra-2/2026-11-05.json](project-fit/hyra-2/2026-11-05.json) | Матрица project fit |
 | [data/project-fit/reverse-engineer-anything/2026-11-05-initial.json](project-fit/reverse-engineer-anything/2026-11-05-initial.json) | Матрица project fit |
 | [data/project-fit/reverse-engineer-anything/2026-11-05.json](project-fit/reverse-engineer-anything/2026-11-05.json) | Матрица project fit |
@@ -58,6 +59,7 @@
 | [data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json](results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json) | Результат ограниченной проверки |
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json](results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json) | Результат ограниченной проверки |
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json](results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json) | Результат ограниченной проверки |
+| [data/results/htn-orchestrate/2026-11-07-paired-audit.json](results/htn-orchestrate/2026-11-07-paired-audit.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-07-upstream-tests.json](results/hyperresearch/2026-11-07-upstream-tests.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](results/inspektor-gadget/2026-11-06-host-diagnostics.json) | Результат ограниченной проверки |

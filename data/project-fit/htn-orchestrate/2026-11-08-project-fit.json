@@ -1,0 +1,47 @@
+{
+  "reviewed_on": "2026-11-08",
+  "registry_sha": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86",
+  "registry_profile_set_sha256": "220d181737e91bb15b8ee371fd08889be1e19a81fa56d8b7c217d5a78f4ecc73",
+  "source_sha": "0bccf18d813298e5c2a33961dbf56b907bd8b133",
+  "source_content_sha256": "2a7afc83612793a6193e2f5221976001c02ad884ca1216d10741519d44ed3ff5",
+  "source_url": "https://github.com/ycdeng-ntu/htn-orchestrate/tree/0bccf18d813298e5c2a33961dbf56b907bd8b133",
+  "source_version": "git:0bccf18d813298e5c2a33961dbf56b907bd8b133",
+  "scope": "All 45 current PROJECT.md profiles screened at registry HEAD; two profile-level candidates retained. This is not a source-level integration review.",
+  "report": "reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md",
+  "matrix": "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+  "card_count": 45,
+  "shortlist": [
+    "dsh-runtime",
+    "hermes-akuz-agents"
+  ],
+  "not_evaluated_profile_count": 0,
+  "source_code_reviewed_targets": [],
+  "decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+  "decision_counts": {
+    "SHORTLIST": 2,
+    "NO_DIRECT_PROFILE_MATCH": 43,
+    "NOT_EVALUATED": 0
+  },
+  "author_results_reproduced": false,
+  "experiment_id": "htn-orchestrate-static-dag-20261107",
+  "projects": [
+    {
+      "project_id": "dsh-runtime",
+      "decision": "SHORTLIST",
+      "reason_ru": "Профиль включает agent loop и tool orchestration; hierarchical task decomposition тематически релевантна, но конкретная точка вмешательства и baseline не проверены.",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "limitations": "Только профильный match; source code и tests dsh-runtime в этой итерации не читались.",
+      "next_test": "Held-out A/B на 20–50 зависимых задачах: single agent vs fixed DAG vs HTN, independent oracle, dependency violations, rework, latency/tokens/cost."
+    },
+    {
+      "project_id": "hermes-akuz-agents",
+      "decision": "SHORTLIST",
+      "reason_ru": "Профиль описывает multi-agent orchestration и DBA handoff, но текущая карточка указывает на документационный характер и отсутствие обнаруженных tests/CI.",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "limitations": "Только профильный match; runtime seam, source code и tests не подтверждены.",
+      "next_test": "Подтвердить runtime seam и offline runner; только затем held-out A/B с independent oracle."
+    }
+  ],
+  "production_approval": false,
+  "historical_experiment_registry_sha": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+}

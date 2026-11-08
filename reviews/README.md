@@ -55,6 +55,7 @@
 | [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](goal-aware-dynamic-collaboration/2026-11-07.md) | 2026-11-07 |
 | [BK-009 original Astra guidance full-text and five-pair live A/B](gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) | 2026-11-06 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
+| [HTN-Orchestrate — paired ablation and synthetic DAG follow-up](htn-orchestrate/2026-11-08-paired-audit-followup.md) | 2026-11-08 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Pinned upstream Hyperresearch 54 test execution and existing citation limits](hyperresearch/2026-11-07-upstream-tests.md) | 2026-11-07 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |

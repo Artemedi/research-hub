@@ -492,7 +492,7 @@
       "card": "studies/htn-orchestrate.md",
       "title": "HTN-Orchestrate",
       "fit_coverage": "PARTIAL",
-      "current_review_id": "htn-orchestrate-review",
+      "current_review_id": "htn-orchestrate-paired-audit-followup-20261108",
       "id": "htn-orchestrate",
       "primary_url": "https://arxiv.org/abs/2610.22195",
       "card_body_sha256": "cea2f58fca57e778dae698653c7fb4d98cc201e3544ae7c05b9c26b8b11109d8",
@@ -3708,6 +3708,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Bounded review of new MCP server, changed-files helper, hooks and viewer file-content boundary at upstream HEAD a6ea402. 32 scoped upstream unit tests passed; MCP server integration and full monorepo build were not run. Synthetic viewer probe observed an external symlink disclosure. No target project source or production system was modified.",
       "supersedes": null
+    },
+    {
+      "id": "htn-orchestrate-paired-audit-followup-20261108",
+      "study_ids": [
+        "htn-orchestrate"
+      ],
+      "version_ids": [
+        "htn-orchestrate-version"
+      ],
+      "date": "2026-11-08",
+      "document": "reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "The full-text review remains the 2026-11-03 record. This follow-up reanalyses author-published paired counts and a previously executed independent static-DAG surrogate; two targeted upstream test modules at pinned SHA passed 43/43. It does not reproduce raw author outcomes, run the full upstream suite or establish target project benefit.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4068,6 +4082,24 @@
         "data/results/understand-anything/2026-11-08-mcp-head-security.json",
         "portfolio/2026-11-08/understand-anything-project-fit.md",
         "data/project-fit/understand-anything/2026-11-08-project-fit.json"
+      ]
+    },
+    {
+      "id": "htn-orchestrate-static-dag-20261107",
+      "study_ids": [
+        "htn-orchestrate"
+      ],
+      "review_id": "htn-orchestrate-paired-audit-followup-20261108",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Previously executed 2026-11-07 independent static-DAG surrogate: 20 valid DAGs, 5 cyclic graphs and 5 missing-evidence graphs matched a separate brute-force topological-order oracle (30/30); 20/20 valid-DAG resume-idempotence checks passed. Exact McNemar p-values were recalculated from author-reported Appendix C.3 Table 11 paired counts, not raw outcomes.",
+      "limitations": "The surrogate is not the original HTN implementation and does not exercise LLM planning, dynamic decomposition, actual epoch recovery, BrowseComp or performance. Two targeted upstream test modules passed 43/43; full upstream suite and monorepo build were not run. No latency, token, cost, CPU or RAM measurements.",
+      "artifacts": [
+        "reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md",
+        "experiments/htn-orchestrate/2026-11-07-offline-audit.py",
+        "data/results/htn-orchestrate/2026-11-07-paired-audit.json",
+        "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+        "data/project-fit/htn-orchestrate/2026-11-08-project-fit.json"
       ]
     }
   ],
@@ -15600,6 +15632,48 @@
       "unknown_reason": "Documentary assessment; private PROJECT.md text and individual card hashes are not copied into the public model.",
       "id": "understand-anything-harness-profile-20261108",
       "supersedes": null
+    },
+    {
+      "id": "htn-orchestrate-dsh-runtime-profile-20261108",
+      "study_id": "htn-orchestrate",
+      "project_id": "dsh-runtime",
+      "review_id": "htn-orchestrate-paired-audit-followup-20261108",
+      "date": "2026-11-08",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "The current project profile has a direct thematic match to hierarchical multi-agent task orchestration; no source-level integration seam or measured benefit is established.",
+      "limitations": "Profile-level documentary match only. Current target source code and tests were not inspected; no integration or production approval.",
+      "next_test": "Held-out A/B на 20–50 зависимых задачах: single agent vs fixed DAG vs HTN, independent oracle, dependency violations, rework, latency/tokens/cost.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+      "source_line": 7,
+      "source_excerpt": "| HTN-Orchestrate | dsh-runtime | Agent loop, tool orchestration, continuation/reliability — профильные области для hierarchical task decomposition. | Не проверен; конкретный source:line и baseline не подтверждены. | Held-out A/B: single agent vs fixed DAG vs HTN на 20–50 зависимых задачах, independent oracle, latency/tokens/cost и dependency violations. | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary assessment; private PROJECT.md content and individual card hashes are not copied into the public model.",
+      "supersedes": "htn-orchestrate-document-dsh-runtime"
+    },
+    {
+      "id": "htn-orchestrate-hermes-akuz-agents-profile-20261108",
+      "study_id": "htn-orchestrate",
+      "project_id": "hermes-akuz-agents",
+      "review_id": "htn-orchestrate-paired-audit-followup-20261108",
+      "date": "2026-11-08",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "The current project profile has a direct thematic match to hierarchical multi-agent task orchestration; no source-level integration seam or measured benefit is established.",
+      "limitations": "Profile-level documentary match only. Current target source code and tests were not inspected; no integration or production approval.",
+      "next_test": "Подтвердить runtime seam и offline runner; только затем held-out A/B с independent oracle.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+      "source_line": 8,
+      "source_excerpt": "| HTN-Orchestrate | hermes-akuz-agents | Multi-agent orchestration и DBA handoff соответствуют теме исследования. | Не проверен; профиль описывает преимущественно документацию, tests/CI и runtime seam не подтверждены. | Сначала подтвердить реальный runtime seam и минимальный offline runner; затем тот же held-out A/B. | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary assessment; private PROJECT.md content and individual card hashes are not copied into the public model.",
+      "supersedes": "htn-orchestrate-document-hermes-akuz-agents"
     }
   ],
   "current_assessments": [
@@ -16537,16 +16611,6 @@
       "study_id": "maadbench",
       "project_id": "hermes-akuz-agents",
       "assessment_id": "maadbench-document-hermes-akuz-agents"
-    },
-    {
-      "study_id": "htn-orchestrate",
-      "project_id": "dsh-runtime",
-      "assessment_id": "htn-orchestrate-document-dsh-runtime"
-    },
-    {
-      "study_id": "htn-orchestrate",
-      "project_id": "hermes-akuz-agents",
-      "assessment_id": "htn-orchestrate-document-hermes-akuz-agents"
     },
     {
       "study_id": "memscope",
@@ -18132,6 +18196,16 @@
       "study_id": "understand-anything",
       "project_id": "Harness",
       "assessment_id": "understand-anything-harness-profile-20261108"
+    },
+    {
+      "study_id": "htn-orchestrate",
+      "project_id": "dsh-runtime",
+      "assessment_id": "htn-orchestrate-dsh-runtime-profile-20261108"
+    },
+    {
+      "study_id": "htn-orchestrate",
+      "project_id": "hermes-akuz-agents",
+      "assessment_id": "htn-orchestrate-hermes-akuz-agents-profile-20261108"
     }
   ],
   "relations": [
