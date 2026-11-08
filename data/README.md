@@ -18,6 +18,7 @@
 | [data/project-fit/hyra-2/2026-11-05.json](project-fit/hyra-2/2026-11-05.json) | Матрица project fit |
 | [data/project-fit/reverse-engineer-anything/2026-11-05-initial.json](project-fit/reverse-engineer-anything/2026-11-05-initial.json) | Матрица project fit |
 | [data/project-fit/reverse-engineer-anything/2026-11-05.json](project-fit/reverse-engineer-anything/2026-11-05.json) | Матрица project fit |
+| [data/project-fit/understand-anything/2026-11-08-project-fit.json](project-fit/understand-anything/2026-11-08-project-fit.json) | Матрица project fit |
 | [data/project-fit/vercel-agent-desktop/2026-11-05-initial.json](project-fit/vercel-agent-desktop/2026-11-05-initial.json) | Матрица project fit |
 | [data/project-fit/vercel-agent-desktop/2026-11-05.json](project-fit/vercel-agent-desktop/2026-11-05.json) | Матрица project fit |
 | [data/results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json](results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json) | Результат ограниченной проверки |
@@ -110,6 +111,7 @@
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json](results/tencent-teamai-cli/2026-11-06-distribution-ab.json) | Результат ограниченной проверки |
 | [data/results/toolgrad/2026-11-06-chain-validation-ab.json](results/toolgrad/2026-11-06-chain-validation-ab.json) | Результат ограниченной проверки |
+| [data/results/understand-anything/2026-11-08-mcp-head-security.json](results/understand-anything/2026-11-08-mcp-head-security.json) | Результат ограниченной проверки |
 | [data/results/vercel-agent-desktop/2026-11-05.json](results/vercel-agent-desktop/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json](results/youtube-skills/2026-11-07-provider-boundary-oracle.json) | Результат ограниченной проверки |
 | [data/results/youtube-skills/2026-11-07-provider-boundary.json](results/youtube-skills/2026-11-07-provider-boundary.json) | Результат ограниченной проверки |

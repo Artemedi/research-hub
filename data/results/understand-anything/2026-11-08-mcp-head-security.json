@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-08",
+  "study": "understand-anything",
+  "kind": "BOUNDED_ENGINEERING_CODE_REVIEW",
+  "upstream": {
+    "repository": "Egonex-AI/Understand-Anything",
+    "branch": "main",
+    "head": "a6ea4024767df85ce4f99140d4f12ecfc5a81eb6",
+    "previous_pin": "4e6d3299017a7432da15957874992837a315c5b4",
+    "commits_ahead": 7,
+    "changed_files": 28,
+    "merge_message": "feat: add Devin platform support and MCP server integration",
+    "license": "MIT",
+    "mcp_package_version": "2.9.7",
+    "viewer_package_version": "2.9.8",
+    "mcp_node_engine": ">=22"
+  },
+  "source_manifest": {
+    "sha256": "c6d4af87b312cd1fea099515a3aabb82ae54bd6c9499f75b58360cf903a0bb72",
+    "files": 8,
+    "mcp_server_blob_sha": "3c0c31f0e60b0c894d4c4e8f1a813b6654df2081",
+    "changed_files_blob_sha": "7861b1e18047c636c567ceae011b503e0154abcc",
+    "viewer_blob_sha": "6b535a1d70c58cbfd0eddf802304efac252c5acc",
+    "changed_files_test_blob_sha": "cb8c8f16493e2ed76280201e3b25a6f1b5004cb0",
+    "viewer_sha256": "b3f2aa1fa5c2fff5cc286932ae32d1d00a7c5da61c7481056014bc5a5d315883"
+  },
+  "unchanged_previous_scope": {
+    "sql_parser_blob_sha": "c962b8e8372a30fd12e737e7c08714eaf0a6f691",
+    "parser_tests_blob_sha": "d9dc3f1b2b4039ab395eb0221fe34e7f8ce2ed4d",
+    "previous_parser_finding_still_applies": true,
+    "previous_four_case_fixture_rerun": false,
+    "previous_nine_wiki_parser_tests_rerun": false
+  },
+  "upstream_tests": {
+    "command": "corepack pnpm exec vitest run tests/mcp/changed-files.test.mjs tests/hooks/post-tool-use-auto-update.test.mjs tests/hooks/session-start-stale-check.test.mjs",
+    "files": {
+      "tests/mcp/changed-files.test.mjs": 10,
+      "tests/hooks/post-tool-use-auto-update.test.mjs": 16,
+      "tests/hooks/session-start-stale-check.test.mjs": 6
+    },
+    "passed": 32,
+    "failed": 0,
+    "status": "PASS",
+    "node_check": "PASS",
+    "eslint_changed_files": "PASS",
+    "git_diff_check": "PASS",
+    "full_monorepo_build": "NOT_RUN",
+    "full_upstream_test_suite": "NOT_RUN",
+    "mcp_server_integration_tests": "NOT_PRESENT",
+    "mcp_server_integration": "NOT_RUN"
+  },
+  "synthetic_security_probe": {
+    "script": "experiments/understand-anything/2026-11-08-viewer-symlink-probe.mjs",
+    "source": "understand-anything-plugin/packages/viewer/bin/viewer.mjs",
+    "source_sha256": "b3f2aa1fa5c2fff5cc286932ae32d1d00a7c5da61c7481056014bc5a5d315883",
+    "expected": "deny file-content access when a graph-listed relative path resolves outside the project root",
+    "observed_http_status": 200,
+    "outside_file_exposed": true,
+    "synthetic_sentinel": "SYNTHETIC_OUTSIDE_SENTINEL_9f41c2",
+    "bound_interface": "127.0.0.1",
+    "token_gate": "synthetic token supplied",
+    "result": "OBSERVED_SYMLINK_ESCAPE",
+    "scope": "Exact upstream viewer request handler in temporary harness; minimal staleness import and static index stubs; no user files"
+  },
+  "project_fit": {
+    "registry_sha": "b3af154278a8724230185cba6b1898a106a4f25a",
+    "profile_count": 45,
+    "profile_set_sha256": "4cb4be95806cc027a52b5608f1c379c26a438473163b323e4f7f572cc1092a4b",
+    "shortlist": [
+      "Harness"
+    ],
+    "profile_triage_completed": true,
+    "source_code_seam_verified": false,
+    "source_code_reviewed_targets": [],
+    "decision": "PROFILE_MATCH / NEEDS_EVIDENCE"
+  },
+  "production_approval": false,
+  "limitations": [
+    "This is a bounded code review of the new MCP server, changed-files helper, hooks and viewer file-content boundary, not a full monorepo audit.",
+    "The new MCP server has no upstream integration test in the inspected tree; the server itself was not built or launched.",
+    "The 32 passing tests cover changed-files and hooks only.",
+    "The synthetic symlink probe used the exact upstream viewer.mjs but stubbed the unused staleness module and static dashboard asset.",
+    "No real knowledge graph, private project source, production data, credentials or user files were used.",
+    "No target Harness source code or integration seam was verified.",
+    "No source project or production system was modified."
+  ]
+}

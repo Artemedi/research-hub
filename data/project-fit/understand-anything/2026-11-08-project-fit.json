@@ -1,0 +1,39 @@
+{
+  "reviewed_on": "2026-11-08",
+  "registry_sha": "b3af154278a8724230185cba6b1898a106a4f25a",
+  "registry_profile_set_sha256": "4cb4be95806cc027a52b5608f1c379c26a438473163b323e4f7f572cc1092a4b",
+  "source_sha": "a6ea4024767df85ce4f99140d4f12ecfc5a81eb6",
+  "source_content_sha256": "c6d4af87b312cd1fea099515a3aabb82ae54bd6c9499f75b58360cf903a0bb72",
+  "source_url": "https://github.com/Egonex-AI/Understand-Anything/tree/a6ea4024767df85ce4f99140d4f12ecfc5a81eb6",
+  "source_version": "git:a6ea4024767df85ce4f99140d4f12ecfc5a81eb6",
+  "scope": "Все 45 текущих PROJECT.md прочитаны на registry HEAD; публично раскрыты только один shortlist ID и высокоуровневое основание. Это профильный triage, не code-level fit и не production approval.",
+  "report": "reviews/understand-anything/2026-11-08-mcp-head-security.md",
+  "matrix": "portfolio/2026-11-08/understand-anything-project-fit.md",
+  "card_count": 45,
+  "shortlist": [
+    "Harness"
+  ],
+  "not_evaluated_profile_count": 0,
+  "source_code_reviewed_targets": [],
+  "decision": "PROFILE_MATCH / NEEDS_EVIDENCE",
+  "decision_counts": {
+    "SHORTLIST": 1,
+    "NO_DIRECT_PROFILE_MATCH": 44,
+    "NOT_EVALUATED": 0
+  },
+  "author_results_reproduced": false,
+  "experiment_id": "understand-anything-mcp-symlink-probe-20261108",
+  "projects": [
+    {
+      "project_id": "Harness",
+      "decision": "SHORTLIST",
+      "reason_ru": "Профиль прямо указывает MCP compatibility и integration probes; новый upstream source — stdio MCP server с graph/status/search/diff tools.",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "profile_decision": "SHORTLIST",
+      "limitations": "Только профильное соответствие. Исходники Harness, актуальный MCP client seam, tests и runtime в этой итерации не проверялись.",
+      "next_test": "На текущем Harness HEAD проверить MCP registration и выполнить disposable stdio handshake/tools/list с fake graph; добавить project-root scope и dashboard symlink negative controls.",
+      "next_test_reason": "До source@SHA/path и независимого oracle это не implementation fit и не основание менять проект."
+    }
+  ],
+  "production_approval": false
+}

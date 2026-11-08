@@ -2219,6 +2219,41 @@
       "title": "CERA-MoA — independent verification of 10,000 routing scenarios",
       "kind": "data",
       "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "reviews/understand-anything/2026-11-08-mcp-head-security.md",
+      "title": "Understand Anything — bounded MCP HEAD and viewer security review",
+      "kind": "review",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "experiments/understand-anything/2026-11-08-viewer-symlink-probe.mjs",
+      "title": "Understand Anything — synthetic viewer symlink boundary probe",
+      "kind": "guide",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/results/understand-anything/2026-11-08-mcp-head-security.json",
+      "title": "Understand Anything — upstream HEAD tests and synthetic security evidence",
+      "kind": "data",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-08/understand-anything-project-fit.md",
+      "title": "Understand Anything — 45-profile shortlist",
+      "kind": "project-fit",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/understand-anything/2026-11-08-project-fit.json",
+      "title": "Understand Anything — machine-readable profile triage",
+      "kind": "data",
+      "date": "2026-11-08"
     }
   ]
 }
