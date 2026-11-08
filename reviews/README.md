@@ -24,6 +24,7 @@
 | [Target-path citation and PostgreSQL planner resource counterchecks](../portfolio/2026-11-07/target-counterchecks-round3.md) | 2026-11-07 |
 | [Clean-source ZCode citation council and real MCP SQL security boundary](../portfolio/2026-11-07/target-counterchecks-round4.md) | 2026-11-07 |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |
+| [Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B](agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) | 2026-11-08 |
 | [Agent Mosaic — полнотекстовый follow-up и synthetic composite-gate lab](agent-mosaic/2026-11-07-composite-gate.md) | 2026-11-07 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |

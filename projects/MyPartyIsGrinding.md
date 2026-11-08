@@ -2,7 +2,7 @@
 
 # MyPartyIsGrinding
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/MyPartyIsGrinding/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/MyPartyIsGrinding/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -20,5 +20,6 @@
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | game mods: не установлена профильная задача desktop accessibility automation; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Game-mod events/diagnostics; coding assistant общего назначения недостаточен для предметного fit. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Game modification project; нет соответствующего agentic confidential corpus. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Game-mod workflow не имеет соответствующего agent failure-replay target. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

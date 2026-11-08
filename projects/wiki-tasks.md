@@ -2,7 +2,7 @@
 
 # wiki-tasks
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/wiki-tasks/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/03-automations/wiki-tasks/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -16,6 +16,7 @@
 | [zero-code](../catalog/studies/zero-code.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | - Соответствия: agent-config, wiki-tasks, dsh-runtime — сравнительное исследование guards, состояния и возобновления; PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE, не готовая интеграция. NO_PRODUCTION_APPROVAL. | [Обзор](../reviews/zero-code/2026-11-04.md) · [Основание](../studies/zero-code.md) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Recovery-oriented task state и journal — предметное сравнение с Ticket/Assignment/Input; исполняемый baseline recovery пока не найден. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Persistent memory/task state смежны с накоплением фактов, но защищённый multi-source corpus и final-output owner не подтверждены. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | Persistent task state/recovery смежны, но trace-grounded diagnosis и independent replay не подтверждены. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

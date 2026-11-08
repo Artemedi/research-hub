@@ -2,7 +2,7 @@
 
 # HermesAgent
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/HermesAgent/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/HermesAgent/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -33,6 +33,7 @@
 | [agent-risk](../catalog/studies/agent-risk.md) | DOCUMENTED_CANDIDATE | P1 / PROJECT_PROFILE_MATCH | Pre-change gate: логи, snapshot и неизвестные продолжения; harm/utility и воспроизводимость | [Обзор](../studies/agent-risk.md) · [Основание](../portfolio/2026-10-12--2026-10-19/project-fit.md) |
 | [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_CANDIDATE | Gateway scheduling | Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Gateway/tool configuration смежна с исследованием, но конфигурация не равна runtime output gate; live результат авторов не переносится на текущую установку. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | Agent/tool execution смежны; профиль не подтверждает checkpoint-grounded diagnosis/correction contract. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

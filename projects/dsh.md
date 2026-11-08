@@ -2,7 +2,7 @@
 
 # dsh
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -13,6 +13,7 @@
 | [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | control-plane governance: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONTROL_PLANE_REFERENCE | PROFILE_TRIAGE_ONLY | Предметная связь с governance и owner approvals; документальный reference, не runtime implementation target. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONTROL_PLANE_REFERENCE | PROFILE_TRIAGE_ONLY | Control-plane governance и owner approvals полезны для gate процесса, но не являются runtime enforcement point. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONTROL_PLANE_REFERENCE | CONTROL_PLANE_REFERENCE | Decision/governance control plane; не владелец agent execution/replay. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

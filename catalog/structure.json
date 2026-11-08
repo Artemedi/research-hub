@@ -2121,6 +2121,55 @@
       "title": "Agent Mosaic — independent synthetic oracle",
       "kind": "guide",
       "date": "2026-11-07"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md",
+      "title": "Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B",
+      "kind": "review",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-error-dataset/2026-11-08-checkpoint-replay-ab.py",
+      "title": "Agent Error Dataset — synthetic checkpoint-bound replay experiment",
+      "kind": "guide",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-error-dataset/2026-11-08-independent-oracle.py",
+      "title": "Agent Error Dataset — independent replay oracle",
+      "kind": "guide",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json",
+      "title": "Agent Error Dataset — 90 paired synthetic replay trials",
+      "kind": "data",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-error-dataset/2026-11-08-independent-oracle.json",
+      "title": "Agent Error Dataset — independent verification of 90 trials and 180 negative controls",
+      "kind": "data",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-08/agent-error-dataset-project-fit.md",
+      "title": "Agent Error Dataset — 45-project profile fit",
+      "kind": "project-fit",
+      "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json",
+      "title": "Agent Error Dataset — machine-readable 45-project profile matrix",
+      "kind": "data",
+      "date": "2026-11-08"
     }
   ]
 }

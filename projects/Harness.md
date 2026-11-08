@@ -2,7 +2,7 @@
 
 # Harness
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/Harness/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/Harness/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -14,6 +14,7 @@
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | PROFILE_CANDIDATE_NOT_VALIDATED | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | интеграционный workspace: предметный кандидат из профиля; текущий target source seam и acceptance baseline не проверены. См. ограничения и тест в отчёте. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Интеграционный workspace подходит для будущих probes, но current bundle contract не проверен; отдельная четвёртая цель не назначена. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Интеграционная probe-область подходит для будущего synthetic test, но не является владельцем final-answer enforcement. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | Integration probes и recovery смежны, но immutable trace и независимый replay oracle не подтверждены. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

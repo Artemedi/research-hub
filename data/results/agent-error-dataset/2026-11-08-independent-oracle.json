@@ -1,0 +1,18 @@
+{
+  "independent_verification": "PASS",
+  "trials_checked": 90,
+  "case_counts": {
+    "repairable": 45,
+    "transient": 15,
+    "ambiguous": 15,
+    "misleading": 15
+  },
+  "baseline_successes": 15,
+  "candidate_correct_repairs": 45,
+  "candidate_abstentions": 45,
+  "false_accepts": 0,
+  "negative_controls_checked": 270,
+  "negative_controls_blocked": 270,
+  "failures": [],
+  "interpretation": "Synthetic contract check only; no author model, dataset, external tool, production trace, or scientific benchmark was reproduced."
+}

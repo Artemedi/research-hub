@@ -126,7 +126,7 @@
       "card": "studies/agent-error-dataset.md",
       "primary_url": "https://arxiv.org/abs/2609.40111",
       "current_review_id": "fulltext-agent-error-dataset-2026-11-05",
-      "fit_coverage": "PARTIAL",
+      "fit_coverage": "MIGRATED",
       "card_body_sha256": "b63b4f112669f519f32c23c6e54916574bc15b2d2c9d9c7285fdbeea4f32616e",
       "linked_materials": [
         "archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md",
@@ -3659,6 +3659,20 @@
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Author-reported 10,800 simulation outputs and 1,440 live harness outputs were not reproduced. Independent synthetic policy-contract lab ran 30 cases x9 outputs; separate oracle passed 270/270. No LLM, target project source integration, production data or production approval.",
       "supersedes": "agent-mosaic-review"
+    },
+    {
+      "id": "agent-error-dataset-checkpoint-replay-20261108",
+      "study_ids": [
+        "agent-error-dataset"
+      ],
+      "version_ids": [
+        "verified-agent-error-dataset-2026-11-05"
+      ],
+      "date": "2026-11-08",
+      "document": "reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Полный legal arXiv v2 HTML имеет тот же hash, что и полнотекстовый обзор 05.11. Follow-up добавляет детерминированный synthetic contract experiment и профильный triage 45 карточек; он не воспроизводит авторские model results, dataset training, natural traces или production behavior.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -3968,278 +3982,295 @@
         "portfolio/2026-11-07/agent-mosaic-project-fit.md",
         "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
       ]
+    },
+    {
+      "id": "agent-error-dataset-checkpoint-replay-20261108",
+      "study_ids": [
+        "agent-error-dataset"
+      ],
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "30 синтетических cases × 3 повтора = 90 paired trials. Evidence-bound correction: 45/45 исправимых повторов приняты и достигли независимого ожидаемого state; 45/45 transient, ambiguous и misleading cases завершились abstain. Исходный retry успешен в 15/90 trials (только transient subset). 270/270 stale-checkpoint, forged-event, wrong-action, wrong-correction, changed-operation и extra-field controls заблокированы. Independent oracle PASS.",
+      "limitations": "Только детерминированный synthetic contract test. Не использовались LLM, AED dataset, model training, реальный agent, DBA trace, external tool, production data или project code. Это не репликация сравнения авторов 51,1% против 18,4% и не performance benchmark.",
+      "artifacts": [
+        "experiments/agent-error-dataset/2026-11-08-checkpoint-replay-ab.py",
+        "experiments/agent-error-dataset/2026-11-08-independent-oracle.py",
+        "data/results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json",
+        "data/results/agent-error-dataset/2026-11-08-independent-oracle.json"
+      ]
     }
   ],
   "projects": [
     {
       "id": "AKUZ",
       "title": "AKUZ",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/AKUZ/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/AKUZ/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "Wiki_PG",
       "title": "Wiki_PG",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/Wiki_PG/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/Wiki_PG/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "akuz-issue",
       "title": "akuz-issue",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-issue/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/akuz-issue/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "akuz-optimizer-twin",
       "title": "akuz-optimizer-twin",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-optimizer-twin/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/akuz-optimizer-twin/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "akuz-schema-inventory",
       "title": "akuz-schema-inventory",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-schema-inventory/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/akuz-schema-inventory/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "akuzlogparser",
       "title": "akuzlogparser",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuzlogparser/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/akuzlogparser/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "psqlqa",
       "title": "psqlqa",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/psqlqa/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/psqlqa/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "sequential-rca",
       "title": "sequential-rca",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/sequential-rca/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/sequential-rca/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "9router",
       "title": "9router",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/9router/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/9router/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "Harness",
       "title": "Harness",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/Harness/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/Harness/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "HermesAgent",
       "title": "HermesAgent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/HermesAgent/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/HermesAgent/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "TencentDB-Agent-Memory",
       "title": "TencentDB-Agent-Memory",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/TencentDB-Agent-Memory/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/TencentDB-Agent-Memory/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "agent-config",
       "title": "agent-config",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/agent-config/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/agent-config/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "agent-skills",
       "title": "agent-skills",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/agent-skills/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/agent-skills/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "bitvec-dsh",
       "title": "bitvec-dsh",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/bitvec-dsh/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/bitvec-dsh/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "claude-code-docs",
       "title": "claude-code-docs",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/claude-code-docs/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/claude-code-docs/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "deepseek-harness",
       "title": "deepseek-harness",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/deepseek-harness/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/deepseek-harness/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "dsh-claude-primary-agent",
       "title": "dsh-claude-primary-agent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh-claude-primary-agent/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "dsh-runtime",
       "title": "dsh-runtime",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-runtime/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh-runtime/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "dsh-team-context",
       "title": "dsh-team-context",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-team-context/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh-team-context/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "dsh",
       "title": "dsh",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "free-router",
       "title": "free-router",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/free-router/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/free-router/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "hermes-akuz-agents",
       "title": "hermes-akuz-agents",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "teamai-cli",
       "title": "teamai-cli",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/teamai-cli/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/teamai-cli/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "TelegramBot",
       "title": "TelegramBot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/TelegramBot/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/03-automations/TelegramBot/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "TrinMedicalBot",
       "title": "TrinMedicalBot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/TrinMedicalBot/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/03-automations/TrinMedicalBot/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "confluence-wiki-backups",
       "title": "confluence-wiki-backups",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/confluence-wiki-backups/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/03-automations/confluence-wiki-backups/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "wiki-tasks",
       "title": "wiki-tasks",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/03-automations/wiki-tasks/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/03-automations/wiki-tasks/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "MyPartyIsGrinding",
       "title": "MyPartyIsGrinding",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/MyPartyIsGrinding/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/MyPartyIsGrinding/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "MyWiki",
       "title": "MyWiki",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/MyWiki/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/MyWiki/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "WarOfGenesisIdleLoot",
       "title": "WarOfGenesisIdleLoot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/WarOfGenesisIdleLoot/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/WarOfGenesisIdleLoot/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "anastasia-wiki-bot",
       "title": "anastasia-wiki-bot",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/anastasia-wiki-bot/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/anastasia-wiki-bot/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "concept-loom-desktop",
       "title": "concept-loom-desktop",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/concept-loom-desktop/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/concept-loom-desktop/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "game-localization-guide",
       "title": "game-localization-guide",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/04-personal-games/game-localization-guide/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/04-personal-games/game-localization-guide/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "MS-SQL",
       "title": "MS-SQL",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/MS-SQL/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/MS-SQL/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "Postgres14book",
       "title": "Postgres14book",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/Postgres14book/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/Postgres14book/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "SQL-Server-First-Responder-Kit",
       "title": "SQL-Server-First-Responder-Kit",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/SQL-Server-First-Responder-Kit/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/SQL-Server-First-Responder-Kit/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "SQLServerTools",
       "title": "SQLServerTools",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/SQLServerTools/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/SQLServerTools/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "gitignore",
       "title": "gitignore",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/gitignore/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/gitignore/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "sqlserver-kit",
       "title": "sqlserver-kit",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/sqlserver-kit/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/sqlserver-kit/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "tigertoolbox",
       "title": "tigertoolbox",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/tigertoolbox/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/tigertoolbox/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "uuid-vs-auto-increment",
       "title": "uuid-vs-auto-increment",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/05-external-references/uuid-vs-auto-increment/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/05-external-references/uuid-vs-auto-increment/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "dsh-paper2agent",
       "title": "dsh-paper2agent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/06-independent-research/dsh-paper2agent/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/06-independent-research/dsh-paper2agent/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "paper2agent-index",
       "title": "paper2agent-index",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/06-independent-research/paper2agent-index/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/06-independent-research/paper2agent-index/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     },
     {
       "id": "developer-safe-dotnet-core",
       "title": "developer-safe-dotnet-core",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md",
-      "registry_revision": "838b86a28fcaa3440eeddbe147b6188e0d177963"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md",
+      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
     }
   ],
   "assessments": [
@@ -13948,6 +13979,771 @@
       "id": "agent-mosaic-2026-11-07-developer-safe-dotnet-core",
       "supersedes": null,
       "source_matrix": "data/project-fit/agent-mosaic/2026-11-07-composite-gate.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "AKUZ",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "DBA/application operations; профиль не определяет владельца agent trace/replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "4dd957bf4bb9348e07dc86382e45d2a72ea1ed22bf6bc438c450ad945291059a",
+      "id": "agent-error-dataset-2026-11-08-akuz",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "Wiki_PG",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "PostgreSQL DBA-автоматизация и диагностический retrieval смежны, но профиль не задаёт agent-owned checkpoint/replay contract.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "0c70c5add04a9be90c9b5b65662b7b67417b8a47b0c1211e8120999547f8b14f",
+      "id": "agent-error-dataset-2026-11-08-wiki-pg",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuz-issue",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Цепочка evidence → root cause → remediation → control подходит для хранения trace-cited diagnosis и replay evidence; проект не исполняет agent actions.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Проверить синтетическую incident-запись, связывающую точное событие trace, diagnosis, correction и независимую validation; не смешивать уверенность RCA с успешным replay.",
+      "next_test_reason": "Профильное соответствие; точная source seam, независимый project workload и owner approval остаются обязательными.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "79a7732ba4dc87fa92763be007d61a3b27e790b928f6a9e5d96cb17a535d5f19",
+      "id": "agent-error-dataset-2026-11-08-akuz-issue",
+      "supersedes": "agent-error-dataset-document-akuz-issue",
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuz-optimizer-twin",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Fidelity optimizer/statistics не относится к диагностике agent actions и checkpoint replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "3a83fb70cb581ecd26f76b329eb75082f028bcf716ba8780fee11dcd0afaac2e",
+      "id": "agent-error-dataset-2026-11-08-akuz-optimizer-twin",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuz-schema-inventory",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Инвентаризация схем и зависимостей не содержит пути коррекции agent actions.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "58c594566af3420c10a87f212031ea6961c0d7f76893291b53dcdfc0022cef6a",
+      "id": "agent-error-dataset-2026-11-08-akuz-schema-inventory",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuzlogparser",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Парсинг логов и отчётность не владеют коррекцией или replay agent actions.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "f47a0c913a0bd6b5fe1f8dfc824e7b3c78c2272dc569610ff4e7b739ec8ccdc9",
+      "id": "agent-error-dataset-2026-11-08-akuzlogparser",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "psqlqa",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний анализатор планов; нет собственного agent replay target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "eb5ca078d08818de82011fa5cccbe597e1d2fb36e99007b768e4ca3623249121",
+      "id": "agent-error-dataset-2026-11-08-psqlqa",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "sequential-rca",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Профиль sequential RCA и replay-oriented workflow напрямую соответствуют trace-grounded diagnosis; точный AED adapter не подтверждён.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Провести A/B на чистом worktree в синтетическом replay: checkpoint hash, action ID, точное событие trace и независимый final-state oracle; сравнить исходный retry с одной обоснованной коррекцией.",
+      "next_test_reason": "Профильное соответствие; точная source seam, независимый project workload и owner approval остаются обязательными.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "e23ff05fa4693d8103d86360bc0bd9a1dbe63c2ddf1e222f4472bc9656314d79",
+      "id": "agent-error-dataset-2026-11-08-sequential-rca",
+      "supersedes": "agent-error-dataset-document-sequential-rca",
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "9router",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Маршрутизация provider/model не диагностирует ошибки действий и не владеет task checkpoints.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "2097f6227a651ee3e5a60af673c96cf4c513b75a8ee433c7a8f0875190ba64b4",
+      "id": "agent-error-dataset-2026-11-08-9router",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "Harness",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Integration probes и recovery смежны, но immutable trace и независимый replay oracle не подтверждены.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "7f1a3315c9030a57f301207071625e90543cc7e7e7b75781382bf389589d1213",
+      "id": "agent-error-dataset-2026-11-08-harness",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "HermesAgent",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Agent/tool execution смежны; профиль не подтверждает checkpoint-grounded diagnosis/correction contract.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "7b4daf99adb5d4b7d359712e62771becec1568b1bb7c27dc47705f982fdcbe25",
+      "id": "agent-error-dataset-2026-11-08-hermesagent",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "TencentDB-Agent-Memory",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний memory reference; не собственный agent replay или incident evidence target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "df85954c09953cf4fd25d757b0dbecf9b15d0826be46dae45a0059db9cfe2eff",
+      "id": "agent-error-dataset-2026-11-08-tencentdb-agent-memory",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "agent-config",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Конфигурация и hooks не владеют trace-grounded diagnosis/replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "fb9b7f24c686ca73556bfcfc80873b20eb8028faa83354b3a35515709196df28",
+      "id": "agent-error-dataset-2026-11-08-agent-config",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "agent-skills",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Skill может описывать процедуру review, но не может независимо подтвердить provenance trace или итоговое состояние.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "1edc7b56cecf6e68a0509a7747144161e3d65d61ab2877b6b7a63b47dd9b7c8b",
+      "id": "agent-error-dataset-2026-11-08-agent-skills",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "bitvec-dsh",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Представление latent state не является workflow восстановления по action trace.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "f7e26cc68d2ab3ec80d195dd06ce936e1fc0fd6a478d0513aacdf7e8eb274b2a",
+      "id": "agent-error-dataset-2026-11-08-bitvec-dsh",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "claude-code-docs",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Документационный reference, не владелец исполнения или evidence.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "8f86928aba10db99bb82cdcfb12fbd5b4416007d648b68decd213ce0556e8739",
+      "id": "agent-error-dataset-2026-11-08-claude-code-docs",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "deepseek-harness",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Upstream reference; собственный runtime учитывается отдельно.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "2adfe86fb8b2c98ef56da191e86aaa59648771af8afa863537e433a91241b6a5",
+      "id": "agent-error-dataset-2026-11-08-deepseek-harness",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-claude-primary-agent",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Интеграция agent SDK может предоставлять traces, но checkpoint-replay contract не подтверждён.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "7fa50e746b8d440fd2c8a8acef3c3b12c996db03b3f62214a2dd19ab5d4b719d",
+      "id": "agent-error-dataset-2026-11-08-dsh-claude-primary-agent",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-runtime",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Agent runtime владеет session checkpoint и tool-result recovery; follow-up обязан сохранять unknown external outcome и запрещать automatic side-effect retry.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Проверить, может ли существующий контракт session checkpoint/tool-result recovery принять evaluator correction без automatic side-effect retry; использовать disposable session и injected unknown outcome.",
+      "next_test_reason": "Профильное соответствие; точная source seam, независимый project workload и owner approval остаются обязательными.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "cceb222b4bf84fd939a0cdd79bdb543f24d2e9acae3b8bba14c7c754d723dbe4",
+      "id": "agent-error-dataset-2026-11-08-dsh-runtime",
+      "supersedes": "agent-error-dataset-document-dsh-runtime",
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-team-context",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Управляемый context/evidence смежен, но это не action executor и не replay authority.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "81acc13c5ccceeeadd0abd0cde8bd069a2c37fb9fb84734ddbadca63fea9db2f",
+      "id": "agent-error-dataset-2026-11-08-dsh-team-context",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONTROL_PLANE_REFERENCE",
+      "evidence": "CONTROL_PLANE_REFERENCE",
+      "reason": "Decision/governance control plane; не владелец agent execution/replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Только governance/control-plane relevance.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "f0ec1ccf1cfd068da6d99825defa11bf87edc83ae43ba325e29eca7c05fef823",
+      "id": "agent-error-dataset-2026-11-08-dsh",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "free-router",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Legacy routing reference; нет agent trace recovery target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "5605450c358853ffdf3a4429bee88f5d09c2aacad289ac466898577a0fe17af8",
+      "id": "agent-error-dataset-2026-11-08-free-router",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "hermes-akuz-agents",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Multi-agent DBA automation смежна, если владеет failed-action traces и изолированным replay; этот контракт пока не установлен.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "9fb60ca689db5acbb7bcec9841480ba304e39473a7bb492ac6b6f68c174bc16d",
+      "id": "agent-error-dataset-2026-11-08-hermes-akuz-agents",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "teamai-cli",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Reference для распространения skills/governance, не agent replay executor.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "1bbd30d1e46108bb63d81fc5a32eb19b2b7ac4c27359ed201984b89384543d32",
+      "id": "agent-error-dataset-2026-11-08-teamai-cli",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "TelegramBot",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Scheduled automation/video workflow не соответствует scope agent failure replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "bdcb47f08cc29c8973e34a20e26a02d7259162fb322a7b91311b534a7650d419",
+      "id": "agent-error-dataset-2026-11-08-telegrambot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "TrinMedicalBot",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Профиль medical assistant не определяет владельца general tool-failure replay; медицинские данные и клинические claims не использовались.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "c2f81ab1fd3fe773432992df98bb7d37e2c31338e60f5cd6ea4dd509fb4c39ce",
+      "id": "agent-error-dataset-2026-11-08-trinmedicalbot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "confluence-wiki-backups",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Backup/restore не относится к диагностике и replay agent actions.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "b44da358681864318e4e3e728669cbfd1efe6e6a3e7e4ca951d11455b493a377",
+      "id": "agent-error-dataset-2026-11-08-confluence-wiki-backups",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "wiki-tasks",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Persistent task state/recovery смежны, но trace-grounded diagnosis и independent replay не подтверждены.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "e483f1dd9be38dbb3d7b3700b3713ff05ce0fb63af5e3fa03227e7dfd2fe3933",
+      "id": "agent-error-dataset-2026-11-08-wiki-tasks",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "MyPartyIsGrinding",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Game-mod workflow не имеет соответствующего agent failure-replay target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "93a57825dcc754a61b4a6b573ffc21b47ccd71d4e75af5cea4bb59319b443d08",
+      "id": "agent-error-dataset-2026-11-08-mypartyisgrinding",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "MyWiki",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Knowledge/wiki scope не подтверждает agent execution или checkpoint replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "997e6df2f06a981aa2525f31d5f6723e5d5d621c5bac3061b12e7e4a578ee63b",
+      "id": "agent-error-dataset-2026-11-08-mywiki",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "WarOfGenesisIdleLoot",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Game-mod workflow не имеет соответствующего agent failure-replay target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "a4de7fb45f88fd16274360e5ad07eed15fc0f2b9e67af5414a1c6e232be0ef81",
+      "id": "agent-error-dataset-2026-11-08-warofgenesisidleloot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "anastasia-wiki-bot",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "DEFERRED",
+      "evidence": "NOT_EVALUATED",
+      "reason": "В текущем профиле недостаточно подтверждённых сведений, чтобы классифицировать agent trace/replay workflow.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "DEFERRED: профильных сведений недостаточно.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "5dfaf723cb56ce93dad39e3e0f2c7651e206b21c8c2faa22b6cc124845ddf365",
+      "id": "agent-error-dataset-2026-11-08-anastasia-wiki-bot",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "concept-loom-desktop",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Learning/coach application не определяет agent action replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "75d5941cfbe983c8b1fe985c051d555b604a5297ccdefc68eda99ae917a42687",
+      "id": "agent-error-dataset-2026-11-08-concept-loom-desktop",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "game-localization-guide",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Localization guidance не относится к agent failure diagnosis/replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "171b64a2d2e7e0f95ca7f2319591eccc013b289e86a397603d251c1def1b7a28",
+      "id": "agent-error-dataset-2026-11-08-game-localization-guide",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "MS-SQL",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний SQL reference, не собственный agent recovery target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "0b5d3ed27845574f9ce4377a204f64a08ef22e57fa85e36b25a4806ee07c455e",
+      "id": "agent-error-dataset-2026-11-08-ms-sql",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "Postgres14book",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Книга/reference fork, не agent execution target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "1cc34dab52451dc705acef9e4e24517599c9aa8f22cc7b9e44db6b82df8c2770",
+      "id": "agent-error-dataset-2026-11-08-postgres14book",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "SQL-Server-First-Responder-Kit",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний diagnostic toolkit; нет собственного agent trace-replay workflow.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "25a7a0b0f5f291e1354946cd184f5a01e1e86596ad575251268a9e1b7da2bc9c",
+      "id": "agent-error-dataset-2026-11-08-sql-server-first-responder-kit",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "SQLServerTools",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний maintenance toolkit, не agent replay target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "b4f450fb317c67b22f62d482d922756e9feaa930716a41ddd7cc01227168fc17",
+      "id": "agent-error-dataset-2026-11-08-sqlservertools",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "gitignore",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Reference templates не имеют agent execution/replay surface.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "6e180749cc98846cf6616eb5bebc336e7b9294899f5f7541d4e30c9a53ef4e84",
+      "id": "agent-error-dataset-2026-11-08-gitignore",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "sqlserver-kit",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний SQL reference toolkit, не agent replay target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "395cc0df73dd5049fa6d6d0754b6dcf924e919b80805f342565e917f872c1b1a",
+      "id": "agent-error-dataset-2026-11-08-sqlserver-kit",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "tigertoolbox",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний DBA toolbox, не владелец agent action replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "351a8817a4d9310e848aa52746351811a084b2bb2304b8b06d39bdc87a5546bc",
+      "id": "agent-error-dataset-2026-11-08-tigertoolbox",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "uuid-vs-auto-increment",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "REFERENCE_NO_TARGET",
+      "evidence": "REFERENCE_ONLY",
+      "reason": "Сторонний index benchmark, не относится к trace-grounded agent recovery.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "Собственной цели внедрения не установлено.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "b4e424a4604e13035277ac101dbc3743193f26b3b50bf8b9870ff0bafc677b01",
+      "id": "agent-error-dataset-2026-11-08-uuid-vs-auto-increment",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-paper2agent",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_ADJACENCY / NEEDS_EVIDENCE",
+      "reason": "Source/citation analysis может сохранять provenance diagnosis, но проект не владеет runtime action replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": "Подтвердить source-level trace/checkpoint contract и независимый final-state oracle; при отсутствии сохранить conditional или понизить до NO_CURRENT_FIT.",
+      "next_test_reason": "Профиль смежен, но end-to-end replay contract не подтверждён.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "1e4dcf589b963531156e6d942373cb0ae50609a7dda5773467e48ffa5d16ab10",
+      "id": "agent-error-dataset-2026-11-08-dsh-paper2agent",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "paper2agent-index",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Derived research index, не agent execution/replay target.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "ca472f0bb9346cfe1219852ab3dce49c4e087b2fca3fd5138387ab7601104839",
+      "id": "agent-error-dataset-2026-11-08-paper2agent-index",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "developer-safe-dotnet-core",
+      "review_id": "agent-error-dataset-checkpoint-replay-20261108",
+      "date": "2026-11-08",
+      "decision": "NO_CURRENT_FIT",
+      "evidence": "PROFILE_TRIAGE_ONLY",
+      "reason": "Domain/persistence API safety не относится к agent trace diagnosis/replay.",
+      "limitations": "Только triage 45 профилей. Интеграция проекта, изменение исходников целевого проекта, production data и production approval отсутствуют. Synthetic lab не доказывает пользу проекта.",
+      "next_test": null,
+      "next_test_reason": "По профилю подходящая цель не установлена.",
+      "project_revision": "b3af154278a8724230185cba6b1898a106a4f25a",
+      "project_card_sha256": "382dac3061773fddd677dbcafd6725fb317421507a2bb193c0a8e79e8a64de6d",
+      "id": "agent-error-dataset-2026-11-08-developer-safe-dotnet-core",
+      "supersedes": null,
+      "source_matrix": "data/project-fit/agent-error-dataset/2026-11-08-project-fit.json"
     }
   ],
   "current_assessments": [
@@ -14625,21 +15421,6 @@
       "study_id": "vercel-agent-desktop",
       "project_id": "developer-safe-dotnet-core",
       "assessment_id": "vercel-agent-desktop-current-developer-safe-dotnet-core"
-    },
-    {
-      "study_id": "agent-error-dataset",
-      "project_id": "akuz-issue",
-      "assessment_id": "agent-error-dataset-document-akuz-issue"
-    },
-    {
-      "study_id": "agent-error-dataset",
-      "project_id": "dsh-runtime",
-      "assessment_id": "agent-error-dataset-document-dsh-runtime"
-    },
-    {
-      "study_id": "agent-error-dataset",
-      "project_id": "sequential-rca",
-      "assessment_id": "agent-error-dataset-document-sequential-rca"
     },
     {
       "study_id": "agent-transfer-protocol",
@@ -16040,6 +16821,231 @@
       "study_id": "agent-mosaic",
       "project_id": "developer-safe-dotnet-core",
       "assessment_id": "agent-mosaic-2026-11-07-developer-safe-dotnet-core"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "9router",
+      "assessment_id": "agent-error-dataset-2026-11-08-9router"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "AKUZ",
+      "assessment_id": "agent-error-dataset-2026-11-08-akuz"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "Harness",
+      "assessment_id": "agent-error-dataset-2026-11-08-harness"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "HermesAgent",
+      "assessment_id": "agent-error-dataset-2026-11-08-hermesagent"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "MS-SQL",
+      "assessment_id": "agent-error-dataset-2026-11-08-ms-sql"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "MyPartyIsGrinding",
+      "assessment_id": "agent-error-dataset-2026-11-08-mypartyisgrinding"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "MyWiki",
+      "assessment_id": "agent-error-dataset-2026-11-08-mywiki"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "Postgres14book",
+      "assessment_id": "agent-error-dataset-2026-11-08-postgres14book"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "SQL-Server-First-Responder-Kit",
+      "assessment_id": "agent-error-dataset-2026-11-08-sql-server-first-responder-kit"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "SQLServerTools",
+      "assessment_id": "agent-error-dataset-2026-11-08-sqlservertools"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "TelegramBot",
+      "assessment_id": "agent-error-dataset-2026-11-08-telegrambot"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "TencentDB-Agent-Memory",
+      "assessment_id": "agent-error-dataset-2026-11-08-tencentdb-agent-memory"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "TrinMedicalBot",
+      "assessment_id": "agent-error-dataset-2026-11-08-trinmedicalbot"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "WarOfGenesisIdleLoot",
+      "assessment_id": "agent-error-dataset-2026-11-08-warofgenesisidleloot"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "Wiki_PG",
+      "assessment_id": "agent-error-dataset-2026-11-08-wiki-pg"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "agent-config",
+      "assessment_id": "agent-error-dataset-2026-11-08-agent-config"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "agent-skills",
+      "assessment_id": "agent-error-dataset-2026-11-08-agent-skills"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuz-issue",
+      "assessment_id": "agent-error-dataset-2026-11-08-akuz-issue"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuz-optimizer-twin",
+      "assessment_id": "agent-error-dataset-2026-11-08-akuz-optimizer-twin"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuz-schema-inventory",
+      "assessment_id": "agent-error-dataset-2026-11-08-akuz-schema-inventory"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "akuzlogparser",
+      "assessment_id": "agent-error-dataset-2026-11-08-akuzlogparser"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "anastasia-wiki-bot",
+      "assessment_id": "agent-error-dataset-2026-11-08-anastasia-wiki-bot"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "bitvec-dsh",
+      "assessment_id": "agent-error-dataset-2026-11-08-bitvec-dsh"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "claude-code-docs",
+      "assessment_id": "agent-error-dataset-2026-11-08-claude-code-docs"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "concept-loom-desktop",
+      "assessment_id": "agent-error-dataset-2026-11-08-concept-loom-desktop"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "confluence-wiki-backups",
+      "assessment_id": "agent-error-dataset-2026-11-08-confluence-wiki-backups"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "deepseek-harness",
+      "assessment_id": "agent-error-dataset-2026-11-08-deepseek-harness"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "developer-safe-dotnet-core",
+      "assessment_id": "agent-error-dataset-2026-11-08-developer-safe-dotnet-core"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh",
+      "assessment_id": "agent-error-dataset-2026-11-08-dsh"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-claude-primary-agent",
+      "assessment_id": "agent-error-dataset-2026-11-08-dsh-claude-primary-agent"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "agent-error-dataset-2026-11-08-dsh-paper2agent"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-runtime",
+      "assessment_id": "agent-error-dataset-2026-11-08-dsh-runtime"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "dsh-team-context",
+      "assessment_id": "agent-error-dataset-2026-11-08-dsh-team-context"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "free-router",
+      "assessment_id": "agent-error-dataset-2026-11-08-free-router"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "game-localization-guide",
+      "assessment_id": "agent-error-dataset-2026-11-08-game-localization-guide"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "gitignore",
+      "assessment_id": "agent-error-dataset-2026-11-08-gitignore"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "hermes-akuz-agents",
+      "assessment_id": "agent-error-dataset-2026-11-08-hermes-akuz-agents"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "paper2agent-index",
+      "assessment_id": "agent-error-dataset-2026-11-08-paper2agent-index"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "psqlqa",
+      "assessment_id": "agent-error-dataset-2026-11-08-psqlqa"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "sequential-rca",
+      "assessment_id": "agent-error-dataset-2026-11-08-sequential-rca"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "sqlserver-kit",
+      "assessment_id": "agent-error-dataset-2026-11-08-sqlserver-kit"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "teamai-cli",
+      "assessment_id": "agent-error-dataset-2026-11-08-teamai-cli"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "tigertoolbox",
+      "assessment_id": "agent-error-dataset-2026-11-08-tigertoolbox"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "uuid-vs-auto-increment",
+      "assessment_id": "agent-error-dataset-2026-11-08-uuid-vs-auto-increment"
+    },
+    {
+      "study_id": "agent-error-dataset",
+      "project_id": "wiki-tasks",
+      "assessment_id": "agent-error-dataset-2026-11-08-wiki-tasks"
     }
   ],
   "relations": [

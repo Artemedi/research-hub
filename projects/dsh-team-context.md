@@ -2,7 +2,7 @@
 
 # dsh-team-context
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/02-agents-dsh/dsh-team-context/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh-team-context/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -32,6 +32,7 @@
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | Governance знания соприкасаются с policy, но это не task executor и не готовый integration seam. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [gpt6-astra-skills-prompts](../catalog/studies/gpt6-astra-skills-prompts.md) | DOCUMENTED_CANDIDATE | SKILL_GOVERNANCE_HYPOTHESIS / CONTRACT_NOT_TESTED | OpenAI official guidance plus reproducible, non-production five-pair live Astra prompt test; actual target project source and workflow not tested. | [Обзор](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) · [Основание](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Контур governed knowledge/retrieval — возможный владелец source labels и provenance; финальный ответ выпускает runtime, а claim-level gate пока не подтверждён. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | Управляемый context/evidence смежен, но это не action executor и не replay authority. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

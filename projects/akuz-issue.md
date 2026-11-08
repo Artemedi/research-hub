@@ -2,7 +2,7 @@
 
 # akuz-issue
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/akuz-issue/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/akuz-issue/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -10,7 +10,7 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | DOCUMENTED_CANDIDATE | P1_PROFILE_MATCH_OFFLINE_RCA | Trace-grounded RCA и counterfactual replay по фактам, не по догадкам | [Обзор](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [Основание](../portfolio/historical/project-fit.md) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Цепочка evidence → root cause → remediation → control подходит для хранения trace-cited diagnosis и replay evidence; проект не исполняет agent actions. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

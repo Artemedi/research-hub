@@ -2,7 +2,7 @@
 
 # sequential-rca
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/sequential-rca/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/sequential-rca/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -10,7 +10,6 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | DOCUMENTED_CANDIDATE | P1_PROFILE_MATCH_OFFLINE_RCA | Trace-grounded RCA и counterfactual replay по фактам, не по догадкам | [Обзор](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [Основание](../portfolio/historical/project-fit.md) |
 | [bird-rl](../catalog/studies/bird-rl.md) | DOCUMENTED_CANDIDATE | P1_DB_STATE_ISOLATION / NEEDS_EVIDENCE | \| BIRD-RL — Stateful SQL Agent Evaluation \| akuz-schema-inventory, sequential-rca, dsh-runtime \| Isolated SQL state/replay: schema-inventory DB fixtures, sequential-RCA evidence tasks and test runners in runtime; authors tested SQLite, not production PostgreSQL \| Disposable PostgreSQL per-trajectory clone vs snapshot vs rollback; final-state oracle, WAL, IOPS and isolation \| P1_DB_STATE_ISOLATION / NEEDS_EVIDENCE \| | [Обзор](../studies/bird-rl.md) · [Основание](../portfolio/2026-10-20--2026-10-26/project-fit.md) |
 | [drag](../catalog/studies/drag.md) | DOCUMENTED_CANDIDATE | P2_PROFILE_MATCH_RETRIEVAL_BENCH | Оптимизация retrieval depth и генерации при ограниченном бюджете | [Обзор](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [Основание](../portfolio/historical/project-fit.md) |
 | [novafabric](../catalog/studies/novafabric.md) | DOCUMENTED_CANDIDATE | P2_MINIMAL_REPLAY_BUNDLE_ONLY | \| NovaFabric — tamper-evident agent run evidence \| dsh-runtime, sequential-rca, hermes-akuz-agents \| Идентичность и доказательная полнота session replay, RCA evidence, multi-agent transitions. Не создавать новый crypto framework до верификации простого bundle. \| До криптографии: 20 disposable sessions с captured response streams, immutable evidence manifest и mock tool/LLM providers. Требовать byte-stable derived trace, full completion, coverage=100% для declared event types, искусственную порчу и обнаружение miss; измерить IO, RAM, diff size. \| P2_MINIMAL_REPLAY_BUNDLE_ONLY \| | [Обзор](../portfolio/2026-09-03--2026-09-15/review.md) · [Основание](../portfolio/2026-09-03--2026-09-15/project-fit.md) |
@@ -21,6 +20,7 @@
 | [sequential-diagnosis-language-models](../catalog/studies/sequential-diagnosis-language-models.md) | DOCUMENTED_CANDIDATE | FIT_CANDIDATE / NEEDS_EVIDENCE | \| MAI-DxO / Sequential Diagnosis \| sequential-rca \| Переносимая идея последовательного сбора опровергающих свидетельств для RCA, не медицинские результаты. \| DBA-oracle и отдельный A/B для этого проекта отсутствуют. \| Offline counterfactual replay и независимая оценка ошибочной атрибуции. \| FIT_CANDIDATE / NEEDS_EVIDENCE \| | [Обзор](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) · [Основание](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) |
 | [agentic-self-awareness](../catalog/studies/agentic-self-awareness.md) | DOCUMENTED_CANDIDATE | P1 / PROJECT_PROFILE_MATCH | Воздержание при недостатке фактов без ложного отказа на выполнимой задаче | [Обзор](../studies/agentic-self-awareness.md) · [Основание](../portfolio/2026-10-12--2026-10-19/project-fit.md) |
 | [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_CANDIDATE | read-only evidence requests | Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Профиль sequential RCA и replay-oriented workflow напрямую соответствуют trace-grounded diagnosis; точный AED adapter не подтверждён. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 ## Соответствие не подтверждено или применение отложено
 

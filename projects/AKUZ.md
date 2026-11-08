@@ -2,7 +2,7 @@
 
 # AKUZ
 
-[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/838b86a28fcaa3440eeddbe147b6188e0d177963/projects/01-dba-akuz/AKUZ/PROJECT.md); ревизия 838b86a28fcaa3440eeddbe147b6188e0d177963. Публичная проекция без закрытого кода и текстов проекта.
+[Каноническая карточка проекта](https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/01-dba-akuz/AKUZ/PROJECT.md); ревизия b3af154278a8724230185cba6b1898a106a4f25a. Публичная проекция без закрытого кода и текстов проекта.
 
 **Охват:** показаны только перенесённые оценки, а не все подходящие исследования портфеля. Наличие кандидата не означает измеренную пользу или разрешение внедрения.
 
@@ -23,5 +23,6 @@
 | [dsh-superagent-prototype](../catalog/studies/dsh-superagent-prototype.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Смешанная DBA-база; нет выделенного coding-agent task runtime или безопасного benchmark для Superagent. | [Обзор](../reviews/dsh-superagent-prototype/2026-11-05.md) · [Основание](../data/project-fit/dsh-superagent-prototype/2026-11-05.json) |
 | [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_NO_FIT | NO_DIRECT_FIT | У исследуемого механизма нет прямого предметного контракта с проектом. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Смешанная DBA/application база; в профиле нет agentic cross-document answer boundary. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | DBA/application operations; профиль не определяет владельца agent trace/replay. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

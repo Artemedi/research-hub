@@ -11,6 +11,7 @@
 | [collections/telegram/bookmarks.json](../collections/telegram/bookmarks.json) | Восстановленная коллекция |
 | [collections/telegram/preliminary-project-fit.json](../collections/telegram/preliminary-project-fit.json) | Восстановленная коллекция |
 | [data/fixtures/dsh-creator/2026-11-06/manifest.json](fixtures/dsh-creator/2026-11-06/manifest.json) | Восстановленная коллекция |
+| [data/project-fit/agent-error-dataset/2026-11-08-project-fit.json](project-fit/agent-error-dataset/2026-11-08-project-fit.json) | Матрица project fit |
 | [data/project-fit/agent-mosaic/2026-11-07-composite-gate.json](project-fit/agent-mosaic/2026-11-07-composite-gate.json) | Матрица project fit |
 | [data/project-fit/dsh-superagent-prototype/2026-11-05.json](project-fit/dsh-superagent-prototype/2026-11-05.json) | Матрица project fit |
 | [data/project-fit/hyra-2/2026-11-05.json](project-fit/hyra-2/2026-11-05.json) | Матрица project fit |
@@ -18,6 +19,8 @@
 | [data/project-fit/reverse-engineer-anything/2026-11-05.json](project-fit/reverse-engineer-anything/2026-11-05.json) | Матрица project fit |
 | [data/project-fit/vercel-agent-desktop/2026-11-05-initial.json](project-fit/vercel-agent-desktop/2026-11-05-initial.json) | Матрица project fit |
 | [data/project-fit/vercel-agent-desktop/2026-11-05.json](project-fit/vercel-agent-desktop/2026-11-05.json) | Матрица project fit |
+| [data/results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json](results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json) | Результат ограниченной проверки |
+| [data/results/agent-error-dataset/2026-11-08-independent-oracle.json](results/agent-error-dataset/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |
 | [data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json](results/agent-mosaic/2026-11-07-composite-gate-oracle.json) | Результат ограниченной проверки |
 | [data/results/agent-mosaic/2026-11-07-composite-gate.json](results/agent-mosaic/2026-11-07-composite-gate.json) | Результат ограниченной проверки |
 | [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) | Результат ограниченной проверки |

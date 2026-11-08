@@ -12,7 +12,7 @@
 - [Harness² — Recursive Agent Harnessing for an Open World](harness2.md); project fit: PARTIAL.
 - [Hyra 2.0](hyra-2.md); project fit: MIGRATED.
 - [Vercel Agent Desktop](vercel-agent-desktop.md); project fit: MIGRATED.
-- [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md); project fit: PARTIAL.
+- [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md); project fit: MIGRATED.
 - [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md); project fit: PARTIAL.
 - [agent-risk](agent-risk.md); project fit: PARTIAL.
 - [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md); project fit: PARTIAL.
