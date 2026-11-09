@@ -8,6 +8,31 @@ from pathlib import Path
 
 # Each entry: tested proposition, reviewed source, independent machine result, limit.
 BOUNDED = {
+    "exactly-once-limbo": (
+        "Pinned TelegramBot main() under synthetic transport: 900 fault cases/arm expose retry and at-most-once loss/duplicate tradeoff.",
+        "reviews/exactly-once-limbo/2026-11-06-policy-ab.md",
+        "data/results/exactly-once-limbo/2026-11-06-telegrambot-policy-ab.json",
+        "No real Telegram delivery, durable outbox, or actual fault frequencies; hypothetical idempotent server is not offered by Telegram."),
+    "understand-anything": (
+        "Original pinned viewer leaks synthetic outside-root sentinel through graph-listed symlink with valid token.",
+        "reviews/understand-anything/2026-11-08-mcp-head-security.md",
+        "data/results/understand-anything/2026-11-08-mcp-head-security.json",
+        "Negative source security finding only; requires graph path plus token; not whole-app vulnerability assessment or production authorization."),
+    "vercel-agent-desktop": (
+        "Original Linux CLI, 12/12 isolated GTK toy UI positive and stale-ref negative cases; pinned core suite 1683 pass.",
+        "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+        "data/results/vercel-agent-desktop/2026-11-05.json",
+        "Linux suite not fully green, 233 tests ignored; no broad toolkits, wrong-target safety or real project benefit."),
+    "inspektor-gadget": (
+        "Pinned Inspektor Gadget trace_exec --filter.exec captured 200/200 positive and 0/25 negative synthetic rootless Podman events.",
+        "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+        "data/results/inspektor-gadget/2026-11-06-podman-trace.json",
+        "--comm variant captured 0/40; no kernel drop-rate or overhead proof, no actual PostgreSQL/AKUZ integration."),
+    "tencent-teamai-cli": (
+        "Locally ported TeamAI CLI passed 40/40 offline synthetic distribution contract ops and a negative oracle mutant; minimal-home write-scope failed.",
+        "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+        "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json",
+        "35 files outside intended minimal-home paths and unequal-feature A/B; not approved for deployment."),
     "agent-error-dataset": (
         "Checkpoint-bound correction: 90 synthetic paired trials; 270 negative controls.",
         "reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md",
@@ -65,7 +90,34 @@ def sha(root, p):
     return hashlib.sha256((root / p).read_bytes()).hexdigest()
 
 def validate_bounded(sid, x):
-    if sid == "agent-error-dataset":
+    if sid == "exactly-once-limbo":
+        assert x["real_target_main_send_telegram_used"] is True and x["seed_count"] == 5
+        a=x["totals"]["real_auto_retry"]
+        b=x["totals"]["sidecar_pending_no_retry"]
+        assert a["cases"] == b["cases"] == 900
+        assert a["duplicate_cases"] == 600 and b["duplicate_cases"] == 100
+        assert b["missing_cases"] == 200 and x["no_real_network_calls"] is True
+    elif sid == "understand-anything":
+        probe=x["synthetic_security_probe"]
+        assert x["upstream_tests"]["passed"] == 32 and x["upstream_tests"]["failed"] == 0
+        assert probe["result"] == "OBSERVED_SYMLINK_ESCAPE"
+        assert probe["observed_http_status"] == 200 and probe["outside_file_exposed"] is True
+        assert probe["bound_interface"] == "127.0.0.1" and x["production_approval"] is False
+    elif sid == "vercel-agent-desktop":
+        assert x["gui_cases_passed"] == 12 and x["all_gui_runs_passed"] is True
+        assert len(x["gui_runs"]) == 3 and x["core_suite"] == "1683 passed; 0 failed"
+    elif sid == "inspektor-gadget":
+        assert len(x["trials"]) == 6 and x["trials"][0]["observed_events"] == 0
+        runs=x["trials"][1:]
+        assert all(y["expected_exec"] == y["observed_events"] == y["matched_comm"] == 40
+                   and y["unexpected_negative"] == 0 and y["ig_exit"] == 0 for y in runs)
+    elif sid == "tencent-teamai-cli":
+        assert x["status"] == "FUNCTIONAL_PASS_SCOPE_GATE_FAIL" and x["cases_per_arm"] == 40
+        check=x["validation"]
+        assert check["B_correct_all"] and check["schema_fail_closed"] and check["local_guard_mutation_detected"]
+        assert check["no_unexpected_home_file"] is False
+        assert len(check["out_of_scope_files_in_minimal_claude_profile"]) == 35
+    elif sid == "agent-error-dataset":
         assert x["independent_verification"] == "PASS" and x["trials_checked"] == 90
         assert x["negative_controls_blocked"] == 270 and x["false_accepts"] == 0
     elif sid == "agent-risk":
@@ -210,7 +262,7 @@ def report(v):
         f = r["evidence"][0]["path"]
         lines.append("| {} | {} | [review](../../{}) |".format(r["study_id"], r["verified_scope"], f))
     lines += [
-        "", "All eight ACCEPT_BOUNDED records refer only to explicitly measured narrow properties. "
+        "", "All {} ACCEPT_BOUNDED records refer only to explicitly measured narrow properties.".format(summ["terminal"]),
         "They do not endorse author-reported generalization, target-project benefit or deployment.",
         "", "## Unresolved evidence, not false closure", "",
         "{} source cards remain OPEN_EVIDENCE_ADJUDICATION, not REWORK-by-default, "

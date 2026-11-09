@@ -7,11 +7,11 @@
   "project_status_note": "Unassessed is not NO_FIT; assessments refer to recorded project snapshots, not automatically current HEAD.",
   "summary": {
     "total": 83,
-    "terminal": 8,
-    "open": 75,
+    "terminal": 13,
+    "open": 70,
     "by_status": {
-      "ACCEPT_BOUNDED": 8,
-      "OPEN_EVIDENCE_ADJUDICATION": 75
+      "ACCEPT_BOUNDED": 13,
+      "OPEN_EVIDENCE_ADJUDICATION": 70
     },
     "explicit_project_pairs": 506,
     "unassessed_project_pairs": 3229
@@ -1692,11 +1692,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned TelegramBot main() under synthetic transport: 900 fault cases/arm expose retry and at-most-once loss/duplicate tradeoff.",
+      "limits": "No real Telegram delivery, durable outbox, or actual fault frequencies; hypothetical idempotent server is not offered by Telegram.",
+      "evidence": [
+        {
+          "path": "reviews/exactly-once-limbo/2026-11-06-policy-ab.md",
+          "sha256": "51bd0c2d57873337dbe9e1f78c6e2b9abd1dfa155c862595c08f242d651ef224"
+        },
+        {
+          "path": "data/results/exactly-once-limbo/2026-11-06-telegrambot-policy-ab.json",
+          "sha256": "c691f82b557e885b19cd8c65594463a91e3a38bfac5b3738941c96ebb999cf3c"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "experienceindex",
@@ -2432,11 +2441,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned Inspektor Gadget trace_exec --filter.exec captured 200/200 positive and 0/25 negative synthetic rootless Podman events.",
+      "limits": "--comm variant captured 0/40; no kernel drop-rate or overhead proof, no actual PostgreSQL/AKUZ integration.",
+      "evidence": [
+        {
+          "path": "reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md",
+          "sha256": "ad8a068b83f19e95d581944000bffa81087d37720a8ac5bba49cf329370c296f"
+        },
+        {
+          "path": "data/results/inspektor-gadget/2026-11-06-podman-trace.json",
+          "sha256": "f2499d1446846d41feb8cec9e22df0f865297b5053894422ddad3e0607f9b0c4"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "ipfire-fireperf",
@@ -5191,11 +5209,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Locally ported TeamAI CLI passed 40/40 offline synthetic distribution contract ops and a negative oracle mutant; minimal-home write-scope failed.",
+      "limits": "35 files outside intended minimal-home paths and unequal-feature A/B; not approved for deployment.",
+      "evidence": [
+        {
+          "path": "reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md",
+          "sha256": "4d8c00b1582441e474d0c58ac5b1620a6aa8e653300b9f2497d8aacc61a0e6e4"
+        },
+        {
+          "path": "data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json",
+          "sha256": "5d3f28e2d683a4811418b35a66865c660898a2b95c3fdd964f1ad531fb27314e"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "toolgrad",
@@ -5500,11 +5527,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Original pinned viewer leaks synthetic outside-root sentinel through graph-listed symlink with valid token.",
+      "limits": "Negative source security finding only; requires graph path plus token; not whole-app vulnerability assessment or production authorization.",
+      "evidence": [
+        {
+          "path": "reviews/understand-anything/2026-11-08-mcp-head-security.md",
+          "sha256": "daba6eb379cc0789718b2c8e08d23fbe618cbfbd2e5cd7252b25982010eea47d"
+        },
+        {
+          "path": "data/results/understand-anything/2026-11-08-mcp-head-security.json",
+          "sha256": "cee80cb00c04b10204e256697c5b84d8e843740d5595343291bac1b39686fba3"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "unreal-agent",
@@ -5681,11 +5717,20 @@
       "unassessed_project_ids": [],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Original Linux CLI, 12/12 isolated GTK toy UI positive and stale-ref negative cases; pinned core suite 1683 pass.",
+      "limits": "Linux suite not fully green, 233 tests ignored; no broad toolkits, wrong-target safety or real project benefit.",
+      "evidence": [
+        {
+          "path": "reviews/vercel-agent-desktop/2026-11-05-wayland.md",
+          "sha256": "84615751430fdecee2f512737f7b44de097d850e07f55b3a6936e912be1af8a3"
+        },
+        {
+          "path": "data/results/vercel-agent-desktop/2026-11-05.json",
+          "sha256": "934a2267f5f9765f071491de00d79197b19841db62cef984fdd28f1b1fe45a58"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "veriharness",
