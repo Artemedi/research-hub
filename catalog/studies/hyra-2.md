@@ -8,6 +8,16 @@
 
 [hyra-2-primary](../../reviews/hyra-2/2026-11-05.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Полностью прочитан первичный инженерный текст и README results repo; это не review orchestrator source. Полная реализация, scheduler/policy enforcement, end-to-end replay, независимые ablations и результаты не проверялись; не устанавливает SOURCE_CODE_VERIFIED или scientific replication.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Observation versus independently verified finding versus human-approved convention should be separate promotion states.
+
+Ограничения: Full official 34k-character engineering article and results repo read, but no scheduler/model source, exact enforcement, replay or comparable A/B available.
+
+[Доказательство](../../studies/hyra-2.md) · [Доказательство](../../reviews/hyra-2/2026-11-05.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [hyra-2-primary](../../reviews/hyra-2/2026-11-05.md), 2026-11-05; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [sha256:03c939a9f924c2026e5d4b47da591fe1f223a6a50e71dc3dfbe3d4b96b645688](https://hy.tencent.com/research/hyra2).

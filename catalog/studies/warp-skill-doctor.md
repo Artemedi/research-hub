@@ -8,6 +8,16 @@
 
 [warp-skill-doctor-review](../../reviews/warp-skill-doctor/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Selected source/tests and synthetic attribution fixture only; real sessions and skill improvement not tested.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned collector session_matches_repo incorrectly accepts unrelated same-name path while rejecting unrelated other-name path.
+
+Ограничения: No real private sessions or leak; 37 earlier upstream tests do not protect this attribution counterexample.
+
+[Доказательство](../../reviews/warp-skill-doctor/2026-11-04.md) · [Доказательство](../../experiments/bk019-skill-doctor/attribution-fixture.py) · [Доказательство](../../data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [warp-skill-doctor-review](../../reviews/warp-skill-doctor/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [8792394ff1b655e0af451b8fabb68ef0cfcbd208](https://www.warp.dev/skill-doctor).

@@ -8,6 +8,16 @@
 
 [jevagentharness-review](../../portfolio/2026-10-12--2026-10-19/review.md) — FULL_TEXT_REVIEWED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Calibrated task-state decision routing must be judged on whole agent task outcomes, not isolated multiple-choice accuracy.
+
+Ограничения: Author English-agent/Gemini-biased tasks and threshold tuning; small-model GPU serving, non-inferiority margin and total cost not remeasured.
+
+[Доказательство](../../studies/jevagentharness.md) · [Доказательство](../../portfolio/2026-10-12--2026-10-19/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [jevagentharness-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21412v1).

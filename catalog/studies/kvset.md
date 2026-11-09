@@ -8,6 +8,16 @@
 
 [fulltext-kvset-2026-11-05](../../reviews/kvset/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Mattson stack-distance and Fenwick LRU working-set estimation are a research reference for physical KV capacity planning.
+
+Ограничения: 9-page primary PDF and author 10k/24k private serving traces, no target token-ID trace or original runtime calibration reproduced.
+
+[Доказательство](../../studies/kvset.md) · [Доказательство](../../reviews/kvset/2026-11-05-full-text.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [kvset-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.27746).

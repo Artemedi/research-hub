@@ -8,6 +8,16 @@
 
 [memscope-review](../../portfolio/2026-10-12--2026-10-19/review.md) — FULL_TEXT_REVIEWED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Use raw tool traces, current memory state and provider code to localize a memory repair in a reproducible isolated trial.
+
+Ограничения: Author paired xBench/GAIA/ALFWorld with LLM judge and only 14 archived transitions; live self-modifying production memory unsafe.
+
+[Доказательство](../../studies/memscope.md) · [Доказательство](../../portfolio/2026-10-12--2026-10-19/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [memscope-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21170v1).

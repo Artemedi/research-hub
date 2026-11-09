@@ -8,6 +8,16 @@
 
 [chartli-review](../../reviews/chartli/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Pinned README, parser, normalizer, renderers and tests reviewed; isolated fixture covers only TypeScript parser/normalizer, not CLI, renderers or Rust.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Independent XML and finite SVG geometry oracles on 16 original-source fixtures with bad-input controls.
+
+Ограничения: Five intentionally invalid fixtures fail; not browser rendering, numeric semantics or target benefit.
+
+[Доказательство](../../reviews/chartli/2026-11-07-svg-validation.md) · [Доказательство](../../data/results/chartli/2026-11-07-svg-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [chartli-review](../../reviews/chartli/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [3b39b97aeb564646437b2b7501b60541994d7575](https://github.com/ahmadawais/chartli/tree/3b39b97aeb564646437b2b7501b60541994d7575).

@@ -167,8 +167,29 @@ export function validateEntities(root, m) {
   return m;
 }
 
-export function entityPages(m) {
+export function entityPages(m, dispositions = new Map()) {
   const pages = new Map(), escape = s => String(s).replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/`/g, '').replace(/\*\*/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
+  const disposition = id => {
+    const row = dispositions.get(id);
+    if (!row) return '';
+    const decision = row.closure_status;
+    const detail = decision === 'ACCEPT_BOUNDED' ? row.verified_scope
+      : decision === 'ACCEPT_RESEARCH_ONLY' ? row.methodological_reference
+      : decision === 'BLOCKED' ? row.blocker
+      : decision === 'NO_FIT' ? row.decision : row.next_evidence_gate;
+    if (!detail || !row.limits || !row.evidence?.length) throw new Error(id + ': incomplete closure disposition');
+    const evidence = row.evidence.map(e => '[Доказательство](../../' + e.path + ')').join(' · ');
+    const next = decision === 'BLOCKED' ? row.unblock_condition
+      : decision === 'NO_FIT' ? row.reopen_condition
+      : decision === 'OPEN_EVIDENCE_ADJUDICATION' ? row.next_evidence_gate
+      : row.deployment_gate;
+    return '## Итоговое исследовательское решение\n\n**' + escape(decision) +
+      '** — ограниченный статус работы, не разрешение внедрения. ' + escape(detail) +
+      '\n\nОграничения: ' + escape(row.limits) +
+      '\n\n' + evidence + ' · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)' +
+      '\n\nСледующий gate: ' + escape(next ?? 'Requires separate independently controlled experiment').replace(/\.+$/, '') +
+      '. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.';
+  };
   const review = id => m.reviews.find(r => r.id === id);
   const assessment = id => m.assessments.find(a => a.id === id);
   const current = m.current_assessments.map(p => assessment(p.assessment_id));
@@ -176,7 +197,7 @@ export function entityPages(m) {
   for (const s of m.studies) {
     const reviews = m.reviews.filter(r => r.study_ids.includes(s.id));
     const fits = current.filter(a => a.study_id === s.id);
-    pages.set(`catalog/studies/${s.id}.md`, `# ${escape(s.title)}\n\nСтруктурированная запись источника. [Карточка](../../${s.card}) · [Первоисточник](${s.primary_url})\n\n## Текущий обзор\n\n[${s.current_review_id}](../../${review(s.current_review_id).document}) — ${review(s.current_review_id).source_coverage}. ${escape(review(s.current_review_id).limitations)}\n\n## Версии и история обзоров\n\n${reviews.map(r => `- [${r.id}](../../${r.document}), ${r.date}; ${r.source_coverage}; заменяет: ${r.supersedes ?? 'нет'}. Версии: ${r.version_ids.map(id => {const v=m.versions.find(v=>v.id===id);return `[${v.ref ?? 'не установлена'}](${v.url})`;}).join(', ')}.`).join('\n')}\n\n## Применимость к проектам\n\n${s.fit_coverage === 'MIGRATED' ? 'Полная исходная JSON-матрица перенесена с её историей и ограничениями.' : s.fit_coverage === 'PARTIAL' ? 'Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.' : 'При структурном переносе нет отдельной проектной оценки. Это не NO_FIT и не отсутствие прежнего анализа; см. исходную карточку.'}\n\n${fits.map(a => `- [${escape(a.project_id)}](../../projects/${a.project_id}.md): ${escape(a.decision)}; ${escape(a.evidence)}. ${escape(a.reason)} Ограничения: ${escape(a.limitations)} Следующий тест: ${escape(a.next_test ?? a.next_test_reason)} [Основание](../../${a.source_document ?? a.source_matrix ?? review(a.review_id).document}); предыдущая оценка: ${a.supersedes ?? 'нет'}.`).join('\n')}\n\n## Эксперименты\n\n${m.experiments.filter(e=>e.study_ids.includes(s.id)).map(e=>`- ${e.id}: ${e.environment} / ${e.result}. ${escape(e.scope)} ${escape(e.limitations)} ${e.artifacts.map(p=>`[Артефакт](../../${p})`).join(' · ')}`).join('\n') || 'В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.'}`);
+    pages.set(`catalog/studies/${s.id}.md`, `# ${escape(s.title)}\n\nСтруктурированная запись источника. [Карточка](../../${s.card}) · [Первоисточник](${s.primary_url})\n\n## Текущий обзор\n\n[${s.current_review_id}](../../${review(s.current_review_id).document}) — ${review(s.current_review_id).source_coverage}. ${escape(review(s.current_review_id).limitations)}\n\n${disposition(s.id)}\n\n## Версии и история обзоров\n\n${reviews.map(r => `- [${r.id}](../../${r.document}), ${r.date}; ${r.source_coverage}; заменяет: ${r.supersedes ?? 'нет'}. Версии: ${r.version_ids.map(id => {const v=m.versions.find(v=>v.id===id);return `[${v.ref ?? 'не установлена'}](${v.url})`;}).join(', ')}.`).join('\n')}\n\n## Применимость к проектам\n\n${s.fit_coverage === 'MIGRATED' ? 'Полная исходная JSON-матрица перенесена с её историей и ограничениями.' : s.fit_coverage === 'PARTIAL' ? 'Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.' : 'При структурном переносе нет отдельной проектной оценки. Это не NO_FIT и не отсутствие прежнего анализа; см. исходную карточку.'}\n\n${fits.map(a => `- [${escape(a.project_id)}](../../projects/${a.project_id}.md): ${escape(a.decision)}; ${escape(a.evidence)}. ${escape(a.reason)} Ограничения: ${escape(a.limitations)} Следующий тест: ${escape(a.next_test ?? a.next_test_reason)} [Основание](../../${a.source_document ?? a.source_matrix ?? review(a.review_id).document}); предыдущая оценка: ${a.supersedes ?? 'нет'}.`).join('\n')}\n\n## Эксперименты\n\n${m.experiments.filter(e=>e.study_ids.includes(s.id)).map(e=>`- ${e.id}: ${e.environment} / ${e.result}. ${escape(e.scope)} ${escape(e.limitations)} ${e.artifacts.map(p=>`[Артефакт](../../${p})`).join(' · ')}`).join('\n') || 'В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.'}`);
   }
   for (const p of m.projects) {
     const fits = current.filter(a => a.project_id === p.id), deferred = ['NO_CONFIRMED_FIT', 'NO_CURRENT_FIT', 'REFERENCE_NO_TARGET', 'DOCUMENTED_NO_FIT', 'DEFERRED', 'NEEDS_EVIDENCE'], candidates = fits.filter(a => !deferred.includes(a.decision)), other = fits.filter(a => deferred.includes(a.decision));

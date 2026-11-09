@@ -8,6 +8,16 @@
 
 [vercel-agent-desktop-wayland](../../reviews/vercel-agent-desktop/2026-11-05-wayland.md) — PARTIAL_SOURCE_REVIEW. Bounded Linux Wayland/GTK toy UI run and selected source/tests only. Linux whole-suite retained one failure and 233 ignored tests; no Windows/macOS, full-platform security review, target-project benefit measurement, or production approval.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Original Linux CLI, 12/12 isolated GTK toy UI positive and stale-ref negative cases; pinned core suite 1683 pass.
+
+Ограничения: Linux suite not fully green, 233 tests ignored; no broad toolkits, wrong-target safety or real project benefit.
+
+[Доказательство](../../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Доказательство](../../data/results/vercel-agent-desktop/2026-11-05.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [vercel-agent-desktop-source-gate](../../reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [b43ac4f6e892ef608f8851428613c4009f0e84c7](https://github.com/vercel-labs/agent-desktop/tree/b43ac4f6e892ef608f8851428613c4009f0e84c7).

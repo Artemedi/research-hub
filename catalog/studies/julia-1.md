@@ -8,6 +8,16 @@
 
 [julia-1-review](../../reviews/julia-1/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Original Julia-1 display_probabilities on three authored positive/negative vectors, including .95 saturation and pruning.
+
+Ограничения: Model weights, tensor routing and probability calibration not evaluated; no model inference.
+
+[Доказательство](../../reviews/julia-1/2026-11-04.md) · [Доказательство](../../experiments/bk026-julia/display_fixture.py) · [Доказательство](../../data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [julia-1-review](../../reviews/julia-1/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [a85b127321d580d65176c89ced8273f305745d85](https://huggingface.co/SupersonicLabs/Julia-1/tree/a85b127321d580d65176c89ced8273f305745d85).

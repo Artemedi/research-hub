@@ -8,6 +8,16 @@
 
 [dsh-creator-mode-offline-20261106](../../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) — BOUNDED_CODE_REVIEW. Официальные 7 примеров и локальный Cordis source; Codex CLI вместо реального Creator, mock React/Slots, 9/9 synthetic checks, DSH Creator E2E NOT_RUN due unpatched vulnerable runtime.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Generated code client was verified in offline mock Cordis/React harness: 9/9 authored contract tests; 210 host/client suite tests passed separately.
+
+Ограничения: No real Creator Mode end-to-end execution, browser, original assets, pinned effective model or production install.
+
+[Доказательство](../../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) · [Доказательство](../../data/results/dsh-creator/2026-11-06-offline-poster-probe.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [dsh-creator-mode-offline-20261106](../../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [sha256:69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html).

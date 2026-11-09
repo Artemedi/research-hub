@@ -8,6 +8,16 @@
 
 [cursor-token-efficiency-zcode-council-20261107](../../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Original full public Cursor article read and HTML/text SHA pinned. Synthetic 52-template×5 repeated tool-description character proxy and four sequential ZCode GLM-5.3-Flash specialist/chair roles; first chair failed tool budget; corrected chair tool check succeeded but reported 6 negative examples versus independent 20 due truncated preview. No provider-token/Cursor 7% replication, real tool selection, project integration or model-quality A/B.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Local deterministic 260-task context-character proxy reduces size by ~50% with oracle routing, but keyword routing misses 40/260; author 7% is unreplicated.
+
+Ограничения: 52 unique synthetic templates across 5 permutations, not 260 independent tasks; characters are not provider tokens.
+
+[Доказательство](../../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) · [Доказательство](../../data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [cursor-token-efficiency-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://cursor.com/blog/improved-token-efficiency).

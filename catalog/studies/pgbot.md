@@ -8,6 +8,16 @@
 
 [pgbot-review](../../reviews/pgbot/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Previously recorded original pgbot 0.9.0 disposable PG 18.3 test: 15k dead tuples, one blocked transaction, recovered vacuum and no-monitor partial-stat marker; 4 schema states validated.
+
+Ограничения: Original lab report and verifier only: four generated JSON snapshots not retained, NOT rerun here. No PostgreSQL 15, production DBA accuracy or p95 claims.
+
+[Доказательство](../../reviews/pgbot/2026-11-04.md) · [Доказательство](../../experiments/2026-11-04-pgbot-verify.py) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [pgbot-review](../../reviews/pgbot/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [826531fefd7d13b4381327acd4cce5be98bd71eb](https://github.com/pgrundev/pgbot/tree/826531fefd7d13b4381327acd4cce5be98bd71eb).

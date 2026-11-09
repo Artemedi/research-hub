@@ -8,6 +8,16 @@
 
 [novafabric-review](../../reviews/novafabric/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Bounded v0.108.0 capsule/tool-recording checks on synthetic runs only; they do not verify all event types, full toolchain sealing, project integration, or production benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned original NovaFabric forensic tool mock replay 20/20 with 40 captured calls, isolated byte-identical outputs, 48 independently checked artifacts and tampering controls.
+
+Ограничения: Only explicit @record.tool interception; uninstrumented side effects remain live; untrusted signer identity and unsigned extra files not globally prevented.
+
+[Доказательство](../../reviews/novafabric/2026-11-04.md) · [Доказательство](../../data/results/novafabric/2026-11-04.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [novafabric-paper-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.12582v1).

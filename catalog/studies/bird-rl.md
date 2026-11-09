@@ -8,6 +8,16 @@
 
 [bird-rl-review](../../studies/bird-rl.md) — FULL_TEXT_REVIEWED. Original PDF methods/results/limits reviewed, not locally reproduced; results concern SQLite and do not establish PostgreSQL/MSSQL safety.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Trajectory-scoped database state and final-state isolation should be part of SQL-agent evaluation and training.
+
+Ограничения: Author 7B/14B gains measured against SQLite BIRD-CRITIC; state cloning, WAL/locking/IO differ radically for PostgreSQL and MSSQL.
+
+[Доказательство](../../studies/bird-rl.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [bird-rl-review](../../studies/bird-rl.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.29426vv1).

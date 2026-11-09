@@ -8,6 +8,16 @@
 
 [fulltext-kvtether-2026-11-05](../../reviews/kvtether/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
+## Итоговое исследовательское решение
+
+**NO_FIT** — ограниченный статус работы, не разрешение внедрения. A message-lifecycle-aware KV eviction manager requires serving backend hooks, original KV pool and worker lifecycle signals; no registered current project documents both a compatible serving runtime and control seam.
+
+Ограничения: Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.
+
+[Доказательство](../../reviews/kvtether/2026-11-05-full-text.md) · [Доказательство](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: New authorized project with source-verified KV lifecycle/eviction hooks, compatible model/runtime and an owner-approved measured lab, not generic mention of LLM, embeddings or context compression. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [kvtether-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.39819).

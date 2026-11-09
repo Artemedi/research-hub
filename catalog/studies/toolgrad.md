@@ -8,6 +8,16 @@
 
 [toolgrad-bk005-source-proxy-20261106](../../reviews/toolgrad/2026-11-06-chain-validation-ab.md) — BOUNDED_CODE_REVIEW. Actual source validate_api_response and chain_update_step run on 500 synthetic chains; proposer, selector, inverse query and ToolBench DFS replaced with deterministic local mechanisms. 500/500 both arms, no measured model benefit; 10/10 benign error_count=0 JSON erroneously refused. No SFT, BFCL, LLM calls, production changes.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned source chain updater/API validator with 500/500 synthetic chain completions, 100 unreachable rejections and 10/10 zero-error-count false negatives.
+
+Ограничения: Deterministic API proxy rather than Gemini/model, high source-validator false-negative class, not real project integration.
+
+[Доказательство](../../reviews/toolgrad/2026-11-06-chain-validation-ab.md) · [Доказательство](../../data/results/toolgrad/2026-11-06-chain-validation-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [toolgrad-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [ACL-2026-Findings](https://aclanthology.org/2026.findings-acl.950/).

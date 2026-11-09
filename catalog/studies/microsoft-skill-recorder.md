@@ -8,6 +8,16 @@
 
 [microsoft-skill-recorder-review](../../reviews/microsoft-skill-recorder/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned original scanStructuredPii detects synthetic email but not semantic Russian medical text; neutral case remains clean.
+
+Ограничения: This only tests structured-PII detector, not OCR, full pre-send scan or Copilot egress; unrelated fail-open source branch remains a privacy concern.
+
+[Доказательство](../../reviews/microsoft-skill-recorder/2026-11-04.md) · [Доказательство](../../experiments/bk022-skill-recorder/pii-fixture.mjs) · [Доказательство](../../data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [microsoft-skill-recorder-review](../../reviews/microsoft-skill-recorder/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [505c97ae47be5642c0e1b44ebb8d1c1530c298fa](https://github.com/microsoft/skill-recorder/tree/505c97ae47be5642c0e1b44ebb8d1c1530c298fa).

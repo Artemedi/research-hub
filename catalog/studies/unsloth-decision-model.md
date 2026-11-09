@@ -8,6 +8,16 @@
 
 [unsloth-decision-model-review](../../reviews/unsloth-decision-model/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Guide, notebook, selected implementation and tests reviewed; training and GPU tests not run.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Decision model LoRA recipe and calibration/evaluation API differences are a useful comparative implementation reference.
+
+Ограничения: Pinned public docs/notebook show inconsistent hyperparameters across recipes; no weights, GPU training, original score or licence-compliant target integration tested.
+
+[Доказательство](../../studies/unsloth-decision-model.md) · [Доказательство](../../reviews/unsloth-decision-model/2026-11-04.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [unsloth-decision-model-review](../../reviews/unsloth-decision-model/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [d85d113eacfc8a87a7003e73ffb2a86403a94344](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth).

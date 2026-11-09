@@ -8,6 +8,16 @@
 
 [harnesssecurity-bench-review](../../studies/harnesssecurity-bench.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed, not reproduced; limited harnesses, simulated services and Docker setup do not establish current project vulnerability.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Dual oracles for legitimate task utility and prohibited effect are a useful test-design instrument for agent harnesses.
+
+Ограничения: Author 23 custom tasks/six harnesses, Docker/tool mock and model reviewer; listed DSH in 40-harness inventory is NOT proof current vulnerability.
+
+[Доказательство](../../studies/harnesssecurity-bench.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [harnesssecurity-bench-review](../../studies/harnesssecurity-bench.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.07639vv1).

@@ -8,6 +8,16 @@
 
 [red-teaming-auto-mode-review](../../studies/red-teaming-auto-mode.md) — FULL_TEXT_REVIEWED. Full paper and appendices reviewed; not experimentally reproduced; historical disposition remains distinct.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Monitor transcripts, role boundaries, context compaction and delegated tasks are distinct surfaces for safe negative tests.
+
+Ограничения: Full v1 PDF appendices reviewed, but simulation/LLM Dungeon Master and September snapshots do not show a current local vulnerability.
+
+[Доказательство](../../studies/red-teaming-auto-mode.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [red-teaming-auto-mode-review](../../studies/red-teaming-auto-mode.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.19587v1).

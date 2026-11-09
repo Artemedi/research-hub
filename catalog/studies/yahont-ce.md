@@ -8,6 +8,16 @@
 
 [yahont-ce-review](../../reviews/yahont-ce/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Directed retrieval, ACL and licensing review only; not full audit, deployment check, or real-data test.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned original Yahont string_filtering maps a/b and ab to identical sanitized ID, but rejects empty and preserves doc_1.
+
+Ограничения: Not proof of actual index collision, tenant disclosure or ACL exploit; helper function only.
+
+[Доказательство](../../reviews/yahont-ce/2026-11-04.md) · [Доказательство](../../experiments/bk053-yahont/id-fixture.py) · [Доказательство](../../data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [yahont-ce-review](../../reviews/yahont-ce/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [367b48da9de2d296f905aca4bf0eb384043bf643](https://github.com/pipedude/yahont-ce/tree/367b48da9de2d296f905aca4bf0eb384043bf643).

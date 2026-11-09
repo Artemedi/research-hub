@@ -8,6 +8,16 @@
 
 [daedalus-review](../../studies/daedalus.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed, not reproduced. LLM judge is not an independent oracle; resettable environment required.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Procedural memory earned from resettable exercises and frozen before inference is a testable learning design.
+
+Ограничения: Self-defined exercise success judged by LLM, not external oracle; the 3-success acceptance rule and API cost assume particular caching.
+
+[Доказательство](../../studies/daedalus.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [daedalus-review](../../studies/daedalus.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.08048vv1).

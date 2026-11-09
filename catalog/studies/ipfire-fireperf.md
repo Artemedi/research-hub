@@ -8,6 +8,16 @@
 
 [ipfire-fireperf-review](../../reviews/ipfire-fireperf/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Original compiled fireperf 0.3.0 inside offline rootless Podman completed 12 isolated loopback runs, 240/240 connections; refused-port control detected.
+
+Ограничения: make check stopped after 23 PASS/1 SKIP; auto selected epoll, not io_uring. No WAN/firewall throughput, CPU-efficiency or DBA/SAN measurements.
+
+[Доказательство](../../reviews/ipfire-fireperf/2026-11-04.md) · [Доказательство](../../data/results/ipfire-fireperf/2026-11-04.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [ipfire-fireperf-review](../../reviews/ipfire-fireperf/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [v0.3.0](https://source.ipfire.org/releases/fireperf/fireperf-0.3.0.tar.gz).

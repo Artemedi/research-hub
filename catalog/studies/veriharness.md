@@ -8,6 +8,16 @@
 
 [fulltext-veriharness-2026-11-05](../../reviews/veriharness/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Separate agent-config citation-locality mechanism on 1000 synthetic cases: false accept baseline 400 versus 200 with ±1-line locality check.
+
+Ограничения: This executes agent-config, NOT original VeriHarness model or published benchmark; synthetic oracle not blindly human-labelled.
+
+[Доказательство](../../reviews/veriharness/2026-11-06-citation-locality-ab.md) · [Доказательство](../../data/results/veriharness/2026-11-06-citation-locality-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [veriharness-review](../../reviews/veriharness/2026-11-04.md), 2026-11-04; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2610.00972), [0f10db9818920f8d79641b23d9311c4877f67702](https://github.com/google-research/veriharness/tree/0f10db9818920f8d79641b23d9311c4877f67702).

@@ -8,6 +8,16 @@
 
 [sequential-diagnosis-language-models-initial-review](../../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) — FULL_TEXT_REVIEWED. Full article and supplement scope reviewed before experiment; author results are not reproduced, and the prior NOT_RUN remains historical.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Sequential clinical differential/alternative-testing protocol is a clinical-evaluation reference requiring independent specialist safety review.
+
+Ограничения: Author Science/SDBench results not reproduced; 144 Wello synthetic operational calls prove HTTP delivery, NOT clinical correctness, and TrinMedicalBot deployment remains clinically unapproved.
+
+[Доказательство](../../studies/sequential-diagnosis-language-models.md) · [Доказательство](../../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [sequential-diagnosis-language-models-challenger](../../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [не установлена](https://erichorvitz.com/sequential_diagnosis_LM.pdf).

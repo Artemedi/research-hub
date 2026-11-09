@@ -8,6 +8,16 @@
 
 [dsh-superagent-prototype-review](../../reviews/dsh-superagent-prototype/2026-11-05.md) — PARTIAL_SOURCE_REVIEW. Pinned published prototype source review and bounded 15/15 core test are not a review of internal author results, full upstream suite, or production security.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned original in-memory core passed 15/15 isolated Ticket/Mandate/lifecycle contract cases and one independently introduced revoked-mandate mutant failed.
+
+Ограничения: Core only, fake Policy/Executor/Outbox; settingsPolicy, account adapters, full test suite and full-access permissions not safety validated.
+
+[Доказательство](../../reviews/dsh-superagent-prototype/2026-11-05.md) · [Доказательство](../../data/results/dsh-superagent-prototype/2026-11-05.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [dsh-superagent-prototype-review](../../reviews/dsh-superagent-prototype/2026-11-05.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [8c32a9dc5d72c033816c6a8110b37f40cf94fba4](https://github.com/deepseek-ai/dsh-superagent-prototype/tree/8c32a9dc5d72c033816c6a8110b37f40cf94fba4).

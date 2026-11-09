@@ -8,6 +8,16 @@
 
 [self-replicating-prompt-injections-review](../../studies/self-replicating-prompt-injections.md) — HISTORICAL_REVIEW_RECORDED. Historical public disclosure review recorded; no independent reproduction or current project vulnerability established.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Original public simulated-propagation disclosure is a threat model for isolating untrusted connector/file/compaction text from instructions.
+
+Ограничения: Full original disclosure described simulated tool calls only, NOT a reproduced self-propagating incident or arbitrary real-system impact.
+
+[Доказательство](../../studies/self-replicating-prompt-injections.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [self-replicating-prompt-injections-review](../../studies/self-replicating-prompt-injections.md), 2026-11-03; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [343dc077e3a4f1de0e441116d66a57c9fecff022](https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist).

@@ -8,6 +8,16 @@
 
 [hyperresearch-review](../../reviews/hyperresearch/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**BLOCKED** — ограниченный статус работы, не разрешение внедрения. CITATION_AUTO_PASS_FALSE_SUPPORT: original source auto-accepted 48/60 authored unsupported temporal/scope/authorization/conjunction claims; negative source safety finding, not a real-world prevalence estimate.
+
+Ограничения: Terminal rejection of the particular proved unsafe original-source behavior; other library components have not been globally rejected.
+
+[Доказательство](../../reviews/hyperresearch/2026-11-09-citation-adjudication.md) · [Доказательство](../../data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: A new pinned upstream implementation must eliminate false auto-support on frozen hostile + independent natural held-out full-text claims and document exhaustive downstream coverage, positive paraphrase behavior, cost and target owner gate. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [hyperresearch-review](../../reviews/hyperresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).

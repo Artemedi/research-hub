@@ -8,6 +8,16 @@
 
 [understand-anything-mcp-head-security-20261108](../../reviews/understand-anything/2026-11-08-mcp-head-security.md) — BOUNDED_CODE_REVIEW. Bounded review of new MCP server, changed-files helper, hooks and viewer file-content boundary at upstream HEAD a6ea402. 32 scoped upstream unit tests passed; MCP server integration and full monorepo build were not run. Synthetic viewer probe observed an external symlink disclosure. No target project source or production system was modified.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Original pinned viewer leaks synthetic outside-root sentinel through graph-listed symlink with valid token.
+
+Ограничения: Negative source security finding only; requires graph path plus token; not whole-app vulnerability assessment or production authorization.
+
+[Доказательство](../../reviews/understand-anything/2026-11-08-mcp-head-security.md) · [Доказательство](../../data/results/understand-anything/2026-11-08-mcp-head-security.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [understand-anything-review](../../reviews/understand-anything/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [4e6d3299017a7432da15957874992837a315c5b4](https://github.com/Egonex-AI/Understand-Anything/tree/4e6d3299017a7432da15957874992837a315c5b4).

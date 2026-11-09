@@ -8,6 +8,16 @@
 
 [remory-review](../../studies/remory.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed; authors' study not reproduced and project seam not verified.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Soft-token residual memory requires actor-state/gradient coupling and is research-only for a controlled own-weight inference stack.
+
+Ограничения: Needs &gt;1.5B trainable memory parameters and embeddings access; reported context compression not a drop-in closed API feature.
+
+[Доказательство](../../studies/remory.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [remory-review](../../studies/remory.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.11287;v1).

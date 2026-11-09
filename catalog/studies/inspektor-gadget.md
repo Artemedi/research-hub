@@ -8,6 +8,16 @@
 
 [inspektor-gadget-podman-20261106](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) — BOUNDED_CODE_REVIEW. Synthetic Podman 5×40/40 with filter.exec; 0/25 negative; --comm and host 0/40. No real DBA, safety or overhead verification.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned Inspektor Gadget trace_exec --filter.exec captured 200/200 positive and 0/25 negative synthetic rootless Podman events.
+
+Ограничения: --comm variant captured 0/40; no kernel drop-rate or overhead proof, no actual PostgreSQL/AKUZ integration.
+
+[Доказательство](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) · [Доказательство](../../data/results/inspektor-gadget/2026-11-06-podman-trace.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [inspektor-gadget-review](../../reviews/inspektor-gadget/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
