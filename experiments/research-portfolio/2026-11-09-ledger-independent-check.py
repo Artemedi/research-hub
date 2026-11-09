@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 LEDGER = ROOT / "data/results/research-portfolio/2026-11-09-closure-ledger.json"
@@ -145,7 +146,11 @@ def main():
         ]
     })
     out = ROOT / "data/results/research-portfolio/2026-11-09-ledger-independent-check.json"
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
+    output = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
+    if "--check" in sys.argv[1:]:
+        assert out.read_text() == output, "Stale independent ledger receipt"
+    else:
+        out.write_text(output)
     print("LEDGER_INDEPENDENT_CHECK",result["status"],result["studies"],
           "evidence SHA",result["evidence_refs_sha_verified"],
           "mutations",result["mutations_rejected"])
