@@ -120,6 +120,10 @@
 | [data/results/research-portfolio/2026-11-09-ledger-independent-check.json](results/research-portfolio/2026-11-09-ledger-independent-check.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json](results/research-portfolio/2026-11-09-residual-engineering-oracle.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-telegram-ack-fixture.json](results/research-portfolio/2026-11-09-telegram-ack-fixture.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-10-p0-baseline-suites.json](results/research-portfolio/2026-11-10-p0-baseline-suites.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-10-p0-boundary-ab.json](results/research-portfolio/2026-11-10-p0-boundary-ab.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-10-p0-outcomes.json](results/research-portfolio/2026-11-10-p0-outcomes.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-10-p0-team-scope-baseline.json](results/research-portfolio/2026-11-10-p0-team-scope-baseline.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/simurg/2026-11-07-hash-stability.json](results/simurg/2026-11-07-hash-stability.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |

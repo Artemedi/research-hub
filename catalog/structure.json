@@ -2471,6 +2471,83 @@
       "title": "Original review.py quote-location inconsistency source probe",
       "kind": "data",
       "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-10-p0-execution-plan.md",
+      "title": "Source-pinned P0 independent A/B execution plan",
+      "kind": "review",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-10-p0-execution.md",
+      "title": "P0 controlled synthetic trials and sixteen independent adoption gates",
+      "kind": "review",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/p0-20261110/isolated_ab.py",
+      "title": "Exact pinned Python functions under network-denied synthetic paired A/B",
+      "kind": "guide",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/p0-20261110/run-local.sh",
+      "title": "Reproduce pinned source archive tests without networking",
+      "kind": "guide",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/p0-20261110/run-target-baselines.py",
+      "title": "Pinned offline unit-test baseline suite runner",
+      "kind": "guide",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/p0-20261110/run-node-baseline.py",
+      "title": "Pinned TypeScript scoped-recall offline baseline",
+      "kind": "guide",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/p0-20261110/build_outcomes.py",
+      "title": "Independent 16-pair outcomes audit and six fail-closed mutations",
+      "kind": "guide",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-10-p0-boundary-ab.json",
+      "title": "Three source-level synthetic A/B results, includes rejected delivery variant",
+      "kind": "data",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-10-p0-baseline-suites.json",
+      "title": "Original-project unit baselines in isolated network-denied Git archives",
+      "kind": "data",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-10-p0-team-scope-baseline.json",
+      "title": "Existing project scope isolation tests from frozen dsh-team-context source",
+      "kind": "data",
+      "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-10-p0-outcomes.json",
+      "title": "All sixteen P0 exact-source verdicts, blockers and adoption gates",
+      "kind": "data",
+      "date": "2026-11-10"
     }
   ]
 }

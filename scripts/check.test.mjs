@@ -60,6 +60,16 @@ test('applicability matrix cannot promote an untested project pair to production
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Targeted applicability matrix integrity failed/);
 });
+test('P0 unmeasured pair cannot silently become production approved', () => {
+  const result = fixture(dir => {
+    const file = path.join(dir, 'data/results/research-portfolio/2026-11-10-p0-outcomes.json');
+    const outcomes = JSON.parse(fs.readFileSync(file, 'utf8'));
+    outcomes.rows[0].production_approved = true;
+    fs.writeFileSync(file, JSON.stringify(outcomes, null, 2) + '\n');
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /P0 offline experimental integrity failed/);
+});
 test('changed archive bytes are rejected', () => {
   const result = fixture(dir => fs.appendFileSync(path.join(dir, 'archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md'), '\nChanged\n'));
   assert.notEqual(result.status, 0);

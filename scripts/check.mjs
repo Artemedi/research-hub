@@ -83,6 +83,8 @@ const closure = spawnSync('python3', [path.join(root, 'experiments/research-port
 if (closure.status !== 0) errors.push('Closure ledger integrity failed: ' + (closure.stderr || closure.error?.message || closure.stdout));
 const applicability = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/2026-11-09-targeted-fit.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
 if (applicability.status !== 0) errors.push('Targeted applicability matrix integrity failed: ' + (applicability.stderr || applicability.error?.message || applicability.stdout));
+const p0 = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/p0-20261110/build_outcomes.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
+if (p0.status !== 0) errors.push('P0 offline experimental integrity failed: ' + (p0.stderr || p0.error?.message || p0.stdout));
 const generated = spawnSync(process.execPath, [path.join(root, 'scripts/build-catalog.mjs'), '--check'], { encoding: 'utf8' });
 if (generated.status !== 0) errors.push(generated.stderr || generated.error?.message || 'catalog check failed');
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
