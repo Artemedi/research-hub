@@ -22,3 +22,11 @@ Scope: research-hub and paper2agent-index; read-only review of project-registry,
 ## Trade-offs and safeguards
 
 Use a single canonical disposition JSON read when generating catalog views: trivial CPU/memory/IO overhead and one file dependency, versus avoiding drift from 83 duplicated manual statuses. A full 83 x 45 integration review is separate and cannot be inferred from lexical project descriptions. No status promotion without a scoped oracle. Each step gets its own diff, tests, commit/PR, CI and user-facing evidence or an explicit blocker.
+
+## Verified execution log
+
+- **Step 1 — completed:** [PR #4](https://github.com/Artemedi/research-hub/pull/4), merged at 0a9950f; GitHub check succeeded. The independent evidence receipt is now checked by CI and the normal integrity command.
+- **Step 2 — completed:** [PR #5](https://github.com/Artemedi/research-hub/pull/5), merged at 50f70ad; 83 generated study pages display scoped decision/evidence from one canonical ledger and preserve scientific review history.
+- **Step 3 — completed:** [PR #6](https://github.com/Artemedi/research-hub/pull/6), merged at 1d0d840; two unsupported KV-cache NO_FIT claims retracted after three negative-control failures. Current honest result: 81/83 terminal, 2 open, source-level project review still required.
+- **Step 4 — documentation:** correct historical card counts and clarify distinct research, review, fit and implementation states.
+- **Step 5 — corrected assumption:** two dsh-paper2agent product docs exist in upstream origin/main 6d82a42; the local checkout is behind 22 commits. Preserve valid references and audit index revisions for staleness instead of deleting links.
