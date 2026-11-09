@@ -8,6 +8,16 @@
 
 [mcp-toolbox-postgres-review](../../reviews/mcp-toolbox-postgres/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Previously recorded original MCP Toolbox 1.15.0 versus Wiki_PG stdio lab: 80/80 GUC calls for each, four independent pg_settings SQL values, stale/live divergence, bind-param negative control.
+
+Ограничения: Original test report and reproducible script only: ephemeral PostgreSQL JSON receipts not retained, experiment NOT rerun this pass; no live target SQL integration.
+
+[Доказательство](../../reviews/mcp-toolbox-postgres/2026-11-04.md) · [Доказательство](../../experiments/2026-11-04-mcp-toolbox-wikipg-compare.py) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [mcp-toolbox-postgres-review](../../reviews/mcp-toolbox-postgres/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [3e536bb683c914b26bdf9046a65b805a160af8dc](https://github.com/googleapis/genai-toolbox/tree/3e536bb683c914b26bdf9046a65b805a160af8dc).

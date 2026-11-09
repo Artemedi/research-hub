@@ -8,6 +8,16 @@
 
 [bk002-teamai-cli-distribution-ab-20261106](../../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) — BOUNDED_CODE_REVIEW. Tested local-only owner port e5a0bb5901f4b1c78d7b1e28a2ba43e1cbe86db4, NOT the linked public upstream version; version_ids names source lineage only. 38 unit + 7 E2E pass; 5 seeds x8 phases/arm; TeamAI write-scope gate FAIL with 35 extra paths in disposable HOME. No production or multi-host proof.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Locally ported TeamAI CLI passed 40/40 offline synthetic distribution contract ops and a negative oracle mutant; minimal-home write-scope failed.
+
+Ограничения: 35 files outside intended minimal-home paths and unequal-feature A/B; not approved for deployment.
+
+[Доказательство](../../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) · [Доказательство](../../data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [tencent-teamai-cli-review](../../reviews/tencent-teamai-cli/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [7ed698998da8e446d8116c79ae58a9d5ff6ca016](https://github.com/Tencent/teamai-cli).

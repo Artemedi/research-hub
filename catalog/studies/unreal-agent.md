@@ -8,6 +8,16 @@
 
 [unreal-source-audit-2026-11-06](../../reviews/unreal-agent/2026-11-06-source-audit.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Официальная статья и pinned Go исходники изучены; YouTube-видео не аутентифицировано, Harbor не подтверждает счета Unreal Agent; Go tests, paid A/B и runtime E2E не запускались.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. The official long-form engineering article offers a bounded benchmark/price accounting checklist for autonomous task agents.
+
+Ограничения: Full ARTICLE was reviewed; video transcript was not verified and author dollars/pass rates, unreleased agent runtime and cost are NOT reproduced.
+
+[Доказательство](../../studies/unreal-agent-bk025.md) · [Доказательство](../../reviews/unreal-agent/2026-11-06-source-audit.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [unreal-access](../../reviews/unreal-agent/2026-11-04.md), 2026-11-04; FULL_TEXT_UNAVAILABLE; заменяет: нет. Версии: [не установлена](https://www.youtube.com/watch?v=eFBSlgXG3U0).

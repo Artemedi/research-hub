@@ -8,6 +8,16 @@
 
 [fulltext-paper2agent-2026-11-05](../../reviews/paper2agent/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Source-to-tool research pipeline requires executable reference-code fixtures, exact reproduction checks and separate licensing.
+
+Ограничения: Nature HTML Methods/Discussion read, supplementary PDF not separately analyzed; 74/100 paper agentification and 593/599 validated tools remain author-reported.
+
+[Доказательство](../../studies/paper2agent.md) · [Доказательство](../../reviews/paper2agent/2026-11-05-full-text.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [paper2agent-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://www.nature.com/articles/s41586-026-11044-y).

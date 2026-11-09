@@ -8,6 +8,16 @@
 
 [decision-geometry-harness-review](../../studies/decision-geometry-harness.md) — FULL_TEXT_REVIEWED. Original PDF v2 reviewed, not locally reproduced; reported interface effect is benchmark-specific and teacher proxy may be biased.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned DSH serializer schema-order paired provider tool-choice proxy: independent wire oracle 48/48 paired outcomes, mutation controls; native tool-use has a malformed/failed variant.
+
+Ограничения: Not original decision geometry paper replication or native DSH runtime/tool execution. Factorial effects, real workflow outcomes and provider equality not established.
+
+[Доказательство](../../reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md) · [Доказательство](../../data/results/decision-geometry-harness/2026-11-07-schema-ab-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [decision-geometry-harness-review](../../studies/decision-geometry-harness.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.37255vv2).

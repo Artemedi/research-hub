@@ -8,6 +8,16 @@
 
 [goal-aware-dynamic-collaboration-review](../../studies/goal-aware-dynamic-collaboration.md) — FULL_TEXT_REVIEWED. Original PDF v1 reviewed, not reproduced; limited workers, higher call budgets and LLM semantic verifier constrain transfer.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. 35 pinned DSH task-graph validator cases and 35 external guarded synthetic cases matched separately encoded oracle, 70/70; mutant refused.
+
+Ограничения: This is a DSH structural DAG guard, not the authors' GAD multi-agent planner or claimed task success; LLM workers not run.
+
+[Доказательство](../../reviews/goal-aware-dynamic-collaboration/2026-11-07.md) · [Доказательство](../../data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [goal-aware-dynamic-collaboration-review](../../studies/goal-aware-dynamic-collaboration.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.39193vv1).

@@ -8,6 +8,16 @@
 
 [youtube-skills-review](../../reviews/youtube-skills/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Instructions and examples reviewed; API access, quality, pricing and installation not tested.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned Markdown package, external transcript provider boundary and secret bootstrap verified by independent source oracle.
+
+Ограничения: Provider API, cost, privacy and quality not tested; no keys or network calls.
+
+[Доказательство](../../reviews/youtube-skills/2026-11-07-provider-boundary.md) · [Доказательство](../../data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [youtube-skills-review](../../reviews/youtube-skills/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [4f7994b94e7d5e250c3b51102d609992e04d5d0d](https://github.com/ZeroPointRepo/youtube-skills/tree/4f7994b94e7d5e250c3b51102d609992e04d5d0d).

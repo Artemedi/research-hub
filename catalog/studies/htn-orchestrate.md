@@ -8,6 +8,16 @@
 
 [htn-orchestrate-paired-audit-followup-20261108](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) — PARTIAL_SOURCE_REVIEW. The full-text review remains the 2026-11-03 record. This follow-up reanalyses author-published paired counts and a previously executed independent static-DAG surrogate; two targeted upstream test modules at pinned SHA passed 43/43. It does not reproduce raw author outcomes, run the full upstream suite or establish target project benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. 43 pinned upstream targeted tests plus 30 synthetic static DAG checks and 20 surrogate resumes.
+
+Ограничения: No end-to-end HTN superiority proof; no held-out target project A/B.
+
+[Доказательство](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) · [Доказательство](../../data/results/htn-orchestrate/2026-11-07-paired-audit.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [htn-orchestrate-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.22195v1).

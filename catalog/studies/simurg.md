@@ -8,6 +8,16 @@
 
 [simurg-review](../../reviews/simurg/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Selected contracts and bounded synthetic cases only; not a complete code audit or project benefit measurement.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Cross-process source hash/sketch/SimHash stability with 4 process seeds and independent numeric oracles.
+
+Ограничения: Known AUROC ties and calibration/false-alarm issues remain unresolved for deployment.
+
+[Доказательство](../../reviews/simurg/2026-11-07-hash-stability.md) · [Доказательство](../../data/results/simurg/2026-11-07-hash-stability.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [simurg-review](../../reviews/simurg/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [2831a92359cdaf1b38cc14f55e74251e09a91e0b](https://github.com/doofzoff/SIMURG/blob/2831a92359cdaf1b38cc14f55e74251e09a91e0b/paper/simurg_paper.pdf).

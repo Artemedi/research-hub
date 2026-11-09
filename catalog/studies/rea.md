@@ -8,6 +8,16 @@
 
 [rea-pe](../../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) — PARTIAL_SOURCE_REVIEW. Проверен PE layout reader; не весь metadata/CIL pipeline или игровые binaries.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. 48 independent synthetic PE32/PE32+ header/layout and rejection cases.
+
+Ограничения: No CLR-loadability, CIL reconstruction, arbitrary binary safety or target benefit.
+
+[Доказательство](../../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Доказательство](../../data/results/reverse-engineer-anything/2026-11-05.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [rea-boundaries](../../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [970969cb53f788976e64eae387076fcea104b603](https://github.com/morluto/rea/tree/970969cb53f788976e64eae387076fcea104b603).

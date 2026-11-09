@@ -8,6 +8,16 @@
 
 [agent-risk-replay-assumptions-20261109](../../reviews/agent-risk/2026-11-09-replay-assumptions.md) — PARTIAL_SOURCE_REVIEW. Full arXiv v1 PDF was rechecked, but this follow-up covers replay assumptions, pinned companion package and one deterministic synthetic fixture only. The authors’ 16 runs / approximately 49,000 episodes were not reproduced; no target project source or production runtime was evaluated.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Targeted replay versus live oracle on 200 synthetic finite episodes and assumption-breaking controls.
+
+Ограничения: No original authors' model runs or real production gate approval.
+
+[Доказательство](../../reviews/agent-risk/2026-11-09-replay-assumptions.md) · [Доказательство](../../data/results/agent-risk/2026-11-09-replay-boundary.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [agent-risk-review](../../studies/agent-risk.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.16280vv1).

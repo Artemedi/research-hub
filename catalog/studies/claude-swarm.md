@@ -8,6 +8,16 @@
 
 [claude-swarm-review](../../reviews/claude-swarm/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Pinned source control paths reviewed statically; installation, workers, upstream suite and dynamic behavior were not run.
 
+## Итоговое исследовательское решение
+
+**BLOCKED** — ограниченный статус работы, не разрешение внедрения. WORKTREE_DATA_LOSS_AND_FALSE_COMPLETION: original built managers reproduced destructive same-feature retry, trusting unverified .done and bypassPermissions as default.
+
+Ограничения: Terminal rejection of the particular proved unsafe original-source behavior; other library components have not been globally rejected.
+
+[Доказательство](../../portfolio/2026-11-07/claude-swarm-failure-injection.md) · [Доказательство](../../data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Pinned upstream must refuse dirty/active worktree destructive retry; gate completion on verified exit + source artifacts; remove bypassPermissions as implicit default; independently rerun negative controls and race/restart tests before scoped user approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [claude-swarm-review](../../reviews/claude-swarm/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [31f19199bf3557cda4860231186a06b72c8edb94](https://github.com/cj-vana/claude-swarm/tree/31f19199bf3557cda4860231186a06b72c8edb94).

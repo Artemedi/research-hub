@@ -8,6 +8,16 @@
 
 [polar-review](../../portfolio/2026-10-06--2026-10-12/review.md) — FULL_TEXT_REVIEWED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Compensatable/reversible action taxonomy is a cautionary advisory input, not proof of rollback or permission.
+
+Ограничения: Only 8/18 model-domain comparisons improved in author report; reverse-search plan is not guaranteed to undo actual remote effects.
+
+[Доказательство](../../studies/polar.md) · [Доказательство](../../portfolio/2026-10-06--2026-10-12/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [polar-review](../../portfolio/2026-10-06--2026-10-12/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.08082v1).

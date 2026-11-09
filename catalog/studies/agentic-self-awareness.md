@@ -8,6 +8,16 @@
 
 [agentic-self-awareness-review](../../studies/agentic-self-awareness.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed, not reproduced; benchmark task reuse and limited held-out blocker transfer constrain interpretation.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Paired feasible versus blocked-task oracle must score correct action, refusal and changed-evidence re-evaluation separately.
+
+Ограничения: 93.8% reported search-set strict SA is NOT held-out; feasible Retail solves fell to 9/32 under SA-only optimization, not proof of model introspection.
+
+[Доказательство](../../studies/agentic-self-awareness.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [agentic-self-awareness-review](../../studies/agentic-self-awareness.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.19226vv1).

@@ -25,6 +25,21 @@ rejects('removing a complete project history cannot conceal partial import', m =
   m.current_assessments = m.current_assessments.filter(a => a.project_id !== 'AKUZ');
 }, /incomplete\/duplicate matrix import/);
 rejects('project URL cannot identify a different project', m => { m.projects[0].registry_card_url = m.projects[1].registry_card_url; }, /project card identity mismatch/);
+test('generated pages display terminal bounded findings distinct from scientific current review', () => {
+  const ledger = JSON.parse(fs.readFileSync(path.join(root, 'data/results/research-portfolio/2026-11-09-closure-ledger.json'), 'utf8'));
+  const pages = entityPages(original, new Map(ledger.studies.map(row => [row.study_id, row])));
+  const blocked = pages.get('catalog/studies/claude-swarm.md');
+  assert.ok(blocked.includes('BLOCKED'));
+  assert.ok(blocked.includes('WORKTREE_DATA_LOSS_AND_FALSE_COMPLETION'));
+  assert.ok(blocked.includes('2026-11-07-claude-swarm-failure-e2e.json'));
+  assert.ok(blocked.includes('claude-swarm-review'));
+  const unrelated = pages.get('catalog/studies/memscope.md');
+  assert.ok(unrelated.includes('ACCEPT_RESEARCH_ONLY'));
+  assert.ok(unrelated.includes('memscope-review'));
+  const noFit = pages.get('catalog/studies/kvtether.md');
+  assert.ok(noFit.includes('NO_FIT'));
+  assert.ok(noFit.includes('New authorized project'));
+});
 test('shared review belongs to both sources without folder-name inference', () => {
   const pages = entityPages(original);
   for (const id of ['rrsi', 'harness2']) assert.ok(pages.get(`catalog/studies/${id}.md`).includes('reviews/rrsi-harness2/2026-11-04.md'));

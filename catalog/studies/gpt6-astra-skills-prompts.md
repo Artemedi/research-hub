@@ -8,6 +8,16 @@
 
 [bk009-gpt6-astra-live-ab-20261106](../../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) — FULL_TEXT_REVIEWED. Original source is OpenAI official engineering advice, not a controlled paper. Local experiment used five live Astra paired tasks and a deliberately verbose synthetic baseline; no production applicability, per-factor attribution or repeated confidence interval. No user project files modified.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Five paired disposable coding tasks with real requested Astra model: both treatments 5/5 functional; reduced-context arm used 46.72% fewer input tokens and 13% less wall time.
+
+Ограничения: Very small paired sample; not official study replication, may differ on larger tasks; strict clean-workspace only 4/5 both arms.
+
+[Доказательство](../../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) · [Доказательство](../../data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [bk009-gpt6-astra-live-ab-20261106](../../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md), 2026-11-06; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [2026-09-11 official article; Markdown SHA-256 a1deee4c0b3ca16a20385c27f0692e22d5150fdec81710c04742dd5da29f0468](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra).

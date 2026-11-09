@@ -8,6 +8,16 @@
 
 [anthropic-agent-automations-review](../../reviews/anthropic-agent-automations/2026-11-04.md) — FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED. Primary article and pinned daily-brief reference reviewed as text; no managed agent, account or Slack run. Exactly-once semantics are not established.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Per-source bookmarks, overlap, durable result-ledger and ambiguous-post state form a practical scheduled-agent design reference.
+
+Ограничения: Example policy/text is not atomic Slack+bookmark exactly-once; no live managed agent, distributed lock or user content policy tested.
+
+[Доказательство](../../studies/anthropic-agent-automations.md) · [Доказательство](../../reviews/anthropic-agent-automations/2026-11-04.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [anthropic-agent-automations-review](../../reviews/anthropic-agent-automations/2026-11-04.md), 2026-11-04; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [не установлена](https://claude.dev/blog/building-effective-agent-automations/), [8ef47d719eba5379ff8f38133f5defcc499e856f](https://github.com/anthropics/claude-quickstarts/tree/8ef47d719eba5379ff8f38133f5defcc499e856f/managed-agents/daily-brief).

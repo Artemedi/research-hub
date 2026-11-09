@@ -8,6 +8,16 @@
 
 [karpathy-autoresearch-loop-audit-20261106](../../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) — BOUNDED_CODE_REVIEW. Оригинальный AutoResearch проверен статически; видео AI LABS не прочитано независимо, author code недоступен; реальный Wiki_PG autoloop.sh проверен 6 раз на toy Git worktree с scripted fake agent, не LLM.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Actual pinned Wiki_PG autoloop script on six toy Git worktrees: 3/3 domain-only runs missed heldout UI and 3/3 complete runs passed.
+
+Ограничения: Scripted deterministic agent; not original video author or live LLM, 3 runs/arm, toy source trees only.
+
+[Доказательство](../../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) · [Доказательство](../../data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [karpathy-autoresearch-review](../../reviews/karpathy-autoresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [228791fb499afffb54b46200aca536f79142f117](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117).

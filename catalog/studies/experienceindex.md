@@ -8,6 +8,16 @@
 
 [experienceindex-review](../../studies/experienceindex.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed, not reproduced; transfer, online memory evolution, indexing costs and long-term drift remain unverified.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Independent Git SHA/href/source-pointer audit: 33/33 explicit related-review navigation cases, corrupt hash rejected; hit@5 baseline 32/33 vs link-augmented 33/33.
+
+Ограничения: Only literal link provenance and membership checked; no original ExperienceIndex method, BM25 ranking oracle or semantic relevance benchmark reproduced.
+
+[Доказательство](../../reviews/experienceindex/2026-11-07.md) · [Доказательство](../../data/results/experienceindex/2026-11-07-link-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [experienceindex-review](../../studies/experienceindex.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.10091vv1).

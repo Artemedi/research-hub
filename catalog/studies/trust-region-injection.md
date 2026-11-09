@@ -8,6 +8,16 @@
 
 [trust-region-injection-review](../../portfolio/2026-10-27--2026-11-02/review.md) — FULL_TEXT_REVIEWED. Original PDF methods, results and limits reviewed; no current project vulnerability established.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Untrusted document surfaces/placement should be explicit dimensions of defensive prompt-injection test coverage.
+
+Ограничения: Author 36 surfaces, 24 risk classes and testbeds; different placement affects observed model attempts, not proof current files are compromised.
+
+[Доказательство](../../studies/trust-region-injection.md) · [Доказательство](../../portfolio/2026-10-27--2026-11-02/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [trust-region-injection-review](../../portfolio/2026-10-27--2026-11-02/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.38867v1).

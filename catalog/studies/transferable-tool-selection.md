@@ -8,6 +8,16 @@
 
 [transferable-tool-selection-review](../../portfolio/2026-10-20--2026-10-26/review.md) — FULL_TEXT_REVIEWED. Original PDF methods, results and limits reviewed; not locally reproduced.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Plan→retrieve→select is an evaluation reference, but exact full gold tool-set match is not end-to-end task success.
+
+Ограничения: Author ToolBench G3 2124 instructions and SFT/RL training; G2/TaskBench transfer not uniformly better; no current model routing validation.
+
+[Доказательство](../../studies/transferable-tool-selection.md) · [Доказательство](../../portfolio/2026-10-20--2026-10-26/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [transferable-tool-selection-review](../../portfolio/2026-10-20--2026-10-26/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.31483v1).

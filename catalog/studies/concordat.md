@@ -8,6 +8,16 @@
 
 [concordat-review](../../studies/concordat.md) — FULL_TEXT_REVIEWED. Full PDF v2 reviewed, not reproduced; gate and metric share a keyword-based approval check, and task success difference was not significant.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Typestate/session protocol prevents out-of-state tool operations in a finite workflow before side effects.
+
+Ограничения: Approval was itself keyword 'yes' based; zero author-recorded violations cannot establish genuine owner consent or open-ended task safety.
+
+[Доказательство](../../studies/concordat.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [concordat-review](../../studies/concordat.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.37461vv2).

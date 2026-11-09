@@ -8,6 +8,16 @@
 
 [geoagent-review](../../studies/geoagent.md) — FULL_TEXT_REVIEWED. Original PDF v2 reviewed, not reproduced; one domain-specific seismic dataset, no comparative end-to-end benchmark.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Artifact-named stage contracts and deterministic output-geometry invariants provide a workflow-evidence design reference.
+
+Ограничения: Single seismic 2-D data pipeline with niche Madagascar tooling; 6–11 min is not comparative agent/SWE/SQL success.
+
+[Доказательство](../../studies/geoagent.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [geoagent-review](../../studies/geoagent.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.31096vv2).

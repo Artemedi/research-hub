@@ -8,6 +8,16 @@
 
 [swrouter-review](../../portfolio/2026-09-03--2026-09-15/review.md) — FULL_TEXT_REVIEWED. Author results not reproduced; no production routing policy authorized.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Multi-turn route evaluation should test actual context windows and model-eligibility boundaries, not last-turn similarity alone.
+
+Ограничения: Author similarity threshold sensitivity extreme, model pool/caching and evaluation judge differ; cost and task win not locally replicated.
+
+[Доказательство](../../studies/swrouter.md) · [Доказательство](../../portfolio/2026-09-03--2026-09-15/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [swrouter-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.11414;v1).

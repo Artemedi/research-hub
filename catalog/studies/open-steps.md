@@ -8,6 +8,16 @@
 
 [open-steps-review](../../reviews/open-steps/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. The cited engineering review covers the pinned docs/source components and bounded local checks described in the card; it is not a full source audit or verified project integration.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned original start/stop hooks miss content-only edit of untracked file (stop 0) but detect edited tracked file (stop 2).
+
+Ограничения: One synthetic Git repo and hook pair; no real agents, multi-session race or baseline quality comparison.
+
+[Доказательство](../../reviews/open-steps/2026-11-04.md) · [Доказательство](../../experiments/bk006-open-steps/fingerprint-fixture.sh) · [Доказательство](../../data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [open-steps-review](../../reviews/open-steps/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [4fa744ba8ea06ccf128a39853824c46ac391dd00](https://github.com/kharmanskyi/open-steps).

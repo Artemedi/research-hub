@@ -8,6 +8,16 @@
 
 [silent-cue-loss-review](../../portfolio/2026-10-20--2026-10-26/review.md) — FULL_TEXT_REVIEWED. Original PDF methods, results and limits reviewed; not locally reproduced; project seam unverified.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Structured DOCX styling/color/highlight can carry task-significant requirements that plain-text extraction may omit.
+
+Ограничения: Author 76 policy DOCX plus 79 confirmatory docs and OOXML-derived labels; no validated benefit on our documents/OCR or every model.
+
+[Доказательство](../../studies/silent-cue-loss.md) · [Доказательство](../../portfolio/2026-10-20--2026-10-26/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [silent-cue-loss-review](../../portfolio/2026-10-20--2026-10-26/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).

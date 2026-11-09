@@ -8,6 +8,16 @@
 
 [agent-mosaic-composite-gate-20261107](../../reviews/agent-mosaic/2026-11-07-composite-gate.md) — FULL_TEXT_REVIEWED. Author-reported 10,800 simulation outputs and 1,440 live harness outputs were not reproduced. Independent synthetic policy-contract lab ran 30 cases x9 outputs; separate oracle passed 270/270. No LLM, target project source integration, production data or production approval.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Independent synthetic oracle validated 270 composite-disclosure gate cases; output-bound gate released 90/90 allowed outputs without false disclosure release.
+
+Ограничения: No original author benchmark or LLM experiment; strict renderer may abstain on valid free-form text and depends on claim provenance.
+
+[Доказательство](../../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Доказательство](../../data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [agent-mosaic-review](../../studies/agent-mosaic.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30418vv1).

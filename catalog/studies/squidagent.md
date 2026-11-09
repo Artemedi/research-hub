@@ -8,6 +8,16 @@
 
 [squidagent-review](../../studies/squidagent.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed; author study not reproduced and project seam unverified.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Use a critical-path and overhead-aware DAG scheduler only when tasks have independently testable interfaces.
+
+Ограничения: Author nine tasks with one base model and LLM quality judge; projected 2.6x wall advantage cannot be extrapolated to IO-bound work.
+
+[Доказательство](../../studies/squidagent.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [squidagent-review](../../studies/squidagent.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.08647;v1).

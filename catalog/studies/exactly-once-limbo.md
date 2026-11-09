@@ -8,6 +8,16 @@
 
 [fulltext-exactly-once-limbo-2026-11-05](../../reviews/exactly-once-limbo/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned TelegramBot main() under synthetic transport: 900 fault cases/arm expose retry and at-most-once loss/duplicate tradeoff.
+
+Ограничения: No real Telegram delivery, durable outbox, or actual fault frequencies; hypothetical idempotent server is not offered by Telegram.
+
+[Доказательство](../../reviews/exactly-once-limbo/2026-11-06-policy-ab.md) · [Доказательство](../../data/results/exactly-once-limbo/2026-11-06-telegrambot-policy-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [exactly-once-limbo-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.29095).

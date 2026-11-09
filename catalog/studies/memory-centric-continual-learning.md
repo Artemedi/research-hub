@@ -8,6 +8,16 @@
 
 [memory-centric-continual-learning-review](../../portfolio/2026-10-20--2026-10-26/review.md) — FULL_TEXT_REVIEWED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Outcome-based tests should distinguish memory retention, changed-fact adaptation and transfer, not retrieval recall alone.
+
+Ограничения: Conceptual taxonomy/survey rather than a new controlled production benchmark; no demonstrated universal memory-policy advantage.
+
+[Доказательство](../../studies/memory-centric-continual-learning.md) · [Доказательство](../../portfolio/2026-10-20--2026-10-26/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [memory-centric-continual-learning-review](../../portfolio/2026-10-20--2026-10-26/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.29357v1).

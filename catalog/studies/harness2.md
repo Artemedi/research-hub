@@ -8,6 +8,16 @@
 
 [harness2-full-text-2026-11-05](../../reviews/harness2/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Harness² arXiv v1 прочитан; только авторские измерения. Propose/Probe/Compose и модельные benchmark эксперименты локально не воспроизводились; прошлый bounded code review остаётся в истории.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned Harness2 selection-pool sanity check and shared 525-case synthetic selector-validation fixture: external guard picks locality candidate on 5/5 seeds.
+
+Ограничения: Primary mechanism tested is RRSI selector with Harness2 pool negative-control, NOT end-to-end Harness2 agent performance.
+
+[Доказательство](../../reviews/rrsi/2026-11-06-validation-ab.md) · [Доказательство](../../data/results/rrsi/2026-11-06-validation-harness2-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [selection-review](../../reviews/rrsi-harness2/2026-11-04.md), 2026-11-04; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v3](https://arxiv.org/html/2609.24972v3), [arxiv:v1](https://arxiv.org/html/2610.14224v1).

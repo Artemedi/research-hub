@@ -8,6 +8,16 @@
 
 [package-hallucination-rule-files-review](../../portfolio/2026-10-06--2026-10-12/review.md) — FULL_TEXT_REVIEWED. Preserves the exact scope of the cited local review; this migration does not add independent reproduction or project benefit.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Treat repository rule files as untrusted for dependency approval; compare package/lockfile diffs to owner policy.
+
+Ограничения: Five selected packages and autonomous no-human-approval benchmark; attack-substitution frequencies not a universal compromise rate.
+
+[Доказательство](../../studies/package-hallucination-rule-files.md) · [Доказательство](../../portfolio/2026-10-06--2026-10-12/review.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [package-hallucination-rule-files-review](../../portfolio/2026-10-06--2026-10-12/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.09264v1).

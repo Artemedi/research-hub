@@ -8,6 +8,16 @@
 
 [cera-moa-full-text-2026-11-05](../../reviews/cera-moa/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. CERA-MoA arXiv v1 прочитан; независимой репликации тренировки нет, а текущий портфель не имеет подтверждённого trainable target.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Independent synthetic oracle of cumulative-threshold routing rule over 10,000 scenarios.
+
+Ограничения: No learned router, GPU quality/latency replication; one confidential project profile remains unassessed.
+
+[Доказательство](../../reviews/cera-moa/2026-11-08-routing-contract.md) · [Доказательство](../../data/results/cera-moa/2026-11-08-independent-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [cera-moa-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.18779).

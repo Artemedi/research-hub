@@ -8,6 +8,16 @@
 
 [agent-transfer-protocol-review](../../studies/agent-transfer-protocol.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed, not reproduced; synthetic domains and small scenarios do not establish production WAN reliability.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Signed, durable cross-domain agent address/envelope and delayed-verification queue as a transport design to test.
+
+Ограничения: Small 5/5 synthetic travel prototype, in-memory same-host +2.7 ms latency only; no deployed cross-org keys, revoke or retention proof.
+
+[Доказательство](../../studies/agent-transfer-protocol.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [agent-transfer-protocol-review](../../studies/agent-transfer-protocol.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.38398vv1).

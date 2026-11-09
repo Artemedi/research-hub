@@ -7,6 +7,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'catalog/structure.json'), 'utf8'));
 const check = process.argv.includes('--check');
 const entities = validateEntities(root, JSON.parse(fs.readFileSync(path.join(root, 'catalog/entities.json'), 'utf8')));
+const closure = JSON.parse(fs.readFileSync(path.join(root, 'data/results/research-portfolio/2026-11-09-closure-ledger.json'), 'utf8'));
+const dispositions = new Map(closure.studies.map(item => [item.study_id, item]));
+if (dispositions.size !== entities.studies.length || entities.studies.some(study => !dispositions.has(study.id))) throw new Error('Closure ledger and source catalogue identities differ');
 const explicitReviews = card => { const s = entities.studies.find(s => s.card === card); return s ? entities.reviews.filter(r => r.study_ids.includes(s.id)).map(r => ({to:r.document,date:r.date,id:r.id})) : null; };
 const errors = [];
 const rel = (from, to) => path.posix.relative(path.posix.dirname(from), to);
@@ -59,6 +62,6 @@ const walk = dir => fs.readdirSync(path.join(root, dir), { withFileTypes: true }
 const scripts = walk('experiments').filter(p => !p.endsWith('/README.md')).sort(compare);
 emit('experiments/README.md', `# Экспериментальные скрипты\n\nСкрипты ограниченных проверок и fixtures. Зависимости, полномочия и команды запуска описаны в [обзорах](../reviews/README.md); не запускайте все файлы подряд. Проверка каталога не исполняет эксперименты, агентов или сетевые сценарии.\n\nОпубликованные имена сохранены для воспроизводимости. Новые опыты размещаются в experiments/source/, результаты — в [data/results](../data/README.md).\n\n${scripts.map(p => `- [${p.slice('experiments/'.length)}](${rel('experiments/README.md', p)})`).join('\n')}`);
 emit('reports/README.md', '# Совместимость опубликованных ссылок\n\nЗдесь автоматически создаются переходы со старых адресов и совместимые копии JSON. Канонические документы находятся в [reviews](../reviews/README.md), [portfolio](../portfolio/README.md), [collections](../collections/README.md) и [data](../data/README.md).\n\nНовые материалы сюда не добавлять. Изменения вносить в канонический файл, затем запускать `node scripts/build-catalog.mjs`. Соответствие адресов — [catalog/structure.json](../catalog/structure.json).');
-for (const [file, text] of entityPages(entities)) emit(file, text);
+for (const [file, text] of entityPages(entities, dispositions)) emit(file, text);
 if (errors.length) { process.stderr.write('Generated catalog differs: ' + errors.join(', ') + '\n'); process.exitCode = 1; }
 else console.log(`${check ? 'Checked' : 'Generated'} indexes and ${config.documents.filter(d => d.from).length} compatibility endpoints.`);

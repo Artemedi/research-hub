@@ -8,6 +8,16 @@
 
 [rrsi-full-text-2026-11-05](../../reviews/rrsi/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. RRSI arXiv v3 прочитан; результаты авторские, самостоятельная репликация научных экспериментов не выполнена. Старый bounded code review сохраняет отдельный scope.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Real pinned RRSI selector on 5 seeded synthetic train/validation/holdout sets: train-only chose memorizer 5/5; guarded selection locality 5/5.
+
+Ограничения: Synthetic generated code gate; no original author benchmark, live LLM, real task holdout or actual cost gate.
+
+[Доказательство](../../reviews/rrsi/2026-11-06-validation-ab.md) · [Доказательство](../../data/results/rrsi/2026-11-06-validation-harness2-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [selection-review](../../reviews/rrsi-harness2/2026-11-04.md), 2026-11-04; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v3](https://arxiv.org/html/2609.24972v3), [arxiv:v1](https://arxiv.org/html/2610.14224v1).

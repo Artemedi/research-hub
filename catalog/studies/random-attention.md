@@ -8,6 +8,16 @@
 
 [random-attention-review](../../portfolio/2026-09-03--2026-09-15/review.md) — FULL_TEXT_REVIEWED. Author results not independently reproduced; no verified project has physical KV-cache control.
 
+## Итоговое исследовательское решение
+
+**NO_FIT** — ограниченный статус работы, не разрешение внедрения. Prompt-preserving random reasoning-token KV eviction requires physical serving cache access and an instrumentable vLLM-like backend; none is documented among current 45 projects.
+
+Ограничения: Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.
+
+[Доказательство](../../studies/random-attention.md) · [Доказательство](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: New authorized project or backend code path exposing physical KV eviction controls; compare accuracy and serving throughput at fixed prompt, model, seeds and memory budget. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [random-attention-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.03430;v1).

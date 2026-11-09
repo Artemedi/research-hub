@@ -8,6 +8,16 @@
 
 [behavior-beyond-text-review](../../studies/behavior-beyond-text.md) — FULL_TEXT_REVIEWED. Original PDF methods/results/limits reviewed, not locally reproduced; tool attempts do not prove completed side effects.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_RESEARCH_ONLY** — ограниченный статус работы, не разрешение внедрения. Tool-attempt and realized side-effect oracles are separate from harmless-looking refusal text.
+
+Ограничения: 2304 matched synthetic prompts and five open-weight models; unsafe attempted tool call is not verified side effect or a defect in our permission boundary.
+
+[Доказательство](../../studies/behavior-beyond-text.md) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [behavior-beyond-text-review](../../studies/behavior-beyond-text.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.28982vv1).

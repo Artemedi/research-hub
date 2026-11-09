@@ -8,6 +8,16 @@
 
 [alphaxiv-openresearch-provenance-ab-20261106](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) — BOUNDED_CODE_REVIEW. Original OpenResearch v0.2.24 built offline and 8 compute tests passed; 25x2 provenance A/B ran actual paper2project tree_hash against source-derived git archive proxy. No direct SourceSnapshot::create call, orx agent/SQLite/supervisor E2E, live paper retrieval or production benefit. No production approval.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. 25 synthetic Git source-snapshot comparisons: original paper2project tree_hash vs source-derived git-archive proxy, checksum/dirty/metadata/corruption controls.
+
+Ограничения: Proxy is NOT original OpenResearch SourceSnapshot::create; nonfeature-equivalent branches and no real orx run/daemon.
+
+[Доказательство](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) · [Доказательство](../../data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [alphaxiv-openresearch-review](../../reviews/alphaxiv-openresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d](https://github.com/alphaXiv/OpenResearch/tree/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d).

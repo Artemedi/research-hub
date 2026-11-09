@@ -8,6 +8,16 @@
 
 [fulltext-agent-error-dataset-2026-11-05](../../reviews/agent-error-dataset/2026-11-05-full-text.md) — FULL_TEXT_REVIEWED. Полный официальный текст конкретной версии прочитан; результаты AUTHOR_REPORTED, собственная научная репликация NOT_RUN. Бывший historical/bounded обзор сохраняет свой отдельный scope.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Checkpoint-bound correction: 90 synthetic paired trials; 270 negative controls.
+
+Ограничения: No live agents, source dataset, causal RCA or real project recovery rate.
+
+[Доказательство](../../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Доказательство](../../data/results/agent-error-dataset/2026-11-08-independent-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [agent-error-dataset-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.40111).

@@ -8,6 +8,16 @@
 
 [zero-code-review](../../reviews/zero-code/2026-11-04.md) — PARTIAL_SOURCE_REVIEW. Selected contracts, unit suites and synthetic fixture only; full integration and real cycle not run.
 
+## Итоговое исследовательское решение
+
+**ACCEPT_BOUNDED** — ограниченный статус работы, не разрешение внедрения. Pinned original 0-CODE JSONC helper passed independent synthetic fixture validation: 120 valid, 24 invalid cases, strict duplicate-key path and two rejected mutants.
+
+Ограничения: 20 generated base objects with six syntactic variants; not supervisor permissions, full JSONC grammar or production config integration.
+
+[Доказательство](../../reviews/zero-code/2026-11-07-jsonc-countercheck.md) · [Доказательство](../../data/results/zero-code/2026-11-07-jsonc-oracle.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+
+Следующий gate: Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+
 ## Версии и история обзоров
 
 - [zero-code-review](../../reviews/zero-code/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [47f6a81724e87ff5e916f0eb146516d801a8fb28](https://github.com/0-SOFT/0-CODE/tree/47f6a81724e87ff5e916f0eb146516d801a8fb28).
