@@ -8,6 +8,61 @@ from pathlib import Path
 
 # Each entry: tested proposition, reviewed source, independent machine result, limit.
 BOUNDED = {
+    "agent-mosaic": (
+        "Independent synthetic oracle validated 270 composite-disclosure gate cases; output-bound gate released 90/90 allowed outputs without false disclosure release.",
+        "reviews/agent-mosaic/2026-11-07-composite-gate.md",
+        "data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json",
+        "No original author benchmark or LLM experiment; strict renderer may abstain on valid free-form text and depends on claim provenance."),
+    "alphaxiv-openresearch": (
+        "25 synthetic Git source-snapshot comparisons: original paper2project tree_hash vs source-derived git-archive proxy, checksum/dirty/metadata/corruption controls.",
+        "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+        "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json",
+        "Proxy is NOT original OpenResearch SourceSnapshot::create; nonfeature-equivalent branches and no real orx run/daemon."),
+    "cursor-token-efficiency": (
+        "Local deterministic 260-task context-character proxy reduces size by ~50% with oracle routing, but keyword routing misses 40/260; author 7% is unreplicated.",
+        "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+        "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json",
+        "52 unique synthetic templates across 5 permutations, not 260 independent tasks; characters are not provider tokens."),
+    "drag": (
+        "Synthetic RAG evidence guard passes sealed in-distribution fixtures yet fails under format shift and forged-evidence OOD stress.",
+        "reviews/drag/2026-11-06-evidence-gate-ab.md",
+        "data/results/drag/2026-11-06-evidence-ood-stress.json",
+        "OOD is posthoc diagnostic, not blind holdout; no real retrieval, provenance trust boundary, LLM, SQL data or production utility."),
+    "dsh-creator-mode": (
+        "Generated code client was verified in offline mock Cordis/React harness: 9/9 authored contract tests; 210 host/client suite tests passed separately.",
+        "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+        "data/results/dsh-creator/2026-11-06-offline-poster-probe.json",
+        "No real Creator Mode end-to-end execution, browser, original assets, pinned effective model or production install."),
+    "gpt6-astra-skills-prompts": (
+        "Five paired disposable coding tasks with real requested Astra model: both treatments 5/5 functional; reduced-context arm used 46.72% fewer input tokens and 13% less wall time.",
+        "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+        "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
+        "Very small paired sample; not official study replication, may differ on larger tasks; strict clean-workspace only 4/5 both arms."),
+    "harness2": (
+        "Pinned Harness2 selection-pool sanity check and shared 525-case synthetic selector-validation fixture: external guard picks locality candidate on 5/5 seeds.",
+        "reviews/rrsi/2026-11-06-validation-ab.md",
+        "data/results/rrsi/2026-11-06-validation-harness2-ab.json",
+        "Primary mechanism tested is RRSI selector with Harness2 pool negative-control, NOT end-to-end Harness2 agent performance."),
+    "karpathy-autoresearch": (
+        "Actual pinned Wiki_PG autoloop script on six toy Git worktrees: 3/3 domain-only runs missed heldout UI and 3/3 complete runs passed.",
+        "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+        "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json",
+        "Scripted deterministic agent; not original video author or live LLM, 3 runs/arm, toy source trees only."),
+    "rrsi": (
+        "Real pinned RRSI selector on 5 seeded synthetic train/validation/holdout sets: train-only chose memorizer 5/5; guarded selection locality 5/5.",
+        "reviews/rrsi/2026-11-06-validation-ab.md",
+        "data/results/rrsi/2026-11-06-validation-harness2-ab.json",
+        "Synthetic generated code gate; no original author benchmark, live LLM, real task holdout or actual cost gate."),
+    "toolgrad": (
+        "Pinned source chain updater/API validator with 500/500 synthetic chain completions, 100 unreachable rejections and 10/10 zero-error-count false negatives.",
+        "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+        "data/results/toolgrad/2026-11-06-chain-validation-ab.json",
+        "Deterministic API proxy rather than Gemini/model, high source-validator false-negative class, not real project integration."),
+    "veriharness": (
+        "Separate agent-config citation-locality mechanism on 1000 synthetic cases: false accept baseline 400 versus 200 with ±1-line locality check.",
+        "reviews/veriharness/2026-11-06-citation-locality-ab.md",
+        "data/results/veriharness/2026-11-06-citation-locality-ab.json",
+        "This executes agent-config, NOT original VeriHarness model or published benchmark; synthetic oracle not blindly human-labelled."),
     "exactly-once-limbo": (
         "Pinned TelegramBot main() under synthetic transport: 900 fault cases/arm expose retry and at-most-once loss/duplicate tradeoff.",
         "reviews/exactly-once-limbo/2026-11-06-policy-ab.md",
@@ -101,7 +156,64 @@ def sha(root, p):
     return hashlib.sha256((root / p).read_bytes()).hexdigest()
 
 def validate_bounded(sid, x):
-    if sid == "exactly-once-limbo":
+    if sid == "agent-mosaic":
+        assert x["independent_verification"] == "PASS" and x["rows_checked"] == 270
+        assert x["oracle_counts"] == {"ALLOW":90, "DENY":120, "INCONCLUSIVE":60}
+        gate=x["arms"]["output_bound_gate"]
+        assert gate["actual_allow"] == 90 and gate["actual_inconclusive"] == 120
+        assert gate.get("false_disclosure_release",0) == 0
+    elif sid == "alphaxiv-openresearch":
+        assert x["samples_per_arm"] == 25 and x["status"] == "SOURCE_DERIVED_GIT_ARCHIVE_AB_BASELINE_SOURCE_EXECUTED"
+        assert all(x["controls_summary"][k] == 5 for k in (
+            "archive_corruption_detected_B", "snapshot_available_without_source_B",
+            "dirty_mutation_omitted_B", "metadata_stable_B", "missing_fulltext_rejected_external_gate"))
+    elif sid == "cursor-token-efficiency":
+        q=x["independent_gpt6"]["summary"]
+        assert q["static"]["tasks"] == q["oracle"]["tasks"] == q["keyword"]["tasks"] == 260
+        assert q["oracle"]["misses"] == 0 and q["keyword"]["misses"] == 40
+        assert x["independent_gpt6"]["assertions"]["mutant_aggregate_rejected"]
+        assert x["independent_gpt6"]["assertions"]["mutant_missing_set_rejected"]
+    elif sid == "drag":
+        assert x["status"] == "POSTHOC_STRESS_NOT_BLIND_HOLDOUT" and len(x["seeds"]) == 5
+        base=x["mean_by_mutation_arm"]
+        assert base["original"]["gate_follow"]["correct_abstention_rate_negative"] == 1.0
+        assert base["format_shift"]["gate_follow"]["positive_answer_coverage"] == 0.0
+        assert base["forged_observation"]["gate_follow"]["citation_precision"] == 0.0
+    elif sid == "dsh-creator-mode":
+        assert x["creator_mode_real_e2e"] is False
+        lab=x["offline_container"]["result"]
+        assert lab["verdict"] == "PASS" and lab["passes"] == 9 and all(lab["checks"].values())
+        assert x["existing_native_tests"]["cordis_host_6_suites_pass"] == 102
+        assert x["existing_native_tests"]["cordis_client_5_suites_pass"] == 108
+    elif sid == "gpt6-astra-skills-prompts":
+        assert x["summary"]["A"]["tasks"] == x["summary"]["B"]["tasks"] == 5
+        assert x["summary"]["A"]["functional_pass"] == x["summary"]["B"]["functional_pass"] == 5
+        assert x["comparisons"]["functional_pass_both"] is True
+        assert x["comparisons"]["token_input_reduction_pct"] == 46.72
+        assert x["is_an_official_study_replication"] is False
+    elif sid in ("harness2","rrsi"):
+        assert x["run_count"] == 5 and x["samples_per_run"] == {
+            "training":40, "validation":25, "sealed_holdout":40}
+        assert x["all_negative_controls_pass"] is True
+        assert x["scores_mean_sealed_holdout"]["locality"] == 0.705
+        assert x["scores_mean_sealed_holdout"]["memorizer"] == 0.455
+        assert all(y["naive_selected"] == "memorizer" and
+                   y["validation_guard_selected"] == "locality" for y in x["runs"])
+    elif sid == "karpathy-autoresearch":
+        assert x["runs"] == 6
+        assert x["summary"]["domain-only"]["heldout_ui_passes"] == 0
+        assert x["summary"]["complete"]["heldout_ui_passes"] == 3
+        assert x["summary"]["complete"]["locked_oracle_tamper_survived"] == 0
+    elif sid == "toolgrad":
+        assert x["samples"] == 500 and x["status"] == "SOURCE_COMPONENTS_EXECUTED_WITH_PROXY_A_B"
+        assert x["chain_first"]["verified"] == 500
+        assert x["unreachable_test"]["query_first_rejected"] == 100
+        assert x["negative_controls"]["false_negative_zero_error_count"] == 10
+    elif sid == "veriharness":
+        assert x["total_cases"] == 1000 and len(x["seeds"]) == 5
+        assert x["mean_false_accept_rate"]["baseline"] == 0.666667
+        assert x["mean_false_accept_rate"]["locality"] == 0.333333
+    elif sid == "exactly-once-limbo":
         assert x["real_target_main_send_telegram_used"] is True and x["seed_count"] == 5
         a=x["totals"]["real_auto_retry"]
         b=x["totals"]["sidecar_pending_no_retry"]

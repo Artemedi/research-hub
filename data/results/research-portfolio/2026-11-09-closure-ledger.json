@@ -7,12 +7,12 @@
   "project_status_note": "Unassessed is not NO_FIT; assessments refer to recorded project snapshots, not automatically current HEAD.",
   "summary": {
     "total": 83,
-    "terminal": 14,
-    "open": 69,
+    "terminal": 25,
+    "open": 58,
     "by_status": {
-      "ACCEPT_BOUNDED": 13,
+      "ACCEPT_BOUNDED": 24,
       "BLOCKED": 1,
-      "OPEN_EVIDENCE_ADJUDICATION": 69
+      "OPEN_EVIDENCE_ADJUDICATION": 58
     },
     "explicit_project_pairs": 506,
     "unassessed_project_pairs": 3229
@@ -117,11 +117,20 @@
       "unassessed_project_ids": [],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Independent synthetic oracle validated 270 composite-disclosure gate cases; output-bound gate released 90/90 allowed outputs without false disclosure release.",
+      "limits": "No original author benchmark or LLM experiment; strict renderer may abstain on valid free-form text and depends on claim provenance.",
+      "evidence": [
+        {
+          "path": "reviews/agent-mosaic/2026-11-07-composite-gate.md",
+          "sha256": "50ea4f22307ad9d8218446e80db2b0eb336112db7238bddb15750571c557c46a"
+        },
+        {
+          "path": "data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json",
+          "sha256": "ddd06ed7c5605bad0ef745f18b2dbfddd2254f2366724973e83ccd7aa3e88b76"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "agent-risk",
@@ -439,11 +448,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "25 synthetic Git source-snapshot comparisons: original paper2project tree_hash vs source-derived git-archive proxy, checksum/dirty/metadata/corruption controls.",
+      "limits": "Proxy is NOT original OpenResearch SourceSnapshot::create; nonfeature-equivalent branches and no real orx run/daemon.",
+      "evidence": [
+        {
+          "path": "reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md",
+          "sha256": "b83837f1f771612200be6621402fa667b59b9cddfab9f72b3baf262a33caa838"
+        },
+        {
+          "path": "data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json",
+          "sha256": "d8cddfdc9c0a03cc60deb77b3fd49458234f694ec029850fd01a4628fdcd364f"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "anthropic-agent-automations",
@@ -1158,11 +1176,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Local deterministic 260-task context-character proxy reduces size by ~50% with oracle routing, but keyword routing misses 40/260; author 7% is unreplicated.",
+      "limits": "52 unique synthetic templates across 5 permutations, not 260 independent tasks; characters are not provider tokens.",
+      "evidence": [
+        {
+          "path": "reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md",
+          "sha256": "5b9519d728c4ac2c1eba3544d9420d6c342466451d7a2de47466b0f315ca3cca"
+        },
+        {
+          "path": "data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json",
+          "sha256": "74b11819561cd522778c5fc21fb4286b05cb65782a6f818b86b1fff5357a368c"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "cve-2026-82533-technical-disclosure",
@@ -1482,11 +1509,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Synthetic RAG evidence guard passes sealed in-distribution fixtures yet fails under format shift and forged-evidence OOD stress.",
+      "limits": "OOD is posthoc diagnostic, not blind holdout; no real retrieval, provenance trust boundary, LLM, SQL data or production utility.",
+      "evidence": [
+        {
+          "path": "reviews/drag/2026-11-06-evidence-gate-ab.md",
+          "sha256": "b156560e754410f046fd16ad181c93d6311bb32ea2b85784bea6ee033a7ecde8"
+        },
+        {
+          "path": "data/results/drag/2026-11-06-evidence-ood-stress.json",
+          "sha256": "30644b3037c065b2116940bb327007e7ce5e3351096aaa34a0e322f33a95fc6f"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "dsh-creator-mode",
@@ -1567,11 +1603,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Generated code client was verified in offline mock Cordis/React harness: 9/9 authored contract tests; 210 host/client suite tests passed separately.",
+      "limits": "No real Creator Mode end-to-end execution, browser, original assets, pinned effective model or production install.",
+      "evidence": [
+        {
+          "path": "reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md",
+          "sha256": "91dd66297daeb9ded65009d9f4aa0f8e3aec686fac7f2935a5025da9ef303a57"
+        },
+        {
+          "path": "data/results/dsh-creator/2026-11-06-offline-poster-probe.json",
+          "sha256": "3fe59eae711914481a85c43c4bd1819b01bc24845328af22313ccb1376eac3e9"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "dsh-superagent-prototype",
@@ -2003,11 +2048,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Five paired disposable coding tasks with real requested Astra model: both treatments 5/5 functional; reduced-context arm used 46.72% fewer input tokens and 13% less wall time.",
+      "limits": "Very small paired sample; not official study replication, may differ on larger tasks; strict clean-workspace only 4/5 both arms.",
+      "evidence": [
+        {
+          "path": "reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md",
+          "sha256": "7c6fda5cdd6c7facacedc122a89c54c55a2aa1649e96b05178e2a475a02ccb94"
+        },
+        {
+          "path": "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
+          "sha256": "25d866dc5f007acec847f16a290a69dc2e6a755be37e113eca6f3aa7673fda0d"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "harness2",
@@ -2088,11 +2142,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned Harness2 selection-pool sanity check and shared 525-case synthetic selector-validation fixture: external guard picks locality candidate on 5/5 seeds.",
+      "limits": "Primary mechanism tested is RRSI selector with Harness2 pool negative-control, NOT end-to-end Harness2 agent performance.",
+      "evidence": [
+        {
+          "path": "reviews/rrsi/2026-11-06-validation-ab.md",
+          "sha256": "f9ae71110d659018e460bd759bd72cd118113479d42ad4317f2754b037546817"
+        },
+        {
+          "path": "data/results/rrsi/2026-11-06-validation-harness2-ab.json",
+          "sha256": "591788f927198f77d7e73aa2b67dd48e6540ef5c27b16485f20091d781403ac3"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "harnesssecurity-bench",
@@ -2769,11 +2832,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Actual pinned Wiki_PG autoloop script on six toy Git worktrees: 3/3 domain-only runs missed heldout UI and 3/3 complete runs passed.",
+      "limits": "Scripted deterministic agent; not original video author or live LLM, 3 runs/arm, toy source trees only.",
+      "evidence": [
+        {
+          "path": "reviews/karpathy-autoresearch/2026-11-06-loop-audit.md",
+          "sha256": "e61c09aa16d0294f5cfecbc98b58164ef3d141a5ca76360136b4c00e4fcf8594"
+        },
+        {
+          "path": "data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json",
+          "sha256": "4994c59a5fdff47d6466176eefaf6162857c68b257eca5e586e1dc12f3a59ee2"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "kvset",
@@ -4636,11 +4708,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Real pinned RRSI selector on 5 seeded synthetic train/validation/holdout sets: train-only chose memorizer 5/5; guarded selection locality 5/5.",
+      "limits": "Synthetic generated code gate; no original author benchmark, live LLM, real task holdout or actual cost gate.",
+      "evidence": [
+        {
+          "path": "reviews/rrsi/2026-11-06-validation-ab.md",
+          "sha256": "f9ae71110d659018e460bd759bd72cd118113479d42ad4317f2754b037546817"
+        },
+        {
+          "path": "data/results/rrsi/2026-11-06-validation-harness2-ab.json",
+          "sha256": "591788f927198f77d7e73aa2b67dd48e6540ef5c27b16485f20091d781403ac3"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "self-replicating-prompt-injections",
@@ -5325,11 +5406,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned source chain updater/API validator with 500/500 synthetic chain completions, 100 unreachable rejections and 10/10 zero-error-count false negatives.",
+      "limits": "Deterministic API proxy rather than Gemini/model, high source-validator false-negative class, not real project integration.",
+      "evidence": [
+        {
+          "path": "reviews/toolgrad/2026-11-06-chain-validation-ab.md",
+          "sha256": "55ff986aa89ecdb2e3de603a77f35e026a2059c27aa2589ce197b11005d0cd91"
+        },
+        {
+          "path": "data/results/toolgrad/2026-11-06-chain-validation-ab.json",
+          "sha256": "49f088b2d107a37f6e1cd7edc3e3b5a9c273e23333269f6ea54a3aea8a6a5653"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "transferable-tool-selection",
@@ -5833,11 +5923,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Independently adjudicate recorded experiment scope, oracle, controls and author-vs-local distinction before terminal decision."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Separate agent-config citation-locality mechanism on 1000 synthetic cases: false accept baseline 400 versus 200 with ±1-line locality check.",
+      "limits": "This executes agent-config, NOT original VeriHarness model or published benchmark; synthetic oracle not blindly human-labelled.",
+      "evidence": [
+        {
+          "path": "reviews/veriharness/2026-11-06-citation-locality-ab.md",
+          "sha256": "7defee55825137251525879287e07ab22fdab77660e2ab9f268dbe415452e331"
+        },
+        {
+          "path": "data/results/veriharness/2026-11-06-citation-locality-ab.json",
+          "sha256": "5349df79d99e703e6340dc62a78d3bcba35f236c4452e175ada8bc94a4901106"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "warp-skill-doctor",
