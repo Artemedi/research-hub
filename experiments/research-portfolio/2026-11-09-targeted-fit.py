@@ -490,7 +490,9 @@ def validate(x):
     for p in x["protocols"].values():
         assert len(p["negatives"])>=3
         assert all(len(p[k])>=10 for k in ("baseline","variant","dataset","oracle","metrics","accept"))
+    assert len(x["source_anchors"])>=10
     return {"pairs":len(x["pairs"]),"source_anchored":anchored,
+            "distinct_source_symbols":len(x["source_anchors"]),
             "profile_only":len(x["pairs"])-anchored,
             "bounded_covered":40,"bounded_deferred":2,
             "research_only_selected":len(x["research_only_selected"]),
@@ -506,9 +508,13 @@ def render(x):
            "author-paper replication or permission to deploy. A verified symbol only means "
            "the named function exists in the named pinned Git object.",
            "",
-           "Scope: {} candidate pairs ({} source-symbol anchored, {} profile-only); "
-           "all 40 ACCEPT_BOUNDED reviewed (2 deferred), and {} selected research-only works.".format(
-               counts["pairs"],counts["source_anchored"],counts["profile_only"],counts["research_only_selected"]),
+           "Scope: {} candidate pairs ({} pair-rows referencing {} DISTINCT pinned source symbols, "
+           "{} profile-only); all 40 ACCEPT_BOUNDED reviewed (2 deferred), and "
+           "{} selected research-only works. Shared symbols are reused across methods and "
+           "must not be mistaken for {} independently validated integrations.".format(
+               counts["pairs"],counts["source_anchored"],
+               counts["distinct_source_symbols"],counts["profile_only"],
+               counts["research_only_selected"],counts["source_anchored"]),
            "",
            "## Two source feasibility checks actually executed","",
            "- **TelegramBot / exactly-once-limbo:** [original source function mock replay](../../data/results/research-portfolio/2026-11-09-telegram-ack-fixture.json) "

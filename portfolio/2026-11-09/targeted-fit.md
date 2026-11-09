@@ -4,7 +4,7 @@
 
 This is a candidate decision matrix, NOT measured improvement, code integration, author-paper replication or permission to deploy. A verified symbol only means the named function exists in the named pinned Git object.
 
-Scope: 75 candidate pairs (63 source-symbol anchored, 12 profile-only); all 40 ACCEPT_BOUNDED reviewed (2 deferred), and 18 selected research-only works.
+Scope: 75 candidate pairs (63 pair-rows referencing 17 DISTINCT pinned source symbols, 12 profile-only); all 40 ACCEPT_BOUNDED reviewed (2 deferred), and 18 selected research-only works. Shared symbols are reused across methods and must not be mistaken for 63 independently validated integrations.
 
 ## Two source feasibility checks actually executed
 
