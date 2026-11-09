@@ -63,6 +63,8 @@
 | [data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json](results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json) | Результат ограниченной проверки |
 | [data/results/htn-orchestrate/2026-11-07-paired-audit.json](results/htn-orchestrate/2026-11-07-paired-audit.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-07-upstream-tests.json](results/hyperresearch/2026-11-07-upstream-tests.json) | Результат ограниченной проверки |
+| [data/results/hyperresearch/2026-11-09-temporal-scope-ab.json](results/hyperresearch/2026-11-09-temporal-scope-ab.json) | Результат ограниченной проверки |
+| [data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json](results/hyperresearch/2026-11-09-temporal-scope-oracle.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](results/inspektor-gadget/2026-11-06-host-diagnostics.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-pilot.json](results/inspektor-gadget/2026-11-06-host-pilot.json) | Результат ограниченной проверки |

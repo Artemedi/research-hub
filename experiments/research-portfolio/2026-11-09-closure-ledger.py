@@ -75,13 +75,24 @@ BOUNDED = {
         "Provider API, cost, privacy and quality not tested; no keys or network calls."),
 }
 SPECIAL = {
-    "hyperresearch": "Resolve documented false supported-mechanical citations on frozen hostile holdout; 54 upstream passing tests do not answer this failure.",
     "unreal-agent": "Verify primary transcript or full original engineering source; video landing alone is insufficient.",
     "hyra-2": "Check available engineering article versus unavailable backend/model internals; record the precise source boundary.",
     "warp-skill-doctor": "Recover inspectable original implementation or document actual failed attempts and a concrete unblock condition.",
     "sequential-diagnosis-language-models": "Recheck pinned full paper and retained full-text evidence after source-fetch access failure.",
 }
 TERMINAL = {"ACCEPT_BOUNDED", "ACCEPT_RESEARCH_ONLY", "NO_FIT", "BLOCKED"}
+
+# Explicit terminal obstacle, independently demonstrated, with a concrete unblock gate.
+BLOCKED = {
+    "hyperresearch": (
+        "Automatic semantic citation acceptance via any six-word substring, pinned v0.13.0.",
+        "reviews/hyperresearch/2026-11-09-citation-adjudication.md",
+        "data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json",
+        "CITATION_AUTO_PASS_FALSE_SUPPORT: original source auto-accepted 48/60 authored unsupported temporal/scope/authorization/conjunction claims; negative source safety finding, not a real-world prevalence estimate.",
+        "Tested exact-only comparator: 0/60 unsupported auto-pass, but only 12/24 supported auto-pass, requiring external/manual verification of paraphrases. Full downstream LLM verification not exercised.",
+        "A new pinned upstream implementation must eliminate false auto-support on frozen hostile + independent natural held-out full-text claims and document exhaustive downstream coverage, positive paraphrase behavior, cost and target owner gate."
+    ),
+}
 
 def read(root, p):
     return json.loads((root / p).read_text(encoding="utf-8"))
@@ -176,6 +187,7 @@ def generate(root):
     projects = {p["id"] for p in x["projects"]}
     output = []
     assert set(BOUNDED).issubset(studies)
+    assert set(BLOCKED).issubset(studies) and not set(BLOCKED).intersection(BOUNDED)
     for sid, study in sorted(studies.items()):
         p = study["card"]
         assert p in provenance
@@ -217,6 +229,25 @@ def generate(root):
                     for f in (reviewpath, evidencepath)],
                 "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval.",
             })
+        elif sid in BLOCKED:
+            scope, reviewpath, oraclepath, obstacle, alternatives, unblock = BLOCKED[sid]
+            oracle = read(root, oraclepath)
+            assert oracle["input_sha256"] == sha(root, "data/results/hyperresearch/2026-11-09-temporal-scope-ab.json")
+            assert oracle["status"] == "PASS" and oracle["validated_cases"] == 84
+            assert oracle["counts"]["source_unsupported_auto_pass"] == 48
+            assert oracle["counts"]["exact_only_unsupported_auto_pass"] == 0
+            assert oracle["mutated_gold_rejected"] and oracle["mutated_verdict_rejected"]
+            assert oracle["mutated_fixture_rejected"]
+            row.update({
+                "closure_status": "BLOCKED", "verified_scope": scope,
+                "blocker": obstacle, "attempted_alternative": alternatives,
+                "unblock_condition": unblock,
+                "limits": "Blocked adoption of an unsafe automatic citation gate; other library components are not globally rejected.",
+                "evidence": [
+                    {"path": f, "sha256": sha(root, f)}
+                    for f in (reviewpath, oraclepath)],
+                "production_approved": False,
+            })
         else:
             row.update({
                 "closure_status": "OPEN_EVIDENCE_ADJUDICATION", "verified_scope": None,
@@ -246,8 +277,8 @@ def report(v):
     lines = [
         "# Evidence-based closure ledger — first adjudication pass (83 cards)", "",
         "Date: 2026-11-09. This is a finite evidence register, not 83 new reports.",
-        "Only existing source, code, negative controls and oracles were inspected; "
-        "no model run, production action or source-card rewrite occurred.", "",
+        "This reconciliation reuses previous checks and includes the independent new Hyperresearch synthetic citation holdout; "
+        "no model service, production action or source-card rewrite occurred.", "",
         "Terminal: {}/83. Open: {}/83.".format(summ["terminal"], summ["open"]), "",
         "[Machine-readable 83-card ledger](../../data/results/research-portfolio/2026-11-09-closure-ledger.json) "
         "contains per-card SHA, review, full-source pointers, experiment records, project assessment coverage "
@@ -262,8 +293,15 @@ def report(v):
         f = r["evidence"][0]["path"]
         lines.append("| {} | {} | [review](../../{}) |".format(r["study_id"], r["verified_scope"], f))
     lines += [
-        "", "All {} ACCEPT_BOUNDED records refer only to explicitly measured narrow properties.".format(summ["terminal"]),
+        "", "All {} ACCEPT_BOUNDED records refer only to explicitly measured narrow properties.".format(summ["by_status"].get("ACCEPT_BOUNDED", 0)),
         "They do not endorse author-reported generalization, target-project benefit or deployment.",
+        "", "## Terminal source blocker (not a fictitious ACCEPT)", "",
+        "The [Hyperresearch source review](../../reviews/hyperresearch/2026-11-09-citation-adjudication.md) "
+        "documents original triage_pairs granting 48/60 unsafe auto-support outcomes on new synthetic "
+        "temporal/scope/authorization/conjunction claims. Source adoption is BLOCKED: CITATION_AUTO_PASS_FALSE_SUPPORT; "
+        "the exact-only comparator prevents these auto-passes at the cost of paraphrase abstention. "
+        "The source pin, alternatives and explicit unblock criterion are recorded per-card. "
+        "Unrelated storage/retrieval behavior is not rejected.",
         "", "## Unresolved evidence, not false closure", "",
         "{} source cards remain OPEN_EVIDENCE_ADJUDICATION, not REWORK-by-default, "
         "BLOCKED-without-a-real-obstacle or speculative ACCEPT.".format(summ["open"]),
@@ -273,10 +311,9 @@ def report(v):
         "The previous 83/83 coverage report established review-document provenance, not "
         "scientific validity; this ledger explicitly preserves that boundary.", "",
         "## Next finite gates", "",
-        "1. hyperresearch: independent adverse citation oracle; do not rerun unrelated 54 upstream passing tests.",
-        "2. Source availability: warp-skill-doctor, hyra-2, unreal-agent, sequential-diagnosis-language-models. "
+        "1. Source availability: warp-skill-doctor, hyra-2, unreal-agent, sequential-diagnosis-language-models. "
         "A BLOCKED result requires failed access attempts and an unblock criterion, not merely no local source.",
-        "3. Remaining full-primary cases: decide ACCEPT_RESEARCH_ONLY only after independent methodological "
+        "2. Remaining full-primary cases: decide ACCEPT_RESEARCH_ONLY only after independent methodological "
         "review; otherwise use a bounded oracle or documented obstacle. The linked existing experiments "
         "must be adjudicated before any new execution.",
         "", "No original study cards, generated source bodies, target project repositories, "

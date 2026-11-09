@@ -1,17 +1,18 @@
 {
   "date": "2026-11-09",
   "basis_repo": "Artemedi/research-hub",
-  "basis_entities_sha256": "da5b02ff1d775ecbb14fe0966a7ae6318c0f5151af515cf14c6f9307e3e019bc",
+  "basis_entities_sha256": "203e19c01230cf7a4b2b1720371e4495eb278f66b2fa951ab445dd791481a061",
   "prior_provenance_sha256": "170773f6f910fb647093b9f4bd10435615c7ca51dd1f8bc32eceac0939f8a293",
   "study_status_note": "Terminal acceptance is manually bounded, never inferred from upstream PASS or the existence of a document.",
   "project_status_note": "Unassessed is not NO_FIT; assessments refer to recorded project snapshots, not automatically current HEAD.",
   "summary": {
     "total": 83,
-    "terminal": 13,
-    "open": 70,
+    "terminal": 14,
+    "open": 69,
     "by_status": {
       "ACCEPT_BOUNDED": 13,
-      "OPEN_EVIDENCE_ADJUDICATION": 70
+      "BLOCKED": 1,
+      "OPEN_EVIDENCE_ADJUDICATION": 69
     },
     "explicit_project_pairs": 506,
     "unassessed_project_pairs": 3229
@@ -2273,7 +2274,19 @@
       "current_catalog_review_sha256": "b84b43194d165adddfbab1cc14f67f377d89ef851f3c4147f15fff23e092e0bf",
       "current_source_coverage_claim": "PARTIAL_SOURCE_REVIEW",
       "previous_full_primary_review_documents": [],
-      "existing_registered_experiments": [],
+      "existing_registered_experiments": [
+        {
+          "id": "hyperresearch-temporal-scope-holdout-20261109",
+          "result": "OBSERVED",
+          "scope": "84 examples from 12 authored synthetic source clauses, original pinned upstream triage_pairs. 48/60 unsupported auto-passed; exact-only 0/60; independent fixture and numerical oracle validated 84 records and detected 3 synthetic mutations.",
+          "artifacts": [
+            "experiments/hyperresearch/2026-11-09-temporal-scope-ab.py",
+            "experiments/hyperresearch/2026-11-09-temporal-scope-oracle.py",
+            "data/results/hyperresearch/2026-11-09-temporal-scope-ab.json",
+            "data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json"
+          ]
+        }
+      ],
       "explicit_project_assessments": 2,
       "project_assessment_decisions": {
         "DOCUMENTED_CANDIDATE": 2
@@ -2326,11 +2339,22 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Resolve documented false supported-mechanical citations on frozen hostile holdout; 54 upstream passing tests do not answer this failure."
+      "closure_status": "BLOCKED",
+      "verified_scope": "Automatic semantic citation acceptance via any six-word substring, pinned v0.13.0.",
+      "blocker": "CITATION_AUTO_PASS_FALSE_SUPPORT: original source auto-accepted 48/60 authored unsupported temporal/scope/authorization/conjunction claims; negative source safety finding, not a real-world prevalence estimate.",
+      "attempted_alternative": "Tested exact-only comparator: 0/60 unsupported auto-pass, but only 12/24 supported auto-pass, requiring external/manual verification of paraphrases. Full downstream LLM verification not exercised.",
+      "unblock_condition": "A new pinned upstream implementation must eliminate false auto-support on frozen hostile + independent natural held-out full-text claims and document exhaustive downstream coverage, positive paraphrase behavior, cost and target owner gate.",
+      "limits": "Blocked adoption of an unsafe automatic citation gate; other library components are not globally rejected.",
+      "evidence": [
+        {
+          "path": "reviews/hyperresearch/2026-11-09-citation-adjudication.md",
+          "sha256": "fd4e863cdfe6db2ecb5770f7666f4e4ad27d3a1c1f0b2352298cf46d5d4002ae"
+        },
+        {
+          "path": "data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json",
+          "sha256": "9a4774d9a4f0f640d27ead36875ef4b2c40329408e1e00ba099f828623c3a9ba"
+        }
+      ]
     },
     {
       "study_id": "hyra-2",
