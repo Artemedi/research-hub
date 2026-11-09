@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-09",
+  "environment": "Bazzite Linux rootless bwrap read-only original public blobs, no network, no production, no personal/project inputs",
+  "scope": "Six original pure helpers/hook contracts only, sourced from immutable public revision URLs; two identical replays per case.",
+  "records": [
+    {
+      "study": "julia-1",
+      "source_pin": "a85b127321d580d65176c89ced8273f305745d85",
+      "source_file_sha256": "2a0197d2e0fa5a3c4b06b93599a85706724df7b0d2cc821a13ed293aef59f206",
+      "fixture_path": "experiments/bk026-julia/display_fixture.py",
+      "fixture_sha256": "a47fc00b1b0a57bc1aeb829c65853e1435f972a4f9790a61c6ab05ee75ffc4e9",
+      "repetitions": [
+        {
+          "run": 0,
+          "exit": 0,
+          "stdout_sha256": "12198788f5e0e5cf0914f345a2c5ef144e20e9651793bef781f0397b6e4d5432",
+          "stdout_excerpt": "[0.955, 0.044, 0.001] -> [1.0, 0.0, 0.0]\n[0.951, 0.049] -> [0.951, 0.049]\n[0.6, 0.395, 0.005] -> [0.6030150753768844, 0.3969849246231156, 0.0]\n3/3 presentation fixtures passed; model inference NOT_RUN"
+        },
+        {
+          "run": 1,
+          "exit": 0,
+          "stdout_sha256": "12198788f5e0e5cf0914f345a2c5ef144e20e9651793bef781f0397b6e4d5432",
+          "stdout_excerpt": "[0.955, 0.044, 0.001] -> [1.0, 0.0, 0.0]\n[0.951, 0.049] -> [0.951, 0.049]\n[0.6, 0.395, 0.005] -> [0.6030150753768844, 0.3969849246231156, 0.0]\n3/3 presentation fixtures passed; model inference NOT_RUN"
+        }
+      ],
+      "passed": true,
+      "original_complete_suite_reexecuted": false
+    },
+    {
+      "study": "yahont-ce",
+      "source_pin": "367b48da9de2d296f905aca4bf0eb384043bf643",
+      "source_file_sha256": "511568e3cd0e6b45a81769699b40440b1f77276db26a919aff619977a8e6fea8",
+      "fixture_path": "experiments/bk053-yahont/id-fixture.py",
+      "fixture_sha256": "5e6ebaa271ce27dc4a358a573aa97ce2c902be03c47a45535a3b9132732375a9",
+      "repetitions": [
+        {
+          "run": 0,
+          "exit": 0,
+          "stdout_sha256": "e864473a889a183c7fff75cbc525fead587d5f2d74bfeb44028e32327f389986",
+          "stdout_excerpt": "a/b -> ab ; ab -> ab ; doc_1 -> doc_1"
+        },
+        {
+          "run": 1,
+          "exit": 0,
+          "stdout_sha256": "e864473a889a183c7fff75cbc525fead587d5f2d74bfeb44028e32327f389986",
+          "stdout_excerpt": "a/b -> ab ; ab -> ab ; doc_1 -> doc_1"
+        }
+      ],
+      "passed": true,
+      "original_complete_suite_reexecuted": false
+    },
+    {
+      "study": "warp-skill-doctor",
+      "source_pin": "8792394ff1b655e0af451b8fabb68ef0cfcbd208",
+      "source_file_sha256": "c74dabd95dad57421177fa9ead27882a571e7fe24d26eafbbafad1974c019658",
+      "fixture_path": "experiments/bk019-skill-doctor/attribution-fixture.py",
+      "fixture_sha256": "95fdedcaca319dc1b753f0f5cdb1cb722deae81449a5adc316fc453475bf26e7",
+      "repetitions": [
+        {
+          "run": 0,
+          "exit": 0,
+          "stdout_sha256": "b46a21c122c82f2a89aa825ef3502b2ad061c9fca828d1f98d81d7ee6e8b992b",
+          "stdout_excerpt": "own_child: True\nunrelated_same_name: True\nunrelated_other_name: False\nresult: unrelated same-name path is accepted by fallback"
+        },
+        {
+          "run": 1,
+          "exit": 0,
+          "stdout_sha256": "b46a21c122c82f2a89aa825ef3502b2ad061c9fca828d1f98d81d7ee6e8b992b",
+          "stdout_excerpt": "own_child: True\nunrelated_same_name: True\nunrelated_other_name: False\nresult: unrelated same-name path is accepted by fallback"
+        }
+      ],
+      "passed": true,
+      "original_complete_suite_reexecuted": false
+    },
+    {
+      "study": "microsoft-skill-recorder",
+      "source_pin": "505c97ae47be5642c0e1b44ebb8d1c1530c298fa",
+      "source_file_sha256": "318b34ad298e73f683a1f1b55b87d8d830158209826cb3eed8c38116156154d9",
+      "fixture_path": "experiments/bk022-skill-recorder/pii-fixture.mjs",
+      "fixture_sha256": "cd3c13e0c32a1894860df0e8ee2e930379668f7851a85cb17511cc7295818759",
+      "repetitions": [
+        {
+          "run": 0,
+          "exit": 0,
+          "stdout_sha256": "017ea50bda4777de2090fa9c264b9e9a132c567afb0e1044ea7fec4505494d0f",
+          "stdout_excerpt": "synthetic_email [\"email\"]\nsynthetic_medical []\nclean []"
+        },
+        {
+          "run": 1,
+          "exit": 0,
+          "stdout_sha256": "017ea50bda4777de2090fa9c264b9e9a132c567afb0e1044ea7fec4505494d0f",
+          "stdout_excerpt": "synthetic_email [\"email\"]\nsynthetic_medical []\nclean []"
+        }
+      ],
+      "passed": true,
+      "original_complete_suite_reexecuted": false
+    },
+    {
+      "study": "local-knowledge-graph",
+      "source_pin": "58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+      "source_file_sha256": "a4faedce7752c4f192d7bc06d727e1fe272da90986fc6fc2e9055c865f6f8f75",
+      "fixture_path": "experiments/bk024-local-knowledge-graph/paths-fixture.py",
+      "fixture_sha256": "4b2c4d36ed6d9952ff5b05c03e86b63ed195965f8164c6f2b6140087a76619a3",
+      "repetitions": [
+        {
+          "run": 0,
+          "exit": 0,
+          "stdout_sha256": "705c0d483aa62c9969f7a15a2b23684ab18c64cab46f89a642fdbfbde610f270",
+          "stdout_excerpt": "path: ['1', '3', '2', '4'] directed_edges_only: False\nselected: ['1', '4'] product: 0.8 mean: 0.8\nalternative product: 0.729 mean: 0.9"
+        },
+        {
+          "run": 1,
+          "exit": 0,
+          "stdout_sha256": "705c0d483aa62c9969f7a15a2b23684ab18c64cab46f89a642fdbfbde610f270",
+          "stdout_excerpt": "path: ['1', '3', '2', '4'] directed_edges_only: False\nselected: ['1', '4'] product: 0.8 mean: 0.8\nalternative product: 0.729 mean: 0.9"
+        }
+      ],
+      "passed": true,
+      "original_complete_suite_reexecuted": false
+    },
+    {
+      "study": "open-steps",
+      "source_pin": "4fa744ba8ea06ccf128a39853824c46ac391dd00",
+      "source_file_sha256": "0433d8ed704260668a3974c6c9eee85949fef3feb01b0b17a2813b62f4f8bb0b",
+      "fixture_path": "experiments/bk006-open-steps/fingerprint-fixture.sh",
+      "fixture_sha256": "1331db63a1223a8759760368fcf786467bb8f3a68bb9aaf4afebcce51fb2db61",
+      "repetitions": [
+        {
+          "run": 0,
+          "exit": 0,
+          "stdout_sha256": "614a0a879886df69572f52766aab7994d5ace79778a568213de20a935d224445",
+          "stdout_excerpt": "untracked content changed: yes\nstop after untracked edit: 0\nstop after tracked edit: 2\nfixture result: reproduced (limited scope)"
+        },
+        {
+          "run": 1,
+          "exit": 0,
+          "stdout_sha256": "614a0a879886df69572f52766aab7994d5ace79778a568213de20a935d224445",
+          "stdout_excerpt": "untracked content changed: yes\nstop after untracked edit: 0\nstop after tracked edit: 2\nfixture result: reproduced (limited scope)"
+        }
+      ],
+      "passed": true,
+      "original_complete_suite_reexecuted": false
+    }
+  ],
+  "status": "PASS_BOUNDED",
+  "limitations": [
+    "Pinned file SHA proves exact downloaded bytes used, but source retrieval itself was separate and not authenticated against a signed upstream release.",
+    "No original full upstream test suite rerun, no consumer integration, no production service.",
+    "All input paths, decisions and outputs are synthetic.",
+    "No real privacy leak, unauthorized filesystem effect, model accuracy or search-system impact demonstrated."
+  ]
+}

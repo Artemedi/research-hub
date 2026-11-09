@@ -1,0 +1,24 @@
+{
+  "studies": 83,
+  "evidence_refs_sha_verified": 159,
+  "full_primary_source_method_reviews_prior": 37,
+  "original_pinned_source_helper_rechecks": 6,
+  "status_counts": {
+    "ACCEPT_BOUNDED": 40,
+    "ACCEPT_RESEARCH_ONLY": 39,
+    "BLOCKED": 2,
+    "NO_FIT": 2
+  },
+  "status": "PASS_STRUCTURAL_EVIDENCE_ONLY",
+  "input_sha256": "bb10d7f88d5b40aa1f7e367378b2d3fa5be1a786fff05da79144d495f06262df",
+  "mutations_injected": 6,
+  "mutations_rejected": 6,
+  "scope": "Independent file-hash and disposition contract verification, NOT independent re-analysis of paper outcomes, author-reported statistics or medical truth.",
+  "limitations": [
+    "Source-level experiments remain bounded and are supported by their original dated reviews and original-source fixtures.",
+    "Scientific content of research-only reviews was previously read by the reviewing agents, not re-downloaded and empirically replicated here.",
+    "Two original PostgreSQL/MCP lab reports lack retained raw JSON receipts; they are explicitly distinguished and cannot be treated as freshly reproduced.",
+    "The 45-profile NO_FIT is current registered portfolio only and not a source audit of every implementation.",
+    "Project integration needs separate user permission, held-out tests and privacy review."
+  ]
+}

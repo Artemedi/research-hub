@@ -2366,6 +2366,48 @@
       "title": "Hyperresearch — independent oracle and negative controls",
       "kind": "data",
       "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-kv-backend-profile-gate.py",
+      "title": "Current portfolio physical KV backend profile gate",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
+      "title": "45-private-profile KV backend absence check — aggregate only",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-residual-engineering-oracle.py",
+      "title": "Six pinned public source helper replays in a no-network sandbox",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+      "title": "Six pinned helper replay receipts and original source SHA-256",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-ledger-independent-check.py",
+      "title": "Independent 83-card closure contract and mutation verifier",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-ledger-independent-check.json",
+      "title": "83-card independent hash audit and six negative mutations",
+      "kind": "data",
+      "date": "2026-11-09"
     }
   ]
 }

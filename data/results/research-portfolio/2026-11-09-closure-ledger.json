@@ -7,12 +7,13 @@
   "project_status_note": "Unassessed is not NO_FIT; assessments refer to recorded project snapshots, not automatically current HEAD.",
   "summary": {
     "total": 83,
-    "terminal": 25,
-    "open": 58,
+    "terminal": 83,
+    "open": 0,
     "by_status": {
-      "ACCEPT_BOUNDED": 24,
-      "BLOCKED": 1,
-      "OPEN_EVIDENCE_ADJUDICATION": 58
+      "ACCEPT_BOUNDED": 40,
+      "ACCEPT_RESEARCH_ONLY": 39,
+      "BLOCKED": 2,
+      "NO_FIT": 2
     },
     "explicit_project_pairs": 506,
     "unassessed_project_pairs": 3229
@@ -292,11 +293,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Signed, durable cross-domain agent address/envelope and delayed-verification queue as a transport design to test.",
+      "limits": "Small 5/5 synthetic travel prototype, in-memory same-host +2.7 ms latency only; no deployed cross-org keys, revoke or retention proof.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/agent-transfer-protocol.md",
+          "sha256": "14dd3585b4fb5f54d5cdba1087a00728ff907c90526373a4eef85695421af2bf"
+        }
+      ]
     },
     {
       "study_id": "agentic-self-awareness",
@@ -364,11 +374,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Paired feasible versus blocked-task oracle must score correct action, refusal and changed-evidence re-evaluation separately.",
+      "limits": "93.8% reported search-set strict SA is NOT held-out; feasible Retail solves fell to 9/32 under SA-only optimization, not proof of model introspection.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/agentic-self-awareness.md",
+          "sha256": "fdbb32eb12228e15e502af062c97d6d6ee0d592649e199e31b7e4fe1ac87a66a"
+        }
+      ]
     },
     {
       "study_id": "alphaxiv-openresearch",
@@ -529,11 +548,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Per-source bookmarks, overlap, durable result-ledger and ambiguous-post state form a practical scheduled-agent design reference.",
+      "limits": "Example policy/text is not atomic Slack+bookmark exactly-once; no live managed agent, distributed lock or user content policy tested.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/anthropic-agent-automations.md",
+          "sha256": "8d7d35b01ccbb24c8c0e7026b4c86bb027b0b4e447effd86d21be2b1f3ac80a8"
+        },
+        {
+          "path": "reviews/anthropic-agent-automations/2026-11-04.md",
+          "sha256": "3d9d2b5658db0474edab566997a60ed0a4c4cd39552c7cc9998e60b63910c4a4"
+        }
+      ]
     },
     {
       "study_id": "behavior-beyond-text",
@@ -601,11 +633,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Tool-attempt and realized side-effect oracles are separate from harmless-looking refusal text.",
+      "limits": "2304 matched synthetic prompts and five open-weight models; unsafe attempted tool call is not verified side effect or a defect in our permission boundary.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/behavior-beyond-text.md",
+          "sha256": "0289c2eb60e648f479c17ac79c787c19f80e0a204e36c7e5e98c2014ca0ee539"
+        }
+      ]
     },
     {
       "study_id": "benchshield",
@@ -673,11 +714,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Independent synthetic reward-lifecycle monitor on 100 constructed cases: 30 VIOLATION, 30 CLEAR, 40 ABSTAIN and tampered-log controls.",
+      "limits": "Original BenchShield instrumentation not run; constructed labels, no security or DSH production effectiveness proof.",
+      "evidence": [
+        {
+          "path": "reviews/benchshield/2026-11-04.md",
+          "sha256": "94b18174d1c70086f4fc98141bf851c35b61530ccd335509192563bec967dc13"
+        },
+        {
+          "path": "data/results/benchshield/2026-11-04.json",
+          "sha256": "c3b1eea3f889fdde28ffa51c27ff4f1aee6871b04781f98ae701e2d7e439ebc8"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "bird-rl",
@@ -745,11 +795,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Trajectory-scoped database state and final-state isolation should be part of SQL-agent evaluation and training.",
+      "limits": "Author 7B/14B gains measured against SQLite BIRD-CRITIC; state cloning, WAL/locking/IO differ radically for PostgreSQL and MSSQL.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/bird-rl.md",
+          "sha256": "b971cf8feb49f9e533b82d77a489cd92ca828c0dbbc1adcb9793cb570f06f9ca"
+        }
+      ]
     },
     {
       "study_id": "cera-moa",
@@ -947,11 +1006,22 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "BLOCKED",
+      "verified_scope": "Unsafe worker retry/completion decision in pinned original upstream WorktreeManager/WorkerManager.",
+      "blocker": "WORKTREE_DATA_LOSS_AND_FALSE_COMPLETION: original built managers reproduced destructive same-feature retry, trusting unverified .done and bypassPermissions as default.",
+      "attempted_alternative": "A separate test-only repaired copy passed 19/19 simulated cases (portfolio/2026-11-07/claude-swarm-repair-ab.md); not a merged upstream security fix or safe production permission boundary.",
+      "unblock_condition": "Pinned upstream must refuse dirty/active worktree destructive retry; gate completion on verified exit + source artifacts; remove bypassPermissions as implicit default; independently rerun negative controls and race/restart tests before scoped user approval.",
+      "limits": "Terminal rejection of the particular proved unsafe original-source behavior; other library components have not been globally rejected.",
+      "evidence": [
+        {
+          "path": "portfolio/2026-11-07/claude-swarm-failure-injection.md",
+          "sha256": "1b510cd218e8ac5bed53fc503258161c9db21280efbb020444b4c430cbcd1654"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json",
+          "sha256": "55c5ca2fec340f1106686a7241be6fa4884da2e3e79ececc4680f5a3adaed3d9"
+        }
+      ]
     },
     {
       "study_id": "concordat",
@@ -1019,11 +1089,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Typestate/session protocol prevents out-of-state tool operations in a finite workflow before side effects.",
+      "limits": "Approval was itself keyword 'yes' based; zero author-recorded violations cannot establish genuine owner consent or open-ended task safety.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/concordat.md",
+          "sha256": "ed0df4b4e0246a6a734a88eedc919ddf4b3e92d4c381cd1e491bbb4dc71e73ad"
+        }
+      ]
     },
     {
       "study_id": "covert-assistance",
@@ -1091,11 +1170,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Separate planner/developer/monitor permissions and validate actual effects rather than prompt-only warnings for covert delegation.",
+      "limits": "6000 sandbox episodes and a separate matched 300-episode experiment are author-reported; models/secrets artificial, no current-agent failure established.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/covert-assistance.md",
+          "sha256": "e004b78ddbd5516a1920f310e23b7c6804aa18b84f9db740aa590150780b3573"
+        },
+        {
+          "path": "reviews/covert-assistance/2026-11-05-full-text.md",
+          "sha256": "0d74e83a808ce1f1048c4f6ba8f8425e63b9f85a1f9acf3d9bccc640ff2f3e7d"
+        }
+      ]
     },
     {
       "study_id": "cursor-token-efficiency",
@@ -1258,11 +1350,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Host/loopback headers must not substitute authenticated control-plane authority; use only as defensive regression threat model.",
+      "limits": "OX-authored original security disclosure, not independent exploit reproduction or proof any current user's deployed version is vulnerable.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/cve-2026-82533-technical-disclosure.md",
+          "sha256": "60cafd4bc481934cfb144e77821b7975d9f27faefb6a6e12d5644b9b1152abd8"
+        }
+      ]
     },
     {
       "study_id": "daedalus",
@@ -1331,11 +1432,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Procedural memory earned from resettable exercises and frozen before inference is a testable learning design.",
+      "limits": "Self-defined exercise success judged by LLM, not external oracle; the 3-success acceptance rule and API cost assume particular caching.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/daedalus.md",
+          "sha256": "bb8db77dc0cefc69f00c62e4ec98dc5b3ef0134176221d1b61c5ae2abb643b02"
+        }
+      ]
     },
     {
       "study_id": "decision-geometry-harness",
@@ -1403,11 +1513,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned DSH serializer schema-order paired provider tool-choice proxy: independent wire oracle 48/48 paired outcomes, mutation controls; native tool-use has a malformed/failed variant.",
+      "limits": "Not original decision geometry paper replication or native DSH runtime/tool execution. Factorial effects, real workflow outcomes and provider equality not established.",
+      "evidence": [
+        {
+          "path": "reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md",
+          "sha256": "d2aecb9dd92893a9e03f4ef6d590afdfb49afe2b9cda2be16e4f2532c723a826"
+        },
+        {
+          "path": "data/results/decision-geometry-harness/2026-11-07-schema-ab-oracle.json",
+          "sha256": "9064e1e03835116bf2c092e6c17f747c9fc859a68515ce17b3b33132fb81fb2a"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "drag",
@@ -1645,11 +1764,20 @@
       "unassessed_project_ids": [],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned original in-memory core passed 15/15 isolated Ticket/Mandate/lifecycle contract cases and one independently introduced revoked-mandate mutant failed.",
+      "limits": "Core only, fake Policy/Executor/Outbox; settingsPolicy, account adapters, full test suite and full-access permissions not safety validated.",
+      "evidence": [
+        {
+          "path": "reviews/dsh-superagent-prototype/2026-11-05.md",
+          "sha256": "e6ba8b5f132c3db16f1586c9bf4831a89da66e053674b8670b60a5c75199b6dd"
+        },
+        {
+          "path": "data/results/dsh-superagent-prototype/2026-11-05.json",
+          "sha256": "8dc1598f431af178942de183e9966dfd4e956c327c5c27a9cb7ebe98384eff81"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "exactly-once-limbo",
@@ -1819,11 +1947,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Independent Git SHA/href/source-pointer audit: 33/33 explicit related-review navigation cases, corrupt hash rejected; hit@5 baseline 32/33 vs link-augmented 33/33.",
+      "limits": "Only literal link provenance and membership checked; no original ExperienceIndex method, BM25 ranking oracle or semantic relevance benchmark reproduced.",
+      "evidence": [
+        {
+          "path": "reviews/experienceindex/2026-11-07.md",
+          "sha256": "d0354bcd7d645441f87d9f7524e5d570fe9307f409bcde8f69333d5a11c2a0ba"
+        },
+        {
+          "path": "data/results/experienceindex/2026-11-07-link-oracle.json",
+          "sha256": "d9861a9687a06cb999f74b16bb306aabf61331112c02818ee4f6ba8f325afa61"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "geoagent",
@@ -1891,11 +2028,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Artifact-named stage contracts and deterministic output-geometry invariants provide a workflow-evidence design reference.",
+      "limits": "Single seismic 2-D data pipeline with niche Madagascar tooling; 6–11 min is not comparative agent/SWE/SQL success.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/geoagent.md",
+          "sha256": "97aa564539b6847ecce8461539a3e702d545c23a9bd60067b110adbc1d1a0e83"
+        }
+      ]
     },
     {
       "study_id": "goal-aware-dynamic-collaboration",
@@ -1963,11 +2109,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "35 pinned DSH task-graph validator cases and 35 external guarded synthetic cases matched separately encoded oracle, 70/70; mutant refused.",
+      "limits": "This is a DSH structural DAG guard, not the authors' GAD multi-agent planner or claimed task success; LLM workers not run.",
+      "evidence": [
+        {
+          "path": "reviews/goal-aware-dynamic-collaboration/2026-11-07.md",
+          "sha256": "9bf328ccac726d21247b9899a9ecb7730ece2d8238e6bda6d89fa7d26a56285c"
+        },
+        {
+          "path": "data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json",
+          "sha256": "bc06e6d943875e6795858678417751720b68e8c736d777874291275dc51cb22e"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "gpt6-astra-skills-prompts",
@@ -2224,11 +2379,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Dual oracles for legitimate task utility and prohibited effect are a useful test-design instrument for agent harnesses.",
+      "limits": "Author 23 custom tasks/six harnesses, Docker/tool mock and model reviewer; listed DSH in 40-harness inventory is NOT proof current vulnerability.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/harnesssecurity-bench.md",
+          "sha256": "8e83cb65225cece70a05fc08ca8f6c3057564b5ed785d94060f6b52674772ca7"
+        }
+      ]
     },
     {
       "study_id": "htn-orchestrate",
@@ -2407,7 +2571,7 @@
       "blocker": "CITATION_AUTO_PASS_FALSE_SUPPORT: original source auto-accepted 48/60 authored unsupported temporal/scope/authorization/conjunction claims; negative source safety finding, not a real-world prevalence estimate.",
       "attempted_alternative": "Tested exact-only comparator: 0/60 unsupported auto-pass, but only 12/24 supported auto-pass, requiring external/manual verification of paraphrases. Full downstream LLM verification not exercised.",
       "unblock_condition": "A new pinned upstream implementation must eliminate false auto-support on frozen hostile + independent natural held-out full-text claims and document exhaustive downstream coverage, positive paraphrase behavior, cost and target owner gate.",
-      "limits": "Blocked adoption of an unsafe automatic citation gate; other library components are not globally rejected.",
+      "limits": "Terminal rejection of the particular proved unsafe original-source behavior; other library components have not been globally rejected.",
       "evidence": [
         {
           "path": "reviews/hyperresearch/2026-11-09-citation-adjudication.md",
@@ -2444,11 +2608,24 @@
       "unassessed_project_ids": [],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Check available engineering article versus unavailable backend/model internals; record the precise source boundary."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Observation versus independently verified finding versus human-approved convention should be separate promotion states.",
+      "limits": "Full official 34k-character engineering article and results repo read, but no scheduler/model source, exact enforcement, replay or comparable A/B available.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/hyra-2.md",
+          "sha256": "f3d6888bbeb1116abe0d25b43c2090423e47fbca5b2e77ebdd7be1e13fe2a556"
+        },
+        {
+          "path": "reviews/hyra-2/2026-11-05.md",
+          "sha256": "f56deeff0daa9b985531798527cbeb8d04b38ba5b7d005ee252aeca48fb5a4e7"
+        }
+      ]
     },
     {
       "study_id": "inspektor-gadget",
@@ -2608,11 +2785,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Original compiled fireperf 0.3.0 inside offline rootless Podman completed 12 isolated loopback runs, 240/240 connections; refused-port control detected.",
+      "limits": "make check stopped after 23 PASS/1 SKIP; auto selected epoll, not io_uring. No WAN/firewall throughput, CPU-efficiency or DBA/SAN measurements.",
+      "evidence": [
+        {
+          "path": "reviews/ipfire-fireperf/2026-11-04.md",
+          "sha256": "44887954098d7edf10c15a91a82d3d3491d9641e18dbb2022a1d75d570da754f"
+        },
+        {
+          "path": "data/results/ipfire-fireperf/2026-11-04.json",
+          "sha256": "e8c0456e058ae0fcb1e989b5615665c5fa0927a8c1288a80ebced2cb7e093359"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "jevagentharness",
@@ -2682,11 +2868,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Calibrated task-state decision routing must be judged on whole agent task outcomes, not isolated multiple-choice accuracy.",
+      "limits": "Author English-agent/Gemini-biased tasks and threshold tuning; small-model GPU serving, non-inferiority margin and total cost not remeasured.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/jevagentharness.md",
+          "sha256": "834d7f52d226e8e5e2cde8fec74bfcef0b3d4ae78ff2dbf2be7ba97787a0765f"
+        },
+        {
+          "path": "portfolio/2026-10-12--2026-10-19/review.md",
+          "sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181"
+        }
+      ]
     },
     {
       "study_id": "julia-1",
@@ -2753,11 +2952,26 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Original Julia-1 display_probabilities on three authored positive/negative vectors, including .95 saturation and pruning.",
+      "limits": "Model weights, tensor routing and probability calibration not evaluated; no model inference.",
+      "evidence_tier": "TWO_PINNED_PUBLIC_SOURCE_REPLAYS_WITH_INDEPENDENT_ORIGINAL_FIXTURE_SHA",
+      "independently_reexecuted_this_pass": true,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/julia-1/2026-11-04.md",
+          "sha256": "6b70681e68043d629e3465a77adcec49c9c43f0153aa4447da8f820bd8cf8939"
+        },
+        {
+          "path": "experiments/bk026-julia/display_fixture.py",
+          "sha256": "a47fc00b1b0a57bc1aeb829c65853e1435f972a4f9790a61c6ab05ee75ffc4e9"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+          "sha256": "8577df64b462ea8d2c4921928f14fb55a86c57a9f3f76a2429182106d31273c3"
+        }
+      ]
     },
     {
       "study_id": "karpathy-autoresearch",
@@ -2915,11 +3129,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Mattson stack-distance and Fenwick LRU working-set estimation are a research reference for physical KV capacity planning.",
+      "limits": "9-page primary PDF and author 10k/24k private serving traces, no target token-ID trace or original runtime calibration reproduced.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/kvset.md",
+          "sha256": "f97bbe709be3854c65be0b109153b336a6c54d9eb469e12307e473f5eebcc849"
+        },
+        {
+          "path": "reviews/kvset/2026-11-05-full-text.md",
+          "sha256": "334a459174c7dbc114e9961b17c5db6c143a3d2724e5c7d4b54ebd9a9eb66374"
+        }
+      ]
     },
     {
       "study_id": "kvtether",
@@ -2988,11 +3215,21 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "NO_FIT",
+      "verified_scope": "CURRENT_REGISTERED_PROJECT_PORTFOLIO_ONLY",
+      "decision": "A message-lifecycle-aware KV eviction manager requires serving backend hooks, original KV pool and worker lifecycle signals; no registered current project documents both a compatible serving runtime and control seam.",
+      "reopen_condition": "New authorized project with source-verified KV lifecycle/eviction hooks, compatible model/runtime and an owner-approved measured lab, not generic mention of LLM, embeddings or context compression.",
+      "limits": "Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.",
+      "evidence": [
+        {
+          "path": "reviews/kvtether/2026-11-05-full-text.md",
+          "sha256": "84a25ba09b3c18da474ac34f41d38bf30c4f70877af3f31ba509737533b78aa0"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
+          "sha256": "4fc3d1bb10a45cf585c05868f5e6c013dbc4c70af99775aef6af1ec758d2f104"
+        }
+      ]
     },
     {
       "study_id": "lago",
@@ -3060,11 +3297,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Compare agent subtask reuse using an identical matched set of tasks and a frozen model budget, not an absolute single-method score.",
+      "limits": "500-task absolute SWE score and 150 matched comparison have different denominators; model judge and runtime reuse not reproduced.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/lago.md",
+          "sha256": "07464fd5b69a5dc07561ea51848062581aab4ce9a8a57306326eef7ed0ed5bdf"
+        },
+        {
+          "path": "portfolio/2026-10-12--2026-10-19/review.md",
+          "sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181"
+        }
+      ]
     },
     {
       "study_id": "local-knowledge-graph",
@@ -3132,11 +3382,26 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Original strongest_path in synthetic directed graph selects reverse traversal 3→2; max-product path differs from highest geometric-mean path.",
+      "limits": "No full model reasoning, real embedding corpus or graph retrieval; 21 upstream tests from earlier review not rerun.",
+      "evidence_tier": "TWO_PINNED_PUBLIC_SOURCE_REPLAYS_WITH_INDEPENDENT_ORIGINAL_FIXTURE_SHA",
+      "independently_reexecuted_this_pass": true,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/local-knowledge-graph/2026-11-04.md",
+          "sha256": "0811931cf330a5b59637147024897ea7855e45caabf40c2750e2e7b86cda636d"
+        },
+        {
+          "path": "experiments/bk024-local-knowledge-graph/paths-fixture.py",
+          "sha256": "4b2c4d36ed6d9952ff5b05c03e86b63ed195965f8164c6f2b6140087a76619a3"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+          "sha256": "8577df64b462ea8d2c4921928f14fb55a86c57a9f3f76a2429182106d31273c3"
+        }
+      ]
     },
     {
       "study_id": "maadbench",
@@ -3204,11 +3469,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Separate first-fault localization, propagation and final task outcome when evaluating agent anomaly detectors.",
+      "limits": "Author 5200 labeled traces and supervised AUROC are from constructed agent workflows; no transfer/false-alarm claim for current runtime.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/maadbench.md",
+          "sha256": "fa23969989c314881fac822c34a903806fd05a4c288ec655cf4fe1cd6cf49c84"
+        },
+        {
+          "path": "reviews/maadbench/2026-11-05-full-text.md",
+          "sha256": "f54ee44daf0f779647b0427c2d58795f7b718f199b256d882b8f1c5f2fe2788f"
+        }
+      ]
     },
     {
       "study_id": "matoi",
@@ -3276,11 +3554,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Consequence prediction, current grant/authority and durable occurrence must remain distinct at each tool boundary.",
+      "limits": "Preprint's 144 synthetic authored inputs/1440 cells and small cost gains have uncertain intervals; no arbitrary remote side effects or full mediation.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/matoi.md",
+          "sha256": "032c6865c18a869f7e5b2f066a09dae126009161d681a0a1d5a85e48f86c4bf3"
+        },
+        {
+          "path": "portfolio/2026-10-12--2026-10-19/review.md",
+          "sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181"
+        }
+      ]
     },
     {
       "study_id": "mcp-toolbox-postgres",
@@ -3348,11 +3639,22 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Previously recorded original MCP Toolbox 1.15.0 versus Wiki_PG stdio lab: 80/80 GUC calls for each, four independent pg_settings SQL values, stale/live divergence, bind-param negative control.",
+      "limits": "Original test report and reproducible script only: ephemeral PostgreSQL JSON receipts not retained, experiment NOT rerun this pass; no live target SQL integration.",
+      "evidence_tier": "HISTORIC_ORIGINAL_LAB_DOCUMENTED_ONLY_WITHOUT_RETAINED_RAW_RECEIPTS",
+      "independently_reexecuted_this_pass": false,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/mcp-toolbox-postgres/2026-11-04.md",
+          "sha256": "4536a552e8d95e0dab5724ff8222160a635f4404af8a9ba1bba5da175a69bba5"
+        },
+        {
+          "path": "experiments/2026-11-04-mcp-toolbox-wikipg-compare.py",
+          "sha256": "7ec0cf58342282675f70d104b6c85f94c7cda12d0d0efd85cd89054a74c4e592"
+        }
+      ]
     },
     {
       "study_id": "memcomposer",
@@ -3421,11 +3723,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Memory retrieval composition and ordering should be evaluated on complete task success under frozen memory banks.",
+      "limits": "Author GRPO and specific τ²-bench setups; shared static banks and retriever, costs of training/indexing and target utility unreplicated.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/memcomposer.md",
+          "sha256": "43d616d1ae26d5717383573a10940ea15482b1e2c310263e5b2fecdf616ba135"
+        },
+        {
+          "path": "portfolio/2026-10-12--2026-10-19/review.md",
+          "sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181"
+        }
+      ]
     },
     {
       "study_id": "memory-centric-continual-learning",
@@ -3493,11 +3808,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Outcome-based tests should distinguish memory retention, changed-fact adaptation and transfer, not retrieval recall alone.",
+      "limits": "Conceptual taxonomy/survey rather than a new controlled production benchmark; no demonstrated universal memory-policy advantage.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/memory-centric-continual-learning.md",
+          "sha256": "51c3d35d27d650646b9f2ded950d97de13b56fc0c2fa357a04d299458e653297"
+        },
+        {
+          "path": "portfolio/2026-10-20--2026-10-26/review.md",
+          "sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94"
+        }
+      ]
     },
     {
       "study_id": "memscope",
@@ -3566,11 +3894,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Use raw tool traces, current memory state and provider code to localize a memory repair in a reproducible isolated trial.",
+      "limits": "Author paired xBench/GAIA/ALFWorld with LLM judge and only 14 archived transitions; live self-modifying production memory unsafe.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/memscope.md",
+          "sha256": "dc34f7e08bd01e2dd0e3b89f9e8af2ad46bb0590a029a05c292a7a1f2b3b82a2"
+        },
+        {
+          "path": "portfolio/2026-10-12--2026-10-19/review.md",
+          "sha256": "04675a9e566a9d8c43ee2331030e87bd6e4e51d56c1c444855f5a723fad5b181"
+        }
+      ]
     },
     {
       "study_id": "microsoft-skill-recorder",
@@ -3636,11 +3977,26 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned original scanStructuredPii detects synthetic email but not semantic Russian medical text; neutral case remains clean.",
+      "limits": "This only tests structured-PII detector, not OCR, full pre-send scan or Copilot egress; unrelated fail-open source branch remains a privacy concern.",
+      "evidence_tier": "TWO_PINNED_PUBLIC_SOURCE_REPLAYS_WITH_INDEPENDENT_ORIGINAL_FIXTURE_SHA",
+      "independently_reexecuted_this_pass": true,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/microsoft-skill-recorder/2026-11-04.md",
+          "sha256": "c25d83013c8c1692b1bf58b0d309690038311da0b9d5e4d7481516ceb8220888"
+        },
+        {
+          "path": "experiments/bk022-skill-recorder/pii-fixture.mjs",
+          "sha256": "cd3c13e0c32a1894860df0e8ee2e930379668f7851a85cb17511cc7295818759"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+          "sha256": "8577df64b462ea8d2c4921928f14fb55a86c57a9f3f76a2429182106d31273c3"
+        }
+      ]
     },
     {
       "study_id": "novafabric",
@@ -3708,11 +4064,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned original NovaFabric forensic tool mock replay 20/20 with 40 captured calls, isolated byte-identical outputs, 48 independently checked artifacts and tampering controls.",
+      "limits": "Only explicit @record.tool interception; uninstrumented side effects remain live; untrusted signer identity and unsigned extra files not globally prevented.",
+      "evidence": [
+        {
+          "path": "reviews/novafabric/2026-11-04.md",
+          "sha256": "4c2e75af439f9bfde75ba4481e85eebd3158c595ec3d9aea0d670536c58d942a"
+        },
+        {
+          "path": "data/results/novafabric/2026-11-04.json",
+          "sha256": "db41d659b7cebb6bc3d0de25ebdb9e13ac07746b16df4e333b349dabbafbf73f"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     },
     {
       "study_id": "open-steps",
@@ -3778,11 +4143,26 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned original start/stop hooks miss content-only edit of untracked file (stop 0) but detect edited tracked file (stop 2).",
+      "limits": "One synthetic Git repo and hook pair; no real agents, multi-session race or baseline quality comparison.",
+      "evidence_tier": "TWO_PINNED_PUBLIC_SOURCE_REPLAYS_WITH_INDEPENDENT_ORIGINAL_FIXTURE_SHA",
+      "independently_reexecuted_this_pass": true,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/open-steps/2026-11-04.md",
+          "sha256": "ca1401363c88df2044af73625ffb3be3ca896891b46f6a667ba3eec8a79963b2"
+        },
+        {
+          "path": "experiments/bk006-open-steps/fingerprint-fixture.sh",
+          "sha256": "1331db63a1223a8759760368fcf786467bb8f3a68bb9aaf4afebcce51fb2db61"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+          "sha256": "8577df64b462ea8d2c4921928f14fb55a86c57a9f3f76a2429182106d31273c3"
+        }
+      ]
     },
     {
       "study_id": "package-hallucination-rule-files",
@@ -3850,11 +4230,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Treat repository rule files as untrusted for dependency approval; compare package/lockfile diffs to owner policy.",
+      "limits": "Five selected packages and autonomous no-human-approval benchmark; attack-substitution frequencies not a universal compromise rate.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/package-hallucination-rule-files.md",
+          "sha256": "b0bf2ab61a6b0f2d240b532e184ceeedac4bc30dab7c0eedc8e6effeac7a70cc"
+        },
+        {
+          "path": "portfolio/2026-10-06--2026-10-12/review.md",
+          "sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b"
+        }
+      ]
     },
     {
       "study_id": "paper2agent",
@@ -3923,11 +4316,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Source-to-tool research pipeline requires executable reference-code fixtures, exact reproduction checks and separate licensing.",
+      "limits": "Nature HTML Methods/Discussion read, supplementary PDF not separately analyzed; 74/100 paper agentification and 593/599 validated tools remain author-reported.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/paper2agent.md",
+          "sha256": "4023c7bcaf5155cc4057e2b17b98546675a29c289376e9702e6315222a9ca9fb"
+        },
+        {
+          "path": "reviews/paper2agent/2026-11-05-full-text.md",
+          "sha256": "c7c0e7181e14921aa03f17ef76e25b613860cecfe3a59790b7c616810bea161c"
+        }
+      ]
     },
     {
       "study_id": "pgbot",
@@ -3993,11 +4399,22 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Previously recorded original pgbot 0.9.0 disposable PG 18.3 test: 15k dead tuples, one blocked transaction, recovered vacuum and no-monitor partial-stat marker; 4 schema states validated.",
+      "limits": "Original lab report and verifier only: four generated JSON snapshots not retained, NOT rerun here. No PostgreSQL 15, production DBA accuracy or p95 claims.",
+      "evidence_tier": "HISTORIC_ORIGINAL_LAB_DOCUMENTED_ONLY_WITHOUT_RETAINED_RAW_RECEIPTS",
+      "independently_reexecuted_this_pass": false,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/pgbot/2026-11-04.md",
+          "sha256": "a93921f62f8f26d5b3be6e74de5b3324a4a861454628d6436c1470defae0a6fe"
+        },
+        {
+          "path": "experiments/2026-11-04-pgbot-verify.py",
+          "sha256": "cf82dd0e241cae053a87dbf6fa38aa599f586cddc193a4c657d07a40c087a924"
+        }
+      ]
     },
     {
       "study_id": "poisoned-skills",
@@ -4065,11 +4482,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Markdown skills/config are injection-capable low-trust inputs; verify provenance and effects rather than relying on instruction text.",
+      "limits": "One LangChain prompt assembly, 270 forbidden QA prompts and seven open-weight models; ASR is text output, not tool privilege escalation.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/poisoned-skills.md",
+          "sha256": "6f102458f43840543b297d8f729ef187143f408a2e0e52dea34776a13828e957"
+        },
+        {
+          "path": "portfolio/2026-10-27--2026-11-02/review.md",
+          "sha256": "ed761842a02f1326a91690ce5fcdf3532cf9e22ce0b595eba1c359787a5529ed"
+        }
+      ]
     },
     {
       "study_id": "polar",
@@ -4138,11 +4568,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Compensatable/reversible action taxonomy is a cautionary advisory input, not proof of rollback or permission.",
+      "limits": "Only 8/18 model-domain comparisons improved in author report; reverse-search plan is not guaranteed to undo actual remote effects.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/polar.md",
+          "sha256": "f45d6797c9591f054f05ea1c773ac1c9720214757b102b9b3191976c760c6ad4"
+        },
+        {
+          "path": "portfolio/2026-10-06--2026-10-12/review.md",
+          "sha256": "8215555a66865676cedd11baa2a0e6021aea7775dd6ff0c203173e58c20c987b"
+        }
+      ]
     },
     {
       "study_id": "random-attention",
@@ -4211,11 +4654,21 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "NO_FIT",
+      "verified_scope": "CURRENT_REGISTERED_PROJECT_PORTFOLIO_ONLY",
+      "decision": "Prompt-preserving random reasoning-token KV eviction requires physical serving cache access and an instrumentable vLLM-like backend; none is documented among current 45 projects.",
+      "reopen_condition": "New authorized project or backend code path exposing physical KV eviction controls; compare accuracy and serving throughput at fixed prompt, model, seeds and memory budget.",
+      "limits": "Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.",
+      "evidence": [
+        {
+          "path": "studies/random-attention.md",
+          "sha256": "316fb97425ef1bac4b9d3bc4b9311cc03aa277835d2b9166d0c86eca3e86bca6"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
+          "sha256": "4fc3d1bb10a45cf585c05868f5e6c013dbc4c70af99775aef6af1ec758d2f104"
+        }
+      ]
     },
     {
       "study_id": "rea",
@@ -4332,11 +4785,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Query-triggered memory graph reconsolidation should be anchored to immutable source evidence to resist stale/poisoned facts.",
+      "limits": "Author LoCoMo and LongMemEval small ablation gains, no long-running protected cross-session or real DBA correctness evidence.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/realm.md",
+          "sha256": "67601d891905dff4dd1b816d35a9cc961d597b48cae4adeeaec171b62a1988ff"
+        },
+        {
+          "path": "reviews/realm/2026-11-05-full-text.md",
+          "sha256": "f26c8cca8db36243e0d25485398a106bbc30d75356739f894e3d89c371ef9390"
+        }
+      ]
     },
     {
       "study_id": "recap",
@@ -4404,11 +4870,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Context-dependency graphs and source-preserving compaction can be studied without deleting authoritative historic events.",
+      "limits": "Requires model attention or proxy; reported 94.5–95.6% cold-recovery latency reduction is derived in specific H100 model setup, not task speed.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/recap.md",
+          "sha256": "f0f66703646e4b84d89e46486ea32960630b5b2b960c87c9d3a7ea0df295eb66"
+        },
+        {
+          "path": "reviews/recap/2026-11-05-full-text.md",
+          "sha256": "e32fe4f0aa80247bf8d72a87308c33303c777a4e9b03371f92f0860eb7883260"
+        }
+      ]
     },
     {
       "study_id": "red-teaming-auto-mode",
@@ -4476,11 +4955,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Monitor transcripts, role boundaries, context compaction and delegated tasks are distinct surfaces for safe negative tests.",
+      "limits": "Full v1 PDF appendices reviewed, but simulation/LLM Dungeon Master and September snapshots do not show a current local vulnerability.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/red-teaming-auto-mode.md",
+          "sha256": "3e7dddef6450b88535f8e0494374a0d3c7b5f62ba06c6528c5b061441a36b574"
+        }
+      ]
     },
     {
       "study_id": "remory",
@@ -4550,11 +5038,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Soft-token residual memory requires actor-state/gradient coupling and is research-only for a controlled own-weight inference stack.",
+      "limits": "Needs >1.5B trainable memory parameters and embeddings access; reported context compression not a drop-in closed API feature.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/remory.md",
+          "sha256": "2b60896823b235bbb16686296b07de3f14ed9f1b053512f9738ba547528a029b"
+        }
+      ]
     },
     {
       "study_id": "reva",
@@ -4623,11 +5120,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "History-indexed evidence views are only a research reference when attention traces from the exact generator are available.",
+      "limits": "Closed APIs generally do not expose necessary attention; offline score-store generation, index storage and model drift not measured.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/reva.md",
+          "sha256": "8d393b8d193a077883456eb533db8349e7289c86fe0aa24d3270bc93b8d5bee6"
+        },
+        {
+          "path": "portfolio/2026-09-03--2026-09-15/review.md",
+          "sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74"
+        }
+      ]
     },
     {
       "study_id": "rrsi",
@@ -4787,11 +5297,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Original public simulated-propagation disclosure is a threat model for isolating untrusted connector/file/compaction text from instructions.",
+      "limits": "Full original disclosure described simulated tool calls only, NOT a reproduced self-propagating incident or arbitrary real-system impact.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": false,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/self-replicating-prompt-injections.md",
+          "sha256": "4f8029e8e8f4c95bb83d4403356a75228a71b03764651d957df7ad35735c039c"
+        }
+      ]
     },
     {
       "study_id": "sequential-diagnosis-language-models",
@@ -4861,11 +5380,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Recheck pinned full paper and retained full-text evidence after source-fetch access failure."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Sequential clinical differential/alternative-testing protocol is a clinical-evaluation reference requiring independent specialist safety review.",
+      "limits": "Author Science/SDBench results not reproduced; 144 Wello synthetic operational calls prove HTTP delivery, NOT clinical correctness, and TrinMedicalBot deployment remains clinically unapproved.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/sequential-diagnosis-language-models.md",
+          "sha256": "537b8ba082da1be732f36b6c390ac1357d098242751c6cc9615052de8186ae6b"
+        },
+        {
+          "path": "reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md",
+          "sha256": "8a006b8c4a20fd4ab273c2f468064ad607a29b69e439803b74bfc5d6555ae441"
+        }
+      ]
     },
     {
       "study_id": "silent-cue-loss",
@@ -4934,11 +5466,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Structured DOCX styling/color/highlight can carry task-significant requirements that plain-text extraction may omit.",
+      "limits": "Author 76 policy DOCX plus 79 confirmatory docs and OOXML-derived labels; no validated benefit on our documents/OCR or every model.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/silent-cue-loss.md",
+          "sha256": "95d489b2872fa4b5e67412516c0506029b24248872c61bb26f17736940f90229"
+        },
+        {
+          "path": "portfolio/2026-10-20--2026-10-26/review.md",
+          "sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94"
+        }
+      ]
     },
     {
       "study_id": "simurg",
@@ -5087,11 +5632,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Use a critical-path and overhead-aware DAG scheduler only when tasks have independently testable interfaces.",
+      "limits": "Author nine tasks with one base model and LLM quality judge; projected 2.6x wall advantage cannot be extrapolated to IO-bound work.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/squidagent.md",
+          "sha256": "449b17405f60b5dd066f09ee91aa36f7197195e6fe86d1a915ef9cacb0cb5b5a"
+        }
+      ]
     },
     {
       "study_id": "statecomp",
@@ -5160,11 +5714,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Decide when to compress active history while retaining immutable evidence; token savings alone are not safety or accuracy.",
+      "limits": "Requires hidden-state annotations/trained predictor; WorkBuddyBench reward +0.0039, Security reward declines; no cloud API equivalence.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/statecomp.md",
+          "sha256": "1c8d36813b832719fc3931c5064a30663d2331f1f70cd633a2cb32f15a3959db"
+        },
+        {
+          "path": "reviews/statecomp/2026-11-05-full-text.md",
+          "sha256": "792755a0d4f3c08269d053f8939e07c84d6915b009500c03cf143e1848ff571d"
+        }
+      ]
     },
     {
       "study_id": "swrouter",
@@ -5232,11 +5799,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Multi-turn route evaluation should test actual context windows and model-eligibility boundaries, not last-turn similarity alone.",
+      "limits": "Author similarity threshold sensitivity extreme, model pool/caching and evaluation judge differ; cost and task win not locally replicated.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/swrouter.md",
+          "sha256": "f3820d7138269a858b4104775553e7ab3fbe99211f0b3aac9442bdc3797b5cbf"
+        },
+        {
+          "path": "portfolio/2026-09-03--2026-09-15/review.md",
+          "sha256": "6b0ab08888d16da0796ee8fa107fbf1925c2daa682c9090b75185b05f1df6e74"
+        }
+      ]
     },
     {
       "study_id": "tencent-teamai-cli",
@@ -5487,11 +6067,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Plan→retrieve→select is an evaluation reference, but exact full gold tool-set match is not end-to-end task success.",
+      "limits": "Author ToolBench G3 2124 instructions and SFT/RL training; G2/TaskBench transfer not uniformly better; no current model routing validation.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/transferable-tool-selection.md",
+          "sha256": "86045117db7fa6549ef251a42d5e743562b4b2acd500f5eae02ee1f7a8898755"
+        },
+        {
+          "path": "portfolio/2026-10-20--2026-10-26/review.md",
+          "sha256": "97492f3ca8855a32b942263cfdc63a45ccd6547c5106591aebf8b7580656ff94"
+        }
+      ]
     },
     {
       "study_id": "trust-region-injection",
@@ -5559,11 +6152,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Use full review to adjudicate research-only value or bounded test; assess remaining project profiles without treating missing assessments as NO_FIT."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Untrusted document surfaces/placement should be explicit dimensions of defensive prompt-injection test coverage.",
+      "limits": "Author 36 surfaces, 24 risk classes and testbeds; different placement affects observed model attempts, not proof current files are compromised.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/trust-region-injection.md",
+          "sha256": "24ef0165d97a5305159f066d97465905ae554183c74fa51652987013d33b6a0f"
+        },
+        {
+          "path": "portfolio/2026-10-27--2026-11-02/review.md",
+          "sha256": "ed761842a02f1326a91690ce5fcdf3532cf9e22ce0b595eba1c359787a5529ed"
+        }
+      ]
     },
     {
       "study_id": "understand-anything",
@@ -5720,11 +6326,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Verify primary transcript or full original engineering source; video landing alone is insufficient."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "The official long-form engineering article offers a bounded benchmark/price accounting checklist for autonomous task agents.",
+      "limits": "Full ARTICLE was reviewed; video transcript was not verified and author dollars/pass rates, unreleased agent runtime and cost are NOT reproduced.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": true,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/unreal-agent-bk025.md",
+          "sha256": "ac387e4edd7199604bdd265eb358bc7fa278a51697a0939da8a36bbbe32670fa"
+        },
+        {
+          "path": "reviews/unreal-agent/2026-11-06-source-audit.md",
+          "sha256": "b70db4fe8aa1087d3c727881ee7ef00968c7a9e340a98b5cd4129e571a79686d"
+        }
+      ]
     },
     {
       "study_id": "unsloth-decision-model",
@@ -5791,11 +6410,24 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_RESEARCH_ONLY",
+      "verified_scope": "CRITICALLY_REVIEWED_PRIMARY_SOURCE_METHOD_AS_REFERENCE; NOT_AUTHOR_EMPIRICAL_REPLICATION",
+      "methodological_reference": "Decision model LoRA recipe and calibration/evaluation API differences are a useful comparative implementation reference.",
+      "limits": "Pinned public docs/notebook show inconsistent hyperparameters across recipes; no weights, GPU training, original score or licence-compliant target integration tested.",
+      "author_results": "AUTHOR_REPORTED / NOT_REPRODUCED",
+      "primary_source_full_text_prior_review": false,
+      "rechecked_source_bytes_in_this_pass": false,
+      "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
+      "evidence": [
+        {
+          "path": "studies/unsloth-decision-model.md",
+          "sha256": "6364ebc1e1007de8ffd694d7228507cc692951063a166d65d2309ebad877b1ff"
+        },
+        {
+          "path": "reviews/unsloth-decision-model/2026-11-04.md",
+          "sha256": "673cc4c2ecbcc2a2843676b2cb8af7e7bac22fcafbe10a6f126ed5c92fac25fc"
+        }
+      ]
     },
     {
       "study_id": "vercel-agent-desktop",
@@ -6002,11 +6634,26 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Recover inspectable original implementation or document actual failed attempts and a concrete unblock condition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned collector session_matches_repo incorrectly accepts unrelated same-name path while rejecting unrelated other-name path.",
+      "limits": "No real private sessions or leak; 37 earlier upstream tests do not protect this attribution counterexample.",
+      "evidence_tier": "TWO_PINNED_PUBLIC_SOURCE_REPLAYS_WITH_INDEPENDENT_ORIGINAL_FIXTURE_SHA",
+      "independently_reexecuted_this_pass": true,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/warp-skill-doctor/2026-11-04.md",
+          "sha256": "b0e8f9eb4a28d04f7cef3376684adbf4c3583375c43383f368acc9c6790cd4fc"
+        },
+        {
+          "path": "experiments/bk019-skill-doctor/attribution-fixture.py",
+          "sha256": "95fdedcaca319dc1b753f0f5cdb1cb722deae81449a5adc316fc453475bf26e7"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+          "sha256": "8577df64b462ea8d2c4921928f14fb55a86c57a9f3f76a2429182106d31273c3"
+        }
+      ]
     },
     {
       "study_id": "yahont-ce",
@@ -6072,11 +6719,26 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned original Yahont string_filtering maps a/b and ab to identical sanitized ID, but rejects empty and preserves doc_1.",
+      "limits": "Not proof of actual index collision, tenant disclosure or ACL exploit; helper function only.",
+      "evidence_tier": "TWO_PINNED_PUBLIC_SOURCE_REPLAYS_WITH_INDEPENDENT_ORIGINAL_FIXTURE_SHA",
+      "independently_reexecuted_this_pass": true,
+      "deployment_gate": "Target owner-approved fresh held-out experiment and privilege/data-handling review; no auto promotion.",
+      "evidence": [
+        {
+          "path": "reviews/yahont-ce/2026-11-04.md",
+          "sha256": "1a3f2a21752a3a0b05d08151a9e3037abd10b3532bfb97df8a91f09daf2f3317"
+        },
+        {
+          "path": "experiments/bk053-yahont/id-fixture.py",
+          "sha256": "5e6ebaa271ce27dc4a358a573aa97ce2c902be03c47a45535a3b9132732375a9"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json",
+          "sha256": "8577df64b462ea8d2c4921928f14fb55a86c57a9f3f76a2429182106d31273c3"
+        }
+      ]
     },
     {
       "study_id": "youtube-skills",
@@ -6221,11 +6883,20 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
-      "verified_scope": null,
-      "limits": "Document provenance does not prove scientific replication or current project fit.",
-      "evidence": [],
-      "next_evidence_gate": "Inspect complete pinned original article/code, methodological limitations and alternatives before a justified disposition."
+      "closure_status": "ACCEPT_BOUNDED",
+      "verified_scope": "Pinned original 0-CODE JSONC helper passed independent synthetic fixture validation: 120 valid, 24 invalid cases, strict duplicate-key path and two rejected mutants.",
+      "limits": "20 generated base objects with six syntactic variants; not supervisor permissions, full JSONC grammar or production config integration.",
+      "evidence": [
+        {
+          "path": "reviews/zero-code/2026-11-07-jsonc-countercheck.md",
+          "sha256": "4fe32884671f51481e4f03819f88d5509aec49479d66f84e5505c13452a4a359"
+        },
+        {
+          "path": "data/results/zero-code/2026-11-07-jsonc-oracle.json",
+          "sha256": "6454d3a0e33507ad321497de225fd99bf9f4db6dae6d084343c0aa2c1b5f62f5"
+        }
+      ],
+      "deployment_gate": "Separate target-source seam, owned A/B, oracle, latency/cost/safety and explicit human approval."
     }
   ]
 }
