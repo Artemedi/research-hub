@@ -111,6 +111,7 @@
 - [research-portfolio/2026-11-07-zcode-citation-council-ab.py](research-portfolio/2026-11-07-zcode-citation-council-ab.py)
 - [research-portfolio/2026-11-07-zcode-claude-cli-shim.mjs](research-portfolio/2026-11-07-zcode-claude-cli-shim.mjs)
 - [research-portfolio/2026-11-07-zcode-claude-cli-shim.test.mjs](research-portfolio/2026-11-07-zcode-claude-cli-shim.test.mjs)
+- [research-portfolio/2026-11-09-closure-ledger.py](research-portfolio/2026-11-09-closure-ledger.py)
 - [research-portfolio/audit-micro.py](research-portfolio/audit-micro.py)
 - [research-portfolio/cluster-critics.py](research-portfolio/cluster-critics.py)
 - [research-portfolio/controller.py](research-portfolio/controller.py)

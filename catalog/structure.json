@@ -2331,6 +2331,20 @@
       "title": "Portfolio audit 2026-11-09",
       "kind": "portfolio",
       "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-09/closure-ledger.md",
+      "title": "Доказательное закрытие 83 исследований — реестр решений",
+      "kind": "portfolio",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-closure-ledger.json",
+      "title": "Evidence-based 83-card closure ledger — machine data",
+      "kind": "data",
+      "date": "2026-11-09"
     }
   ]
 }
