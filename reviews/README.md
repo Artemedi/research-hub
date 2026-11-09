@@ -23,6 +23,8 @@
 | [Full-text citation A/B extended to Agent Error Dataset and BenchShield](../portfolio/2026-11-07/source-anchored-extension.md) | 2026-11-07 |
 | [Target-path citation and PostgreSQL planner resource counterchecks](../portfolio/2026-11-07/target-counterchecks-round3.md) | 2026-11-07 |
 | [Clean-source ZCode citation council and real MCP SQL security boundary](../portfolio/2026-11-07/target-counterchecks-round4.md) | 2026-11-07 |
+| [P0 isolated project A/B execution plan and adoption gates](../portfolio/2026-11-09/p0-experiment-execution-plan.md) | 2026-11-09 |
+| [16 P0 target-source experiment decisions and measured results](../portfolio/2026-11-09/p0-experiment-results.md) | 2026-11-09 |
 | [Research-to-project source seam, effect and A/B protocol matrix](../portfolio/2026-11-09/targeted-fit.md) | 2026-11-09 |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |
 | [Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B](agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) | 2026-11-08 |

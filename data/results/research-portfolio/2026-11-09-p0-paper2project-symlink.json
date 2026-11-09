@@ -1,0 +1,431 @@
+{
+  "pair": "paper2agent/dsh-paper2agent",
+  "protocol": "source_pin",
+  "scope": "PINNED_APP_IMPORT_SOURCE_VS_ISOLATED_MINIMAL_SYMLINK_CHECK",
+  "source_git_sha": "cbcb1c089b2704af70e89e4fd5bb490642c9efae",
+  "source_file": "src/paper2project/core.py",
+  "source_file_sha256": "95ea03c7fabbc586ac29e073f16ab5a6e1b5c10b8388f619afec4d3125e6ee79",
+  "candidate_patch_sha256": "50a295f0536237464fcac3f3bf2ca39bae6a8f35a94e0a8bab37ab8d2f39550c",
+  "dataset": {
+    "valid": 30,
+    "invalid": 12,
+    "kinds": [
+      "missing",
+      "outside",
+      "symlink",
+      "tamper"
+    ]
+  },
+  "baseline": {
+    "valid_accepted": 30,
+    "invalid_rejected": 9,
+    "invalid_accepted": 3,
+    "symlink_accepted": 3,
+    "snapshots_stable_after_external_edit": 30
+  },
+  "candidate": {
+    "valid_accepted": 30,
+    "invalid_rejected": 12,
+    "invalid_accepted": 0,
+    "symlink_accepted": 0,
+    "snapshots_stable_after_external_edit": 30
+  },
+  "records": [
+    {
+      "id": "valid-0",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-1",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-2",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-3",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-4",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-5",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-6",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-7",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-8",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-9",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-10",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-11",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-12",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-13",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-14",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-15",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-16",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-17",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-18",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-19",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-20",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-21",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-22",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-23",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-24",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-25",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-26",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-27",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-28",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "valid-29",
+      "category": "valid",
+      "gold_accept": true,
+      "baseline_accept": true,
+      "candidate_accept": true,
+      "baseline_error": null,
+      "candidate_error": null
+    },
+    {
+      "id": "negative-0",
+      "category": "missing",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-1",
+      "category": "missing",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-2",
+      "category": "missing",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-3",
+      "category": "outside",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-4",
+      "category": "outside",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-5",
+      "category": "outside",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-6",
+      "category": "symlink",
+      "gold_accept": false,
+      "baseline_accept": true,
+      "candidate_accept": false,
+      "baseline_error": null,
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-7",
+      "category": "symlink",
+      "gold_accept": false,
+      "baseline_accept": true,
+      "candidate_accept": false,
+      "baseline_error": null,
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-8",
+      "category": "symlink",
+      "gold_accept": false,
+      "baseline_accept": true,
+      "candidate_accept": false,
+      "baseline_error": null,
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-9",
+      "category": "tamper",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-10",
+      "category": "tamper",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    },
+    {
+      "id": "negative-11",
+      "category": "tamper",
+      "gold_accept": false,
+      "baseline_accept": false,
+      "candidate_accept": false,
+      "baseline_error": "ValueError",
+      "candidate_error": "ValueError"
+    }
+  ],
+  "timing": {
+    "unit": "ns_per_local_file_import",
+    "p95_baseline_ns": 774016,
+    "p95_candidate_ns": 633453
+  },
+  "negative_controls": [
+    "nonexistent source",
+    "out-of-root source",
+    "same-root symlink",
+    "tampered stored object"
+  ],
+  "limitations": [
+    "Observed a symlink root policy bypass on a synthetic local file inside allowed_roots.",
+    "Does not establish a sandbox escape, privilege escalation or broader real-world exploit.",
+    "Candidate is a single check before Path.resolve, tested on a copied Git tree and equivalent subclass in this A/B.",
+    "No source code target repository or private library was modified.",
+    "Full original test suite includes skips for external runtime; adoption needs source PR review and CI."
+  ]
+}

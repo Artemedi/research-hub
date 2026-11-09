@@ -60,6 +60,26 @@ test('applicability matrix cannot promote an untested project pair to production
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Targeted applicability matrix integrity failed/);
 });
+test('P0 experiment production adoption cannot be silently promoted', () => {
+  const result = fixture(dir => {
+    const file = path.join(dir, 'data/results/research-portfolio/2026-11-09-p0-experiment-ledger.json');
+    const ledger = JSON.parse(fs.readFileSync(file, 'utf8'));
+    ledger.rows[0].production_approval = true;
+    fs.writeFileSync(file, JSON.stringify(ledger, null, 2) + '\n');
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /P0 experiment ledger integrity failed|P0 independent evidence verification failed/);
+});
+test('P0 corruption of a baseline false-positive count fails the integrity gate', () => {
+  const result = fixture(dir => {
+    const file = path.join(dir, 'data/results/research-portfolio/2026-11-09-p0-agent-risk-agent-config.json');
+    const receipt = JSON.parse(fs.readFileSync(file, 'utf8'));
+    receipt.baseline.false_positive = 0;
+    fs.writeFileSync(file, JSON.stringify(receipt, null, 2) + '\n');
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /P0 experiment ledger integrity failed|P0 independent evidence verification failed/);
+});
 test('changed archive bytes are rejected', () => {
   const result = fixture(dir => fs.appendFileSync(path.join(dir, 'archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md'), '\nChanged\n'));
   assert.notEqual(result.status, 0);

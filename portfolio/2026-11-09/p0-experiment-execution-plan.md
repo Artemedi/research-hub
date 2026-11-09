@@ -9,3 +9,18 @@ Scope: all 16 P0 research/project pairs from data/project-fit/portfolio/2026-11-
 5. Verify syntax, repository node scripts/check.mjs, unit tests and git diff; publish PR, require green CI and merge.
 
 Trade-offs: isolated synthetic benchmark is fast and low-memory/IO but has limited ecological validity. True agent/clinical experiments are more costly, require human/qualified review and cannot be inferred from toy tests. No needless abstraction or target code changes.
+
+
+## Executed result and evidence boundaries
+
+See [all 16 P0 outcomes](p0-experiment-results.md) and the
+[machine ledger](../../data/results/research-portfolio/2026-11-09-p0-experiment-ledger.json).
+Five synthetic source-level paired runs were executed under network-unshared
+bubblewrap. Two bounded candidate patches passed their isolated unit suites.
+Eleven other pairs have explicit blockers. The independent oracle checks all
+five receipts, all 16 decisions, source hashes and 8/8 negative mutations.
+
+No ADOPT decision: two research-only patch candidates require source-level
+holdout and owner review; two prototypes fail cost/liveness; one existing
+API has no demonstrated incremental benefit. All 16 original project
+repositories remain unchanged.

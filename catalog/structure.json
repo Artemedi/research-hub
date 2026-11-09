@@ -2471,6 +2471,139 @@
       "title": "Original review.py quote-location inconsistency source probe",
       "kind": "data",
       "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-09/p0-experiment-execution-plan.md",
+      "title": "P0 isolated project A/B execution plan and adoption gates",
+      "kind": "review",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-09/p0-experiment-results.md",
+      "title": "16 P0 target-source experiment decisions and measured results",
+      "kind": "review",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-experiment-ledger.json",
+      "title": "P0 per-pair machine decision ledger, no production approvals",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-independent-check.json",
+      "title": "Independent synthetic oracle and eight rejected corruption probes",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-agent-risk-agent-config.json",
+      "title": "Agent-config pinned function quote A/B (80 claims)",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-agent-mosaic-team-context.json",
+      "title": "Scoped-recall source manifest A/B (60 cases)",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-exactly-once-limbo-telegram.json",
+      "title": "Telegram original-function mocked delivery A/B (120 cases)",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-mcp-toolbox-pg.json",
+      "title": "Wiki PG direct GUC versus existing MCP wrapper ablation (40+8)",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-paper2project-symlink.json",
+      "title": "Paper2Project source import symlink guard A/B (30+12)",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-target-snapshot-tests.json",
+      "title": "Six offline source-snapshot baseline suite receipts",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-p0-candidate-unit-suites.json",
+      "title": "Two isolated source-patch unit suite receipts",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-agentconfig-candidate.patch",
+      "title": "Scoped candidate for exact quoted-line verification",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-paper2project-symlink-candidate.patch",
+      "title": "Scoped candidate rejecting root symlinks before resolve",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-source-ab.py",
+      "title": "Exact original functions and prototype A/B for quote and delivery",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-scoped-recall-ab.ts",
+      "title": "Exact scoped recall TS baseline and synthetic source-manifest A/B",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-pg-guc-ab.py",
+      "title": "Direct GUC versus existing MCP source wrapper A/B runner",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-paper-snapshot-ab.py",
+      "title": "Pinned source import vs isolated root-symlink guard A/B runner",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-adjudicate.py",
+      "title": "Machine ledger generator from per-pair source evidence",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-p0-independent-check.py",
+      "title": "Independent sample-level oracle and corrupt-evidence rejector",
+      "kind": "guide",
+      "date": "2026-11-09"
     }
   ]
 }

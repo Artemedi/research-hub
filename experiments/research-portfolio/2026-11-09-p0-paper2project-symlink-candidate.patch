@@ -1,0 +1,11 @@
+--- a/src/paper2project/core.py
++++ b/src/paper2project/core.py
+@@ -30,5 +30,7 @@
+     def local(self,path):
+-        value=Path(path).resolve()
++        candidate=Path(path)
++        if candidate.is_symlink():raise ValueError("Local import symlink is not allowed")
++        value=candidate.resolve()
+         if self.allowed_roots is not None and not any(value.is_relative_to(r) for r in self.allowed_roots):
+             raise ValueError("Local import is outside configured allow roots")
+         return str(value)

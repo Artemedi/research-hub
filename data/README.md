@@ -118,6 +118,15 @@
 | [data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json](results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json](results/research-portfolio/2026-11-09-kv-profile-negative-controls.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-ledger-independent-check.json](results/research-portfolio/2026-11-09-ledger-independent-check.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-agent-mosaic-team-context.json](results/research-portfolio/2026-11-09-p0-agent-mosaic-team-context.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-agent-risk-agent-config.json](results/research-portfolio/2026-11-09-p0-agent-risk-agent-config.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-candidate-unit-suites.json](results/research-portfolio/2026-11-09-p0-candidate-unit-suites.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-exactly-once-limbo-telegram.json](results/research-portfolio/2026-11-09-p0-exactly-once-limbo-telegram.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-experiment-ledger.json](results/research-portfolio/2026-11-09-p0-experiment-ledger.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-independent-check.json](results/research-portfolio/2026-11-09-p0-independent-check.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-mcp-toolbox-pg.json](results/research-portfolio/2026-11-09-p0-mcp-toolbox-pg.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-paper2project-symlink.json](results/research-portfolio/2026-11-09-p0-paper2project-symlink.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-p0-target-snapshot-tests.json](results/research-portfolio/2026-11-09-p0-target-snapshot-tests.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json](results/research-portfolio/2026-11-09-residual-engineering-oracle.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-telegram-ack-fixture.json](results/research-portfolio/2026-11-09-telegram-ack-fixture.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |

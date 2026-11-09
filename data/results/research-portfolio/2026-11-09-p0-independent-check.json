@@ -1,0 +1,42 @@
+{
+  "status": "PASS_INDEPENDENT_SYNTHETIC_ORACLE",
+  "result": {
+    "source_receipts": {
+      "quote": {
+        "count": 80,
+        "fp_original": 18,
+        "fp_candidate": 0,
+        "true_accepted_each_arm": 30
+      },
+      "delivery": {
+        "count": 120,
+        "duplicate_baseline": 60,
+        "duplicate_candidate": 0,
+        "candidate_undetermined": 90
+      },
+      "retrieval": {
+        "count": 60,
+        "wrong_source_original": 300,
+        "wrong_source_candidate": 0,
+        "candidate_failed_p95": true
+      },
+      "sql": {
+        "count": 48,
+        "identical_values": 48,
+        "new_accuracy_gain": 0
+      },
+      "source_pin": {
+        "count": 42,
+        "source_symlink_false_allows": 3,
+        "candidate_symlink_false_allows": 0
+      }
+    },
+    "measured_pair_count": 5,
+    "blocked_pair_count": 11,
+    "source_suite_count": 6,
+    "candidate_suite_count": 2
+  },
+  "negative_mutations_rejected": 8,
+  "negative_mutations_total": 8,
+  "limits": "Static receipt verification on CI; original isolated source can only be rerun on authorized pinned Git snapshots, and is not a second full scientific/clinical review."
+}

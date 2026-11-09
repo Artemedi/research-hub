@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "results": [
+    {
+      "id": "agent-config-line-guard",
+      "source_isolation": "pinned source snapshot patched only in disposable /tmp",
+      "network_isolation": "bubblewrap --unshare-net",
+      "tests_run": 10,
+      "tests_skipped": 0,
+      "tests_passed": 10,
+      "returncode": 0,
+      "output_sha256": "48c5a427220b6255033a80cb4024927fa2c828db7bf7cb59bb28822b81fdeffe",
+      "output_tail": [
+        "----------------------------------------------------------------------",
+        "Ran 10 tests in 0.013s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "id": "paper2project-symlink-guard",
+      "source_isolation": "pinned source snapshot patched only in disposable /tmp",
+      "network_isolation": "bubblewrap --unshare-net",
+      "tests_run": 80,
+      "tests_skipped": 15,
+      "tests_passed": 65,
+      "returncode": 0,
+      "output_sha256": "9f221d2496bfb73b27cb6fa4edfa99b077998e6c372caa07746f806f6e0c52cf",
+      "output_tail": [
+        "/usr/lib64/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 307: 'redirect refused'>",
+        "  _warnings.warn(self.warn_message, ResourceWarning)",
+        "----------------------------------------------------------------------",
+        "Ran 80 tests in 6.966s",
+        "",
+        "OK (skipped=15)"
+      ]
+    }
+  ]
+}

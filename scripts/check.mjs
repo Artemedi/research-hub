@@ -83,6 +83,10 @@ const closure = spawnSync('python3', [path.join(root, 'experiments/research-port
 if (closure.status !== 0) errors.push('Closure ledger integrity failed: ' + (closure.stderr || closure.error?.message || closure.stdout));
 const applicability = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/2026-11-09-targeted-fit.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
 if (applicability.status !== 0) errors.push('Targeted applicability matrix integrity failed: ' + (applicability.stderr || applicability.error?.message || applicability.stdout));
+const p0Ledger = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/2026-11-09-p0-adjudicate.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
+if (p0Ledger.status !== 0) errors.push('P0 experiment ledger integrity failed: ' + (p0Ledger.stderr || p0Ledger.error?.message || p0Ledger.stdout));
+const p0Oracle = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/2026-11-09-p0-independent-check.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
+if (p0Oracle.status !== 0) errors.push('P0 independent evidence verification failed: ' + (p0Oracle.stderr || p0Oracle.error?.message || p0Oracle.stdout));
 const generated = spawnSync(process.execPath, [path.join(root, 'scripts/build-catalog.mjs'), '--check'], { encoding: 'utf8' });
 if (generated.status !== 0) errors.push(generated.stderr || generated.error?.message || 'catalog check failed');
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }

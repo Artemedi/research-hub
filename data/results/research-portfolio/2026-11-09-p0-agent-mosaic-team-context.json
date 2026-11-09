@@ -1,0 +1,1005 @@
+{
+  "protocol": "retrieval",
+  "pair": "agent-mosaic/dsh-team-context",
+  "source_git_sha": "b7268d12581be2705c5e675991126c25f735701a",
+  "source_file": "src/core/scoped-recall.ts",
+  "source_file_sha256": "ffec7b3fc6ad69a233342c137002bd17a2c91084cb5335e85d64b7c58b9e9189",
+  "scope": "REAL_MERGE_SCOPED_RECALL_FUNCTION_WITH_SYNTHETIC_MANIFEST_GUARD",
+  "records": [
+    {
+      "id": 0,
+      "ood": false,
+      "gold_id": "docs:docs/0-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 1,
+      "ood": false,
+      "gold_id": "docs:docs/1-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 2,
+      "ood": false,
+      "gold_id": "docs:docs/2-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 3,
+      "ood": false,
+      "gold_id": "docs:docs/3-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 4,
+      "ood": false,
+      "gold_id": "docs:docs/4-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 5,
+      "ood": false,
+      "gold_id": "docs:docs/5-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 6,
+      "ood": false,
+      "gold_id": "docs:docs/6-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 7,
+      "ood": false,
+      "gold_id": "docs:docs/7-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 8,
+      "ood": false,
+      "gold_id": "docs:docs/8-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 9,
+      "ood": false,
+      "gold_id": "docs:docs/9-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 10,
+      "ood": false,
+      "gold_id": "docs:docs/10-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 11,
+      "ood": false,
+      "gold_id": "docs:docs/11-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 12,
+      "ood": false,
+      "gold_id": "docs:docs/12-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 13,
+      "ood": false,
+      "gold_id": "docs:docs/13-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 14,
+      "ood": false,
+      "gold_id": "docs:docs/14-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 15,
+      "ood": false,
+      "gold_id": "docs:docs/15-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 16,
+      "ood": false,
+      "gold_id": "docs:docs/16-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 17,
+      "ood": false,
+      "gold_id": "docs:docs/17-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 18,
+      "ood": false,
+      "gold_id": "docs:docs/18-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 19,
+      "ood": false,
+      "gold_id": "docs:docs/19-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 20,
+      "ood": false,
+      "gold_id": "docs:docs/20-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 21,
+      "ood": false,
+      "gold_id": "docs:docs/21-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 22,
+      "ood": false,
+      "gold_id": "docs:docs/22-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 23,
+      "ood": false,
+      "gold_id": "docs:docs/23-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 24,
+      "ood": false,
+      "gold_id": "docs:docs/24-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 25,
+      "ood": false,
+      "gold_id": "docs:docs/25-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 26,
+      "ood": false,
+      "gold_id": "docs:docs/26-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 27,
+      "ood": false,
+      "gold_id": "docs:docs/27-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 28,
+      "ood": false,
+      "gold_id": "docs:docs/28-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 29,
+      "ood": false,
+      "gold_id": "docs:docs/29-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 30,
+      "ood": false,
+      "gold_id": "docs:docs/30-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 31,
+      "ood": false,
+      "gold_id": "docs:docs/31-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 32,
+      "ood": false,
+      "gold_id": "docs:docs/32-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 33,
+      "ood": false,
+      "gold_id": "docs:docs/33-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 34,
+      "ood": false,
+      "gold_id": "docs:docs/34-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 35,
+      "ood": false,
+      "gold_id": "docs:docs/35-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 36,
+      "ood": false,
+      "gold_id": "docs:docs/36-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 37,
+      "ood": false,
+      "gold_id": "docs:docs/37-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 38,
+      "ood": false,
+      "gold_id": "docs:docs/38-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 39,
+      "ood": false,
+      "gold_id": "docs:docs/39-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 40,
+      "ood": false,
+      "gold_id": "docs:docs/40-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 41,
+      "ood": false,
+      "gold_id": "docs:docs/41-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 42,
+      "ood": false,
+      "gold_id": "docs:docs/42-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 43,
+      "ood": false,
+      "gold_id": "docs:docs/43-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 44,
+      "ood": false,
+      "gold_id": "docs:docs/44-0.md",
+      "approved_count": 3,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 3
+      }
+    },
+    {
+      "id": 45,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 46,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 47,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 48,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 49,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 50,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 51,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 52,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 53,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 54,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 55,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 56,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 57,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 58,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    },
+    {
+      "id": 59,
+      "ood": true,
+      "gold_id": null,
+      "approved_count": 0,
+      "baseline": {
+        "invalid": 5,
+        "correct": 0,
+        "returned": 5
+      },
+      "candidate": {
+        "invalid": 0,
+        "correct": 1,
+        "returned": 0
+      }
+    }
+  ],
+  "baseline": {
+    "cases": 60,
+    "correct_or_abstain": 0,
+    "wrong_source_count": 300,
+    "ood_abstained": 0
+  },
+  "candidate": {
+    "cases": 60,
+    "correct_or_abstain": 60,
+    "wrong_source_count": 0,
+    "ood_abstained": 15
+  },
+  "dataset": {
+    "cases": 60,
+    "regular": 45,
+    "ood": 15,
+    "gold": "exact source ID and content SHA"
+  },
+  "timing": {
+    "unit": "nanoseconds_per_call",
+    "samples_per_arm": 60,
+    "p95_baseline_ns": 8150,
+    "p95_candidate_ns": 37381
+  },
+  "negatives": [
+    "forged high-score source",
+    "stale source hash",
+    "wrong-scope user source"
+  ],
+  "limitations": [
+    "Synthetic approved manifest is not a deployed runtime permission oracle",
+    "Only unchanged original mergeScopedRecall was executed; not full semantic retrieval or model generation",
+    "Candidate is unintegrated and not a source-level patch to the target repository",
+    "Not a proof of improved relevance/quality on a real held-out corpus"
+  ]
+}

@@ -1,0 +1,2566 @@
+{
+  "protocol": "delivery",
+  "pair": "exactly-once-limbo/TelegramBot",
+  "scope": "ACTUAL_SEND_AND_POST_STATE_FUNCTIONS_VS_SQLITE_OUTBOX_PROTOTYPE_MOCK_NETWORK",
+  "source_git_sha": "a838ca6671cada5307825d3b5c433ce7083e1e76",
+  "source_file": "main.py",
+  "source_file_sha256": "96ef4a27fd26def1254a9c69bfb896cd24e1eb175fe11b54f02db7158e3c9de2",
+  "seed": 20261109,
+  "cases": 120,
+  "records": [
+    {
+      "id": "delivery-000",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-001",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-002",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-003",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-004",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-005",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-006",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-007",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-008",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-009",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-010",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-011",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-012",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-013",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-014",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-015",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-016",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-017",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-018",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-019",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-020",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-021",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-022",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-023",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-024",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-025",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-026",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-027",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-028",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-029",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-030",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-031",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-032",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-033",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-034",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-035",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-036",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-037",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-038",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-039",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-040",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-041",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-042",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-043",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-044",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-045",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-046",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-047",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-048",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-049",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-050",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-051",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-052",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-053",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-054",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-055",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-056",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-057",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-058",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-059",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-060",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-061",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-062",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-063",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-064",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-065",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-066",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-067",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-068",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-069",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-070",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-071",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-072",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-073",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-074",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-075",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-076",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-077",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-078",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-079",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-080",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-081",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-082",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-083",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-084",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-085",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-086",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-087",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-088",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-089",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-090",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-091",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-092",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-093",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-094",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-095",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-096",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-097",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-098",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-099",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-100",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-101",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-102",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-103",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-104",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-105",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-106",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-107",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-108",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-109",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-110",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-111",
+      "case": "crash_after_ack_before_state",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "RuntimeError"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "RuntimeError"
+      }
+    },
+    {
+      "id": "delivery-112",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-113",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-114",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-115",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-116",
+      "case": "ack_lost_after_effect",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 2,
+        "duplicate_remote_effect": true,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "CommitLostAck"
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "CommitLostAck"
+      }
+    },
+    {
+      "id": "delivery-117",
+      "case": "error_before_effect",
+      "expected_remote_effect_count": 0,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 0,
+        "duplicate_remote_effect": false,
+        "recorded_success": false,
+        "unknown_pending": true,
+        "first_error": "BeforeCommitTimeout"
+      },
+      "baseline": {
+        "attempts": 2,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": "BeforeCommitTimeout"
+      }
+    },
+    {
+      "id": "delivery-118",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    },
+    {
+      "id": "delivery-119",
+      "case": "ack_normal",
+      "expected_remote_effect_count": 1,
+      "candidate": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      },
+      "baseline": {
+        "attempts": 1,
+        "remote_commits": 1,
+        "duplicate_remote_effect": false,
+        "recorded_success": true,
+        "unknown_pending": false,
+        "first_error": null
+      }
+    }
+  ],
+  "baseline": {
+    "total": 120,
+    "duplicate_remote_effects": 60,
+    "remote_commits": 180,
+    "recorded_success": 120,
+    "unknown_pending": 0,
+    "false_recorded_success": 0
+  },
+  "candidate": {
+    "total": 120,
+    "duplicate_remote_effects": 0,
+    "remote_commits": 90,
+    "recorded_success": 30,
+    "unknown_pending": 90,
+    "false_recorded_success": 0
+  },
+  "timing": {
+    "unit": "nanoseconds_per_case_including_state_IO_and_python_clock",
+    "p95_baseline_ns": 175984,
+    "p95_candidate_ns": 568162
+  },
+  "negative_controls": [
+    "server effect ACK lost",
+    "network failure before effect",
+    "crash after ACK before local save"
+  ],
+  "limitations": [
+    "The candidate is a synthetic prototype outside the actual TelegramBot codebase, not an integrated outbox.",
+    "The mock server has no idempotency/reconciliation API; UNKNOWN outcomes remain unresolved, so true exactly-once is not claimed.",
+    "Replay-on-next-run is intentionally simulated from source-inspected caller logic; no full live scheduler executed.",
+    "The candidate reduces duplicate auto-retries by quarantining UNKNOWN, trading away automated retry/liveness.",
+    "Microbenchmark includes SQLite durability and is not a production runtime forecast."
+  ],
+  "run_kind": "SANDBOX_OFFLINE_SYNTHETIC_A_B"
+}

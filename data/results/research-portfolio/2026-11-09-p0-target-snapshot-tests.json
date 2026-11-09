@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "tests": [
+    {
+      "id": "sequential-rca-review",
+      "repo": "sequential-rca",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "pytest",
+        "tests/test_review.py",
+        "-q",
+        "--disable-warnings"
+      ],
+      "returncode": 0,
+      "network": "bubblewrap unshare-net",
+      "sha256_of_test_output": "06d14bae2e96c13e483c3105c635ca4cbe7209f8eb68e6a70584fe98272e71c6",
+      "output_last_lines": [
+        "..............                                                           [100%]",
+        "14 passed, 1 warning in 0.07s"
+      ]
+    },
+    {
+      "id": "agent-config-review",
+      "repo": "agent-config",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_review.py",
+        "-q"
+      ],
+      "returncode": 0,
+      "network": "bubblewrap unshare-net",
+      "sha256_of_test_output": "22337a2b3618411c1bb94c402fc8301dde7aaf201bdfff137644d15e8f3be615",
+      "output_last_lines": [
+        "----------------------------------------------------------------------",
+        "Ran 9 tests in 0.014s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "id": "wiki-pg-guc",
+      "repo": "Wiki_PG",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "pytest",
+        "Wiki_PG/scripts/tests/test_pg_config_lookup.py",
+        "-q",
+        "--disable-warnings"
+      ],
+      "returncode": 0,
+      "network": "bubblewrap unshare-net",
+      "sha256_of_test_output": "60a5c72794bf287e88771a61e1837707506578bb93b9e14ac7c37a1b9c73c802",
+      "output_last_lines": [
+        "...................................                                      [100%]",
+        "35 passed, 1 warning in 0.10s"
+      ]
+    },
+    {
+      "id": "trinmedical-clinical-plumbing",
+      "repo": "TrinMedicalBot",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "eval",
+        "-p",
+        "test_clinical_review.py",
+        "-q"
+      ],
+      "returncode": 0,
+      "network": "bubblewrap unshare-net",
+      "sha256_of_test_output": "9602f40fbad78531120f4923ce9abb52ef13ccdceefc5c95ef6068ab74458539",
+      "output_last_lines": [
+        "----------------------------------------------------------------------",
+        "Ran 17 tests in 0.032s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "id": "paper2project-core",
+      "repo": "dsh-paper2agent",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_paper2project.py",
+        "-q"
+      ],
+      "returncode": 0,
+      "network": "bubblewrap unshare-net",
+      "sha256_of_test_output": "7d3f9cab1b052cfa3b0470f13a3b4e11b8aceadfb6d10a36fd04f7c373b9c0b9",
+      "output_last_lines": [
+        "/usr/lib64/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 307: 'redirect refused'>",
+        "  _warnings.warn(self.warn_message, ResourceWarning)",
+        "----------------------------------------------------------------------",
+        "Ran 79 tests in 6.990s",
+        "",
+        "OK (skipped=15)"
+      ]
+    },
+    {
+      "id": "agent-skills-static",
+      "repo": "agent-skills",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_skill_contract.py",
+        "-q"
+      ],
+      "returncode": 0,
+      "network": "bubblewrap unshare-net",
+      "sha256_of_test_output": "50e0b0587dce90871df6ee215b272b51bb1e2c66169a78bd07fa35f55e12b4b2",
+      "output_last_lines": [
+        "----------------------------------------------------------------------",
+        "Ran 3 tests in 0.002s",
+        "",
+        "OK"
+      ]
+    }
+  ]
+}

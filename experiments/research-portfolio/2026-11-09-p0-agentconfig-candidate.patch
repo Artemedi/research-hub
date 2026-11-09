@@ -1,0 +1,14 @@
+--- a/tools/review.py
++++ b/tools/review.py
+@@ -106,7 +106,9 @@
+     for f in findings:
+         text = by_name.get(f.get("file"))
+         lines = text.splitlines() if text is not None else []
+-        f["location_ok"] = text is not None and 1 <= f.get("line", 0) <= len(lines)
++        line = f.get("line")
++        valid = type(line) is int and 1 <= line <= len(lines)
++        f["location_ok"] = valid
+         quote = " ".join(str(f.get("evidence", "")).split())
+-        f["evidence_found"] = bool(quote) and text is not None and quote in " ".join(text.split())
++        f["evidence_found"] = bool(quote) and valid and quote in " ".join(lines[line - 1].split())
+     return findings
