@@ -110,6 +110,7 @@
 | [data/results/research-portfolio/2026-11-07-toolbox-security-critics.json](results/research-portfolio/2026-11-07-toolbox-security-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-zcode-citation-council-ab.json](results/research-portfolio/2026-11-07-zcode-citation-council-ab.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-zcode-screening.json](results/research-portfolio/2026-11-07-zcode-screening.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-closure-ledger.json](results/research-portfolio/2026-11-09-closure-ledger.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/simurg/2026-11-07-hash-stability.json](results/simurg/2026-11-07-hash-stability.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |
