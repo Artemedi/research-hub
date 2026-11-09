@@ -27,6 +27,8 @@ jobs:
         run: python3 experiments/research-portfolio/2026-11-09-ledger-independent-check.py --check
       - name: Verify targeted research-to-project hypothesis matrix
         run: python3 experiments/research-portfolio/2026-11-09-targeted-fit.py --check
+      - name: Verify P0 offline results and adoption gates
+        run: python3 experiments/research-portfolio/p0-20261110/build_outcomes.py --check
       - name: Check script syntax
         run: |
           node --check scripts/build-catalog.mjs

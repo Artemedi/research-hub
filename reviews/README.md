@@ -24,6 +24,8 @@
 | [Target-path citation and PostgreSQL planner resource counterchecks](../portfolio/2026-11-07/target-counterchecks-round3.md) | 2026-11-07 |
 | [Clean-source ZCode citation council and real MCP SQL security boundary](../portfolio/2026-11-07/target-counterchecks-round4.md) | 2026-11-07 |
 | [Research-to-project source seam, effect and A/B protocol matrix](../portfolio/2026-11-09/targeted-fit.md) | 2026-11-09 |
+| [Source-pinned P0 independent A/B execution plan](../portfolio/2026-11-10-p0-execution-plan.md) | 2026-11-10 |
+| [P0 controlled synthetic trials and sixteen independent adoption gates](../portfolio/2026-11-10-p0-execution.md) | 2026-11-10 |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |
 | [Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B](agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) | 2026-11-08 |
 | [Agent Mosaic — полнотекстовый follow-up и synthetic composite-gate lab](agent-mosaic/2026-11-07-composite-gate.md) | 2026-11-07 |

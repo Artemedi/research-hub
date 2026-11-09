@@ -1,0 +1,257 @@
+{
+  "date": "2026-11-10",
+  "scope": "SUBSYSTEM_OFFLINE_SYNTHETIC_ONLY",
+  "results": [
+    {
+      "source_name": "TelegramBot",
+      "executed_source_functions": [
+        "send_telegram",
+        "save_post_state",
+        "load_post_state"
+      ],
+      "source_file_sha256": "96ef4a27fd26def1254a9c69bfb896cd24e1eb175fe11b54f02db7158e3c9de2",
+      "study_id": "exactly-once-limbo",
+      "project_id": "TelegramBot",
+      "protocol": "delivery",
+      "baseline": "original send + original state functions, source main retry branch simulated with a single retry",
+      "variant": "outbox UNKNOWN quarantine to prevent blind resend (isolated sidecar policy only)",
+      "dataset": "120 predeclared offline cases: 40 ack, 40 remote commit + lost ACK, 40 no remote commit + timeout",
+      "independent_oracle": "mock remote committed-send ledger; exactly one remote commit required per case",
+      "metrics": {
+        "baseline_retry": {
+          "cases": 120,
+          "duplicate_cases": 40,
+          "lost_delivery_cases": 0,
+          "exactly_once_cases": 80,
+          "quarantined_unknown_cases": 0,
+          "false_local_success": 0,
+          "total_remote_commits": 160,
+          "total_attempts": 200,
+          "case_types": {
+            "ack": {
+              "runs": 40,
+              "duplicates": 0,
+              "missing": 0
+            },
+            "commit_lost_ack": {
+              "runs": 40,
+              "duplicates": 40,
+              "missing": 0
+            },
+            "before_commit_timeout": {
+              "runs": 40,
+              "duplicates": 0,
+              "missing": 0
+            }
+          },
+          "timing": {
+            "p50_us": 94.922,
+            "p95_us": 110.462
+          }
+        },
+        "candidate_quarantine": {
+          "cases": 120,
+          "duplicate_cases": 0,
+          "lost_delivery_cases": 40,
+          "exactly_once_cases": 80,
+          "quarantined_unknown_cases": 80,
+          "false_local_success": 0,
+          "total_remote_commits": 80,
+          "total_attempts": 120,
+          "case_types": {
+            "ack": {
+              "runs": 40,
+              "duplicates": 0,
+              "missing": 0
+            },
+            "commit_lost_ack": {
+              "runs": 40,
+              "duplicates": 0,
+              "missing": 0
+            },
+            "before_commit_timeout": {
+              "runs": 40,
+              "duplicates": 0,
+              "missing": 40
+            }
+          },
+          "timing": {
+            "p50_us": 71.401,
+            "p95_us": 77.212
+          }
+        }
+      },
+      "negative_controls": [
+        "ACK lost after commit",
+        "timeout before remote commit",
+        "normal success"
+      ],
+      "subsystem_verdict": "REJECT_TREATMENT_DELIVERY_REGRESSION",
+      "full_product_verdict": "BLOCKED_FULL_AB",
+      "blocking_reason": "Candidate quarantine reduces duplicates by 40/120 but loses 40/120 deliveries; actual Telegram sendMessage lacks independently proven authoritative reconciliation/idempotency for an UNKNOWN outcome.",
+      "limits": [
+        "No end-to-end original main() execution; caller retry behavior follows source inspection.",
+        "Local candidate is not merged into target repo.",
+        "Mock transport has omniscient oracle unavailable to the Telegram client.",
+        "Microbench timing includes temporary file I/O and not production API latency."
+      ],
+      "receipt_version": 1,
+      "snapshot_scope": "pinned Git source file extracted into read-only mount; only declared function executed",
+      "network_access": "DENIED_BWRAP_NETWORK_NAMESPACE",
+      "real_model_used": false,
+      "human_expert_oracle": false
+    },
+    {
+      "source_name": "agent-config",
+      "executed_source_functions": [
+        "check_findings"
+      ],
+      "source_file_sha256": "5aa8032a7c56fc6ff1fe050138343a54d8363d1211aa72e7733c153001cfe505",
+      "study_id": "agent-risk",
+      "project_id": "agent-config",
+      "protocol": "citation",
+      "baseline": "original check_findings() location_ok AND evidence_found flags",
+      "variant": "isolated same-line bound quote check, no production patch",
+      "dataset": "80 pinned synthetic file-claim pairs, 30 valid, 20 wrong line, 15 wrong source/no quote, 15 invented quote",
+      "independent_oracle": "Predeclared truth labels from fixture types and exact target line in independent fixture builder",
+      "metrics": {
+        "baseline": {
+          "cases": 80,
+          "true_accepts": 30,
+          "false_accepts": 20,
+          "false_rejects": 0,
+          "true_rejects": 30,
+          "by_control_type": {
+            "valid": {
+              "cases": 30,
+              "false_accepts": 0
+            },
+            "wrong_line": {
+              "cases": 20,
+              "false_accepts": 20
+            },
+            "wrong_file": {
+              "cases": 15,
+              "false_accepts": 0
+            },
+            "invented_quote": {
+              "cases": 15,
+              "false_accepts": 0
+            }
+          },
+          "timing": {
+            "p50_us": 0.97,
+            "p95_us": 1.24
+          }
+        },
+        "candidate_same_line": {
+          "cases": 80,
+          "true_accepts": 30,
+          "false_accepts": 0,
+          "false_rejects": 0,
+          "true_rejects": 50,
+          "by_control_type": {
+            "valid": {
+              "cases": 30,
+              "false_accepts": 0
+            },
+            "wrong_line": {
+              "cases": 20,
+              "false_accepts": 0
+            },
+            "wrong_file": {
+              "cases": 15,
+              "false_accepts": 0
+            },
+            "invented_quote": {
+              "cases": 15,
+              "false_accepts": 0
+            }
+          },
+          "timing": {
+            "p50_us": 0.61,
+            "p95_us": 0.8
+          },
+          "p95_vs_baseline": 0.6452,
+          "synthetic_gate_satisfied": true
+        }
+      },
+      "negative_controls": [
+        "right quote wrong line",
+        "wrong source file",
+        "quote absent"
+      ],
+      "subsystem_verdict": "PASS_OFFLINE_LINE_BINDING_GUARD",
+      "full_product_verdict": "BLOCKED_FULL_AB",
+      "blocking_reason": "No integrated consumer, trace corpus or verified downstream acceptance behavior; quality win only on synthetic function-level citations.",
+      "limits": [
+        "check_findings returns diagnostic fields; downstream auto-acceptance is not established.",
+        "No independent expert assessed real review findings.",
+        "Microbench p95 on synthetic in-process calls is not end-to-end review latency."
+      ],
+      "receipt_version": 1,
+      "snapshot_scope": "pinned Git source file extracted into read-only mount; only declared function executed",
+      "network_access": "DENIED_BWRAP_NETWORK_NAMESPACE",
+      "real_model_used": false,
+      "human_expert_oracle": false
+    },
+    {
+      "source_name": "Wiki_PG",
+      "executed_source_functions": [
+        "_rrf_fuse"
+      ],
+      "source_file_sha256": "5493b1c78ebe61313051536514e201f7bc3c1a1828077efd413c7ed489255e2a",
+      "study_id": "drag",
+      "project_id": "Wiki_PG",
+      "protocol": "retrieval",
+      "baseline": "pinned pure RRF merge subroutine, top-5 without source admission",
+      "variant": "isolated allowlist/filter prior to top-5, not the actual retrieve() pipeline",
+      "dataset": "60 frozen source-rank scenarios: 45 allowed-source, 15 adversarial rank-source conflicts",
+      "independent_oracle": "Predeclared allowed source-ID set and 5 exact gold IDs per case",
+      "metrics": {
+        "baseline_rrf": {
+          "cases": 60,
+          "recall_at_5_total": 270,
+          "max_recall_at_5": 300,
+          "wrong_source_count": 30,
+          "ood_cases_with_wrong_source": 15,
+          "timing": {
+            "p50_us": 1.996,
+            "p95_us": 2.85
+          }
+        },
+        "candidate_scoped_rrf": {
+          "cases": 60,
+          "recall_at_5_total": 300,
+          "max_recall_at_5": 300,
+          "wrong_source_count": 0,
+          "ood_cases_with_wrong_source": 0,
+          "timing": {
+            "p50_us": 2.15,
+            "p95_us": 3.0
+          },
+          "p95_vs_baseline": 1.0526,
+          "synthetic_gate_satisfied": true
+        }
+      },
+      "negative_controls": [
+        "forbidden source dominates two rankers",
+        "correct source below bad source",
+        "normal all-allowed recall"
+      ],
+      "subsystem_verdict": "PASS_OFFLINE_RANK_SOURCE_GUARD",
+      "full_product_verdict": "BLOCKED_FULL_AB",
+      "blocking_reason": "Actual retrieve() performs ChromaDB/dense+BM25 and tenant/filter work; this test executes only pure _rrf_fuse, not the DRAG algorithm nor live retrieval or latency.",
+      "limits": [
+        "No embeddings, source indexing, model output, ChromaDB or live database.",
+        "The candidate is post-ranking authorization filtering, not upstream DRAG reproduction.",
+        "In-process microbench timings should not be used for deployment sizing."
+      ],
+      "receipt_version": 1,
+      "snapshot_scope": "pinned Git source file extracted into read-only mount; only declared function executed",
+      "network_access": "DENIED_BWRAP_NETWORK_NAMESPACE",
+      "real_model_used": false,
+      "human_expert_oracle": false
+    }
+  ]
+}

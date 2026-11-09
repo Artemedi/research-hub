@@ -1,0 +1,25 @@
+{
+  "status": "PASS_PINNED_BASELINE_SCOPE_TESTS_ONLY",
+  "study_id": "agent-mosaic",
+  "project_id": "dsh-team-context",
+  "source_anchor": {
+    "repo": "dsh-team-context",
+    "commit": "b7268d12581be2705c5e675991126c25f735701a",
+    "path": "src/core/scoped-recall.ts",
+    "line": 73,
+    "file_sha256": "ffec7b3fc6ad69a233342c137002bd17a2c91084cb5335e85d64b7c58b9e9189",
+    "symbol": "^export async function recallScoped\\(",
+    "boundary": "scoped knowledge retrieval result",
+    "url": "https://github.com/Artemedi/dsh-team-context/blob/b7268d12581be2705c5e675991126c25f735701a/src/core/scoped-recall.ts#L73"
+  },
+  "source_archive_sha256": "f95bb4fee75e895c7fe87ae1ee91d9e07ede84ab07914c29d472902343e14aa1",
+  "network_denied": true,
+  "baseline_command": "tsx --test test/scoped-recall.test.ts on original archive; no variants",
+  "tests_run": 3,
+  "tests_pass": 3,
+  "tests_fail": 0,
+  "runtime_s": 0.333,
+  "output_tail": "TAP version 13\n# Subtest: project scope is isolated from user scope by default\nok 1 - project scope is isolated from user scope by default\n  ---\n  duration_ms: 29.420185\n  type: 'test'\n  ...\n# Subtest: inheritUserScope composes safe read results while project entry shadows same user path\nok 2 - inheritUserScope composes safe read results while project entry shadows same user path\n  ---\n  duration_ms: 4.50019\n  type: 'test'\n  ...\n# Subtest: active project namespaces exclude unselected project directories but retain shared root knowledge\nok 3 - active project namespaces exclude unselected project directories but retain shared root knowledge\n  ---\n  duration_ms: 9.110813\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 184.0642\n\n",
+  "no_measured_treatment": true,
+  "notes": "Original recallScoped defaults to project-only, explicit inheritUserScope adds user with scope label and duplicate project wins. No new Agent Mosaic consumer is implemented; no measured effect."
+}
