@@ -38,6 +38,18 @@ test('unindexed study is rejected', () => {
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /uncatalogued study/);
 });
+test('terminal study disposition cannot silently change in the independent ledger', () => {
+  const result = fixture(dir => {
+    const file = path.join(dir, 'data/results/research-portfolio/2026-11-09-closure-ledger.json');
+    const ledger = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const study = ledger.studies.find(item => item.study_id === 'hyperresearch');
+    assert.equal(study.closure_status, 'BLOCKED');
+    study.closure_status = 'ACCEPT_BOUNDED';
+    fs.writeFileSync(file, JSON.stringify(ledger, null, 2) + '\n');
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /Closure ledger integrity failed/);
+});
 test('changed archive bytes are rejected', () => {
   const result = fixture(dir => fs.appendFileSync(path.join(dir, 'archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md'), '\nChanged\n'));
   assert.notEqual(result.status, 0);

@@ -20,6 +20,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify independent research closure ledger
+        run: python3 experiments/research-portfolio/2026-11-09-ledger-independent-check.py --check
       - name: Check script syntax
         run: |
           node --check scripts/build-catalog.mjs
