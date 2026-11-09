@@ -1,9 +1,9 @@
 # Evidence-based closure ledger — first adjudication pass (83 cards)
 
 Date: 2026-11-09. This is a finite evidence register, not 83 new reports.
-Only existing source, code, negative controls and oracles were inspected; no model run, production action or source-card rewrite occurred.
+This reconciliation reuses previous checks and includes the independent new Hyperresearch synthetic citation holdout; no model service, production action or source-card rewrite occurred.
 
-Terminal: 13/83. Open: 70/83.
+Terminal: 14/83. Open: 69/83.
 
 [Machine-readable 83-card ledger](../../data/results/research-portfolio/2026-11-09-closure-ledger.json) contains per-card SHA, review, full-source pointers, experiment records, project assessment coverage and precise unresolved gates. [Reproduction script](../../experiments/research-portfolio/2026-11-09-closure-ledger.py).
 
@@ -28,16 +28,19 @@ Terminal: 13/83. Open: 70/83.
 All 13 ACCEPT_BOUNDED records refer only to explicitly measured narrow properties.
 They do not endorse author-reported generalization, target-project benefit or deployment.
 
+## Terminal source blocker (not a fictitious ACCEPT)
+
+The [Hyperresearch source review](../../reviews/hyperresearch/2026-11-09-citation-adjudication.md) documents original triage_pairs granting 48/60 unsafe auto-support outcomes on new synthetic temporal/scope/authorization/conjunction claims. Source adoption is BLOCKED: CITATION_AUTO_PASS_FALSE_SUPPORT; the exact-only comparator prevents these auto-passes at the cost of paraphrase abstention. The source pin, alternatives and explicit unblock criterion are recorded per-card. Unrelated storage/retrieval behavior is not rejected.
+
 ## Unresolved evidence, not false closure
 
-70 source cards remain OPEN_EVIDENCE_ADJUDICATION, not REWORK-by-default, BLOCKED-without-a-real-obstacle or speculative ACCEPT.
+69 source cards remain OPEN_EVIDENCE_ADJUDICATION, not REWORK-by-default, BLOCKED-without-a-real-obstacle or speculative ACCEPT.
 Existing canonical current assessments cover 506/3735 research–project pairs; 3229 pairs have no explicit decision. They are not inferred NO_FIT.
 The previous 83/83 coverage report established review-document provenance, not scientific validity; this ledger explicitly preserves that boundary.
 
 ## Next finite gates
 
-1. hyperresearch: independent adverse citation oracle; do not rerun unrelated 54 upstream passing tests.
-2. Source availability: warp-skill-doctor, hyra-2, unreal-agent, sequential-diagnosis-language-models. A BLOCKED result requires failed access attempts and an unblock criterion, not merely no local source.
-3. Remaining full-primary cases: decide ACCEPT_RESEARCH_ONLY only after independent methodological review; otherwise use a bounded oracle or documented obstacle. The linked existing experiments must be adjudicated before any new execution.
+1. Source availability: warp-skill-doctor, hyra-2, unreal-agent, sequential-diagnosis-language-models. A BLOCKED result requires failed access attempts and an unblock criterion, not merely no local source.
+2. Remaining full-primary cases: decide ACCEPT_RESEARCH_ONLY only after independent methodological review; otherwise use a bounded oracle or documented obstacle. The linked existing experiments must be adjudicated before any new execution.
 
 No original study cards, generated source bodies, target project repositories, private registry files or production resources were modified.

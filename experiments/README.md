@@ -82,6 +82,8 @@
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py](goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py)
 - [htn-orchestrate/2026-11-07-offline-audit.py](htn-orchestrate/2026-11-07-offline-audit.py)
 - [hyperresearch/2026-11-07-pinned-upstream-tests.py](hyperresearch/2026-11-07-pinned-upstream-tests.py)
+- [hyperresearch/2026-11-09-temporal-scope-ab.py](hyperresearch/2026-11-09-temporal-scope-ab.py)
+- [hyperresearch/2026-11-09-temporal-scope-oracle.py](hyperresearch/2026-11-09-temporal-scope-oracle.py)
 - [kvtether/2026-11-07-event-oracle.py](kvtether/2026-11-07-event-oracle.py)
 - [kvtether/2026-11-07-event-order.mjs](kvtether/2026-11-07-event-order.mjs)
 - [research-portfolio/2026-11-07-claude-swarm-critics.py](research-portfolio/2026-11-07-claude-swarm-critics.py)

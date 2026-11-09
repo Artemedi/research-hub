@@ -3736,6 +3736,20 @@
       "source_coverage": "PARTIAL_SOURCE_REVIEW",
       "limitations": "Full arXiv v1 PDF was rechecked, but this follow-up covers replay assumptions, pinned companion package and one deterministic synthetic fixture only. The authors’ 16 runs / approximately 49,000 episodes were not reproduced; no target project source or production runtime was evaluated.",
       "supersedes": null
+    },
+    {
+      "id": "hyperresearch-citation-holdout-20261109",
+      "study_ids": [
+        "hyperresearch"
+      ],
+      "version_ids": [
+        "hyperresearch-version"
+      ],
+      "date": "2026-11-09",
+      "document": "reviews/hyperresearch/2026-11-09-citation-adjudication.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned original triage_pairs auto-passed 48/60 independently labelled synthetic unsupported temporal/scope/authorization/conjunction examples. This is not real-world error prevalence, full downstream LLM testing, a comprehensive library audit or deployment approval.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4130,6 +4144,23 @@
         "experiments/agent-risk/2026-11-09-replay-boundary.py",
         "data/results/agent-risk/2026-11-09-replay-boundary.json",
         "reviews/agent-risk/2026-11-09-replay-assumptions.md"
+      ]
+    },
+    {
+      "id": "hyperresearch-temporal-scope-holdout-20261109",
+      "study_ids": [
+        "hyperresearch"
+      ],
+      "review_id": "hyperresearch-citation-holdout-20261109",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "84 examples from 12 authored synthetic source clauses, original pinned upstream triage_pairs. 48/60 unsupported auto-passed; exact-only 0/60; independent fixture and numerical oracle validated 84 records and detected 3 synthetic mutations.",
+      "limitations": "Not full scientific citation corpus, no blinded human labels, original library LLM/vault pipeline and real target project not executed.",
+      "artifacts": [
+        "experiments/hyperresearch/2026-11-09-temporal-scope-ab.py",
+        "experiments/hyperresearch/2026-11-09-temporal-scope-oracle.py",
+        "data/results/hyperresearch/2026-11-09-temporal-scope-ab.json",
+        "data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json"
       ]
     }
   ],

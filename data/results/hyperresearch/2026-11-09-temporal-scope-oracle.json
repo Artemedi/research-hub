@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "validated_cases": 84,
+  "nonsemantic_independence": "Independent fixture reconstruction and arithmetic; synthetic gold labels authored, not a blinded expert review.",
+  "counts": {
+    "cases": 84,
+    "synthetic_supported": 24,
+    "source_unsupported_auto_pass": 48,
+    "source_supported_auto_pass": 24,
+    "exact_only_unsupported_auto_pass": 0,
+    "exact_only_supported_auto_pass": 12,
+    "synthetic_unsupported": 60
+  },
+  "category_verdicts": {
+    "exact_support/supported-mechanical": 12,
+    "missing_authorization/supported-mechanical": 12,
+    "reordered_support/supported-mechanical": 12,
+    "scope_expansion/supported-mechanical": 12,
+    "temporal_reversal/supported-mechanical": 12,
+    "unrelated/needs-llm": 12,
+    "unsupported_conjunction/supported-mechanical": 12
+  },
+  "input_sha256": "4df79e25d14c1d084629259fa0198f0334e12d659616cf6709420feec0c6315b",
+  "mutated_gold_rejected": true,
+  "mutated_verdict_rejected": true,
+  "mutated_fixture_rejected": true
+}

@@ -2345,6 +2345,27 @@
       "title": "Evidence-based 83-card closure ledger — machine data",
       "kind": "data",
       "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "reviews/hyperresearch/2026-11-09-citation-adjudication.md",
+      "title": "Hyperresearch — citation auto-pass source blocker",
+      "kind": "review",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/hyperresearch/2026-11-09-temporal-scope-ab.json",
+      "title": "Hyperresearch — 84 synthetic source holdout cases",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json",
+      "title": "Hyperresearch — independent oracle and negative controls",
+      "kind": "data",
+      "date": "2026-11-09"
     }
   ]
 }

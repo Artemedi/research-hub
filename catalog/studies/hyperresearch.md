@@ -11,6 +11,7 @@
 ## Версии и история обзоров
 
 - [hyperresearch-review](../../reviews/hyperresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).
+- [hyperresearch-citation-holdout-20261109](../../reviews/hyperresearch/2026-11-09-citation-adjudication.md), 2026-11-09; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).
 
 ## Применимость к проектам
 
@@ -21,7 +22,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- hyperresearch-temporal-scope-holdout-20261109: SYNTHETIC / OBSERVED. 84 examples from 12 authored synthetic source clauses, original pinned upstream triage_pairs. 48/60 unsupported auto-passed; exact-only 0/60; independent fixture and numerical oracle validated 84 records and detected 3 synthetic mutations. Not full scientific citation corpus, no blinded human labels, original library LLM/vault pipeline and real target project not executed. [Артефакт](../../experiments/hyperresearch/2026-11-09-temporal-scope-ab.py) · [Артефакт](../../experiments/hyperresearch/2026-11-09-temporal-scope-oracle.py) · [Артефакт](../../data/results/hyperresearch/2026-11-09-temporal-scope-ab.json) · [Артефакт](../../data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json)
 
 ## Ссылки из исходной карточки
 

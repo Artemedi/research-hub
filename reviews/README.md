@@ -59,6 +59,7 @@
 | [HTN-Orchestrate — paired ablation and synthetic DAG follow-up](htn-orchestrate/2026-11-08-paired-audit-followup.md) | 2026-11-08 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Pinned upstream Hyperresearch 54 test execution and existing citation limits](hyperresearch/2026-11-07-upstream-tests.md) | 2026-11-07 |
+| [Hyperresearch — citation auto-pass source blocker](hyperresearch/2026-11-09-citation-adjudication.md) | 2026-11-09 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
 | [Inspektor Gadget — разрешения eBPF](inspektor-gadget/2026-11-04.md) | 2026-11-04 |
 | [BK-041 — проверка системного допуска](inspektor-gadget/2026-11-06-privilege-gate.md) | 2026-11-06 |
