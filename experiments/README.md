@@ -44,6 +44,7 @@
 - [agent-error-dataset/2026-11-08-independent-oracle.py](agent-error-dataset/2026-11-08-independent-oracle.py)
 - [agent-mosaic/2026-11-07-composite-gate-oracle.py](agent-mosaic/2026-11-07-composite-gate-oracle.py)
 - [agent-mosaic/2026-11-07-composite-gate.py](agent-mosaic/2026-11-07-composite-gate.py)
+- [agent-risk/2026-11-09-replay-boundary.py](agent-risk/2026-11-09-replay-boundary.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)
 - [bk011-simurg/check-fixture.py](bk011-simurg/check-fixture.py)
 - [bk019-skill-doctor/attribution-fixture.py](bk019-skill-doctor/attribution-fixture.py)

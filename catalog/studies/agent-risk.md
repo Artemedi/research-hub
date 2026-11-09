@@ -6,23 +6,24 @@
 
 ## Текущий обзор
 
-[agent-risk-review](../../studies/agent-risk.md) — FULL_TEXT_REVIEWED. Full PDF v1 reviewed, not reproduced; conclusions depend on finite paths, recovery assumptions and available logs.
+[agent-risk-replay-assumptions-20261109](../../reviews/agent-risk/2026-11-09-replay-assumptions.md) — PARTIAL_SOURCE_REVIEW. Full arXiv v1 PDF was rechecked, but this follow-up covers replay assumptions, pinned companion package and one deterministic synthetic fixture only. The authors’ 16 runs / approximately 49,000 episodes were not reproduced; no target project source or production runtime was evaluated.
 
 ## Версии и история обзоров
 
 - [agent-risk-review](../../studies/agent-risk.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.16280vv1).
+- [agent-risk-replay-assumptions-20261109](../../reviews/agent-risk/2026-11-09-replay-assumptions.md), 2026-11-09; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.16280vv1).
 
 ## Применимость к проектам
 
 Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-- [HermesAgent](../../projects/HermesAgent.md): DOCUMENTED_CANDIDATE; P1 / PROJECT_PROFILE_MATCH. Pre-change gate: логи, snapshot и неизвестные продолжения; harm/utility и воспроизводимость Ограничения: Документальная оценка из явной колонки целевых проектов; исходники и эффект проекта этой миграцией не проверялись. Следующий тест: Минимальный тест и ограничения сохранены в процитированной строке источника. [Основание](../../portfolio/2026-10-12--2026-10-19/project-fit.md); предыдущая оценка: нет.
-- [agent-config](../../projects/agent-config.md): DOCUMENTED_CANDIDATE; P1 / PROJECT_PROFILE_MATCH. Pre-change gate: логи, snapshot и неизвестные продолжения; harm/utility и воспроизводимость Ограничения: Документальная оценка из явной колонки целевых проектов; исходники и эффект проекта этой миграцией не проверялись. Следующий тест: Минимальный тест и ограничения сохранены в процитированной строке источника. [Основание](../../portfolio/2026-10-12--2026-10-19/project-fit.md); предыдущая оценка: нет.
-- [dsh-runtime](../../projects/dsh-runtime.md): DOCUMENTED_CANDIDATE; P1 / PROJECT_PROFILE_MATCH. Pre-change gate: логи, snapshot и неизвестные продолжения; harm/utility и воспроизводимость Ограничения: Документальная оценка из явной колонки целевых проектов; исходники и эффект проекта этой миграцией не проверялись. Следующий тест: Минимальный тест и ограничения сохранены в процитированной строке источника. [Основание](../../portfolio/2026-10-12--2026-10-19/project-fit.md); предыдущая оценка: нет.
+- [dsh-runtime](../../projects/dsh-runtime.md): DOCUMENTED_CANDIDATE; PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE. Профильный контекст основного agent runtime и измерительного контура тематически соответствует pre-change replay изменений runtime/gate. Ограничения: Прочитан только PROJECT.md; target source repository, runtime, durable logs, snapshots и integration seam не проверялись. Следующий тест: Проверить pinned current source на durable per-step log и полноценный restorable snapshot; затем 20–40 offline trajectories с log-only/full-rerun/targeted-replay, independent oracle и A1/A2/T negative controls. [Основание](../../portfolio/2026-11-09/agent-risk-project-fit.md); предыдущая оценка: agent-risk-document-dsh-runtime.
+- [agent-config](../../projects/agent-config.md): DOCUMENTED_CANDIDATE; PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE. Профиль конфигурационного и hook/review слоя допускает применение метода к оценке policy/config changes до включения. Ограничения: Прочитан только PROJECT.md; current hooks, persistence review evidence, source-level decision boundary и CI не проверялись. Следующий тест: Проверить current source на hook invocation и durable review record; затем синтетические policy-change cases с independent oracle, false-allow/false-deny, cost и regression metrics. [Основание](../../portfolio/2026-11-09/agent-risk-project-fit.md); предыдущая оценка: agent-risk-document-agent-config.
+- [HermesAgent](../../projects/HermesAgent.md): DEFERRED; DEFERRED / NO_DIRECT_REPLAY_SEAM_IN_PROFILE. Профильный контекст близок к агентной конфигурации, но не показывает прямой replay/snapshot approval boundary для изменения агента. Ограничения: Прочитан только PROJECT.md; source code и runtime не проверялись. DEFERRED не означает общий NO_FIT. Следующий тест: Возвращаться к оценке только при наличии durable episode logs, restorable execution state и pre-change decision gate. [Основание](../../portfolio/2026-11-09/agent-risk-project-fit.md); предыдущая оценка: agent-risk-document-HermesAgent.
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- agent-risk-replay-boundary-20261109: SYNTHETIC / PASS. 200 deterministic finite episodes; 171 first-deviation continuations matched a full-from-zero live oracle (0/171 harm mismatches); log-only outer bounds [0.135, 0.890] contained live harm 0.665; targeted continuation used 600/1,200 synthetic proposal calls with prefix-log cost excluded. Negative controls: incomplete snapshot 24/171 mismatches, announced gate 34/171, changed environment 127/171; same coarse harm flag with different harm timing changed stopping replay. No LLM, author harness, real log, tool environment, database or production data. Synthetic calls are proposal steps, not token/latency/cost measurements. This is not reproduction of the paper’s empirical runs. [Артефакт](../../experiments/agent-risk/2026-11-09-replay-boundary.py) · [Артефакт](../../data/results/agent-risk/2026-11-09-replay-boundary.json) · [Артефакт](../../reviews/agent-risk/2026-11-09-replay-assumptions.md)
 
 ## Ссылки из исходной карточки
 

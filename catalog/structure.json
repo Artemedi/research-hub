@@ -2289,6 +2289,48 @@
       "title": "HTN-Orchestrate — machine-readable project fit",
       "kind": "data",
       "date": "2026-11-08"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-risk/2026-11-09-replay-assumptions.md",
+      "title": "agent-risk — replay assumptions and targeted continuation",
+      "kind": "review",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-risk/2026-11-09-replay-boundary.py",
+      "title": "agent-risk — deterministic replay boundary synthetic experiment",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-risk/2026-11-09-replay-boundary.json",
+      "title": "agent-risk — replay boundary synthetic evidence",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "title": "agent-risk — project fit",
+      "kind": "project-fit",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/agent-risk/2026-11-09-project-fit.json",
+      "title": "agent-risk — machine-readable project fit",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-09/review.md",
+      "title": "Portfolio audit 2026-11-09",
+      "kind": "portfolio",
+      "date": "2026-11-09"
     }
   ]
 }

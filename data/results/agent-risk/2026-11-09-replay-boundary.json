@@ -1,0 +1,66 @@
+{
+  "experiment_id": "agent-risk-replay-boundary-20261109",
+  "source": {
+    "paper": "arXiv:2610.16280v1",
+    "paper_pdf_sha256": "2b6b107ed057dbfe7b7133143fe1bd7beef1178700b22bbc7af23caac204d21e",
+    "companion_repo": "https://github.com/yzhao062/agent-risk",
+    "companion_repo_sha": "a1ab24aaf3c1e5bfbe47a24eaf4cf411bf0b3f1b"
+  },
+  "environment": "deterministic synthetic state machine; standard library only",
+  "scenario_count": 200,
+  "horizon": 6,
+  "threshold": 0.8,
+  "counts": {
+    "blocked_first_deviation": 171,
+    "agree_without_deviation": 29,
+    "targeted_vs_live_harm_mismatches": 0,
+    "incomplete_snapshot_mismatches": 24,
+    "announced_gate_vs_unannounced_replay_mismatches": 34,
+    "changed_environment_vs_old_replay_mismatches": 127
+  },
+  "harm": {
+    "log_only_outer_bounds": [
+      0.135,
+      0.89
+    ],
+    "live_oracle_rate": 0.665,
+    "targeted_replay_rate": 0.665,
+    "targeted_matches_live": true
+  },
+  "calls": {
+    "live_gate_calls": 1200,
+    "targeted_continuation_calls": 600,
+    "targeted_to_live_ratio": 0.5,
+    "prefix_log_cost_excluded": true
+  },
+  "negative_controls": {
+    "same_coarse_harm_flag": true,
+    "missing_timing_changes_stop_replay": true,
+    "omitted_snapshot_state_mismatches": 24,
+    "announced_gate_breaks_A2": 34,
+    "changed_environment_breaks_A1": 127
+  },
+  "status": "PASS",
+  "limitations": [
+    "No LLM, tool environment, database, author harness, or real log was executed.",
+    "The finite deterministic state machine does not estimate field risk or reproduce the paper's 16 runs/49,000 episodes.",
+    "Calls count synthetic proposal steps, not tokens, latency, or monetary cost."
+  ],
+  "elapsed_ms": 4.79,
+  "upstream_verification": {
+    "repository": "https://github.com/yzhao062/agent-risk",
+    "commit": "a1ab24aaf3c1e5bfbe47a24eaf4cf411bf0b3f1b",
+    "python": "3.14.8",
+    "unit_tests": {
+      "passed": 147,
+      "skipped": 2,
+      "failed": 0
+    },
+    "finite_checks": {
+      "passed": 15,
+      "failed": 0,
+      "duration_seconds": 621.9
+    },
+    "scope": "Author companion package unit tests and finite formal-check scripts; not author empirical run reproduction."
+  }
+}

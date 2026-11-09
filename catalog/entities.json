@@ -153,7 +153,7 @@
       "kind": "paper",
       "card": "studies/agent-risk.md",
       "primary_url": "https://arxiv.org/abs/2610.16280",
-      "current_review_id": "agent-risk-review",
+      "current_review_id": "agent-risk-replay-assumptions-20261109",
       "fit_coverage": "PARTIAL",
       "card_body_sha256": "4179dbd6180b498b1f9b2d7182b8fceb3ac54ef4da72f4c27913004c3c635b4b",
       "linked_materials": [
@@ -3722,6 +3722,20 @@
       "source_coverage": "PARTIAL_SOURCE_REVIEW",
       "limitations": "The full-text review remains the 2026-11-03 record. This follow-up reanalyses author-published paired counts and a previously executed independent static-DAG surrogate; two targeted upstream test modules at pinned SHA passed 43/43. It does not reproduce raw author outcomes, run the full upstream suite or establish target project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "agent-risk-replay-assumptions-20261109",
+      "study_ids": [
+        "agent-risk"
+      ],
+      "version_ids": [
+        "agent-risk-version"
+      ],
+      "date": "2026-11-09",
+      "document": "reviews/agent-risk/2026-11-09-replay-assumptions.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Full arXiv v1 PDF was rechecked, but this follow-up covers replay assumptions, pinned companion package and one deterministic synthetic fixture only. The authors’ 16 runs / approximately 49,000 episodes were not reproduced; no target project source or production runtime was evaluated.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4101,6 +4115,22 @@
         "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
         "data/project-fit/htn-orchestrate/2026-11-08-project-fit.json"
       ]
+    },
+    {
+      "id": "agent-risk-replay-boundary-20261109",
+      "study_ids": [
+        "agent-risk"
+      ],
+      "review_id": "agent-risk-replay-assumptions-20261109",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "200 deterministic finite episodes; 171 first-deviation continuations matched a full-from-zero live oracle (0/171 harm mismatches); log-only outer bounds [0.135, 0.890] contained live harm 0.665; targeted continuation used 600/1,200 synthetic proposal calls with prefix-log cost excluded. Negative controls: incomplete snapshot 24/171 mismatches, announced gate 34/171, changed environment 127/171; same coarse harm flag with different harm timing changed stopping replay.",
+      "limitations": "No LLM, author harness, real log, tool environment, database or production data. Synthetic calls are proposal steps, not token/latency/cost measurements. This is not reproduction of the paper’s empirical runs.",
+      "artifacts": [
+        "experiments/agent-risk/2026-11-09-replay-boundary.py",
+        "data/results/agent-risk/2026-11-09-replay-boundary.json",
+        "reviews/agent-risk/2026-11-09-replay-assumptions.md"
+      ]
     }
   ],
   "projects": [
@@ -4167,8 +4197,8 @@
     {
       "id": "HermesAgent",
       "title": "HermesAgent",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/HermesAgent/PROJECT.md",
-      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/421268e5c60fd1b5f37bd69a84b923ff28ce3e86/projects/02-agents-dsh/HermesAgent/PROJECT.md",
+      "registry_revision": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86"
     },
     {
       "id": "TencentDB-Agent-Memory",
@@ -4179,8 +4209,8 @@
     {
       "id": "agent-config",
       "title": "agent-config",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/agent-config/PROJECT.md",
-      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/421268e5c60fd1b5f37bd69a84b923ff28ce3e86/projects/02-agents-dsh/agent-config/PROJECT.md",
+      "registry_revision": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86"
     },
     {
       "id": "agent-skills",
@@ -4215,8 +4245,8 @@
     {
       "id": "dsh-runtime",
       "title": "dsh-runtime",
-      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/b3af154278a8724230185cba6b1898a106a4f25a/projects/02-agents-dsh/dsh-runtime/PROJECT.md",
-      "registry_revision": "b3af154278a8724230185cba6b1898a106a4f25a"
+      "registry_card_url": "https://github.com/Artemedi/project-registry/blob/421268e5c60fd1b5f37bd69a84b923ff28ce3e86/projects/02-agents-dsh/dsh-runtime/PROJECT.md",
+      "registry_revision": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86"
     },
     {
       "id": "dsh-team-context",
@@ -15674,6 +15704,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Documentary assessment; private PROJECT.md content and individual card hashes are not copied into the public model.",
       "supersedes": "htn-orchestrate-document-hermes-akuz-agents"
+    },
+    {
+      "id": "agent-risk-profile-dsh-runtime-20261109",
+      "study_id": "agent-risk",
+      "project_id": "dsh-runtime",
+      "review_id": "agent-risk-replay-assumptions-20261109",
+      "date": "2026-11-09",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SHORTLIST / PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+      "reason": "Профильный контекст основного agent runtime и измерительного контура тематически соответствует pre-change replay изменений runtime/gate.",
+      "limitations": "Прочитан только PROJECT.md; target source repository, runtime, durable logs, snapshots и integration seam не проверялись.",
+      "next_test": "Проверить pinned current source на durable per-step log и полноценный restorable snapshot; затем 20–40 offline trajectories с log-only/full-rerun/targeted-replay, independent oracle и A1/A2/T negative controls.",
+      "next_test_reason": "Profile-level assessment only; source-level evidence is required before any implementation decision.",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Target project source was not inspected; only the private PROJECT.md profile was read.",
+      "source_document": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "source_line": 10,
+      "source_excerpt": "| agent-risk | `dsh-runtime` | **SHORTLIST / PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE** — профиль описывает основной agent runtime и измерительный контур; pre-change replay тематически релевантен изменениям runtime/gate. | `NOT_EVALUATED` | Проверить pinned current source, durable per-step log и полный restorable snapshot; затем 20–40 offline trajectories, log-only vs full rerun vs targeted replay, independent oracle и A1/A2/T negative controls. |",
+      "supersedes": "agent-risk-document-dsh-runtime"
+    },
+    {
+      "id": "agent-risk-profile-agent-config-20261109",
+      "study_id": "agent-risk",
+      "project_id": "agent-config",
+      "review_id": "agent-risk-replay-assumptions-20261109",
+      "date": "2026-11-09",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "SHORTLIST / PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+      "reason": "Профиль конфигурационного и hook/review слоя допускает применение метода к оценке policy/config changes до включения.",
+      "limitations": "Прочитан только PROJECT.md; current hooks, persistence review evidence, source-level decision boundary и CI не проверялись.",
+      "next_test": "Проверить current source на hook invocation и durable review record; затем синтетические policy-change cases с independent oracle, false-allow/false-deny, cost и regression metrics.",
+      "next_test_reason": "Profile-level assessment only; source-level evidence is required before any implementation decision.",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Target project source was not inspected; only the private PROJECT.md profile was read.",
+      "source_document": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "source_line": 11,
+      "source_excerpt": "| agent-risk | `agent-config` | **SHORTLIST / PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE** — профиль конфигурационного и hook/review слоя допускает применение метода к оценке изменений policy/config до включения. | `NOT_EVALUATED` | Проверить current hooks, persistency review evidence и точку принятия решения; отдельно измерить false allow/deny, стоимость и regressions на синтетических policy changes. |",
+      "supersedes": "agent-risk-document-agent-config"
+    },
+    {
+      "id": "agent-risk-profile-HermesAgent-20261109",
+      "study_id": "agent-risk",
+      "project_id": "HermesAgent",
+      "review_id": "agent-risk-replay-assumptions-20261109",
+      "date": "2026-11-09",
+      "decision": "DEFERRED",
+      "source_decision": "DEFERRED / NO_DIRECT_REPLAY_SEAM_IN_PROFILE",
+      "evidence": "DEFERRED / NO_DIRECT_REPLAY_SEAM_IN_PROFILE",
+      "reason": "Профильный контекст близок к агентной конфигурации, но не показывает прямой replay/snapshot approval boundary для изменения агента.",
+      "limitations": "Прочитан только PROJECT.md; source code и runtime не проверялись. DEFERRED не означает общий NO_FIT.",
+      "next_test": "Возвращаться к оценке только при наличии durable episode logs, restorable execution state и pre-change decision gate.",
+      "next_test_reason": "Profile-level assessment only; source-level evidence is required before any implementation decision.",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Target project source was not inspected; only the private PROJECT.md profile was read.",
+      "source_document": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "source_line": 12,
+      "source_excerpt": "| agent-risk | `HermesAgent` | **DEFERRED / NO_DIRECT_REPLAY_SEAM_IN_PROFILE** — профильный контекст близок к работающей агентной конфигурации, но не показывает прямой replay/snapshot approval boundary. | `NOT_EVALUATED` | Вернуться только при обнаружении durable episode logs, restorable execution state и pre-change decision gate. |",
+      "supersedes": "agent-risk-document-HermesAgent"
     }
   ],
   "current_assessments": [
@@ -17373,21 +17466,6 @@
       "assessment_id": "remory-document-bitvec-dsh"
     },
     {
-      "study_id": "agent-risk",
-      "project_id": "HermesAgent",
-      "assessment_id": "agent-risk-document-HermesAgent"
-    },
-    {
-      "study_id": "agent-risk",
-      "project_id": "agent-config",
-      "assessment_id": "agent-risk-document-agent-config"
-    },
-    {
-      "study_id": "agent-risk",
-      "project_id": "dsh-runtime",
-      "assessment_id": "agent-risk-document-dsh-runtime"
-    },
-    {
       "study_id": "agentic-self-awareness",
       "project_id": "sequential-rca",
       "assessment_id": "agentic-self-awareness-document-sequential-rca"
@@ -18206,6 +18284,21 @@
       "study_id": "htn-orchestrate",
       "project_id": "hermes-akuz-agents",
       "assessment_id": "htn-orchestrate-hermes-akuz-agents-profile-20261108"
+    },
+    {
+      "study_id": "agent-risk",
+      "project_id": "dsh-runtime",
+      "assessment_id": "agent-risk-profile-dsh-runtime-20261109"
+    },
+    {
+      "study_id": "agent-risk",
+      "project_id": "agent-config",
+      "assessment_id": "agent-risk-profile-agent-config-20261109"
+    },
+    {
+      "study_id": "agent-risk",
+      "project_id": "HermesAgent",
+      "assessment_id": "agent-risk-profile-HermesAgent-20261109"
     }
   ],
   "relations": [

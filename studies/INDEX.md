@@ -12,7 +12,7 @@
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md) | [2026-10-05 / agent-error-dataset-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-agent-error-dataset-2026-11-05](../reviews/agent-error-dataset/2026-11-05-full-text.md) · [2026-11-08 / agent-error-dataset-checkpoint-replay-20261108](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) |
 | [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | [2026-11-03 / agent-mosaic-review](agent-mosaic.md) · [2026-11-07 / agent-mosaic-composite-gate-20261107](../reviews/agent-mosaic/2026-11-07-composite-gate.md) |
 | [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [2026-11-03 / agent-transfer-protocol-review](agent-transfer-protocol.md) |
-| [agent-risk](agent-risk.md) | [2026-11-03 / agent-risk-review](agent-risk.md) |
+| [agent-risk](agent-risk.md) | [2026-11-03 / agent-risk-review](agent-risk.md) · [2026-11-09 / agent-risk-replay-assumptions-20261109](../reviews/agent-risk/2026-11-09-replay-assumptions.md) |
 | [Agentic Self-Awareness](agentic-self-awareness.md) | [2026-11-03 / agentic-self-awareness-review](agentic-self-awareness.md) |
 | [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04 / alphaxiv-openresearch-review](../reviews/alphaxiv-openresearch/2026-11-04.md) · [2026-11-06 / alphaxiv-openresearch-provenance-ab-20261106](../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) |
 | [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04 / anthropic-agent-automations-review](../reviews/anthropic-agent-automations/2026-11-04.md) |

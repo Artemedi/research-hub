@@ -1,0 +1,59 @@
+{
+  "reviewed_on": "2026-11-09",
+  "registry_sha": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86",
+  "registry_profile_set_sha256": "220d181737e91bb15b8ee371fd08889be1e19a81fa56d8b7c217d5a78f4ecc73",
+  "source_sha": "a1ab24aaf3c1e5bfbe47a24eaf4cf411bf0b3f1b",
+  "source_content_sha256": "2b6b107ed057dbfe7b7133143fe1bd7beef1178700b22bbc7af23caac204d21e",
+  "source_url": "https://arxiv.org/pdf/2610.16280v1",
+  "source_version": "arxiv:v1",
+  "scope": "All 45 current PROJECT.md profiles read at registry HEAD. Two profile-level candidates retained, one deferred, 42 not shortlisted. No target source code was reviewed.",
+  "report": "reviews/agent-risk/2026-11-09-replay-assumptions.md",
+  "matrix": "portfolio/2026-11-09/agent-risk-project-fit.md",
+  "card_count": 45,
+  "shortlist": [
+    "dsh-runtime",
+    "agent-config"
+  ],
+  "deferred": [
+    "HermesAgent"
+  ],
+  "not_evaluated_profile_count": 0,
+  "source_code_reviewed_targets": [],
+  "source_seam_not_evaluated_count": 3,
+  "decision": "PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+  "decision_counts": {
+    "SHORTLIST": 2,
+    "DEFERRED": 1,
+    "NO_DIRECT_PROFILE_MATCH": 42,
+    "NOT_EVALUATED": 0
+  },
+  "author_results_reproduced": false,
+  "experiment_id": "agent-risk-replay-boundary-20261109",
+  "projects": [
+    {
+      "project_id": "dsh-runtime",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+      "reason_ru": "Профиль основного agent runtime и измерительного контура тематически соответствует pre-change replay изменений runtime/gate.",
+      "limitations": "Только профильный match; target source, logs, snapshots и integration seam не проверялись.",
+      "next_test": "Pinned current source review; durable per-step log/snapshot check; 20–40 synthetic trajectories with independent oracle and A1/A2/T negative controls."
+    },
+    {
+      "project_id": "agent-config",
+      "decision": "SHORTLIST",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE",
+      "reason_ru": "Профиль конфигурационного и hook/review слоя допускает применение метода к pre-change policy/config review.",
+      "limitations": "Только профильный match; current hooks, evidence persistence и source-level decision boundary не проверялись.",
+      "next_test": "Pinned current source review; synthetic policy-change cases with independent oracle and false-allow/false-deny/cost metrics."
+    },
+    {
+      "project_id": "HermesAgent",
+      "decision": "DEFERRED",
+      "evidence": "DEFERRED / NO_DIRECT_REPLAY_SEAM_IN_PROFILE",
+      "reason_ru": "Профиль не показывает прямой replay/snapshot approval boundary.",
+      "limitations": "Только профильный обзор; source code и runtime не проверялись. DEFERRED не означает общий NO_FIT.",
+      "next_test": "Reconsider only if durable episode logs, restorable state and a pre-change decision gate are identified."
+    }
+  ],
+  "production_approval": false
+}

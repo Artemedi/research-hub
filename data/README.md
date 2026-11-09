@@ -13,6 +13,7 @@
 | [data/fixtures/dsh-creator/2026-11-06/manifest.json](fixtures/dsh-creator/2026-11-06/manifest.json) | Восстановленная коллекция |
 | [data/project-fit/agent-error-dataset/2026-11-08-project-fit.json](project-fit/agent-error-dataset/2026-11-08-project-fit.json) | Матрица project fit |
 | [data/project-fit/agent-mosaic/2026-11-07-composite-gate.json](project-fit/agent-mosaic/2026-11-07-composite-gate.json) | Матрица project fit |
+| [data/project-fit/agent-risk/2026-11-09-project-fit.json](project-fit/agent-risk/2026-11-09-project-fit.json) | Матрица project fit |
 | [data/project-fit/cera-moa/2026-11-08-project-fit.json](project-fit/cera-moa/2026-11-08-project-fit.json) | Матрица project fit |
 | [data/project-fit/dsh-superagent-prototype/2026-11-05.json](project-fit/dsh-superagent-prototype/2026-11-05.json) | Матрица project fit |
 | [data/project-fit/htn-orchestrate/2026-11-08-project-fit.json](project-fit/htn-orchestrate/2026-11-08-project-fit.json) | Матрица project fit |
@@ -26,6 +27,7 @@
 | [data/results/agent-error-dataset/2026-11-08-independent-oracle.json](results/agent-error-dataset/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |
 | [data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json](results/agent-mosaic/2026-11-07-composite-gate-oracle.json) | Результат ограниченной проверки |
 | [data/results/agent-mosaic/2026-11-07-composite-gate.json](results/agent-mosaic/2026-11-07-composite-gate.json) | Результат ограниченной проверки |
+| [data/results/agent-risk/2026-11-09-replay-boundary.json](results/agent-risk/2026-11-09-replay-boundary.json) | Результат ограниченной проверки |
 | [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-04.json](results/benchshield/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-independent-oracle.json](results/cera-moa/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |
