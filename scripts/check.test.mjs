@@ -50,6 +50,16 @@ test('terminal study disposition cannot silently change in the independent ledge
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Closure ledger integrity failed/);
 });
+test('applicability matrix cannot promote an untested project pair to production', () => {
+  const result = fixture(dir => {
+    const file = path.join(dir, 'data/project-fit/portfolio/2026-11-09-targeted-fit.json');
+    const matrix = JSON.parse(fs.readFileSync(file, 'utf8'));
+    matrix.pairs[0].production_approved = true;
+    fs.writeFileSync(file, JSON.stringify(matrix, null, 2) + '\n');
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /Targeted applicability matrix integrity failed/);
+});
 test('changed archive bytes are rejected', () => {
   const result = fixture(dir => fs.appendFileSync(path.join(dir, 'archive/dsh/knowledge/research/2026-09-15-research-review-decisions.md'), '\nChanged\n'));
   assert.notEqual(result.status, 0);

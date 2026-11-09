@@ -81,6 +81,8 @@ for (const m of read('archive/dsh/ARCHIVE_MANIFEST.md').matchAll(/\| \[knowledge
 assert.ok(preserved > 0, 'archive manifest parsed no rows');
 const closure = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/2026-11-09-ledger-independent-check.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
 if (closure.status !== 0) errors.push('Closure ledger integrity failed: ' + (closure.stderr || closure.error?.message || closure.stdout));
+const applicability = spawnSync('python3', [path.join(root, 'experiments/research-portfolio/2026-11-09-targeted-fit.py'), '--check'], { encoding: 'utf8', timeout: 30000 });
+if (applicability.status !== 0) errors.push('Targeted applicability matrix integrity failed: ' + (applicability.stderr || applicability.error?.message || applicability.stdout));
 const generated = spawnSync(process.execPath, [path.join(root, 'scripts/build-catalog.mjs'), '--check'], { encoding: 'utf8' });
 if (generated.status !== 0) errors.push(generated.stderr || generated.error?.message || 'catalog check failed');
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }

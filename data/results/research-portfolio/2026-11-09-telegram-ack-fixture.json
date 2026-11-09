@@ -1,0 +1,38 @@
+{
+  "status": "SOURCE_FUNCTIONS_REPRODUCED_MOCK_ONLY",
+  "source_repo": "Artemedi/TelegramBot",
+  "source_git_sha": "a838ca6671cada5307825d3b5c433ce7083e1e76",
+  "source_file": "main.py",
+  "source_file_sha256": "96ef4a27fd26def1254a9c69bfb896cd24e1eb175fe11b54f02db7158e3c9de2",
+  "execution_mode": "AST-extracted exact 3 original functions, network unshared, mock urlopen, fake credentials",
+  "records": {
+    "ack_normal": {
+      "first_attempt_error": false,
+      "remote_effect_count": 1,
+      "state_recorded_before_retry": true,
+      "state_recorded_after_retry": true,
+      "duplicate_remote_effect": false
+    },
+    "remote_commit_ack_lost": {
+      "first_attempt_error": true,
+      "remote_effect_count": 2,
+      "state_recorded_before_retry": false,
+      "state_recorded_after_retry": true,
+      "duplicate_remote_effect": true
+    },
+    "no_remote_commit": {
+      "first_attempt_error": true,
+      "remote_effect_count": 1,
+      "state_recorded_before_retry": false,
+      "state_recorded_after_retry": true,
+      "duplicate_remote_effect": false
+    }
+  },
+  "finding": "An acknowledged remote commit with lost HTTP acknowledgment leaves no local post state; unguarded retry repeats side effect.",
+  "limits": [
+    "Caller retry decision simulated based on inspected main.py branch, not a full integration E2E.",
+    "No production credentials, real channel or live network calls used.",
+    "A durable outbox alone cannot guarantee true exactly-once without a remote dedupe/reconciliation primitive.",
+    "No candidate implementation or claimed improvement was run."
+  ]
+}
