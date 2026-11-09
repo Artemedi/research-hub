@@ -19,10 +19,10 @@ EXPECTED_STATUSES = {
     "ACCEPT_BOUNDED": 40,
     "ACCEPT_RESEARCH_ONLY": 39,
     "BLOCKED": 2,
-    "NO_FIT": 2,
+    "OPEN_EVIDENCE_ADJUDICATION": 2,
 }
 EXPECTED_BLOCKED = {"claude-swarm", "hyperresearch"}
-EXPECTED_NO_FIT = {"kvtether", "random-attention"}
+EXPECTED_OPEN = {"kvtether", "random-attention"}
 HISTORIC_WITHOUT_RAW = {"mcp-toolbox-postgres", "pgbot"}
 
 def hashbytes(data):
@@ -39,14 +39,14 @@ def verify(obj):
     counts = Counter(r["closure_status"] for r in rows)
     assert dict(counts) == EXPECTED_STATUSES
     assert obj["summary"]["by_status"] == dict(sorted(counts.items()))
-    assert obj["summary"]["total"] == obj["summary"]["terminal"] == 83
-    assert obj["summary"]["open"] == 0
+    assert obj["summary"]["total"] == 83 and obj["summary"]["terminal"] == 81
+    assert obj["summary"]["open"] == 2
     assert obj["summary"]["explicit_project_pairs"] == 506
     assert obj["summary"]["unassessed_project_pairs"] == 3229
     assert obj["summary"]["explicit_project_pairs"] + obj["summary"]["unassessed_project_pairs"] == 83 * 45
     assert obj["basis_entities_sha256"] == hashbytes((ROOT / "catalog/entities.json").read_bytes())
     blocked = set()
-    no_fit = set()
+    reopened = set()
     evidence_checked = 0
     research_full = 0
     bounded_rechecks = 0
@@ -96,15 +96,21 @@ def verify(obj):
             assert len(r["unblock_condition"]) >= 110
             assert len(evidence) >= 2
             assert r["verified_scope"]
-        elif status == "NO_FIT":
-            no_fit.add(sid)
-            assert r["verified_scope"] == "CURRENT_REGISTERED_PROJECT_PORTFOLIO_ONLY"
-            assert len(r["decision"]) >= 90 and len(r["reopen_condition"]) >= 90
-            assert len(evidence) >= 2
+        elif status == "OPEN_EVIDENCE_ADJUDICATION":
+            reopened.add(sid)
+            assert r["verified_scope"] is None
+            assert r["previous_disposition"] == "NO_FIT_RETRACTED_INSUFFICIENT_PROFILE_ORACLE"
+            assert r["explicit_project_assessments"] == 0
+            assert r["unassessed_project_count"] == 45
+            assert len(r["next_evidence_gate"]) >= 110
+            assert len(evidence) == 3
+            audit = json.loads((ROOT / "data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json").read_text())
+            assert audit["status"] == "PASS_ADVERSARIAL_AUDIT_OF_INADEQUATE_NEGATIVE_GATE"
+            assert audit["incorrect_decisions"] == 3
         else:
             raise AssertionError(f"Nonterminal or unknown status for {sid}")
     assert blocked == EXPECTED_BLOCKED
-    assert no_fit == EXPECTED_NO_FIT
+    assert reopened == EXPECTED_OPEN
     assert bounded_rechecks == 6
     assert research_full == 37
     return {"studies": len(rows), "evidence_refs_sha_verified": evidence_checked,
@@ -121,7 +127,7 @@ def main():
         lambda d: next(r for r in d["studies"] if r["study_id"] == "hyperresearch").update(unblock_condition=""),
         lambda d: next(r for r in d["studies"] if r["study_id"] == "pgbot").update(independently_reexecuted_this_pass=True),
         lambda d: next(r for r in d["studies"] if r["study_id"] == "paper2agent").update(author_results="INDEPENDENTLY_REPLICATED"),
-        lambda d: d["summary"].update(terminal=82),
+        lambda d: d["summary"].update(terminal=83),
     ]
     for mutate in mutations:
         changed = deepcopy(obj)
@@ -141,7 +147,7 @@ def main():
             "Source-level experiments remain bounded and are supported by their original dated reviews and original-source fixtures.",
             "Scientific content of research-only reviews was previously read by the reviewing agents, not re-downloaded and empirically replicated here.",
             "Two original PostgreSQL/MCP lab reports lack retained raw JSON receipts; they are explicitly distinguished and cannot be treated as freshly reproduced.",
-            "The 45-profile NO_FIT is current registered portfolio only and not a source audit of every implementation.",
+            "The former two NO_FIT outcomes have been explicitly retracted after three negative-control misclassifications; 45 per-project fit assessments remain unperformed.",
             "Project integration needs separate user permission, held-out tests and privacy review."
         ]
     })

@@ -1,13 +1,13 @@
 # Research portfolio: evidence-qualified terminal dispositions for 83 cards
 
-**Date:** 2026-11-09. **Result:** 83/83 terminal research dispositions, 0 open.
+**Date:** 2026-11-09. **Result:** 81/83 terminal research dispositions, 2 open.
 
 | Disposition | Cards | What is actually closed |
 | --- | ---: | --- |
 | ACCEPT_BOUNDED | 40 | Only the explicitly tested engineering or synthetic proposition; not original whole-paper replication |
 | ACCEPT_RESEARCH_ONLY | 39 | 37 prior full-primary method reviews plus 2 narrower official engineering/disclosure references; no author gains reproduced |
 | BLOCKED | 2 | Pinpointed original-source unsafe adoption path, actual counterexample, tested alternative and unblock rule |
-| NO_FIT | 2 | Concrete method needs a capability absent from currently documented 45-project portfolio; reopen on source/capability change |
+| OPEN_EVIDENCE_ADJUDICATION | 2 | Fit not proven or disproven by negative lexical project-profile scan; targeted source check required |
 
 The [83-card machine ledger](../../data/results/research-portfolio/2026-11-09-closure-ledger.json) contains original card and review SHA-256, primary URL, previous full-source provenance, per-study method/obstacle, negative evidence, limits and reopening conditions. The [reproduction script](../../experiments/research-portfolio/2026-11-09-closure-ledger.py) deliberately does not infer acceptance from a generic PASS, document count or project-name overlap.
 
@@ -117,14 +117,14 @@ Every individual research-only record also stores its critical confounder, autho
 
 **Unblock only by evidence**, not by repeated STATUS_PENDING: a new pinned source must eliminate the reproduced failure and pass independently guarded counterexamples and a separate owner-approved target test. Previously positive functions in the same projects are not automatically rejected.
 
-## NO_FIT: this registered portfolio, not all future machines
+## Reopened: 2 physical KV-cache fit assessments
 
-| Study | Why the current portfolio has no verified implementation target |
-| --- | --- |
-| kvtether | A message-lifecycle-aware KV eviction manager requires serving backend hooks, original KV pool and worker lifecycle signals; no registered current project documents both a compatible serving runtime and control seam. |
-| random-attention | Prompt-preserving random reasoning-token KV eviction requires physical serving cache access and an instrumentable vLLM-like backend; none is documented among current 45 projects. |
+The old [private-profile lexical gate](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) never established a full source-level NO_FIT. An independent [synthetic negative-control audit](../../data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json) demonstrated three incorrect judgments on four fixture project profiles: llama.cpp and TensorRT-LLM capabilities were missed, while a log-only vLLM observer triggered a false candidate. These are synthetic examples, not proof that either backend exists in the owner's projects.
 
-[Independent current-profile gate](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) read all 45 current private PROJECT.md at a pinned project-registry HEAD, emitting only an aggregate hash and absence of a documented controllable physical KV serving backend. It is not a full inspection of every project's implementation and does not exclude future unregistered hardware/backend.
+| Study | Honest disposition | Source-level gate to close |
+| --- | --- | --- |
+| kvtether | OPEN_EVIDENCE_ADJUDICATION / prior NO_FIT retracted | Verify owned KV cache/lifecycle hooks at pinned source and measured feasibility |
+| random-attention | OPEN_EVIDENCE_ADJUDICATION / prior NO_FIT retracted | Verify owned physical KV eviction capability, independent quality and throughput |
 
 ## Scope boundaries and project-fit honesty
 

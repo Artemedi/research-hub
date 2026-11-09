@@ -10,13 +10,13 @@
 
 ## Итоговое исследовательское решение
 
-**NO_FIT** — ограниченный статус работы, не разрешение внедрения. A message-lifecycle-aware KV eviction manager requires serving backend hooks, original KV pool and worker lifecycle signals; no registered current project documents both a compatible serving runtime and control seam.
+**OPEN_EVIDENCE_ADJUDICATION** — ограниченный статус работы, не разрешение внедрения. Obtain independent source-level verification at a pinned project commit of owned physical KV backend hooks, lifecycle controls and measured feasibility; do not infer NO_FIT from unassessed pairs.
 
-Ограничения: Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.
+Ограничения: The 45 PROJECT.md files provide a snapshot of descriptions but no source-level exclusion proof; an incorrect lexical gate cannot establish no controllable KV serving backend.
 
-[Доказательство](../../reviews/kvtether/2026-11-05-full-text.md) · [Доказательство](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
+[Доказательство](../../reviews/kvtether/2026-11-05-full-text.md) · [Доказательство](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) · [Доказательство](../../data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json) · [Полный реестр](../../data/results/research-portfolio/2026-11-09-closure-ledger.json)
 
-Следующий gate: New authorized project with source-verified KV lifecycle/eviction hooks, compatible model/runtime and an owner-approved measured lab, not generic mention of LLM, embeddings or context compression. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
+Следующий gate: Obtain independent source-level verification at a pinned project commit of owned physical KV backend hooks, lifecycle controls and measured feasibility; do not infer NO_FIT from unassessed pairs. Авторские результаты не считаются автоматически воспроизведёнными; project fit указан отдельно.
 
 ## Версии и история обзоров
 

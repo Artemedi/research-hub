@@ -115,6 +115,7 @@
 - [research-portfolio/2026-11-07-zcode-claude-cli-shim.test.mjs](research-portfolio/2026-11-07-zcode-claude-cli-shim.test.mjs)
 - [research-portfolio/2026-11-09-closure-ledger.py](research-portfolio/2026-11-09-closure-ledger.py)
 - [research-portfolio/2026-11-09-kv-backend-profile-gate.py](research-portfolio/2026-11-09-kv-backend-profile-gate.py)
+- [research-portfolio/2026-11-09-kv-profile-negative-controls.py](research-portfolio/2026-11-09-kv-profile-negative-controls.py)
 - [research-portfolio/2026-11-09-ledger-independent-check.py](research-portfolio/2026-11-09-ledger-independent-check.py)
 - [research-portfolio/2026-11-09-residual-engineering-oracle.py](research-portfolio/2026-11-09-residual-engineering-oracle.py)
 - [research-portfolio/audit-micro.py](research-portfolio/audit-micro.py)
