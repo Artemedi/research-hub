@@ -2,7 +2,7 @@
 
 Read `RESEARCH_POLICY.md` and `docs/architecture.md` before adding research material. Preserve evidence qualifications, pinned source revisions and the distinction between author claims, local tests and project benefit.
 
-New sources must also follow `docs/data-model.md` and register explicit entities in `catalog/entities.json`. All 81 existing cards are normalized under schema v2; `legacy_studies` is empty and must not receive newly added sources. Project and structured study pages are generated from the same assessments, never edited independently. Preserve supersession and explicit current pointers. Document-backed links require exact source quotes and target-column proof; do not infer FIT from incidental mentions. Preserve source card body hashes; updating scientific analysis requires a reviewed, dated correction rather than silently regenerating its hash.
+New sources must also follow `docs/data-model.md` and register explicit entities in `catalog/entities.json`. All 83 current cards are normalized under schema v2; `legacy_studies` is empty and must not receive newly added sources. Project and structured study pages are generated from the same assessments, never edited independently. Preserve supersession and explicit current pointers. Document-backed links require exact source quotes and target-column proof; do not infer FIT from incidental mentions. Preserve source card body hashes; updating scientific analysis requires a reviewed, dated correction rather than silently regenerating its hash.
 
 - One canonical source card: `studies/<source>.md`.
 - Dated source reviews: `reviews/<source>/YYYY-MM-DD[-scope].md`.
