@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-09",
+  "private_registry_commit": "421268e5c60fd1b5f37bd69a84b923ff28ce3e86",
+  "profiles_read": 45,
+  "aggregate_profile_set_sha256": "400a9cf38f33e3485ada9dfbf3dd51df22e68c397860fc4546f9e881d4876719",
+  "documented_controllable_kv_backend_candidates": 0,
+  "scope": "Current PROJECT.md descriptions only, checked all 45; no private profile bodies or per-file digests published.",
+  "decision": "NO_CURRENT_VERIFIED_FIT_FOR_PHYSICAL_KV_CACHE_CONTROL",
+  "evaluated_studies": [
+    "kvtether",
+    "random-attention"
+  ],
+  "independent_prior_technical_reviews": [
+    "reviews/kvtether/2026-11-05-full-text.md",
+    "studies/random-attention.md"
+  ],
+  "limits": [
+    "This negative capability gate is restricted to the registered current project portfolio; it does not disprove unregistered machines or future/new source-level implementations.",
+    "Lexical scan independently confirms absence of explicit full serving plus KV policy-control contract; it is not a complete per-repository source audit.",
+    "No model weights, GPU runtime, LLM calls or private project source were accessed.",
+    "Reopen this current-portfolio NO_FIT only on documented controllable KV backend + owner-approved offline measurement."
+  ]
+}
