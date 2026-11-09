@@ -1,0 +1,35 @@
+{
+  "status": "PASS_ADVERSARIAL_AUDIT_OF_INADEQUATE_NEGATIVE_GATE",
+  "original_gate_sha256": "b797a1354239c28b8026f59f4b474b803c439e4a48f91fcb067e639677344e42",
+  "fixtures": [
+    {
+      "fixture": "llama_cpp_owned_cache",
+      "documented_real_authority_fixture_gold": true,
+      "historical_gate_candidate": false,
+      "historical_gate_correct": false
+    },
+    {
+      "fixture": "tensorrt_owned_cache",
+      "documented_real_authority_fixture_gold": true,
+      "historical_gate_candidate": false,
+      "historical_gate_correct": false
+    },
+    {
+      "fixture": "vllm_owned_cache",
+      "documented_real_authority_fixture_gold": true,
+      "historical_gate_candidate": true,
+      "historical_gate_correct": true
+    },
+    {
+      "fixture": "vllm_log_analyzer",
+      "documented_real_authority_fixture_gold": false,
+      "historical_gate_candidate": true,
+      "historical_gate_correct": false
+    }
+  ],
+  "incorrect_decisions": 3,
+  "total_synthetic_fixtures": 4,
+  "conclusion": "Lexical absence is not a valid exhaustive NO_FIT oracle; project-specific verified backend ownership and source-level hooks remain unassessed.",
+  "privacy": "No private project contents used or published; authored synthetic text only.",
+  "next_gate": "Review current candidate project source at pinned commit for actual controllable KV lifecycle/eviction hook and owner-approved held-out metrics; do not convert missing assessment to NO_FIT."
+}

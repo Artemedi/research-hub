@@ -7,13 +7,13 @@
   "project_status_note": "Unassessed is not NO_FIT; assessments refer to recorded project snapshots, not automatically current HEAD.",
   "summary": {
     "total": 83,
-    "terminal": 83,
-    "open": 0,
+    "terminal": 81,
+    "open": 2,
     "by_status": {
       "ACCEPT_BOUNDED": 40,
       "ACCEPT_RESEARCH_ONLY": 39,
       "BLOCKED": 2,
-      "NO_FIT": 2
+      "OPEN_EVIDENCE_ADJUDICATION": 2
     },
     "explicit_project_pairs": 506,
     "unassessed_project_pairs": 3229
@@ -3215,11 +3215,10 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "NO_FIT",
-      "verified_scope": "CURRENT_REGISTERED_PROJECT_PORTFOLIO_ONLY",
-      "decision": "A message-lifecycle-aware KV eviction manager requires serving backend hooks, original KV pool and worker lifecycle signals; no registered current project documents both a compatible serving runtime and control seam.",
-      "reopen_condition": "New authorized project with source-verified KV lifecycle/eviction hooks, compatible model/runtime and an owner-approved measured lab, not generic mention of LLM, embeddings or context compression.",
-      "limits": "Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.",
+      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
+      "verified_scope": null,
+      "previous_disposition": "NO_FIT_RETRACTED_INSUFFICIENT_PROFILE_ORACLE",
+      "limits": "The 45 PROJECT.md files provide a snapshot of descriptions but no source-level exclusion proof; an incorrect lexical gate cannot establish no controllable KV serving backend.",
       "evidence": [
         {
           "path": "reviews/kvtether/2026-11-05-full-text.md",
@@ -3228,8 +3227,13 @@
         {
           "path": "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
           "sha256": "4fc3d1bb10a45cf585c05868f5e6c013dbc4c70af99775aef6af1ec758d2f104"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json",
+          "sha256": "39f3f9679884419bac2440451fef230bb3ca330db74c70ab3f1bb03f091077f9"
         }
-      ]
+      ],
+      "next_evidence_gate": "Obtain independent source-level verification at a pinned project commit of owned physical KV backend hooks, lifecycle controls and measured feasibility; do not infer NO_FIT from unassessed pairs."
     },
     {
       "study_id": "lago",
@@ -4654,11 +4658,10 @@
       ],
       "author_results_independently_replicated_by_this_ledger": false,
       "production_approved": false,
-      "closure_status": "NO_FIT",
-      "verified_scope": "CURRENT_REGISTERED_PROJECT_PORTFOLIO_ONLY",
-      "decision": "Prompt-preserving random reasoning-token KV eviction requires physical serving cache access and an instrumentable vLLM-like backend; none is documented among current 45 projects.",
-      "reopen_condition": "New authorized project or backend code path exposing physical KV eviction controls; compare accuracy and serving throughput at fixed prompt, model, seeds and memory budget.",
-      "limits": "Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.",
+      "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
+      "verified_scope": null,
+      "previous_disposition": "NO_FIT_RETRACTED_INSUFFICIENT_PROFILE_ORACLE",
+      "limits": "The 45 PROJECT.md files provide a snapshot of descriptions but no source-level exclusion proof; an incorrect lexical gate cannot establish no controllable KV serving backend.",
       "evidence": [
         {
           "path": "studies/random-attention.md",
@@ -4667,8 +4670,13 @@
         {
           "path": "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
           "sha256": "4fc3d1bb10a45cf585c05868f5e6c013dbc4c70af99775aef6af1ec758d2f104"
+        },
+        {
+          "path": "data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json",
+          "sha256": "39f3f9679884419bac2440451fef230bb3ca330db74c70ab3f1bb03f091077f9"
         }
-      ]
+      ],
+      "next_evidence_gate": "Obtain independent source-level verification at a pinned project commit of owned physical KV backend hooks, lifecycle controls and measured feasibility; do not infer NO_FIT from unassessed pairs."
     },
     {
       "study_id": "rea",

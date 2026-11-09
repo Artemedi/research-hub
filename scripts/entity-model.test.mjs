@@ -37,8 +37,9 @@ test('generated pages display terminal bounded findings distinct from scientific
   assert.ok(unrelated.includes('ACCEPT_RESEARCH_ONLY'));
   assert.ok(unrelated.includes('memscope-review'));
   const noFit = pages.get('catalog/studies/kvtether.md');
-  assert.ok(noFit.includes('NO_FIT'));
-  assert.ok(noFit.includes('New authorized project'));
+  assert.ok(noFit.includes('OPEN_EVIDENCE_ADJUDICATION'));
+  assert.ok(noFit.includes('NO_FIT_RETRACTED_INSUFFICIENT_PROFILE_ORACLE') === false);
+  assert.ok(noFit.includes('Obtain independent source-level verification'));
 });
 test('shared review belongs to both sources without folder-name inference', () => {
   const pages = entityPages(original);

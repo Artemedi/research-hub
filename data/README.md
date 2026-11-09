@@ -114,6 +114,7 @@
 | [data/results/research-portfolio/2026-11-07-zcode-screening.json](results/research-portfolio/2026-11-07-zcode-screening.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-closure-ledger.json](results/research-portfolio/2026-11-09-closure-ledger.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json](results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) | Результат ограниченной проверки |
+| [data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json](results/research-portfolio/2026-11-09-kv-profile-negative-controls.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-ledger-independent-check.json](results/research-portfolio/2026-11-09-ledger-independent-check.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-09-residual-engineering-oracle.json](results/research-portfolio/2026-11-09-residual-engineering-oracle.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |

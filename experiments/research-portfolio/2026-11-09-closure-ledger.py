@@ -177,24 +177,6 @@ SPECIAL = {
 }
 TERMINAL = {"ACCEPT_BOUNDED", "ACCEPT_RESEARCH_ONLY", "NO_FIT", "BLOCKED"}
 
-# Current-portfolio verdict only: neither paper's original physical KV policy
-# has a documented controlled serving target in any of the 45 project profiles.
-NO_FIT = {
-    "kvtether": (
-        "A message-lifecycle-aware KV eviction manager requires serving backend hooks, original KV pool and worker lifecycle signals; no registered current project documents both a compatible serving runtime and control seam.",
-        "reviews/kvtether/2026-11-05-full-text.md",
-        "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
-        "New authorized project with source-verified KV lifecycle/eviction hooks, compatible model/runtime and an owner-approved measured lab, not generic mention of LLM, embeddings or context compression.",
-    ),
-    "random-attention": (
-        "Prompt-preserving random reasoning-token KV eviction requires physical serving cache access and an instrumentable vLLM-like backend; none is documented among current 45 projects.",
-        "studies/random-attention.md",
-        "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json",
-        "New authorized project or backend code path exposing physical KV eviction controls; compare accuracy and serving throughput at fixed prompt, model, seeds and memory budget.",
-    ),
-}
-
-
 # Separate evidence tier: six pinned original-source fixture replays, two historical
 # read-only PostgreSQL/MCP labs with no preserved raw output receipts.
 EVIDENCED_CODE = {
@@ -498,11 +480,10 @@ def generate(root):
     output = []
     assert set(BOUNDED).issubset(studies)
     assert set(BLOCKED).issubset(studies) and not set(BLOCKED).intersection(BOUNDED)
-    assert set(NO_FIT).issubset(studies) and not (set(NO_FIT) & (set(BOUNDED) | set(BLOCKED)))
     assert set(RESEARCH_ONLY).issubset(studies)
-    assert not (set(RESEARCH_ONLY) & (set(BOUNDED) | set(BLOCKED) | set(NO_FIT)))
+    assert not (set(RESEARCH_ONLY) & (set(BOUNDED) | set(BLOCKED)))
     assert set(EVIDENCED_CODE).issubset(studies)
-    assert not (set(EVIDENCED_CODE) & (set(BOUNDED) | set(BLOCKED) | set(NO_FIT) | set(RESEARCH_ONLY)))
+    assert not (set(EVIDENCED_CODE) & (set(BOUNDED) | set(BLOCKED) | set(RESEARCH_ONLY)))
     for sid, study in sorted(studies.items()):
         p = study["card"]
         assert p in provenance
@@ -602,19 +583,22 @@ def generate(root):
                 "deployment_gate": "No integration approval. Reopen only on new source claim, newly proven project seam or approved held-out experiment.",
                 "evidence": [{"path": f, "sha256": sha(root, f)} for f in doc_paths],
             })
-        elif sid in NO_FIT:
-            decision, reviewpath, evidencepath, reopen = NO_FIT[sid]
-            fit = read(root, evidencepath)
-            assert fit["profiles_read"] == 45
-            assert fit["documented_controllable_kv_backend_candidates"] == 0
-            assert fit["decision"] == "NO_CURRENT_VERIFIED_FIT_FOR_PHYSICAL_KV_CACHE_CONTROL"
-            assert sid in fit["evaluated_studies"]
+        elif sid in ("kvtether", "random-attention"):
+            reviewpath = ("reviews/kvtether/2026-11-05-full-text.md" if sid == "kvtether"
+                          else "studies/random-attention.md")
+            old = "data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json"
+            new = "data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json"
+            audit = read(root, new)
+            assert audit["status"] == "PASS_ADVERSARIAL_AUDIT_OF_INADEQUATE_NEGATIVE_GATE"
+            assert audit["incorrect_decisions"] == 3
+            assert len(missing) == 45
             row.update({
-                "closure_status": "NO_FIT", "verified_scope": "CURRENT_REGISTERED_PROJECT_PORTFOLIO_ONLY",
-                "decision": decision, "reopen_condition": reopen,
-                "limits": "Absence of a documented current capability, not proof of no possible future/self-hosted implementation or disproof of the paper's measured claims.",
-                "evidence": [
-                    {"path": f, "sha256": sha(root, f)} for f in (reviewpath, evidencepath)],
+                "closure_status": "OPEN_EVIDENCE_ADJUDICATION",
+                "verified_scope": None,
+                "previous_disposition": "NO_FIT_RETRACTED_INSUFFICIENT_PROFILE_ORACLE",
+                "limits": "The 45 PROJECT.md files provide a snapshot of descriptions but no source-level exclusion proof; an incorrect lexical gate cannot establish no controllable KV serving backend.",
+                "evidence": [{"path": f, "sha256": sha(root, f)} for f in (reviewpath, old, new)],
+                "next_evidence_gate": "Obtain independent source-level verification at a pinned project commit of owned physical KV backend hooks, lifecycle controls and measured feasibility; do not infer NO_FIT from unassessed pairs.",
             })
         elif sid in BLOCKED:
             scope, reviewpath, oraclepath, obstacle, alternatives, unblock = BLOCKED[sid]
@@ -681,7 +665,7 @@ def report(v):
         "| ACCEPT_BOUNDED | {} | Only the explicitly tested engineering or synthetic proposition; not original whole-paper replication |".format(c.get("ACCEPT_BOUNDED", 0)),
         "| ACCEPT_RESEARCH_ONLY | {} | 37 prior full-primary method reviews plus 2 narrower official engineering/disclosure references; no author gains reproduced |".format(c.get("ACCEPT_RESEARCH_ONLY", 0)),
         "| BLOCKED | {} | Pinpointed original-source unsafe adoption path, actual counterexample, tested alternative and unblock rule |".format(c.get("BLOCKED", 0)),
-        "| NO_FIT | {} | Concrete method needs a capability absent from currently documented 45-project portfolio; reopen on source/capability change |".format(c.get("NO_FIT", 0)),
+        "| OPEN_EVIDENCE_ADJUDICATION | {} | Fit not proven or disproven by negative lexical project-profile scan; targeted source check required |".format(c.get("OPEN_EVIDENCE_ADJUDICATION", 0)),
         "",
         "The [83-card machine ledger](../../data/results/research-portfolio/2026-11-09-closure-ledger.json) "
         "contains original card and review SHA-256, primary URL, previous full-source provenance, "
@@ -760,21 +744,20 @@ def report(v):
         "counterexamples and a separate owner-approved target test. Previously positive "
         "functions in the same projects are not automatically rejected.",
         "",
-        "## NO_FIT: this registered portfolio, not all future machines",
+        "## Reopened: 2 physical KV-cache fit assessments",
         "",
-        "| Study | Why the current portfolio has no verified implementation target |",
-        "| --- | --- |",
-    ]
-    for r in v["studies"]:
-        if r["closure_status"] == "NO_FIT":
-            lines.append("| {} | {} |".format(r["study_id"], r["decision"]))
-    lines += [
+        "The old [private-profile lexical gate](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) "
+        "never established a full source-level NO_FIT. An independent "
+        "[synthetic negative-control audit](../../data/results/research-portfolio/2026-11-09-kv-profile-negative-controls.json) "
+        "demonstrated three incorrect judgments on four fixture project profiles: "
+        "llama.cpp and TensorRT-LLM capabilities were missed, while a log-only "
+        "vLLM observer triggered a false candidate. These are synthetic examples, "
+        "not proof that either backend exists in the owner's projects.",
         "",
-        "[Independent current-profile gate](../../data/results/research-portfolio/2026-11-09-kv-backend-profile-gate.json) "
-        "read all 45 current private PROJECT.md at a pinned project-registry HEAD, "
-        "emitting only an aggregate hash and absence of a documented controllable "
-        "physical KV serving backend. It is not a full inspection of every project's "
-        "implementation and does not exclude future unregistered hardware/backend.",
+        "| Study | Honest disposition | Source-level gate to close |",
+        "| --- | --- | --- |",
+        "| kvtether | OPEN_EVIDENCE_ADJUDICATION / prior NO_FIT retracted | Verify owned KV cache/lifecycle hooks at pinned source and measured feasibility |",
+        "| random-attention | OPEN_EVIDENCE_ADJUDICATION / prior NO_FIT retracted | Verify owned physical KV eviction capability, independent quality and throughput |",
         "",
         "## Scope boundaries and project-fit honesty",
         "",
