@@ -1,0 +1,44 @@
+{
+  "status": "PINNED_ORIGINAL_SOURCE_FALSE_LINE_BINDING_REPRODUCED",
+  "source_repo": "Artemedi/agent-config",
+  "source_git_sha": "489e074ab0daaadb732673c193047172a3744862",
+  "source_file": "tools/review.py",
+  "source_file_sha256": "5aa8032a7c56fc6ff1fe050138343a54d8363d1211aa72e7733c153001cfe505",
+  "scope": "AST-extracted check_findings only, four synthetic claims; external false-line oracle, network-denied sandbox",
+  "records": [
+    {
+      "case_index": 0,
+      "location_ok": true,
+      "source_evidence_found_anywhere": true,
+      "quoted_evidence_found_at_claimed_line": true,
+      "false_line_binding_if_fields_anded": false
+    },
+    {
+      "case_index": 1,
+      "location_ok": true,
+      "source_evidence_found_anywhere": true,
+      "quoted_evidence_found_at_claimed_line": false,
+      "false_line_binding_if_fields_anded": true
+    },
+    {
+      "case_index": 2,
+      "location_ok": true,
+      "source_evidence_found_anywhere": false,
+      "quoted_evidence_found_at_claimed_line": false,
+      "false_line_binding_if_fields_anded": false
+    },
+    {
+      "case_index": 3,
+      "location_ok": false,
+      "source_evidence_found_anywhere": false,
+      "quoted_evidence_found_at_claimed_line": false,
+      "false_line_binding_if_fields_anded": false
+    }
+  ],
+  "false_line_binding_cases": 1,
+  "limits": [
+    "check_findings returns diagnostic flags; no proof downstream consumers auto-approve a finding.",
+    "The candidate strict line-bound validator has not been implemented or compared across held-out real traces.",
+    "No project files, secrets, network or service were modified."
+  ]
+}

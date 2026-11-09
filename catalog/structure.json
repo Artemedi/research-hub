@@ -2422,6 +2422,55 @@
       "title": "Synthetic control of former physical-KV fit exclusion",
       "kind": "guide",
       "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/project-fit/portfolio/2026-11-09-targeted-fit.json",
+      "title": "74 source/profile-backed project integration hypotheses",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-09/targeted-fit.md",
+      "title": "Research-to-project source seam, effect and A/B protocol matrix",
+      "kind": "review",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-targeted-fit.py",
+      "title": "Deterministic scoped project-fit generator and integrity tests",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-telegram-ack-fixture.py",
+      "title": "Mocked no-network Telegram original send/state failure injection",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "experiments/research-portfolio/2026-11-09-agentconfig-quote-fixture.py",
+      "title": "Mocked no-network original source quote-line negative control",
+      "kind": "guide",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-telegram-ack-fixture.json",
+      "title": "Original Telegram send/ACK ambiguity source probe",
+      "kind": "data",
+      "date": "2026-11-09"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-agentconfig-quote-fixture.json",
+      "title": "Original review.py quote-location inconsistency source probe",
+      "kind": "data",
+      "date": "2026-11-09"
     }
   ]
 }
