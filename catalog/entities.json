@@ -1234,6 +1234,34 @@
         "data/results/gpt6-astra-skills-prompts/2026-11-06-scored-ab.json",
         "data/results/gpt6-astra-skills-prompts/2026-11-06-fixture-manifest.json"
       ]
+    },
+    {
+      "id": "drift-inspector",
+      "title": "Drift Inspector — Atomic Contribution Claims for Scientific Drift",
+      "kind": "paper",
+      "card": "studies/drift-inspector.md",
+      "primary_url": "https://aclanthology.org/2026.emnlp-demos.13/",
+      "current_review_id": "drift-inspector-20261113",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "935c020f958d64fd7e6b079e1fd0eaabdad1b43d731c58f70f79051e1bde4e4c",
+      "linked_materials": [
+        "reviews/drift-inspector/2026-11-13.md",
+        "portfolio/2026-11-13/source-project-fit.md"
+      ]
+    },
+    {
+      "id": "auto-ontology",
+      "title": "NVIDIA Auto Ontology — Semantic Model for Relational Data",
+      "kind": "engineering",
+      "card": "studies/auto-ontology.md",
+      "primary_url": "https://github.com/NVIDIA/auto-ontology",
+      "current_review_id": "auto-ontology-20261113",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "99a09187d89a384c7f78057b2eecfe274e3c73ebb53b7067406e3c2b96662b79",
+      "linked_materials": [
+        "reviews/auto-ontology/2026-11-13.md",
+        "portfolio/2026-11-13/source-project-fit.md"
+      ]
     }
   ],
   "versions": [
@@ -2011,6 +2039,27 @@
       "study_id": "understand-anything",
       "ref": "a6ea4024767df85ce4f99140d4f12ecfc5a81eb6",
       "url": "https://github.com/Egonex-AI/Understand-Anything/tree/a6ea4024767df85ce4f99140d4f12ecfc5a81eb6",
+      "unknown_reason": null
+    },
+    {
+      "id": "drift-inspector-emnlp2026",
+      "study_id": "drift-inspector",
+      "ref": "arxiv:2609.39710",
+      "url": "https://arxiv.org/abs/2609.39710",
+      "unknown_reason": null
+    },
+    {
+      "id": "drift-inspector-source-20261113",
+      "study_id": "drift-inspector",
+      "ref": "6c643d6ebfaa771d01c743d921dac839dd771c40",
+      "url": "https://github.com/Hamyrappy/drift-inspector/tree/6c643d6ebfaa771d01c743d921dac839dd771c40",
+      "unknown_reason": null
+    },
+    {
+      "id": "auto-ontology-fc43a826",
+      "study_id": "auto-ontology",
+      "ref": "fc43a82600e18b19d159c52023f54f5572f537ac",
+      "url": "https://github.com/NVIDIA/auto-ontology/tree/fc43a82600e18b19d159c52023f54f5572f537ac",
       "unknown_reason": null
     }
   ],
@@ -3749,6 +3798,35 @@
       "document": "reviews/hyperresearch/2026-11-09-citation-adjudication.md",
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned original triage_pairs auto-passed 48/60 independently labelled synthetic unsupported temporal/scope/authorization/conjunction examples. This is not real-world error prevalence, full downstream LLM testing, a comprehensive library audit or deployment approval.",
+      "supersedes": null
+    },
+    {
+      "id": "drift-inspector-20261113",
+      "study_ids": [
+        "drift-inspector"
+      ],
+      "version_ids": [
+        "drift-inspector-emnlp2026",
+        "drift-inspector-source-20261113"
+      ],
+      "date": "2026-11-13",
+      "document": "reviews/drift-inspector/2026-11-13.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Paper fully read; structural CSV counts checked; LLM extraction and end-to-end scientific results not independently reproduced; cross-project benefit is hypothetical.",
+      "supersedes": null
+    },
+    {
+      "id": "auto-ontology-20261113",
+      "study_ids": [
+        "auto-ontology"
+      ],
+      "version_ids": [
+        "auto-ontology-fc43a826"
+      ],
+      "date": "2026-11-13",
+      "document": "reviews/auto-ontology/2026-11-13.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Source and docs inspected at pinned commit, not installed/tested; reported GitHub issues not all independently reproduced; no productivity or accuracy measurements for target projects.",
       "supersedes": null
     }
   ],
@@ -15798,6 +15876,111 @@
       "source_line": 12,
       "source_excerpt": "| agent-risk | `HermesAgent` | **DEFERRED / NO_DIRECT_REPLAY_SEAM_IN_PROFILE** — профильный контекст близок к работающей агентной конфигурации, но не показывает прямой replay/snapshot approval boundary. | `NOT_EVALUATED` | Вернуться только при обнаружении durable episode logs, restorable execution state и pre-change decision gate. |",
       "supersedes": "agent-risk-document-HermesAgent"
+    },
+    {
+      "id": "drift-inspector-dsh-paper2agent-profile-20261113",
+      "study_id": "drift-inspector",
+      "project_id": "dsh-paper2agent",
+      "review_id": "drift-inspector-20261113",
+      "date": "2026-11-13",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROFILE_MATCH_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_MATCH_NEEDS_EVIDENCE",
+      "reason": "Профиль предусматривает импорт научного исследования и последующую оценку пригодности для конкретного проекта; ACC пригоден только для upstream discovery",
+      "limitations": "Внешний extractor не проверен на проектном корпусе; полный текст обязателен; отдельный кодовый seam не установлен; profile-level only, target source/test seams were not audited.",
+      "next_test": "Offline discovery на открытых 1–3 тыс. papers; full-text gate, 100–150 проверенных ACC, baseline BM25, recall@K/precision@K и false fit",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-profile assessment; no pinned target implementation seam or private text copied.",
+      "source_document": "portfolio/2026-11-13/source-project-fit.md",
+      "source_line": 9,
+      "source_excerpt": "| Drift Inspector | dsh-paper2agent | Профиль предусматривает импорт научного исследования и последующую оценку пригодности для конкретного проекта; ACC пригоден только для upstream discovery | Внешний extractor не проверен на проектном корпусе; полный текст обязателен; отдельный кодовый seam не установлен | Offline discovery на открытых 1–3 тыс. papers; full-text gate, 100–150 проверенных ACC, baseline BM25, recall@K/precision@K и false fit | PROFILE_MATCH_NEEDS_EVIDENCE |",
+      "supersedes": null
+    },
+    {
+      "id": "drift-inspector-wiki-pg-profile-20261113",
+      "study_id": "drift-inspector",
+      "project_id": "Wiki_PG",
+      "review_id": "drift-inspector-20261113",
+      "date": "2026-11-13",
+      "decision": "DEFERRED",
+      "source_decision": "DEFERRED_NEEDS_DOMAIN_CORPUS",
+      "evidence": "DEFERRED_NEEDS_DOMAIN_CORPUS",
+      "reason": "Проект — PostgreSQL DBA knowledge/automation, потенциальный downstream потребитель научной подборки по DBA/PG",
+      "limitations": "Нужен предметный корпус; существующий Wiki_PG retrieval уже имеет свои gates; не менять индекс/RAG без A/B; profile-level only, target source/test seams were not audited.",
+      "next_test": "Проверить только переносимость и пользу тематических сигнальных меток на открытых работах по PostgreSQL; без источников пользователей",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-profile assessment; no pinned target implementation seam or private text copied.",
+      "source_document": "portfolio/2026-11-13/source-project-fit.md",
+      "source_line": 10,
+      "source_excerpt": "| Drift Inspector | Wiki_PG | Проект — PostgreSQL DBA knowledge/automation, потенциальный downstream потребитель научной подборки по DBA/PG | Нужен предметный корпус; существующий Wiki_PG retrieval уже имеет свои gates; не менять индекс/RAG без A/B | Проверить только переносимость и пользу тематических сигнальных меток на открытых работах по PostgreSQL; без источников пользователей | DEFERRED_NEEDS_DOMAIN_CORPUS |",
+      "supersedes": null
+    },
+    {
+      "id": "auto-ontology-akuz-schema-inventory-profile-20261113",
+      "study_id": "auto-ontology",
+      "project_id": "akuz-schema-inventory",
+      "review_id": "auto-ontology-20261113",
+      "date": "2026-11-13",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROFILE_MATCH_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_MATCH_NEEDS_EVIDENCE",
+      "reason": "Проект экспортирует метаданные и граф связей сложной MSSQL-схемы в локальную SQLite для read-only анализа",
+      "limitations": "У Auto Ontology нет MSSQL connector; нельзя использовать production; cross-schema FK и Unicode issues; profile-level only, target source/test seams were not audited.",
+      "next_test": "Пилот на искусственном экспорте в PostgreSQL/SQLite, 20–50 таблиц, gold FK/terms, zero PHI, precision/recall и cost",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-profile assessment; no pinned target implementation seam or private text copied.",
+      "source_document": "portfolio/2026-11-13/source-project-fit.md",
+      "source_line": 11,
+      "source_excerpt": "| NVIDIA Auto Ontology | akuz-schema-inventory | Проект экспортирует метаданные и граф связей сложной MSSQL-схемы в локальную SQLite для read-only анализа | У Auto Ontology нет MSSQL connector; нельзя использовать production; cross-schema FK и Unicode issues | Пилот на искусственном экспорте в PostgreSQL/SQLite, 20–50 таблиц, gold FK/terms, zero PHI, precision/recall и cost | PROFILE_MATCH_NEEDS_EVIDENCE |",
+      "supersedes": null
+    },
+    {
+      "id": "auto-ontology-wiki-pg-profile-20261113",
+      "study_id": "auto-ontology",
+      "project_id": "Wiki_PG",
+      "review_id": "auto-ontology-20261113",
+      "date": "2026-11-13",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROFILE_MATCH_NEEDS_EVIDENCE",
+      "evidence": "PROFILE_MATCH_NEEDS_EVIDENCE",
+      "reason": "Проект уже работает с PostgreSQL и знаниями DBA, допускает проверку внешнего семантического слоя в отдельном lab",
+      "limitations": "WikiPG документы не реляционная OLTP-схема; нет подтверждения полезности SQL generation; creds/profiling risk; profile-level only, target source/test seams were not audited.",
+      "next_test": "Только изолированный PG schema sandbox, semantics A/B vs current source retrieval, запрет изменения существующей памяти",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-profile assessment; no pinned target implementation seam or private text copied.",
+      "source_document": "portfolio/2026-11-13/source-project-fit.md",
+      "source_line": 12,
+      "source_excerpt": "| NVIDIA Auto Ontology | Wiki_PG | Проект уже работает с PostgreSQL и знаниями DBA, допускает проверку внешнего семантического слоя в отдельном lab | WikiPG документы не реляционная OLTP-схема; нет подтверждения полезности SQL generation; creds/profiling risk | Только изолированный PG schema sandbox, semantics A/B vs current source retrieval, запрет изменения существующей памяти | PROFILE_MATCH_NEEDS_EVIDENCE |",
+      "supersedes": null
+    },
+    {
+      "id": "auto-ontology-akuz-optimizer-twin-profile-20261113",
+      "study_id": "auto-ontology",
+      "project_id": "akuz-optimizer-twin",
+      "review_id": "auto-ontology-20261113",
+      "date": "2026-11-13",
+      "decision": "DEFERRED",
+      "source_decision": "DEFERRED_NO_MSSQL_CONNECTOR",
+      "evidence": "DEFERRED_NO_MSSQL_CONNECTOR",
+      "reason": "Профиль относится к структурам SQL Server, статистике и анализу планов; возможна описательная ценность связей схемы",
+      "limitations": "Нет MSSQL connector; инструмент решает text-to-SQL, а не оптимизацию планов; direct implementation seam отсутствует; profile-level only, target source/test seams were not audited.",
+      "next_test": "Вернуться лишь при появлении интерфейса экспорта и доказанной задачи семантической каталогизации (не production)",
+      "next_test_reason": null,
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-profile assessment; no pinned target implementation seam or private text copied.",
+      "source_document": "portfolio/2026-11-13/source-project-fit.md",
+      "source_line": 13,
+      "source_excerpt": "| NVIDIA Auto Ontology | akuz-optimizer-twin | Профиль относится к структурам SQL Server, статистике и анализу планов; возможна описательная ценность связей схемы | Нет MSSQL connector; инструмент решает text-to-SQL, а не оптимизацию планов; direct implementation seam отсутствует | Вернуться лишь при появлении интерфейса экспорта и доказанной задачи семантической каталогизации (не production) | DEFERRED_NO_MSSQL_CONNECTOR |",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -18330,6 +18513,31 @@
       "study_id": "agent-risk",
       "project_id": "HermesAgent",
       "assessment_id": "agent-risk-profile-HermesAgent-20261109"
+    },
+    {
+      "study_id": "drift-inspector",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "drift-inspector-dsh-paper2agent-profile-20261113"
+    },
+    {
+      "study_id": "drift-inspector",
+      "project_id": "Wiki_PG",
+      "assessment_id": "drift-inspector-wiki-pg-profile-20261113"
+    },
+    {
+      "study_id": "auto-ontology",
+      "project_id": "akuz-schema-inventory",
+      "assessment_id": "auto-ontology-akuz-schema-inventory-profile-20261113"
+    },
+    {
+      "study_id": "auto-ontology",
+      "project_id": "Wiki_PG",
+      "assessment_id": "auto-ontology-wiki-pg-profile-20261113"
+    },
+    {
+      "study_id": "auto-ontology",
+      "project_id": "akuz-optimizer-twin",
+      "assessment_id": "auto-ontology-akuz-optimizer-twin-profile-20261113"
     }
   ],
   "relations": [

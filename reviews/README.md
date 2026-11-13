@@ -33,6 +33,7 @@
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
+| [NVIDIA Auto Ontology — Semantic Model for Relational Data — source review](auto-ontology/2026-11-13.md) | 2026-11-13 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
 | [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
 | [CERA-MoA — routing contract и актуальная оценка применимости](cera-moa/2026-11-08-routing-contract.md) | 2026-11-08 |
@@ -49,6 +50,7 @@
 | [DRAG — Dynamic Retriever and Generator Selection — полнотекстовая научная проверка](drag/2026-11-05-full-text.md) | 2026-11-05 |
 | [DRAG — offline evidence gate and adversarial validation](drag/2026-11-06-evidence-gate-ab.md) | 2026-11-06 |
 | [DRAG — bounded offline lexical retrieval A/B](drag/2026-11-06-retrieval-ab.md) | 2026-11-06 |
+| [Drift Inspector — Atomic Contribution Claims for Scientific Drift — source review](drift-inspector/2026-11-13.md) | 2026-11-13 |
 | [BK-064 — Codex generated Client plugin, synthetic Cordis test](dsh-creator-mode/2026-11-06-external-generator-probe.md) | 2026-11-06 |
 | [BK-064 — ограниченный опыт Creator Mode](dsh-creator-mode/2026-11-06-local-probe.md) | 2026-11-06 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |

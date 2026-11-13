@@ -9,7 +9,7 @@ const check = process.argv.includes('--check');
 const entities = validateEntities(root, JSON.parse(fs.readFileSync(path.join(root, 'catalog/entities.json'), 'utf8')));
 const closure = JSON.parse(fs.readFileSync(path.join(root, 'data/results/research-portfolio/2026-11-09-closure-ledger.json'), 'utf8'));
 const dispositions = new Map(closure.studies.map(item => [item.study_id, item]));
-if (dispositions.size !== entities.studies.length || entities.studies.some(study => !dispositions.has(study.id))) throw new Error('Closure ledger and source catalogue identities differ');
+if ([...dispositions.keys()].some(id => !entities.studies.some(study => study.id === id))) throw new Error('Historical closure ledger references an unknown source identity');
 const explicitReviews = card => { const s = entities.studies.find(s => s.card === card); return s ? entities.reviews.filter(r => r.study_ids.includes(s.id)).map(r => ({to:r.document,date:r.date,id:r.id})) : null; };
 const errors = [];
 const rel = (from, to) => path.posix.relative(path.posix.dirname(from), to);

@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-83 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+85 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -29,6 +29,7 @@
 | [DAEDALUS](daedalus.md) | [2026-11-03 / daedalus-review](daedalus.md) |
 | [DeepSeek Harness Creator Mode — BK-064](dsh-creator-mode.md) | [2026-11-06 / dsh-creator-mode-offline-20261106](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) |
 | [DRAG — Dynamic Retriever and Generator Selection](drag.md) | [2026-09-21 / drag-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-drag-2026-11-05](../reviews/drag/2026-11-05-full-text.md) · [2026-11-06 / drag-offline-retrieval-ab-2026-11-06](../reviews/drag/2026-11-06-retrieval-ab.md) · [2026-11-06 / drag-evidence-guard-ab-2026-11-06](../reviews/drag/2026-11-06-evidence-gate-ab.md) |
+| [Drift Inspector — Atomic Contribution Claims для анализа научных направлений](drift-inspector.md) | [2026-11-13 / drift-inspector-20261113](../reviews/drift-inspector/2026-11-13.md) |
 | [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05 / dsh-superagent-prototype-review](../reviews/dsh-superagent-prototype/2026-11-05.md) |
 | [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
@@ -56,6 +57,7 @@
 | [MemScope](memscope.md) | [2026-11-03 / memscope-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04 / microsoft-skill-recorder-review](../reviews/microsoft-skill-recorder/2026-11-04.md) |
 | [NovaFabric — tamper-evident agent run evidence](novafabric.md) | [2026-11-03 / novafabric-paper-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-04 / novafabric-review](../reviews/novafabric/2026-11-04.md) |
+| [NVIDIA Auto Ontology — семантический слой и text-to-SQL](auto-ontology.md) | [2026-11-13 / auto-ontology-20261113](../reviews/auto-ontology/2026-11-13.md) |
 | [Open Steps — понятные статусы и навыки агентной разработки](open-steps.md) | [2026-11-04 / open-steps-review](../reviews/open-steps/2026-11-04.md) |
 | [PackHallu](package-hallucination-rule-files.md) | [2026-11-03 / package-hallucination-rule-files-review](../portfolio/2026-10-06--2026-10-12/review.md) |
 | [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | [2026-09-21 / paper2agent-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-paper2agent-2026-11-05](../reviews/paper2agent/2026-11-05-full-text.md) |

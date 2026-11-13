@@ -86,7 +86,9 @@
     "studies/warp-skill-doctor.md",
     "studies/yahont-ce.md",
     "studies/youtube-skills.md",
-    "studies/zero-code.md"
+    "studies/zero-code.md",
+    "studies/drift-inspector.md",
+    "studies/auto-ontology.md"
   ],
   "documents": [
     {
@@ -2548,6 +2550,27 @@
       "title": "All sixteen P0 exact-source verdicts, blockers and adoption gates",
       "kind": "data",
       "date": "2026-11-10"
+    },
+    {
+      "from": null,
+      "to": "reviews/drift-inspector/2026-11-13.md",
+      "title": "Drift Inspector — Atomic Contribution Claims for Scientific Drift — source review",
+      "kind": "review",
+      "date": "2026-11-13"
+    },
+    {
+      "from": null,
+      "to": "reviews/auto-ontology/2026-11-13.md",
+      "title": "NVIDIA Auto Ontology — Semantic Model for Relational Data — source review",
+      "kind": "review",
+      "date": "2026-11-13"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-13/source-project-fit.md",
+      "title": "Drift Inspector / NVIDIA Auto Ontology — project-fit and limitations",
+      "kind": "portfolio",
+      "date": "2026-11-13"
     }
   ]
 }
