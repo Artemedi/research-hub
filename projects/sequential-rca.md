@@ -21,6 +21,7 @@
 | [agentic-self-awareness](../catalog/studies/agentic-self-awareness.md) | DOCUMENTED_CANDIDATE | P1 / PROJECT_PROFILE_MATCH | Воздержание при недостатке фактов без ложного отказа на выполнимой задаче | [Обзор](../studies/agentic-self-awareness.md) · [Основание](../portfolio/2026-10-12--2026-10-19/project-fit.md) |
 | [unreal-agent](../catalog/studies/unreal-agent.md) | DOCUMENTED_CANDIDATE | read-only evidence requests | Профиль проекта и точка возможной проверки описаны в новом обзоре; это документальный кандидат, не локально измеренное улучшение. | [Обзор](../reviews/unreal-agent/2026-11-06-source-audit.md) · [Основание](../reviews/unreal-agent/2026-11-06-source-audit.md) |
 | [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Профиль sequential RCA и replay-oriented workflow напрямую соответствуют trace-grounded diagnosis; точный AED adapter не подтверждён. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
+| [database-agent-observability](../catalog/studies/database-agent-observability.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Offline RCA принимает observations и проверяет доказательные causal claims, умеет abstain | [Обзор](../reviews/database-agent-observability/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

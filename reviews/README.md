@@ -44,6 +44,7 @@
 | [Cursor — инженерный источник и пределы доказательств](cursor-token-efficiency/2026-11-05-primary.md) | 2026-11-05 |
 | [BK-021 Cursor token efficiency independent GPT-6 versus ZCode council](cursor-token-efficiency/2026-11-07-council-vs-single.md) | 2026-11-07 |
 | [CVE-2026-82533 — аудит риска текущей установки DSH](cve-2026-82533/2026-11-06-readonly-risk.md) | 2026-11-06 |
+| [Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning — full-text review 2026-11-14](database-agent-observability/2026-11-14.md) | 2026-11-14 |
 | [Decision Geometry exact two-action bandit source reproduction and project-fit gate](decision-geometry-harness/2026-11-07-bandit-countercheck.md) | 2026-11-07 |
 | [Decision Geometry practical schema and observation order A/B using pinned DSH serializer and ZCode](decision-geometry-harness/2026-11-07-interface-order-ab.md) | 2026-11-07 |
 | [Decision Geometry native provider tool-use A/B and inert tool-result continuation](decision-geometry-harness/2026-11-07-native-tool-ab.md) | 2026-11-07 |
@@ -70,6 +71,7 @@
 | [BK-041 — проверка системного допуска](inspektor-gadget/2026-11-06-privilege-gate.md) | 2026-11-06 |
 | [BK-041 privileged Podman eBPF trace audit](inspektor-gadget/2026-11-06-privileged-podman-trace.md) | 2026-11-06 |
 | [IPFire fireperf — TCP loopback](ipfire-fireperf/2026-11-04.md) | 2026-11-04 |
+| [JetStream — Generating Verified Query Accelerators for Existing Database Systems — full-text review 2026-11-14](jetstream/2026-11-14.md) | 2026-11-14 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |
 | [Karpathy autoresearch — исходники и ограничения](karpathy-autoresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-034 Karpathy/AI LABS and Wiki_PG autoloop](karpathy-autoresearch/2026-11-06-loop-audit.md) | 2026-11-06 |
@@ -80,10 +82,12 @@
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка](maadbench/2026-11-05-full-text.md) | 2026-11-05 |
 | [MCP Toolbox и Wiki_PG — настройки PostgreSQL](mcp-toolbox-postgres/2026-11-04.md) | 2026-11-04 |
 | [Microsoft Skill Recorder — действия и приватность](microsoft-skill-recorder/2026-11-04.md) | 2026-11-04 |
+| [MobileProbe — Adaptive Security Evaluation of Mobile Agents — full-text review 2026-11-14](mobileprobe/2026-11-14.md) | 2026-11-14 |
 | [NovaFabric — капсулы, replay и проверка evidence](novafabric/2026-11-04.md) | 2026-11-04 |
 | [Open Steps — хуки и ограничения](open-steps/2026-11-04.md) | 2026-11-04 |
 | [Paper2Agent — Research Papers as Reliable AI Agents — полнотекстовая научная проверка](paper2agent/2026-11-05-full-text.md) | 2026-11-05 |
 | [pgbot — диагностические проверки PostgreSQL](pgbot/2026-11-04.md) | 2026-11-04 |
+| [ReA-Bench — Benchmarking Responsible Agent Auditing — full-text review 2026-11-14](rea-bench/2026-11-14.md) | 2026-11-14 |
 | [REALM — Retrieval-Driven Memory Reconsolidation — полнотекстовая научная проверка](realm/2026-11-05-full-text.md) | 2026-11-05 |
 | [ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка](recap/2026-11-05-full-text.md) | 2026-11-05 |
 | [REA — проверка PE layout](reverse-engineer-anything/2026-11-05-pe-layout.md) | 2026-11-05 |
@@ -95,7 +99,9 @@
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
 | [SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck](simurg/2026-11-07-hash-stability.md) | 2026-11-07 |
+| [SPILLWAY — Separating Target Admission from Sanitization — full-text review 2026-11-14](spillway/2026-11-14.md) | 2026-11-14 |
 | [StateComp — State-Conditioned Context Compression — полнотекстовая научная проверка](statecomp/2026-11-05-full-text.md) | 2026-11-05 |
+| [Static Analysis Methods for Detection and Mitigation of Code Library Hallucinations — full-text review 2026-11-14](static-library-hallucinations/2026-11-14.md) | 2026-11-14 |
 | [BK-025/034 — пользовательские транскрипты и ограничения](telegram-transcripts/2026-11-06-user-provided.md) | 2026-11-06 |
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [BK-002 TeamAI CLI independent distribution and scope A/B](tencent-teamai-cli/2026-11-06-distribution-ab.md) | 2026-11-06 |

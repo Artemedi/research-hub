@@ -10,7 +10,7 @@
 
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
-
+| [jetstream](../catalog/studies/jetstream.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Есть отдельный PostgreSQL 18 twin для EXPLAIN и проверки планов; необходимо понять пределы специальных ускорителей, но целевой исполнитель не построен | [Обзор](../reviews/jetstream/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

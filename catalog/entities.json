@@ -1295,6 +1295,90 @@
       "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
       "card_body_sha256": "12e5f7e8377e97ca4ae9b52daa412449ab5e4213bb5fb8e3cca2f308460f5dfc",
       "linked_materials": []
+    },
+    {
+      "id": "jetstream",
+      "title": "JetStream — Generating Verified Query Accelerators for Existing Database Systems",
+      "kind": "paper",
+      "card": "studies/jetstream.md",
+      "primary_url": "https://arxiv.org/abs/2610.20527",
+      "current_review_id": "jetstream-fulltext-20261114",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "e687a21e39ba999aa8499dc46f6c84e9a19dc6a01cb039564cff8035d1b344b6",
+      "linked_materials": [
+        "reviews/jetstream/2026-11-14.md",
+        "portfolio/2026-11-14/review.md"
+      ]
+    },
+    {
+      "id": "static-library-hallucinations",
+      "title": "Static Analysis Methods for Detection and Mitigation of Code Library Hallucinations",
+      "kind": "paper",
+      "card": "studies/static-library-hallucinations.md",
+      "primary_url": "https://arxiv.org/abs/2604.07755",
+      "current_review_id": "static-library-hallucinations-fulltext-20261114",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "bd8964ba55b777b326a1f74dc28b41f25924f25503e9eea87b495238cefd2d92",
+      "linked_materials": [
+        "reviews/static-library-hallucinations/2026-11-14.md",
+        "portfolio/2026-11-14/review.md"
+      ]
+    },
+    {
+      "id": "database-agent-observability",
+      "title": "Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning",
+      "kind": "paper",
+      "card": "studies/database-agent-observability.md",
+      "primary_url": "https://arxiv.org/abs/2611.17304",
+      "current_review_id": "database-agent-observability-fulltext-20261114",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "e0d96f69e8207c4370c23065a210723180689b5f50ef433d076f821da85b0aca",
+      "linked_materials": [
+        "reviews/database-agent-observability/2026-11-14.md",
+        "portfolio/2026-11-14/review.md"
+      ]
+    },
+    {
+      "id": "rea-bench",
+      "title": "ReA-Bench — Benchmarking Responsible Agent Auditing",
+      "kind": "paper",
+      "card": "studies/rea-bench.md",
+      "primary_url": "https://arxiv.org/abs/2611.16493",
+      "current_review_id": "rea-bench-fulltext-20261114",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "3b0deac316da3edd31407dbeaeea0ef8b5ad14f43c2b3b041ff794ff85b8810a",
+      "linked_materials": [
+        "reviews/rea-bench/2026-11-14.md",
+        "portfolio/2026-11-14/review.md"
+      ]
+    },
+    {
+      "id": "spillway",
+      "title": "SPILLWAY — Separating Target Admission from Sanitization",
+      "kind": "paper",
+      "card": "studies/spillway.md",
+      "primary_url": "https://arxiv.org/abs/2611.07222",
+      "current_review_id": "spillway-fulltext-20261114",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "6200d74874199213b71a9c667c21023b563b6292fb4f764ab755ae2e9dbda972",
+      "linked_materials": [
+        "reviews/spillway/2026-11-14.md",
+        "portfolio/2026-11-14/review.md"
+      ]
+    },
+    {
+      "id": "mobileprobe",
+      "title": "MobileProbe — Adaptive Security Evaluation of Mobile Agents",
+      "kind": "paper",
+      "card": "studies/mobileprobe.md",
+      "primary_url": "https://arxiv.org/abs/2611.16693",
+      "current_review_id": "mobileprobe-fulltext-20261114",
+      "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
+      "card_body_sha256": "d73bdcf86fa5543a83cd2636bfa1199e9168fb7fa6c585332b43955cc5e7fac8",
+      "linked_materials": [
+        "reviews/mobileprobe/2026-11-14.md",
+        "portfolio/2026-11-14/review.md"
+      ]
     }
   ],
   "versions": [
@@ -2121,6 +2205,48 @@
       "study_id": "github-actions-log-secret-scanning",
       "ref": "changelog-2026-11-09",
       "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs/",
+      "unknown_reason": null
+    },
+    {
+      "id": "jetstream-2610-20527v3",
+      "study_id": "jetstream",
+      "ref": "arxiv:2610.20527v3",
+      "url": "https://arxiv.org/pdf/2610.20527v3",
+      "unknown_reason": null
+    },
+    {
+      "id": "static-library-hallucinations-2604-07755v3",
+      "study_id": "static-library-hallucinations",
+      "ref": "arxiv:2604.07755v3",
+      "url": "https://arxiv.org/pdf/2604.07755v3",
+      "unknown_reason": null
+    },
+    {
+      "id": "database-agent-observability-2611-17304v1",
+      "study_id": "database-agent-observability",
+      "ref": "arxiv:2611.17304v1",
+      "url": "https://arxiv.org/pdf/2611.17304v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "rea-bench-2611-16493v1",
+      "study_id": "rea-bench",
+      "ref": "arxiv:2611.16493v1",
+      "url": "https://arxiv.org/pdf/2611.16493v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "spillway-2611-07222v1",
+      "study_id": "spillway",
+      "ref": "arxiv:2611.07222v1",
+      "url": "https://arxiv.org/pdf/2611.07222v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "mobileprobe-2611-16693v1",
+      "study_id": "mobileprobe",
+      "ref": "arxiv:2611.16693v1",
+      "url": "https://arxiv.org/pdf/2611.16693v1",
       "unknown_reason": null
     }
   ],
@@ -3931,6 +4057,90 @@
       "document": "portfolio/2026-11-11/review.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Official changelog and documentation only, not a peer-reviewed paper; public preview limited to GitHub Enterprise Cloud with Secret Protection or Advanced Security; entitlement for the target repository is UNKNOWN; no independent benchmark; nothing was run.",
+      "supersedes": null
+    },
+    {
+      "id": "jetstream-fulltext-20261114",
+      "study_ids": [
+        "jetstream"
+      ],
+      "version_ids": [
+        "jetstream-2610-20527v3"
+      ],
+      "date": "2026-11-14",
+      "document": "reviews/jetstream/2026-11-14.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Full v3 read, source tree reviewed; author acceleration/verified semantics not independently reproduced, no project A/B.",
+      "supersedes": null
+    },
+    {
+      "id": "static-library-hallucinations-fulltext-20261114",
+      "study_ids": [
+        "static-library-hallucinations"
+      ],
+      "version_ids": [
+        "static-library-hallucinations-2604-07755v3"
+      ],
+      "date": "2026-11-14",
+      "document": "reviews/static-library-hallucinations/2026-11-14.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Python-only TMLR v3; no code execution or independent static-analysis validation on project adapters.",
+      "supersedes": null
+    },
+    {
+      "id": "database-agent-observability-fulltext-20261114",
+      "study_ids": [
+        "database-agent-observability"
+      ],
+      "version_ids": [
+        "database-agent-observability-2611-17304v1"
+      ],
+      "date": "2026-11-14",
+      "document": "reviews/database-agent-observability/2026-11-14.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Retrospective single-team 8-incident field study without controlled access-model intervention; no private raw trajectories.",
+      "supersedes": null
+    },
+    {
+      "id": "rea-bench-fulltext-20261114",
+      "study_ids": [
+        "rea-bench"
+      ],
+      "version_ids": [
+        "rea-bench-2611-16493v1"
+      ],
+      "date": "2026-11-14",
+      "document": "reviews/rea-bench/2026-11-14.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Author benchmark with hard benign and constructed trajectories, one run/config; no original benchmark or DSH guard tests run.",
+      "supersedes": null
+    },
+    {
+      "id": "spillway-fulltext-20261114",
+      "study_ids": [
+        "spillway"
+      ],
+      "version_ids": [
+        "spillway-2611-07222v1"
+      ],
+      "date": "2026-11-14",
+      "document": "reviews/spillway/2026-11-14.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Full v1 paper, later SDK source inspected; no validation of zero target-redirection on DSH, experiments not rerun.",
+      "supersedes": null
+    },
+    {
+      "id": "mobileprobe-fulltext-20261114",
+      "study_ids": [
+        "mobileprobe"
+      ],
+      "version_ids": [
+        "mobileprobe-2611-16693v1"
+      ],
+      "date": "2026-11-14",
+      "document": "reviews/mobileprobe/2026-11-14.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Original 83 Android attack instances and GUI environment unverified outside paper; no matching project Android agent.",
       "supersedes": null
     }
   ],
@@ -16085,6 +16295,132 @@
       "source_line": 13,
       "source_excerpt": "| NVIDIA Auto Ontology | akuz-optimizer-twin | Профиль относится к структурам SQL Server, статистике и анализу планов; возможна описательная ценность связей схемы | Нет MSSQL connector; инструмент решает text-to-SQL, а не оптимизацию планов; direct implementation seam отсутствует | Вернуться лишь при появлении интерфейса экспорта и доказанной задачи семантической каталогизации (не production) | DEFERRED_NO_MSSQL_CONNECTOR |",
       "supersedes": null
+    },
+    {
+      "id": "jetstream-akuz-optimizer-twin-profile-20261114",
+      "study_id": "jetstream",
+      "project_id": "akuz-optimizer-twin",
+      "review_id": "jetstream-fulltext-20261114",
+      "date": "2026-11-14",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Есть отдельный PostgreSQL 18 twin для EXPLAIN и проверки планов; необходимо понять пределы специальных ускорителей, но целевой исполнитель не построен",
+      "limitations": "Twin почти пустой и не исполняет аналитические SELECT; цифры JetStream TPC-H здесь не измеримы; чужой extension не ставить; neither target benefit nor production qualification measured.",
+      "next_test": "Отдельная полностью искусственная populated PG/DuckDB fixture, gold-query outputs, update-stream correctness, total maintenance cost",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-14/review.md",
+      "source_line": 19,
+      "source_excerpt": "| JetStream | akuz-optimizer-twin | Есть отдельный PostgreSQL 18 twin для EXPLAIN и проверки планов; необходимо понять пределы специальных ускорителей, но целевой исполнитель не построен | Twin почти пустой и не исполняет аналитические SELECT; цифры JetStream TPC-H здесь не измеримы; чужой extension не ставить | Отдельная полностью искусственная populated PG/DuckDB fixture, gold-query outputs, update-stream correctness, total maintenance cost | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
+      "supersedes": null
+    },
+    {
+      "id": "static-library-hallucinations-dsh-paper2agent-profile-20261114",
+      "study_id": "static-library-hallucinations",
+      "project_id": "dsh-paper2agent",
+      "review_id": "static-library-hallucinations-fulltext-20261114",
+      "date": "2026-11-14",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Проект выполняет Python author-code adapters с независимым comparator и источниками, закреплёнными по SHA",
+      "limitations": "Pyright/Mypy не доказаны в текущем workflow, Python-only; static green не scientific correctness; neither target benefit nor production qualification measured.",
+      "next_test": "30–50 frozen Python API fixtures, A existing checks vs B pre-run static warnings, independent execution oracle и false positive rate",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-14/review.md",
+      "source_line": 20,
+      "source_excerpt": "| Static library hallucination analysis | dsh-paper2agent | Проект выполняет Python author-code adapters с независимым comparator и источниками, закреплёнными по SHA | Pyright/Mypy не доказаны в текущем workflow, Python-only; static green не scientific correctness | 30–50 frozen Python API fixtures, A existing checks vs B pre-run static warnings, independent execution oracle и false positive rate | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
+      "supersedes": null
+    },
+    {
+      "id": "database-agent-observability-sequential-rca-profile-20261114",
+      "study_id": "database-agent-observability",
+      "project_id": "sequential-rca",
+      "review_id": "database-agent-observability-fulltext-20261114",
+      "date": "2026-11-14",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Offline RCA принимает observations и проверяет доказательные causal claims, умеет abstain",
+      "limitations": "Полевая выборка восемь инцидентов, нет причинного теста; production access не требуется; neither target benefit nor production qualification measured.",
+      "next_test": "A truncated lock/deadlock evidence vs B recorded bounded flight-recorder evidence на 12 synthetic incidents, independent DBA oracle",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-14/review.md",
+      "source_line": 21,
+      "source_excerpt": "| Database agent observability field study | sequential-rca | Offline RCA принимает observations и проверяет доказательные causal claims, умеет abstain | Полевая выборка восемь инцидентов, нет причинного теста; production access не требуется | A truncated lock/deadlock evidence vs B recorded bounded flight-recorder evidence на 12 synthetic incidents, independent DBA oracle | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
+      "supersedes": null
+    },
+    {
+      "id": "database-agent-observability-wiki-pg-profile-20261114",
+      "study_id": "database-agent-observability",
+      "project_id": "Wiki_PG",
+      "review_id": "database-agent-observability-fulltext-20261114",
+      "date": "2026-11-14",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "DBA knowledge/diagnostic snapshots уже различают отсутствующие и доступные сведения",
+      "limitations": "Есть snapshot parser, но нет подтверждённого live lock recorder/разрешения дополнительных наблюдений; neither target benefit nor production qualification measured.",
+      "next_test": "Compare read-only snapshot completeness and time-provenance on 12 synthetic transient concurrency incidents",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-14/review.md",
+      "source_line": 22,
+      "source_excerpt": "| Database agent observability field study | Wiki_PG | DBA knowledge/diagnostic snapshots уже различают отсутствующие и доступные сведения | Есть snapshot parser, но нет подтверждённого live lock recorder/разрешения дополнительных наблюдений | Compare read-only snapshot completeness and time-provenance on 12 synthetic transient concurrency incidents | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
+      "supersedes": null
+    },
+    {
+      "id": "rea-bench-dsh-runtime-profile-20261114",
+      "study_id": "rea-bench",
+      "project_id": "dsh-runtime",
+      "review_id": "rea-bench-fulltext-20261114",
+      "date": "2026-11-14",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "Tool-call lifecycle пишет реальные call/result sequence, возможна изолированная проверка error/benign audit",
+      "limitations": "8 model configs и одна оценка на config, высокая доля hard benign negatives, нет целевого DSH oracle; neither target benefit nor production qualification measured.",
+      "next_test": "30–60 fictional call trajectories, policy snapshots and effective side-effects; recall@FPR≤5%, benign false blocks",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-14/review.md",
+      "source_line": 23,
+      "source_excerpt": "| ReA-Bench | dsh-runtime | Tool-call lifecycle пишет реальные call/result sequence, возможна изолированная проверка error/benign audit | 8 model configs и одна оценка на config, высокая доля hard benign negatives, нет целевого DSH oracle | 30–60 fictional call trajectories, policy snapshots and effective side-effects; recall@FPR≤5%, benign false blocks | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
+      "supersedes": null
+    },
+    {
+      "id": "spillway-dsh-runtime-profile-20261114",
+      "study_id": "spillway",
+      "project_id": "dsh-runtime",
+      "review_id": "spillway-fulltext-20261114",
+      "date": "2026-11-14",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "В agent-loop есть prepare→dispatch; можно офлайн проверить target admission перед side effects",
+      "limitations": "Paper zero относится только к 12 AgentDojo cells; нынешний SDK отличается; policy/admission в DSH не проверены; neither target benefit nor production qualification measured.",
+      "next_test": "20–30 fake recipient/taint-negative fixtures, A current mock vs B deterministic target allowlist, unauthorized dispatch and benign completion",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-14/review.md",
+      "source_line": 24,
+      "source_excerpt": "| SPILLWAY | dsh-runtime | В agent-loop есть prepare→dispatch; можно офлайн проверить target admission перед side effects | Paper zero относится только к 12 AgentDojo cells; нынешний SDK отличается; policy/admission в DSH не проверены | 20–30 fake recipient/taint-negative fixtures, A current mock vs B deterministic target allowlist, unauthorized dispatch and benign completion | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -18642,6 +18978,36 @@
       "study_id": "auto-ontology",
       "project_id": "akuz-optimizer-twin",
       "assessment_id": "auto-ontology-akuz-optimizer-twin-profile-20261113"
+    },
+    {
+      "study_id": "jetstream",
+      "project_id": "akuz-optimizer-twin",
+      "assessment_id": "jetstream-akuz-optimizer-twin-profile-20261114"
+    },
+    {
+      "study_id": "static-library-hallucinations",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "static-library-hallucinations-dsh-paper2agent-profile-20261114"
+    },
+    {
+      "study_id": "database-agent-observability",
+      "project_id": "sequential-rca",
+      "assessment_id": "database-agent-observability-sequential-rca-profile-20261114"
+    },
+    {
+      "study_id": "database-agent-observability",
+      "project_id": "Wiki_PG",
+      "assessment_id": "database-agent-observability-wiki-pg-profile-20261114"
+    },
+    {
+      "study_id": "rea-bench",
+      "project_id": "dsh-runtime",
+      "assessment_id": "rea-bench-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "spillway",
+      "project_id": "dsh-runtime",
+      "assessment_id": "spillway-dsh-runtime-profile-20261114"
     }
   ],
   "relations": [

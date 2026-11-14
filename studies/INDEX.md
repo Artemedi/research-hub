@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-88 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+94 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -45,6 +45,7 @@
 | [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
 | [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) · [2026-11-06 / inspektor-gadget-podman-20261106](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) |
 | [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04 / ipfire-fireperf-review](../reviews/ipfire-fireperf/2026-11-04.md) |
+| [JetStream — verified SQL query accelerators with incremental maintenance](jetstream.md) | [2026-11-14 / jetstream-fulltext-20261114](../reviews/jetstream/2026-11-14.md) |
 | [JevAgentHarness](jevagentharness.md) | [2026-11-03 / jevagentharness-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04 / julia-1-review](../reviews/julia-1/2026-11-04.md) |
 | [Karpathy AutoResearch и BK-034 — цикл экспериментов и приложение AI LABS](karpathy-autoresearch.md) | [2026-11-04 / karpathy-autoresearch-review](../reviews/karpathy-autoresearch/2026-11-04.md) · [2026-11-06 / karpathy-autoresearch-loop-audit-20261106](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |
@@ -58,6 +59,7 @@
 | [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [2026-11-03 / memory-centric-continual-learning-review](../portfolio/2026-10-20--2026-10-26/review.md) |
 | [MemScope](memscope.md) | [2026-11-03 / memscope-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04 / microsoft-skill-recorder-review](../reviews/microsoft-skill-recorder/2026-11-04.md) |
+| [MobileProbe — trajectory-aware injection testing for Android GUI agents](mobileprobe.md) | [2026-11-14 / mobileprobe-fulltext-20261114](../reviews/mobileprobe/2026-11-14.md) |
 | [NovaFabric — tamper-evident agent run evidence](novafabric.md) | [2026-11-03 / novafabric-paper-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-04 / novafabric-review](../reviews/novafabric/2026-11-04.md) |
 | [NVIDIA Auto Ontology — семантический слой и text-to-SQL](auto-ontology.md) | [2026-11-13 / auto-ontology-20261113](../reviews/auto-ontology/2026-11-13.md) |
 | [Open Steps — понятные статусы и навыки агентной разработки](open-steps.md) | [2026-11-04 / open-steps-review](../reviews/open-steps/2026-11-04.md) |
@@ -68,6 +70,7 @@
 | [POLAR](polar.md) | [2026-11-03 / polar-review](../portfolio/2026-10-06--2026-10-12/review.md) |
 | [Random Attention — KV eviction for reasoning](random-attention.md) | [2026-11-03 / random-attention-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [REA — Reverse Engineer Anything](reverse-engineer-anything.md) | [2026-11-05 / rea-boundaries](../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md) · [2026-11-05 / rea-pe](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
+| [ReA-Bench — auditing responsible agent trajectories](rea-bench.md) | [2026-11-14 / rea-bench-fulltext-20261114](../reviews/rea-bench/2026-11-14.md) |
 | [REALM — Retrieval-Driven Memory Reconsolidation](realm.md) | [2026-11-03 / realm-review](realm.md) · [2026-11-05 / fulltext-realm-2026-11-05](../reviews/realm/2026-11-05-full-text.md) |
 | [ReCAP — Persistent Context Graphs for Memory Compaction](recap.md) | [2026-11-03 / recap-review](recap.md) · [2026-11-05 / fulltext-recap-2026-11-05](../reviews/recap/2026-11-05-full-text.md) |
 | [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | [2026-11-03 / red-teaming-auto-mode-review](red-teaming-auto-mode.md) |
@@ -79,8 +82,10 @@
 | [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05 / sequential-diagnosis-language-models-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [2026-11-05 / sequential-diagnosis-language-models-initial-review](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) |
 | [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [2026-11-03 / silent-cue-loss-review](../portfolio/2026-10-20--2026-10-26/review.md) |
 | [SIMURG — монитор целостности потоковой генерации](simurg.md) | [2026-11-04 / simurg-review](../reviews/simurg/2026-11-04.md) |
+| [SPILLWAY — separating action target admission from untrusted text sanitization](spillway.md) | [2026-11-14 / spillway-fulltext-20261114](../reviews/spillway/2026-11-14.md) |
 | [SquidAgent](squidagent.md) | [2026-11-03 / squidagent-review](squidagent.md) |
 | [StateComp — State-Conditioned Context Compression](statecomp.md) | [2026-11-03 / statecomp-review](statecomp.md) · [2026-11-05 / fulltext-statecomp-2026-11-05](../reviews/statecomp/2026-11-05-full-text.md) |
+| [Static analysis of code-library hallucinations — Python detection and mitigation limits](static-library-hallucinations.md) | [2026-11-14 / static-library-hallucinations-fulltext-20261114](../reviews/static-library-hallucinations/2026-11-14.md) |
 | [SWRouter — multi-turn context-aware model routing](swrouter.md) | [2026-11-03 / swrouter-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [Tencent TeamAI CLI](tencent-teamai-cli.md) | [2026-11-04 / tencent-teamai-cli-review](../reviews/tencent-teamai-cli/2026-11-04.md) · [2026-11-06 / bk002-teamai-cli-distribution-ab-20261106](../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) |
 | [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | [2026-11-03 / toolgrad-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-06 / toolgrad-bk005-source-proxy-20261106](../reviews/toolgrad/2026-11-06-chain-validation-ab.md) |
@@ -92,6 +97,7 @@
 | [VeriHarness — Evidence-Grounded Agentic Verification](veriharness.md) | [2026-11-04 / veriharness-review](../reviews/veriharness/2026-11-04.md) · [2026-10-05 / veriharness-historical-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-veriharness-2026-11-05](../reviews/veriharness/2026-11-05-full-text.md) · [2026-11-06 / veriharness-locality-ab-2026-11-06](../reviews/veriharness/2026-11-06-citation-locality-ab.md) |
 | [Warp Skill Doctor — анализ сессий и предложения по навыкам](warp-skill-doctor.md) | [2026-11-04 / warp-skill-doctor-review](../reviews/warp-skill-doctor/2026-11-04.md) |
 | [Where Does Exactly-Once Live? / LIMBO](exactly-once-limbo.md) | [2026-09-28 / exactly-once-limbo-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-04 / exactly-once-limbo-telegrambot-review](../reviews/exactly-once-limbo/2026-11-04.md) · [2026-11-05 / fulltext-exactly-once-limbo-2026-11-05](../reviews/exactly-once-limbo/2026-11-05-full-text.md) · [2026-11-06 / limbo-telegrambot-policy-ab-2026-11-06](../reviews/exactly-once-limbo/2026-11-06-policy-ab.md) |
+| [Where LLM Agents Get Stuck Debugging Databases — Access More Than Reasoning](database-agent-observability.md) | [2026-11-14 / database-agent-observability-fulltext-20261114](../reviews/database-agent-observability/2026-11-14.md) |
 | [Where You Inject Matters — Trust Region Effect](trust-region-injection.md) | [2026-11-03 / trust-region-injection-review](../portfolio/2026-10-27--2026-11-02/review.md) |
 | [Yahont CE — поиск и корпоративный контекст](yahont-ce.md) | [2026-11-04 / yahont-ce-review](../reviews/yahont-ce/2026-11-04.md) |
 | [Your Policy Is Secretly a Harness — Decision Geometry](decision-geometry-harness.md) | [2026-11-03 / decision-geometry-harness-review](decision-geometry-harness.md) |

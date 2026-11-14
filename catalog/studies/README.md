@@ -2,7 +2,7 @@
 
 # Структурированные исследования
 
-88 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
+94 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: PARTIAL.
 - [DeepSeek Harness Creator Mode — демо-подсказки и offline plugin probe](dsh-creator-mode.md); project fit: PARTIAL.
@@ -92,3 +92,9 @@
 - [AvalancheBench — latent-world recovery and cascading analytical errors](avalanchebench.md); project fit: NO_DOCUMENTED_ASSESSMENT.
 - [Scaling Adaptive Prompt Injection Attacks with Agent Swarms](adaptive-prompt-injection-swarms.md); project fit: NO_DOCUMENTED_ASSESSMENT.
 - [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md); project fit: NO_DOCUMENTED_ASSESSMENT.
+- [JetStream — Generating Verified Query Accelerators for Existing Database Systems](jetstream.md); project fit: PARTIAL.
+- [Static Analysis Methods for Detection and Mitigation of Code Library Hallucinations](static-library-hallucinations.md); project fit: PARTIAL.
+- [Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning](database-agent-observability.md); project fit: PARTIAL.
+- [ReA-Bench — Benchmarking Responsible Agent Auditing](rea-bench.md); project fit: PARTIAL.
+- [SPILLWAY — Separating Target Admission from Sanitization](spillway.md); project fit: PARTIAL.
+- [MobileProbe — Adaptive Security Evaluation of Mobile Agents](mobileprobe.md); project fit: NO_DOCUMENTED_ASSESSMENT.

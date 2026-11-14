@@ -91,7 +91,13 @@
     "studies/auto-ontology.md",
     "studies/adaptive-prompt-injection-swarms.md",
     "studies/avalanchebench.md",
-    "studies/github-actions-log-secret-scanning.md"
+    "studies/github-actions-log-secret-scanning.md",
+    "studies/jetstream.md",
+    "studies/static-library-hallucinations.md",
+    "studies/database-agent-observability.md",
+    "studies/rea-bench.md",
+    "studies/spillway.md",
+    "studies/mobileprobe.md"
   ],
   "documents": [
     {
@@ -2625,6 +2631,55 @@
       "to": "experiments/drift-inspector/2026-11-14-b1-corpus-and-queries-draft.md",
       "title": "Drift Inspector — B1: черновик корпуса (темы OpenAlex) и запросов DBA",
       "kind": "guide",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/jetstream/2026-11-14.md",
+      "title": "JetStream — Generating Verified Query Accelerators for Existing Database Systems — full-text review 2026-11-14",
+      "kind": "review",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/static-library-hallucinations/2026-11-14.md",
+      "title": "Static Analysis Methods for Detection and Mitigation of Code Library Hallucinations — full-text review 2026-11-14",
+      "kind": "review",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/database-agent-observability/2026-11-14.md",
+      "title": "Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning — full-text review 2026-11-14",
+      "kind": "review",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/rea-bench/2026-11-14.md",
+      "title": "ReA-Bench — Benchmarking Responsible Agent Auditing — full-text review 2026-11-14",
+      "kind": "review",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/spillway/2026-11-14.md",
+      "title": "SPILLWAY — Separating Target Admission from Sanitization — full-text review 2026-11-14",
+      "kind": "review",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/mobileprobe/2026-11-14.md",
+      "title": "MobileProbe — Adaptive Security Evaluation of Mobile Agents — full-text review 2026-11-14",
+      "kind": "review",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-14/review.md",
+      "title": "Research intake Nov 11–14: six full-text studies and project mapping",
+      "kind": "portfolio",
       "date": "2026-11-14"
     }
   ]
