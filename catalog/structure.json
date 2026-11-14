@@ -2126,6 +2126,13 @@
     },
     {
       "from": null,
+      "to": "experiments/drift-inspector/README.md",
+      "title": "Drift Inspector — bounded offline pilot protocol (planned, not run)",
+      "kind": "guide",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
       "to": "reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md",
       "title": "Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B",
       "kind": "review",
