@@ -1262,6 +1262,39 @@
         "reviews/auto-ontology/2026-11-13.md",
         "portfolio/2026-11-13/source-project-fit.md"
       ]
+    },
+    {
+      "id": "avalanchebench",
+      "title": "AvalancheBench — latent-world recovery and cascading analytical errors",
+      "kind": "paper",
+      "card": "studies/avalanchebench.md",
+      "primary_url": "https://arxiv.org/abs/2605.24183",
+      "current_review_id": "avalanchebench-20261111",
+      "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
+      "card_body_sha256": "bab734ec1885e7912f0643d5d97586b4c123b1bb934f7560140be0594a86f6d7",
+      "linked_materials": []
+    },
+    {
+      "id": "adaptive-prompt-injection-swarms",
+      "title": "Scaling Adaptive Prompt Injection Attacks with Agent Swarms",
+      "kind": "paper",
+      "card": "studies/adaptive-prompt-injection-swarms.md",
+      "primary_url": "https://arxiv.org/abs/2611.11861",
+      "current_review_id": "adaptive-prompt-injection-swarms-20261111",
+      "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
+      "card_body_sha256": "e65e2b8905670a8647a953ce16c6b1e57fe619997a6ff82464489a378d8a9a4e",
+      "linked_materials": []
+    },
+    {
+      "id": "github-actions-log-secret-scanning",
+      "title": "GitHub Actions workflow-log secret scanning — public preview",
+      "kind": "engineering",
+      "card": "studies/github-actions-log-secret-scanning.md",
+      "primary_url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs/",
+      "current_review_id": "github-actions-log-secret-scanning-20261111",
+      "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
+      "card_body_sha256": "12e5f7e8377e97ca4ae9b52daa412449ab5e4213bb5fb8e3cca2f308460f5dfc",
+      "linked_materials": []
     }
   ],
   "versions": [
@@ -2060,6 +2093,34 @@
       "study_id": "auto-ontology",
       "ref": "fc43a82600e18b19d159c52023f54f5572f537ac",
       "url": "https://github.com/NVIDIA/auto-ontology/tree/fc43a82600e18b19d159c52023f54f5572f537ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "avalanchebench-arxiv-v2",
+      "study_id": "avalanchebench",
+      "ref": "arxiv:2605.24183v2",
+      "url": "https://arxiv.org/abs/2605.24183v2",
+      "unknown_reason": null
+    },
+    {
+      "id": "avalanchebench-source-38cf3234",
+      "study_id": "avalanchebench",
+      "ref": "38cf3234b5c0bdbb649c67bc0ef14908d1e27dc5",
+      "url": "https://github.com/snowflake-labs/avalanchebench/tree/38cf3234b5c0bdbb649c67bc0ef14908d1e27dc5",
+      "unknown_reason": null
+    },
+    {
+      "id": "adaptive-prompt-injection-swarms-arxiv-v1",
+      "study_id": "adaptive-prompt-injection-swarms",
+      "ref": "arxiv:2611.11861v1",
+      "url": "https://arxiv.org/abs/2611.11861v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "github-actions-log-secret-scanning-changelog-20261109",
+      "study_id": "github-actions-log-secret-scanning",
+      "ref": "changelog-2026-11-09",
+      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs/",
       "unknown_reason": null
     }
   ],
@@ -3827,6 +3888,49 @@
       "document": "reviews/auto-ontology/2026-11-13.md",
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Source and docs inspected at pinned commit, not installed/tested; reported GitHub issues not all independently reproduced; no productivity or accuracy measurements for target projects.",
+      "supersedes": null
+    },
+    {
+      "id": "avalanchebench-20261111",
+      "study_ids": [
+        "avalanchebench"
+      ],
+      "version_ids": [
+        "avalanchebench-arxiv-v2",
+        "avalanchebench-source-38cf3234"
+      ],
+      "date": "2026-11-11",
+      "document": "portfolio/2026-11-11/review.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Author HTML and limitations read per the card; synthetic latent-world tasks on Snowflake/AISQL with external models; LLM-judge is nondeterministic; no local PostgreSQL adapter in the release; nothing was run on target projects, benefit is hypothetical.",
+      "supersedes": null
+    },
+    {
+      "id": "adaptive-prompt-injection-swarms-20261111",
+      "study_ids": [
+        "adaptive-prompt-injection-swarms"
+      ],
+      "version_ids": [
+        "adaptive-prompt-injection-swarms-arxiv-v1"
+      ],
+      "date": "2026-11-11",
+      "document": "portfolio/2026-11-11/review.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Author HTML read per the card; synthetic scenarios with external safety mitigations disabled; no public author optimizer, so independent reproduction is unavailable; neither attack nor defense was run on DSH; benefit is hypothetical.",
+      "supersedes": null
+    },
+    {
+      "id": "github-actions-log-secret-scanning-20261111",
+      "study_ids": [
+        "github-actions-log-secret-scanning"
+      ],
+      "version_ids": [
+        "github-actions-log-secret-scanning-changelog-20261109"
+      ],
+      "date": "2026-11-11",
+      "document": "portfolio/2026-11-11/review.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Official changelog and documentation only, not a peer-reviewed paper; public preview limited to GitHub Enterprise Cloud with Secret Protection or Advanced Security; entitlement for the target repository is UNKNOWN; no independent benchmark; nothing was run.",
       "supersedes": null
     }
   ],

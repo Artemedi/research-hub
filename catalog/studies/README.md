@@ -2,7 +2,7 @@
 
 # Структурированные исследования
 
-85 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
+88 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: PARTIAL.
 - [DeepSeek Harness Creator Mode — демо-подсказки и offline plugin probe](dsh-creator-mode.md); project fit: PARTIAL.
@@ -89,3 +89,6 @@
 - [Rethinking skills and prompts for GPT-6 Astra](gpt6-astra-skills-prompts.md); project fit: PARTIAL.
 - [Drift Inspector — Atomic Contribution Claims for Scientific Drift](drift-inspector.md); project fit: PARTIAL.
 - [NVIDIA Auto Ontology — Semantic Model for Relational Data](auto-ontology.md); project fit: PARTIAL.
+- [AvalancheBench — latent-world recovery and cascading analytical errors](avalanchebench.md); project fit: NO_DOCUMENTED_ASSESSMENT.
+- [Scaling Adaptive Prompt Injection Attacks with Agent Swarms](adaptive-prompt-injection-swarms.md); project fit: NO_DOCUMENTED_ASSESSMENT.
+- [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md); project fit: NO_DOCUMENTED_ASSESSMENT.

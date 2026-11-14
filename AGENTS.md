@@ -14,6 +14,8 @@ New sources must also follow `docs/data-model.md` and register explicit entities
 
 `reports/` contains generated compatibility endpoints. Do not add new reports there or edit compatibility JSON directly. Edit canonical files and `catalog/structure.json`; new documents use `from: null` and an explicit `date`.
 
+Gates over a frozen snapshot (closure ledger, targeted fit) must name their scope explicitly and hash only that scope (`data/results/research-portfolio/2026-11-09-basis-manifest.json`); they must not hash the whole `catalog/entities.json` or hard-code the catalog size. New studies are registered only in `catalog/structure.json` and `catalog/entities.json` and must not invalidate older snapshots.
+
 Do not append changelog-style lists to the root README. It links stable section indexes. Generated files begin with a comment naming `scripts/build-catalog.mjs` and must not receive manual additions.
 
 For evidence-gated portfolio swarms and the experimental Claude Swarm → ZCode bridge, use the repository-local skill in `.agents/skills/research-swarm-orchestrator/SKILL.md`. It is a bounded lab workflow, not authorization for unattended or production execution.

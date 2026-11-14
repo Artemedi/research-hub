@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-85 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+88 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -16,6 +16,7 @@
 | [Agentic Self-Awareness](agentic-self-awareness.md) | [2026-11-03 / agentic-self-awareness-review](agentic-self-awareness.md) |
 | [alphaXiv OpenResearch](alphaxiv-openresearch.md) | [2026-11-04 / alphaxiv-openresearch-review](../reviews/alphaxiv-openresearch/2026-11-04.md) · [2026-11-06 / alphaxiv-openresearch-provenance-ab-20261106](../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) |
 | [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04 / anthropic-agent-automations-review](../reviews/anthropic-agent-automations/2026-11-04.md) |
+| [AvalancheBench — latent-world recovery and cascading analytical errors](avalanchebench.md) | [2026-11-11 / avalanchebench-20261111](../portfolio/2026-11-11/review.md) |
 | [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [2026-11-03 / behavior-beyond-text-review](behavior-beyond-text.md) |
 | [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | [2026-11-03 / bird-rl-review](bird-rl.md) |
@@ -33,6 +34,7 @@
 | [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05 / dsh-superagent-prototype-review](../reviews/dsh-superagent-prototype/2026-11-05.md) |
 | [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
+| [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md) | [2026-11-11 / github-actions-log-secret-scanning-20261111](../portfolio/2026-11-11/review.md) |
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
 | [GPT-6 Astra — Rethinking skills and prompts (BK-009)](gpt6-astra-skills-prompts.md) | [2026-11-06 / bk009-gpt6-astra-live-ab-20261106](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
@@ -72,6 +74,7 @@
 | [REMORY](remory.md) | [2026-11-03 / remory-review](remory.md) |
 | [REVA — Reusable Evidence View Aggregation](reva.md) | [2026-11-03 / reva-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / rrsi-full-text-2026-11-05](../reviews/rrsi/2026-11-05-full-text.md) · [2026-11-06 / rrsi-harness2-selector-ab-2026-11-06](../reviews/rrsi/2026-11-06-validation-ab.md) |
+| [Scaling Adaptive Prompt Injection Attacks with Agent Swarms](adaptive-prompt-injection-swarms.md) | [2026-11-11 / adaptive-prompt-injection-swarms-20261111](../portfolio/2026-11-11/review.md) |
 | [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | [2026-11-03 / self-replicating-prompt-injections-review](self-replicating-prompt-injections.md) |
 | [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05 / sequential-diagnosis-language-models-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [2026-11-05 / sequential-diagnosis-language-models-initial-review](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) |
 | [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [2026-11-03 / silent-cue-loss-review](../portfolio/2026-10-20--2026-10-26/review.md) |

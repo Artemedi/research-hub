@@ -28,14 +28,29 @@ HISTORIC_WITHOUT_RAW = {"mcp-toolbox-postgres", "pgbot"}
 def hashbytes(data):
     return hashlib.sha256(data).hexdigest()
 
+BASIS = ROOT / "data/results/research-portfolio/2026-11-09-basis-manifest.json"
+
+
+def scope_hash(entities, ids):
+    """Hash only the entities of the snapshot's studies; later catalog growth must not change it."""
+    ids = set(ids)
+    subset = {
+        "studies": sorted((s for s in entities["studies"] if s["id"] in ids), key=lambda r: r["id"]),
+        "versions": sorted((v for v in entities["versions"] if v["study_id"] in ids), key=lambda r: r["id"]),
+        "reviews": sorted((r for r in entities["reviews"] if ids & set(r["study_ids"])), key=lambda r: r["id"]),
+        "assessments": sorted((a for a in entities["assessments"] if a["study_id"] in ids), key=lambda r: r["id"]),
+        "current_assessments": sorted((c for c in entities["current_assessments"] if c["study_id"] in ids), key=lambda r: (r["study_id"], r["project_id"])),
+    }
+    return hashbytes(json.dumps(subset, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode())
+
+
 def verify(obj):
     source = json.loads((ROOT / "catalog/entities.json").read_text())
     expected = {s["id"]: s["card"] for s in source["studies"]}
-    assert len(expected) == 83
     rows = obj["studies"]
     ids = [r["study_id"] for r in rows]
     assert len(rows) == len(ids) == len(set(ids)) == 83
-    assert set(ids) == set(expected)
+    assert set(ids) <= set(expected)  # the catalog may grow beyond the frozen snapshot
     counts = Counter(r["closure_status"] for r in rows)
     assert dict(counts) == EXPECTED_STATUSES
     assert obj["summary"]["by_status"] == dict(sorted(counts.items()))
@@ -44,7 +59,9 @@ def verify(obj):
     assert obj["summary"]["explicit_project_pairs"] == 506
     assert obj["summary"]["unassessed_project_pairs"] == 3229
     assert obj["summary"]["explicit_project_pairs"] + obj["summary"]["unassessed_project_pairs"] == 83 * 45
-    assert obj["basis_entities_sha256"] == hashbytes((ROOT / "catalog/entities.json").read_bytes())
+    basis = json.loads(BASIS.read_text())
+    assert obj["basis_entities_sha256"] == basis["historical_entities_file_sha256"]
+    assert scope_hash(source, ids) == basis["scope_entities_sha256"]
     blocked = set()
     reopened = set()
     evidence_checked = 0

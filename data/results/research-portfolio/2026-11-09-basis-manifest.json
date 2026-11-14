@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-14",
+  "purpose": "Scope manifest for the frozen 2026-11-09 closure snapshot. Gates verify only the studies named in the closure ledger, so adding studies to catalog/entities.json does not invalidate them.",
+  "scope": "study ids listed in data/results/research-portfolio/2026-11-09-closure-ledger.json (studies[].study_id)",
+  "basis_commit": "938061a",
+  "historical_entities_file_sha256": "203e19c01230cf7a4b2b1720371e4495eb278f66b2fa951ab445dd791481a061",
+  "scope_entities_sha256": "4741b21be3f23b194c9edca3ea24e3a93337da17991b2f21a4a6d7ffbd4337b9",
+  "scope_entities_algorithm": "sha256 of json.dumps(subset, sort_keys=True, ensure_ascii=False, separators=(',', ':')) where subset = {studies, versions (study_id in scope), reviews (any study_id in scope), assessments (study_id in scope), current_assessments} each restricted to scope ids and sorted by id (current_assessments by study_id, project_id)",
+  "verified_equal_at": ["938061a", "3bf4297", "2026-11-14 worktree"],
+  "note": "historical_entities_file_sha256 is the whole-file hash at basis_commit, kept as a historical record only; it is no longer compared with the live file."
+}

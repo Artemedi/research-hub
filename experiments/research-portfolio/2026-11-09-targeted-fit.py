@@ -357,6 +357,18 @@ def anchor(seam,pid):
             "file_sha256":digest(data),"symbol":pattern,"boundary":boundary,
             "url":f"https://github.com/Artemedi/{pid}/blob/{commit}/{path}#L{lines[0]}"}
 
+BASIS=ROOT/"data/results/research-portfolio/2026-11-09-basis-manifest.json"
+
+def scope_hash(ent,ids):
+    """Hash only the entities of the snapshot's studies; later catalog growth must not change it."""
+    ids=set(ids)
+    sub={"studies":sorted((s for s in ent["studies"] if s["id"] in ids),key=lambda r:r["id"]),
+         "versions":sorted((v for v in ent["versions"] if v["study_id"] in ids),key=lambda r:r["id"]),
+         "reviews":sorted((r for r in ent["reviews"] if ids&set(r["study_ids"])),key=lambda r:r["id"]),
+         "assessments":sorted((a for a in ent["assessments"] if a["study_id"] in ids),key=lambda r:r["id"]),
+         "current_assessments":sorted((c for c in ent["current_assessments"] if c["study_id"] in ids),key=lambda r:(r["study_id"],r["project_id"]))}
+    return digest(json.dumps(sub,sort_keys=True,ensure_ascii=False,separators=(",",":")).encode())
+
 def build():
     rawent=(ROOT/"catalog/entities.json").read_bytes()
     rawledger=(ROOT/"data/results/research-portfolio/2026-11-09-closure-ledger.json").read_bytes()
@@ -422,7 +434,7 @@ def build():
                        "source_anchor_id":seam,"status":pilot["status"],
                        "scope":"original function in network-denied sandbox; no candidate implementation"})
     return {"date":DATE,"status":"DESIGN_ONLY_NOT_EXECUTED",
-            "basis_entities_sha256":digest(rawent),"basis_ledger_sha256":digest(rawledger),
+            "basis_entities_sha256":json.loads(BASIS.read_text())["historical_entities_file_sha256"],"basis_ledger_sha256":digest(rawledger),
             "registry_commit":git(REGISTRY,"rev-parse","HEAD").decode().strip(),
             "profile_count":len(profiles),"private_profile_bodies_published":False,
             "bounded_screened":40,"bounded_deferred":BOUNDED_DEFERRED,
@@ -443,7 +455,9 @@ def validate(x):
     ledger=json.loads((ROOT/"data/results/research-portfolio/2026-11-09-closure-ledger.json").read_text())
     disp={v["study_id"]:v["closure_status"] for v in ledger["studies"]}
     assert x["status"]=="DESIGN_ONLY_NOT_EXECUTED"
-    assert x["basis_entities_sha256"]==digest((ROOT/"catalog/entities.json").read_bytes())
+    basis=json.loads(BASIS.read_text())
+    assert x["basis_entities_sha256"]==basis["historical_entities_file_sha256"]
+    assert scope_hash(ent,list(disp))==basis["scope_entities_sha256"]
     assert x["basis_ledger_sha256"]==digest((ROOT/"data/results/research-portfolio/2026-11-09-closure-ledger.json").read_bytes())
     assert x["profile_count"]==45 and not x["private_profile_bodies_published"]
     assert x["bounded_screened"]==40 and x["research_only_screened"]==39

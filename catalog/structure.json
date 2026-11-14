@@ -88,7 +88,10 @@
     "studies/youtube-skills.md",
     "studies/zero-code.md",
     "studies/drift-inspector.md",
-    "studies/auto-ontology.md"
+    "studies/auto-ontology.md",
+    "studies/adaptive-prompt-injection-swarms.md",
+    "studies/avalanchebench.md",
+    "studies/github-actions-log-secret-scanning.md"
   ],
   "documents": [
     {
@@ -2578,6 +2581,30 @@
       "title": "Drift Inspector / NVIDIA Auto Ontology — project-fit and limitations",
       "kind": "portfolio",
       "date": "2026-11-13"
+    },
+    {
+      "from": "reports/2026-11-11-portfolio-research.md",
+      "to": "portfolio/2026-11-11/review.md",
+      "title": "Портфельный обзор исследований — 2026-11-11",
+      "kind": "portfolio",
+      "original_sha256": "cae19e848eafc244049baaf932b6a560ab0d02924ed29a998ecc906230007cdd",
+      "legacy_headings": [
+        "Портфельный обзор исследований — 2026-11-11",
+        "1. AvalancheBench — каскадные ошибки многовопросной аналитики",
+        "2. Scaling Adaptive Prompt Injection Attacks with Agent Swarms",
+        "3. GitHub Actions workflow-log secret scanning — public preview",
+        "Матрица «исследование → конкретный проект»",
+        "Отсев и дедупликация",
+        "Приоритеты и блокеры",
+        "Проверка публикации и известное ограничение каталога"
+      ]
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-09-basis-manifest.json",
+      "title": "Scope manifest for the frozen 2026-11-09 closure snapshot",
+      "kind": "data",
+      "date": "2026-11-14"
     }
   ]
 }

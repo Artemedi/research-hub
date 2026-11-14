@@ -1,5 +1,7 @@
 # AvalancheBench — latent-world recovery and cascading analytical errors
 
+[Структурированная запись и связи](../catalog/studies/avalanchebench.md)
+
 - Источник: [arXiv:2605.24183v2](https://arxiv.org/html/2605.24183v2); v1 2026-05-22, существенное обновление v2 2026-11-04.
 - FULL_TEXT_VERIFIED: авторский HTML, разделы 2–5 и ограничения; [код и данные](https://github.com/snowflake-labs/avalanchebench/tree/38cf3234b5c0bdbb649c67bc0ef14908d1e27dc5), Apache-2.0, release 0.1.0.
 - Метод: 3 синтетических многовопросных задания, 58 вопросов, latent-world ground truth, аналитическая fidelity, денежная стоимость и CATC, анализ ошибок и зависимостей.

@@ -1,5 +1,7 @@
 # GitHub Actions workflow-log secret scanning — public preview
 
+[Структурированная запись и связи](../catalog/studies/github-actions-log-secret-scanning.md)
+
 - Первоисточник: [GitHub Changelog 2026-11-09](https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs/) и [официальная документация](https://docs.github.com/en/enterprise-cloud@latest/code-security/concepts/secret-security/secret-scanning). FULL_TEXT_VERIFIED (engineering documentation; не peer-reviewed paper).
 - Механизм: после завершения новых workflow runs GitHub ищет поддерживаемые provider-pattern secrets в логах; находки попадают в alerts и сохраняются после удаления логов.
 - Ограничения: только GitHub Enterprise Cloud с Secret Protection или Advanced Security; выключено по умолчанию; нет backfill, generic/custom/AI patterns и masked secrets; нет уведомлений в preview. Независимых benchmark-метрик нет.
