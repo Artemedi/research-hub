@@ -2619,6 +2619,13 @@
       "title": "Drift Inspector — step A result: published-CSV arithmetic and paper-level prevalence",
       "kind": "data",
       "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "experiments/drift-inspector/2026-11-14-b1-corpus-and-queries-draft.md",
+      "title": "Drift Inspector — B1: черновик корпуса (темы OpenAlex) и запросов DBA",
+      "kind": "guide",
+      "date": "2026-11-14"
     }
   ]
 }
