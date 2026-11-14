@@ -74,6 +74,7 @@
 - [decision-geometry-harness/2026-11-07-schema-ab-oracle.py](decision-geometry-harness/2026-11-07-schema-ab-oracle.py)
 - [decision-geometry-harness/2026-11-07-schema-ab-run.py](decision-geometry-harness/2026-11-07-schema-ab-run.py)
 - [decision-geometry-harness/2026-11-07-schema-ab-wire.mts](decision-geometry-harness/2026-11-07-schema-ab-wire.mts)
+- [drift-inspector/2026-11-14-step-a-prevalence.py](drift-inspector/2026-11-14-step-a-prevalence.py)
 - [experienceindex/2026-11-07-council.py](experienceindex/2026-11-07-council.py)
 - [experienceindex/2026-11-07-link-oracle.mjs](experienceindex/2026-11-07-link-oracle.mjs)
 - [experienceindex/2026-11-07-link-retrieval.py](experienceindex/2026-11-07-link-retrieval.py)

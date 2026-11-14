@@ -51,6 +51,7 @@
 | [data/results/decision-geometry-harness/2026-11-07-schema-ab-model.json](results/decision-geometry-harness/2026-11-07-schema-ab-model.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-schema-ab-oracle.json](results/decision-geometry-harness/2026-11-07-schema-ab-oracle.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-schema-ab-wires.json](results/decision-geometry-harness/2026-11-07-schema-ab-wires.json) | Результат ограниченной проверки |
+| [data/results/drift-inspector/2026-11-14-step-a-prevalence.json](results/drift-inspector/2026-11-14-step-a-prevalence.json) | Результат ограниченной проверки |
 | [data/results/dsh-creator/2026-11-06-offline-poster-probe.json](results/dsh-creator/2026-11-06-offline-poster-probe.json) | Результат ограниченной проверки |
 | [data/results/dsh-superagent-prototype/2026-11-05.json](results/dsh-superagent-prototype/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/exactly-once-limbo/2026-11-04.json](results/exactly-once-limbo/2026-11-04.json) | Результат ограниченной проверки |

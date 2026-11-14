@@ -2605,6 +2605,20 @@
       "title": "Scope manifest for the frozen 2026-11-09 closure snapshot",
       "kind": "data",
       "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "experiments/drift-inspector/2026-11-14-step-a-prevalence.py",
+      "title": "Drift Inspector — step A: recompute counts and paper-level prevalence from the published CSV",
+      "kind": "guide",
+      "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "data/results/drift-inspector/2026-11-14-step-a-prevalence.json",
+      "title": "Drift Inspector — step A result: published-CSV arithmetic and paper-level prevalence",
+      "kind": "data",
+      "date": "2026-11-14"
     }
   ]
 }
