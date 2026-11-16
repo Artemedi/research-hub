@@ -4,6 +4,8 @@
 
 ## Новые отчёты
 
+- [2026-11-16 — PostgreSQL maintenance/security, матрица и A/B](reports/2026-11-16-portfolio-research.md).
+
 - [2026-11-11 — портфельный обзор новых исследований, матрица соответствия и блокеры](reports/2026-11-11-portfolio-research.md).
 
 | Раздел | Содержимое |
