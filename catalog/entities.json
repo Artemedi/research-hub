@@ -1379,6 +1379,20 @@
         "reviews/mobileprobe/2026-11-14.md",
         "portfolio/2026-11-14/review.md"
       ]
+    },
+    {
+      "id": "tufazip",
+      "title": "TufaZip v2 — online Transformer lossless compression of enwik9",
+      "kind": "engineering",
+      "card": "studies/tufazip.md",
+      "primary_url": "https://tufalabs.ai/research/tufazip/",
+      "current_review_id": "tufazip-full-source-review-20261121",
+      "fit_coverage": "NO_DOCUMENTED_ASSESSMENT",
+      "card_body_sha256": "4e00894e680b62a3ece798fce5b17eb916fa6c2d41b724ea1da2d6f3cca5ae56",
+      "linked_materials": [
+        "reviews/tufazip/2026-11-21.md",
+        "portfolio/2026-11-21/review.md"
+      ]
     }
   ],
   "versions": [
@@ -2247,6 +2261,13 @@
       "study_id": "mobileprobe",
       "ref": "arxiv:2611.16693v1",
       "url": "https://arxiv.org/pdf/2611.16693v1",
+      "unknown_reason": null
+    },
+    {
+      "id": "tufazip-v2-b9d678d",
+      "study_id": "tufazip",
+      "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
+      "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
       "unknown_reason": null
     }
   ],
@@ -4141,6 +4162,20 @@
       "document": "reviews/mobileprobe/2026-11-14.md",
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Original 83 Android attack instances and GUI environment unverified outside paper; no matching project Android agent.",
+      "supersedes": null
+    },
+    {
+      "id": "tufazip-full-source-review-20261121",
+      "study_ids": [
+        "tufazip"
+      ],
+      "version_ids": [
+        "tufazip-v2-b9d678d"
+      ],
+      "date": "2026-11-21",
+      "document": "reviews/tufazip/2026-11-21.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
       "supersedes": null
     }
   ],

@@ -97,7 +97,8 @@
     "studies/database-agent-observability.md",
     "studies/rea-bench.md",
     "studies/spillway.md",
-    "studies/mobileprobe.md"
+    "studies/mobileprobe.md",
+    "studies/tufazip.md"
   ],
   "documents": [
     {
@@ -2681,6 +2682,20 @@
       "title": "Research intake Nov 11–14: six full-text studies and project mapping",
       "kind": "portfolio",
       "date": "2026-11-14"
+    },
+    {
+      "from": null,
+      "to": "reviews/tufazip/2026-11-21.md",
+      "title": "TufaZip — complete engineering source and project-fit review",
+      "kind": "review",
+      "date": "2026-11-21"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-21/review.md",
+      "title": "Research intake 2026-11-21: TufaZip source and NO_FIT decision",
+      "kind": "portfolio",
+      "date": "2026-11-21"
     }
   ]
 }
