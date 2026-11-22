@@ -98,7 +98,8 @@
     "studies/rea-bench.md",
     "studies/spillway.md",
     "studies/mobileprobe.md",
-    "studies/tufazip.md"
+    "studies/tufazip.md",
+    "studies/gnhf.md"
   ],
   "documents": [
     {
@@ -2696,6 +2697,20 @@
       "title": "Research intake 2026-11-21: TufaZip source and NO_FIT decision",
       "kind": "portfolio",
       "date": "2026-11-21"
+    },
+    {
+      "from": null,
+      "to": "reviews/gnhf/2026-11-22.md",
+      "title": "gnhf — bounded source audit of overnight agent workflow and safety",
+      "kind": "review",
+      "date": "2026-11-22"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-22/gnhf.md",
+      "title": "Research intake 2026-11-22: gnhf autonomy method and project fit",
+      "kind": "portfolio",
+      "date": "2026-11-22"
     }
   ]
 }
