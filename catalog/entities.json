@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "pgschema",
+      "title": "pgschema — declarative PostgreSQL schema migration and DBA-gated DDL planning",
+      "kind": "engineering",
+      "card": "studies/pgschema.md",
+      "primary_url": "https://github.com/pgplex/pgschema",
+      "current_review_id": "pgschema-bounded-source-audit-20261122",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "41f8c03e4b7bfc1fdc53dfb169d7ace3400b99bf69b2c2656b73845bfecb039b",
+      "linked_materials": [
+        "reviews/pgschema/2026-11-22.md",
+        "portfolio/2026-11-22/pgschema.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "pgschema-1b7eaf28",
+      "study_id": "pgschema",
+      "ref": "1b7eaf2827c84bb3e20679c6bab0c1116bf4e962",
+      "url": "https://github.com/pgplex/pgschema/tree/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "pgschema-bounded-source-audit-20261122",
+      "study_ids": [
+        "pgschema"
+      ],
+      "version_ids": [
+        "pgschema-1b7eaf28"
+      ],
+      "date": "2026-11-22",
+      "document": "reviews/pgschema/2026-11-22.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned selected planner, diff/rewrite, apply/fingerprint, documentation and CI reviewed. No executed migration, independent PG15/18 test, locks/WAL/standby evidence or supply-chain audit. No automatic production apply.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,48 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "pgschema-AKUZ-documentary-20261122",
+      "study_id": "pgschema",
+      "project_id": "AKUZ",
+      "review_id": "pgschema-bounded-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source documents PostgreSQL DDL or evidence-oriented DBA workflow; declarative plan may support offline review only.",
+      "limitations": "No verified integration into a live deployed project; source coverage is bounded; no actual schema, WAL, lock or replica measurement.",
+      "next_test": "Read-only/dry plan comparison for synthetic PG15/18 schemas: manual DDL vs generated SQL/JSON plan, independent rewrite/drop/lock/WAL risk oracle; human gate before any disposable apply.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/pgschema.md",
+      "source_line": 11,
+      "source_excerpt": "| [pgschema](../../studies/pgschema.md) | **AKUZ** | [`PG/AlterColumnIndex_pg.sql`](https://github.com/Artemedi/AKUZ/blob/c2ba29f6f9745a0a5e6e6a4bf6adc930595cf4cb/PG/AlterColumnIndex_pg.sql) имеет ручные PostgreSQL DDL для изменения индексов/колонок; подходит как дизайн синтетического data-loss/lock fixture | Реальное deployed состояние неизвестно; hot standby, WAL, table rewrite/ACCESS EXCLUSIVE, DROP, replay lag; отсутствует реальная oracle/DO NOT CONNECT | На выдуманной PG15/18 схеме сравнить A manually reviewed SQL vs B pgschema plan (без apply); независимый destructive DDL oracle и lock class | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-only project fit grounded by pinned code/docs; not a verified installed schema migration interface.",
+      "supersedes": null
+    },
+    {
+      "id": "pgschema-Wiki_PG-documentary-20261122",
+      "study_id": "pgschema",
+      "project_id": "Wiki_PG",
+      "review_id": "pgschema-bounded-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source documents PostgreSQL DDL or evidence-oriented DBA workflow; declarative plan may support offline review only.",
+      "limitations": "No verified integration into a live deployed project; source coverage is bounded; no actual schema, WAL, lock or replica measurement.",
+      "next_test": "Read-only/dry plan comparison for synthetic PG15/18 schemas: manual DDL vs generated SQL/JSON plan, independent rewrite/drop/lock/WAL risk oracle; human gate before any disposable apply.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/pgschema.md",
+      "source_line": 12,
+      "source_excerpt": "| [pgschema](../../studies/pgschema.md) | **Wiki_PG** | [`docs/universal-system-mcp.md`](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/docs/universal-system-mcp.md) документирует read-only evidence/state/coverage, возможно создать DBA-review checklist | Не DDL executor; нельзя выдать агенту права миграции/PG socket; отсутствуют исходники интеграции плагина | Документальный checklist для планов: lock, SQLSTATE, WAL, replica, owner/extension unsupported, schema drift; проверить на синтетическом плане | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-only project fit grounded by pinned code/docs; not a verified installed schema migration interface.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19120,16 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "pgschema",
+      "project_id": "AKUZ",
+      "assessment_id": "pgschema-AKUZ-documentary-20261122"
+    },
+    {
+      "study_id": "pgschema",
+      "project_id": "Wiki_PG",
+      "assessment_id": "pgschema-Wiki_PG-documentary-20261122"
     }
   ],
   "relations": [
