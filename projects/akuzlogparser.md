@@ -11,6 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [chartli](../catalog/studies/chartli.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | \| akuzlogparser \| описанные stages и elapsed_s @d6061aa дают числовой diagnostic output для сравнения с таблицей. \| Проверить формат, выгоду визуализации и совместимость Windows; отдельная валидация NaN, missing и времени. \| PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE \| | [Обзор](../reviews/chartli/2026-11-04.md) · [Основание](../reviews/chartli/2026-11-04.md) |
+| [lynxdb](../catalog/studies/lynxdb.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentation and pinned source indicate a possible offline sanitized log/evidence query workload, not proven integration. | [Обзор](../reviews/lynxdb/2026-11-23.md) · [Основание](../portfolio/2026-11-23/lynxdb.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

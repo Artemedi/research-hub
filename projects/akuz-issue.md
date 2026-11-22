@@ -11,6 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Цепочка evidence → root cause → remediation → control подходит для хранения trace-cited diagnosis и replay evidence; проект не исполняет agent actions. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
+| [lynxdb](../catalog/studies/lynxdb.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentation and pinned source indicate a possible offline sanitized log/evidence query workload, not proven integration. | [Обзор](../reviews/lynxdb/2026-11-23.md) · [Основание](../portfolio/2026-11-23/lynxdb.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

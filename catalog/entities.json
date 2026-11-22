@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "lynxdb",
+      "title": "LynxDB — single-node log analytics and PPL pipeline with Unix file mode",
+      "kind": "engineering",
+      "card": "studies/lynxdb.md",
+      "primary_url": "https://github.com/lynxbase/lynxdb",
+      "current_review_id": "lynxdb-single-node-source-audit-20261123",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "133c322754d4e3e3a2161c53f77c7a5fbb66a73b5bc1fbbf512e0d911a2f74e6",
+      "linked_materials": [
+        "reviews/lynxdb/2026-11-23.md",
+        "portfolio/2026-11-23/lynxdb.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "lynxdb-6623322a",
+      "study_id": "lynxdb",
+      "ref": "6623322ab58f605efb35c636db8ee10b3884f6a8",
+      "url": "https://github.com/lynxbase/lynxdb/tree/6623322ab58f605efb35c636db8ee10b3884f6a8",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "lynxdb-single-node-source-audit-20261123",
+      "study_ids": [
+        "lynxdb"
+      ],
+      "version_ids": [
+        "lynxdb-6623322a"
+      ],
+      "date": "2026-11-23",
+      "document": "reviews/lynxdb/2026-11-23.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned README, Go query path, architecture, storage, PPL feature matrix, deployment, CI and selected source packages reviewed. Full distributed claim contradicted by single-node documentation; no binary execution, synthetic A/B/C or independent correctness/durability benchmark.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "lynxdb-akuzlogparser-documentary-20261123",
+      "study_id": "lynxdb",
+      "project_id": "akuzlogparser",
+      "review_id": "lynxdb-single-node-source-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentation and pinned source indicate a possible offline sanitized log/evidence query workload, not proven integration.",
+      "limitations": "LynxDB is single-node; no distributed HA, no event WAL, buffered durability depends on ingest protocol; PPL semantic and multiline event fidelity unmeasured; sensitive private evidence excluded.",
+      "next_test": "Frozen synthetic event and query corpus, A incumbent log parser/SQLite vs B offline LynxDB file queries with exact semantic oracle, elapsed/CPU/RSS/IO; owner-gated C only on disposable standalone server.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/lynxdb.md",
+      "source_line": 11,
+      "source_excerpt": "| [LynxDB](../../studies/lynxdb.md) | **akuzlogparser** | [`akuz_log_parser.py:238–318`](https://github.com/Artemedi/akuzlogparser/blob/d6061aa83cdeadc22e30cfaee36aea94ac131bb2/akuz_log_parser.py#L238-L318): event_stream собирает multiline exceptions; query stage на отдельной sanitized копии как baseline alternative | Пересборка событий из строк может нарушить event boundaries; огромные traces, timezone/UTF8, full temp index IO; нет доказательства faster than current Python/SQLite | Frozen synthetic AKUZ-like .log, A=current parser + Python/SQLite, B=LynxDB pipe query; compare exact event/field and answer parity, RSS/IO/wall | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project purpose/profile and reviewed public-safe source descriptions only; active installed runtime/seam not confirmed.",
+      "supersedes": null
+    },
+    {
+      "id": "lynxdb-Wiki_PG-documentary-20261123",
+      "study_id": "lynxdb",
+      "project_id": "Wiki_PG",
+      "review_id": "lynxdb-single-node-source-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentation and pinned source indicate a possible offline sanitized log/evidence query workload, not proven integration.",
+      "limitations": "LynxDB is single-node; no distributed HA, no event WAL, buffered durability depends on ingest protocol; PPL semantic and multiline event fidelity unmeasured; sensitive private evidence excluded.",
+      "next_test": "Frozen synthetic event and query corpus, A incumbent log parser/SQLite vs B offline LynxDB file queries with exact semantic oracle, elapsed/CPU/RSS/IO; owner-gated C only on disposable standalone server.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/lynxdb.md",
+      "source_line": 12,
+      "source_excerpt": "| [LynxDB](../../studies/lynxdb.md) | **Wiki_PG** | [`docs/universal-system-mcp.md`](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/docs/universal-system-mcp.md): evidence/state/SQLite FTS and read-only MCP with coverage/provenance | Не поддерживает corpus semantics без фиксации полей/времени; существующий SQLite FTS baseline не устарел; no direct MCP integration | Bounded offline PPL/FTS query comparator on generated synthetic deep-reports vs current SQLite exact oracle, no ingestion changes | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project purpose/profile and reviewed public-safe source descriptions only; active installed runtime/seam not confirmed.",
+      "supersedes": null
+    },
+    {
+      "id": "lynxdb-akuz-issue-documentary-20261123",
+      "study_id": "lynxdb",
+      "project_id": "akuz-issue",
+      "review_id": "lynxdb-single-node-source-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentation and pinned source indicate a possible offline sanitized log/evidence query workload, not proven integration.",
+      "limitations": "LynxDB is single-node; no distributed HA, no event WAL, buffered durability depends on ingest protocol; PPL semantic and multiline event fidelity unmeasured; sensitive private evidence excluded.",
+      "next_test": "Frozen synthetic event and query corpus, A incumbent log parser/SQLite vs B offline LynxDB file queries with exact semantic oracle, elapsed/CPU/RSS/IO; owner-gated C only on disposable standalone server.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/lynxdb.md",
+      "source_line": 13,
+      "source_excerpt": "| [LynxDB](../../studies/lynxdb.md) | **akuz-issue** | [`README.md`](https://github.com/Artemedi/akuz-issue/blob/6dd20b3ff7868fa5e4f8c5804384dc3694f1bb70/README.md): private RCA evidence chain, per-incident artifacts | Evidence is immutable and may contain sensitive production identifiers; no new public/raw ingestion, no replacement of original incidents | Test derived synthetic incident event summaries for search/aggregation fidelity; human approval before any real data | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project purpose/profile and reviewed public-safe source descriptions only; active installed runtime/seam not confirmed.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19141,21 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "lynxdb",
+      "project_id": "akuzlogparser",
+      "assessment_id": "lynxdb-akuzlogparser-documentary-20261123"
+    },
+    {
+      "study_id": "lynxdb",
+      "project_id": "Wiki_PG",
+      "assessment_id": "lynxdb-Wiki_PG-documentary-20261123"
+    },
+    {
+      "study_id": "lynxdb",
+      "project_id": "akuz-issue",
+      "assessment_id": "lynxdb-akuz-issue-documentary-20261123"
     }
   ],
   "relations": [

@@ -27,6 +27,7 @@
 | [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | PostgreSQL DBA-автоматизация и диагностический retrieval смежны, но профиль не задаёт agent-owned checkpoint/replay contract. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 | [auto-ontology](../catalog/studies/auto-ontology.md) | DOCUMENTED_CANDIDATE | PROFILE_MATCH_NEEDS_EVIDENCE | Проект уже работает с PostgreSQL и знаниями DBA, допускает проверку внешнего семантического слоя в отдельном lab | [Обзор](../reviews/auto-ontology/2026-11-13.md) · [Основание](../portfolio/2026-11-13/source-project-fit.md) |
 | [database-agent-observability](../catalog/studies/database-agent-observability.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | DBA knowledge/diagnostic snapshots уже различают отсутствующие и доступные сведения | [Обзор](../reviews/database-agent-observability/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
+| [lynxdb](../catalog/studies/lynxdb.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentation and pinned source indicate a possible offline sanitized log/evidence query workload, not proven integration. | [Обзор](../reviews/lynxdb/2026-11-23.md) · [Основание](../portfolio/2026-11-23/lynxdb.md) |
 
 ## Соответствие не подтверждено или применение отложено
 
