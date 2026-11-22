@@ -1,0 +1,15 @@
+# pgschema — декларативные PostgreSQL DDL-миграции и проверяемый план
+
+[Структурированная запись и связи](../catalog/studies/pgschema.md)
+
+**Источник:** [pgplex/pgschema](https://github.com/pgplex/pgschema), [pinned upstream `1b7eaf2827c84bb3e20679c6bab0c1116bf4e962`](https://github.com/pgplex/pgschema/tree/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962) (осмотр 22.11.2026). **Тип:** engineering implementation, Apache-2.0; не peer-reviewed paper. Go 1.24, инструмент ориентирован на PostgreSQL 14–18. Источник: [README](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/README.md), [go.mod](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/go.mod), [LICENSE](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/LICENSE).
+
+**Проверяемый механизм:** `dump → желаемое SQL-состояние → plan(JSON/SQL/human) → reviewed apply`. Plan сравнивает target catalog IR с желаемым состоянием, полученным через временный локальный embedded PostgreSQL (или явно предоставленную внешнюю плановую БД). При применении JSON-плана проверяются версия и формат, а fingerprint текущей схемы сверяется только при его наличии в плане; выполнение разбито на транзакционные группы.
+
+**Подтверждено исходниками:** [`cmd/plan/plan.go`](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/cmd/plan/plan.go), [`cmd/apply/apply.go`](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/cmd/apply/apply.go), [`internal/plan/rewrite.go`](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/internal/plan/rewrite.go): `CREATE INDEX CONCURRENTLY` для подходящих индексов; `ADD ... NOT VALID → VALIDATE`; PG18-native NOT NULL и PG15–17 CHECK/VALIDATE/SET NOT NULL; `lock_timeout` с bounded retry SQLSTATE 55P03 для отдельных групп. Эти переписывания *не гарантируют* lock-free выполнение или сохранение сроков репликации.
+
+**Ограничения:** [unsupported syntax](https://github.com/pgplex/pgschema/blob/1b7eaf2827c84bb3e20679c6bab0c1116bf4e962/docs/syntax/unsupported.mdx) исключает `RENAME`, ownership, extension/role/database/publication/subscription и ряд других команд. Изменение имени может быть воспринято как `DROP + CREATE` (требует подтверждения на конкретном плане): review обязателен. Fingerprint покрывает отражённое в IR состояние схемы, а не распределение строк, размер таблицы, WAL, транзакционную нагрузку и состояние реплик. План не атомарен целиком, если состоит из нескольких групп, и не содержит автоматического доказанного rollback всего процесса.
+
+**Вердикт:** `BOUNDED_CODE_REVIEW / DOCUMENTED_CANDIDATE / ANALYSIS_ONLY / BENEFIT_UNPROVEN`. Первая польза — **генератор SQL/JSON для независимого DBA-аудита**, не автоматическая установка DDL на AKUZ. Реальные схемы, критичные таблицы, PG primary/standby и production недоступны этому исследованию и не изменялись.
+
+[Датированный аудит, ограничения и A/B/C](../reviews/pgschema/2026-11-22.md) · [портфельная матрица](../portfolio/2026-11-22/pgschema.md).

@@ -98,7 +98,8 @@
     "studies/rea-bench.md",
     "studies/spillway.md",
     "studies/mobileprobe.md",
-    "studies/tufazip.md"
+    "studies/tufazip.md",
+    "studies/pgschema.md"
   ],
   "documents": [
     {
@@ -2696,6 +2697,20 @@
       "title": "Research intake 2026-11-21: TufaZip source and NO_FIT decision",
       "kind": "portfolio",
       "date": "2026-11-21"
+    },
+    {
+      "from": null,
+      "to": "reviews/pgschema/2026-11-22.md",
+      "title": "pgschema: bounded planner and apply safety review for PostgreSQL DDL",
+      "kind": "review",
+      "date": "2026-11-22"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-22/pgschema.md",
+      "title": "Research intake 2026-11-22: pgschema and PostgreSQL schema project fit",
+      "kind": "portfolio",
+      "date": "2026-11-22"
     }
   ]
 }

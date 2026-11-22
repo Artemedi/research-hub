@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -66,6 +66,7 @@
 | [PackHallu](package-hallucination-rule-files.md) | [2026-11-03 / package-hallucination-rule-files-review](../portfolio/2026-10-06--2026-10-12/review.md) |
 | [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | [2026-09-21 / paper2agent-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-paper2agent-2026-11-05](../reviews/paper2agent/2026-11-05-full-text.md) |
 | [pgbot — deterministic PostgreSQL diagnostics for AI agents](pgbot.md) | [2026-11-04 / pgbot-review](../reviews/pgbot/2026-11-04.md) |
+| [pgschema — декларативные PostgreSQL DDL-миграции и проверяемый план](pgschema.md) | [2026-11-22 / pgschema-bounded-source-audit-20261122](../reviews/pgschema/2026-11-22.md) |
 | [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [2026-11-03 / poisoned-skills-review](../portfolio/2026-10-27--2026-11-02/review.md) |
 | [POLAR](polar.md) | [2026-11-03 / polar-review](../portfolio/2026-10-06--2026-10-12/review.md) |
 | [Random Attention — KV eviction for reasoning](random-attention.md) | [2026-11-03 / random-attention-review](../portfolio/2026-09-03--2026-09-15/review.md) |
