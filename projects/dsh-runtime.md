@@ -51,6 +51,7 @@
 | [agent-risk](../catalog/studies/agent-risk.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE | Профильный контекст основного agent runtime и измерительного контура тематически соответствует pre-change replay изменений runtime/gate. | [Обзор](../reviews/agent-risk/2026-11-09-replay-assumptions.md) · [Основание](../portfolio/2026-11-09/agent-risk-project-fit.md) |
 | [rea-bench](../catalog/studies/rea-bench.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Tool-call lifecycle пишет реальные call/result sequence, возможна изолированная проверка error/benign audit | [Обзор](../reviews/rea-bench/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
 | [spillway](../catalog/studies/spillway.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | В agent-loop есть prepare→dispatch; можно офлайн проверить target admission перед side effects | [Обзор](../reviews/spillway/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
+| [helmor](../catalog/studies/helmor.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentary portfolio fit for a local parallel-agent operator/review workflow; no deployment or source-verified integration seam. | [Обзор](../reviews/helmor/2026-11-22.md) · [Основание](../portfolio/2026-11-22/helmor.md) |
 
 ## Соответствие не подтверждено или применение отложено
 
