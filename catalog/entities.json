@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "codexsaver",
+      "title": "CodexSaver — cost-aware Codex MCP delegation and agent trust boundaries",
+      "kind": "engineering",
+      "card": "studies/codexsaver.md",
+      "primary_url": "https://github.com/fendouai/CodexSaver",
+      "current_review_id": "codexsaver-cost-routing-trust-boundary-audit-20261123",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "9470333f10f09eda242f429f53642f75580f47fd62a5e81240219dd85b877c3d",
+      "linked_materials": [
+        "reviews/codexsaver/2026-11-23.md",
+        "portfolio/2026-11-23/codexsaver.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "codexsaver-fe44dc10",
+      "study_id": "codexsaver",
+      "ref": "fe44dc105070c1f40eef29d9be76438edeab9987",
+      "url": "https://github.com/fendouai/CodexSaver/tree/fe44dc105070c1f40eef29d9be76438edeab9987",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "codexsaver-cost-routing-trust-boundary-audit-20261123",
+      "study_ids": [
+        "codexsaver"
+      ],
+      "version_ids": [
+        "codexsaver-fe44dc10"
+      ],
+      "date": "2026-11-23",
+      "document": "reviews/codexsaver/2026-11-23.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned README/policy/router/work-packet/orchestrator/Pi agent/benchmark source reviewed. Missing explicit license in source snapshot. Model-proposed shell execution in v1; tempdir is not an OS sandbox in v2, readonly v3 is prompt-only. No code execution, provider billing, license clarification, full audit or independent security test.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "codexsaver-agent-config-documentary-20261123",
+      "study_id": "codexsaver",
+      "project_id": "agent-config",
+      "review_id": "codexsaver-cost-routing-trust-boundary-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary architectural comparator only: routing low-risk readonly analysis with independent review; not a safe upstream MCP integration, no code copied or licensed.",
+      "limitations": "No explicit source license; v1 shell=True execution from worker output, v2 host commands in tempdir and v3 prompt-only readonly; no source verified integration seam and no measured full-cycle costs.",
+      "next_test": "Review policy gate and legal status first, then synthetic mock-worker offline A/B using independent budget+answer oracle, forbidding arbitrary commands/host network and any production execution.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/codexsaver.md",
+      "source_line": 13,
+      "source_excerpt": "| [CodexSaver](../../studies/codexsaver.md) | **agent-config** | [Project card](https://github.com/Artemedi/project-registry/tree/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/02-agents-dsh/agent-config) описывает единые hooks/review правила Claude/Codex; использовать source-derived anti-patterns для policy hardening | **No LICENSE**, arbitrary worker commands via shell in v1, readonly is prompt; current agent configs and secrets never passed to worker | На синтетическом mock-agent проверить fail-closed запрет shell, OS read-only, trusted worker list и независимый acceptance oracle; никаких installation hooks | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project profile indicates potential relevance to agents and review but existing source/API integration, permission boundaries and net benefit unverified.",
+      "supersedes": null
+    },
+    {
+      "id": "codexsaver-dsh-runtime-documentary-20261123",
+      "study_id": "codexsaver",
+      "project_id": "dsh-runtime",
+      "review_id": "codexsaver-cost-routing-trust-boundary-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary architectural comparator only: routing low-risk readonly analysis with independent review; not a safe upstream MCP integration, no code copied or licensed.",
+      "limitations": "No explicit source license; v1 shell=True execution from worker output, v2 host commands in tempdir and v3 prompt-only readonly; no source verified integration seam and no measured full-cycle costs.",
+      "next_test": "Review policy gate and legal status first, then synthetic mock-worker offline A/B using independent budget+answer oracle, forbidding arbitrary commands/host network and any production execution.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/codexsaver.md",
+      "source_line": 14,
+      "source_excerpt": "| [CodexSaver](../../studies/codexsaver.md) | **dsh-runtime** | [Project card](https://github.com/Artemedi/project-registry/tree/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/02-agents-dsh/dsh-runtime) описывает локальный runtime/agent loop и workspace; возможен принцип cost-weighted **read-only triage** | Никаких source-backed extension points; шифрование/секреты/токены/OS sandbox/isolated execution не решены; модельные output нельзя считать oracle | A=incumbent routing, B=independently implemented staged read-only routing на fake tasks; total tokens/cost, correctness, reviewer cost; no upstream reuse | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project profile indicates potential relevance to agents and review but existing source/API integration, permission boundaries and net benefit unverified.",
+      "supersedes": null
+    },
+    {
+      "id": "codexsaver-dsh-paper2agent-documentary-20261123",
+      "study_id": "codexsaver",
+      "project_id": "dsh-paper2agent",
+      "review_id": "codexsaver-cost-routing-trust-boundary-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary architectural comparator only: routing low-risk readonly analysis with independent review; not a safe upstream MCP integration, no code copied or licensed.",
+      "limitations": "No explicit source license; v1 shell=True execution from worker output, v2 host commands in tempdir and v3 prompt-only readonly; no source verified integration seam and no measured full-cycle costs.",
+      "next_test": "Review policy gate and legal status first, then synthetic mock-worker offline A/B using independent budget+answer oracle, forbidding arbitrary commands/host network and any production execution.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/codexsaver.md",
+      "source_line": 15,
+      "source_excerpt": "| [CodexSaver](../../studies/codexsaver.md) | **dsh-paper2agent** | [Project card](https://github.com/Artemedi/project-registry/tree/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/06-independent-research/dsh-paper2agent) описывает cited analysis и limited Podman experiments; сравнить архитектуру независимых gate с CodexSaver | Не заменять источник правды, independent verification или Podman isolation; чужой источник не licensed; риски shell/provenance | Документальный A/B review независимых verifier/approval contracts; затем dry fake-worker test без исходника/внешнего endpoint | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Project profile indicates potential relevance to agents and review but existing source/API integration, permission boundaries and net benefit unverified.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19141,21 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "codexsaver",
+      "project_id": "agent-config",
+      "assessment_id": "codexsaver-agent-config-documentary-20261123"
+    },
+    {
+      "study_id": "codexsaver",
+      "project_id": "dsh-runtime",
+      "assessment_id": "codexsaver-dsh-runtime-documentary-20261123"
+    },
+    {
+      "study_id": "codexsaver",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "codexsaver-dsh-paper2agent-documentary-20261123"
     }
   ],
   "relations": [
