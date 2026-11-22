@@ -1,0 +1,25 @@
+# Research intake — gnhf и bounded autonomous Git iterations
+
+**Дата:** 2026-11-22. **Пользовательский первоисточник:** [`kunchenguid/gnhf@98d6a5f3d588ee6e241558f06dfc0d495e6354d6`](https://github.com/kunchenguid/gnhf/tree/98d6a5f3d588ee6e241558f06dfc0d495e6354d6) (MIT, `package.json 0.1.53`). Дубликат по upstream URL в [`research-hub@b809d00376a6001f4e49bb345ec0f7a09c30c908`](https://github.com/Artemedi/research-hub/tree/b809d00376a6001f4e49bb345ec0f7a09c30c908) не найден.
+
+**Центральная тема:** безопасная методология `bounded objective → isolated worktree → one verifiable step → independent quality/safety gate → commit/rollback → auditable morning review`, а не утверждение «любые агенты можно оставить работать без присмотра». [Карточка](../../studies/gnhf.md) · [source audit, ограничения и A/B/C](../../reviews/gnhf/2026-11-22.md).
+
+**Registry:** [`Artemedi/project-registry@7a976c353579f8da64789daf18fe1088e5ab8dbb`](https://github.com/Artemedi/project-registry/tree/7a976c353579f8da64789daf18fe1088e5ab8dbb); screening 45 проектных карточек по purpose/stack, три source-anchored гипотезы. Остальные 42 — `DEFERRED_SCREENING`, не blanket NO_FIT.
+
+| Исследование | Целевой проект | Причина соответствия | Ограничения | Следующий минимальный тест | Статус доказательности |
+| --- | --- | --- | --- | --- | --- |
+| [gnhf](../../studies/gnhf.md) | **dsh-runtime** | [`apps/cli/tests/agent-team-headless.e2e.ts:19–21`](https://github.com/Artemedi/dsh-runtime/blob/b6a1635b1200071754e2871b9d9453368e6daf23/apps/cli/tests/agent-team-headless.e2e.ts#L19-L21): headless agent-team fixture; candidate для сравнения bounded loop | Существующий Cordis/agent loop не эквивалентен gnhf; bypass permissions, no independent commit gate | Frozen toy Git tasks: A one-shot CLI vs B bounded local loop vs C gnhf with fake agent/sandbox, accepted-valid-work, rollback, time/tokens | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |
+| [gnhf](../../studies/gnhf.md) | **agent-config** | [`tools/review.py:103–114`](https://github.com/Artemedi/agent-config/blob/489e074ab0daaadb732673c193047172a3744862/tools/review.py#L103-L114) содержит source-linked independent review method | Внешняя модель не детерминированный oracle; конфиденциальные файлы/keys; gnhf permission bypass | Mock reviewer + deterministic file allowlist/test gate; проверить false-success и prompt injection на синтетике | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |
+| [gnhf](../../studies/gnhf.md) | **dsh-paper2agent** | [`docs/product/PIPELINE.md:105–145`](https://github.com/Artemedi/dsh-paper2agent/blob/c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd/docs/product/PIPELINE.md#L105-L145) задаёт owner/audit gate; [`execution.py:532–546`](https://github.com/Artemedi/dsh-paper2agent/blob/c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd/src/paper2project/execution.py#L532-L546) — offline Podman | Нельзя обходить human gate/независимый oracle ради «ночной» итерации; P2P не agent runtime | Сравнить только offline протокол B/C с заранее замороженными задачами, сторонних моделей/запуска кода без разрешения нет | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |
+
+**Высокий риск по source:** Claude и Codex по умолчанию получают permission/sandbox bypass, ACP — approve-all; rollback включает `git clean -fd`; agent `success=true` не равен test-pass; default runtime/tokens/iterations unlimited. **Никаких реальных overnight запусков и исходных изменений проектов без human gate.**
+
+**Оценка (экспертная, без лабораторных результатов):** ценность методологии 8/10, применимость готового инструмента к critical production 2/10, сложность безопасной интеграции 7/10. Priority 1 — bounded stub-agent Git lab; priority 2 — independent reviewer/test guard; priority 3 — доказательное A/B/C без секретов и сети. `ANALYSIS_ONLY / NO_INDEPENDENT_LAB / BENEFIT_UNPROVEN`. Paper2Project используется для документального решения и регистрации доказательных пробелов, а не запуска gnhf.
+
+## Paper2Project — документальная оценка выполнена
+
+Локальный `Paper2Project 1.0.2`: `job-b7d7e727512b4ded`; анализ `c5f3fc47ffb9faf23c0c8f11fea8f26b7f6aee69fc3c9920c293b2b01a46a476`. Все три targets получили **`NEEDS_PROJECT_EVIDENCE`**, без независимого review и без экспериментов. Research provenance: локальный импорт `PROVIDED_TEXT_COMPLETENESS_UNATTESTED`, он не удостоверяет весь upstream.
+
+Инструмент валидировал source snapshot/citations; advisory-предупреждения `NEGATION_MISMATCH`, `POSSIBLE_CONDITION_OMISSION` и `CHECK_QUALIFIER_NEAR_QUOTE` остаются **открытыми** для независимого семантического проверяющего. Точное чтение ограничений источника важнее автоматической эвристики. Внешние модели и third-party agent execution не использовались; selftest Paper2Project — PASS. Никаких результатов по throughput, cost или безопасности overnight runs нет.
+
+**Следующий gate:** офлайн static review permission defaults и Git cleanup (с отдельным verifier), затем human approval на безопасное исполнение `gnhf` в synthetic rootless Podman с fake agent, predeclared independent oracle и пределами бюджета. Прямое внедрение в DSH и расширение production-полномочий запрещены.

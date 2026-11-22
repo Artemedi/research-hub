@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -35,6 +35,7 @@
 | [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
 | [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md) | [2026-11-11 / github-actions-log-secret-scanning-20261111](../portfolio/2026-11-11/review.md) |
+| [gnhf — автономные ограниченные Git-итерации coding-агентов](gnhf.md) | [2026-11-22 / gnhf-bounded-source-audit-20261122](../reviews/gnhf/2026-11-22.md) |
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
 | [GPT-6 Astra — Rethinking skills and prompts (BK-009)](gpt6-astra-skills-prompts.md) | [2026-11-06 / bk009-gpt6-astra-live-ab-20261106](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |

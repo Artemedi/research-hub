@@ -25,6 +25,7 @@
 | [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | Source/citation analysis может сохранять provenance diagnosis, но проект не владеет runtime action replay. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 | [drift-inspector](../catalog/studies/drift-inspector.md) | DOCUMENTED_CANDIDATE | PROFILE_MATCH_NEEDS_EVIDENCE | Профиль предусматривает импорт научного исследования и последующую оценку пригодности для конкретного проекта; ACC пригоден только для upstream discovery | [Обзор](../reviews/drift-inspector/2026-11-13.md) · [Основание](../portfolio/2026-11-13/source-project-fit.md) |
 | [static-library-hallucinations](../catalog/studies/static-library-hallucinations.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Проект выполняет Python author-code adapters с независимым comparator и источниками, закреплёнными по SHA | [Обзор](../reviews/static-library-hallucinations/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
+| [gnhf](../catalog/studies/gnhf.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documented agent/review/experiment workflow is a candidate only for independent safety and benefit testing. | [Обзор](../reviews/gnhf/2026-11-22.md) · [Основание](../portfolio/2026-11-22/gnhf.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

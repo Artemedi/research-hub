@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "gnhf",
+      "title": "gnhf — bounded autonomous coding-agent Git iteration methodology",
+      "kind": "engineering",
+      "card": "studies/gnhf.md",
+      "primary_url": "https://github.com/kunchenguid/gnhf",
+      "current_review_id": "gnhf-bounded-source-audit-20261122",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "235cea8089d2d9393d40f5d86f6251513c0cbaf9bfbcaeedaa7f202a6e3c5e34",
+      "linked_materials": [
+        "reviews/gnhf/2026-11-22.md",
+        "portfolio/2026-11-22/gnhf.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "gnhf-98d6a5f3",
+      "study_id": "gnhf",
+      "ref": "98d6a5f3d588ee6e241558f06dfc0d495e6354d6",
+      "url": "https://github.com/kunchenguid/gnhf/tree/98d6a5f3d588ee6e241558f06dfc0d495e6354d6",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "gnhf-bounded-source-audit-20261122",
+      "study_ids": [
+        "gnhf"
+      ],
+      "version_ids": [
+        "gnhf-98d6a5f3"
+      ],
+      "date": "2026-11-22",
+      "document": "reviews/gnhf/2026-11-22.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned README/agent adapters/orchestrator/git/CI inspected; default dangerous permission bypass and destructive rollback identified. No full supply chain audit or live overnight A/B/C; ANALYSIS_ONLY.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "gnhf-dsh-runtime-screen-20261122",
+      "study_id": "gnhf",
+      "project_id": "dsh-runtime",
+      "review_id": "gnhf-bounded-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documented agent/review/experiment workflow is a candidate only for independent safety and benefit testing.",
+      "limitations": "Unsafe upstream defaults, no independent gnhf test-pass gate or isolated independent experiment; not a confirmed integration seam.",
+      "next_test": "Frozen offline synthetic worktree A/B/C with stub agents, independent gate, rollback and budget verification; human approval before executing third-party code.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/gnhf.md",
+      "source_line": 11,
+      "source_excerpt": "| [gnhf](../../studies/gnhf.md) | **dsh-runtime** | [`apps/cli/tests/agent-team-headless.e2e.ts:19–21`](https://github.com/Artemedi/dsh-runtime/blob/b6a1635b1200071754e2871b9d9453368e6daf23/apps/cli/tests/agent-team-headless.e2e.ts#L19-L21): headless agent-team fixture; candidate для сравнения bounded loop | Существующий Cordis/agent loop не эквивалентен gnhf; bypass permissions, no independent commit gate | Frozen toy Git tasks: A one-shot CLI vs B bounded local loop vs C gnhf with fake agent/sandbox, accepted-valid-work, rollback, time/tokens | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary screening; pinned source used as reference, not claimed to establish a production integration contract.",
+      "supersedes": null
+    },
+    {
+      "id": "gnhf-agent-config-screen-20261122",
+      "study_id": "gnhf",
+      "project_id": "agent-config",
+      "review_id": "gnhf-bounded-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documented agent/review/experiment workflow is a candidate only for independent safety and benefit testing.",
+      "limitations": "Unsafe upstream defaults, no independent gnhf test-pass gate or isolated independent experiment; not a confirmed integration seam.",
+      "next_test": "Frozen offline synthetic worktree A/B/C with stub agents, independent gate, rollback and budget verification; human approval before executing third-party code.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/gnhf.md",
+      "source_line": 12,
+      "source_excerpt": "| [gnhf](../../studies/gnhf.md) | **agent-config** | [`tools/review.py:103–114`](https://github.com/Artemedi/agent-config/blob/489e074ab0daaadb732673c193047172a3744862/tools/review.py#L103-L114) содержит source-linked independent review method | Внешняя модель не детерминированный oracle; конфиденциальные файлы/keys; gnhf permission bypass | Mock reviewer + deterministic file allowlist/test gate; проверить false-success и prompt injection на синтетике | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary screening; pinned source used as reference, not claimed to establish a production integration contract.",
+      "supersedes": null
+    },
+    {
+      "id": "gnhf-dsh-paper2agent-screen-20261122",
+      "study_id": "gnhf",
+      "project_id": "dsh-paper2agent",
+      "review_id": "gnhf-bounded-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documented agent/review/experiment workflow is a candidate only for independent safety and benefit testing.",
+      "limitations": "Unsafe upstream defaults, no independent gnhf test-pass gate or isolated independent experiment; not a confirmed integration seam.",
+      "next_test": "Frozen offline synthetic worktree A/B/C with stub agents, independent gate, rollback and budget verification; human approval before executing third-party code.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/gnhf.md",
+      "source_line": 13,
+      "source_excerpt": "| [gnhf](../../studies/gnhf.md) | **dsh-paper2agent** | [`docs/product/PIPELINE.md:105–145`](https://github.com/Artemedi/dsh-paper2agent/blob/c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd/docs/product/PIPELINE.md#L105-L145) задаёт owner/audit gate; [`execution.py:532–546`](https://github.com/Artemedi/dsh-paper2agent/blob/c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd/src/paper2project/execution.py#L532-L546) — offline Podman | Нельзя обходить human gate/независимый oracle ради «ночной» итерации; P2P не agent runtime | Сравнить только offline протокол B/C с заранее замороженными задачами, сторонних моделей/запуска кода без разрешения нет | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Profile-based documentary screening; pinned source used as reference, not claimed to establish a production integration contract.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19141,21 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "gnhf",
+      "project_id": "dsh-runtime",
+      "assessment_id": "gnhf-dsh-runtime-screen-20261122"
+    },
+    {
+      "study_id": "gnhf",
+      "project_id": "agent-config",
+      "assessment_id": "gnhf-agent-config-screen-20261122"
+    },
+    {
+      "study_id": "gnhf",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "gnhf-dsh-paper2agent-screen-20261122"
     }
   ],
   "relations": [
