@@ -27,6 +27,7 @@
 | [agent-error-dataset](../catalog/studies/agent-error-dataset.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_ADJACENCY / NEEDS_EVIDENCE | PostgreSQL DBA-автоматизация и диагностический retrieval смежны, но профиль не задаёт agent-owned checkpoint/replay contract. | [Обзор](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) · [Основание](../data/project-fit/agent-error-dataset/2026-11-08-project-fit.json) |
 | [auto-ontology](../catalog/studies/auto-ontology.md) | DOCUMENTED_CANDIDATE | PROFILE_MATCH_NEEDS_EVIDENCE | Проект уже работает с PostgreSQL и знаниями DBA, допускает проверку внешнего семантического слоя в отдельном lab | [Обзор](../reviews/auto-ontology/2026-11-13.md) · [Основание](../portfolio/2026-11-13/source-project-fit.md) |
 | [database-agent-observability](../catalog/studies/database-agent-observability.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | DBA knowledge/diagnostic snapshots уже различают отсутствующие и доступные сведения | [Обзор](../reviews/database-agent-observability/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
+| [rust-anything](../catalog/studies/rust-anything.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentary candidate to measure a narrowly profiled CPU-bound Python hot loop, not blanket app migration or verified performance improvement. | [Обзор](../reviews/rust-anything/2026-11-23.md) · [Основание](../portfolio/2026-11-23/rust-anything.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

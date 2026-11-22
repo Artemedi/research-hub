@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "rust-anything",
+      "title": "rust-anything — agent-assisted evidence-gated Rust hot-path migration",
+      "kind": "engineering",
+      "card": "studies/rust-anything.md",
+      "primary_url": "https://github.com/erkamyaman/rust-anything",
+      "current_review_id": "rust-anything-bounded-port-migration-review-20261123",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "333071bf40cebe0fc87b24e542b8d06be5ff88a125681a3802eddabc421da84a",
+      "linked_materials": [
+        "reviews/rust-anything/2026-11-23.md",
+        "portfolio/2026-11-23/rust-anything.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "rust-anything-50d3810b",
+      "study_id": "rust-anything",
+      "ref": "50d3810b622fdc6cb3aee965fe4c9d4b4f29205b",
+      "url": "https://github.com/erkamyaman/rust-anything/tree/50d3810b622fdc6cb3aee965fe4c9d4b4f29205b",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "rust-anything-bounded-port-migration-review-20261123",
+      "study_ids": [
+        "rust-anything"
+      ],
+      "version_ids": [
+        "rust-anything-50d3810b"
+      ],
+      "date": "2026-11-23",
+      "document": "reviews/rust-anything/2026-11-23.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Source-verified project pipeline and limitation audit. Author speedups not independently reproduced; recorded-case gate is not formal semantic equivalence; no execution of original workload, migration agent, source modifications or benchmark in this review.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,48 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "rust-anything-akuzlogparser-documentary-20261123",
+      "study_id": "rust-anything",
+      "project_id": "akuzlogparser",
+      "review_id": "rust-anything-bounded-port-migration-review-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary candidate to measure a narrowly profiled CPU-bound Python hot loop, not blanket app migration or verified performance improvement.",
+      "limitations": "Only public-safe pinned source description was inspected; actual profiled hot path, semantic test corpus, ABI/release and Python/Rust performance baseline absent.",
+      "next_test": "Synthetic offline A=Python hot path, B=manual Rust bridge, C=rust-anything-assisted Rust, exact independent output oracle with 5+ E2E timing and CPU/RSS/IO measures; no original product modifications.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/rust-anything.md",
+      "source_line": 11,
+      "source_excerpt": "| [rust-anything](../../studies/rust-anything.md) | **akuzlogparser** | [`akuz_log_parser.py:59–189,238–318`](https://github.com/Artemedi/akuzlogparser/blob/d6061aa83cdeadc22e30cfaee36aea94ac131bb2/akuz_log_parser.py#L59-L189) содержит Python classification и streaming event parser; [README](https://github.com/Artemedi/akuzlogparser/blob/d6061aa83cdeadc22e30cfaee36aea94ac131bb2/README.md) описывает реальные performance stages/Windows portable release | Нельзя приписывать bottleneck без cProfile; PyO3 overhead, UTF-8/Cyrillic, multiline traces, Python parsing parity, Windows binary packaging/maintenance, повторные side effects | A=existing Python; B=manual Rust bridge; C=rust-anything-assisted bridge на synthetic corpus, no network, exact event/raw/metadata hash and E2E CPU/RSS/wall, independently checked | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Source citations show a plausible CPU-sensitive workload, but no concrete proven bottleneck or verified integration point into deployed code.",
+      "supersedes": null
+    },
+    {
+      "id": "rust-anything-Wiki_PG-documentary-20261123",
+      "study_id": "rust-anything",
+      "project_id": "Wiki_PG",
+      "review_id": "rust-anything-bounded-port-migration-review-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary candidate to measure a narrowly profiled CPU-bound Python hot loop, not blanket app migration or verified performance improvement.",
+      "limitations": "Only public-safe pinned source description was inspected; actual profiled hot path, semantic test corpus, ABI/release and Python/Rust performance baseline absent.",
+      "next_test": "Synthetic offline A=Python hot path, B=manual Rust bridge, C=rust-anything-assisted Rust, exact independent output oracle with 5+ E2E timing and CPU/RSS/IO measures; no original product modifications.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/rust-anything.md",
+      "source_line": 12,
+      "source_excerpt": "| [rust-anything](../../studies/rust-anything.md) | **Wiki_PG** | [`docs/universal-system-mcp.md:11–45`](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/docs/universal-system-mcp.md#L11-L45) содержит read-only deterministic evidence/FTS + retrieval; hypothetical CPU-only ranking/string normalization unit | Существующая indexed SQLite/FTS может уже быть быстрее без PyO3; доказанный CPU hot spot отсутствует; provenance/coverage/generation/host scope нельзя менять | Frozen synthetic read-only query set, isolate CPU hot path; сравнить исходный Python+SQLite vs small Rust FFI unit, exact retrieval/citation/ranking equivalence, cost/latency | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Source citations show a plausible CPU-sensitive workload, but no concrete proven bottleneck or verified integration point into deployed code.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19120,16 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "rust-anything",
+      "project_id": "akuzlogparser",
+      "assessment_id": "rust-anything-akuzlogparser-documentary-20261123"
+    },
+    {
+      "study_id": "rust-anything",
+      "project_id": "Wiki_PG",
+      "assessment_id": "rust-anything-Wiki_PG-documentary-20261123"
     }
   ],
   "relations": [

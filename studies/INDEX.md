@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -77,6 +77,7 @@
 | [REMORY](remory.md) | [2026-11-03 / remory-review](remory.md) |
 | [REVA — Reusable Evidence View Aggregation](reva.md) | [2026-11-03 / reva-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](rrsi.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / rrsi-full-text-2026-11-05](../reviews/rrsi/2026-11-05-full-text.md) · [2026-11-06 / rrsi-harness2-selector-ab-2026-11-06](../reviews/rrsi/2026-11-06-validation-ab.md) |
+| [rust-anything — evidence-gated перенос hot paths в Rust под управлением агента](rust-anything.md) | [2026-11-23 / rust-anything-bounded-port-migration-review-20261123](../reviews/rust-anything/2026-11-23.md) |
 | [Scaling Adaptive Prompt Injection Attacks with Agent Swarms](adaptive-prompt-injection-swarms.md) | [2026-11-11 / adaptive-prompt-injection-swarms-20261111](../portfolio/2026-11-11/review.md) |
 | [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | [2026-11-03 / self-replicating-prompt-injections-review](self-replicating-prompt-injections.md) |
 | [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05 / sequential-diagnosis-language-models-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [2026-11-05 / sequential-diagnosis-language-models-initial-review](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) |
