@@ -98,7 +98,8 @@
     "studies/rea-bench.md",
     "studies/spillway.md",
     "studies/mobileprobe.md",
-    "studies/tufazip.md"
+    "studies/tufazip.md",
+    "studies/codexsaver.md"
   ],
   "documents": [
     {
@@ -2696,6 +2697,20 @@
       "title": "Research intake 2026-11-21: TufaZip source and NO_FIT decision",
       "kind": "portfolio",
       "date": "2026-11-21"
+    },
+    {
+      "from": null,
+      "to": "reviews/codexsaver/2026-11-23.md",
+      "title": "CodexSaver — bounded source audit of cost-aware routing and MCP security boundaries",
+      "kind": "review",
+      "date": "2026-11-23"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-23/codexsaver.md",
+      "title": "Research intake 2026-11-23: CodexSaver routing architecture and project screening",
+      "kind": "portfolio",
+      "date": "2026-11-23"
     }
   ]
 }

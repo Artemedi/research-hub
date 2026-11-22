@@ -40,6 +40,7 @@
 | [Chartli — parser и отображение](chartli/2026-11-04.md) | 2026-11-04 |
 | [Chartli pinned TS SVG renderer and independent XML plus finite-geometry audit](chartli/2026-11-07-svg-validation.md) | 2026-11-07 |
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |
+| [CodexSaver — bounded source audit of cost-aware routing and MCP security boundaries](codexsaver/2026-11-23.md) | 2026-11-23 |
 | [Covert Assistance — Helpful LLM Agents Evade Oversight — полнотекстовая научная проверка](covert-assistance/2026-11-05-full-text.md) | 2026-11-05 |
 | [Cursor — инженерный источник и пределы доказательств](cursor-token-efficiency/2026-11-05-primary.md) | 2026-11-05 |
 | [BK-021 Cursor token efficiency independent GPT-6 versus ZCode council](cursor-token-efficiency/2026-11-07-council-vs-single.md) | 2026-11-07 |
