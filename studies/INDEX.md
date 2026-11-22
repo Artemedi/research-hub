@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -33,6 +33,7 @@
 | [Drift Inspector — Atomic Contribution Claims для анализа научных направлений](drift-inspector.md) | [2026-11-13 / drift-inspector-20261113](../reviews/drift-inspector/2026-11-13.md) |
 | [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05 / dsh-superagent-prototype-review](../reviews/dsh-superagent-prototype/2026-11-05.md) |
 | [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |
+| [fast-anything — profile-guided AI-assisted локальная оптимизация приложений](fast-anything.md) | [2026-11-22 / fast-anything-source-audit-20261122](../reviews/fast-anything/2026-11-22.md) |
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
 | [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md) | [2026-11-11 / github-actions-log-secret-scanning-20261111](../portfolio/2026-11-11/review.md) |
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |

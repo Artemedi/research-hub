@@ -11,6 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [chartli](../catalog/studies/chartli.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | \| akuzlogparser \| описанные stages и elapsed_s @d6061aa дают числовой diagnostic output для сравнения с таблицей. \| Проверить формат, выгоду визуализации и совместимость Windows; отдельная валидация NaN, missing и времени. \| PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE \| | [Обзор](../reviews/chartli/2026-11-04.md) · [Основание](../reviews/chartli/2026-11-04.md) |
+| [fast-anything](../catalog/studies/fast-anything.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN | Pinned source contains an offline Python CPU candidate; portability and performance remain hypotheses. | [Обзор](../reviews/fast-anything/2026-11-22.md) · [Основание](../portfolio/2026-11-22/review.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "fast-anything",
+      "title": "fast-anything — profile-guided AI-assisted local optimization",
+      "kind": "engineering",
+      "card": "studies/fast-anything.md",
+      "primary_url": "https://github.com/EL4CTEO/fast-anything",
+      "current_review_id": "fast-anything-source-audit-20261122",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "159d277b4c3827fe332741cb957b2c0c307967478de1ead20d2b31a7c1a18a7d",
+      "linked_materials": [
+        "reviews/fast-anything/2026-11-22.md",
+        "portfolio/2026-11-22/review.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "fast-anything-ce0e3889",
+      "study_id": "fast-anything",
+      "ref": "ce0e3889e774a01412c2d181292118fb3512cdde",
+      "url": "https://github.com/EL4CTEO/fast-anything/tree/ce0e3889e774a01412c2d181292118fb3512cdde",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "fast-anything-source-audit-20261122",
+      "study_ids": [
+        "fast-anything"
+      ],
+      "version_ids": [
+        "fast-anything-ce0e3889"
+      ],
+      "date": "2026-11-22",
+      "document": "reviews/fast-anything/2026-11-22.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned README and selected implementation/CI inspected; no independent benchmark, all-language security audit or project-local A/B/C reproduction; ANALYSIS_ONLY.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,48 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "fast-anything-akuzlogparser-profile-20261122",
+      "study_id": "fast-anything",
+      "project_id": "akuzlogparser",
+      "review_id": "fast-anything-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN",
+      "evidence": "DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN",
+      "reason": "Pinned source contains an offline Python CPU candidate; portability and performance remain hypotheses.",
+      "limitations": "No measured project CPU hotspot; no end-to-end A/B/C, Unicode/FFI semantics and deploy contract not established.",
+      "next_test": "Synthetic fixed-input CPU profiling followed by A/B/C: original vs optimized Python vs Rust, independent oracle, wall/CPU/p95/RSS; human gate before execution.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/review.md",
+      "source_line": 11,
+      "source_excerpt": "| [fast-anything](../../studies/fast-anything.md) | **akuzlogparser** | [`akuz_log_parser.py:152–200`](https://github.com/Artemedi/akuzlogparser/blob/d6061aa83cdeadc22e30cfaee36aea94ac131bb2/akuz_log_parser.py#L152-L200) содержит CPU-кандидата `classify`; есть исторические regex замеры | Не подтверждён текущий CPU-share, Unicode и FFI overhead; SSH/IO не ускорятся | Фиксированный synthetic log corpus, A оригинал / B Python / C Rust, independent categories/report oracle, end-to-end wall/CPU/RSS/p95 | `DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-fit review with pinned target source; registry card revision is separate from source SHA and benefit not measured.",
+      "supersedes": null
+    },
+    {
+      "id": "fast-anything-akuz-schema-inventory-profile-20261122",
+      "study_id": "fast-anything",
+      "project_id": "akuz-schema-inventory",
+      "review_id": "fast-anything-source-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN",
+      "evidence": "DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN",
+      "reason": "Pinned source contains an offline Python CPU candidate; portability and performance remain hypotheses.",
+      "limitations": "No measured project CPU hotspot; no end-to-end A/B/C, Unicode/FFI semantics and deploy contract not established.",
+      "next_test": "Synthetic fixed-input CPU profiling followed by A/B/C: original vs optimized Python vs Rust, independent oracle, wall/CPU/p95/RSS; human gate before execution.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/review.md",
+      "source_line": 12,
+      "source_excerpt": "| [fast-anything](../../studies/fast-anything.md) | **akuz-schema-inventory** | [`parse_sql.py:225–295`](https://github.com/Artemedi/akuz-schema-inventory/blob/f6d4a024cead188050e7addda517780b75e435b7/parse_sql.py#L225-L295) содержит извлечение связей и токенизацию | Не доказан CPU bottleneck, переносимость regex, отсутствие SQLite-доминирования | Frozen synthetic T-SQL, A/B/C с exact oracle edges, gaps и counts, wall/CPU/RSS/p95 | `DOCUMENTED_CANDIDATE / BENEFIT_UNPROVEN` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project-fit review with pinned target source; registry card revision is separate from source SHA and benefit not measured.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19120,16 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "fast-anything",
+      "project_id": "akuzlogparser",
+      "assessment_id": "fast-anything-akuzlogparser-profile-20261122"
+    },
+    {
+      "study_id": "fast-anything",
+      "project_id": "akuz-schema-inventory",
+      "assessment_id": "fast-anything-akuz-schema-inventory-profile-20261122"
     }
   ],
   "relations": [
