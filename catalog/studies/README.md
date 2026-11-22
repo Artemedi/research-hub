@@ -2,7 +2,7 @@
 
 # Структурированные исследования
 
-95 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
+96 источников. [Полный файловый каталог](../../studies/INDEX.md) содержит исходные аналитические карточки. [Проекты](../../projects/README.md).
 
 - [BenchShield — reward-integrity instrumentation](benchshield.md); project fit: PARTIAL.
 - [DeepSeek Harness Creator Mode — демо-подсказки и offline plugin probe](dsh-creator-mode.md); project fit: PARTIAL.
@@ -99,3 +99,4 @@
 - [SPILLWAY — Separating Target Admission from Sanitization](spillway.md); project fit: PARTIAL.
 - [MobileProbe — Adaptive Security Evaluation of Mobile Agents](mobileprobe.md); project fit: NO_DOCUMENTED_ASSESSMENT.
 - [TufaZip v2 — online Transformer lossless compression of enwik9](tufazip.md); project fit: NO_DOCUMENTED_ASSESSMENT.
+- [Helmor — local operator workbench for parallel coding agents](helmor.md); project fit: PARTIAL.

@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "helmor",
+      "title": "Helmor — local operator workbench for parallel coding agents",
+      "kind": "engineering",
+      "card": "studies/helmor.md",
+      "primary_url": "https://github.com/dohooo/helmor",
+      "current_review_id": "helmor-operator-workbench-audit-20261122",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "c1ce9b20f9d71efb5b094f434a4aa02c71023df088e47c32e462263e992a4d22",
+      "linked_materials": [
+        "reviews/helmor/2026-11-22.md",
+        "portfolio/2026-11-22/helmor.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "helmor-a76cda18",
+      "study_id": "helmor",
+      "ref": "a76cda1888265fb3e3208562d4b62616a4f0266a",
+      "url": "https://github.com/dohooo/helmor/tree/a76cda1888265fb3e3208562d4b62616a4f0266a",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "helmor-operator-workbench-audit-20261122",
+      "study_ids": [
+        "helmor"
+      ],
+      "version_ids": [
+        "helmor-a76cda18"
+      ],
+      "date": "2026-11-22",
+      "document": "reviews/helmor/2026-11-22.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned app README/AGENTS, worktree, per-agent permission policies, Git common-dir, ship/MCP/companion and CI were inspected; no Linux release, runtime/security audit, independent benefit measurement or sandbox experiment.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "helmor-dsh-runtime-documentary-20261122",
+      "study_id": "helmor",
+      "project_id": "dsh-runtime",
+      "review_id": "helmor-operator-workbench-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary portfolio fit for a local parallel-agent operator/review workflow; no deployment or source-verified integration seam.",
+      "limitations": "Private project source and exact integration contracts not published. Helmor Linux release not supported officially; per-agent permission modes and shared Git metadata require independent safety controls.",
+      "next_test": "Frozen multi-agent synthetic Git fixture on supported OS with fake agents and independent test/approval oracle; compare CLI vs GUI vs MCP, no real credentials or publishing.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/helmor.md",
+      "source_line": 11,
+      "source_excerpt": "| [Helmor](../../studies/helmor.md) | **dsh-runtime** | По реестру есть собственный agent runtime, workspace и web-контур; гипотеза UI для параллельных задач | Helmor — отдельный desktop, не drop-in компонент; Mac/Windows release, не Linux; Git worktree не sandbox | Сравнить управление frozen synthetic задачами через CLI против Helmor GUI; независимые тесты, конфликты, время оператора | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Public screening records project purpose from private registry without disclosing its file contents or implementation. Source-backed integration not yet verified.",
+      "supersedes": null
+    },
+    {
+      "id": "helmor-agent-config-documentary-20261122",
+      "study_id": "helmor",
+      "project_id": "agent-config",
+      "review_id": "helmor-operator-workbench-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary portfolio fit for a local parallel-agent operator/review workflow; no deployment or source-verified integration seam.",
+      "limitations": "Private project source and exact integration contracts not published. Helmor Linux release not supported officially; per-agent permission modes and shared Git metadata require independent safety controls.",
+      "next_test": "Frozen multi-agent synthetic Git fixture on supported OS with fake agents and independent test/approval oracle; compare CLI vs GUI vs MCP, no real credentials or publishing.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/helmor.md",
+      "source_line": 12,
+      "source_excerpt": "| [Helmor](../../studies/helmor.md) | **agent-config** | Политика agent permissions/review может быть external guard для ship и per-agent runs | Claude bypassPermissions, Codex dangerFullAccess; не переносить API keys/конфиги в test | Фиктивный agent, корректный отказ dangerous actions, строгая allowlist и независимый тест-оракул | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Public screening records project purpose from private registry without disclosing its file contents or implementation. Source-backed integration not yet verified.",
+      "supersedes": null
+    },
+    {
+      "id": "helmor-dsh-paper2agent-documentary-20261122",
+      "study_id": "helmor",
+      "project_id": "dsh-paper2agent",
+      "review_id": "helmor-operator-workbench-audit-20261122",
+      "date": "2026-11-22",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary portfolio fit for a local parallel-agent operator/review workflow; no deployment or source-verified integration seam.",
+      "limitations": "Private project source and exact integration contracts not published. Helmor Linux release not supported officially; per-agent permission modes and shared Git metadata require independent safety controls.",
+      "next_test": "Frozen multi-agent synthetic Git fixture on supported OS with fake agents and independent test/approval oracle; compare CLI vs GUI vs MCP, no real credentials or publishing.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-22/helmor.md",
+      "source_line": 13,
+      "source_excerpt": "| [Helmor](../../studies/helmor.md) | **dsh-paper2agent** | Отдельный developer/operator UI для запуска задач и проверки human gate после исследовательского анализа | Не заменяет evidence pipeline/isolated Podman; всё равно нужен отдельно подтверждённый Linux/workflow путь | Paper2Project документальный dry-review → stub Helmor UI → no merge/no production; измерить качество audit handoff | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Public screening records project purpose from private registry without disclosing its file contents or implementation. Source-backed integration not yet verified.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19141,21 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "helmor",
+      "project_id": "dsh-runtime",
+      "assessment_id": "helmor-dsh-runtime-documentary-20261122"
+    },
+    {
+      "study_id": "helmor",
+      "project_id": "agent-config",
+      "assessment_id": "helmor-agent-config-documentary-20261122"
+    },
+    {
+      "study_id": "helmor",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "helmor-dsh-paper2agent-documentary-20261122"
     }
   ],
   "relations": [
