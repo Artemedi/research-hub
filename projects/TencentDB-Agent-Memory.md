@@ -11,6 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [hyra-2](../catalog/studies/hyra-2.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | memory service reference: Knowledge/agent adjacency exists, but unpublished Hyra scheduler/permission implementation prevents a verified integration seam; outside the three-project shortlist. | [Обзор](../reviews/hyra-2/2026-11-05.md) · [Основание](../data/project-fit/hyra-2/2026-11-05.json) |
+| [memoir](../catalog/studies/memoir.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Project purpose suggests an architectural branch-aware memory history/provenance comparison; no target code implementation seam or measurable benefit has been verified. | [Обзор](../reviews/memoir/2026-11-23.md) · [Основание](../portfolio/2026-11-23/memoir.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

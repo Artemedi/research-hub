@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -56,6 +56,7 @@
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | [2026-10-05 / maadbench-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-maadbench-2026-11-05](../reviews/maadbench/2026-11-05-full-text.md) |
 | [Matoi](matoi.md) | [2026-11-03 / matoi-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [MemComposer](memcomposer.md) | [2026-11-03 / memcomposer-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Memoir — Git-like branch-aware память AI-агентов](memoir.md) | [2026-11-23 / memoir-git-versioned-agent-memory-security-audit-20261123](../reviews/memoir/2026-11-23.md) |
 | [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [2026-11-03 / memory-centric-continual-learning-review](../portfolio/2026-10-20--2026-10-26/review.md) |
 | [MemScope](memscope.md) | [2026-11-03 / memscope-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04 / microsoft-skill-recorder-review](../reviews/microsoft-skill-recorder/2026-11-04.md) |
