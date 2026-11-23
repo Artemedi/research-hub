@@ -98,7 +98,8 @@
     "studies/rea-bench.md",
     "studies/spillway.md",
     "studies/mobileprobe.md",
-    "studies/tufazip.md"
+    "studies/tufazip.md",
+    "studies/lanes.md"
   ],
   "documents": [
     {
@@ -2696,6 +2697,20 @@
       "title": "Research intake 2026-11-21: TufaZip source and NO_FIT decision",
       "kind": "portfolio",
       "date": "2026-11-21"
+    },
+    {
+      "from": null,
+      "to": "reviews/lanes/2026-11-24.md",
+      "title": "Lanes — source availability, proprietary macOS limitations and agent-worktree review",
+      "kind": "review",
+      "date": "2026-11-24"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-24/lanes.md",
+      "title": "Research intake 2026-11-24: Lanes-inspired worktree control plane for DSH",
+      "kind": "portfolio",
+      "date": "2026-11-24"
     }
   ]
 }
