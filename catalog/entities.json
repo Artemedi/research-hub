@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "memoir",
+      "title": "Memoir — branch-aware Git-versioned semantic agent memory and ProllyTree integrity",
+      "kind": "engineering",
+      "card": "studies/memoir.md",
+      "primary_url": "https://github.com/zhangfengcdt/memoir",
+      "current_review_id": "memoir-git-versioned-agent-memory-security-audit-20261123",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "5175ef6f75864332f145a42f7c76fb47cdbea1f6650916c9088a6d708939b494",
+      "linked_materials": [
+        "reviews/memoir/2026-11-23.md",
+        "portfolio/2026-11-23/memoir.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "memoir-7fd1b3ef",
+      "study_id": "memoir",
+      "ref": "7fd1b3ef704fc554596571d5b9c8b73d7f2b0c5d",
+      "url": "https://github.com/zhangfengcdt/memoir/tree/7fd1b3ef704fc554596571d5b9c8b73d7f2b0c5d",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "memoir-git-versioned-agent-memory-security-audit-20261123",
+      "study_ids": [
+        "memoir"
+      ],
+      "version_ids": [
+        "memoir-7fd1b3ef"
+      ],
+      "date": "2026-11-23",
+      "document": "reviews/memoir/2026-11-23.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned Python source, README/docs, ProllyTree storage adapter, Merkle proof service, vector index, branch routing, Git GC safety and Claude/Codex/Hermes plugin hooks reviewed statically. Underlying prollytree source and full threat model not independently audited. Cryptographic proofs are not encryption; O(log n) is not full recall. Author latency/1M claims and LoCoMo quality not reproduced; no install or live project integration.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,90 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "memoir-TencentDB-Agent-Memory-documentary-20261123",
+      "study_id": "memoir",
+      "project_id": "TencentDB-Agent-Memory",
+      "review_id": "memoir-git-versioned-agent-memory-security-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose suggests an architectural branch-aware memory history/provenance comparison; no target code implementation seam or measurable benefit has been verified.",
+      "limitations": "No licensed source copying into target, no live agent-config or private memory trial, no cryptographic trusted-root/at-rest encryption guarantee, no third-party store security signoff or measured 100K+ recall/GC/concurrency costs.",
+      "next_test": "Use frozen synthetic branch-separated memory fixtures: A existing memory behaviour, B minimal branch-aware policy ledger, C pinned Memoir in isolated offline rootless sandbox with local stub model and independent expected-answer/proof oracle; measure accuracy, cross-branch leakage, cold replay RSS/IO, Git GC and deterministic recovery.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/memoir.md",
+      "source_line": 13,
+      "source_excerpt": "| [Memoir](../../studies/memoir.md) | **TencentDB-Agent-Memory** | [Project registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/TencentDB-Agent-Memory/PROJECT.md) описывает multi-modal memory service (Chat, Skill, LLM-Wiki, Code-Graph); Memoir может быть comparator для branch/version lineage и rollback polluted memory | Не предлагается заменить сервис: классы памяти, ACL, HA/replication и APIs не совпадают; крипто proof не эквивалентен шифрованию; Git object GC и history compaction не проверены | Frozen synthetic conversation+skills corpus: A текущий API на mock fixtures, B branch-aware policy ledger, C isolated Memoir; сравнить cross-branch accuracy, rollback, stale/conflict, p95, RSS/IO/GB, reviewer work | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry purpose/profile screened, current runtime integration APIs/permissions/quality and value against incumbent not verified in project source.",
+      "supersedes": null
+    },
+    {
+      "id": "memoir-dsh-team-context-documentary-20261123",
+      "study_id": "memoir",
+      "project_id": "dsh-team-context",
+      "review_id": "memoir-git-versioned-agent-memory-security-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose suggests an architectural branch-aware memory history/provenance comparison; no target code implementation seam or measurable benefit has been verified.",
+      "limitations": "No licensed source copying into target, no live agent-config or private memory trial, no cryptographic trusted-root/at-rest encryption guarantee, no third-party store security signoff or measured 100K+ recall/GC/concurrency costs.",
+      "next_test": "Use frozen synthetic branch-separated memory fixtures: A existing memory behaviour, B minimal branch-aware policy ledger, C pinned Memoir in isolated offline rootless sandbox with local stub model and independent expected-answer/proof oracle; measure accuracy, cross-branch leakage, cold replay RSS/IO, Git GC and deterministic recovery.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/memoir.md",
+      "source_line": 14,
+      "source_excerpt": "| [Memoir](../../studies/memoir.md) | **dsh-team-context** | [Project registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/dsh-team-context/PROJECT.md) описывает knowledge/governance skills/learnings и retrieval; branch-bound decision provenance and blame can improve tracing experimental lessons | Content governance is independent authoritative control; auto-captured claims are not validated facts, branch names not tenant ACL, historical deletions retain values; avoid adding overlapping state stores by default | Model conflict test: accepted main guidance vs experiment-only rule; compare bleed-through and correct revert, provenance under rename/rebase with independent golden oracle | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry purpose/profile screened, current runtime integration APIs/permissions/quality and value against incumbent not verified in project source.",
+      "supersedes": null
+    },
+    {
+      "id": "memoir-HermesAgent-documentary-20261123",
+      "study_id": "memoir",
+      "project_id": "HermesAgent",
+      "review_id": "memoir-git-versioned-agent-memory-security-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose suggests an architectural branch-aware memory history/provenance comparison; no target code implementation seam or measurable benefit has been verified.",
+      "limitations": "No licensed source copying into target, no live agent-config or private memory trial, no cryptographic trusted-root/at-rest encryption guarantee, no third-party store security signoff or measured 100K+ recall/GC/concurrency costs.",
+      "next_test": "Use frozen synthetic branch-separated memory fixtures: A existing memory behaviour, B minimal branch-aware policy ledger, C pinned Memoir in isolated offline rootless sandbox with local stub model and independent expected-answer/proof oracle; measure accuracy, cross-branch leakage, cold replay RSS/IO, Git GC and deterministic recovery.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/memoir.md",
+      "source_line": 15,
+      "source_excerpt": "| [Memoir](../../studies/memoir.md) | **HermesAgent** | [Project registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/HermesAgent/PROJECT.md): versioned local config and gateway; Memoir upstream *actually ships a Hermes memory plugin*, so a potential adapter exists | Live Hermes home contains configs, cron and potentially API credentials; no installation, no plugin copying into live environment, no transcript-based auto-capture; provider API calls may leak private context | Fake Hermes home + stub model, one synthetic session; verify no unintended memory writes/egress, correct branch scoping, rollback and restart; only if owner approves isolated plugin trial | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry purpose/profile screened, current runtime integration APIs/permissions/quality and value against incumbent not verified in project source.",
+      "supersedes": null
+    },
+    {
+      "id": "memoir-dsh-runtime-documentary-20261123",
+      "study_id": "memoir",
+      "project_id": "dsh-runtime",
+      "review_id": "memoir-git-versioned-agent-memory-security-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose suggests an architectural branch-aware memory history/provenance comparison; no target code implementation seam or measurable benefit has been verified.",
+      "limitations": "No licensed source copying into target, no live agent-config or private memory trial, no cryptographic trusted-root/at-rest encryption guarantee, no third-party store security signoff or measured 100K+ recall/GC/concurrency costs.",
+      "next_test": "Use frozen synthetic branch-separated memory fixtures: A existing memory behaviour, B minimal branch-aware policy ledger, C pinned Memoir in isolated offline rootless sandbox with local stub model and independent expected-answer/proof oracle; measure accuracy, cross-branch leakage, cold replay RSS/IO, Git GC and deterministic recovery.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/memoir.md",
+      "source_line": 16,
+      "source_excerpt": "| [Memoir](../../studies/memoir.md) | **dsh-runtime** | [Project registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/dsh-runtime/PROJECT.md): plugin agent loop/workspaces; per-agent branch memory may reduce contextual leakage during concurrent branches and coding tasks | No verified native extension seam; Python ProllyTree service + Node/Cordis bridge would increase complexity, latency and disk; no production dependency accepted | Offline branch-switch and concurrent-writer state machine with mock calls and independent expected-answer oracle; compare baseline LLM token use, accepted facts, cold replay peak RSS and latency, false facts/merge | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry purpose/profile screened, current runtime integration APIs/permissions/quality and value against incumbent not verified in project source.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19162,26 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "memoir",
+      "project_id": "TencentDB-Agent-Memory",
+      "assessment_id": "memoir-TencentDB-Agent-Memory-documentary-20261123"
+    },
+    {
+      "study_id": "memoir",
+      "project_id": "dsh-team-context",
+      "assessment_id": "memoir-dsh-team-context-documentary-20261123"
+    },
+    {
+      "study_id": "memoir",
+      "project_id": "HermesAgent",
+      "assessment_id": "memoir-HermesAgent-documentary-20261123"
+    },
+    {
+      "study_id": "memoir",
+      "project_id": "dsh-runtime",
+      "assessment_id": "memoir-dsh-runtime-documentary-20261123"
     }
   ],
   "relations": [
