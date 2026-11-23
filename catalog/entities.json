@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "local-deep-research",
+      "title": "Local Deep Research — agentic retrieval, citation provenance and privacy boundaries",
+      "kind": "engineering",
+      "card": "studies/local-deep-research.md",
+      "primary_url": "https://github.com/LearningCircuit/local-deep-research",
+      "current_review_id": "local-deep-research-bounded-source-audit-20261123",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "85e08c78714862ac37a8e9b18bdaf8d177f4cc4bbc6b50eb5debe0f462aeba4b",
+      "linked_materials": [
+        "reviews/local-deep-research/2026-11-23.md",
+        "portfolio/2026-11-23/local-deep-research.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "local-deep-research-32b50c96",
+      "study_id": "local-deep-research",
+      "ref": "32b50c96f316e9025341fbf569c9381b8c9f351b",
+      "url": "https://github.com/LearningCircuit/local-deep-research/tree/32b50c96f316e9025341fbf569c9381b8c9f351b",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "local-deep-research-bounded-source-audit-20261123",
+      "study_ids": [
+        "local-deep-research"
+      ],
+      "version_ids": [
+        "local-deep-research-32b50c96"
+      ],
+      "date": "2026-11-23",
+      "document": "reviews/local-deep-research/2026-11-23.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned README, 2.0.3, MIT, LangGraph/standard citation formatting and source dedup, model-scored evidence evaluator, SQLCipher/egress policy, MCP, Docker, benchmarks reviewed statically. Headline n=500 versus table 287/300 mismatch; Serper search cloud; no independent semantics/citation audit, benchmark, runtime tests, real source ingestion or full security review.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "local-deep-research-dsh-paper2agent-documentary-20261123",
+      "study_id": "local-deep-research",
+      "project_id": "dsh-paper2agent",
+      "review_id": "local-deep-research-bounded-source-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose and source code show a plausible external research/source-discovery comparator, not a proven added-value deployment or integrated evidence pipeline.",
+      "limitations": "Source citations provide provenance metadata but not semantic support. Web search/local LLM claims need egress isolation, independent source verification and no private corpus/cloud leakage. No project runtime integration or measured benefit.",
+      "next_test": "Compare incumbent A to LDR B isolated synthetic library and optional C public-web only after owner gate; frozen gold sources, blinded source-claim entailment evaluator, completeness, total cost, RAM/VRAM, network destinations; no prod or private data.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/local-deep-research.md",
+      "source_line": 11,
+      "source_excerpt": "| [Local Deep Research](../../studies/local-deep-research.md) | **dsh-paper2agent** | [Project profile](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/06-independent-research/dsh-paper2agent/PROJECT.md): citation-grounded scientific intake and independent experimental verification; external source discovery is conceptually relevant | LDR evidence scoring uses LLM confidence not trusted source-bound claim support; no modification of Paper2Project verdict or Podman execution; no untrusted documents auto-executed | Frozen public papers; A existing research-hub search; B LDR discovery-only; compare true sources/DOI/coverage and independent citations; zero private data | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project profile only; active implementation seam, corpus, source fidelity and security controls not confirmed in target project source.",
+      "supersedes": null
+    },
+    {
+      "id": "local-deep-research-TrinMedicalBot-documentary-20261123",
+      "study_id": "local-deep-research",
+      "project_id": "TrinMedicalBot",
+      "review_id": "local-deep-research-bounded-source-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose and source code show a plausible external research/source-discovery comparator, not a proven added-value deployment or integrated evidence pipeline.",
+      "limitations": "Source citations provide provenance metadata but not semantic support. Web search/local LLM claims need egress isolation, independent source verification and no private corpus/cloud leakage. No project runtime integration or measured benefit.",
+      "next_test": "Compare incumbent A to LDR B isolated synthetic library and optional C public-web only after owner gate; frozen gold sources, blinded source-claim entailment evaluator, completeness, total cost, RAM/VRAM, network destinations; no prod or private data.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/local-deep-research.md",
+      "source_line": 13,
+      "source_excerpt": "| [Local Deep Research](../../studies/local-deep-research.md) | **TrinMedicalBot** | [Project profile](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/03-automations/TrinMedicalBot/PROJECT.md): Hermes clinical-assistant config, possible literature-search evaluation on public evidence | HIGH STAKES: no actual clinical decision validation, citation IDs do not imply accurate medical claims; no personal records or cloud query disclosure; human expert review mandatory | Blind public-paper/fictional-question pilot: verify PMID/DOI, retractions, statement-to-quote support, contradiction handling; compare with incumbent workflow | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project profile only; active implementation seam, corpus, source fidelity and security controls not confirmed in target project source.",
+      "supersedes": null
+    },
+    {
+      "id": "local-deep-research-Wiki_PG-documentary-20261123",
+      "study_id": "local-deep-research",
+      "project_id": "Wiki_PG",
+      "review_id": "local-deep-research-bounded-source-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Project purpose and source code show a plausible external research/source-discovery comparator, not a proven added-value deployment or integrated evidence pipeline.",
+      "limitations": "Source citations provide provenance metadata but not semantic support. Web search/local LLM claims need egress isolation, independent source verification and no private corpus/cloud leakage. No project runtime integration or measured benefit.",
+      "next_test": "Compare incumbent A to LDR B isolated synthetic library and optional C public-web only after owner gate; frozen gold sources, blinded source-claim entailment evaluator, completeness, total cost, RAM/VRAM, network destinations; no prod or private data.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/local-deep-research.md",
+      "source_line": 12,
+      "source_excerpt": "| [Local Deep Research](../../studies/local-deep-research.md) | **Wiki_PG** | [Project profile](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/01-dba-akuz/Wiki_PG/PROJECT.md): read-only PG knowledge and diagnostics with source evidence, potential independent literature search comparator | Does not preserve exact host/time/instance scoped DB evidence by default; current SQLite/FTS facts and citations remain source of truth; no cloud logs | Synthetic/public PG manual and diagnostics questions with exact oracle; measure claim-to-source support, recall, latency/cost vs existing read-only query tool | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary project profile only; active implementation seam, corpus, source fidelity and security controls not confirmed in target project source.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19141,21 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "local-deep-research",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "local-deep-research-dsh-paper2agent-documentary-20261123"
+    },
+    {
+      "study_id": "local-deep-research",
+      "project_id": "TrinMedicalBot",
+      "assessment_id": "local-deep-research-TrinMedicalBot-documentary-20261123"
+    },
+    {
+      "study_id": "local-deep-research",
+      "project_id": "Wiki_PG",
+      "assessment_id": "local-deep-research-Wiki_PG-documentary-20261123"
     }
   ],
   "relations": [
