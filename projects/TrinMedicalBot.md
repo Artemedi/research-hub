@@ -11,6 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [agent-mosaic](../catalog/studies/agent-mosaic.md) | SHORTLIST | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Медицинский assistant profile с внешним retrieval: риск композиционного раскрытия прямо релевантен, но это профиль, а не runtime; клинические данные и production не использовались. | [Обзор](../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Основание](../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json) |
+| [local-deep-research](../catalog/studies/local-deep-research.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Project purpose and source code show a plausible external research/source-discovery comparator, not a proven added-value deployment or integrated evidence pipeline. | [Обзор](../reviews/local-deep-research/2026-11-23.md) · [Основание](../portfolio/2026-11-23/local-deep-research.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

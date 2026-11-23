@@ -9,6 +9,7 @@
 | Материал | Дата записи |
 | --- | --- |
 | [Исторические исследования — соответствие проектам](historical/project-fit.md) | 2026-11-03 |
+| [Research intake 2026-11-23: Local Deep Research source discovery portfolio fit](2026-11-23/local-deep-research.md) | 2026-11-23 |
 | [Research intake 2026-11-21: TufaZip source and NO_FIT decision](2026-11-21/review.md) | 2026-11-21 |
 | [Research intake Nov 11–14: six full-text studies and project mapping](2026-11-14/review.md) | 2026-11-14 |
 | [Drift Inspector / NVIDIA Auto Ontology — project-fit and limitations](2026-11-13/source-project-fit.md) | 2026-11-13 |
