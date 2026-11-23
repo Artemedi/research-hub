@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "rurima",
+      "title": "Rurima — minimal image/rootfs utility, Ruri runtime and isolation limitations",
+      "kind": "engineering",
+      "card": "studies/rurima.md",
+      "primary_url": "https://github.com/RuriOSS/rurima",
+      "current_review_id": "rurima-security-rootfs-audit-20261123",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "1fb55e9e52cfc540c3fecd7c55c7e0523fc5be65f48a53389909722ad82b3c88",
+      "linked_materials": [
+        "reviews/rurima/2026-11-23.md",
+        "portfolio/2026-11-23/rurima.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "rurima-30a06373",
+      "study_id": "rurima",
+      "ref": "30a0637331a95b05377e3ea2e36d52b13d1a94f7",
+      "url": "https://github.com/RuriOSS/rurima/tree/30a0637331a95b05377e3ea2e36d52b13d1a94f7",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "rurima-security-rootfs-audit-20261123",
+      "study_ids": [
+        "rurima"
+      ],
+      "version_ids": [
+        "rurima-30a06373"
+      ],
+      "date": "2026-11-23",
+      "document": "reviews/rurima/2026-11-23.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned README/FAQ/source C code, build/CI, Ruri README/USAGE/Security docs statically reviewed. Full pinned submodule source not independently exhaustively audited. Rurima non-OCI, external utilities required, no assured network isolation, fallback skips layer SHA check and OTA has no visible release hash check. No image extraction, privileged execution, source build, security penetration test or performance benchmark.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,48 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "rurima-dsh-paper2agent-documentary-20261123",
+      "study_id": "rurima",
+      "project_id": "dsh-paper2agent",
+      "review_id": "rurima-security-rootfs-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary architecture and rootfs-imaging comparison only; not a validated substitute for OCI-aware secure container execution or a verified source integration seam.",
+      "limitations": "The original project uses or references container integration, but Rurima supplies incomplete isolation, external dependencies and conditional image integrity. No verified performance, runtime security or existing deployment benefit.",
+      "next_test": "A incumbent rootless Podman/Skopeo, B static Rurima path review, C only after owner security gate trusted synthetic rootfs extraction in separate disposable VM; compare exact content metadata/digests, network deny, file escape, CPU/RSS/IO and total maintenance cost.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/rurima.md",
+      "source_line": 13,
+      "source_excerpt": "| [Rurima](../../studies/rurima.md) | **dsh-paper2agent** | [Project registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/06-independent-research/dsh-paper2agent/PROJECT.md): citation-bound research, container-isolated experiments with Podman; relevant as *negative/control* comparison to Rurima's rootfs vs isolation semantics | Not a compatible OCI/rootless/network-safe runner; **keep existing Podman** for executing agent-produced code; no untrusted image execution and no private corpus | Document-only resource/security contract parity check first; optional separate disposable VM benchmark **trusted synthetic rootfs extraction only** after owner approval; compare hashes, IO/CPU/RSS, network denies, dependency closure | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only project-registry documents reviewed; actual source-level seam, performance bottleneck, safe independent sandbox parity and OCI compliance not proved.",
+      "supersedes": null
+    },
+    {
+      "id": "rurima-Harness-documentary-20261123",
+      "study_id": "rurima",
+      "project_id": "Harness",
+      "review_id": "rurima-security-rootfs-audit-20261123",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary architecture and rootfs-imaging comparison only; not a validated substitute for OCI-aware secure container execution or a verified source integration seam.",
+      "limitations": "The original project uses or references container integration, but Rurima supplies incomplete isolation, external dependencies and conditional image integrity. No verified performance, runtime security or existing deployment benefit.",
+      "next_test": "A incumbent rootless Podman/Skopeo, B static Rurima path review, C only after owner security gate trusted synthetic rootfs extraction in separate disposable VM; compare exact content metadata/digests, network deny, file escape, CPU/RSS/IO and total maintenance cost.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/rurima.md",
+      "source_line": 14,
+      "source_excerpt": "| [Rurima](../../studies/rurima.md) | **Harness** | [Project registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/Harness/PROJECT.md): DSH integration workspace, deployment probes and audit trail; possible manual container image/rootfs inspection in a disposable test lab | No observed pipeline bottleneck, approved importer or security benefit; cannot replace deploy/runtime isolation, may enlarge supply-chain surface with weak digest checks | Compare pinned OCI synthetic image inspection via incumbent Podman/skopeo vs source-defined Rurima unpack behavior; no external images, no privileged code, no agent/host mounts; reject if not a measurable net advantage | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only project-registry documents reviewed; actual source-level seam, performance bottleneck, safe independent sandbox parity and OCI compliance not proved.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19120,16 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "rurima",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "rurima-dsh-paper2agent-documentary-20261123"
+    },
+    {
+      "study_id": "rurima",
+      "project_id": "Harness",
+      "assessment_id": "rurima-Harness-documentary-20261123"
     }
   ],
   "relations": [
