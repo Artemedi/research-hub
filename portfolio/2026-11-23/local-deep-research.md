@@ -24,3 +24,11 @@
 - Citation-validator advisories `CHECK_QUALIFIER_NEAR_QUOTE`, `NEGATION_MISMATCH`, `POSSIBLE_CONDITION_OMISSION` remain unresolved for **independent semantic review**. These are heuristic warnings, not automatically established false statements.
 - `Paper2Project selftest: PASS`. External LLMs, LDR model/agents/container, private documents and production systems **not executed or accessed**. A/B/C `NOT_RUN`.
 - Before any deployment gate, independently freeze public/synthetic ground truth and report exact source identity, claim-to-quote entailment, conflicting-source handling, local/outbound destinations, RAM/VRAM/cost/reviewer time. No promotion based on a citation count or on SimpleQA accuracy alone.
+
+## Paper2Project — проверка на актуальном аудите
+
+Выполнен **document-only Paper2Project 1.0.2**, job `job-8ee9bb2124c844ac` (`ANALYZED`), исходный review snapshot `1de733a37d3303772db76b32ad4d578aaa26d01287c8bcbdddd8c067b462e088`. Accepted analysis SHA-256 `607550d287e5cea4041fa2ba066d340e8792da9ca77a544568aa57119a10198b`. Project snapshots: `dsh-paper2agent=28bfba4d7aea8fff9825f4a6d13358a837d2a2479aa17235898b17e99dc9baa7`, `wiki-pg=e300fe11e2997243ecf0c6a3d25aae0464eafc56f468fc0b74092f643b0fc2c8`, `trinmedicalbot=bbedce44806ea84a25f9b218842145766c3460435cf7bbc6dcd70f563a54b5d1`.
+
+- **3/3** project pairs: `NEEDS_PROJECT_EVIDENCE`; no independent project source code integration or measured benefits.
+- Automated citation advisories **`CHECK_QUALIFIER_NEAR_QUOTE`**, **`NEGATION_MISMATCH`**, **`POSSIBLE_CONDITION_OMISSION`** remain open for an independent human/agent semantic audit; lexical flags are not proof of factual correctness or incorrectness. `Paper2Project selftest: PASS`.
+- No external model, search or LDR process was executed; local audit imports and project profiles only. A/B/C remain **NOT_RUN**; no actual medical/DBA/production content was loaded.
