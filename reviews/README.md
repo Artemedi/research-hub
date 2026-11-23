@@ -95,6 +95,7 @@
 | [RRSI и Harness² — переобучение при отборе](rrsi-harness2/2026-11-04.md) | 2026-11-04 |
 | [Полный текст RRSI — метод и ограничения](rrsi/2026-11-05-full-text.md) | 2026-11-05 |
 | [RRSI / Harness² — повторяемый A/B на validation и holdout](rrsi/2026-11-06-validation-ab.md) | 2026-11-06 |
+| [Rurima — pinned rootfs, privileges, image-integrity and OTA source review](rurima/2026-11-23.md) | 2026-11-23 |
 | [TrinMedicalBot — A/B и внедрение Challenger v2](sequential-diagnosis-language-models/2026-11-05-challenger.md) | 2026-11-05 |
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
