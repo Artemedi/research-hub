@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -52,6 +52,7 @@
 | [KVSET — The KV Cache Working Set](kvset.md) | [2026-09-28 / kvset-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-05 / fulltext-kvset-2026-11-05](../reviews/kvset/2026-11-05-full-text.md) |
 | [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | [2026-10-05 / kvtether-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-kvtether-2026-11-05](../reviews/kvtether/2026-11-05-full-text.md) |
 | [LAGO](lago.md) | [2026-11-03 / lago-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Lanes — доска параллельных coding-агентов и Git worktrees](lanes.md) | [2026-11-24 / lanes-proprietary-macos-agent-orchestration-docs-review-20261124](../reviews/lanes/2026-11-24.md) |
 | [Local Knowledge Graph — граф шагов рассуждения модели](local-knowledge-graph.md) | [2026-11-04 / local-knowledge-graph-review](../reviews/local-knowledge-graph/2026-11-04.md) |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | [2026-10-05 / maadbench-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-maadbench-2026-11-05](../reviews/maadbench/2026-11-05-full-text.md) |
 | [Matoi](matoi.md) | [2026-11-03 / matoi-review](../portfolio/2026-10-12--2026-10-19/review.md) |

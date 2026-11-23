@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "lanes",
+      "title": "Lanes — proprietary macOS multi-agent worktree board and session orchestration",
+      "kind": "engineering",
+      "card": "studies/lanes.md",
+      "primary_url": "https://github.com/lanes-sh/app",
+      "current_review_id": "lanes-proprietary-macos-agent-orchestration-docs-review-20261124",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "2e6afe8b8c6de68aeb564f0cb31d6a5bf303b94a72b13aa52b9a8de8231f2ddf",
+      "linked_materials": [
+        "reviews/lanes/2026-11-24.md",
+        "portfolio/2026-11-24/lanes.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "lanes-7b9cb385",
+      "study_id": "lanes",
+      "ref": "7b9cb385d1100ded8a74986f81472f8856840578",
+      "url": "https://github.com/lanes-sh/app/tree/7b9cb385d1100ded8a74986f81472f8856840578",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "lanes-proprietary-macos-agent-orchestration-docs-review-20261124",
+      "study_ids": [
+        "lanes"
+      ],
+      "version_ids": [
+        "lanes-7b9cb385"
+      ],
+      "date": "2026-11-24",
+      "document": "reviews/lanes/2026-11-24.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Static review of 20-file public plugin and documentation repository, not the proprietary Lanes Desktop Tauri/Rust runtime. macOS Ventura+ only, all rights reserved, no independent MCP authorization, PTY/worktree cleanup, crash telemetry, concurrency, performance, correctness or security audit possible from this repository. Official docs reviewed as product claims; no install executed.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,90 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "lanes-Harness-documentary-20261124",
+      "study_id": "lanes",
+      "project_id": "Harness",
+      "review_id": "lanes-proprietary-macos-agent-orchestration-docs-review-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Public product and project documentation suggests a worktree/agent-session correlation and independent-verification workflow; no open Desktop implementation, supported Linux version, source-level integration seam or measured benefit.",
+      "limitations": "Desktop is macOS-only, proprietary and not source-auditable; Git worktrees alone do not isolate OS users/credentials/network; MCP can spawn sessions and public examples suggest unsafe flags/push/merge. No runtime integration or safety certification.",
+      "next_test": "A existing Bazzite CLI/Git worktrees and GitHub draft PR control, B independent paper-level issue/session/worker/verifier lineage with frozen synthetic fixtures and idempotency/timeout gates; compare accepted-PR quality, duplicate starts, abandoned worktrees, resource load and owner time. Desktop C not available on Linux.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/lanes.md",
+      "source_line": 11,
+      "source_excerpt": "| [Lanes](../../studies/lanes.md) | **Harness** | [Registry purpose](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/Harness/PROJECT.md): integration/adapters/probes and append-only audit; task/session/worktree ID correlation plus checker-after-diff could improve traceability | Existing workspace not proved deficient; no open Desktop runtime; no Python/Node implementation copied; no agent auto-merge in actual Harness | Synthetic two-task fanout: track duplicate launches, linked worktrees/diffs, independent test and final verdict, stop/cancel audit; baseline first | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned public Lanes plugin files, product docs and project-registry profile available; no proprietary desktop core source or verified target-project extension point.",
+      "supersedes": null
+    },
+    {
+      "id": "lanes-dsh-runtime-documentary-20261124",
+      "study_id": "lanes",
+      "project_id": "dsh-runtime",
+      "review_id": "lanes-proprietary-macos-agent-orchestration-docs-review-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Public product and project documentation suggests a worktree/agent-session correlation and independent-verification workflow; no open Desktop implementation, supported Linux version, source-level integration seam or measured benefit.",
+      "limitations": "Desktop is macOS-only, proprietary and not source-auditable; Git worktrees alone do not isolate OS users/credentials/network; MCP can spawn sessions and public examples suggest unsafe flags/push/merge. No runtime integration or safety certification.",
+      "next_test": "A existing Bazzite CLI/Git worktrees and GitHub draft PR control, B independent paper-level issue/session/worker/verifier lineage with frozen synthetic fixtures and idempotency/timeout gates; compare accepted-PR quality, duplicate starts, abandoned worktrees, resource load and owner time. Desktop C not available on Linux.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/lanes.md",
+      "source_line": 12,
+      "source_excerpt": "| [Lanes](../../studies/lanes.md) | **dsh-runtime** | [Registry purpose](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/dsh-runtime/PROJECT.md): Cordis agent loop/workspaces; model finite attempt budget and independent worker-verifier stages on a single issue | Existing runtime implementation seam unknown; multi-agent processes share host and credentials absent isolation; extra state orchestration can duplicate existing control plane | Frozen task IDs, separate worktrees, model invocation and independent check; measure throughput, resource caps, double launches and p95 time with existing runtime only | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned public Lanes plugin files, product docs and project-registry profile available; no proprietary desktop core source or verified target-project extension point.",
+      "supersedes": null
+    },
+    {
+      "id": "lanes-agent-config-documentary-20261124",
+      "study_id": "lanes",
+      "project_id": "agent-config",
+      "review_id": "lanes-proprietary-macos-agent-orchestration-docs-review-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Public product and project documentation suggests a worktree/agent-session correlation and independent-verification workflow; no open Desktop implementation, supported Linux version, source-level integration seam or measured benefit.",
+      "limitations": "Desktop is macOS-only, proprietary and not source-auditable; Git worktrees alone do not isolate OS users/credentials/network; MCP can spawn sessions and public examples suggest unsafe flags/push/merge. No runtime integration or safety certification.",
+      "next_test": "A existing Bazzite CLI/Git worktrees and GitHub draft PR control, B independent paper-level issue/session/worker/verifier lineage with frozen synthetic fixtures and idempotency/timeout gates; compare accepted-PR quality, duplicate starts, abandoned worktrees, resource load and owner time. Desktop C not available on Linux.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/lanes.md",
+      "source_line": 13,
+      "source_excerpt": "| [Lanes](../../studies/lanes.md) | **agent-config** | [Registry purpose](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/agent-config/PROJECT.md): Claude/Codex hooks, model_assist/review; session state markers and worktree-aware independent review could be represented in existing hooks | Hooks are permission-sensitive, Lanes plugin marketplace is external instructions with shell examples; no global install, no unattended permission bypass, no source transplant | Read-only check existing hook guardrails vs proposed exact issue/session/worktree validation and duplicate-create block; documentation-only diff then independently review | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned public Lanes plugin files, product docs and project-registry profile available; no proprietary desktop core source or verified target-project extension point.",
+      "supersedes": null
+    },
+    {
+      "id": "lanes-hermes-akuz-agents-documentary-20261124",
+      "study_id": "lanes",
+      "project_id": "hermes-akuz-agents",
+      "review_id": "lanes-proprietary-macos-agent-orchestration-docs-review-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Public product and project documentation suggests a worktree/agent-session correlation and independent-verification workflow; no open Desktop implementation, supported Linux version, source-level integration seam or measured benefit.",
+      "limitations": "Desktop is macOS-only, proprietary and not source-auditable; Git worktrees alone do not isolate OS users/credentials/network; MCP can spawn sessions and public examples suggest unsafe flags/push/merge. No runtime integration or safety certification.",
+      "next_test": "A existing Bazzite CLI/Git worktrees and GitHub draft PR control, B independent paper-level issue/session/worker/verifier lineage with frozen synthetic fixtures and idempotency/timeout gates; compare accepted-PR quality, duplicate starts, abandoned worktrees, resource load and owner time. Desktop C not available on Linux.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/lanes.md",
+      "source_line": 14,
+      "source_excerpt": "| [Lanes](../../studies/lanes.md) | **hermes-akuz-agents** | [Registry purpose](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/hermes-akuz-agents/PROJECT.md): Kanban, MCP/cron, multiagent work via quota router; common status board could improve audit between workers and reviewers | AKUZ healthcare/DBA risk, no production execution; no Lanes macOS Desktop, no direct Lanes Link integration proved, no trusted MCP authorization audit | Compare written task-to-session ownership, timeout/retry budget, separation of checker from worker, no write access on synthetic SQL/repo fixtures | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned public Lanes plugin files, product docs and project-registry profile available; no proprietary desktop core source or verified target-project extension point.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19162,26 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "lanes",
+      "project_id": "Harness",
+      "assessment_id": "lanes-Harness-documentary-20261124"
+    },
+    {
+      "study_id": "lanes",
+      "project_id": "dsh-runtime",
+      "assessment_id": "lanes-dsh-runtime-documentary-20261124"
+    },
+    {
+      "study_id": "lanes",
+      "project_id": "agent-config",
+      "assessment_id": "lanes-agent-config-documentary-20261124"
+    },
+    {
+      "study_id": "lanes",
+      "project_id": "hermes-akuz-agents",
+      "assessment_id": "lanes-hermes-akuz-agents-documentary-20261124"
     }
   ],
   "relations": [
