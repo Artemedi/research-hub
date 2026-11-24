@@ -51,6 +51,7 @@
 | [agent-risk](../catalog/studies/agent-risk.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_CURRENT_CODE | Профильный контекст основного agent runtime и измерительного контура тематически соответствует pre-change replay изменений runtime/gate. | [Обзор](../reviews/agent-risk/2026-11-09-replay-assumptions.md) · [Основание](../portfolio/2026-11-09/agent-risk-project-fit.md) |
 | [rea-bench](../catalog/studies/rea-bench.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | Tool-call lifecycle пишет реальные call/result sequence, возможна изолированная проверка error/benign audit | [Обзор](../reviews/rea-bench/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
 | [spillway](../catalog/studies/spillway.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | В agent-loop есть prepare→dispatch; можно офлайн проверить target admission перед side effects | [Обзор](../reviews/spillway/2026-11-14.md) · [Основание](../portfolio/2026-11-14/review.md) |
+| [codegraph](../catalog/studies/codegraph.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Pinned source implements code-graph retrieval, but only project-registry purpose and tech profile support this target as a potential navigation experiment; target source integration and actual costs not verified. | [Обзор](../reviews/codegraph/2026-11-24.md) · [Основание](../portfolio/2026-11-24/codegraph.md) |
 
 ## Соответствие не подтверждено или применение отложено
 
