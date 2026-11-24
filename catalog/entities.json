@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "codegraph",
+      "title": "CodeGraph — local static code knowledge graph, MCP retrieval and incremental index",
+      "kind": "engineering",
+      "card": "studies/codegraph.md",
+      "primary_url": "https://github.com/colbymchenry/codegraph",
+      "current_review_id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "1a0d30406038a184fa4a7d977d12796db8afa9fab96a91442139a951b4847168",
+      "linked_materials": [
+        "reviews/codegraph/2026-11-24.md",
+        "portfolio/2026-11-24/codegraph.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "codegraph-73c6cff6",
+      "study_id": "codegraph",
+      "ref": "73c6cff66e525a92bff65675b6b0c46687e91ef1",
+      "url": "https://github.com/colbymchenry/codegraph/tree/73c6cff66e525a92bff65675b6b0c46687e91ef1",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "study_ids": [
+        "codegraph"
+      ],
+      "version_ids": [
+        "codegraph-73c6cff6"
+      ],
+      "date": "2026-11-24",
+      "document": "reviews/codegraph/2026-11-24.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned implementation, architecture, telemetry source/default-on data egress, watchers/freshness limits, installer targets and author benchmarks statically reviewed. No runtime build, binary, third-party packages, live agent installer, packet capture, independent A/B, full code security review or private AKUZ data. SQLite source graph and telemetry are distinguishable; published 44% savings and 80% larger residual context not independently reproduced.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,111 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "codegraph-AKUZ-documentary-20261124",
+      "study_id": "codegraph",
+      "project_id": "AKUZ",
+      "review_id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source implements code-graph retrieval, but only project-registry purpose and tech profile support this target as a potential navigation experiment; target source integration and actual costs not verified.",
+      "limitations": "Graph is static approximation, no T-SQL semantic parser verified, default telemetry and update egress require opt-out, global DSH/Hermes installers alter agent config, and real private source/credentials are forbidden in initial tests.",
+      "next_test": "A existing grep/Read/LSP on frozen synthetic C#/TypeScript/Python cross-file question fixtures; B pinned CodeGraph source in isolated offline CLI without global install; C fake-home MCP/adapter only if owner permits; verify exact links/dynamic limits, p95 time, processed and resident tokens, SQLite disk/CPU/RSS/IO, watcher freshness and zero egress.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/codegraph.md",
+      "source_line": 13,
+      "source_excerpt": "| [CodeGraph](../../studies/codegraph.md) | **AKUZ** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/01-dba-akuz/AKUZ/PROJECT.md) describes a **large private mixed Python/C#/SQL/PowerShell tree**: C# handler→service→call-chain navigation could help source RCA where simple grep is expensive | No reading/indexing AKUZ private repo or any production SQL schema/patient data in this intake; do not claim T-SQL/PowerShell semantic tracing, reflection or runtime dynamic query flow; prohibit unvetted model egress | Use synthetic C# invocation graph with stub SQL calls and missing reflection edges; A grep/LSP B index offline, source-line oracle, 0 egress; compare recall, file reads, CPU/IO, context growth | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry descriptions were read for target; actual target implementation seam, acceptance-quality improvement and data isolation not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "codegraph-dsh-runtime-documentary-20261124",
+      "study_id": "codegraph",
+      "project_id": "dsh-runtime",
+      "review_id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source implements code-graph retrieval, but only project-registry purpose and tech profile support this target as a potential navigation experiment; target source integration and actual costs not verified.",
+      "limitations": "Graph is static approximation, no T-SQL semantic parser verified, default telemetry and update egress require opt-out, global DSH/Hermes installers alter agent config, and real private source/credentials are forbidden in initial tests.",
+      "next_test": "A existing grep/Read/LSP on frozen synthetic C#/TypeScript/Python cross-file question fixtures; B pinned CodeGraph source in isolated offline CLI without global install; C fake-home MCP/adapter only if owner permits; verify exact links/dynamic limits, p95 time, processed and resident tokens, SQLite disk/CPU/RSS/IO, watcher freshness and zero egress.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/codegraph.md",
+      "source_line": 14,
+      "source_excerpt": "| [CodeGraph](../../studies/codegraph.md) | **dsh-runtime** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/dsh-runtime/PROJECT.md) names TypeScript/Cordis runtime and workspace modules: graph could identify agent-loop/hook/plugin call chains and effects of refactor | Published DSH installer is for upstream's `DSH_HOME` patch and does not prove matching this fork; never modify real `~/.dsh`/agent instructions, remote LLM or active runtime; separate clean fixture | Synthetic TypeScript Cordis-like callbacks, dynamic-import, plugin registration and branch switch; A grep/Read B graph CLI C fake-home MCP only after gate; verify exact source edges and accepted tests | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry descriptions were read for target; actual target implementation seam, acceptance-quality improvement and data isolation not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "codegraph-Harness-documentary-20261124",
+      "study_id": "codegraph",
+      "project_id": "Harness",
+      "review_id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source implements code-graph retrieval, but only project-registry purpose and tech profile support this target as a potential navigation experiment; target source integration and actual costs not verified.",
+      "limitations": "Graph is static approximation, no T-SQL semantic parser verified, default telemetry and update egress require opt-out, global DSH/Hermes installers alter agent config, and real private source/credentials are forbidden in initial tests.",
+      "next_test": "A existing grep/Read/LSP on frozen synthetic C#/TypeScript/Python cross-file question fixtures; B pinned CodeGraph source in isolated offline CLI without global install; C fake-home MCP/adapter only if owner permits; verify exact links/dynamic limits, p95 time, processed and resident tokens, SQLite disk/CPU/RSS/IO, watcher freshness and zero egress.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/codegraph.md",
+      "source_line": 15,
+      "source_excerpt": "| [CodeGraph](../../studies/codegraph.md) | **Harness** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/Harness/PROJECT.md) describes DSH adapters, probes and nested source; graph could help trace cross-file dependency changes and isolate regression impact | Nested/ignored repos require explicit opt-in and can contain credentials, generated fixtures or vendored code; not proven complete; no production integrations or global installation | Public/synthetic adapter→probe graph with 2 branch/worktree states, index build cost, watcher update, false positive/dynamic edge audit; independent verifier | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry descriptions were read for target; actual target implementation seam, acceptance-quality improvement and data isolation not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "codegraph-HermesAgent-documentary-20261124",
+      "study_id": "codegraph",
+      "project_id": "HermesAgent",
+      "review_id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source implements code-graph retrieval, but only project-registry purpose and tech profile support this target as a potential navigation experiment; target source integration and actual costs not verified.",
+      "limitations": "Graph is static approximation, no T-SQL semantic parser verified, default telemetry and update egress require opt-out, global DSH/Hermes installers alter agent config, and real private source/credentials are forbidden in initial tests.",
+      "next_test": "A existing grep/Read/LSP on frozen synthetic C#/TypeScript/Python cross-file question fixtures; B pinned CodeGraph source in isolated offline CLI without global install; C fake-home MCP/adapter only if owner permits; verify exact links/dynamic limits, p95 time, processed and resident tokens, SQLite disk/CPU/RSS/IO, watcher freshness and zero egress.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/codegraph.md",
+      "source_line": 16,
+      "source_excerpt": "| [CodeGraph](../../studies/codegraph.md) | **HermesAgent** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/HermesAgent/PROJECT.md) is live Hermes gateway configuration; upstream code has **real** `mcp_servers.codegraph` integration with safeguards against `platform_toolsets` allowlist regression | HermesAgent repo **is not Hermes engine source**, so little benefit from indexing just its configuration; no touch real `$HERMES_HOME/config.yaml` or run installer; service permissions and private MCP data protected | In **fake HOME** test-only clone, compare rendered config before/after one adapter call, ensure unrelated MCPs survive, no absolute paths/secrets, local stub TypeScript project, 0 egress | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry descriptions were read for target; actual target implementation seam, acceptance-quality improvement and data isolation not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "codegraph-dsh-paper2agent-documentary-20261124",
+      "study_id": "codegraph",
+      "project_id": "dsh-paper2agent",
+      "review_id": "codegraph-index-freshness-telemetry-and-benchmark-audit-20261124",
+      "date": "2026-11-24",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Pinned source implements code-graph retrieval, but only project-registry purpose and tech profile support this target as a potential navigation experiment; target source integration and actual costs not verified.",
+      "limitations": "Graph is static approximation, no T-SQL semantic parser verified, default telemetry and update egress require opt-out, global DSH/Hermes installers alter agent config, and real private source/credentials are forbidden in initial tests.",
+      "next_test": "A existing grep/Read/LSP on frozen synthetic C#/TypeScript/Python cross-file question fixtures; B pinned CodeGraph source in isolated offline CLI without global install; C fake-home MCP/adapter only if owner permits; verify exact links/dynamic limits, p95 time, processed and resident tokens, SQLite disk/CPU/RSS/IO, watcher freshness and zero egress.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-24/codegraph.md",
+      "source_line": 17,
+      "source_excerpt": "| [CodeGraph](../../studies/codegraph.md) | **dsh-paper2agent** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/06-independent-research/dsh-paper2agent/PROJECT.md) describes a separate Python CLI/MCP research-to-experiment project with complex paths; CodeGraph could be a **source-navigation only** complement for methodology reviewers | Experimental Paper2Project remains separate, existing cited source snapshots/independent reviewer are authoritative; graph links **are not** verifiable scientific citations nor allowed to run code or experiments | Compare developer's existing navigation vs CodeGraph on public synthetic Python code; source-line exact checks, no changes to Paper2Project CLI/API, repeat with cold/warm index and retention costs | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Only pinned project-registry descriptions were read for target; actual target implementation seam, acceptance-quality improvement and data isolation not verified.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19183,31 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "codegraph",
+      "project_id": "AKUZ",
+      "assessment_id": "codegraph-AKUZ-documentary-20261124"
+    },
+    {
+      "study_id": "codegraph",
+      "project_id": "dsh-runtime",
+      "assessment_id": "codegraph-dsh-runtime-documentary-20261124"
+    },
+    {
+      "study_id": "codegraph",
+      "project_id": "Harness",
+      "assessment_id": "codegraph-Harness-documentary-20261124"
+    },
+    {
+      "study_id": "codegraph",
+      "project_id": "HermesAgent",
+      "assessment_id": "codegraph-HermesAgent-documentary-20261124"
+    },
+    {
+      "study_id": "codegraph",
+      "project_id": "dsh-paper2agent",
+      "assessment_id": "codegraph-dsh-paper2agent-documentary-20261124"
     }
   ],
   "relations": [
