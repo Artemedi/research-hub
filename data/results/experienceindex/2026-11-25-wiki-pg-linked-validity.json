@@ -1,0 +1,116 @@
+{
+  "wiki_pg_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "as_of": "2026-11-25",
+  "repeat_count": 2,
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "current",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": true,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "within_declared_validity",
+      "target_alignment": "matched",
+      "target_review": "human_review_recorded",
+      "target_warning": false
+    },
+    {
+      "case": "expired_target",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "expired",
+      "target_alignment": "matched",
+      "target_review": "human_review_recorded",
+      "target_warning": true
+    },
+    {
+      "case": "unknown_deadline",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "unknown",
+      "target_alignment": "matched",
+      "target_review": "human_review_recorded",
+      "target_warning": true
+    },
+    {
+      "case": "review_predates_revision",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "within_declared_validity",
+      "target_alignment": "matched",
+      "target_review": "human_review_predates_revision",
+      "target_warning": true
+    },
+    {
+      "case": "deprecated_target",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "within_declared_validity",
+      "target_alignment": "matched",
+      "target_review": "human_review_recorded",
+      "target_warning": true
+    },
+    {
+      "case": "edited_after_index",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "unknown",
+      "target_alignment": "changed",
+      "target_review": "unknown",
+      "target_warning": true
+    },
+    {
+      "case": "deleted_after_index",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "unknown",
+      "target_alignment": "unverified",
+      "target_review": "unknown",
+      "target_warning": true
+    },
+    {
+      "case": "expired_origin",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": true,
+      "eligible": false,
+      "origin_freshness": "expired",
+      "target_freshness": "within_declared_validity",
+      "target_alignment": "matched",
+      "target_review": "human_review_recorded",
+      "target_warning": false
+    },
+    {
+      "case": "same_scope_wrong_target",
+      "baseline_contains_intended_target": false,
+      "link_returns_indexed_chunk": true,
+      "intended_target": false,
+      "eligible": true,
+      "origin_freshness": "within_declared_validity",
+      "target_freshness": "within_declared_validity",
+      "target_alignment": "matched",
+      "target_review": "human_review_recorded",
+      "target_warning": false
+    }
+  ]
+}

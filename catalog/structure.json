@@ -3077,6 +3077,34 @@
       "title": "Paper2Project — interruption and mixed history results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/experienceindex/2026-11-25-wiki-pg-linked-validity.md",
+      "title": "ExperienceIndex — Wiki_PG linked-document validity",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/experienceindex/2026-11-25-wiki-pg-linked-validity-protocol.md",
+      "title": "ExperienceIndex — Wiki_PG linked-document validity protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/experienceindex/wiki-pg-linked-validity.py",
+      "title": "ExperienceIndex — Wiki_PG lexical link replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/experienceindex/2026-11-25-wiki-pg-linked-validity.json",
+      "title": "ExperienceIndex — Wiki_PG linked-document validity results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

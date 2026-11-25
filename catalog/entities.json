@@ -4405,6 +4405,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Project reports and decision persistence with real local flock and synthetic attempts. Container cleanup and external effects remain unmeasured.",
       "supersedes": null
+    },
+    {
+      "id": "experienceindex-wiki-pg-linked-validity-20261125",
+      "study_ids": ["experienceindex"],
+      "version_ids": ["experienceindex-version"],
+      "date": "2026-11-25",
+      "document": "reviews/experienceindex/2026-11-25-wiki-pg-linked-validity.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic documents and explicit links, with native Wiki_PG lexical retrieval. Semantic relevance, authorization and answer quality remain unmeasured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4993,6 +5003,20 @@
         "experiments/dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md",
         "experiments/dsh-superagent-prototype/paper2project-interruption.py",
         "data/results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json"
+      ]
+    },
+    {
+      "id": "experienceindex-wiki-pg-linked-validity-20261125-lab",
+      "study_ids": ["experienceindex"],
+      "review_id": "experienceindex-wiki-pg-linked-validity-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching nine-case repeats. Both-side validity blocked seven invalid pairs. A current but irrelevant target passed, as expected.",
+      "limitations": "Deliberately disjoint lexical terms and a fixed linked-target selector. No relevance or production retrieval measurement.",
+      "artifacts": [
+        "experiments/experienceindex/2026-11-25-wiki-pg-linked-validity-protocol.md",
+        "experiments/experienceindex/wiki-pg-linked-validity.py",
+        "data/results/experienceindex/2026-11-25-wiki-pg-linked-validity.json"
       ]
     }
   ],

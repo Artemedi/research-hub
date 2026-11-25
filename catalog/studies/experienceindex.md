@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [experienceindex-review](../../studies/experienceindex.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.10091vv1).
+- [experienceindex-wiki-pg-linked-validity-20261125](../../reviews/experienceindex/2026-11-25-wiki-pg-linked-validity.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.10091vv1).
 - [ExperienceIndex full-source method recheck and explicit-link retrieval A/B](../../reviews/experienceindex/2026-11-07.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -33,7 +34,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- experienceindex-wiki-pg-linked-validity-20261125-lab: SYNTHETIC / PASS. Two matching nine-case repeats. Both-side validity blocked seven invalid pairs. A current but irrelevant target passed, as expected. Deliberately disjoint lexical terms and a fixed linked-target selector. No relevance or production retrieval measurement. [Артефакт](../../experiments/experienceindex/2026-11-25-wiki-pg-linked-validity-protocol.md) · [Артефакт](../../experiments/experienceindex/wiki-pg-linked-validity.py) · [Артефакт](../../data/results/experienceindex/2026-11-25-wiki-pg-linked-validity.json)
 
 ## Ссылки из исходной карточки
 
