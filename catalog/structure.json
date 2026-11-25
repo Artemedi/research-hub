@@ -2797,6 +2797,27 @@
       "title": "Drift Inspector — B1: 2,400-work corpus manifest",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/drift-inspector/2026-11-25-b1-relevance.md",
+      "title": "Drift Inspector — B1 blind relevance screening",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/drift-inspector/b1-relevance-gate.py",
+      "title": "Drift Inspector — B1 relevance gate",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/drift-inspector/2026-11-25-b1-relevance-preparation.json",
+      "title": "Drift Inspector — B1 blind batch preparation result",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

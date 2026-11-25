@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "status": "READY_FOR_BLIND_REVIEW",
+  "selection_sha256": "b18a954dd27c675ef81631a0973889d897cc8f827b596a1dedeec8e0489f107f",
+  "local_batch_sha256": "e222a4521a7d6c37ab766fc057b81b0537869205e1f5334c2c161112e66f3c8a",
+  "test_articles": 471,
+  "query_criteria": 36,
+  "minimum_confirmed_articles": 50,
+  "confirmed_articles": null
+}
