@@ -92,6 +92,8 @@
 - [hyperresearch/2026-11-07-pinned-upstream-tests.py](hyperresearch/2026-11-07-pinned-upstream-tests.py)
 - [hyperresearch/2026-11-09-temporal-scope-ab.py](hyperresearch/2026-11-09-temporal-scope-ab.py)
 - [hyperresearch/2026-11-09-temporal-scope-oracle.py](hyperresearch/2026-11-09-temporal-scope-oracle.py)
+- [hyra-2/2026-11-25-review-protocol.md](hyra-2/2026-11-25-review-protocol.md)
+- [hyra-2/paper2project-review-lifecycle.py](hyra-2/paper2project-review-lifecycle.py)
 - [jetstream/2026-11-25-twin-protocol.md](jetstream/2026-11-25-twin-protocol.md)
 - [jetstream/twin-maintenance.py](jetstream/twin-maintenance.py)
 - [kvtether/2026-11-07-event-oracle.py](kvtether/2026-11-07-event-oracle.py)

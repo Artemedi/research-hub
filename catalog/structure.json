@@ -2895,6 +2895,34 @@
       "title": "BenchShield — synthetic report replay results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/hyra-2/2026-11-25-paper2project-review-lifecycle.md",
+      "title": "Hyra 2.0 — Paper2Project review lifecycle",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/hyra-2/2026-11-25-review-protocol.md",
+      "title": "Hyra 2.0 — synthetic review lifecycle protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/hyra-2/paper2project-review-lifecycle.py",
+      "title": "Hyra 2.0 — Paper2Project review lifecycle lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/hyra-2/2026-11-25-paper2project-review-lifecycle.json",
+      "title": "Hyra 2.0 — synthetic review lifecycle results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

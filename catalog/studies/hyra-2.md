@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [hyra-2-primary](../../reviews/hyra-2/2026-11-05.md), 2026-11-05; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [sha256:03c939a9f924c2026e5d4b47da591fe1f223a6a50e71dc3dfbe3d4b96b645688](https://hy.tencent.com/research/hyra2).
+- [hyra-2-paper2project-review-lifecycle-20261125](../../reviews/hyra-2/2026-11-25-paper2project-review-lifecycle.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [sha256:03c939a9f924c2026e5d4b47da591fe1f223a6a50e71dc3dfbe3d4b96b645688](https://hy.tencent.com/research/hyra2).
 
 ## Применимость к проектам
 
@@ -74,7 +75,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- hyra-2-paper2project-review-lifecycle-20261125-lab: SYNTHETIC / PASS. Eight dossiers per repeat through both review packet presentations, recorded finding judgments, reopened SQLite state, idempotent recording and linked staleness. Predetermined synthetic reviewer labels; no model, human effectiveness comparison or Hyra runtime execution. [Артефакт](../../experiments/hyra-2/2026-11-25-review-protocol.md) · [Артефакт](../../experiments/hyra-2/paper2project-review-lifecycle.py) · [Артефакт](../../data/results/hyra-2/2026-11-25-paper2project-review-lifecycle.json)
 
 ## Ссылки из исходной карточки
 

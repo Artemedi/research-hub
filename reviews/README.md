@@ -68,6 +68,7 @@
 | [Pinned upstream Hyperresearch 54 test execution and existing citation limits](hyperresearch/2026-11-07-upstream-tests.md) | 2026-11-07 |
 | [Hyperresearch — citation auto-pass source blocker](hyperresearch/2026-11-09-citation-adjudication.md) | 2026-11-09 |
 | [Hyra 2.0 — архитектура исследовательских агентов](hyra-2/2026-11-05.md) | 2026-11-05 |
+| [Hyra 2.0 — Paper2Project review lifecycle](hyra-2/2026-11-25-paper2project-review-lifecycle.md) | 2026-11-25 |
 | [Inspektor Gadget — разрешения eBPF](inspektor-gadget/2026-11-04.md) | 2026-11-04 |
 | [BK-041 — проверка системного допуска](inspektor-gadget/2026-11-06-privilege-gate.md) | 2026-11-06 |
 | [BK-041 privileged Podman eBPF trace audit](inspektor-gadget/2026-11-06-privileged-podman-trace.md) | 2026-11-06 |

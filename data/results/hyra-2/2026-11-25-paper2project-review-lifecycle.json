@@ -1,0 +1,12 @@
+{
+  "target_commit": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "dossiers": 8,
+  "finding_status_counts": {
+    "REVIEWED_PREMISE_SUPPORTED": 2,
+    "REVIEWED_PREMISE_CONTRADICTED": 2,
+    "PENDING_SEMANTIC_REVIEW": 4
+  },
+  "packet_pairs_matched": 8,
+  "reopen_and_idempotence_passed": 8,
+  "stale_history_passed": 8
+}

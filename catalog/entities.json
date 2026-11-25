@@ -4345,6 +4345,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Project report and persisted-result comparison inspected. No author runtime or infrastructure event capture measured.",
       "supersedes": null
+    },
+    {
+      "id": "hyra-2-paper2project-review-lifecycle-20261125",
+      "study_ids": ["hyra-2"],
+      "version_ids": ["hyra-2-article-2026-11-05"],
+      "date": "2026-11-25",
+      "document": "reviews/hyra-2/2026-11-25-paper2project-review-lifecycle.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Only Paper2Project's review packets and decision history were exercised. Reviewer quality, Hyra's orchestration and publish authority remain unmeasured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4847,6 +4857,20 @@
         "experiments/benchshield/2026-11-25-paper2project-protocol.md",
         "experiments/benchshield/paper2project-report-replay.py",
         "data/results/benchshield/2026-11-25-paper2project-report-replay.json"
+      ]
+    },
+    {
+      "id": "hyra-2-paper2project-review-lifecycle-20261125-lab",
+      "study_ids": ["hyra-2"],
+      "review_id": "hyra-2-paper2project-review-lifecycle-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Eight dossiers per repeat through both review packet presentations, recorded finding judgments, reopened SQLite state, idempotent recording and linked staleness.",
+      "limitations": "Predetermined synthetic reviewer labels; no model, human effectiveness comparison or Hyra runtime execution.",
+      "artifacts": [
+        "experiments/hyra-2/2026-11-25-review-protocol.md",
+        "experiments/hyra-2/paper2project-review-lifecycle.py",
+        "data/results/hyra-2/2026-11-25-paper2project-review-lifecycle.json"
       ]
     }
   ],
