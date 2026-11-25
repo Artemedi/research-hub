@@ -4465,6 +4465,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Real MCP and two disposable PostgreSQL versions with one setting. No performance or production integration measured.",
       "supersedes": null
+    },
+    {
+      "id": "mccl-wiki-pg-catalogue-retention-20261125",
+      "study_ids": ["memory-centric-continual-learning"],
+      "version_ids": ["memory-centric-continual-learning-version"],
+      "date": "2026-11-25",
+      "document": "reviews/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic snapshot retention and update checks. Agent learning, transfer and production ingest behavior were not measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5137,6 +5147,20 @@
         "experiments/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md",
         "experiments/mcp-toolbox-postgres/wiki-pg-temporal-contract.py",
         "data/results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json"
+      ]
+    },
+    {
+      "id": "mccl-wiki-pg-catalogue-retention-20261125-lab",
+      "study_ids": ["memory-centric-continual-learning"],
+      "review_id": "mccl-wiki-pg-catalogue-retention-20261125",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two matching 18-case repeats. Incremental reads matched clean rebuilds except for six edits preserving size and mtime; subsequent visible updates recovered.",
+      "limitations": "Synthetic source replacement and deletion; the normal source process may be append-only. No agent training or production data.",
+      "artifacts": [
+        "experiments/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md",
+        "experiments/memory-centric-continual-learning/wiki-pg-catalogue-retention.py",
+        "data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json"
       ]
     }
   ],

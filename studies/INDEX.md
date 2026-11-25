@@ -56,7 +56,7 @@
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | [2026-10-05 / maadbench-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-maadbench-2026-11-05](../reviews/maadbench/2026-11-05-full-text.md) |
 | [Matoi](matoi.md) | [2026-11-03 / matoi-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [MemComposer](memcomposer.md) | [2026-11-03 / memcomposer-review](../portfolio/2026-10-12--2026-10-19/review.md) |
-| [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [2026-11-03 / memory-centric-continual-learning-review](../portfolio/2026-10-20--2026-10-26/review.md) |
+| [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [2026-11-03 / memory-centric-continual-learning-review](../portfolio/2026-10-20--2026-10-26/review.md) · [2026-11-25 / mccl-wiki-pg-catalogue-retention-20261125](../reviews/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.md) |
 | [MemScope](memscope.md) | [2026-11-03 / memscope-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04 / microsoft-skill-recorder-review](../reviews/microsoft-skill-recorder/2026-11-04.md) |
 | [MobileProbe — trajectory-aware injection testing for Android GUI agents](mobileprobe.md) | [2026-11-14 / mobileprobe-fulltext-20261114](../reviews/mobileprobe/2026-11-14.md) |

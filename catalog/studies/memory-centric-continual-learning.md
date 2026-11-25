@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [memory-centric-continual-learning-review](../../portfolio/2026-10-20--2026-10-26/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.29357v1).
+- [mccl-wiki-pg-catalogue-retention-20261125](../../reviews/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.29357v1).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- mccl-wiki-pg-catalogue-retention-20261125-lab: SYNTHETIC / OBSERVED. Two matching 18-case repeats. Incremental reads matched clean rebuilds except for six edits preserving size and mtime; subsequent visible updates recovered. Synthetic source replacement and deletion; the normal source process may be append-only. No agent training or production data. [Артефакт](../../experiments/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md) · [Артефакт](../../experiments/memory-centric-continual-learning/wiki-pg-catalogue-retention.py) · [Артефакт](../../data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json)
 
 ## Ссылки из исходной карточки
 

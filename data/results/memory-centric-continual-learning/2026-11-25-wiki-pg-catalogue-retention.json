@@ -1,0 +1,607 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 2,
+  "status": "PASS_WITH_OBSERVED_LIMIT",
+  "fixtures": {
+    "11": [
+      {
+        "phase": "initial",
+        "index_state": "unchanged",
+        "incremental_latest": 12,
+        "fresh_latest": 12,
+        "open_reader_latest": 12,
+        "incremental_history": [
+          {
+            "value": 12,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "da2ef4f781d9767c0447a957a1dc92007bfb992348df74493f04ba87c28bdbea"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 12,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "da2ef4f781d9767c0447a957a1dc92007bfb992348df74493f04ba87c28bdbea"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ]
+      },
+      {
+        "phase": "interference",
+        "index_state": "complete",
+        "incremental_latest": 12,
+        "fresh_latest": 12,
+        "open_reader_latest": 12,
+        "incremental_history": [
+          {
+            "value": 12,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "da2ef4f781d9767c0447a957a1dc92007bfb992348df74493f04ba87c28bdbea"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 12,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "da2ef4f781d9767c0447a957a1dc92007bfb992348df74493f04ba87c28bdbea"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ]
+      },
+      {
+        "phase": "changed_size",
+        "index_state": "complete",
+        "incremental_latest": 111,
+        "fresh_latest": 111,
+        "open_reader_latest": 12,
+        "incremental_history": [
+          {
+            "value": 111,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "cf7fb43172470167239685a3cd5f994006f18b57d1b6c3aa7851478cc0b0a9ee"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 111,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "cf7fb43172470167239685a3cd5f994006f18b57d1b6c3aa7851478cc0b0a9ee"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ]
+      },
+      {
+        "phase": "same_size_and_mtime",
+        "index_state": "unchanged",
+        "incremental_latest": 111,
+        "fresh_latest": 112,
+        "open_reader_latest": 12,
+        "incremental_history": [
+          {
+            "value": 111,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "cf7fb43172470167239685a3cd5f994006f18b57d1b6c3aa7851478cc0b0a9ee"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 112,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "b2f6bf88ce3b2646d76713b10df3fbc82ee4d54c3f68f6db45b23bab8e514a86"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ]
+      },
+      {
+        "phase": "next_visible_update",
+        "index_state": "complete",
+        "incremental_latest": 112,
+        "fresh_latest": 112,
+        "open_reader_latest": 12,
+        "incremental_history": [
+          {
+            "value": 112,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "b2f6bf88ce3b2646d76713b10df3fbc82ee4d54c3f68f6db45b23bab8e514a86"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 112,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "b2f6bf88ce3b2646d76713b10df3fbc82ee4d54c3f68f6db45b23bab8e514a86"
+          },
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ]
+      },
+      {
+        "phase": "withdrawn",
+        "index_state": "complete",
+        "incremental_latest": 11,
+        "fresh_latest": 11,
+        "open_reader_latest": 12,
+        "incremental_history": [
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 11,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "1415733e57cff00e5fad6d747f21c05f1a3b51b54da03642f3994177aa3be494"
+          }
+        ]
+      }
+    ],
+    "24": [
+      {
+        "phase": "initial",
+        "index_state": "unchanged",
+        "incremental_latest": 25,
+        "fresh_latest": 25,
+        "open_reader_latest": 25,
+        "incremental_history": [
+          {
+            "value": 25,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "69fddbd9fdbf82e11991a4265e06d44c8d8837d9f2c9a2bd414e91e6ac3a6c66"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 25,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "69fddbd9fdbf82e11991a4265e06d44c8d8837d9f2c9a2bd414e91e6ac3a6c66"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ]
+      },
+      {
+        "phase": "interference",
+        "index_state": "complete",
+        "incremental_latest": 25,
+        "fresh_latest": 25,
+        "open_reader_latest": 25,
+        "incremental_history": [
+          {
+            "value": 25,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "69fddbd9fdbf82e11991a4265e06d44c8d8837d9f2c9a2bd414e91e6ac3a6c66"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 25,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "69fddbd9fdbf82e11991a4265e06d44c8d8837d9f2c9a2bd414e91e6ac3a6c66"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ]
+      },
+      {
+        "phase": "changed_size",
+        "index_state": "complete",
+        "incremental_latest": 124,
+        "fresh_latest": 124,
+        "open_reader_latest": 25,
+        "incremental_history": [
+          {
+            "value": 124,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "2bec41a4c577a6fed7f45efbba16d5878cfd969258d63782ce3acf6b6acd53fd"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 124,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "2bec41a4c577a6fed7f45efbba16d5878cfd969258d63782ce3acf6b6acd53fd"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ]
+      },
+      {
+        "phase": "same_size_and_mtime",
+        "index_state": "unchanged",
+        "incremental_latest": 124,
+        "fresh_latest": 125,
+        "open_reader_latest": 25,
+        "incremental_history": [
+          {
+            "value": 124,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "2bec41a4c577a6fed7f45efbba16d5878cfd969258d63782ce3acf6b6acd53fd"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 125,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "f7f652bdb30fb706bcb4e2abdb67606dcf16b7d174304103a7df254d6d92ea35"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ]
+      },
+      {
+        "phase": "next_visible_update",
+        "index_state": "complete",
+        "incremental_latest": 125,
+        "fresh_latest": 125,
+        "open_reader_latest": 25,
+        "incremental_history": [
+          {
+            "value": 125,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "f7f652bdb30fb706bcb4e2abdb67606dcf16b7d174304103a7df254d6d92ea35"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 125,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "f7f652bdb30fb706bcb4e2abdb67606dcf16b7d174304103a7df254d6d92ea35"
+          },
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ]
+      },
+      {
+        "phase": "withdrawn",
+        "index_state": "complete",
+        "incremental_latest": 24,
+        "fresh_latest": 24,
+        "open_reader_latest": 25,
+        "incremental_history": [
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 24,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "564a5f1d59769b7ddd815ec3266164df7778141678c28b29f0ca371f1513484a"
+          }
+        ]
+      }
+    ],
+    "63": [
+      {
+        "phase": "initial",
+        "index_state": "unchanged",
+        "incremental_latest": 64,
+        "fresh_latest": 64,
+        "open_reader_latest": 64,
+        "incremental_history": [
+          {
+            "value": 64,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "3841845864d4fec555d42ba05bd5825f59be024494775efe182b34e76b9ec161"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 64,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "3841845864d4fec555d42ba05bd5825f59be024494775efe182b34e76b9ec161"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ]
+      },
+      {
+        "phase": "interference",
+        "index_state": "complete",
+        "incremental_latest": 64,
+        "fresh_latest": 64,
+        "open_reader_latest": 64,
+        "incremental_history": [
+          {
+            "value": 64,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "3841845864d4fec555d42ba05bd5825f59be024494775efe182b34e76b9ec161"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 64,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "3841845864d4fec555d42ba05bd5825f59be024494775efe182b34e76b9ec161"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ]
+      },
+      {
+        "phase": "changed_size",
+        "index_state": "complete",
+        "incremental_latest": 163,
+        "fresh_latest": 163,
+        "open_reader_latest": 64,
+        "incremental_history": [
+          {
+            "value": 163,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "92e96b5cbd9b7fa0ef0330ce7043e72a803e8fe3a4fa5558a92b83f4a365d951"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 163,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "92e96b5cbd9b7fa0ef0330ce7043e72a803e8fe3a4fa5558a92b83f4a365d951"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ]
+      },
+      {
+        "phase": "same_size_and_mtime",
+        "index_state": "unchanged",
+        "incremental_latest": 163,
+        "fresh_latest": 164,
+        "open_reader_latest": 64,
+        "incremental_history": [
+          {
+            "value": 163,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "92e96b5cbd9b7fa0ef0330ce7043e72a803e8fe3a4fa5558a92b83f4a365d951"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 164,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "cceb79dc2c5e2918f348c395f5ebe3b1b3b6a3fc81a2eb9ab6e0fc9ea5aaabb1"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ]
+      },
+      {
+        "phase": "next_visible_update",
+        "index_state": "complete",
+        "incremental_latest": 164,
+        "fresh_latest": 164,
+        "open_reader_latest": 64,
+        "incremental_history": [
+          {
+            "value": 164,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "cceb79dc2c5e2918f348c395f5ebe3b1b3b6a3fc81a2eb9ab6e0fc9ea5aaabb1"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 164,
+            "observed_at": "2026-11-25T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-25T00-00-00Z.json",
+            "sha256": "cceb79dc2c5e2918f348c395f5ebe3b1b3b6a3fc81a2eb9ab6e0fc9ea5aaabb1"
+          },
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ]
+      },
+      {
+        "phase": "withdrawn",
+        "index_state": "complete",
+        "incremental_latest": 63,
+        "fresh_latest": 63,
+        "open_reader_latest": 64,
+        "incremental_history": [
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ],
+        "fresh_history": [
+          {
+            "value": 63,
+            "observed_at": "2026-11-23T00:00:00Z",
+            "source": "raw/sysconfig-report/fixture/FixtureAlpha/2026-11-23T00-00-00Z.json",
+            "sha256": "ed7f84daead7b4c6c32dc387f55af74d7b135c3089d4bb55d06aeb9109c691d6"
+          }
+        ]
+      }
+    ]
+  }
+}

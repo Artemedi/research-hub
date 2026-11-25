@@ -3245,6 +3245,34 @@
       "title": "MCP Toolbox — temporal comparison results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.md",
+      "title": "MCCL — Wiki_PG snapshot retention and catalogue updates",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md",
+      "title": "MCCL — snapshot retention and update protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/memory-centric-continual-learning/wiki-pg-catalogue-retention.py",
+      "title": "MCCL — Wiki_PG catalogue generation replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json",
+      "title": "MCCL — catalogue retention and freshness results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
