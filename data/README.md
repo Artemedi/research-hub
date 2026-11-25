@@ -68,6 +68,7 @@
 | [data/results/experienceindex/2026-11-07-link-oracle.json](results/experienceindex/2026-11-07-link-oracle.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-07-link-retrieval.json](results/experienceindex/2026-11-07-link-retrieval.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-25-wiki-pg-linked-validity.json](results/experienceindex/2026-11-25-wiki-pg-linked-validity.json) | Результат ограниченной проверки |
+| [data/results/geoagent/2026-11-25-paper2project-artifact-binding.json](results/geoagent/2026-11-25-paper2project-artifact-binding.json) | Результат ограниченной проверки |
 | [data/results/goal-aware-dynamic-collaboration/2026-11-07-council.json](results/goal-aware-dynamic-collaboration/2026-11-07-council.json) | Результат ограниченной проверки |
 | [data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-guard.json](results/goal-aware-dynamic-collaboration/2026-11-07-dag-guard.json) | Результат ограниченной проверки |
 | [data/results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json](results/goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.json) | Результат ограниченной проверки |

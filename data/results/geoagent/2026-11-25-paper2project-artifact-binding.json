@@ -1,0 +1,277 @@
+{
+  "revision": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "repeat_count": 2,
+  "status": "PASS",
+  "cases": [
+    {
+      "fixture": 1,
+      "scenario": "exact",
+      "correct_input": true,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 1,
+      "scenario": "unknown_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 1,
+      "scenario": "mismatched_hash",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 1,
+      "scenario": "incorrect_line",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact needs an exact quote and its precise line range",
+      "status": null
+    },
+    {
+      "fixture": 1,
+      "scenario": "next_snapshot_same_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 1,
+      "scenario": "wrong_role_with_valid_binding",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 2,
+      "scenario": "exact",
+      "correct_input": true,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 2,
+      "scenario": "unknown_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 2,
+      "scenario": "mismatched_hash",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 2,
+      "scenario": "incorrect_line",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact needs an exact quote and its precise line range",
+      "status": null
+    },
+    {
+      "fixture": 2,
+      "scenario": "next_snapshot_same_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 2,
+      "scenario": "wrong_role_with_valid_binding",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 3,
+      "scenario": "exact",
+      "correct_input": true,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 3,
+      "scenario": "unknown_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 3,
+      "scenario": "mismatched_hash",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 3,
+      "scenario": "incorrect_line",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact needs an exact quote and its precise line range",
+      "status": null
+    },
+    {
+      "fixture": 3,
+      "scenario": "next_snapshot_same_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 3,
+      "scenario": "wrong_role_with_valid_binding",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 4,
+      "scenario": "exact",
+      "correct_input": true,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 4,
+      "scenario": "unknown_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 4,
+      "scenario": "mismatched_hash",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 4,
+      "scenario": "incorrect_line",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact needs an exact quote and its precise line range",
+      "status": null
+    },
+    {
+      "fixture": 4,
+      "scenario": "next_snapshot_same_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 4,
+      "scenario": "wrong_role_with_valid_binding",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 5,
+      "scenario": "exact",
+      "correct_input": true,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    },
+    {
+      "fixture": 5,
+      "scenario": "unknown_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 5,
+      "scenario": "mismatched_hash",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 5,
+      "scenario": "incorrect_line",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact needs an exact quote and its precise line range",
+      "status": null
+    },
+    {
+      "fixture": 5,
+      "scenario": "next_snapshot_same_name",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": false,
+      "error": "Finding artifact must match an attachment in this project's frozen snapshot",
+      "status": null
+    },
+    {
+      "fixture": 5,
+      "scenario": "wrong_role_with_valid_binding",
+      "correct_input": false,
+      "shape_accepted": true,
+      "native_accepted": true,
+      "error": null,
+      "status": "PENDING_SEMANTIC_REVIEW"
+    }
+  ]
+}

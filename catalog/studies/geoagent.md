@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [geoagent-review](../../studies/geoagent.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.31096vv2).
+- [geoagent-paper2project-artifact-binding-20261125](../../reviews/geoagent/2026-11-25-paper2project-artifact-binding.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.31096vv2).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- geoagent-paper2project-artifact-binding-20261125-lab: SYNTHETIC / PASS. Two matching 30-case repeats. All 20 structurally invalid references rejected. Five correct and five role-mismatched valid references retained for semantic review. Manual shape-only comparator, synthetic artifacts and local snapshots. No model, scientific execution or latency measurements. [Артефакт](../../experiments/geoagent/2026-11-25-paper2project-artifact-binding-protocol.md) · [Артефакт](../../experiments/geoagent/paper2project-artifact-binding.py) · [Артефакт](../../data/results/geoagent/2026-11-25-paper2project-artifact-binding.json)
 
 ## Ссылки из исходной карточки
 

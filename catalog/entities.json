@@ -4415,6 +4415,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic documents and explicit links, with native Wiki_PG lexical retrieval. Semantic relevance, authorization and answer quality remain unmeasured.",
       "supersedes": null
+    },
+    {
+      "id": "geoagent-paper2project-artifact-binding-20261125",
+      "study_ids": ["geoagent"],
+      "version_ids": ["geoagent-version"],
+      "date": "2026-11-25",
+      "document": "reviews/geoagent/2026-11-25-paper2project-artifact-binding.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic reference acceptance and preserved quotes in Paper2Project. Artifact role and seismic workflow correctness are outside the measured contract.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5017,6 +5027,20 @@
         "experiments/experienceindex/2026-11-25-wiki-pg-linked-validity-protocol.md",
         "experiments/experienceindex/wiki-pg-linked-validity.py",
         "data/results/experienceindex/2026-11-25-wiki-pg-linked-validity.json"
+      ]
+    },
+    {
+      "id": "geoagent-paper2project-artifact-binding-20261125-lab",
+      "study_ids": ["geoagent"],
+      "review_id": "geoagent-paper2project-artifact-binding-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching 30-case repeats. All 20 structurally invalid references rejected. Five correct and five role-mismatched valid references retained for semantic review.",
+      "limitations": "Manual shape-only comparator, synthetic artifacts and local snapshots. No model, scientific execution or latency measurements.",
+      "artifacts": [
+        "experiments/geoagent/2026-11-25-paper2project-artifact-binding-protocol.md",
+        "experiments/geoagent/paper2project-artifact-binding.py",
+        "data/results/geoagent/2026-11-25-paper2project-artifact-binding.json"
       ]
     }
   ],

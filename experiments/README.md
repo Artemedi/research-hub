@@ -98,6 +98,8 @@
 - [experienceindex/2026-11-07-link-retrieval.py](experienceindex/2026-11-07-link-retrieval.py)
 - [experienceindex/2026-11-25-wiki-pg-linked-validity-protocol.md](experienceindex/2026-11-25-wiki-pg-linked-validity-protocol.md)
 - [experienceindex/wiki-pg-linked-validity.py](experienceindex/wiki-pg-linked-validity.py)
+- [geoagent/2026-11-25-paper2project-artifact-binding-protocol.md](geoagent/2026-11-25-paper2project-artifact-binding-protocol.md)
+- [geoagent/paper2project-artifact-binding.py](geoagent/paper2project-artifact-binding.py)
 - [goal-aware-dynamic-collaboration/2026-11-07-council.py](goal-aware-dynamic-collaboration/2026-11-07-council.py)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs](goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py](goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py)

@@ -3105,6 +3105,34 @@
       "title": "ExperienceIndex — Wiki_PG linked-document validity results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/geoagent/2026-11-25-paper2project-artifact-binding.md",
+      "title": "GeoAgent — Paper2Project named-artifact binding",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/geoagent/2026-11-25-paper2project-artifact-binding-protocol.md",
+      "title": "GeoAgent — named-artifact binding replay protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/geoagent/paper2project-artifact-binding.py",
+      "title": "GeoAgent — Paper2Project snapshot-binding replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/geoagent/2026-11-25-paper2project-artifact-binding.json",
+      "title": "GeoAgent — Paper2Project snapshot-binding results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
