@@ -1393,6 +1393,20 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "cli-anything",
+      "title": "CLI-Anything — backend-first agent-native CLI harness generation",
+      "kind": "engineering",
+      "card": "studies/cli-anything.md",
+      "primary_url": "https://github.com/HKUDS/CLI-Anything",
+      "current_review_id": "cli-anything-agent-native-harness-audit-20261125",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "369d879bd7a436cddd15e3a91b020258b0d8cca3a024265125e99a0d18b81b27",
+      "linked_materials": [
+        "reviews/cli-anything/2026-11-25.md",
+        "portfolio/2026-11-25/cli-anything.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2282,13 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "cli-anything-34f5195",
+      "study_id": "cli-anything",
+      "ref": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "url": "https://github.com/HKUDS/CLI-Anything/tree/34f519533bc175d2fe287ab8316b0dd99bb9cc43",
       "unknown_reason": null
     }
   ],
@@ -4176,6 +4197,20 @@
       "document": "reviews/tufazip/2026-11-21.md",
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
+      "supersedes": null
+    },
+    {
+      "id": "cli-anything-agent-native-harness-audit-20261125",
+      "study_ids": [
+        "cli-anything"
+      ],
+      "version_ids": [
+        "cli-anything-34f5195"
+      ],
+      "date": "2026-11-25",
+      "document": "reviews/cli-anything/2026-11-25.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned SOP, CLI-Hub registry/installer/analytics, Hermes skill, selected LibreOffice and Obsidian backends, test sources and author preprint reviewed. No runtime build or independent E2E; no universal GUI parity, security or benchmark superiority established.",
       "supersedes": null
     }
   ],
@@ -16456,6 +16491,111 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "cli-anything-psqlqa-documentary-20261125",
+      "study_id": "cli-anything",
+      "project_id": "psqlqa",
+      "review_id": "cli-anything-agent-native-harness-audit-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified.",
+      "limitations": "Remote registry command execution, opt-out analytics, Obsidian TLS verification disabled, backend-specific dependencies and semantics; no private data, live agent home, production database or global installation allowed.",
+      "next_test": "A existing CLI/API/library/GUI; B one minimal reviewed JSON CLI around real backend; C pinned skill-generated comparator in approved isolated offline sandbox. Synthetic fixtures, independent oracle, exit/timeout/path/error tests, zero unauthorized writes/egress, correctness and total cost/reviewer effort.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-25/cli-anything.md",
+      "source_line": 9,
+      "source_excerpt": "| [CLI-Anything](../../studies/cli-anything.md) | **psqlqa** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/01-dba-akuz/psqlqa/PROJECT.md): GUI query-plan analyzer; expose imported EXPLAIN JSON analysis only, if existing parser is reusable | No connection, SQL execution, pg_dump/restore or SSH; no plan semantics reimplementation | Frozen synthetic EXPLAIN JSON: compare direct parser or psql output vs minimal read-only JSON CLI; validate operators/metrics and errors | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Pinned registry descriptions only, target code and measurable benefit not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "cli-anything-akuzlogparser-documentary-20261125",
+      "study_id": "cli-anything",
+      "project_id": "akuzlogparser",
+      "review_id": "cli-anything-agent-native-harness-audit-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified.",
+      "limitations": "Remote registry command execution, opt-out analytics, Obsidian TLS verification disabled, backend-specific dependencies and semantics; no private data, live agent home, production database or global installation allowed.",
+      "next_test": "A existing CLI/API/library/GUI; B one minimal reviewed JSON CLI around real backend; C pinned skill-generated comparator in approved isolated offline sandbox. Synthetic fixtures, independent oracle, exit/timeout/path/error tests, zero unauthorized writes/egress, correctness and total cost/reviewer effort.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-25/cli-anything.md",
+      "source_line": 10,
+      "source_excerpt": "| [CLI-Anything](../../studies/cli-anything.md) | **akuzlogparser** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/01-dba-akuz/akuzlogparser/PROJECT.md): Python log parser, aggregation and HTML report generation; agent-friendly offline summary | No SMB/SSH, production logs, personal data or destructive file operations | Synthetic logs, exact counts/error/ordering oracle; compare current parser vs one read-only command | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Pinned registry descriptions only, target code and measurable benefit not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "cli-anything-MyWiki-documentary-20261125",
+      "study_id": "cli-anything",
+      "project_id": "MyWiki",
+      "review_id": "cli-anything-agent-native-harness-audit-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified.",
+      "limitations": "Remote registry command execution, opt-out analytics, Obsidian TLS verification disabled, backend-specific dependencies and semantics; no private data, live agent home, production database or global installation allowed.",
+      "next_test": "A existing CLI/API/library/GUI; B one minimal reviewed JSON CLI around real backend; C pinned skill-generated comparator in approved isolated offline sandbox. Synthetic fixtures, independent oracle, exit/timeout/path/error tests, zero unauthorized writes/egress, correctness and total cost/reviewer effort.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-25/cli-anything.md",
+      "source_line": 11,
+      "source_excerpt": "| [CLI-Anything](../../studies/cli-anything.md) | **MyWiki** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/04-personal-games/MyWiki/PROJECT.md): Markdown/Obsidian vault; compare direct local note retrieval and curated adapter | Real vault/token forbidden; verify=False in upstream Obsidian REST wrapper requires independent TLS design; no writes or deletes | Fake vault; compare Markdown search and read-only API fixture, certificate validation and exact result set | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Pinned registry descriptions only, target code and measurable benefit not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "cli-anything-agent-skills-documentary-20261125",
+      "study_id": "cli-anything",
+      "project_id": "agent-skills",
+      "review_id": "cli-anything-agent-native-harness-audit-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified.",
+      "limitations": "Remote registry command execution, opt-out analytics, Obsidian TLS verification disabled, backend-specific dependencies and semantics; no private data, live agent home, production database or global installation allowed.",
+      "next_test": "A existing CLI/API/library/GUI; B one minimal reviewed JSON CLI around real backend; C pinned skill-generated comparator in approved isolated offline sandbox. Synthetic fixtures, independent oracle, exit/timeout/path/error tests, zero unauthorized writes/egress, correctness and total cost/reviewer effort.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-25/cli-anything.md",
+      "source_line": 12,
+      "source_excerpt": "| [CLI-Anything](../../studies/cli-anything.md) | **agent-skills** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/agent-skills/PROJECT.md): Versioned skills; adopt backend-first/test/JSON contract as a review template | No global skills installation, remote mutable methodology or automatic hub execution | Compare independent reviewer acceptance of existing skill vs a single pinned template on toy tool | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Pinned registry descriptions only, target code and measurable benefit not verified.",
+      "supersedes": null
+    },
+    {
+      "id": "cli-anything-HermesAgent-documentary-20261125",
+      "study_id": "cli-anything",
+      "project_id": "HermesAgent",
+      "review_id": "cli-anything-agent-native-harness-audit-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "source_decision": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "evidence": "DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE",
+      "reason": "Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified.",
+      "limitations": "Remote registry command execution, opt-out analytics, Obsidian TLS verification disabled, backend-specific dependencies and semantics; no private data, live agent home, production database or global installation allowed.",
+      "next_test": "A existing CLI/API/library/GUI; B one minimal reviewed JSON CLI around real backend; C pinned skill-generated comparator in approved isolated offline sandbox. Synthetic fixtures, independent oracle, exit/timeout/path/error tests, zero unauthorized writes/egress, correctness and total cost/reviewer effort.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-25/cli-anything.md",
+      "source_line": 13,
+      "source_excerpt": "| [CLI-Anything](../../studies/cli-anything.md) | **HermesAgent** | [Registry](https://github.com/Artemedi/project-registry/blob/91a0ca742a3225f6c4683b51031e8bbb595fdab8/projects/02-agents-dsh/HermesAgent/PROJECT.md): Live Hermes configuration; official build/refine skill is documented source | Not runtime source; no real HERMES_HOME, cron, credentials, external model or gateway changes | Fake HOME; static review of pinned skill and generated command contract, verify existing skills unaffected | `DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE` |",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Pinned registry descriptions only, target code and measurable benefit not verified.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19043,6 +19183,31 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "cli-anything",
+      "project_id": "psqlqa",
+      "assessment_id": "cli-anything-psqlqa-documentary-20261125"
+    },
+    {
+      "study_id": "cli-anything",
+      "project_id": "akuzlogparser",
+      "assessment_id": "cli-anything-akuzlogparser-documentary-20261125"
+    },
+    {
+      "study_id": "cli-anything",
+      "project_id": "MyWiki",
+      "assessment_id": "cli-anything-MyWiki-documentary-20261125"
+    },
+    {
+      "study_id": "cli-anything",
+      "project_id": "agent-skills",
+      "assessment_id": "cli-anything-agent-skills-documentary-20261125"
+    },
+    {
+      "study_id": "cli-anything",
+      "project_id": "HermesAgent",
+      "assessment_id": "cli-anything-HermesAgent-documentary-20261125"
     }
   ],
   "relations": [

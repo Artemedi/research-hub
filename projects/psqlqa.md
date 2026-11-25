@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- |
 | [rea](../catalog/studies/rea.md) | CONDITIONAL_NEEDS_EVIDENCE | PROFILE_TRIAGE_ONLY | desktop plan analyzer fork: возможен отдельный сценарий, но конкретный consumer/contract не подтверждён; не implementation shortlist. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
 | [vercel-agent-desktop](../catalog/studies/vercel-agent-desktop.md) | PROFILE_CANDIDATE_NOT_VALIDATED | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | desktop plan analyzer fork: предметный кандидат из профиля; текущий target source seam и acceptance baseline не проверены. См. ограничения и тест в отчёте. | [Обзор](../reviews/vercel-agent-desktop/2026-11-05-wayland.md) · [Основание](../data/project-fit/vercel-agent-desktop/2026-11-05.json) |
+| [cli-anything](../catalog/studies/cli-anything.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified. | [Обзор](../reviews/cli-anything/2026-11-25.md) · [Основание](../portfolio/2026-11-25/cli-anything.md) |
 
 ## Соответствие не подтверждено или применение отложено
 

@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+96 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -23,6 +23,7 @@
 | [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / cera-moa-full-text-2026-11-05](../reviews/cera-moa/2026-11-05-full-text.md) · [2026-11-08 / cera-moa-routing-contract-20261108](../reviews/cera-moa/2026-11-08-routing-contract.md) |
 | [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04 / chartli-review](../reviews/chartli/2026-11-04.md) |
 | [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md) | [2026-11-04 / claude-swarm-review](../reviews/claude-swarm/2026-11-04.md) |
+| [CLI-Anything — agent-native CLI harness generation and backend validation](cli-anything.md) | [2026-11-25 / cli-anything-agent-native-harness-audit-20261125](../reviews/cli-anything/2026-11-25.md) |
 | [Concordat — Typed Sessions for LLM Agents](concordat.md) | [2026-11-03 / concordat-review](concordat.md) |
 | [Covert Assistance — Helpful LLM Agents Evade Oversight](covert-assistance.md) | [2026-10-05 / covert-assistance-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-covert-assistance-2026-11-05](../reviews/covert-assistance/2026-11-05-full-text.md) |
 | [Cursor — Improved Token Efficiency](cursor-token-efficiency.md) | [2026-09-28 / cursor-token-efficiency-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-05 / cursor-token-efficiency-primary-2026-11-05](../reviews/cursor-token-efficiency/2026-11-05-primary.md) · [2026-11-07 / cursor-token-efficiency-zcode-council-20261107](../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) |

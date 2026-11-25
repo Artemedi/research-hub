@@ -11,6 +11,7 @@
 | Источник | Решение | Доказательность | Основание | Проверка |
 | --- | --- | --- | --- | --- |
 | [chartli](../catalog/studies/chartli.md) | DOCUMENTED_CANDIDATE | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE | \| akuzlogparser \| описанные stages и elapsed_s @d6061aa дают числовой diagnostic output для сравнения с таблицей. \| Проверить формат, выгоду визуализации и совместимость Windows; отдельная валидация NaN, missing и времени. \| PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE \| | [Обзор](../reviews/chartli/2026-11-04.md) · [Основание](../reviews/chartli/2026-11-04.md) |
+| [cli-anything](../catalog/studies/cli-anything.md) | DOCUMENTED_CANDIDATE | DOCUMENTED_CANDIDATE / NEEDS_EVIDENCE | Documentary project profile and backend-first CLI methodology support a conditional read-only wrapper or review-template comparator; no unmet interface need or target seam verified. | [Обзор](../reviews/cli-anything/2026-11-25.md) · [Основание](../portfolio/2026-11-25/cli-anything.md) |
 
 ## Соответствие не подтверждено или применение отложено
 
