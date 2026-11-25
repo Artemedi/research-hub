@@ -1,0 +1,196 @@
+{
+  "wiki_pg_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "toolbox_sha256": "f6fac005c39898a379523700727a2a3d0a2828f579bec22cc0efe74e0652062d",
+  "postgres_images": {
+    "15.20": "sha256:91b9edc40277faf94bc1e3d7ae621b185fa70f3099b94309c4731a8296114870",
+    "18.3": "sha256:7e32e9833a6fb1c92c32552794cb6ed569d51b445a54907d35fc112ef39684db"
+  },
+  "repeat_count": 2,
+  "status": "PASS",
+  "versions": {
+    "15.20": [
+      {
+        "live_oracle_kB": "4096",
+        "toolbox_kB": "4096",
+        "snapshots": {
+          "2026-11-23": {
+            "status": "ok",
+            "setting": "4096",
+            "unit": "kB",
+            "captured_at": "2026-11-23T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-23_22-00-00.json"
+          },
+          "2026-11-25": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "latest": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "2026-11-24": {
+            "status": "no_snapshot"
+          }
+        }
+      },
+      {
+        "live_oracle_kB": "8192",
+        "toolbox_kB": "8192",
+        "snapshots": {
+          "2026-11-23": {
+            "status": "ok",
+            "setting": "4096",
+            "unit": "kB",
+            "captured_at": "2026-11-23T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-23_22-00-00.json"
+          },
+          "2026-11-25": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "latest": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "2026-11-24": {
+            "status": "no_snapshot"
+          }
+        }
+      },
+      {
+        "live_oracle_kB": "16384",
+        "toolbox_kB": "16384",
+        "snapshots": {
+          "2026-11-23": {
+            "status": "ok",
+            "setting": "4096",
+            "unit": "kB",
+            "captured_at": "2026-11-23T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-23_22-00-00.json"
+          },
+          "2026-11-25": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "latest": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "2026-11-24": {
+            "status": "no_snapshot"
+          }
+        }
+      }
+    ],
+    "18.3": [
+      {
+        "live_oracle_kB": "4096",
+        "toolbox_kB": "4096",
+        "snapshots": {
+          "2026-11-23": {
+            "status": "ok",
+            "setting": "4096",
+            "unit": "kB",
+            "captured_at": "2026-11-23T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-23_22-00-00.json"
+          },
+          "2026-11-25": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "latest": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "2026-11-24": {
+            "status": "no_snapshot"
+          }
+        }
+      },
+      {
+        "live_oracle_kB": "8192",
+        "toolbox_kB": "8192",
+        "snapshots": {
+          "2026-11-23": {
+            "status": "ok",
+            "setting": "4096",
+            "unit": "kB",
+            "captured_at": "2026-11-23T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-23_22-00-00.json"
+          },
+          "2026-11-25": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "latest": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "2026-11-24": {
+            "status": "no_snapshot"
+          }
+        }
+      },
+      {
+        "live_oracle_kB": "16384",
+        "toolbox_kB": "16384",
+        "snapshots": {
+          "2026-11-23": {
+            "status": "ok",
+            "setting": "4096",
+            "unit": "kB",
+            "captured_at": "2026-11-23T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-23_22-00-00.json"
+          },
+          "2026-11-25": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "latest": {
+            "status": "ok",
+            "setting": "8192",
+            "unit": "kB",
+            "captured_at": "2026-11-25T22:00:00",
+            "source_file": "raw/sysconfig-report/fixture/FixtureHost/2026/11/FixtureHost_sysconfig_report_2026-11-25_22-00-00.json"
+          },
+          "2026-11-24": {
+            "status": "no_snapshot"
+          }
+        }
+      }
+    ]
+  }
+}

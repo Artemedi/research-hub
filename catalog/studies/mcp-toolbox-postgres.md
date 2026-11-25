@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [mcp-toolbox-postgres-review](../../reviews/mcp-toolbox-postgres/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [3e536bb683c914b26bdf9046a65b805a160af8dc](https://github.com/googleapis/genai-toolbox/tree/3e536bb683c914b26bdf9046a65b805a160af8dc).
+- [mcp-toolbox-wiki-pg-temporal-20261125](../../reviews/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [3e536bb683c914b26bdf9046a65b805a160af8dc](https://github.com/googleapis/genai-toolbox/tree/3e536bb683c914b26bdf9046a65b805a160af8dc).
 
 ## Применимость к проектам
 
@@ -30,7 +31,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- mcp-toolbox-wiki-pg-temporal-20261125-lab: ISOLATED_INTEGRATION / PASS. Two matching repeats on PostgreSQL 15.20 and 18.3. Twelve live reads matched SQL and 48 snapshot requests preserved capture or explicit absence. Fixed work_mem query and synthetic snapshots. No production data, latency or concurrency measurement. [Артефакт](../../experiments/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md) · [Артефакт](../../experiments/mcp-toolbox-postgres/wiki-pg-temporal-contract.py) · [Артефакт](../../data/results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json)
 
 ## Ссылки из исходной карточки
 

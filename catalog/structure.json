@@ -3217,6 +3217,34 @@
       "title": "KVSET — package payload and archive hash results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.md",
+      "title": "MCP Toolbox — live values and Wiki_PG snapshot dates",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md",
+      "title": "MCP Toolbox — PostgreSQL 15 and 18 temporal protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/mcp-toolbox-postgres/wiki-pg-temporal-contract.py",
+      "title": "MCP Toolbox — isolated live-versus-snapshot replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json",
+      "title": "MCP Toolbox — temporal comparison results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

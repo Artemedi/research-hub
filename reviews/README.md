@@ -94,6 +94,7 @@
 | [Local Knowledge Graph — граф рассуждений](local-knowledge-graph/2026-11-04.md) | 2026-11-04 |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка](maadbench/2026-11-05-full-text.md) | 2026-11-05 |
 | [MCP Toolbox и Wiki_PG — настройки PostgreSQL](mcp-toolbox-postgres/2026-11-04.md) | 2026-11-04 |
+| [MCP Toolbox — live values and Wiki_PG snapshot dates](mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.md) | 2026-11-25 |
 | [Microsoft Skill Recorder — действия и приватность](microsoft-skill-recorder/2026-11-04.md) | 2026-11-04 |
 | [MobileProbe — Adaptive Security Evaluation of Mobile Agents — full-text review 2026-11-14](mobileprobe/2026-11-14.md) | 2026-11-14 |
 | [NovaFabric — капсулы, replay и проверка evidence](novafabric/2026-11-04.md) | 2026-11-04 |

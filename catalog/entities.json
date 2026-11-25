@@ -4455,6 +4455,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Historical package payload verified from pinned objects. Full archive hash and current runtime execution remain unverified.",
       "supersedes": null
+    },
+    {
+      "id": "mcp-toolbox-wiki-pg-temporal-20261125",
+      "study_ids": ["mcp-toolbox-postgres"],
+      "version_ids": ["mcp-toolbox-postgres-version"],
+      "date": "2026-11-25",
+      "document": "reviews/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Real MCP and two disposable PostgreSQL versions with one setting. No performance or production integration measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5113,6 +5123,20 @@
         "experiments/kvset/2026-11-25-pilot-archive-rebuild-protocol.md",
         "experiments/kvset/rebuild-pilot-archive.py",
         "data/results/kvset/2026-11-25-pilot-archive-rebuild.json"
+      ]
+    },
+    {
+      "id": "mcp-toolbox-wiki-pg-temporal-20261125-lab",
+      "study_ids": ["mcp-toolbox-postgres"],
+      "review_id": "mcp-toolbox-wiki-pg-temporal-20261125",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "PASS",
+      "scope": "Two matching repeats on PostgreSQL 15.20 and 18.3. Twelve live reads matched SQL and 48 snapshot requests preserved capture or explicit absence.",
+      "limitations": "Fixed work_mem query and synthetic snapshots. No production data, latency or concurrency measurement.",
+      "artifacts": [
+        "experiments/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md",
+        "experiments/mcp-toolbox-postgres/wiki-pg-temporal-contract.py",
+        "data/results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json"
       ]
     }
   ],
