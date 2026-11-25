@@ -4385,6 +4385,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned source snapshot and export contracts only. No launcher, supervisor, provider, workload performance or project benefit evaluated.",
       "supersedes": null
+    },
+    {
+      "id": "drag-wiki-pg-fts-routing-20261125",
+      "study_ids": ["drag"],
+      "version_ids": ["verified-drag-2026-11-05"],
+      "date": "2026-11-25",
+      "document": "reviews/drag/2026-11-25-wiki-pg-fts-routing.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Native lexical retrieval with structured synthetic search facets. No original routing model, generation, latency, or production benefit measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4945,6 +4955,20 @@
         "experiments/alphaxiv-openresearch/openresearch-source-snapshot-test.rs",
         "data/results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json",
         "data/results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json"
+      ]
+    },
+    {
+      "id": "drag-wiki-pg-fts-routing-20261125-lab",
+      "study_ids": ["drag"],
+      "review_id": "drag-wiki-pg-fts-routing-20261125",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two matching 30-query repetitions through Wiki_PG FTS. Adaptive and split routes each made 48 calls and completed 18 positive requests. The default-depth follow-up completed all 18 with 30 calls and more returned candidates.",
+      "limitations": "Method-inspired fixed fixture. No demonstrated adaptive call savings, no CPU or latency measurement, and no model-based routing.",
+      "artifacts": [
+        "experiments/drag/2026-11-25-wiki-pg-fts-protocol.md",
+        "experiments/drag/wiki-pg-fts-routing.py",
+        "data/results/drag/2026-11-25-wiki-pg-fts-routing.json"
       ]
     }
   ],

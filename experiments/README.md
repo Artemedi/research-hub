@@ -83,6 +83,8 @@
 - [decision-geometry-harness/2026-11-07-schema-ab-oracle.py](decision-geometry-harness/2026-11-07-schema-ab-oracle.py)
 - [decision-geometry-harness/2026-11-07-schema-ab-run.py](decision-geometry-harness/2026-11-07-schema-ab-run.py)
 - [decision-geometry-harness/2026-11-07-schema-ab-wire.mts](decision-geometry-harness/2026-11-07-schema-ab-wire.mts)
+- [drag/2026-11-25-wiki-pg-fts-protocol.md](drag/2026-11-25-wiki-pg-fts-protocol.md)
+- [drag/wiki-pg-fts-routing.py](drag/wiki-pg-fts-routing.py)
 - [drift-inspector/2026-11-14-b1-corpus-and-queries-draft.md](drift-inspector/2026-11-14-b1-corpus-and-queries-draft.md)
 - [drift-inspector/2026-11-14-step-a-prevalence.py](drift-inspector/2026-11-14-step-a-prevalence.py)
 - [drift-inspector/2026-11-25-b1-freeze.py](drift-inspector/2026-11-25-b1-freeze.py)

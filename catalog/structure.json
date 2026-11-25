@@ -3021,6 +3021,34 @@
       "title": "OpenResearch — original Rust snapshot method results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/drag/2026-11-25-wiki-pg-fts-routing.md",
+      "title": "DRAG — Wiki_PG FTS routing comparison",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/drag/2026-11-25-wiki-pg-fts-protocol.md",
+      "title": "DRAG — Wiki_PG FTS routing protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/drag/wiki-pg-fts-routing.py",
+      "title": "DRAG — native Wiki_PG lexical search lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/drag/2026-11-25-wiki-pg-fts-routing.json",
+      "title": "DRAG — Wiki_PG FTS routing results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

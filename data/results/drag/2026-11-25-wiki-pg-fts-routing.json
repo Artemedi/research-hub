@@ -1,0 +1,197 @@
+{
+  "target_commit": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "cases": 30,
+  "positive_cases": 18,
+  "incomplete_cases": 12,
+  "checkpoint_unchanged": true,
+  "modes": {
+    "single": {
+      "summary": {
+        "sources_returned": 24,
+        "calls": 30,
+        "candidates_returned": 42,
+        "verified_sources": 24,
+        "complete_positive": 12,
+        "false_complete": 0
+      },
+      "families": {
+        "one": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "two": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "crowded": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 0,
+          "complete_positive": 0,
+          "incomplete_negative": 0
+        },
+        "partial": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        },
+        "absent": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 0,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        }
+      }
+    },
+    "split": {
+      "summary": {
+        "sources_returned": 36,
+        "calls": 48,
+        "candidates_returned": 36,
+        "verified_sources": 36,
+        "complete_positive": 18,
+        "false_complete": 0
+      },
+      "families": {
+        "one": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "two": {
+          "calls": 12,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "crowded": {
+          "calls": 12,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "partial": {
+          "calls": 12,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        },
+        "absent": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 0,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        }
+      }
+    },
+    "adaptive": {
+      "summary": {
+        "sources_returned": 36,
+        "calls": 48,
+        "candidates_returned": 54,
+        "verified_sources": 36,
+        "complete_positive": 18,
+        "false_complete": 0
+      },
+      "families": {
+        "one": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "two": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "crowded": {
+          "calls": 18,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "partial": {
+          "calls": 12,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        },
+        "absent": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 0,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        }
+      }
+    },
+    "single_default": {
+      "summary": {
+        "sources_returned": 36,
+        "calls": 30,
+        "candidates_returned": 66,
+        "verified_sources": 36,
+        "complete_positive": 18,
+        "false_complete": 0
+      },
+      "families": {
+        "one": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "two": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "crowded": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 12,
+          "complete_positive": 6,
+          "incomplete_negative": 0
+        },
+        "partial": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 6,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        },
+        "absent": {
+          "calls": 6,
+          "cases": 6,
+          "verified_sources": 0,
+          "complete_positive": 0,
+          "incomplete_negative": 6
+        }
+      }
+    }
+  }
+}
