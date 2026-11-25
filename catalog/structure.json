@@ -100,7 +100,8 @@
     "studies/mobileprobe.md",
     "studies/tufazip.md",
     "studies/postgresql-2026-11-minor-releases.md",
-    "studies/postgresql-19-ga-2026.md"
+    "studies/postgresql-19-ga-2026.md",
+    "studies/google-antigravity.md"
   ],
   "documents": [
     {
@@ -3329,6 +3330,27 @@
       "title": "PGBot and Wiki_PG — lock count and finding results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/google-antigravity/2026-11-26.md",
+      "title": "Antigravity lifecycle probe",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/google-antigravity/lifecycle-probe.py",
+      "title": "Antigravity reproducible smoke",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/google-antigravity/2026-11-26.json",
+      "title": "Antigravity observed smoke results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

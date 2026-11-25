@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-26",
+  "cli_version": "1.5.11",
+  "scope": "synthetic live CLI smoke",
+  "runs": [
+    {
+      "mode": "plan",
+      "absolute_hook_path": false,
+      "format": "json",
+      "exit": 0,
+      "status": "SUCCESS",
+      "response": "RULE-7B9C\n",
+      "usage": {
+        "input_tokens": 10629,
+        "output_tokens": 309,
+        "thinking_tokens": 302,
+        "cache_read_tokens": 0,
+        "total_tokens": 10938
+      },
+      "events": []
+    },
+    {
+      "mode": "auto",
+      "absolute_hook_path": true,
+      "format": "stream-json",
+      "exit": 0,
+      "status": "SUCCESS",
+      "response": "RULE-7B9C\nRULE-7B9C GATE-4D2E\n",
+      "usage": {
+        "input_tokens": 12961,
+        "output_tokens": 234,
+        "thinking_tokens": 214,
+        "cache_read_tokens": 8628,
+        "total_tokens": 13195
+      },
+      "events": [
+        {
+          "event": "SessionStart",
+          "has_conversation": true
+        },
+        {
+          "event": "PreInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "PostInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "Stop",
+          "has_conversation": true
+        },
+        {
+          "event": "PreInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "PostInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "Stop",
+          "has_conversation": true
+        }
+      ]
+    },
+    {
+      "mode": "plan",
+      "absolute_hook_path": true,
+      "format": "json",
+      "exit": 0,
+      "status": "SUCCESS",
+      "response": "RULE-7B9C\nRULE-7B9C GATE-4D2E\n",
+      "usage": {
+        "input_tokens": 13832,
+        "output_tokens": 335,
+        "thinking_tokens": 315,
+        "cache_read_tokens": 9415,
+        "total_tokens": 14167
+      },
+      "events": [
+        {
+          "event": "SessionStart",
+          "has_conversation": true
+        },
+        {
+          "event": "PreInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "PostInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "Stop",
+          "has_conversation": true
+        },
+        {
+          "event": "PreInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "PostInvocation",
+          "has_conversation": true
+        },
+        {
+          "event": "Stop",
+          "has_conversation": true
+        }
+      ]
+    }
+  ]
+}

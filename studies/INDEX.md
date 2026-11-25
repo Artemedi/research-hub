@@ -2,7 +2,7 @@
 
 # Каталог исследований
 
-97 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+98 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
@@ -36,6 +36,7 @@
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) · [2026-11-25 / geoagent-paper2project-artifact-binding-20261125](../reviews/geoagent/2026-11-25-paper2project-artifact-binding.md) |
 | [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md) | [2026-11-11 / github-actions-log-secret-scanning-20261111](../portfolio/2026-11-11/review.md) |
 | [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) · [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](../reviews/goal-aware-dynamic-collaboration/2026-11-07.md) |
+| [Google Antigravity — agent runtime and lifecycle control](google-antigravity.md) | [2026-11-26 / google-antigravity-20261126-lifecycle](../reviews/google-antigravity/2026-11-26.md) |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) · [2026-11-25 / mcp-toolbox-wiki-pg-temporal-20261125](../reviews/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.md) |
 | [GPT-6 Astra — Rethinking skills and prompts (BK-009)](gpt6-astra-skills-prompts.md) | [2026-11-06 / bk009-gpt6-astra-live-ab-20261106](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
 | [HarnessSecurity-Bench](harnesssecurity-bench.md) | [2026-11-03 / harnesssecurity-bench-review](harnesssecurity-bench.md) |
