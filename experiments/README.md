@@ -94,6 +94,7 @@
 - [kvtether/2026-11-07-event-order.mjs](kvtether/2026-11-07-event-order.mjs)
 - [postgresql-19-ga-2026/2026-11-25-protocol.md](postgresql-19-ga-2026/2026-11-25-protocol.md)
 - [postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py](postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py)
+- [postgresql-2026-11-minor-releases/wiki-pg-inventory.py](postgresql-2026-11-minor-releases/wiki-pg-inventory.py)
 - [research-portfolio/2026-11-07-claude-swarm-critics.py](research-portfolio/2026-11-07-claude-swarm-critics.py)
 - [research-portfolio/2026-11-07-claude-swarm-failure-e2e.mjs](research-portfolio/2026-11-07-claude-swarm-failure-e2e.mjs)
 - [research-portfolio/2026-11-07-claude-swarm-recovery.patch.gz](research-portfolio/2026-11-07-claude-swarm-recovery.patch.gz)

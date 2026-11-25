@@ -2818,6 +2818,27 @@
       "title": "Drift Inspector — B1 blind batch preparation result",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md",
+      "title": "PostgreSQL 15.20 and 18.7 — Wiki_PG index inventory",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/postgresql-2026-11-minor-releases/wiki-pg-inventory.py",
+      "title": "PostgreSQL minor maintenance — Wiki_PG inventory lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json",
+      "title": "PostgreSQL minor maintenance — Wiki_PG inventory results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

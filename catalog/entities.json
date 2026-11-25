@@ -4310,6 +4310,21 @@
       "document": "reviews/silent-cue-loss/2026-11-25-pdf-measurement-correction.md",
       "limitations": "Pinned read contract and generated one-page PDFs only. No project benefit measured.",
       "supersedes": "silent-cue-loss-paper2project-pdf-20261125"
+    },
+    {
+      "id": "postgresql-maintenance-wiki-pg-inventory-20261125",
+      "study_ids": [
+        "postgresql-2026-11-minor-releases"
+      ],
+      "version_ids": [
+        "postgresql-2026-11-minor-releases-18-7",
+        "postgresql-2026-11-minor-releases-15-20"
+      ],
+      "date": "2026-11-25",
+      "document": "reviews/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Index inventory and version preservation on isolated servers. No database correctness, backup recovery, production, or project benefit measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4769,6 +4784,21 @@
         "data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json",
         "experiments/silent-cue-loss/2026-11-25-pdf-cue-ab.py",
         "experiments/silent-cue-loss/2026-11-25-protocol.md"
+      ]
+    },
+    {
+      "id": "postgresql-maintenance-wiki-pg-inventory-20261125-lab",
+      "study_ids": [
+        "postgresql-2026-11-minor-releases"
+      ],
+      "review_id": "postgresql-maintenance-wiki-pg-inventory-20261125",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "OBSERVED",
+      "scope": "Four pinned PostgreSQL versions. Version retained in SQLite 4/4. Catalog distinguished the two index types even though pg_trgm extension evidence matched in both test databases.",
+      "limitations": "Synthetic databases; collector SQL transport substituted. No MCP, existing corruption, performance or restore checks.",
+      "artifacts": [
+        "experiments/postgresql-2026-11-minor-releases/wiki-pg-inventory.py",
+        "data/results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json"
       ]
     }
   ],

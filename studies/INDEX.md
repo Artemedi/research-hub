@@ -69,7 +69,7 @@
 | [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [2026-11-03 / poisoned-skills-review](../portfolio/2026-10-27--2026-11-02/review.md) |
 | [POLAR](polar.md) | [2026-11-03 / polar-review](../portfolio/2026-10-06--2026-10-12/review.md) |
 | [PostgreSQL 19 GA — 2026-11-19](postgresql-19-ga-2026.md) | [2026-11-23 / postgresql-19-ga-2026-release-notes](../portfolio/2026-11-23/review.md) · [2026-11-25 / postgresql-19-wiki-pg-settings-20261125](../reviews/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md) |
-| [PostgreSQL 2026-11-12 minor maintenance releases](postgresql-2026-11-minor-releases.md) | [2026-11-16 / postgresql-2026-11-minor-releases-release-notes](../portfolio/2026-11-16/review.md) |
+| [PostgreSQL 2026-11-12 minor maintenance releases](postgresql-2026-11-minor-releases.md) | [2026-11-16 / postgresql-2026-11-minor-releases-release-notes](../portfolio/2026-11-16/review.md) · [2026-11-25 / postgresql-maintenance-wiki-pg-inventory-20261125](../reviews/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md) |
 | [Random Attention — KV eviction for reasoning](random-attention.md) | [2026-11-03 / random-attention-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [REA — Reverse Engineer Anything](reverse-engineer-anything.md) | [2026-11-05 / rea-boundaries](../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md) · [2026-11-05 / rea-pe](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
 | [ReA-Bench — auditing responsible agent trajectories](rea-bench.md) | [2026-11-14 / rea-bench-fulltext-20261114](../reviews/rea-bench/2026-11-14.md) |

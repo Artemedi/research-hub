@@ -88,6 +88,7 @@
 | [Paper2Agent — Research Papers as Reliable AI Agents — полнотекстовая научная проверка](paper2agent/2026-11-05-full-text.md) | 2026-11-05 |
 | [pgbot — диагностические проверки PostgreSQL](pgbot/2026-11-04.md) | 2026-11-04 |
 | [PostgreSQL 19 — version-aware settings evidence in Wiki_PG](postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md) | 2026-11-25 |
+| [PostgreSQL 15.20 and 18.7 — Wiki_PG index inventory](postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md) | 2026-11-25 |
 | [ReA-Bench — Benchmarking Responsible Agent Auditing — full-text review 2026-11-14](rea-bench/2026-11-14.md) | 2026-11-14 |
 | [REALM — Retrieval-Driven Memory Reconsolidation — полнотекстовая научная проверка](realm/2026-11-05-full-text.md) | 2026-11-05 |
 | [ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка](recap/2026-11-05-full-text.md) | 2026-11-05 |

@@ -13,6 +13,7 @@
 ## Версии и история обзоров
 
 - [postgresql-2026-11-minor-releases-release-notes](../../portfolio/2026-11-16/review.md), 2026-11-16; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [18.7](https://www.postgresql.org/docs/release/18.7/), [15.20](https://www.postgresql.org/docs/release/15.20/).
+- [postgresql-maintenance-wiki-pg-inventory-20261125](../../reviews/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [18.7](https://www.postgresql.org/docs/release/18.7/), [15.20](https://www.postgresql.org/docs/release/15.20/).
 
 ## Применимость к проектам
 
@@ -23,7 +24,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- postgresql-maintenance-wiki-pg-inventory-20261125-lab: ISOLATED_INTEGRATION / OBSERVED. Four pinned PostgreSQL versions. Version retained in SQLite 4/4. Catalog distinguished the two index types even though pg_trgm extension evidence matched in both test databases. Synthetic databases; collector SQL transport substituted. No MCP, existing corruption, performance or restore checks. [Артефакт](../../experiments/postgresql-2026-11-minor-releases/wiki-pg-inventory.py) · [Артефакт](../../data/results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json)
 
 ## Ссылки из исходной карточки
 

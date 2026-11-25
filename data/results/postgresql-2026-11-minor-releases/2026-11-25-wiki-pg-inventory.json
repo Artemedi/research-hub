@@ -1,0 +1,41 @@
+{
+  "wiki_pg_commit": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "results": [
+    {
+      "image": "postgres@sha256:1aac5b49cefd627f02816141ca4ad012d6cc19460dfe02a9b5168a105be3fc53",
+      "server_version_num": 150019,
+      "version_in_sqlite": true,
+      "same_pg_trgm_in_raw": true,
+      "extension_or_index_in_structured_observations": false,
+      "catalog_gist": true,
+      "catalog_gin_control": true
+    },
+    {
+      "image": "postgres@sha256:91b9edc40277faf94bc1e3d7ae621b185fa70f3099b94309c4731a8296114870",
+      "server_version_num": 150020,
+      "version_in_sqlite": true,
+      "same_pg_trgm_in_raw": true,
+      "extension_or_index_in_structured_observations": false,
+      "catalog_gist": true,
+      "catalog_gin_control": true
+    },
+    {
+      "image": "postgres@sha256:86c951e05bf56c93d95d397747fb8820ac76cc3bedb78f43abd83eedbe3666ae",
+      "server_version_num": 180006,
+      "version_in_sqlite": true,
+      "same_pg_trgm_in_raw": true,
+      "extension_or_index_in_structured_observations": false,
+      "catalog_gist": true,
+      "catalog_gin_control": true
+    },
+    {
+      "image": "postgres@sha256:c699303802144847d238196173655dbbecf7a96aeca1565f2b02eb671a1f0b6b",
+      "server_version_num": 180007,
+      "version_in_sqlite": true,
+      "same_pg_trgm_in_raw": true,
+      "extension_or_index_in_structured_observations": false,
+      "catalog_gist": true,
+      "catalog_gin_control": true
+    }
+  ]
+}
