@@ -2867,6 +2867,34 @@
       "title": "JetStream — synthetic Twin contract results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/benchshield/2026-11-25-paper2project-report-replay.md",
+      "title": "BenchShield — Paper2Project report replay",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/benchshield/2026-11-25-paper2project-protocol.md",
+      "title": "BenchShield — Paper2Project report replay protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/benchshield/paper2project-report-replay.py",
+      "title": "BenchShield — synthetic report replay scenario",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/benchshield/2026-11-25-paper2project-report-replay.json",
+      "title": "BenchShield — synthetic report replay results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

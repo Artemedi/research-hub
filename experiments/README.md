@@ -45,6 +45,8 @@
 - [agent-mosaic/2026-11-07-composite-gate-oracle.py](agent-mosaic/2026-11-07-composite-gate-oracle.py)
 - [agent-mosaic/2026-11-07-composite-gate.py](agent-mosaic/2026-11-07-composite-gate.py)
 - [agent-risk/2026-11-09-replay-boundary.py](agent-risk/2026-11-09-replay-boundary.py)
+- [benchshield/2026-11-25-paper2project-protocol.md](benchshield/2026-11-25-paper2project-protocol.md)
+- [benchshield/paper2project-report-replay.py](benchshield/paper2project-report-replay.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)
 - [bk011-simurg/check-fixture.py](bk011-simurg/check-fixture.py)
 - [bk019-skill-doctor/attribution-fixture.py](bk019-skill-doctor/attribution-fixture.py)

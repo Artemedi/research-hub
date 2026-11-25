@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [bench-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.11028v1).
+- [benchshield-paper2project-report-replay-20261125](../../reviews/benchshield/2026-11-25-paper2project-report-replay.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.11028v1).
 - [BenchShield — целостность reward и provenance](../../reviews/benchshield/2026-11-04.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -33,7 +34,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- benchshield-paper2project-report-replay-20261125-lab: SYNTHETIC / OBSERVED. Two identical replays of 28 synthetic cases through the project's actual report. Missing facts and metric mismatch shared an outcome; JSON retained details omitted by Markdown. No agent, container, benchmark execution, or recorded experiment provenance attestation. [Артефакт](../../experiments/benchshield/2026-11-25-paper2project-protocol.md) · [Артефакт](../../experiments/benchshield/paper2project-report-replay.py) · [Артефакт](../../data/results/benchshield/2026-11-25-paper2project-report-replay.json)
 
 ## Ссылки из исходной карточки
 

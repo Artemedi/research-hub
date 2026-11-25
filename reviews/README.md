@@ -35,6 +35,7 @@
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
 | [NVIDIA Auto Ontology — Semantic Model for Relational Data — source review](auto-ontology/2026-11-13.md) | 2026-11-13 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
+| [BenchShield — Paper2Project report replay](benchshield/2026-11-25-paper2project-report-replay.md) | 2026-11-25 |
 | [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
 | [CERA-MoA — routing contract и актуальная оценка применимости](cera-moa/2026-11-08-routing-contract.md) | 2026-11-08 |
 | [Chartli — parser и отображение](chartli/2026-11-04.md) | 2026-11-04 |

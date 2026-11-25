@@ -31,6 +31,7 @@
 | [data/results/agent-risk/2026-11-09-replay-boundary.json](results/agent-risk/2026-11-09-replay-boundary.json) | Результат ограниченной проверки |
 | [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-04.json](results/benchshield/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/benchshield/2026-11-25-paper2project-report-replay.json](results/benchshield/2026-11-25-paper2project-report-replay.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-independent-oracle.json](results/cera-moa/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-routing-contract.json](results/cera-moa/2026-11-08-routing-contract.json) | Результат ограниченной проверки |
 | [data/results/chartli/2026-11-07-svg-fixtures.json](results/chartli/2026-11-07-svg-fixtures.json) | Результат ограниченной проверки |

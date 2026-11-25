@@ -4335,6 +4335,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "The plan-only target and the pinned artifact build inputs were inspected. The experiment exercises a standalone trigger-based model, not the author implementation.",
       "supersedes": null
+    },
+    {
+      "id": "benchshield-paper2project-report-replay-20261125",
+      "study_ids": ["benchshield"],
+      "version_ids": ["bench-v1"],
+      "date": "2026-11-25",
+      "document": "reviews/benchshield/2026-11-25-paper2project-report-replay.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Project report and persisted-result comparison inspected. No author runtime or infrastructure event capture measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4823,6 +4833,20 @@
         "experiments/jetstream/2026-11-25-twin-protocol.md",
         "experiments/jetstream/twin-maintenance.py",
         "data/results/jetstream/2026-11-25-twin-maintenance.json"
+      ]
+    },
+    {
+      "id": "benchshield-paper2project-report-replay-20261125-lab",
+      "study_ids": ["benchshield"],
+      "review_id": "benchshield-paper2project-report-replay-20261125",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two identical replays of 28 synthetic cases through the project's actual report. Missing facts and metric mismatch shared an outcome; JSON retained details omitted by Markdown.",
+      "limitations": "No agent, container, benchmark execution, or recorded experiment provenance attestation.",
+      "artifacts": [
+        "experiments/benchshield/2026-11-25-paper2project-protocol.md",
+        "experiments/benchshield/paper2project-report-replay.py",
+        "data/results/benchshield/2026-11-25-paper2project-report-replay.json"
       ]
     }
   ],

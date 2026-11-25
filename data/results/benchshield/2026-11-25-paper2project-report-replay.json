@@ -1,0 +1,52 @@
+{
+  "target_commit": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "checked": 28,
+  "case_counts": {
+    "match": 4,
+    "mismatch": 4,
+    "missing_facts": 4,
+    "interrupted": 4,
+    "blocked": 4,
+    "legacy": 4,
+    "not_run": 4
+  },
+  "decision_counts": {
+    "REPRODUCED_BENEFIT_UNPROVEN": 4,
+    "EXPERIMENT_FAILED": 8,
+    "EXPERIMENT_INCOMPLETE": 4,
+    "EXPERIMENT_BLOCKED": 4,
+    "STALE_EVIDENCE": 4,
+    "EXPERIMENT_NOT_RUN": 4
+  },
+  "reporting": {
+    "match": {
+      "has_experiment_reason_in_json": false,
+      "includes_same_reason_in_markdown": false
+    },
+    "mismatch": {
+      "has_experiment_reason_in_json": false,
+      "includes_same_reason_in_markdown": false
+    },
+    "missing_facts": {
+      "has_experiment_reason_in_json": true,
+      "includes_same_reason_in_markdown": false
+    },
+    "interrupted": {
+      "has_experiment_reason_in_json": true,
+      "includes_same_reason_in_markdown": false
+    },
+    "blocked": {
+      "has_experiment_reason_in_json": true,
+      "includes_same_reason_in_markdown": false
+    },
+    "legacy": {
+      "has_experiment_reason_in_json": true,
+      "includes_same_reason_in_markdown": false
+    },
+    "not_run": {
+      "has_experiment_reason_in_json": false,
+      "includes_same_reason_in_markdown": false
+    }
+  },
+  "missing_facts_shares_mismatch_explanation": true
+}
