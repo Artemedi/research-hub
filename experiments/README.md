@@ -115,6 +115,8 @@
 - [jetstream/twin-maintenance.py](jetstream/twin-maintenance.py)
 - [karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md](karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md)
 - [karpathy-autoresearch/paper2project-holdout.py](karpathy-autoresearch/paper2project-holdout.py)
+- [kvset/2026-11-25-pilot-archive-rebuild-protocol.md](kvset/2026-11-25-pilot-archive-rebuild-protocol.md)
+- [kvset/rebuild-pilot-archive.py](kvset/rebuild-pilot-archive.py)
 - [kvtether/2026-11-07-event-oracle.py](kvtether/2026-11-07-event-oracle.py)
 - [kvtether/2026-11-07-event-order.mjs](kvtether/2026-11-07-event-order.mjs)
 - [postgresql-19-ga-2026/2026-11-25-protocol.md](postgresql-19-ga-2026/2026-11-25-protocol.md)

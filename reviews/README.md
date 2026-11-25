@@ -88,6 +88,7 @@
 | [BK-034 Karpathy/AI LABS and Wiki_PG autoloop](karpathy-autoresearch/2026-11-06-loop-audit.md) | 2026-11-06 |
 | [Karpathy AutoResearch — Paper2Project metrics and independent guard](karpathy-autoresearch/2026-11-25-paper2project-holdout.md) | 2026-11-25 |
 | [KVSET — The KV Cache Working Set — полнотекстовая научная проверка](kvset/2026-11-05-full-text.md) | 2026-11-05 |
+| [KVSET — historical pilot package reconstruction](kvset/2026-11-25-pilot-archive-rebuild.md) | 2026-11-25 |
 | [KVTether — KV Cache Lifecycle Management in ReAct Agents — полнотекстовая научная проверка](kvtether/2026-11-05-full-text.md) | 2026-11-05 |
 | [KVTether full-source lifecycle ordering contract and backend adoption gate](kvtether/2026-11-07-event-order.md) | 2026-11-07 |
 | [Local Knowledge Graph — граф рассуждений](local-knowledge-graph/2026-11-04.md) | 2026-11-04 |

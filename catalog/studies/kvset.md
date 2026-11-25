@@ -22,6 +22,7 @@
 
 - [kvset-review](../../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md), 2026-09-28; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.27746).
 - [fulltext-kvset-2026-11-05](../../reviews/kvset/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.27746v1).
+- [kvset-pilot-archive-rebuild-20261125](../../reviews/kvset/2026-11-25-pilot-archive-rebuild.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.27746).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- kvset-pilot-archive-rebuild-20261125-lab: ISOLATED_INTEGRATION / OBSERVED. Two repeatable compressor configurations matched all 36 historical file hashes. Neither matched the complete ZIP hash. Archive reconstruction only. No execution of the KVSET package or recommissioning of its historical delivery. [Артефакт](../../experiments/kvset/2026-11-25-pilot-archive-rebuild-protocol.md) · [Артефакт](../../experiments/kvset/rebuild-pilot-archive.py) · [Артефакт](../../data/results/kvset/2026-11-25-pilot-archive-rebuild.json)
 
 ## Ссылки из исходной карточки
 

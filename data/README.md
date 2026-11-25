@@ -88,6 +88,7 @@
 | [data/results/jetstream/2026-11-25-twin-maintenance.json](results/jetstream/2026-11-25-twin-maintenance.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json](results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json](results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json) | Результат ограниченной проверки |
+| [data/results/kvset/2026-11-25-pilot-archive-rebuild.json](results/kvset/2026-11-25-pilot-archive-rebuild.json) | Результат ограниченной проверки |
 | [data/results/kvtether/2026-11-07-event-oracle.json](results/kvtether/2026-11-07-event-oracle.json) | Результат ограниченной проверки |
 | [data/results/kvtether/2026-11-07-event-order.json](results/kvtether/2026-11-07-event-order.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |

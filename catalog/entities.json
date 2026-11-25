@@ -4445,6 +4445,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic sealed results and fixture reviewers exercise Paper2Project verdicts. No actual model training or hidden validation set.",
       "supersedes": null
+    },
+    {
+      "id": "kvset-pilot-archive-rebuild-20261125",
+      "study_ids": ["kvset"],
+      "version_ids": ["kvset-version"],
+      "date": "2026-11-25",
+      "document": "reviews/kvset/2026-11-25-pilot-archive-rebuild.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Historical package payload verified from pinned objects. Full archive hash and current runtime execution remain unverified.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5089,6 +5099,20 @@
         "experiments/karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md",
         "experiments/karpathy-autoresearch/paper2project-holdout.py",
         "data/results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json"
+      ]
+    },
+    {
+      "id": "kvset-pilot-archive-rebuild-20261125-lab",
+      "study_ids": ["kvset"],
+      "review_id": "kvset-pilot-archive-rebuild-20261125",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "OBSERVED",
+      "scope": "Two repeatable compressor configurations matched all 36 historical file hashes. Neither matched the complete ZIP hash.",
+      "limitations": "Archive reconstruction only. No execution of the KVSET package or recommissioning of its historical delivery.",
+      "artifacts": [
+        "experiments/kvset/2026-11-25-pilot-archive-rebuild-protocol.md",
+        "experiments/kvset/rebuild-pilot-archive.py",
+        "data/results/kvset/2026-11-25-pilot-archive-rebuild.json"
       ]
     }
   ],

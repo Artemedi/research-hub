@@ -1,0 +1,37 @@
+{
+  "classic": {
+    "pilot_revision": "6418c2397fd16a73cba58990fca2f6801e01148c",
+    "upstream_revision": "fab8ac99017e4ca6f22c811ee874b72a2e1a7296",
+    "current_paper2project_revision": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+    "repeat_count": 2,
+    "manifest_entries_verified": 36,
+    "vendor_entries_verified": 24,
+    "current_runtime_files_differing": [
+      "run.py"
+    ],
+    "historical_zip_bytes": 87551,
+    "historical_zip_sha256": "cef186cc5b9a6bd52f58f7172e26c723aaf3fadf8e113ff04a9e9e14e369f766",
+    "rebuilt_zip_bytes": 89924,
+    "rebuilt_zip_sha256": "435197f849ac2d2b397ba4ea0b16a74d6858104b1cbb00a88973c9ec83837c3e",
+    "zip_exact_match": false,
+    "compressor": "zlib 1.3.1"
+  },
+  "alternative": {
+    "pilot_revision": "6418c2397fd16a73cba58990fca2f6801e01148c",
+    "upstream_revision": "fab8ac99017e4ca6f22c811ee874b72a2e1a7296",
+    "current_paper2project_revision": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+    "repeat_count": 2,
+    "manifest_entries_verified": 36,
+    "vendor_entries_verified": 24,
+    "current_runtime_files_differing": [
+      "run.py"
+    ],
+    "historical_zip_bytes": 87551,
+    "historical_zip_sha256": "cef186cc5b9a6bd52f58f7172e26c723aaf3fadf8e113ff04a9e9e14e369f766",
+    "rebuilt_zip_bytes": 87664,
+    "rebuilt_zip_sha256": "65c18a9204bdcf111b0516743eac1166a3f5f66dc1161bfbab9cbb70b0047731",
+    "zip_exact_match": false,
+    "compressor": "zlib-ng 2.3.3"
+  },
+  "status": "PAYLOAD_VERIFIED_ARCHIVE_DIGEST_MISMATCH"
+}

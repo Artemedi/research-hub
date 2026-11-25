@@ -3189,6 +3189,34 @@
       "title": "Paper2Project — guard and attestation results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/kvset/2026-11-25-pilot-archive-rebuild.md",
+      "title": "KVSET — historical pilot package reconstruction",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/kvset/2026-11-25-pilot-archive-rebuild-protocol.md",
+      "title": "KVSET — package reconstruction protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/kvset/rebuild-pilot-archive.py",
+      "title": "KVSET — pinned package reconstruction script",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/kvset/2026-11-25-pilot-archive-rebuild.json",
+      "title": "KVSET — package payload and archive hash results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
