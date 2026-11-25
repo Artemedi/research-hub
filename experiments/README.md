@@ -113,6 +113,8 @@
 - [inspektor-gadget/wiki-pg-collection-coverage.py](inspektor-gadget/wiki-pg-collection-coverage.py)
 - [jetstream/2026-11-25-twin-protocol.md](jetstream/2026-11-25-twin-protocol.md)
 - [jetstream/twin-maintenance.py](jetstream/twin-maintenance.py)
+- [karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md](karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md)
+- [karpathy-autoresearch/paper2project-holdout.py](karpathy-autoresearch/paper2project-holdout.py)
 - [kvtether/2026-11-07-event-oracle.py](kvtether/2026-11-07-event-oracle.py)
 - [kvtether/2026-11-07-event-order.mjs](kvtether/2026-11-07-event-order.mjs)
 - [postgresql-19-ga-2026/2026-11-25-protocol.md](postgresql-19-ga-2026/2026-11-25-protocol.md)

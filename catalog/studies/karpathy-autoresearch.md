@@ -22,6 +22,7 @@
 
 - [karpathy-autoresearch-review](../../reviews/karpathy-autoresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [228791fb499afffb54b46200aca536f79142f117](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117).
 - [karpathy-autoresearch-loop-audit-20261106](../../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: karpathy-autoresearch-review. Версии: [228791fb499afffb54b46200aca536f79142f117](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117), [не установлена](https://www.youtube.com/watch?v=qLfSDQ5NGh0).
+- [karpathy-paper2project-holdout-20261125](../../reviews/karpathy-autoresearch/2026-11-25-paper2project-holdout.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [228791fb499afffb54b46200aca536f79142f117](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117).
 
 ## Применимость к проектам
 
@@ -36,6 +37,7 @@
 ## Эксперименты
 
 - bk034-wikipg-locked-oracle-toy-20261106: ISOLATED_INTEGRATION / OBSERVED. Real Wiki_PG autoloop.sh @d55721bb; 6 toy worktrees, three seeds/group. 11/11 domain PASS with missing UI (heldout 0/3); approved integration test rejects tampering in round 1; corrected scripted round 2 passes in 3/3; locked test digest unchanged 6/6. Scripted fake agent, synthetic app, not original AI LABS implementation, not real LLM/instruction learning, not a security sandbox or production workload. No GPU, paid tokens, or real benefit. [Артефакт](../../experiments/2026-11-06-bk034-wikipg-autoloop-oracle.py) · [Артефакт](../../data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) · [Артефакт](../../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md)
+- karpathy-paper2project-holdout-20261125-lab: SYNTHETIC / PASS. Two matching 24-case replays. The primary threshold accepted 20, full measurement criteria accepted eight, and reference attestation admitted four. Evidence records and reference receipts are synthetic. No training, model execution or production benefit measured. [Артефакт](../../experiments/karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md) · [Артефакт](../../experiments/karpathy-autoresearch/paper2project-holdout.py) · [Артефакт](../../data/results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json)
 
 ## Ссылки из исходной карточки
 

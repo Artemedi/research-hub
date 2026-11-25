@@ -4435,6 +4435,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic diagnostic reports exercise Wiki_PG ingestion and search without running a tracer or measuring event completeness.",
       "supersedes": null
+    },
+    {
+      "id": "karpathy-paper2project-holdout-20261125",
+      "study_ids": ["karpathy-autoresearch"],
+      "version_ids": ["karpathy-autoresearch-version"],
+      "date": "2026-11-25",
+      "document": "reviews/karpathy-autoresearch/2026-11-25-paper2project-holdout.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic sealed results and fixture reviewers exercise Paper2Project verdicts. No actual model training or hidden validation set.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5065,6 +5075,20 @@
         "experiments/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md",
         "experiments/inspektor-gadget/wiki-pg-collection-coverage.py",
         "data/results/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.json"
+      ]
+    },
+    {
+      "id": "karpathy-paper2project-holdout-20261125-lab",
+      "study_ids": ["karpathy-autoresearch"],
+      "review_id": "karpathy-paper2project-holdout-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching 24-case replays. The primary threshold accepted 20, full measurement criteria accepted eight, and reference attestation admitted four.",
+      "limitations": "Evidence records and reference receipts are synthetic. No training, model execution or production benefit measured.",
+      "artifacts": [
+        "experiments/karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md",
+        "experiments/karpathy-autoresearch/paper2project-holdout.py",
+        "data/results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json"
       ]
     }
   ],

@@ -3161,6 +3161,34 @@
       "title": "Inspektor Gadget — Wiki_PG diagnostic coverage results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/karpathy-autoresearch/2026-11-25-paper2project-holdout.md",
+      "title": "Karpathy AutoResearch — Paper2Project metrics and independent guard",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md",
+      "title": "Karpathy AutoResearch — independent guard and attestation protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/karpathy-autoresearch/paper2project-holdout.py",
+      "title": "Paper2Project — synthetic guard and attestation replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json",
+      "title": "Paper2Project — guard and attestation results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
