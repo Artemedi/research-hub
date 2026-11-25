@@ -4395,6 +4395,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Native lexical retrieval with structured synthetic search facets. No original routing model, generation, latency, or production benefit measured.",
       "supersedes": null
+    },
+    {
+      "id": "dsh-superagent-paper2project-interruption-20261125",
+      "study_ids": ["dsh-superagent-prototype"],
+      "version_ids": ["dsh-superagent-prototype-version"],
+      "date": "2026-11-25",
+      "document": "reviews/dsh-superagent-prototype/2026-11-25-paper2project-interruption.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Project reports and decision persistence with real local flock and synthetic attempts. Container cleanup and external effects remain unmeasured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4969,6 +4979,20 @@
         "experiments/drag/2026-11-25-wiki-pg-fts-protocol.md",
         "experiments/drag/wiki-pg-fts-routing.py",
         "data/results/drag/2026-11-25-wiki-pg-fts-routing.json"
+      ]
+    },
+    {
+      "id": "dsh-superagent-paper2project-interruption-20261125-lab",
+      "study_ids": ["dsh-superagent-prototype"],
+      "review_id": "dsh-superagent-paper2project-interruption-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching eight-case repeats. Live lock respected; read-only interruption projection, durable recovery, and retained mixed history all matched expected results.",
+      "limitations": "No worker agents or experiment commands. Synthetic workspaces, attempt rows and metrics only.",
+      "artifacts": [
+        "experiments/dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md",
+        "experiments/dsh-superagent-prototype/paper2project-interruption.py",
+        "data/results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json"
       ]
     }
   ],

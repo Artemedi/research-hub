@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [dsh-superagent-prototype-review](../../reviews/dsh-superagent-prototype/2026-11-05.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [8c32a9dc5d72c033816c6a8110b37f40cf94fba4](https://github.com/deepseek-ai/dsh-superagent-prototype/tree/8c32a9dc5d72c033816c6a8110b37f40cf94fba4).
+- [dsh-superagent-paper2project-interruption-20261125](../../reviews/dsh-superagent-prototype/2026-11-25-paper2project-interruption.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [8c32a9dc5d72c033816c6a8110b37f40cf94fba4](https://github.com/deepseek-ai/dsh-superagent-prototype/tree/8c32a9dc5d72c033816c6a8110b37f40cf94fba4).
 
 ## Применимость к проектам
 
@@ -74,7 +75,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- dsh-superagent-paper2project-interruption-20261125-lab: SYNTHETIC / PASS. Two matching eight-case repeats. Live lock respected; read-only interruption projection, durable recovery, and retained mixed history all matched expected results. No worker agents or experiment commands. Synthetic workspaces, attempt rows and metrics only. [Артефакт](../../experiments/dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md) · [Артефакт](../../experiments/dsh-superagent-prototype/paper2project-interruption.py) · [Артефакт](../../data/results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json)
 
 ## Ссылки из исходной карточки
 

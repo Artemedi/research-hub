@@ -91,6 +91,8 @@
 - [drift-inspector/2026-11-25-b1-protocol.md](drift-inspector/2026-11-25-b1-protocol.md)
 - [drift-inspector/2026-11-25-b1-relevance.md](drift-inspector/2026-11-25-b1-relevance.md)
 - [drift-inspector/b1-relevance-gate.py](drift-inspector/b1-relevance-gate.py)
+- [dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md](dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md)
+- [dsh-superagent-prototype/paper2project-interruption.py](dsh-superagent-prototype/paper2project-interruption.py)
 - [experienceindex/2026-11-07-council.py](experienceindex/2026-11-07-council.py)
 - [experienceindex/2026-11-07-link-oracle.mjs](experienceindex/2026-11-07-link-oracle.mjs)
 - [experienceindex/2026-11-07-link-retrieval.py](experienceindex/2026-11-07-link-retrieval.py)

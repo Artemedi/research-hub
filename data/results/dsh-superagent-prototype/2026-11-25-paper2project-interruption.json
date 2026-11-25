@@ -1,0 +1,17 @@
+{
+  "target_commit": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "trials": 8,
+  "exit_modes": {
+    "released": 4,
+    "terminated": 4
+  },
+  "first_attempts": {
+    "empty": 4,
+    "partial": 4
+  },
+  "live_guard_passed": 8,
+  "read_only_projection_passed": 8,
+  "durable_recovery_passed": 8,
+  "mixed_history_passed": 8,
+  "idempotent_writes_passed": 8
+}

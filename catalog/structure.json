@@ -3049,6 +3049,34 @@
       "title": "DRAG — Wiki_PG FTS routing results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/dsh-superagent-prototype/2026-11-25-paper2project-interruption.md",
+      "title": "DSH Superagent Prototype — Paper2Project interruption recovery",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md",
+      "title": "DSH Superagent Prototype — interruption replay protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/dsh-superagent-prototype/paper2project-interruption.py",
+      "title": "Paper2Project — local lock and attempt recovery lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json",
+      "title": "Paper2Project — interruption and mixed history results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
