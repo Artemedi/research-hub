@@ -22,6 +22,7 @@
 
 - [alphaxiv-openresearch-review](../../reviews/alphaxiv-openresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d](https://github.com/alphaXiv/OpenResearch/tree/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d).
 - [alphaxiv-openresearch-provenance-ab-20261106](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: alphaxiv-openresearch-review. Версии: [23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d](https://github.com/alphaXiv/OpenResearch/tree/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d).
+- [alphaxiv-openresearch-snapshot-portability-20261125](../../reviews/alphaxiv-openresearch/2026-11-25-snapshot-portability.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d](https://github.com/alphaXiv/OpenResearch/tree/23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d).
 
 ## Применимость к проектам
 
@@ -32,6 +33,7 @@
 ## Эксперименты
 
 - bk014-openresearch-provenance-ab-20261106: SYNTHETIC / OBSERVED. Pinned source code OpenResearch cargo build PASS and author compute tests 8/8; pinned original paper2project tree_hash executed; 5 seeds x5 source-derived git archive proxy pairs with deterministic content oracle, 5/5 metadata/dirty/commit/corrupt/persisted archive and independent missing full text negative controls. Actual Rust SourceSnapshot::create, SQLite/daemon, agent/model backend, network, arbitrary code execution, real full-text paper checks and project integration NOT tested. A/B has intentionally different contract and tiny fixtures; speed is descriptive only. [Артефакт](../../reviews/alphaxiv-openresearch/2026-11-06-provenance-ab.md) · [Артефакт](../../data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) · [Артефакт](../../experiments/2026-11-06-bk014-openresearch-provenance-ab.py) · [Артефакт](../../data/results/alphaxiv-openresearch/2026-11-06-orx-compute-tests.txt)
+- alphaxiv-openresearch-snapshot-portability-20261125-lab: SYNTHETIC / OBSERVED. Two repeated four-case controls on actual Paper2Project registration, ZIP export and Rust OpenResearch source snapshot methods. Local tree and portable archive contracts differ in retained bytes and packaging. Synthetic repositories and temporary workspaces. Does not measure experiment execution, sharing policy, performance, or production behavior. [Артефакт](../../experiments/alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md) · [Артефакт](../../experiments/alphaxiv-openresearch/paper2project-snapshot-portability.py) · [Артефакт](../../experiments/alphaxiv-openresearch/openresearch-source-snapshot-test.rs) · [Артефакт](../../data/results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json) · [Артефакт](../../data/results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json)
 
 ## Ссылки из исходной карточки
 

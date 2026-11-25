@@ -2979,6 +2979,48 @@
       "title": "Agent Mosaic — Wiki_PG session policy results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/alphaxiv-openresearch/2026-11-25-snapshot-portability.md",
+      "title": "OpenResearch — source snapshot portability",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md",
+      "title": "OpenResearch — snapshot portability protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/alphaxiv-openresearch/paper2project-snapshot-portability.py",
+      "title": "Paper2Project — snapshot and portable ZIP lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/alphaxiv-openresearch/openresearch-source-snapshot-test.rs",
+      "title": "OpenResearch — pinned Rust snapshot test",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json",
+      "title": "Paper2Project — snapshot portability results",
+      "kind": "data",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json",
+      "title": "OpenResearch — original Rust snapshot method results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

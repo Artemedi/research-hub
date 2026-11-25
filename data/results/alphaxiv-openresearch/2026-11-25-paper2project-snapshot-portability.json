@@ -1,0 +1,9 @@
+{
+  "target_commit": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "cases": 4,
+  "local_snapshot_retained": 4,
+  "dirty_bytes_retained": 4,
+  "export_manifest_verified": 4,
+  "exports_with_source_bytes": 0,
+  "altered_snapshot_detected": 4
+}

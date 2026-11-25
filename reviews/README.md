@@ -34,6 +34,7 @@
 | [agent-risk — replay assumptions and targeted continuation](agent-risk/2026-11-09-replay-assumptions.md) | 2026-11-09 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |
+| [OpenResearch — source snapshot portability](alphaxiv-openresearch/2026-11-25-snapshot-portability.md) | 2026-11-25 |
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
 | [NVIDIA Auto Ontology — Semantic Model for Relational Data — source review](auto-ontology/2026-11-13.md) | 2026-11-13 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |

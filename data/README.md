@@ -32,6 +32,8 @@
 | [data/results/agent-mosaic/2026-11-25-wiki-pg-session-policy.json](results/agent-mosaic/2026-11-25-wiki-pg-session-policy.json) | Результат ограниченной проверки |
 | [data/results/agent-risk/2026-11-09-replay-boundary.json](results/agent-risk/2026-11-09-replay-boundary.json) | Результат ограниченной проверки |
 | [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) | Результат ограниченной проверки |
+| [data/results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json](results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json) | Результат ограниченной проверки |
+| [data/results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json](results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-04.json](results/benchshield/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-25-paper2project-report-replay.json](results/benchshield/2026-11-25-paper2project-report-replay.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-independent-oracle.json](results/cera-moa/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |

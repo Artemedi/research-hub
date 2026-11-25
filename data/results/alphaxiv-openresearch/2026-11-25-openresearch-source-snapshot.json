@@ -1,0 +1,13 @@
+{
+  "upstream_commit": "23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d",
+  "image": "sha256:6258907abe69656e41cd992e0b705cdcfabcbbe3db374f92ed2d47121282d4a1",
+  "repetitions": 2,
+  "checks_per_repetition": {
+    "cases": 4,
+    "committed_bytes_retained": 4,
+    "deduplicated": 4,
+    "retained_after_checkout_loss": 4,
+    "relocated_with_descriptor": 4,
+    "altered_archive_rejected": 4
+  }
+}

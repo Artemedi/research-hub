@@ -4375,6 +4375,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Actual read-only MCP comparison on fictional metrics. The local release gate is external to Wiki_PG and covers one session and a fixed rule.",
       "supersedes": null
+    },
+    {
+      "id": "alphaxiv-openresearch-snapshot-portability-20261125",
+      "study_ids": ["alphaxiv-openresearch"],
+      "version_ids": ["alphaxiv-openresearch-version"],
+      "date": "2026-11-25",
+      "document": "reviews/alphaxiv-openresearch/2026-11-25-snapshot-portability.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned source snapshot and export contracts only. No launcher, supervisor, provider, workload performance or project benefit evaluated.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4919,6 +4929,22 @@
         "experiments/agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md",
         "experiments/agent-mosaic/wiki-pg-session-policy.py",
         "data/results/agent-mosaic/2026-11-25-wiki-pg-session-policy.json"
+      ]
+    },
+    {
+      "id": "alphaxiv-openresearch-snapshot-portability-20261125-lab",
+      "study_ids": ["alphaxiv-openresearch"],
+      "review_id": "alphaxiv-openresearch-snapshot-portability-20261125",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two repeated four-case controls on actual Paper2Project registration, ZIP export and Rust OpenResearch source snapshot methods. Local tree and portable archive contracts differ in retained bytes and packaging.",
+      "limitations": "Synthetic repositories and temporary workspaces. Does not measure experiment execution, sharing policy, performance, or production behavior.",
+      "artifacts": [
+        "experiments/alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md",
+        "experiments/alphaxiv-openresearch/paper2project-snapshot-portability.py",
+        "experiments/alphaxiv-openresearch/openresearch-source-snapshot-test.rs",
+        "data/results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json",
+        "data/results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json"
       ]
     }
   ],
