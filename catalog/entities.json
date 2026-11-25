@@ -4325,6 +4325,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Index inventory and version preservation on isolated servers. No database correctness, backup recovery, production, or project benefit measured.",
       "supersedes": null
+    },
+    {
+      "id": "jetstream-twin-maintenance-20261125",
+      "study_ids": ["jetstream"],
+      "version_ids": ["jetstream-2610-20527v3"],
+      "date": "2026-11-25",
+      "document": "reviews/jetstream/2026-11-25-twin-maintenance.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "The plan-only target and the pinned artifact build inputs were inspected. The experiment exercises a standalone trigger-based model, not the author implementation.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4799,6 +4809,20 @@
       "artifacts": [
         "experiments/postgresql-2026-11-minor-releases/wiki-pg-inventory.py",
         "data/results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json"
+      ]
+    },
+    {
+      "id": "jetstream-twin-maintenance-20261125-lab",
+      "study_ids": ["jetstream"],
+      "review_id": "jetstream-twin-maintenance-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two identical runs, 96 equality comparisons per run across six data states. Both stale-read controls detected.",
+      "limitations": "Synthetic PostgreSQL state with a DuckDB SQL oracle. Author accelerator, Verus, performance and deployment unmeasured.",
+      "artifacts": [
+        "experiments/jetstream/2026-11-25-twin-protocol.md",
+        "experiments/jetstream/twin-maintenance.py",
+        "data/results/jetstream/2026-11-25-twin-maintenance.json"
       ]
     }
   ],

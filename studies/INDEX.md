@@ -45,7 +45,7 @@
 | [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
 | [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) · [2026-11-06 / inspektor-gadget-podman-20261106](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) · [BK-041 — проверка системного допуска](../reviews/inspektor-gadget/2026-11-06-privilege-gate.md) |
 | [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04 / ipfire-fireperf-review](../reviews/ipfire-fireperf/2026-11-04.md) |
-| [JetStream — verified SQL query accelerators with incremental maintenance](jetstream.md) | [2026-11-14 / jetstream-fulltext-20261114](../reviews/jetstream/2026-11-14.md) |
+| [JetStream — verified SQL query accelerators with incremental maintenance](jetstream.md) | [2026-11-14 / jetstream-fulltext-20261114](../reviews/jetstream/2026-11-14.md) · [2026-11-25 / jetstream-twin-maintenance-20261125](../reviews/jetstream/2026-11-25-twin-maintenance.md) |
 | [JevAgentHarness](jevagentharness.md) | [2026-11-03 / jevagentharness-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04 / julia-1-review](../reviews/julia-1/2026-11-04.md) |
 | [Karpathy AutoResearch и BK-034 — цикл экспериментов и приложение AI LABS](karpathy-autoresearch.md) | [2026-11-04 / karpathy-autoresearch-review](../reviews/karpathy-autoresearch/2026-11-04.md) · [2026-11-06 / karpathy-autoresearch-loop-audit-20261106](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |

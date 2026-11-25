@@ -72,6 +72,7 @@
 | [BK-041 privileged Podman eBPF trace audit](inspektor-gadget/2026-11-06-privileged-podman-trace.md) | 2026-11-06 |
 | [IPFire fireperf — TCP loopback](ipfire-fireperf/2026-11-04.md) | 2026-11-04 |
 | [JetStream — Generating Verified Query Accelerators for Existing Database Systems — full-text review 2026-11-14](jetstream/2026-11-14.md) | 2026-11-14 |
+| [JetStream — synthetic transaction contract for AKUZ Optimizer Twin](jetstream/2026-11-25-twin-maintenance.md) | 2026-11-25 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |
 | [Karpathy autoresearch — исходники и ограничения](karpathy-autoresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-034 Karpathy/AI LABS and Wiki_PG autoloop](karpathy-autoresearch/2026-11-06-loop-audit.md) | 2026-11-06 |

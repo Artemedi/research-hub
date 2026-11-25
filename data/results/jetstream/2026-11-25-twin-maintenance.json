@@ -1,0 +1,71 @@
+{
+  "postgres": "180007",
+  "image": "postgres@sha256:c699303802144847d238196173655dbbecf7a96aeca1565f2b02eb671a1f0b6b",
+  "duckdb": "1.5.4",
+  "candidate": "lab_trigger_maintained_buckets",
+  "exact_comparisons": 96,
+  "stale_result_control_detected": true,
+  "forced_stale_fallback_control_detected": true,
+  "stages": {
+    "initial": {
+      "all_rows": "state",
+      "known_amounts": "state",
+      "total_by_bucket": "state",
+      "min_bucket_total": "state",
+      "number_of_buckets": "state",
+      "range_count": "state",
+      "empty_bucket": "state",
+      "null_rows": "sql"
+    },
+    "rollback": {
+      "all_rows": "state",
+      "known_amounts": "state",
+      "total_by_bucket": "state",
+      "min_bucket_total": "state",
+      "number_of_buckets": "state",
+      "range_count": "state",
+      "empty_bucket": "state",
+      "null_rows": "sql"
+    },
+    "held_snapshot": {
+      "all_rows": "state",
+      "known_amounts": "state",
+      "total_by_bucket": "state",
+      "min_bucket_total": "state",
+      "number_of_buckets": "state",
+      "range_count": "state",
+      "empty_bucket": "state",
+      "null_rows": "sql"
+    },
+    "after_commit": {
+      "all_rows": "state",
+      "known_amounts": "state",
+      "total_by_bucket": "state",
+      "min_bucket_total": "state",
+      "number_of_buckets": "state",
+      "range_count": "state",
+      "empty_bucket": "state",
+      "null_rows": "sql"
+    },
+    "fallback": {
+      "all_rows": "sql",
+      "known_amounts": "sql",
+      "total_by_bucket": "sql",
+      "min_bucket_total": "sql",
+      "number_of_buckets": "sql",
+      "range_count": "sql",
+      "empty_bucket": "sql",
+      "null_rows": "sql"
+    },
+    "rebuild": {
+      "all_rows": "state",
+      "known_amounts": "state",
+      "total_by_bucket": "state",
+      "min_bucket_total": "state",
+      "number_of_buckets": "state",
+      "range_count": "state",
+      "empty_bucket": "state",
+      "null_rows": "sql"
+    }
+  }
+}

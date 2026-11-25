@@ -2839,6 +2839,34 @@
       "title": "PostgreSQL minor maintenance — Wiki_PG inventory results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/jetstream/2026-11-25-twin-maintenance.md",
+      "title": "JetStream — synthetic transaction contract for AKUZ Optimizer Twin",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/jetstream/2026-11-25-twin-protocol.md",
+      "title": "JetStream — synthetic Twin contract protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/jetstream/twin-maintenance.py",
+      "title": "JetStream — PostgreSQL and DuckDB contract lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/jetstream/2026-11-25-twin-maintenance.json",
+      "title": "JetStream — synthetic Twin contract results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

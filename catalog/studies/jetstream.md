@@ -13,6 +13,7 @@
 ## Версии и история обзоров
 
 - [jetstream-fulltext-20261114](../../reviews/jetstream/2026-11-14.md), 2026-11-14; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:2610.20527v3](https://arxiv.org/pdf/2610.20527v3).
+- [jetstream-twin-maintenance-20261125](../../reviews/jetstream/2026-11-25-twin-maintenance.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:2610.20527v3](https://arxiv.org/pdf/2610.20527v3).
 
 ## Применимость к проектам
 
@@ -22,7 +23,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- jetstream-twin-maintenance-20261125-lab: SYNTHETIC / PASS. Two identical runs, 96 equality comparisons per run across six data states. Both stale-read controls detected. Synthetic PostgreSQL state with a DuckDB SQL oracle. Author accelerator, Verus, performance and deployment unmeasured. [Артефакт](../../experiments/jetstream/2026-11-25-twin-protocol.md) · [Артефакт](../../experiments/jetstream/twin-maintenance.py) · [Артефакт](../../data/results/jetstream/2026-11-25-twin-maintenance.json)
 
 ## Ссылки из исходной карточки
 
