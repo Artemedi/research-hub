@@ -3133,6 +3133,34 @@
       "title": "GeoAgent — Paper2Project snapshot-binding results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.md",
+      "title": "Inspektor Gadget — Wiki_PG diagnostic collection coverage",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md",
+      "title": "Inspektor Gadget — Wiki_PG diagnostic coverage protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/inspektor-gadget/wiki-pg-collection-coverage.py",
+      "title": "Inspektor Gadget — synthetic coverage replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.json",
+      "title": "Inspektor Gadget — Wiki_PG diagnostic coverage results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

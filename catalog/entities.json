@@ -4425,6 +4425,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic reference acceptance and preserved quotes in Paper2Project. Artifact role and seismic workflow correctness are outside the measured contract.",
       "supersedes": null
+    },
+    {
+      "id": "inspektor-gadget-wiki-pg-coverage-20261125",
+      "study_ids": ["inspektor-gadget"],
+      "version_ids": ["inspektor-gadget-version"],
+      "date": "2026-11-25",
+      "document": "reviews/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic diagnostic reports exercise Wiki_PG ingestion and search without running a tracer or measuring event completeness.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5041,6 +5051,20 @@
         "experiments/geoagent/2026-11-25-paper2project-artifact-binding-protocol.md",
         "experiments/geoagent/paper2project-artifact-binding.py",
         "data/results/geoagent/2026-11-25-paper2project-artifact-binding.json"
+      ]
+    },
+    {
+      "id": "inspektor-gadget-wiki-pg-coverage-20261125-lab",
+      "study_ids": ["inspektor-gadget"],
+      "review_id": "inspektor-gadget-wiki-pg-coverage-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching repeats of a legacy report and nine explicit outcomes. Coverage was ok for one confirmed case, unknown for six, and degraded for two.",
+      "limitations": "Counters-only projection excludes report payload before indexing. No live capture, privacy guarantee or production integration.",
+      "artifacts": [
+        "experiments/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md",
+        "experiments/inspektor-gadget/wiki-pg-collection-coverage.py",
+        "data/results/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.json"
       ]
     }
   ],

@@ -1,0 +1,102 @@
+{
+  "wiki_pg_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 2,
+  "status": "PASS",
+  "legacy_startup_with_marker": {
+    "tool_status": "ok",
+    "coverage": "ok",
+    "search_retained_marker": true
+  },
+  "projected_cases": [
+    {
+      "case": "confirmed",
+      "expected_events": 40,
+      "observed_events": 40,
+      "unrelated_events": 0,
+      "collector_outcome": "finished",
+      "tool_status": "ok",
+      "coverage": "ok",
+      "search_retained_marker": false
+    },
+    {
+      "case": "startup_only",
+      "expected_events": 40,
+      "observed_events": null,
+      "unrelated_events": 0,
+      "collector_outcome": "finished",
+      "tool_status": "completed_unverified",
+      "coverage": "unknown",
+      "search_retained_marker": false
+    },
+    {
+      "case": "empty",
+      "expected_events": 40,
+      "observed_events": 0,
+      "unrelated_events": 0,
+      "collector_outcome": "finished",
+      "tool_status": "empty_output",
+      "coverage": "unknown",
+      "search_retained_marker": false
+    },
+    {
+      "case": "partial",
+      "expected_events": 40,
+      "observed_events": 39,
+      "unrelated_events": 0,
+      "collector_outcome": "finished",
+      "tool_status": "completed_unverified",
+      "coverage": "unknown",
+      "search_retained_marker": false
+    },
+    {
+      "case": "extra",
+      "expected_events": 40,
+      "observed_events": 41,
+      "unrelated_events": 0,
+      "collector_outcome": "finished",
+      "tool_status": "completed_unverified",
+      "coverage": "unknown",
+      "search_retained_marker": false
+    },
+    {
+      "case": "unrelated_event",
+      "expected_events": 40,
+      "observed_events": 40,
+      "unrelated_events": 1,
+      "collector_outcome": "finished",
+      "tool_status": "completed_unverified",
+      "coverage": "unknown",
+      "search_retained_marker": false
+    },
+    {
+      "case": "unverified_zero",
+      "expected_events": 0,
+      "observed_events": 0,
+      "unrelated_events": 0,
+      "collector_outcome": "finished",
+      "tool_status": "empty_output",
+      "coverage": "unknown",
+      "search_retained_marker": false
+    },
+    {
+      "case": "permission_denied",
+      "expected_events": 40,
+      "observed_events": null,
+      "unrelated_events": 0,
+      "collector_outcome": "permission_denied",
+      "tool_status": "permission_denied",
+      "coverage": "degraded",
+      "search_retained_marker": false
+    },
+    {
+      "case": "timeout",
+      "expected_events": 40,
+      "observed_events": 40,
+      "unrelated_events": 0,
+      "collector_outcome": "timeout",
+      "tool_status": "timeout",
+      "coverage": "degraded",
+      "search_retained_marker": false
+    }
+  ]
+}

@@ -22,6 +22,7 @@
 
 - [inspektor-gadget-review](../../reviews/inspektor-gadget/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
 - [inspektor-gadget-podman-20261106](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: inspektor-gadget-review. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
+- [inspektor-gadget-wiki-pg-coverage-20261125](../../reviews/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
 - [BK-041 — проверка системного допуска](../../reviews/inspektor-gadget/2026-11-06-privilege-gate.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -35,6 +36,7 @@
 ## Эксперименты
 
 - bk041-ig-podman-exec-20261106: SYNTHETIC / OBSERVED. Privileged pinned IG v0.57.0 trace_exec on rootless Podman, filter.exec 5×40/40, zero of 25 negative; --comm 0/40, host 0/40. JSON leaks arguments despite --fields; no raw traces published. Not production-ready or an overhead estimate, no BPF kernel drop counters. [Артефакт](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) · [Артефакт](../../data/results/inspektor-gadget/2026-11-06-podman-trace.json) · [Артефакт](../../data/results/inspektor-gadget/2026-11-06-host-diagnostics.json) · [Артефакт](../../data/results/inspektor-gadget/2026-11-06-host-pilot.json) · [Артефакт](../../experiments/2026-11-06-bk041-podman-trace.py) · [Артефакт](../../experiments/2026-11-06-bk041-host-diagnostic.py)
+- inspektor-gadget-wiki-pg-coverage-20261125-lab: SYNTHETIC / PASS. Two matching repeats of a legacy report and nine explicit outcomes. Coverage was ok for one confirmed case, unknown for six, and degraded for two. Counters-only projection excludes report payload before indexing. No live capture, privacy guarantee or production integration. [Артефакт](../../experiments/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md) · [Артефакт](../../experiments/inspektor-gadget/wiki-pg-collection-coverage.py) · [Артефакт](../../data/results/inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.json)
 
 ## Ссылки из исходной карточки
 
