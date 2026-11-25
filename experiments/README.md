@@ -42,6 +42,8 @@
 - [2026-11-07-bk021-tool-context-proxy.py](2026-11-07-bk021-tool-context-proxy.py)
 - [agent-error-dataset/2026-11-08-checkpoint-replay-ab.py](agent-error-dataset/2026-11-08-checkpoint-replay-ab.py)
 - [agent-error-dataset/2026-11-08-independent-oracle.py](agent-error-dataset/2026-11-08-independent-oracle.py)
+- [agent-error-dataset/2026-11-25-wiki-pg-replay-protocol.md](agent-error-dataset/2026-11-25-wiki-pg-replay-protocol.md)
+- [agent-error-dataset/wiki-pg-paired-replay.py](agent-error-dataset/wiki-pg-paired-replay.py)
 - [agent-mosaic/2026-11-07-composite-gate-oracle.py](agent-mosaic/2026-11-07-composite-gate-oracle.py)
 - [agent-mosaic/2026-11-07-composite-gate.py](agent-mosaic/2026-11-07-composite-gate.py)
 - [agent-risk/2026-11-09-replay-boundary.py](agent-risk/2026-11-09-replay-boundary.py)

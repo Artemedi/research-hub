@@ -26,6 +26,7 @@
 | [data/project-fit/vercel-agent-desktop/2026-11-05.json](project-fit/vercel-agent-desktop/2026-11-05.json) | Матрица project fit |
 | [data/results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json](results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json) | Результат ограниченной проверки |
 | [data/results/agent-error-dataset/2026-11-08-independent-oracle.json](results/agent-error-dataset/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |
+| [data/results/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.json](results/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.json) | Результат ограниченной проверки |
 | [data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json](results/agent-mosaic/2026-11-07-composite-gate-oracle.json) | Результат ограниченной проверки |
 | [data/results/agent-mosaic/2026-11-07-composite-gate.json](results/agent-mosaic/2026-11-07-composite-gate.json) | Результат ограниченной проверки |
 | [data/results/agent-risk/2026-11-09-replay-boundary.json](results/agent-risk/2026-11-09-replay-boundary.json) | Результат ограниченной проверки |

@@ -4355,6 +4355,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Only Paper2Project's review packets and decision history were exercised. Reviewer quality, Hyra's orchestration and publish authority remain unmeasured.",
       "supersedes": null
+    },
+    {
+      "id": "agent-error-dataset-wiki-pg-paired-replay-20261125",
+      "study_ids": ["agent-error-dataset"],
+      "version_ids": ["verified-agent-error-dataset-2026-11-05"],
+      "date": "2026-11-25",
+      "document": "reviews/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Read-only Wiki_PG Python API and stdio MCP for two deterministic selector errors. Real traces and learned diagnosis remain unmeasured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4871,6 +4881,20 @@
         "experiments/hyra-2/2026-11-25-review-protocol.md",
         "experiments/hyra-2/paper2project-review-lifecycle.py",
         "data/results/hyra-2/2026-11-25-paper2project-review-lifecycle.json"
+      ]
+    },
+    {
+      "id": "agent-error-dataset-wiki-pg-paired-replay-20261125-lab",
+      "study_ids": ["agent-error-dataset"],
+      "review_id": "agent-error-dataset-wiki-pg-paired-replay-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two identical 24-case paired replays per interface, Python API and read-only stdio MCP. Eight evidence-bound corrections matched raw sources, 16 abstained, and the oracle detected all eight wrong selectors.",
+      "limitations": "Synthetic SQLite generation and source fixtures. No agent, live system, or production measurement.",
+      "artifacts": [
+        "experiments/agent-error-dataset/2026-11-25-wiki-pg-replay-protocol.md",
+        "experiments/agent-error-dataset/wiki-pg-paired-replay.py",
+        "data/results/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.json"
       ]
     }
   ],

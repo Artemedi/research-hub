@@ -2923,6 +2923,34 @@
       "title": "Hyra 2.0 — synthetic review lifecycle results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.md",
+      "title": "Agent Error Dataset — Wiki_PG paired read replay",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-error-dataset/2026-11-25-wiki-pg-replay-protocol.md",
+      "title": "Agent Error Dataset — Wiki_PG replay protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-error-dataset/wiki-pg-paired-replay.py",
+      "title": "Agent Error Dataset — read-only Wiki_PG replay lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.json",
+      "title": "Agent Error Dataset — Wiki_PG paired replay results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

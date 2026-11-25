@@ -28,6 +28,7 @@
 | [P0 controlled synthetic trials and sixteen independent adoption gates](../portfolio/2026-11-10-p0-execution.md) | 2026-11-10 |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay — полнотекстовая научная проверка](agent-error-dataset/2026-11-05-full-text.md) | 2026-11-05 |
 | [Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B](agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) | 2026-11-08 |
+| [Agent Error Dataset — Wiki_PG paired read replay](agent-error-dataset/2026-11-25-wiki-pg-paired-replay.md) | 2026-11-25 |
 | [Agent Mosaic — полнотекстовый follow-up и synthetic composite-gate lab](agent-mosaic/2026-11-07-composite-gate.md) | 2026-11-07 |
 | [agent-risk — replay assumptions and targeted continuation](agent-risk/2026-11-09-replay-assumptions.md) | 2026-11-09 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |

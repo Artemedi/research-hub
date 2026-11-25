@@ -23,6 +23,7 @@
 - [agent-error-dataset-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.40111).
 - [fulltext-agent-error-dataset-2026-11-05](../../reviews/agent-error-dataset/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/html/2609.40111v2).
 - [agent-error-dataset-checkpoint-replay-20261108](../../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md), 2026-11-08; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/html/2609.40111v2).
+- [agent-error-dataset-wiki-pg-paired-replay-20261125](../../reviews/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/html/2609.40111v2).
 
 ## Применимость к проектам
 
@@ -77,6 +78,7 @@
 ## Эксперименты
 
 - agent-error-dataset-checkpoint-replay-20261108: SYNTHETIC / PASS. 30 синтетических cases × 3 повтора = 90 paired trials. Evidence-bound correction: 45/45 исправимых повторов приняты и достигли независимого ожидаемого state; 45/45 transient, ambiguous и misleading cases завершились abstain. Исходный retry успешен в 15/90 trials (только transient subset). 270/270 stale-checkpoint, forged-event, wrong-action, wrong-correction, changed-operation и extra-field controls заблокированы. Independent oracle PASS. Только детерминированный synthetic contract test. Не использовались LLM, AED dataset, model training, реальный agent, DBA trace, external tool, production data или project code. Это не репликация сравнения авторов 51,1% против 18,4% и не performance benchmark. [Артефакт](../../experiments/agent-error-dataset/2026-11-08-checkpoint-replay-ab.py) · [Артефакт](../../experiments/agent-error-dataset/2026-11-08-independent-oracle.py) · [Артефакт](../../data/results/agent-error-dataset/2026-11-08-checkpoint-replay-ab.json) · [Артефакт](../../data/results/agent-error-dataset/2026-11-08-independent-oracle.json)
+- agent-error-dataset-wiki-pg-paired-replay-20261125-lab: SYNTHETIC / PASS. Two identical 24-case paired replays per interface, Python API and read-only stdio MCP. Eight evidence-bound corrections matched raw sources, 16 abstained, and the oracle detected all eight wrong selectors. Synthetic SQLite generation and source fixtures. No agent, live system, or production measurement. [Артефакт](../../experiments/agent-error-dataset/2026-11-25-wiki-pg-replay-protocol.md) · [Артефакт](../../experiments/agent-error-dataset/wiki-pg-paired-replay.py) · [Артефакт](../../data/results/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.json)
 
 ## Ссылки из исходной карточки
 

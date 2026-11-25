@@ -1,0 +1,60 @@
+{
+  "target_commit": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "python": "3.12.16",
+  "mcp": "1.28.1",
+  "checkpoint_unchanged": true,
+  "python_api": {
+    "cases": 24,
+    "original_retries_failed": 24,
+    "corrections_verified": 8,
+    "wrong_selectors_detected": 8,
+    "abstained": 16,
+    "families": {
+      "explicit_port": {
+        "corrected": 4
+      },
+      "explicit_region": {
+        "corrected": 4
+      },
+      "no_port": {
+        "abstained": 4
+      },
+      "no_region": {
+        "abstained": 4
+      },
+      "conflicting_ports": {
+        "abstained": 4
+      },
+      "other_action_clue": {
+        "abstained": 4
+      }
+    }
+  },
+  "mcp_stdio": {
+    "cases": 24,
+    "original_retries_failed": 24,
+    "corrections_verified": 8,
+    "wrong_selectors_detected": 8,
+    "abstained": 16,
+    "families": {
+      "explicit_port": {
+        "corrected": 4
+      },
+      "explicit_region": {
+        "corrected": 4
+      },
+      "no_port": {
+        "abstained": 4
+      },
+      "no_region": {
+        "abstained": 4
+      },
+      "conflicting_ports": {
+        "abstained": 4
+      },
+      "other_action_clue": {
+        "abstained": 4
+      }
+    }
+  }
+}
