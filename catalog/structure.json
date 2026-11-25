@@ -2776,6 +2776,27 @@
       "title": "Silent Cue Loss — результаты повторной проверки контракта PDF-импорта",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/drift-inspector/2026-11-25-b1-protocol.md",
+      "title": "Drift Inspector — B1: corpus sampling and DBA query protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/drift-inspector/2026-11-25-b1-freeze.py",
+      "title": "Drift Inspector — B1: freeze and replay OpenAlex sample",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/drift-inspector/2026-11-25-b1-corpus-manifest.json",
+      "title": "Drift Inspector — B1: 2,400-work corpus manifest",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
