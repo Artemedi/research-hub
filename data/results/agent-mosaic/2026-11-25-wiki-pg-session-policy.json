@@ -1,0 +1,28 @@
+{
+  "target_commit": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "python": "3.12.16",
+  "mcp": "1.28.1",
+  "native_comparisons": 16,
+  "sessions_per_mode": 28,
+  "attempts_per_mode": 36,
+  "checkpoint_unchanged": true,
+  "modes": {
+    "source_only": {
+      "ALLOW": 32,
+      "sessions_with_protected_pair": 12,
+      "ABSTAIN": 4
+    },
+    "per_response": {
+      "ALLOW": 28,
+      "sessions_with_protected_pair": 8,
+      "DENY": 4,
+      "ABSTAIN": 4
+    },
+    "session": {
+      "ALLOW": 20,
+      "sessions_with_protected_pair": 0,
+      "DENY": 12,
+      "ABSTAIN": 4
+    }
+  }
+}

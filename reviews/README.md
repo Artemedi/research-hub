@@ -30,6 +30,7 @@
 | [Agent Error Dataset — checkpoint-bound correction and synthetic replay A/B](agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) | 2026-11-08 |
 | [Agent Error Dataset — Wiki_PG paired read replay](agent-error-dataset/2026-11-25-wiki-pg-paired-replay.md) | 2026-11-25 |
 | [Agent Mosaic — полнотекстовый follow-up и synthetic composite-gate lab](agent-mosaic/2026-11-07-composite-gate.md) | 2026-11-07 |
+| [Agent Mosaic — Wiki_PG session release policy](agent-mosaic/2026-11-25-wiki-pg-session-policy.md) | 2026-11-25 |
 | [agent-risk — replay assumptions and targeted continuation](agent-risk/2026-11-09-replay-assumptions.md) | 2026-11-09 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |

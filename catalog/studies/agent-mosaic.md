@@ -22,6 +22,7 @@
 
 - [agent-mosaic-review](../../studies/agent-mosaic.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30418vv1).
 - [agent-mosaic-composite-gate-20261107](../../reviews/agent-mosaic/2026-11-07-composite-gate.md), 2026-11-07; FULL_TEXT_REVIEWED; заменяет: agent-mosaic-review. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30418vv1).
+- [agent-mosaic-wiki-pg-session-policy-20261125](../../reviews/agent-mosaic/2026-11-25-wiki-pg-session-policy.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30418vv1).
 
 ## Применимость к проектам
 
@@ -76,6 +77,7 @@
 ## Эксперименты
 
 - agent-mosaic-composite-gate-lab-20261107: SYNTHETIC / OBSERVED. 30 synthetic cases across three abstract domains x9 output patterns =270; compared document ACL, structured claim/provenance gate and deterministic output-bound gate. Oracle labels 90 ALLOW, 120 DENY, 60 INCONCLUSIVE; independent checker PASS 270/270. Output-bound gate: zero false disclosure releases, zero unverified releases, 90/90 safe outputs released, 120 INCONCLUSIVE. No LLM, Hermes, Pi, retrieval, target project source, network, real records or production. Oracle uses exact synthetic markers and fixture provenance, not general semantic claim extraction. Output-bound renderer is a proposed contract, not an implementation. Author benchmark results NOT_REPRODUCED. [Артефакт](../../reviews/agent-mosaic/2026-11-07-composite-gate.md) · [Артефакт](../../experiments/agent-mosaic/2026-11-07-composite-gate.py) · [Артефакт](../../experiments/agent-mosaic/2026-11-07-composite-gate-oracle.py) · [Артефакт](../../data/results/agent-mosaic/2026-11-07-composite-gate.json) · [Артефакт](../../data/results/agent-mosaic/2026-11-07-composite-gate-oracle.json) · [Артефакт](../../portfolio/2026-11-07/agent-mosaic-project-fit.md) · [Артефакт](../../data/project-fit/agent-mosaic/2026-11-07-composite-gate.json)
+- agent-mosaic-wiki-pg-session-policy-20261125-lab: SYNTHETIC / PASS. Two matching replays. In each 28-session matrix, protected pairs appeared in 12 source-only sessions, eight per-response sessions, and zero sessions with the stateful rule. All 20 permitted releases remained available. Four fictitious hosts, one predeclared pair of numeric fields, and a lab-only release controller. No model or production authorization. [Артефакт](../../experiments/agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md) · [Артефакт](../../experiments/agent-mosaic/wiki-pg-session-policy.py) · [Артефакт](../../data/results/agent-mosaic/2026-11-25-wiki-pg-session-policy.json)
 
 ## Ссылки из исходной карточки
 

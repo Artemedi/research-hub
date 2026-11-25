@@ -4365,6 +4365,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Read-only Wiki_PG Python API and stdio MCP for two deterministic selector errors. Real traces and learned diagnosis remain unmeasured.",
       "supersedes": null
+    },
+    {
+      "id": "agent-mosaic-wiki-pg-session-policy-20261125",
+      "study_ids": ["agent-mosaic"],
+      "version_ids": ["agent-mosaic-version"],
+      "date": "2026-11-25",
+      "document": "reviews/agent-mosaic/2026-11-25-wiki-pg-session-policy.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Actual read-only MCP comparison on fictional metrics. The local release gate is external to Wiki_PG and covers one session and a fixed rule.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -4895,6 +4905,20 @@
         "experiments/agent-error-dataset/2026-11-25-wiki-pg-replay-protocol.md",
         "experiments/agent-error-dataset/wiki-pg-paired-replay.py",
         "data/results/agent-error-dataset/2026-11-25-wiki-pg-paired-replay.json"
+      ]
+    },
+    {
+      "id": "agent-mosaic-wiki-pg-session-policy-20261125-lab",
+      "study_ids": ["agent-mosaic"],
+      "review_id": "agent-mosaic-wiki-pg-session-policy-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching replays. In each 28-session matrix, protected pairs appeared in 12 source-only sessions, eight per-response sessions, and zero sessions with the stateful rule. All 20 permitted releases remained available.",
+      "limitations": "Four fictitious hosts, one predeclared pair of numeric fields, and a lab-only release controller. No model or production authorization.",
+      "artifacts": [
+        "experiments/agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md",
+        "experiments/agent-mosaic/wiki-pg-session-policy.py",
+        "data/results/agent-mosaic/2026-11-25-wiki-pg-session-policy.json"
       ]
     }
   ],

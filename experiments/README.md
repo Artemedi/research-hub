@@ -46,6 +46,8 @@
 - [agent-error-dataset/wiki-pg-paired-replay.py](agent-error-dataset/wiki-pg-paired-replay.py)
 - [agent-mosaic/2026-11-07-composite-gate-oracle.py](agent-mosaic/2026-11-07-composite-gate-oracle.py)
 - [agent-mosaic/2026-11-07-composite-gate.py](agent-mosaic/2026-11-07-composite-gate.py)
+- [agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md](agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md)
+- [agent-mosaic/wiki-pg-session-policy.py](agent-mosaic/wiki-pg-session-policy.py)
 - [agent-risk/2026-11-09-replay-boundary.py](agent-risk/2026-11-09-replay-boundary.py)
 - [benchshield/2026-11-25-paper2project-protocol.md](benchshield/2026-11-25-paper2project-protocol.md)
 - [benchshield/paper2project-report-replay.py](benchshield/paper2project-report-replay.py)

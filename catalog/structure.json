@@ -2951,6 +2951,34 @@
       "title": "Agent Error Dataset — Wiki_PG paired replay results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-mosaic/2026-11-25-wiki-pg-session-policy.md",
+      "title": "Agent Mosaic — Wiki_PG session release policy",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md",
+      "title": "Agent Mosaic — Wiki_PG release policy protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-mosaic/wiki-pg-session-policy.py",
+      "title": "Agent Mosaic — Wiki_PG read-only MCP policy lab",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-mosaic/2026-11-25-wiki-pg-session-policy.json",
+      "title": "Agent Mosaic — Wiki_PG session policy results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
