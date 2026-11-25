@@ -22,6 +22,7 @@
 
 - [paper2agent-review](../../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md), 2026-09-21; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://www.nature.com/articles/s41586-026-11044-y).
 - [fulltext-paper2agent-2026-11-05](../../reviews/paper2agent/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [Nature version of record 2026-09-16](https://www.nature.com/articles/s41586-026-11044-y).
+- [paper2agent-qualified-handoff-20261125](../../reviews/paper2agent/2026-11-25-paper2project-qualified-handoff.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [не установлена](https://www.nature.com/articles/s41586-026-11044-y).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- paper2agent-qualified-handoff-20261125-lab: SYNTHETIC / PASS. Two matching four-fixture repeats. Incomplete and outdated handoffs were refused, then an attested supplement advanced the snapshot while retaining historical provenance. Artificial documents and scripted reviewers. No conversion quality or scientific correctness measured. [Артефакт](../../experiments/paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md) · [Артефакт](../../experiments/paper2agent/paper2project-qualified-handoff.py) · [Артефакт](../../data/results/paper2agent/2026-11-25-paper2project-qualified-handoff.json)
 
 ## Ссылки из исходной карточки
 

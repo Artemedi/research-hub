@@ -3273,6 +3273,34 @@
       "title": "MCCL — catalogue retention and freshness results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/paper2agent/2026-11-25-paper2project-qualified-handoff.md",
+      "title": "Paper2Agent — qualified handoff and snapshot revisions",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md",
+      "title": "Paper2Agent — qualified handoff protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/paper2agent/paper2project-qualified-handoff.py",
+      "title": "Paper2Agent — synthetic package revision replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/paper2agent/2026-11-25-paper2project-qualified-handoff.json",
+      "title": "Paper2Agent — handoff and provenance export results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

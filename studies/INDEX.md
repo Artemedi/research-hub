@@ -64,7 +64,7 @@
 | [NVIDIA Auto Ontology — семантический слой и text-to-SQL](auto-ontology.md) | [2026-11-13 / auto-ontology-20261113](../reviews/auto-ontology/2026-11-13.md) |
 | [Open Steps — понятные статусы и навыки агентной разработки](open-steps.md) | [2026-11-04 / open-steps-review](../reviews/open-steps/2026-11-04.md) |
 | [PackHallu](package-hallucination-rule-files.md) | [2026-11-03 / package-hallucination-rule-files-review](../portfolio/2026-10-06--2026-10-12/review.md) |
-| [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | [2026-09-21 / paper2agent-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-paper2agent-2026-11-05](../reviews/paper2agent/2026-11-05-full-text.md) |
+| [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | [2026-09-21 / paper2agent-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-paper2agent-2026-11-05](../reviews/paper2agent/2026-11-05-full-text.md) · [2026-11-25 / paper2agent-qualified-handoff-20261125](../reviews/paper2agent/2026-11-25-paper2project-qualified-handoff.md) |
 | [pgbot — deterministic PostgreSQL diagnostics for AI agents](pgbot.md) | [2026-11-04 / pgbot-review](../reviews/pgbot/2026-11-04.md) |
 | [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [2026-11-03 / poisoned-skills-review](../portfolio/2026-10-27--2026-11-02/review.md) |
 | [POLAR](polar.md) | [2026-11-03 / polar-review](../portfolio/2026-10-06--2026-10-12/review.md) |

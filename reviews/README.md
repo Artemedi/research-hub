@@ -101,6 +101,7 @@
 | [NovaFabric — капсулы, replay и проверка evidence](novafabric/2026-11-04.md) | 2026-11-04 |
 | [Open Steps — хуки и ограничения](open-steps/2026-11-04.md) | 2026-11-04 |
 | [Paper2Agent — Research Papers as Reliable AI Agents — полнотекстовая научная проверка](paper2agent/2026-11-05-full-text.md) | 2026-11-05 |
+| [Paper2Agent — qualified handoff and snapshot revisions](paper2agent/2026-11-25-paper2project-qualified-handoff.md) | 2026-11-25 |
 | [pgbot — диагностические проверки PostgreSQL](pgbot/2026-11-04.md) | 2026-11-04 |
 | [PostgreSQL 19 — version-aware settings evidence in Wiki_PG](postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md) | 2026-11-25 |
 | [PostgreSQL 15.20 and 18.7 — Wiki_PG index inventory](postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md) | 2026-11-25 |

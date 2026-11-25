@@ -1,0 +1,71 @@
+{
+  "revision": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "repeat_count": 2,
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": 4,
+      "incomplete_rejected": true,
+      "changed_fingerprint_rejected": true,
+      "prior_review_unchanged_before_acceptance": true,
+      "historical_job_stale_after_acceptance": true,
+      "before_roles": [
+        "main"
+      ],
+      "after_roles": [
+        "main",
+        "supplement"
+      ],
+      "historical_limitation_preserved": true,
+      "reports_exported_without_originals": 3
+    },
+    {
+      "fixture": 12,
+      "incomplete_rejected": true,
+      "changed_fingerprint_rejected": true,
+      "prior_review_unchanged_before_acceptance": true,
+      "historical_job_stale_after_acceptance": true,
+      "before_roles": [
+        "main"
+      ],
+      "after_roles": [
+        "main",
+        "supplement"
+      ],
+      "historical_limitation_preserved": true,
+      "reports_exported_without_originals": 3
+    },
+    {
+      "fixture": 23,
+      "incomplete_rejected": true,
+      "changed_fingerprint_rejected": true,
+      "prior_review_unchanged_before_acceptance": true,
+      "historical_job_stale_after_acceptance": true,
+      "before_roles": [
+        "main"
+      ],
+      "after_roles": [
+        "main",
+        "supplement"
+      ],
+      "historical_limitation_preserved": true,
+      "reports_exported_without_originals": 3
+    },
+    {
+      "fixture": 57,
+      "incomplete_rejected": true,
+      "changed_fingerprint_rejected": true,
+      "prior_review_unchanged_before_acceptance": true,
+      "historical_job_stale_after_acceptance": true,
+      "before_roles": [
+        "main"
+      ],
+      "after_roles": [
+        "main",
+        "supplement"
+      ],
+      "historical_limitation_preserved": true,
+      "reports_exported_without_originals": 3
+    }
+  ]
+}

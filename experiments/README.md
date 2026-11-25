@@ -123,6 +123,8 @@
 - [mcp-toolbox-postgres/wiki-pg-temporal-contract.py](mcp-toolbox-postgres/wiki-pg-temporal-contract.py)
 - [memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md](memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md)
 - [memory-centric-continual-learning/wiki-pg-catalogue-retention.py](memory-centric-continual-learning/wiki-pg-catalogue-retention.py)
+- [paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md](paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md)
+- [paper2agent/paper2project-qualified-handoff.py](paper2agent/paper2project-qualified-handoff.py)
 - [postgresql-19-ga-2026/2026-11-25-protocol.md](postgresql-19-ga-2026/2026-11-25-protocol.md)
 - [postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py](postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py)
 - [postgresql-2026-11-minor-releases/wiki-pg-inventory.py](postgresql-2026-11-minor-releases/wiki-pg-inventory.py)

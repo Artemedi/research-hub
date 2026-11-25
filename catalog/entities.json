@@ -4475,6 +4475,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic snapshot retention and update checks. Agent learning, transfer and production ingest behavior were not measured.",
       "supersedes": null
+    },
+    {
+      "id": "paper2agent-qualified-handoff-20261125",
+      "study_ids": ["paper2agent"],
+      "version_ids": ["paper2agent-version"],
+      "date": "2026-11-25",
+      "document": "reviews/paper2agent/2026-11-25-paper2project-qualified-handoff.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic document handoff and revision lifecycle only. No agentification, scientific package execution or production integration.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5161,6 +5171,20 @@
         "experiments/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md",
         "experiments/memory-centric-continual-learning/wiki-pg-catalogue-retention.py",
         "data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json"
+      ]
+    },
+    {
+      "id": "paper2agent-qualified-handoff-20261125-lab",
+      "study_ids": ["paper2agent"],
+      "review_id": "paper2agent-qualified-handoff-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching four-fixture repeats. Incomplete and outdated handoffs were refused, then an attested supplement advanced the snapshot while retaining historical provenance.",
+      "limitations": "Artificial documents and scripted reviewers. No conversion quality or scientific correctness measured.",
+      "artifacts": [
+        "experiments/paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md",
+        "experiments/paper2agent/paper2project-qualified-handoff.py",
+        "data/results/paper2agent/2026-11-25-paper2project-qualified-handoff.json"
       ]
     }
   ],
