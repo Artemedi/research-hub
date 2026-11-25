@@ -4,6 +4,7 @@
 * Runs the real WorkerManager and TaskLockManager with a disposable Git/tmux,
 * mock CLI exit7/exit0. No model, real credentials or project code touched.
 */
+import { preparePrivateTmux } from './private-tmux.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -24,7 +25,8 @@ const {StateManager}=await import(pathToFileURL(path.join(source,'dist/state/man
 
 const root=fs.mkdtempSync(path.join(os.tmpdir(),'research-failure-inject-'));
 const repo=path.join(root,'synthetic');
-const original={PATH:process.env.PATH,TMUX_TMPDIR:process.env.TMUX_TMPDIR,
+let tmux;
+const original={PATH:process.env.PATH,
   RESEARCH_RECOVERY_RESULT_DIR:process.env.RESEARCH_RECOVERY_RESULT_DIR,
   CLAUDE_SWARM_PERMISSION_MODE:process.env.CLAUDE_SWARM_PERMISSION_MODE,
   CLAUDE_SWARM_ALLOWED_TOOLS:process.env.CLAUDE_SWARM_ALLOWED_TOOLS,
@@ -78,9 +80,7 @@ case "$(basename "$PWD")" in
 esac
 `,{mode:0o700});
   fs.copyFileSync(mock,path.join(binDir,'claude-code'));
-  const tmuxDir=path.join(root,'private-tmux');
-  fs.mkdirSync(tmuxDir);
-  process.env.TMUX_TMPDIR=tmuxDir;
+  tmux=preparePrivateTmux(path.join(root,'private-tmux'));
   process.env.PATH=binDir+path.delimiter+original.PATH;
   process.env.RESEARCH_RECOVERY_RESULT_DIR=outDir;
   process.env.CLAUDE_SWARM_PERMISSION_MODE='default';
@@ -179,7 +179,8 @@ esac
   fs.writeFileSync(output,JSON.stringify(record,null,2)+'\n');
   console.log('RECOVERY',JSON.stringify({cases:record.cases_total,matched:record.matched_oracle,status:record.status}));
 }finally{
-  try{execFileSync('tmux',['kill-server'],{stdio:'ignore'});}catch{}
+  tmux?.stop();
+  tmux?.restore();
   for(const [key,value] of Object.entries(original)){
     if(value===undefined)delete process.env[key];else process.env[key]=value;
   }

@@ -13,16 +13,17 @@
 ## Версии и история обзоров
 
 - [static-library-hallucinations-fulltext-20261114](../../reviews/static-library-hallucinations/2026-11-14.md), 2026-11-14; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:2604.07755v3](https://arxiv.org/pdf/2604.07755v3).
+- [static-library-hallucinations-paper2project-pyright-20261125](../../reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md), 2026-11-25; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [arxiv:2604.07755v3](https://arxiv.org/pdf/2604.07755v3).
 
 ## Применимость к проектам
 
 Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.
 
-- [dsh-paper2agent](../../projects/dsh-paper2agent.md): DOCUMENTED_CANDIDATE; PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE. Проект выполняет Python author-code adapters с независимым comparator и источниками, закреплёнными по SHA Ограничения: Pyright/Mypy не доказаны в текущем workflow, Python-only; static green не scientific correctness; neither target benefit nor production qualification measured. Следующий тест: 30–50 frozen Python API fixtures, A existing checks vs B pre-run static warnings, independent execution oracle и false positive rate [Основание](../../portfolio/2026-11-14/review.md); предыдущая оценка: нет.
+- [dsh-paper2agent](../../projects/dsh-paper2agent.md): DOCUMENTED_CANDIDATE; SYNTHETIC_SCREENING_PASS / BENEFIT_UNPROVEN. Pyright identified direct API misuse before running a synthetic adapter against the current Paper2Project App. Ограничения: Dynamic API errors escaped. The pinned source seam is documented in the review. Adapter corpus and practical benefit remain unmeasured. Следующий тест: Use independently labeled, permitted adapter examples and quantify incremental detection and resource cost. [Основание](../../reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md); предыдущая оценка: static-library-hallucinations-dsh-paper2agent-profile-20261114.
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- static-library-hallucinations-paper2project-pyright-20261125-ab: SYNTHETIC / PASS. 40 authored calls to eight methods at pinned product HEAD, three repetitions. Pyright identified 16/16 direct errors before execution with zero false positives on 16 valid calls. It missed eight invalid dynamic calls. Authored fixtures, no representative generated corpus, independent human review or production benefit. [Артефакт](../../experiments/static-library-hallucinations/2026-11-25-protocol.md) · [Артефакт](../../experiments/static-library-hallucinations/2026-11-25-paper2project-pyright-ab.py) · [Артефакт](../../data/results/static-library-hallucinations/2026-11-25-paper2project-pyright-ab.json)
 
 ## Ссылки из исходной карточки
 

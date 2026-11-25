@@ -21,6 +21,9 @@
 ## Версии и история обзоров
 
 - [decision-geometry-harness-review](../../studies/decision-geometry-harness.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.37255vv2).
+- [Decision Geometry exact two-action bandit source reproduction and project-fit gate](../../reviews/decision-geometry-harness/2026-11-07-bandit-countercheck.md) — ссылка на материал вне структурированной истории.
+- [Decision Geometry practical schema and observation order A/B using pinned DSH serializer and ZCode](../../reviews/decision-geometry-harness/2026-11-07-interface-order-ab.md) — ссылка на материал вне структурированной истории.
+- [Decision Geometry native provider tool-use A/B and inert tool-result continuation](../../reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

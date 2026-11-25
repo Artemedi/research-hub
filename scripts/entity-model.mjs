@@ -94,6 +94,21 @@ export function validateEntities(root, m) {
     require(/^[a-f0-9]{40}$/.test(p.registry_revision) && p.registry_card_url.startsWith(`https://github.com/Artemedi/project-registry/blob/${p.registry_revision}/projects/`) && p.registry_card_url.endsWith('/PROJECT.md'), p.id + ': registry provenance required');
   }
   const decisions = ['PROFILE_CANDIDATE_NOT_VALIDATED', 'CONDITIONAL_NEEDS_EVIDENCE', 'NO_CONFIRMED_FIT', 'RESEARCH_CANDIDATE_TARGET_NOT_MEASURED', 'ARCHITECTURAL_REFERENCE_CANDIDATE', 'DOCUMENTED_CANDIDATE', 'DOCUMENTED_NO_FIT', 'DEFERRED', 'NO_CURRENT_FIT', 'REFERENCE_NO_TARGET', 'SHORTLIST', 'CONTROL_PLANE_REFERENCE', 'NEEDS_EVIDENCE', 'CONDITIONAL_NEEDS_SOURCE_CODE'];
+  const documentaryBindings = new Map();
+  for (const binding of m.documentary_study_bindings ?? []) {
+    require(local(binding.document) && Number.isInteger(binding.line) && binding.line > 0, 'invalid documentary study binding');
+    list(binding.study_ids, binding.document);
+    const key = JSON.stringify([binding.document, binding.line]);
+    require(!documentaryBindings.has(key), 'duplicate documentary study binding: ' + key);
+    for (const id of binding.study_ids) ref('studies', id);
+    documentaryBindings.set(key, binding.study_ids);
+  }
+  const singleStudyDocuments = new Set(m.reviews.filter(review => review.study_ids.length === 1)
+    .map(review => JSON.stringify([review.document, review.study_ids[0]])));
+  const legacyDeferredTokens = new Set([
+    'TECHNICAL_DISCLOSURE_ONLY / NEEDS_CURRENT_SOURCE_AUDIT',
+    'PRODUCTION_DEPLOYED / CLINICAL_REVIEW_PENDING',
+  ]);
   const imports = new Map();
   for (const a of m.assessments) {
     ref('studies', a.study_id); ref('projects', a.project_id);
@@ -118,9 +133,21 @@ export function validateEntities(root, m) {
       }
       require(isDocumentedTarget(lines, a.source_line - 1, a.project_id) !== false, a.id + ': project is not in the target column');
       require(a.source_excerpt.includes(a.source_decision) && a.source_excerpt.includes(a.evidence), a.id + ': documentary evidence not verbatim');
+      // The joint RRSI/Harness2 verdict proposes a narrow agent-config fix and defers dsh-runtime.
+      const runtimeDeferred = a.project_id === 'dsh-runtime' &&
+        a.source_decision === 'ADOPT_SELECTION_DISCIPLINE_NOT_AUTO_EVOLUTION';
+      const decision = a.source_decision === 'NO_DIRECT_FIT' ? 'DOCUMENTED_NO_FIT' :
+        /^(?:DEFERRED(?:$|[ _/])|DEFER \/)/.test(a.source_decision) || legacyDeferredTokens.has(a.source_decision) || runtimeDeferred
+          ? 'DEFERRED' : 'DOCUMENTED_CANDIDATE';
+      require(a.decision === decision, a.id + ': documentary decision does not match source');
       const studyCard = ref('studies', a.study_id).card;
       const rowStudies = [...a.source_excerpt.matchAll(/studies\/([A-Za-z0-9_-]+\.md)/g)].map(x => x[1]);
-      if (rowStudies.length) require(rowStudies.includes(path.posix.basename(studyCard)), a.id + ': documentary row belongs to another study');
+      const boundStudyIds = documentaryBindings.get(JSON.stringify([a.source_document, a.source_line]));
+      const studyMatches = rowStudies.length ? rowStudies.includes(path.posix.basename(studyCard)) :
+        a.source_document === studyCard ||
+        singleStudyDocuments.has(JSON.stringify([a.source_document, a.study_id])) ||
+        boundStudyIds?.includes(a.study_id);
+      require(studyMatches, a.id + ': documentary row belongs to another study or has no study binding');
       if (a.supersedes) { const old = ref('assessments', a.supersedes); require(old.study_id === a.study_id && old.project_id === a.project_id && old.date <= a.date, a.id + ': incompatible supersession'); }
       continue;
     }
@@ -167,7 +194,7 @@ export function validateEntities(root, m) {
   return m;
 }
 
-export function entityPages(m, dispositions = new Map()) {
+export function entityPages(m, dispositions = new Map(), unmodeledReviews = new Map()) {
   const pages = new Map(), escape = s => String(s).replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/`/g, '').replace(/\*\*/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
   const disposition = id => {
     const row = dispositions.get(id);
@@ -197,7 +224,7 @@ export function entityPages(m, dispositions = new Map()) {
   for (const s of m.studies) {
     const reviews = m.reviews.filter(r => r.study_ids.includes(s.id));
     const fits = current.filter(a => a.study_id === s.id);
-    pages.set(`catalog/studies/${s.id}.md`, `# ${escape(s.title)}\n\nСтруктурированная запись источника. [Карточка](../../${s.card}) · [Первоисточник](${s.primary_url})\n\n## Текущий обзор\n\n[${s.current_review_id}](../../${review(s.current_review_id).document}) — ${review(s.current_review_id).source_coverage}. ${escape(review(s.current_review_id).limitations)}\n\n${disposition(s.id)}\n\n## Версии и история обзоров\n\n${reviews.map(r => `- [${r.id}](../../${r.document}), ${r.date}; ${r.source_coverage}; заменяет: ${r.supersedes ?? 'нет'}. Версии: ${r.version_ids.map(id => {const v=m.versions.find(v=>v.id===id);return `[${v.ref ?? 'не установлена'}](${v.url})`;}).join(', ')}.`).join('\n')}\n\n## Применимость к проектам\n\n${s.fit_coverage === 'MIGRATED' ? 'Полная исходная JSON-матрица перенесена с её историей и ограничениями.' : s.fit_coverage === 'PARTIAL' ? 'Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.' : 'При структурном переносе нет отдельной проектной оценки. Это не NO_FIT и не отсутствие прежнего анализа; см. исходную карточку.'}\n\n${fits.map(a => `- [${escape(a.project_id)}](../../projects/${a.project_id}.md): ${escape(a.decision)}; ${escape(a.evidence)}. ${escape(a.reason)} Ограничения: ${escape(a.limitations)} Следующий тест: ${escape(a.next_test ?? a.next_test_reason)} [Основание](../../${a.source_document ?? a.source_matrix ?? review(a.review_id).document}); предыдущая оценка: ${a.supersedes ?? 'нет'}.`).join('\n')}\n\n## Эксперименты\n\n${m.experiments.filter(e=>e.study_ids.includes(s.id)).map(e=>`- ${e.id}: ${e.environment} / ${e.result}. ${escape(e.scope)} ${escape(e.limitations)} ${e.artifacts.map(p=>`[Артефакт](../../${p})`).join(' · ')}`).join('\n') || 'В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.'}`);
+    pages.set(`catalog/studies/${s.id}.md`, `# ${escape(s.title)}\n\nСтруктурированная запись источника. [Карточка](../../${s.card}) · [Первоисточник](${s.primary_url})\n\n## Текущий обзор\n\n[${s.current_review_id}](../../${review(s.current_review_id).document}) — ${review(s.current_review_id).source_coverage}. ${escape(review(s.current_review_id).limitations)}\n\n${disposition(s.id)}\n\n## Версии и история обзоров\n\n${reviews.map(r => `- [${r.id}](../../${r.document}), ${r.date}; ${r.source_coverage}; заменяет: ${r.supersedes ?? 'нет'}. Версии: ${r.version_ids.map(id => {const v=m.versions.find(v=>v.id===id);return `[${v.ref ?? 'не установлена'}](${v.url})`;}).join(', ')}.`).join('\n')}${(unmodeledReviews.get(s.id) ?? []).map(d => `\n- [${escape(d.title)}](../../${d.to}) — ссылка на материал вне структурированной истории.`).join('')}\n\n## Применимость к проектам\n\n${s.fit_coverage === 'MIGRATED' ? 'Полная исходная JSON-матрица перенесена с её историей и ограничениями.' : s.fit_coverage === 'PARTIAL' ? 'Перенесены явные документальные оценки. Это частичный охват проектов, не проверенный integration seam и не измеренная польза.' : 'При структурном переносе нет отдельной проектной оценки. Это не NO_FIT и не отсутствие прежнего анализа; см. исходную карточку.'}\n\n${fits.map(a => `- [${escape(a.project_id)}](../../projects/${a.project_id}.md): ${escape(a.decision)}; ${escape(a.evidence)}. ${escape(a.reason)} Ограничения: ${escape(a.limitations)} Следующий тест: ${escape(a.next_test ?? a.next_test_reason)} [Основание](../../${a.source_document ?? a.source_matrix ?? review(a.review_id).document}); предыдущая оценка: ${a.supersedes ?? 'нет'}.`).join('\n')}\n\n## Эксперименты\n\n${m.experiments.filter(e=>e.study_ids.includes(s.id)).map(e=>`- ${e.id}: ${e.environment} / ${e.result}. ${escape(e.scope)} ${escape(e.limitations)} ${e.artifacts.map(p=>`[Артефакт](../../${p})`).join(' · ')}`).join('\n') || 'В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.'}`);
   }
   for (const p of m.projects) {
     const fits = current.filter(a => a.project_id === p.id), deferred = ['NO_CONFIRMED_FIT', 'NO_CURRENT_FIT', 'REFERENCE_NO_TARGET', 'DOCUMENTED_NO_FIT', 'DEFERRED', 'NEEDS_EVIDENCE'], candidates = fits.filter(a => !deferred.includes(a.decision)), other = fits.filter(a => deferred.includes(a.decision));

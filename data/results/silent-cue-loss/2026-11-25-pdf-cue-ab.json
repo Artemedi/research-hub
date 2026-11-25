@@ -1,0 +1,85 @@
+{
+  "target": "57991e6681ad683a5be8111b7d470fed5d53625b",
+  "pypdf": "6.18.1",
+  "python": "3.14.4",
+  "documents_per_repetition": 30,
+  "oracle_sha256": "01923241d746316119266d42a38254a5d77083680f2c426cebfaddb43b63437f",
+  "runs": [
+    {
+      "arms": {
+        "baseline": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 30,
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 2660
+        },
+        "annotated": {
+          "true_positive": 30,
+          "false_positive": 0,
+          "false_negative": 0,
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 5270
+        }
+      },
+      "mutant_false_positives": 30,
+      "passed": true
+    },
+    {
+      "arms": {
+        "baseline": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 30,
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 2660
+        },
+        "annotated": {
+          "true_positive": 30,
+          "false_positive": 0,
+          "false_negative": 0,
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 5270
+        }
+      },
+      "mutant_false_positives": 30,
+      "passed": true
+    },
+    {
+      "arms": {
+        "baseline": {
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 30,
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 2660
+        },
+        "annotated": {
+          "true_positive": 30,
+          "false_positive": 0,
+          "false_negative": 0,
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 5270
+        }
+      },
+      "mutant_false_positives": 30,
+      "passed": true
+    }
+  ],
+  "timing_ms": {
+    "baseline": {
+      "median": 170.8,
+      "p95": 172.64
+    },
+    "annotated": {
+      "median": 6.89,
+      "p95": 9.21
+    }
+  }
+}

@@ -22,6 +22,7 @@
 
 - [hyperresearch-review](../../reviews/hyperresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).
 - [hyperresearch-citation-holdout-20261109](../../reviews/hyperresearch/2026-11-09-citation-adjudication.md), 2026-11-09; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).
+- [Pinned upstream Hyperresearch 54 test execution and existing citation limits](../../reviews/hyperresearch/2026-11-07-upstream-tests.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

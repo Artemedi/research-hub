@@ -161,11 +161,11 @@ def construct():
             "source_symbol_verified":source["source_anchor"] is not None,
             "subsystem_status":proof["subsystem_verdict"] if proof else "NOT_EXECUTED_NO_PAIRED_TREATMENT",
             "subsystem_trial_scope":proof["limits"] if proof else None,
-            "subsystem_receipt":str(RECEIPT.relative_to(ROOT)) if proof else None,
+            "subsystem_receipt":RECEIPT.relative_to(ROOT).as_posix() if proof else None,
             "source_baseline_test_status":test["status"] if test else "NOT_EXECUTED",
             "source_baseline_receipt":(
-                str(NODE.relative_to(ROOT)) if key[1]=="dsh-team-context"
-                else str(BASELINES.relative_to(ROOT)) if test else None),
+                NODE.relative_to(ROOT).as_posix() if key[1]=="dsh-team-context"
+                else BASELINES.relative_to(ROOT).as_posix() if test else None),
             "full_p0_decision":"BLOCKED_FULL_AB",
             "production_approved":False,
             "target_repo_modified":False,
@@ -232,7 +232,7 @@ def check(x):
         assert len(row["blocker"])>=90 and len(row["next_gate"])>=70
         if key in EXPECTED_PAIRED:
             assert row["subsystem_status"]==EXPECTED_PAIRED[key]
-            assert row["subsystem_receipt"]==str(RECEIPT.relative_to(ROOT))
+            assert row["subsystem_receipt"]==RECEIPT.relative_to(ROOT).as_posix()
         else:
             assert row["subsystem_status"]=="NOT_EXECUTED_NO_PAIRED_TREATMENT"
             assert row["subsystem_receipt"] is None

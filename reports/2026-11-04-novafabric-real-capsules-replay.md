@@ -54,11 +54,11 @@
 
 <a id="запустить-в-новом-пустом---workspace-только-synthetic-test-никаких-real-agents"></a>
 
-[Запустить в новом, пустом --workspace. Только synthetic test, никаких real agents.](../reviews/novafabric/2026-11-04.md#запустить-в-новом-пустом---workspace-только-synthetic-test-никаких-real-agents)
+[Запустить в новом, пустом --workspace. Только synthetic test, никаких real agents.](../reviews/novafabric/2026-11-04.md#воспроизведение)
 
 <a id="crypto-verification-no-imports-from-novafabric"></a>
 
-[Crypto verification; no imports from novafabric:](../reviews/novafabric/2026-11-04.md#crypto-verification-no-imports-from-novafabric)
+[Crypto verification; no imports from novafabric:](../reviews/novafabric/2026-11-04.md#воспроизведение)
 
 <a id="acceptance"></a>
 

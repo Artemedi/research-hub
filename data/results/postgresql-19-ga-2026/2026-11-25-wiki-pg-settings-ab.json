@@ -1,0 +1,67 @@
+{
+  "target": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "python": "3.11.9",
+  "fixture_families": [
+    "v18",
+    "v19",
+    "capture_gap",
+    "contradiction",
+    "unknown",
+    "mixed_ports"
+  ],
+  "snapshots_per_repeat": 30,
+  "classifications_per_repeat": 150,
+  "runs": [
+    {
+      "raw_snapshots_exact": 30,
+      "classifications_exact": 150,
+      "port_mutant_failed_fixtures": 5,
+      "classification_counts": {
+        "present": 40,
+        "not_in_major": 65,
+        "missing_capture": 15,
+        "inconsistent": 5,
+        "unknown_major": 25
+      },
+      "timing_ms": {
+        "parse_store_read": 348.933,
+        "classify": 0.297
+      },
+      "passed": true
+    },
+    {
+      "raw_snapshots_exact": 30,
+      "classifications_exact": 150,
+      "port_mutant_failed_fixtures": 5,
+      "classification_counts": {
+        "present": 40,
+        "not_in_major": 65,
+        "missing_capture": 15,
+        "inconsistent": 5,
+        "unknown_major": 25
+      },
+      "timing_ms": {
+        "parse_store_read": 188.296,
+        "classify": 0.762
+      },
+      "passed": true
+    },
+    {
+      "raw_snapshots_exact": 30,
+      "classifications_exact": 150,
+      "port_mutant_failed_fixtures": 5,
+      "classification_counts": {
+        "present": 40,
+        "not_in_major": 65,
+        "missing_capture": 15,
+        "inconsistent": 5,
+        "unknown_major": 25
+      },
+      "timing_ms": {
+        "parse_store_read": 182.387,
+        "classify": 0.298
+      },
+      "passed": true
+    }
+  ]
+}

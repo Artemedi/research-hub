@@ -34,28 +34,28 @@
 
 <a id="получить-оригинальный-fireperf-030targz-ссылка-выше"></a>
 
-[Получить оригинальный fireperf-0.3.0.tar.gz (ссылка выше),](../reviews/ipfire-fireperf/2026-11-04.md#получить-оригинальный-fireperf-030targz-ссылка-выше)
+[Получить оригинальный fireperf-0.3.0.tar.gz (ссылка выше),](../reviews/ipfire-fireperf/2026-11-04.md#повторение)
 
 <a id="предварительно-сверить-b2sum-с-зафиксированным-значением"></a>
 
-[предварительно сверить b2sum с зафиксированным значением.](../reviews/ipfire-fireperf/2026-11-04.md#предварительно-сверить-b2sum-с-зафиксированным-значением)
+[предварительно сверить b2sum с зафиксированным значением.](../reviews/ipfire-fireperf/2026-11-04.md#повторение)
 
 <a id="затем-в-другом-rootless-podman-контейнере"></a>
 
-[Затем в другом rootless Podman контейнере:](../reviews/ipfire-fireperf/2026-11-04.md#затем-в-другом-rootless-podman-контейнере)
+[Затем в другом rootless Podman контейнере:](../reviews/ipfire-fireperf/2026-11-04.md#повторение)
 
 <a id="--передать-собранный-бинарник--необходимые-runtime-shared-libraries"></a>
 
-[- передать собранный бинарник + необходимые runtime shared libraries](../reviews/ipfire-fireperf/2026-11-04.md#--передать-собранный-бинарник--необходимые-runtime-shared-libraries)
+[- передать собранный бинарник + необходимые runtime shared libraries](../reviews/ipfire-fireperf/2026-11-04.md#повторение)
 
 <a id="в-readwrite-рабочий-src-на-fedora-toolbox-liburingso2-добавлялась-локально"></a>
 
-[в read/write рабочий /src (на Fedora toolbox liburing.so.2 добавлялась локально);](../reviews/ipfire-fireperf/2026-11-04.md#в-readwrite-рабочий-src-на-fedora-toolbox-liburingso2-добавлялась-локально)
+[в read/write рабочий /src (на Fedora toolbox liburing.so.2 добавлялась локально);](../reviews/ipfire-fireperf/2026-11-04.md#повторение)
 
 <a id="--не-предоставлять-networkhost-pidprivileged-доступ"></a>
 
-[- НЕ предоставлять network/host PID/privileged доступ;](../reviews/ipfire-fireperf/2026-11-04.md#--не-предоставлять-networkhost-pidprivileged-доступ)
+[- НЕ предоставлять network/host PID/privileged доступ;](../reviews/ipfire-fireperf/2026-11-04.md#повторение)
 
 <a id="----networknone-и---cpus2---memory512m"></a>
 
-[- --network=none и --cpus=2 --memory=512m.](../reviews/ipfire-fireperf/2026-11-04.md#----networknone-и---cpus2---memory512m)
+[- --network=none и --cpus=2 --memory=512m.](../reviews/ipfire-fireperf/2026-11-04.md#повторение)

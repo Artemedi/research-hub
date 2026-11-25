@@ -98,7 +98,9 @@
     "studies/rea-bench.md",
     "studies/spillway.md",
     "studies/mobileprobe.md",
-    "studies/tufazip.md"
+    "studies/tufazip.md",
+    "studies/postgresql-2026-11-minor-releases.md",
+    "studies/postgresql-19-ga-2026.md"
   ],
   "documents": [
     {
@@ -2696,6 +2698,84 @@
       "title": "Research intake 2026-11-21: TufaZip source and NO_FIT decision",
       "kind": "portfolio",
       "date": "2026-11-21"
+    },
+    {
+      "from": null,
+      "to": "reviews/silent-cue-loss/2026-11-25-paper2project-pdf.md",
+      "title": "Silent Cue Loss — PDF cue transfer in Paper2Project",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": "reports/2026-11-16-portfolio-research.md",
+      "to": "portfolio/2026-11-16/review.md",
+      "title": "Портфельный обзор — 2026-11-16",
+      "kind": "portfolio",
+      "date": "2026-11-16",
+      "legacy_headings": [
+        "Портфельный обзор — 2026-11-16",
+        "Принятый материал: PostgreSQL minor releases 18.7 / 17.12 / 16.16 / 15.20 / 14.25",
+        "Матрица «исследование → конкретные проекты»",
+        "Отсев / дубликаты",
+        "Приоритет",
+        "Пределы проверки"
+      ]
+    },
+    {
+      "from": "reports/2026-11-23-portfolio-research.md",
+      "to": "portfolio/2026-11-23/review.md",
+      "title": "Портфельный обзор — 2026-11-23",
+      "kind": "portfolio",
+      "date": "2026-11-23",
+      "legacy_headings": [
+        "Портфельный обзор — 2026-11-23",
+        "Принято: PostgreSQL 19 GA (19 ноября 2026)",
+        "Обязательная матрица соответствия",
+        "Отклонено / не переиздавать",
+        "Приоритет и блокеры"
+      ]
+    },
+    {
+      "from": null,
+      "to": "reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md",
+      "title": "Static library hallucinations — Pyright on Paper2Project API calls",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md",
+      "title": "PostgreSQL 19 — version-aware settings evidence in Wiki_PG",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "portfolio/2026-11-25/review.md",
+      "title": "Paper2Project — initial project-transfer checks and queue",
+      "kind": "portfolio",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/research-portfolio/2026-11-25-paper2project-queue.json",
+      "title": "Paper2Project project-transfer queue snapshot",
+      "kind": "results",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/silent-cue-loss/2026-11-25-pdf-measurement-correction.md",
+      "title": "Silent Cue Loss — уточнение измерения штатного импорта PDF",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json",
+      "title": "Silent Cue Loss — результаты повторной проверки контракта PDF-импорта",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

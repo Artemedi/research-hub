@@ -38,7 +38,7 @@
 
 <a id="в-корне-research-hub-source--отдельный-checkout-указанного-sha"></a>
 
-[В корне research-hub; $source — отдельный checkout указанного SHA.](../reviews/dsh-superagent-prototype/2026-11-05.md#в-корне-research-hub-source--отдельный-checkout-указанного-sha)
+[В корне research-hub; $source — отдельный checkout указанного SHA.](../reviews/dsh-superagent-prototype/2026-11-05.md#выполненный-ограниченный-эксперимент)
 
 <a id="матрица-shortlist"></a>
 

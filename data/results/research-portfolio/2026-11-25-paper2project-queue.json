@@ -1,0 +1,1487 @@
+{
+  "date": "2026-11-25",
+  "hub_basis": "a5f7faf21d7a03a226eac87f66fc36e48dbed1f2",
+  "registry_basis": "91a0ca742a3225f6c4683b51031e8bbb595fdab8",
+  "scope": "Canonical main checkout after restoring two already tracked PostgreSQL cards, and the fetched origin/research refs. Other local branches and historical docs are not separate study IDs here.",
+  "note": "Actions triage the next project transfer check. Historical dispositions, missing links, and synthetic results do not imply scientific replication, project benefit, or permission to deploy.",
+  "counts": {
+    "SCREEN_LOCAL_TARGET": 27,
+    "VERIFY_OTHER_CANDIDATE_SOURCE": 55,
+    "NO_CURRENT_TARGET_RECORDED": 1,
+    "EXISTING_BLOCKER": 2,
+    "RESOLVE_APPLICABILITY_OR_DEFER": 7,
+    "VERIFY_PROJECT_CAPABILITY": 2,
+    "SYNTHETIC_TRANSFER_RUN": 3
+  },
+  "main_studies": [
+    {
+      "id": "benchshield",
+      "card": "studies/benchshield.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "benchshield-document-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "dsh-creator-mode",
+      "card": "studies/dsh-creator-mode.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "bk064-model-external-poster-probe-20261106"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "rea",
+      "card": "studies/reverse-engineer-anything.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 45,
+      "registered_experiments": [
+        "rea-pe-layout"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "unreal-agent",
+      "card": "studies/unreal-agent-bk025.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 6,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "rrsi",
+      "card": "studies/rrsi.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "rrsi-harness2-validation-ab-2026-11-06"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "harness2",
+      "card": "studies/harness2.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "rrsi-harness2-validation-ab-2026-11-06"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "hyra-2",
+      "card": "studies/hyra-2.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 45,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "ARCHITECTURAL_REFERENCE_CANDIDATE",
+          "assessment": "hyra-2-current-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "vercel-agent-desktop",
+      "card": "studies/vercel-agent-desktop.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 45,
+      "registered_experiments": [
+        "vercel-agent-desktop-wayland-toy-ui"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "agent-error-dataset",
+      "card": "studies/agent-error-dataset.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 45,
+      "registered_experiments": [
+        "agent-error-dataset-checkpoint-replay-20261108"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+          "assessment": "agent-error-dataset-2026-11-08-wiki-pg"
+        },
+        {
+          "project": "dsh-paper2agent",
+          "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+          "assessment": "agent-error-dataset-2026-11-08-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "agent-mosaic",
+      "card": "studies/agent-mosaic.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 45,
+      "registered_experiments": [
+        "agent-mosaic-composite-gate-lab-20261107"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+          "assessment": "agent-mosaic-2026-11-07-wiki-pg"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "agent-risk",
+      "card": "studies/agent-risk.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [
+        "agent-risk-replay-boundary-20261109"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "agent-transfer-protocol",
+      "card": "studies/agent-transfer-protocol.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "agentic-self-awareness",
+      "card": "studies/agentic-self-awareness.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "alphaxiv-openresearch",
+      "card": "studies/alphaxiv-openresearch.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 1,
+      "registered_experiments": [
+        "bk014-openresearch-provenance-ab-20261106"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "bk014-openresearch-provenance-20261106-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "anthropic-agent-automations",
+      "card": "studies/anthropic-agent-automations.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "behavior-beyond-text",
+      "card": "studies/behavior-beyond-text.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "bird-rl",
+      "card": "studies/bird-rl.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "cera-moa",
+      "card": "studies/cera-moa.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 45,
+      "registered_experiments": [
+        "cera-moa-routing-contract-20261108"
+      ],
+      "local_candidate_targets": [],
+      "action": "NO_CURRENT_TARGET_RECORDED",
+      "followup": null
+    },
+    {
+      "id": "chartli",
+      "card": "studies/chartli.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "claude-swarm",
+      "card": "studies/claude-swarm.md",
+      "historical_disposition": "BLOCKED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "EXISTING_BLOCKER",
+      "followup": null
+    },
+    {
+      "id": "concordat",
+      "card": "studies/concordat.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "covert-assistance",
+      "card": "studies/covert-assistance.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "cursor-token-efficiency",
+      "card": "studies/cursor-token-efficiency.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "bk021-cursor-tool-context-council-20261107"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "cve-2026-82533-technical-disclosure",
+      "card": "studies/cve-2026-82533-technical-disclosure.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_PRIMARY_TECHNICAL_DISCLOSURE_READ",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "daedalus",
+      "card": "studies/daedalus.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "decision-geometry-harness",
+      "card": "studies/decision-geometry-harness.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "drag",
+      "card": "studies/drag.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [
+        "drag-lexical-routing-ab-2026-11-06",
+        "drag-evidence-guard-holdout-ab-2026-11-06",
+        "drag-evidence-gate-ood-stress-2026-11-06"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "drag-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "dsh-superagent-prototype",
+      "card": "studies/dsh-superagent-prototype.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 45,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+          "assessment": "dsh-superagent-prototype-current-Wiki_PG"
+        },
+        {
+          "project": "dsh-paper2agent",
+          "decision": "CONDITIONAL_NEEDS_EVIDENCE",
+          "assessment": "dsh-superagent-prototype-current-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "exactly-once-limbo",
+      "card": "studies/exactly-once-limbo.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "exactly-once-limbo-telegrambot-bounded-replay",
+        "limbo-telegrambot-policy-ab-2026-11-06"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "experienceindex",
+      "card": "studies/experienceindex.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "experienceindex-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "geoagent",
+      "card": "studies/geoagent.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "geoagent-document-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "goal-aware-dynamic-collaboration",
+      "card": "studies/goal-aware-dynamic-collaboration.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "harnesssecurity-bench",
+      "card": "studies/harnesssecurity-bench.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "htn-orchestrate",
+      "card": "studies/htn-orchestrate.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "htn-orchestrate-static-dag-20261107"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "hyperresearch",
+      "card": "studies/hyperresearch.md",
+      "historical_disposition": "BLOCKED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "hyperresearch-temporal-scope-holdout-20261109"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "hyperresearch-document-dsh-paper2agent"
+        }
+      ],
+      "action": "EXISTING_BLOCKER",
+      "followup": null
+    },
+    {
+      "id": "inspektor-gadget",
+      "card": "studies/inspektor-gadget.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [
+        "bk041-ig-podman-exec-20261106"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "bk041-ebpf-wikipg-hypothesis-20261106"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "ipfire-fireperf",
+      "card": "studies/ipfire-fireperf.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "jevagentharness",
+      "card": "studies/jevagentharness.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "julia-1",
+      "card": "studies/julia-1.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "karpathy-autoresearch",
+      "card": "studies/karpathy-autoresearch.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 5,
+      "registered_experiments": [
+        "bk034-wikipg-locked-oracle-toy-20261106"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "bk034-loop-20261106-dsh-paper2agent"
+        },
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "bk034-loop-20261106-wiki_pg"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "kvset",
+      "card": "studies/kvset.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "kvset-document-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "kvtether",
+      "card": "studies/kvtether.md",
+      "historical_disposition": "OPEN_EVIDENCE_ADJUDICATION",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_PROJECT_CAPABILITY",
+      "followup": null
+    },
+    {
+      "id": "lago",
+      "card": "studies/lago.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "local-knowledge-graph",
+      "card": "studies/local-knowledge-graph.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "maadbench",
+      "card": "studies/maadbench.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "matoi",
+      "card": "studies/matoi.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "mcp-toolbox-postgres",
+      "card": "studies/mcp-toolbox-postgres.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "mcp-toolbox-postgres-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "memcomposer",
+      "card": "studies/memcomposer.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "memory-centric-continual-learning",
+      "card": "studies/memory-centric-continual-learning.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "memory-centric-continual-learning-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "memscope",
+      "card": "studies/memscope.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "microsoft-skill-recorder",
+      "card": "studies/microsoft-skill-recorder.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "novafabric",
+      "card": "studies/novafabric.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "open-steps",
+      "card": "studies/open-steps.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "package-hallucination-rule-files",
+      "card": "studies/package-hallucination-rule-files.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "paper2agent",
+      "card": "studies/paper2agent.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "paper2agent-document-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "pgbot",
+      "card": "studies/pgbot.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "pgbot-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "poisoned-skills",
+      "card": "studies/poisoned-skills.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "polar",
+      "card": "studies/polar.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "random-attention",
+      "card": "studies/random-attention.md",
+      "historical_disposition": "OPEN_EVIDENCE_ADJUDICATION",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_PROJECT_CAPABILITY",
+      "followup": null
+    },
+    {
+      "id": "realm",
+      "card": "studies/realm.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "realm-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "recap",
+      "card": "studies/recap.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "recap-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "red-teaming-auto-mode",
+      "card": "studies/red-teaming-auto-mode.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "remory",
+      "card": "studies/remory.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "reva",
+      "card": "studies/reva.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "reva-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "self-replicating-prompt-injections",
+      "card": "studies/self-replicating-prompt-injections.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "HISTORICAL_REVIEW_RECORDED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "sequential-diagnosis-language-models",
+      "card": "studies/sequential-diagnosis-language-models.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "silent-cue-loss",
+      "card": "studies/silent-cue-loss.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "silent-cue-loss-document-dsh-paper2agent"
+        },
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "silent-cue-loss-document-Wiki_PG"
+        }
+      ],
+      "action": "SYNTHETIC_TRANSFER_RUN",
+      "followup": "reviews/silent-cue-loss/2026-11-25-paper2project-pdf.md"
+    },
+    {
+      "id": "simurg",
+      "card": "studies/simurg.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "squidagent",
+      "card": "studies/squidagent.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "statecomp",
+      "card": "studies/statecomp.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "swrouter",
+      "card": "studies/swrouter.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "tencent-teamai-cli",
+      "card": "studies/tencent-teamai-cli.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [
+        "bk002-teamai-cli-distribution-ab-20261106"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "toolgrad",
+      "card": "studies/toolgrad.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [
+        "toolgrad-bk005-chain-state-oracle-20261106"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "bk005-toolgrad-source-proxy-20261106-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "transferable-tool-selection",
+      "card": "studies/transferable-tool-selection.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "trust-region-injection",
+      "card": "studies/trust-region-injection.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "understand-anything",
+      "card": "studies/understand-anything.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 4,
+      "registered_experiments": [
+        "understand-anything-mcp-symlink-probe-20261108"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "unsloth-decision-model",
+      "card": "studies/unsloth-decision-model.md",
+      "historical_disposition": "ACCEPT_RESEARCH_ONLY",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "veriharness",
+      "card": "studies/veriharness.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 3,
+      "registered_experiments": [
+        "veriharness-agent-config-citation-locality-ab-2026-11-06"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "veriharness-document-dsh-paper2agent"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "warp-skill-doctor",
+      "card": "studies/warp-skill-doctor.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "yahont-ce",
+      "card": "studies/yahont-ce.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "yahont-ce-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "youtube-skills",
+      "card": "studies/youtube-skills.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "zero-code",
+      "card": "studies/zero-code.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "gpt6-astra-skills-prompts",
+      "card": "studies/gpt6-astra-skills-prompts.md",
+      "historical_disposition": "ACCEPT_BOUNDED",
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 4,
+      "registered_experiments": [
+        "bk009-gpt6-astra-five-pairs-20261106"
+      ],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "drift-inspector",
+      "card": "studies/drift-inspector.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "drift-inspector-dsh-paper2agent-profile-20261113"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "auto-ontology",
+      "card": "studies/auto-ontology.md",
+      "historical_disposition": null,
+      "current_source_coverage": "BOUNDED_CODE_REVIEW",
+      "documented_project_pairs": 3,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "auto-ontology-wiki-pg-profile-20261113"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "avalanchebench",
+      "card": "studies/avalanchebench.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "adaptive-prompt-injection-swarms",
+      "card": "studies/adaptive-prompt-injection-swarms.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "github-actions-log-secret-scanning",
+      "card": "studies/github-actions-log-secret-scanning.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "jetstream",
+      "card": "studies/jetstream.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "akuz-optimizer-twin",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "jetstream-akuz-optimizer-twin-profile-20261114"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "static-library-hallucinations",
+      "card": "studies/static-library-hallucinations.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [
+        "static-library-hallucinations-paper2project-pyright-20261125-ab"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "dsh-paper2agent",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "static-library-hallucinations-paper2project-pyright-20261125-fit"
+        }
+      ],
+      "action": "SYNTHETIC_TRANSFER_RUN",
+      "followup": "reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md"
+    },
+    {
+      "id": "database-agent-observability",
+      "card": "studies/database-agent-observability.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "database-agent-observability-wiki-pg-profile-20261114"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "rea-bench",
+      "card": "studies/rea-bench.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "spillway",
+      "card": "studies/spillway.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 1,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "VERIFY_OTHER_CANDIDATE_SOURCE",
+      "followup": null
+    },
+    {
+      "id": "mobileprobe",
+      "card": "studies/mobileprobe.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_TEXT_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "tufazip",
+      "card": "studies/tufazip.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 0,
+      "registered_experiments": [],
+      "local_candidate_targets": [],
+      "action": "RESOLVE_APPLICABILITY_OR_DEFER",
+      "followup": null
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases",
+      "card": "studies/postgresql-2026-11-minor-releases.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "postgresql-2026-11-minor-releases-document-Wiki_PG"
+        }
+      ],
+      "action": "SCREEN_LOCAL_TARGET",
+      "followup": null
+    },
+    {
+      "id": "postgresql-19-ga-2026",
+      "card": "studies/postgresql-19-ga-2026.md",
+      "historical_disposition": null,
+      "current_source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "documented_project_pairs": 2,
+      "registered_experiments": [
+        "postgresql-19-wiki-pg-settings-20261125-ab"
+      ],
+      "local_candidate_targets": [
+        {
+          "project": "Wiki_PG",
+          "decision": "DOCUMENTED_CANDIDATE",
+          "assessment": "postgresql-19-wiki-pg-settings-20261125-fit"
+        }
+      ],
+      "action": "SYNTHETIC_TRANSFER_RUN",
+      "followup": "reviews/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md"
+    }
+  ],
+  "research_branches": [
+    {
+      "ref": "origin/research/cli-anything-20261125",
+      "commit": "61594ba994cc94b7b7f7a977408c434d9c5c511b",
+      "study_cards": [
+        "studies/cli-anything.md"
+      ],
+      "reviews": [
+        "reviews/cli-anything/2026-11-25.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/codegraph-20261124",
+      "commit": "360550fc0599c19668337620aba7ee3c774976cb",
+      "study_cards": [
+        "studies/codegraph.md"
+      ],
+      "reviews": [
+        "reviews/codegraph/2026-11-24.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/codexsaver-20261123",
+      "commit": "102d024968ca629e08e7dfbf852f90f1ae673e70",
+      "study_cards": [
+        "studies/codexsaver.md"
+      ],
+      "reviews": [
+        "reviews/codexsaver/2026-11-23.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/fast-anything-20261122",
+      "commit": "a20e4ba9498b2be5f9a7ed573f942e412957052b",
+      "study_cards": [
+        "studies/fast-anything.md"
+      ],
+      "reviews": [
+        "reviews/fast-anything/2026-11-22.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/gnhf-20261122",
+      "commit": "69b053792790510c5d405b2248c8103bc52389ce",
+      "study_cards": [
+        "studies/gnhf.md"
+      ],
+      "reviews": [
+        "reviews/gnhf/2026-11-22.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/helmor-20261122",
+      "commit": "3392b998a6a671ebf48a60e7b6c545ed3b9db6cb",
+      "study_cards": [
+        "studies/helmor.md"
+      ],
+      "reviews": [
+        "reviews/helmor/2026-11-22.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/lanes-20261124",
+      "commit": "2309c292c6c77623dd76cfcea87f0c6db5d3a261",
+      "study_cards": [
+        "studies/lanes.md"
+      ],
+      "reviews": [
+        "reviews/lanes/2026-11-24.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/local-deep-research-20261123",
+      "commit": "e11c204c74a9b47e7f7053644f3384a4f5f2e478",
+      "study_cards": [
+        "studies/local-deep-research.md"
+      ],
+      "reviews": [
+        "reviews/local-deep-research/2026-11-23.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/lynxdb-20261123",
+      "commit": "7ef16c85cdcc74ee7a80dcc7dfa2089e1deb05f9",
+      "study_cards": [
+        "studies/lynxdb.md"
+      ],
+      "reviews": [
+        "reviews/lynxdb/2026-11-23.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/memoir-20261123",
+      "commit": "4daf53af3ed516cf03620cf5eaf2e65ba02a8429",
+      "study_cards": [
+        "studies/memoir.md"
+      ],
+      "reviews": [
+        "reviews/memoir/2026-11-23.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/pgschema-20261122",
+      "commit": "bb321880c8de13fec8bb7600f5bbcdf80ef4aa7e",
+      "study_cards": [
+        "studies/pgschema.md"
+      ],
+      "reviews": [
+        "reviews/pgschema/2026-11-22.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/rurima-20261123",
+      "commit": "ef6f0937466c77978e9716ae501bb4c057b99398",
+      "study_cards": [
+        "studies/rurima.md"
+      ],
+      "reviews": [
+        "reviews/rurima/2026-11-23.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    },
+    {
+      "ref": "origin/research/rust-anything-20261123",
+      "commit": "a8c45138b47d97409e05b60ebb38451b6216b7a5",
+      "study_cards": [
+        "studies/rust-anything.md"
+      ],
+      "reviews": [
+        "reviews/rust-anything/2026-11-23.md"
+      ],
+      "action": "RECONCILE_WITH_MAIN_BEFORE_EXPERIMENT"
+    }
+  ]
+}

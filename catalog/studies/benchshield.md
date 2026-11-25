@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [bench-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.11028v1).
+- [BenchShield — целостность reward и provenance](../../reviews/benchshield/2026-11-04.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

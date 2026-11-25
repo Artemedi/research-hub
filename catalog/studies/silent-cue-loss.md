@@ -21,6 +21,8 @@
 ## Версии и история обзоров
 
 - [silent-cue-loss-review](../../portfolio/2026-10-20--2026-10-26/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
+- [silent-cue-loss-paper2project-pdf-20261125](../../reviews/silent-cue-loss/2026-11-25-paper2project-pdf.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
+- [silent-cue-loss-pdf-measurement-correction-20261125](../../reviews/silent-cue-loss/2026-11-25-pdf-measurement-correction.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: silent-cue-loss-paper2project-pdf-20261125. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
 
 ## Применимость к проектам
 
@@ -31,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- silent-cue-loss-pdf-transfer-20261125: SYNTHETIC / PASS. Three repeats of 30 generated PDFs. Plain-text read contract observed on the stock path; annotated path retained 120/120 text lines and 30/30 red cues per repeat. No baseline color-recovery score, arbitrary PDFs, OCR, or benefit measurement. [Артефакт](../../data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json) · [Артефакт](../../experiments/silent-cue-loss/2026-11-25-pdf-cue-ab.py) · [Артефакт](../../experiments/silent-cue-loss/2026-11-25-protocol.md)
 
 ## Ссылки из исходной карточки
 

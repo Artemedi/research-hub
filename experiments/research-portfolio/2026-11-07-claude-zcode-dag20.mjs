@@ -11,6 +11,7 @@
  * concurrency ONE. Each completed/blocked model call has a digest-keyed
  * checkpoint. Outputs contain no full-paper paragraphs, secrets, or paths.
  */
+import { preparePrivateTmux } from './private-tmux.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -168,6 +169,7 @@ function taskStatistics(decisions,batchTasks){
 
 async function main(){
   let manager=null,work=null,root=null,baseline=null,oldEnv=null;
+  let tmux;
   const receipts=[],batchOutcomes=[];
   const resourceBefore=process.resourceUsage();
   try{
@@ -194,14 +196,12 @@ async function main(){
           '#!/bin/sh\nexec '+JSON.stringify(process.execPath)+' '+
           JSON.stringify(shim)+' "$@"\n',{mode:0o700});
       }
-      const tmuxdir=path.join(root,'tmux');
-      fs.mkdirSync(tmuxdir);
-      const envKeys=['PATH','TMUX_TMPDIR','RESEARCH_BRIDGE_COORDINATOR_DIR',
+      const envKeys=['PATH','RESEARCH_BRIDGE_COORDINATOR_DIR',
         'RESEARCH_BRIDGE_RESULT_DIR','RESEARCH_BRIDGE_ZCODE_WRAPPER',
         'CLAUDE_SWARM_PERMISSION_MODE','CLAUDE_SWARM_ALLOWED_TOOLS','CLAUDE_SWARM_MCP_SERVERS'];
       oldEnv=Object.fromEntries(envKeys.map(k=>[k,process.env[k]]));
       process.env.PATH=fakeBin+path.delimiter+oldEnv.PATH;
-      process.env.TMUX_TMPDIR=tmuxdir;
+      tmux=preparePrivateTmux(path.join(root,'tmux'));
       process.env.RESEARCH_BRIDGE_COORDINATOR_DIR=work;
       process.env.RESEARCH_BRIDGE_RESULT_DIR=results;
       process.env.RESEARCH_BRIDGE_ZCODE_WRAPPER=wrapper;
@@ -366,7 +366,8 @@ async function main(){
       p95:record.call_elapsed_ms_p95}));
   }finally{
     if(runMode==='c'){
-      try{execFileSync('tmux',['kill-server'],{stdio:'ignore'});}catch{}
+      tmux?.stop();
+      tmux?.restore();
       if(oldEnv)for(const [key,value] of Object.entries(oldEnv)){
         if(value===undefined)delete process.env[key];else process.env[key]=value;
       }

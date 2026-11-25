@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [youtube-skills-review](../../reviews/youtube-skills/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [4f7994b94e7d5e250c3b51102d609992e04d5d0d](https://github.com/ZeroPointRepo/youtube-skills/tree/4f7994b94e7d5e250c3b51102d609992e04d5d0d).
+- [YouTube Skills pinned API and secret bootstrap instructions boundary audit](../../reviews/youtube-skills/2026-11-07-provider-boundary.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

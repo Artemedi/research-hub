@@ -1,0 +1,84 @@
+{
+  "target": "57991e6681ad683a5be8111b7d470fed5d53625b",
+  "pypdf": "6.18.1",
+  "python": "3.14.4",
+  "documents_per_repetition": 30,
+  "oracle_sha256": "01923241d746316119266d42a38254a5d77083680f2c426cebfaddb43b63437f",
+  "measurement_controls": [
+    "literal_marker",
+    "structured_red",
+    "changed_read_contract"
+  ],
+  "runs": [
+    {
+      "arms": {
+        "baseline": {
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 2660,
+          "text_only_responses": 30
+        },
+        "annotated": {
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 5270,
+          "true_positive": 30,
+          "false_positive": 0,
+          "false_negative": 0
+        }
+      },
+      "mutant_false_positives": 30,
+      "passed": true
+    },
+    {
+      "arms": {
+        "baseline": {
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 2660,
+          "text_only_responses": 30
+        },
+        "annotated": {
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 5270,
+          "true_positive": 30,
+          "false_positive": 0,
+          "false_negative": 0
+        }
+      },
+      "mutant_false_positives": 30,
+      "passed": true
+    },
+    {
+      "arms": {
+        "baseline": {
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 2660,
+          "text_only_responses": 30
+        },
+        "annotated": {
+          "exact_lines": 120,
+          "exact_documents": 30,
+          "text_bytes": 5270,
+          "true_positive": 30,
+          "false_positive": 0,
+          "false_negative": 0
+        }
+      },
+      "mutant_false_positives": 30,
+      "passed": true
+    }
+  ],
+  "timing_ms": {
+    "baseline": {
+      "median": 170.57,
+      "p95": 199.4
+    },
+    "annotated": {
+      "median": 6.33,
+      "p95": 7.97
+    }
+  }
+}

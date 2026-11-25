@@ -1,5 +1,7 @@
 # PostgreSQL 2026-11-12 minor maintenance releases
 
+[Структурированная запись и связи](../catalog/studies/postgresql-2026-11-minor-releases.md)
+
 - **Версии:** PostgreSQL 18.7 / 17.12 / 16.16 / 15.20 / 14.25; дата 2026-11-12.
 - **Тип:** официальный engineering changelog, не peer-reviewed paper.
 - **FULL_TEXT_VERIFIED:** https://www.postgresql.org/docs/release/18.7/ ; https://www.postgresql.org/docs/release/15.20/

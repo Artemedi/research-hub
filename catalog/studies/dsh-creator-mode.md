@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [dsh-creator-mode-offline-20261106](../../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [sha256:69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html).
+- [BK-064 — ограниченный опыт Creator Mode](../../reviews/dsh-creator-mode/2026-11-06-local-probe.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

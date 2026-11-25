@@ -1,0 +1,992 @@
+{
+  "target": "57991e6681ad683a5be8111b7d470fed5d53625b",
+  "python": "3.14.4",
+  "pyright": "1.1.407",
+  "cases_sha256": "870150a62bb869430b874d40f1be939c9b8a768b617b1cf841ae86f72c218c94",
+  "runs": [
+    {
+      "known_reason_per_variant": {
+        "missing_method": 8,
+        "unknown_keyword": 8
+      },
+      "valid_calls_warned": 0,
+      "other_diagnostics": [],
+      "timing_ms": {
+        "compile": 4.51,
+        "pyright": 1427.38,
+        "runtime": 26.31
+      },
+      "passed": true,
+      "cases": [
+        {
+          "method": "context",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "context",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "context",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "context",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "context",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "create_job",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "create_job",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "docs",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "docs",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_projects",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_projects",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_research",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_research",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "read",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "read",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "report",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "report",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "status",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "status",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        }
+      ]
+    },
+    {
+      "known_reason_per_variant": {
+        "unknown_keyword": 8,
+        "missing_method": 8
+      },
+      "valid_calls_warned": 0,
+      "other_diagnostics": [],
+      "timing_ms": {
+        "compile": 7.17,
+        "pyright": 1524.34,
+        "runtime": 27.11
+      },
+      "passed": true,
+      "cases": [
+        {
+          "method": "context",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "context",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "context",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "context",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "context",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "create_job",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "create_job",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "docs",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "docs",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_projects",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_projects",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_research",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_research",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "read",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "read",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "report",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "report",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "status",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "status",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        }
+      ]
+    },
+    {
+      "known_reason_per_variant": {
+        "missing_method": 8,
+        "unknown_keyword": 8
+      },
+      "valid_calls_warned": 0,
+      "other_diagnostics": [],
+      "timing_ms": {
+        "compile": 4.72,
+        "pyright": 1399.77,
+        "runtime": 23.39
+      },
+      "passed": true,
+      "cases": [
+        {
+          "method": "context",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "context",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "context",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "context",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "context",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "create_job",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "create_job",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "create_job",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "docs",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "docs",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "docs",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_projects",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_projects",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_projects",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_research",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "import_research",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "import_research",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "read",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "read",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "read",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "report",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "report",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "report",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "missing_dynamic",
+          "runtime_error": "AttributeError",
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "missing_method",
+          "runtime_error": "AttributeError",
+          "rules": [
+            "reportAttributeAccessIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "status",
+          "variant": "unknown_keyword",
+          "runtime_error": "TypeError",
+          "rules": [
+            "reportCallIssue"
+          ],
+          "correct_reason": true
+        },
+        {
+          "method": "status",
+          "variant": "valid_direct",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        },
+        {
+          "method": "status",
+          "variant": "valid_dynamic",
+          "runtime_error": null,
+          "rules": [],
+          "correct_reason": false
+        }
+      ]
+    }
+  ]
+}

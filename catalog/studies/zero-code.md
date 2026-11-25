@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [zero-code-review](../../reviews/zero-code/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [47f6a81724e87ff5e916f0eb146516d801a8fb28](https://github.com/0-SOFT/0-CODE/tree/47f6a81724e87ff5e916f0eb146516d801a8fb28).
+- [0-CODE pinned JSONC parser conformance and duplicate-key consumer boundary](../../reviews/zero-code/2026-11-07-jsonc-countercheck.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

@@ -42,7 +42,7 @@
 
 <a id="optional-original-full-suite"></a>
 
-[Optional original full suite:](../reviews/exactly-once-limbo/2026-11-04.md#optional-original-full-suite)
+[Optional original full suite:](../reviews/exactly-once-limbo/2026-11-04.md#верификация-и-репродукция)
 
 <a id="gate"></a>
 

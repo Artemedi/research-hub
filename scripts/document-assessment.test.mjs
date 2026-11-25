@@ -51,3 +51,28 @@ test('project mentioned only in a limitation is not a target', () => {
   assert.equal(isDocumentedTarget(lines, index, 'dsh-runtime'), true);
   assert.equal(isDocumentedTarget(lines, index, 'Wiki_PG'), false);
 });
+
+test('documentary decision has the same meaning as its source marker', () => {
+  const { m, row } = fixture();
+  row.decision = 'DOCUMENTED_NO_FIT';
+  assert.throws(() => validateEntities(root, m), /documentary decision does not match source/);
+
+  const baseline = fixture().m;
+  const noFit = baseline.assessments.find(a => a.decision === 'DOCUMENTED_NO_FIT');
+  noFit.decision = 'DOCUMENTED_CANDIDATE';
+  assert.throws(() => validateEntities(root, baseline), /documentary decision does not match source/);
+
+  const deferred = fixture().m;
+  deferred.assessments.find(a => a.decision === 'DEFERRED').decision = 'DOCUMENTED_CANDIDATE';
+  assert.throws(() => validateEntities(root, deferred), /documentary decision does not match source/);
+});
+
+test('exact quote for the same project in a different study is rejected', () => {
+  const { m } = fixture();
+  const row = m.assessments.find(a => a.id === 'silent-cue-loss-document-dsh-paper2agent');
+  const source = m.assessments.find(a => a.study_id === 'hyperresearch' && a.project_id === row.project_id && a.source_document);
+  assert.ok(source);
+  assert.doesNotMatch(source.source_excerpt, /studies\//);
+  for (const key of ['source_document', 'source_line', 'source_excerpt', 'source_decision', 'evidence']) row[key] = source[key];
+  assert.throws(() => validateEntities(root, m), /belongs to another study/);
+});

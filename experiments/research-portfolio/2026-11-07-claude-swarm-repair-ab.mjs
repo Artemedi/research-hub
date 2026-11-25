@@ -4,6 +4,7 @@
  * Run against an isolated source checkout with research patch applied and built.
  * Uses only a fake Claude CLI, never genuine agent sessions or credentials.
  */
+import { preparePrivateTmux } from './private-tmux.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -32,8 +33,8 @@ function check(name,actual,expected,meaning) {
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const root=fs.mkdtempSync(path.join(os.tmpdir(),'research-swarm-repair-ab-'));
 const repo=path.join(root,'synthetic');
+let tmux;
 const savedPath=process.env.PATH;
-const savedTmux=process.env.TMUX_TMPDIR;
 try {
   fs.mkdirSync(repo);
   git(root,'init','-q','-b','main',repo);
@@ -88,9 +89,7 @@ case "$(basename "$PWD")" in
   *) echo MOCK_UNKNOWN >&2; exit 99;;
 esac
 `,{mode:0o700});
-  const tmuxdir=path.join(root,'tmux');
-  fs.mkdirSync(tmuxdir);
-  process.env.TMUX_TMPDIR=tmuxdir;
+  tmux=preparePrivateTmux(path.join(root,'tmux'));
   process.env.PATH=fake+path.delimiter+savedPath;
   delete process.env.CLAUDE_SWARM_PERMISSION_MODE;
   delete process.env.CLAUDE_SWARM_ALLOWED_TOOLS;
@@ -138,8 +137,7 @@ esac
   check('original_dirty_content_remains',fs.readFileSync(dirty,'utf8'),
     'preserve me on retry\n','Independent runner did not disturb earlier worktree');
 
-  try {execFileSync('tmux',['kill-server'],{stdio:'ignore'});}
-  catch {}
+  tmux?.stop();
   await worktrees.cleanupAll();
   const report={
     date:'2026-11-07',
@@ -165,8 +163,8 @@ esac
   console.log(JSON.stringify({cases_total:report.cases_total,cases_passed:report.cases_passed,
     observed_fixed:results.filter(x=>x.name.includes('retry')||x.name.includes('status')).map(x=>x.name)}));
 } finally {
-  try{execFileSync('tmux',['kill-server'],{stdio:'ignore'});}catch{}
+  tmux?.stop();
+  tmux?.restore();
   process.env.PATH=savedPath;
-  if(savedTmux===undefined)delete process.env.TMUX_TMPDIR;else process.env.TMUX_TMPDIR=savedTmux;
   fs.rmSync(root,{recursive:true,force:true});
 }

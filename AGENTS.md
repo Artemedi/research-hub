@@ -25,7 +25,7 @@ After edits:
 ```sh
 node scripts/build-catalog.mjs
 node scripts/check.mjs
-node --test scripts/check.test.mjs scripts/entity-model.test.mjs scripts/document-assessment.test.mjs
+node --test scripts/check.test.mjs scripts/entity-model.test.mjs scripts/document-assessment.test.mjs scripts/private-tmux.test.mjs
 git diff --check
 ```
 

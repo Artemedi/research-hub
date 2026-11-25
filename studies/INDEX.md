@@ -2,13 +2,13 @@
 
 # Каталог исследований
 
-95 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
+97 карточка источников. Дата проверки и доказательные ограничения находятся внутри карточки. Наличие карточки не означает воспроизведение или разрешение внедрения.
 
 [Обзоры](../reviews/README.md) · [Портфельные сводки](../portfolio/README.md) · [Telegram](../collections/telegram/README.md) · [История индекса](../docs/history/2026-11-05-study-index.md)
 
 | Источник | Датированные обзоры |
 | --- | --- |
-| [0-CODE — автономные циклы разработки](zero-code.md) | [2026-11-04 / zero-code-review](../reviews/zero-code/2026-11-04.md) |
+| [0-CODE — автономные циклы разработки](zero-code.md) | [2026-11-04 / zero-code-review](../reviews/zero-code/2026-11-04.md) · [0-CODE pinned JSONC parser conformance and duplicate-key consumer boundary](../reviews/zero-code/2026-11-07-jsonc-countercheck.md) |
 | [Agent Error Dataset — Trace-Grounded Diagnosis and Replay](agent-error-dataset.md) | [2026-10-05 / agent-error-dataset-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-agent-error-dataset-2026-11-05](../reviews/agent-error-dataset/2026-11-05-full-text.md) · [2026-11-08 / agent-error-dataset-checkpoint-replay-20261108](../reviews/agent-error-dataset/2026-11-08-checkpoint-replay-ab.md) |
 | [Agent Mosaic — Composite Disclosure Risk](agent-mosaic.md) | [2026-11-03 / agent-mosaic-review](agent-mosaic.md) · [2026-11-07 / agent-mosaic-composite-gate-20261107](../reviews/agent-mosaic/2026-11-07-composite-gate.md) |
 | [Agent Transfer Protocol (ATP) — Server-Mediated Communication](agent-transfer-protocol.md) | [2026-11-03 / agent-transfer-protocol-review](agent-transfer-protocol.md) |
@@ -18,39 +18,39 @@
 | [Anthropic — scheduled agent automations](anthropic-agent-automations.md) | [2026-11-04 / anthropic-agent-automations-review](../reviews/anthropic-agent-automations/2026-11-04.md) |
 | [AvalancheBench — latent-world recovery and cascading analytical errors](avalanchebench.md) | [2026-11-11 / avalanchebench-20261111](../portfolio/2026-11-11/review.md) |
 | [Behavior Beyond Text — Refusal Transfer Failure](behavior-beyond-text.md) | [2026-11-03 / behavior-beyond-text-review](behavior-beyond-text.md) |
-| [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) |
+| [BenchShield — reward-integrity instrumentation](benchshield.md) | [2026-11-03 / bench-review](../portfolio/2026-09-03--2026-09-15/review.md) · [BenchShield — целостность reward и provenance](../reviews/benchshield/2026-11-04.md) |
 | [BIRD-RL — Stateful SQL Agent Evaluation](bird-rl.md) | [2026-11-03 / bird-rl-review](bird-rl.md) |
 | [CERA-MoA — Adaptive Multi-Agent Routing](cera-moa.md) | [2026-09-21 / cera-moa-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / cera-moa-full-text-2026-11-05](../reviews/cera-moa/2026-11-05-full-text.md) · [2026-11-08 / cera-moa-routing-contract-20261108](../reviews/cera-moa/2026-11-08-routing-contract.md) |
-| [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04 / chartli-review](../reviews/chartli/2026-11-04.md) |
+| [Chartli — числовые графики в терминале](chartli.md) | [2026-11-04 / chartli-review](../reviews/chartli/2026-11-04.md) · [Chartli pinned TS SVG renderer and independent XML plus finite-geometry audit](../reviews/chartli/2026-11-07-svg-validation.md) |
 | [Claude Swarm — оркестрация параллельных Claude workers](claude-swarm.md) | [2026-11-04 / claude-swarm-review](../reviews/claude-swarm/2026-11-04.md) |
 | [Concordat — Typed Sessions for LLM Agents](concordat.md) | [2026-11-03 / concordat-review](concordat.md) |
 | [Covert Assistance — Helpful LLM Agents Evade Oversight](covert-assistance.md) | [2026-10-05 / covert-assistance-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-covert-assistance-2026-11-05](../reviews/covert-assistance/2026-11-05-full-text.md) |
 | [Cursor — Improved Token Efficiency](cursor-token-efficiency.md) | [2026-09-28 / cursor-token-efficiency-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-05 / cursor-token-efficiency-primary-2026-11-05](../reviews/cursor-token-efficiency/2026-11-05-primary.md) · [2026-11-07 / cursor-token-efficiency-zcode-council-20261107](../reviews/cursor-token-efficiency/2026-11-07-council-vs-single.md) |
 | [CVE-2026-82533 — техническое раскрытие](cve-2026-82533-technical-disclosure.md) | [2026-11-03 / cve-2026-82533-technical-disclosure-review](cve-2026-82533-technical-disclosure.md) |
 | [DAEDALUS](daedalus.md) | [2026-11-03 / daedalus-review](daedalus.md) |
-| [DeepSeek Harness Creator Mode — BK-064](dsh-creator-mode.md) | [2026-11-06 / dsh-creator-mode-offline-20261106](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) |
+| [DeepSeek Harness Creator Mode — BK-064](dsh-creator-mode.md) | [2026-11-06 / dsh-creator-mode-offline-20261106](../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md) · [BK-064 — ограниченный опыт Creator Mode](../reviews/dsh-creator-mode/2026-11-06-local-probe.md) |
 | [DRAG — Dynamic Retriever and Generator Selection](drag.md) | [2026-09-21 / drag-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-drag-2026-11-05](../reviews/drag/2026-11-05-full-text.md) · [2026-11-06 / drag-offline-retrieval-ab-2026-11-06](../reviews/drag/2026-11-06-retrieval-ab.md) · [2026-11-06 / drag-evidence-guard-ab-2026-11-06](../reviews/drag/2026-11-06-evidence-gate-ab.md) |
 | [Drift Inspector — Atomic Contribution Claims для анализа научных направлений](drift-inspector.md) | [2026-11-13 / drift-inspector-20261113](../reviews/drift-inspector/2026-11-13.md) |
 | [DSH Superagent Prototype](dsh-superagent-prototype.md) | [2026-11-05 / dsh-superagent-prototype-review](../reviews/dsh-superagent-prototype/2026-11-05.md) |
-| [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) |
+| [ExperienceIndex](experienceindex.md) | [2026-11-03 / experienceindex-review](experienceindex.md) · [ExperienceIndex full-source method recheck and explicit-link retrieval A/B](../reviews/experienceindex/2026-11-07.md) |
 | [GeoAgent — Contract-Constrained Agents](geoagent.md) | [2026-11-03 / geoagent-review](geoagent.md) |
 | [GitHub Actions workflow-log secret scanning — public preview](github-actions-log-secret-scanning.md) | [2026-11-11 / github-actions-log-secret-scanning-20261111](../portfolio/2026-11-11/review.md) |
-| [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) |
+| [Goal-Aware Dynamic Multi-Agent Collaboration (GAD)](goal-aware-dynamic-collaboration.md) | [2026-11-03 / goal-aware-dynamic-collaboration-review](goal-aware-dynamic-collaboration.md) · [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](../reviews/goal-aware-dynamic-collaboration/2026-11-07.md) |
 | [Google MCP Toolbox for Databases — PostgreSQL live read-only MCP](mcp-toolbox-postgres.md) | [2026-11-04 / mcp-toolbox-postgres-review](../reviews/mcp-toolbox-postgres/2026-11-04.md) |
 | [GPT-6 Astra — Rethinking skills and prompts (BK-009)](gpt6-astra-skills-prompts.md) | [2026-11-06 / bk009-gpt6-astra-live-ab-20261106](../reviews/gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) |
 | [HarnessSecurity-Bench](harnesssecurity-bench.md) | [2026-11-03 / harnesssecurity-bench-review](harnesssecurity-bench.md) |
 | [Harness² — Recursive Agent Harnessing for an Open World](harness2.md) | [2026-11-04 / selection-review](../reviews/rrsi-harness2/2026-11-04.md) · [2026-11-05 / harness2-full-text-2026-11-05](../reviews/harness2/2026-11-05-full-text.md) · [2026-11-06 / rrsi-harness2-selector-ab-2026-11-06](../reviews/rrsi/2026-11-06-validation-ab.md) |
 | [HTN-Orchestrate](htn-orchestrate.md) | [2026-11-03 / htn-orchestrate-review](../portfolio/2026-10-12--2026-10-19/review.md) · [2026-11-08 / htn-orchestrate-paired-audit-followup-20261108](../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) |
-| [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04 / hyperresearch-review](../reviews/hyperresearch/2026-11-04.md) · [2026-11-09 / hyperresearch-citation-holdout-20261109](../reviews/hyperresearch/2026-11-09-citation-adjudication.md) |
+| [Hyperresearch — исследовательский harness и vault](hyperresearch.md) | [2026-11-04 / hyperresearch-review](../reviews/hyperresearch/2026-11-04.md) · [2026-11-09 / hyperresearch-citation-holdout-20261109](../reviews/hyperresearch/2026-11-09-citation-adjudication.md) · [Pinned upstream Hyperresearch 54 test execution and existing citation limits](../reviews/hyperresearch/2026-11-07-upstream-tests.md) |
 | [Hyra 2.0](hyra-2.md) | [2026-11-05 / hyra-2-primary](../reviews/hyra-2/2026-11-05.md) |
-| [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) · [2026-11-06 / inspektor-gadget-podman-20261106](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) |
+| [Inspektor Gadget](inspektor-gadget.md) | [2026-11-04 / inspektor-gadget-review](../reviews/inspektor-gadget/2026-11-04.md) · [2026-11-06 / inspektor-gadget-podman-20261106](../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md) · [BK-041 — проверка системного допуска](../reviews/inspektor-gadget/2026-11-06-privilege-gate.md) |
 | [IPFire fireperf](ipfire-fireperf.md) | [2026-11-04 / ipfire-fireperf-review](../reviews/ipfire-fireperf/2026-11-04.md) |
 | [JetStream — verified SQL query accelerators with incremental maintenance](jetstream.md) | [2026-11-14 / jetstream-fulltext-20261114](../reviews/jetstream/2026-11-14.md) |
 | [JevAgentHarness](jevagentharness.md) | [2026-11-03 / jevagentharness-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Julia 1 — типизированная модель выбора](julia-1.md) | [2026-11-04 / julia-1-review](../reviews/julia-1/2026-11-04.md) |
 | [Karpathy AutoResearch и BK-034 — цикл экспериментов и приложение AI LABS](karpathy-autoresearch.md) | [2026-11-04 / karpathy-autoresearch-review](../reviews/karpathy-autoresearch/2026-11-04.md) · [2026-11-06 / karpathy-autoresearch-loop-audit-20261106](../reviews/karpathy-autoresearch/2026-11-06-loop-audit.md) |
 | [KVSET — The KV Cache Working Set](kvset.md) | [2026-09-28 / kvset-review](../archive/dsh/knowledge/research/2026-09-28-research-review-proposal.md) · [2026-11-05 / fulltext-kvset-2026-11-05](../reviews/kvset/2026-11-05-full-text.md) |
-| [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | [2026-10-05 / kvtether-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-kvtether-2026-11-05](../reviews/kvtether/2026-11-05-full-text.md) |
+| [KVTether — KV Cache Lifecycle Management in ReAct Agents](kvtether.md) | [2026-10-05 / kvtether-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-kvtether-2026-11-05](../reviews/kvtether/2026-11-05-full-text.md) · [KVTether full-source lifecycle ordering contract and backend adoption gate](../reviews/kvtether/2026-11-07-event-order.md) |
 | [LAGO](lago.md) | [2026-11-03 / lago-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Local Knowledge Graph — граф шагов рассуждения модели](local-knowledge-graph.md) | [2026-11-04 / local-knowledge-graph-review](../reviews/local-knowledge-graph/2026-11-04.md) |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | [2026-10-05 / maadbench-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-maadbench-2026-11-05](../reviews/maadbench/2026-11-05-full-text.md) |
@@ -68,6 +68,8 @@
 | [pgbot — deterministic PostgreSQL diagnostics for AI agents](pgbot.md) | [2026-11-04 / pgbot-review](../reviews/pgbot/2026-11-04.md) |
 | [Poisoned Skills — Agent Markdown Config Injection](poisoned-skills.md) | [2026-11-03 / poisoned-skills-review](../portfolio/2026-10-27--2026-11-02/review.md) |
 | [POLAR](polar.md) | [2026-11-03 / polar-review](../portfolio/2026-10-06--2026-10-12/review.md) |
+| [PostgreSQL 19 GA — 2026-11-19](postgresql-19-ga-2026.md) | [2026-11-23 / postgresql-19-ga-2026-release-notes](../portfolio/2026-11-23/review.md) · [2026-11-25 / postgresql-19-wiki-pg-settings-20261125](../reviews/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md) |
+| [PostgreSQL 2026-11-12 minor maintenance releases](postgresql-2026-11-minor-releases.md) | [2026-11-16 / postgresql-2026-11-minor-releases-release-notes](../portfolio/2026-11-16/review.md) |
 | [Random Attention — KV eviction for reasoning](random-attention.md) | [2026-11-03 / random-attention-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [REA — Reverse Engineer Anything](reverse-engineer-anything.md) | [2026-11-05 / rea-boundaries](../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md) · [2026-11-05 / rea-pe](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
 | [ReA-Bench — auditing responsible agent trajectories](rea-bench.md) | [2026-11-14 / rea-bench-fulltext-20261114](../reviews/rea-bench/2026-11-14.md) |
@@ -80,12 +82,12 @@
 | [Scaling Adaptive Prompt Injection Attacks with Agent Swarms](adaptive-prompt-injection-swarms.md) | [2026-11-11 / adaptive-prompt-injection-swarms-20261111](../portfolio/2026-11-11/review.md) |
 | [Self-Replicating Prompt Injections Exist](self-replicating-prompt-injections.md) | [2026-11-03 / self-replicating-prompt-injections-review](self-replicating-prompt-injections.md) |
 | [Sequential diagnosis with language models — MAI-DxO / SDBench](sequential-diagnosis-language-models.md) | [2026-11-05 / sequential-diagnosis-language-models-challenger](../reviews/sequential-diagnosis-language-models/2026-11-05-challenger.md) · [2026-11-05 / sequential-diagnosis-language-models-initial-review](../reviews/sequential-diagnosis-language-models/2026-11-05-project-fit.md) |
-| [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [2026-11-03 / silent-cue-loss-review](../portfolio/2026-10-20--2026-10-26/review.md) |
-| [SIMURG — монитор целостности потоковой генерации](simurg.md) | [2026-11-04 / simurg-review](../reviews/simurg/2026-11-04.md) |
+| [Silent Cue Loss — Formatting in Document Ingestion](silent-cue-loss.md) | [2026-11-03 / silent-cue-loss-review](../portfolio/2026-10-20--2026-10-26/review.md) · [2026-11-25 / silent-cue-loss-paper2project-pdf-20261125](../reviews/silent-cue-loss/2026-11-25-paper2project-pdf.md) · [2026-11-25 / silent-cue-loss-pdf-measurement-correction-20261125](../reviews/silent-cue-loss/2026-11-25-pdf-measurement-correction.md) |
+| [SIMURG — монитор целостности потоковой генерации](simurg.md) | [2026-11-04 / simurg-review](../reviews/simurg/2026-11-04.md) · [SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck](../reviews/simurg/2026-11-07-hash-stability.md) |
 | [SPILLWAY — separating action target admission from untrusted text sanitization](spillway.md) | [2026-11-14 / spillway-fulltext-20261114](../reviews/spillway/2026-11-14.md) |
 | [SquidAgent](squidagent.md) | [2026-11-03 / squidagent-review](squidagent.md) |
 | [StateComp — State-Conditioned Context Compression](statecomp.md) | [2026-11-03 / statecomp-review](statecomp.md) · [2026-11-05 / fulltext-statecomp-2026-11-05](../reviews/statecomp/2026-11-05-full-text.md) |
-| [Static analysis of code-library hallucinations — Python detection and mitigation limits](static-library-hallucinations.md) | [2026-11-14 / static-library-hallucinations-fulltext-20261114](../reviews/static-library-hallucinations/2026-11-14.md) |
+| [Static analysis of code-library hallucinations — Python detection and mitigation limits](static-library-hallucinations.md) | [2026-11-14 / static-library-hallucinations-fulltext-20261114](../reviews/static-library-hallucinations/2026-11-14.md) · [2026-11-25 / static-library-hallucinations-paper2project-pyright-20261125](../reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md) |
 | [SWRouter — multi-turn context-aware model routing](swrouter.md) | [2026-11-03 / swrouter-review](../portfolio/2026-09-03--2026-09-15/review.md) |
 | [Tencent TeamAI CLI](tencent-teamai-cli.md) | [2026-11-04 / tencent-teamai-cli-review](../reviews/tencent-teamai-cli/2026-11-04.md) · [2026-11-06 / bk002-teamai-cli-distribution-ab-20261106](../reviews/tencent-teamai-cli/2026-11-06-distribution-ab.md) |
 | [ToolGrad — verified chain-first tool-use dataset generation](toolgrad.md) | [2026-11-03 / toolgrad-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-06 / toolgrad-bk005-source-proxy-20261106](../reviews/toolgrad/2026-11-06-chain-validation-ab.md) |
@@ -101,5 +103,5 @@
 | [Where LLM Agents Get Stuck Debugging Databases — Access More Than Reasoning](database-agent-observability.md) | [2026-11-14 / database-agent-observability-fulltext-20261114](../reviews/database-agent-observability/2026-11-14.md) |
 | [Where You Inject Matters — Trust Region Effect](trust-region-injection.md) | [2026-11-03 / trust-region-injection-review](../portfolio/2026-10-27--2026-11-02/review.md) |
 | [Yahont CE — поиск и корпоративный контекст](yahont-ce.md) | [2026-11-04 / yahont-ce-review](../reviews/yahont-ce/2026-11-04.md) |
-| [Your Policy Is Secretly a Harness — Decision Geometry](decision-geometry-harness.md) | [2026-11-03 / decision-geometry-harness-review](decision-geometry-harness.md) |
-| [youtube-skills — инструкции к TranscriptAPI](youtube-skills.md) | [2026-11-04 / youtube-skills-review](../reviews/youtube-skills/2026-11-04.md) |
+| [Your Policy Is Secretly a Harness — Decision Geometry](decision-geometry-harness.md) | [2026-11-03 / decision-geometry-harness-review](decision-geometry-harness.md) · [Decision Geometry exact two-action bandit source reproduction and project-fit gate](../reviews/decision-geometry-harness/2026-11-07-bandit-countercheck.md) · [Decision Geometry practical schema and observation order A/B using pinned DSH serializer and ZCode](../reviews/decision-geometry-harness/2026-11-07-interface-order-ab.md) · [Decision Geometry native provider tool-use A/B and inert tool-result continuation](../reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md) |
+| [youtube-skills — инструкции к TranscriptAPI](youtube-skills.md) | [2026-11-04 / youtube-skills-review](../reviews/youtube-skills/2026-11-04.md) · [YouTube Skills pinned API and secret bootstrap instructions boundary audit](../reviews/youtube-skills/2026-11-07-provider-boundary.md) |

@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [experienceindex-review](../../studies/experienceindex.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.10091vv1).
+- [ExperienceIndex full-source method recheck and explicit-link retrieval A/B](../../reviews/experienceindex/2026-11-07.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

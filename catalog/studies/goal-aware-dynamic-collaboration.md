@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [goal-aware-dynamic-collaboration-review](../../studies/goal-aware-dynamic-collaboration.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.39193vv1).
+- [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](../../reviews/goal-aware-dynamic-collaboration/2026-11-07.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

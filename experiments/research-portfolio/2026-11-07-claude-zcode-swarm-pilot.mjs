@@ -4,6 +4,7 @@
  * A/B: same public evidence and same no-tool model prompt, direct vs managed.
  * All Git/tmux activity stays inside one disposable synthetic workspace.
  */
+import { preparePrivateTmux } from './private-tmux.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -91,7 +92,8 @@ function metrics(judgments) {
 }
 const root=fs.mkdtempSync(path.join(os.tmpdir(),'research-claude-zcode-swarm-'));
 const work=path.join(root,'repo');
-const old={PATH:process.env.PATH,TMUX_TMPDIR:process.env.TMUX_TMPDIR,
+let tmux;
+const old={PATH:process.env.PATH,
   RESEARCH_BRIDGE_COORDINATOR_DIR:process.env.RESEARCH_BRIDGE_COORDINATOR_DIR,
   RESEARCH_BRIDGE_RESULT_DIR:process.env.RESEARCH_BRIDGE_RESULT_DIR,
   RESEARCH_BRIDGE_ZCODE_WRAPPER:process.env.RESEARCH_BRIDGE_ZCODE_WRAPPER,
@@ -116,8 +118,7 @@ try {
     const file=path.join(shimDir,command);
     fs.writeFileSync(file,'#!/bin/sh\nexec '+JSON.stringify(process.execPath)+' '+JSON.stringify(shim)+' "$@"\n',{mode:0o700});
   }
-  fs.mkdirSync(path.join(root,'tmux'));
-  process.env.TMUX_TMPDIR=path.join(root,'tmux');
+  tmux=preparePrivateTmux(path.join(root,'tmux'));
   process.env.PATH=shimDir+path.delimiter+old.PATH;
   process.env.RESEARCH_BRIDGE_COORDINATOR_DIR=work;
   process.env.RESEARCH_BRIDGE_RESULT_DIR=resultDir;
@@ -223,7 +224,8 @@ try {
     direct:trials.direct.map(x=>x.status),swarm:trials.swarm.map(x=>x.status),
     all_correct:allCorrect,findings}));
 }finally{
-  try{execFileSync('tmux',['kill-server'],{stdio:'ignore'});}catch{}
+  tmux?.stop();
+  tmux?.restore();
   for(const [key,value] of Object.entries(old)) {
     if(value===undefined)delete process.env[key];else process.env[key]=value;
   }

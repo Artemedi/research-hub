@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [chartli-review](../../reviews/chartli/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [3b39b97aeb564646437b2b7501b60541994d7575](https://github.com/ahmadawais/chartli/tree/3b39b97aeb564646437b2b7501b60541994d7575).
+- [Chartli pinned TS SVG renderer and independent XML plus finite-geometry audit](../../reviews/chartli/2026-11-07-svg-validation.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

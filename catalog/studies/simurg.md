@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [simurg-review](../../reviews/simurg/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [2831a92359cdaf1b38cc14f55e74251e09a91e0b](https://github.com/doofzoff/SIMURG/blob/2831a92359cdaf1b38cc14f55e74251e09a91e0b/paper/simurg_paper.pdf).
+- [SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck](../../reviews/simurg/2026-11-07-hash-stability.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 

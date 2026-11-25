@@ -2,6 +2,7 @@
 /** Deterministic tmux capture-pane TOCTOU control on actual WorkerManager.
  * A private wrapper injects exactly one capture-pane exit failure; no ZCode.
  */
+import { preparePrivateTmux } from './private-tmux.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -17,7 +18,8 @@ const {WorkerManager}=await import(pathToFileURL(path.join(source,'dist/workers/
 const {StateManager}=await import(pathToFileURL(path.join(source,'dist/state/manager.js')).href);
 const root=fs.mkdtempSync(path.join(os.tmpdir(),'research-tmux-race-'));
 const repo=path.join(root,'synthetic');
-const preserved=Object.fromEntries(['PATH','TMUX_TMPDIR','CLAUDE_SWARM_PERMISSION_MODE',
+let privateTmux;
+const preserved=Object.fromEntries(['PATH','CLAUDE_SWARM_PERMISSION_MODE',
   'CLAUDE_SWARM_ALLOWED_TOOLS','CLAUDE_SWARM_MCP_SERVERS',
   'RESEARCH_FAULT_ONCE'].map(k=>[k,process.env[k]]));
 const realTmux=execFileSync('which',['tmux'],{encoding:'utf8'}).trim();
@@ -62,8 +64,7 @@ exec ${JSON.stringify(realTmux)} "$@"
 `,{mode:0o700});
   process.env.PATH=bin+path.delimiter+preserved.PATH;
   process.env.RESEARCH_FAULT_ONCE=fault;
-  process.env.TMUX_TMPDIR=path.join(root,'tmux');
-  fs.mkdirSync(process.env.TMUX_TMPDIR);
+  privateTmux=preparePrivateTmux(path.join(root,'tmux'));
   process.env.CLAUDE_SWARM_PERMISSION_MODE='default';
   process.env.CLAUDE_SWARM_ALLOWED_TOOLS='Read';
   delete process.env.CLAUDE_SWARM_MCP_SERVERS;
@@ -104,7 +105,8 @@ exec ${JSON.stringify(realTmux)} "$@"
   console.log('RACE',JSON.stringify({cases:record.cases_total,passed:record.passed,
     first:record.first_status,recovered:record.after_retry}));
 }finally{
-  try{execFileSync(realTmux,['kill-server'],{stdio:'ignore'});}catch{}
+  privateTmux?.stop(realTmux);
+  privateTmux?.restore();
   for(const [key,value] of Object.entries(preserved)){
     if(value===undefined)delete process.env[key];else process.env[key]=value;
   }

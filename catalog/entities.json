@@ -1393,6 +1393,33 @@
         "reviews/tufazip/2026-11-21.md",
         "portfolio/2026-11-21/review.md"
       ]
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases",
+      "title": "PostgreSQL 2026-11-12 minor maintenance releases",
+      "kind": "engineering",
+      "card": "studies/postgresql-2026-11-minor-releases.md",
+      "primary_url": "https://www.postgresql.org/docs/release/18.7/",
+      "current_review_id": "postgresql-2026-11-minor-releases-release-notes",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "25ad0ff2f6cde1e05bfde07ec89a78c1c49520c8da5d4eddd18735fdd77e1e52",
+      "linked_materials": [
+        "reports/2026-11-16-portfolio-research.md"
+      ]
+    },
+    {
+      "id": "postgresql-19-ga-2026",
+      "title": "PostgreSQL 19 GA — 2026-11-19",
+      "kind": "engineering",
+      "card": "studies/postgresql-19-ga-2026.md",
+      "primary_url": "https://www.postgresql.org/docs/19/release-19.html",
+      "current_review_id": "postgresql-19-ga-2026-release-notes",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "bd63cacd65ed0da85fa071aac59483327c7f252ea394b16fecd76395cf19d6af",
+      "linked_materials": [
+        "studies/postgresql-2026-11-minor-releases.md",
+        "reports/2026-11-23-portfolio-research.md"
+      ]
     }
   ],
   "versions": [
@@ -2268,6 +2295,27 @@
       "study_id": "tufazip",
       "ref": "b9d678db3a0f726e117c8cab51927975830395ac",
       "url": "https://github.com/Tufalabs/tufazip/tree/b9d678db3a0f726e117c8cab51927975830395ac",
+      "unknown_reason": null
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases-18-7",
+      "study_id": "postgresql-2026-11-minor-releases",
+      "ref": "18.7",
+      "url": "https://www.postgresql.org/docs/release/18.7/",
+      "unknown_reason": null
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases-15-20",
+      "study_id": "postgresql-2026-11-minor-releases",
+      "ref": "15.20",
+      "url": "https://www.postgresql.org/docs/release/15.20/",
+      "unknown_reason": null
+    },
+    {
+      "id": "postgresql-19-ga-2026-19-0",
+      "study_id": "postgresql-19-ga-2026",
+      "ref": "19.0",
+      "url": "https://www.postgresql.org/docs/19/release-19.html",
       "unknown_reason": null
     }
   ],
@@ -4177,6 +4225,91 @@
       "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
       "limitations": "Full author article and pinned v2 decoder inspected; B200 decode not reproduced, no matching project in 45 existing profiles. DEFERRED / NO_FIT.",
       "supersedes": null
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases-release-notes",
+      "study_ids": [
+        "postgresql-2026-11-minor-releases"
+      ],
+      "version_ids": [
+        "postgresql-2026-11-minor-releases-18-7",
+        "postgresql-2026-11-minor-releases-15-20"
+      ],
+      "date": "2026-11-16",
+      "document": "portfolio/2026-11-16/review.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Historical engineering notes review covers PostgreSQL 18.7 and 15.20. Deployment versions and upgrade benefits remain unmeasured.",
+      "supersedes": null
+    },
+    {
+      "id": "postgresql-19-ga-2026-release-notes",
+      "study_ids": [
+        "postgresql-19-ga-2026"
+      ],
+      "version_ids": [
+        "postgresql-19-ga-2026-19-0"
+      ],
+      "date": "2026-11-23",
+      "document": "portfolio/2026-11-23/review.md",
+      "source_coverage": "FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED",
+      "limitations": "Historical engineering notes review. The Wiki_PG code seam and separate .NET project source remain unverified. No local benchmark.",
+      "supersedes": null
+    },
+    {
+      "id": "static-library-hallucinations-paper2project-pyright-20261125",
+      "study_ids": [
+        "static-library-hallucinations"
+      ],
+      "version_ids": [
+        "static-library-hallucinations-2604-07755v3"
+      ],
+      "date": "2026-11-25",
+      "document": "reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Targeted transfer of correct diagnostic attribution. Current full-text review stays unchanged.",
+      "supersedes": null
+    },
+    {
+      "id": "postgresql-19-wiki-pg-settings-20261125",
+      "study_ids": [
+        "postgresql-19-ga-2026"
+      ],
+      "version_ids": [
+        "postgresql-19-ga-2026-19-0"
+      ],
+      "date": "2026-11-25",
+      "document": "reviews/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Two relevant release-note sections and the actual snapshot parser and SQLite writer. Current engineering release review stays unchanged.",
+      "supersedes": null
+    },
+    {
+      "id": "silent-cue-loss-paper2project-pdf-20261125",
+      "study_ids": [
+        "silent-cue-loss"
+      ],
+      "version_ids": [
+        "silent-cue-loss-version"
+      ],
+      "date": "2026-11-25",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "document": "reviews/silent-cue-loss/2026-11-25-paper2project-pdf.md",
+      "limitations": "Synthetic transfer only; the baseline color metric was subsequently corrected.",
+      "supersedes": null
+    },
+    {
+      "id": "silent-cue-loss-pdf-measurement-correction-20261125",
+      "study_ids": [
+        "silent-cue-loss"
+      ],
+      "version_ids": [
+        "silent-cue-loss-version"
+      ],
+      "date": "2026-11-25",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "document": "reviews/silent-cue-loss/2026-11-25-pdf-measurement-correction.md",
+      "limitations": "Pinned read contract and generated one-page PDFs only. No project benefit measured.",
+      "supersedes": "silent-cue-loss-paper2project-pdf-20261125"
     }
   ],
   "experiments": [
@@ -4588,6 +4721,54 @@
         "experiments/hyperresearch/2026-11-09-temporal-scope-oracle.py",
         "data/results/hyperresearch/2026-11-09-temporal-scope-ab.json",
         "data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json"
+      ]
+    },
+    {
+      "id": "static-library-hallucinations-paper2project-pyright-20261125-ab",
+      "study_ids": [
+        "static-library-hallucinations"
+      ],
+      "review_id": "static-library-hallucinations-paper2project-pyright-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "40 authored calls to eight methods at pinned product HEAD, three repetitions. Pyright identified 16/16 direct errors before execution with zero false positives on 16 valid calls. It missed eight invalid dynamic calls.",
+      "limitations": "Authored fixtures, no representative generated corpus, independent human review or production benefit.",
+      "artifacts": [
+        "experiments/static-library-hallucinations/2026-11-25-protocol.md",
+        "experiments/static-library-hallucinations/2026-11-25-paper2project-pyright-ab.py",
+        "data/results/static-library-hallucinations/2026-11-25-paper2project-pyright-ab.json"
+      ]
+    },
+    {
+      "id": "postgresql-19-wiki-pg-settings-20261125-ab",
+      "study_ids": [
+        "postgresql-19-ga-2026"
+      ],
+      "review_id": "postgresql-19-wiki-pg-settings-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Three repeats of 30 fabricated PostgreSQL 18/19 snapshots through Wiki_PG parser and SQLite. 30/30 exact snapshots and 150/150 test classifications per repeat. Five mixed-port fixtures each detected the omitted port filter.",
+      "limitations": "No database server, collector, MCP or deployment run.",
+      "artifacts": [
+        "experiments/postgresql-19-ga-2026/2026-11-25-protocol.md",
+        "experiments/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py",
+        "data/results/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.json"
+      ]
+    },
+    {
+      "id": "silent-cue-loss-pdf-transfer-20261125",
+      "study_ids": [
+        "silent-cue-loss"
+      ],
+      "review_id": "silent-cue-loss-pdf-measurement-correction-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Three repeats of 30 generated PDFs. Plain-text read contract observed on the stock path; annotated path retained 120/120 text lines and 30/30 red cues per repeat.",
+      "limitations": "No baseline color-recovery score, arbitrary PDFs, OCR, or benefit measurement.",
+      "artifacts": [
+        "data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json",
+        "experiments/silent-cue-loss/2026-11-25-pdf-cue-ab.py",
+        "experiments/silent-cue-loss/2026-11-25-protocol.md"
       ]
     }
   ],
@@ -16456,6 +16637,132 @@
       "project_card_sha256": null,
       "unknown_reason": "Profile-based documentary mapping; implementation/source seam identified only where separately sourced in review; no measured project benefit.",
       "supersedes": null
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases-document-Wiki_PG",
+      "study_id": "postgresql-2026-11-minor-releases",
+      "project_id": "Wiki_PG",
+      "review_id": "postgresql-2026-11-minor-releases-release-notes",
+      "date": "2026-11-16",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "| PostgreSQL 15.20 / 18.7 maintenance | [Wiki_PG](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/01-dba-akuz/Wiki_PG/PROJECT.md); [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md) | PG DBA diagnosis; PostgreSQL persistence without ORM | Неподтверждённые deployment версии; для коллеги AUTHOR_STATED / NEEDS_SOURCE_CODE; ни один repo не является самим PostgreSQL server | Изолированные 15.19/15.20 или 18.6/18.7, SQL oracle + plan/IO + backup restore | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "limitations": "Historical engineering notes review covers PostgreSQL 18.7 and 15.20. Deployment versions and upgrade benefits remain unmeasured.",
+      "next_test": "Compare paired synthetic clusters on confirmed affected versions with independent SQL, index integrity and backup restore checks.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-16/review.md",
+      "source_line": 21,
+      "source_excerpt": "| PostgreSQL 15.20 / 18.7 maintenance | [Wiki_PG](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/01-dba-akuz/Wiki_PG/PROJECT.md); [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md) | PG DBA diagnosis; PostgreSQL persistence without ORM | Неподтверждённые deployment версии; для коллеги AUTHOR_STATED / NEEDS_SOURCE_CODE; ни один repo не является самим PostgreSQL server | Изолированные 15.19/15.20 или 18.6/18.7, SQL oracle + plan/IO + backup restore | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary transfer from the historical portfolio report. No new project source or deployment evidence.",
+      "supersedes": null
+    },
+    {
+      "id": "postgresql-2026-11-minor-releases-document-developer-safe-dotnet-core",
+      "study_id": "postgresql-2026-11-minor-releases",
+      "project_id": "developer-safe-dotnet-core",
+      "review_id": "postgresql-2026-11-minor-releases-release-notes",
+      "date": "2026-11-16",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "| PostgreSQL 15.20 / 18.7 maintenance | [Wiki_PG](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/01-dba-akuz/Wiki_PG/PROJECT.md); [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md) | PG DBA diagnosis; PostgreSQL persistence without ORM | Неподтверждённые deployment версии; для коллеги AUTHOR_STATED / NEEDS_SOURCE_CODE; ни один repo не является самим PostgreSQL server | Изолированные 15.19/15.20 или 18.6/18.7, SQL oracle + plan/IO + backup restore | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "limitations": "Historical engineering notes review covers PostgreSQL 18.7 and 15.20. Deployment versions and upgrade benefits remain unmeasured.",
+      "next_test": "Compare paired synthetic clusters on confirmed affected versions with independent SQL, index integrity and backup restore checks.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-16/review.md",
+      "source_line": 21,
+      "source_excerpt": "| PostgreSQL 15.20 / 18.7 maintenance | [Wiki_PG](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/01-dba-akuz/Wiki_PG/PROJECT.md); [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/fd706fd846b5a2d53a8b71d8df4d311f219e5da1/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md) | PG DBA diagnosis; PostgreSQL persistence without ORM | Неподтверждённые deployment версии; для коллеги AUTHOR_STATED / NEEDS_SOURCE_CODE; ни один repo не является самим PostgreSQL server | Изолированные 15.19/15.20 или 18.6/18.7, SQL oracle + plan/IO + backup restore | PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE |",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary transfer from the historical portfolio report. No new project source or deployment evidence.",
+      "supersedes": null
+    },
+    {
+      "id": "postgresql-19-ga-2026-document-Wiki_PG",
+      "study_id": "postgresql-19-ga-2026",
+      "project_id": "Wiki_PG",
+      "review_id": "postgresql-19-ga-2026-release-notes",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "reason": "| PostgreSQL 19 GA | [Wiki_PG](https://github.com/Artemedi/project-registry/blob/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/01-dba-akuz/Wiki_PG/PROJECT.md) | PostgreSQL diagnostics, knowledge and MCP state evidence; новые GUC/DMV, WAL и vacuum требуют корректного version-gating | Источник [Wiki_PG README](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/README.md#L1) и [docs/universal-system-mcp.md](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/docs/universal-system-mcp.md#L11) подтверждают документационный контракт, **не конкретный code seam**; `UNKNOWN/NEEDS_EVIDENCE`, live baseline не проверен | Offline PG18/19 snapshots с GUC/DMV, oracle по version-aware outputs, 30 запросов и ноль ложных фактов | `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE` |",
+      "limitations": "Historical engineering notes review. The Wiki_PG code seam and separate .NET project source remain unverified. No local benchmark.",
+      "next_test": "Check Wiki_PG on pinned source for version-aware diagnostics. Require project source for the separate .NET experiment.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/review.md",
+      "source_line": 21,
+      "source_excerpt": "| PostgreSQL 19 GA | [Wiki_PG](https://github.com/Artemedi/project-registry/blob/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/01-dba-akuz/Wiki_PG/PROJECT.md) | PostgreSQL diagnostics, knowledge and MCP state evidence; новые GUC/DMV, WAL и vacuum требуют корректного version-gating | Источник [Wiki_PG README](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/README.md#L1) и [docs/universal-system-mcp.md](https://github.com/Artemedi/Wiki_PG/blob/d55721bb99bff25fae352341cfd630c048693d6b/docs/universal-system-mcp.md#L11) подтверждают документационный контракт, **не конкретный code seam**; `UNKNOWN/NEEDS_EVIDENCE`, live baseline не проверен | Offline PG18/19 snapshots с GUC/DMV, oracle по version-aware outputs, 30 запросов и ноль ложных фактов | `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE` |",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary transfer from the historical portfolio report. No new project source or deployment evidence.",
+      "supersedes": null
+    },
+    {
+      "id": "postgresql-19-ga-2026-document-developer-safe-dotnet-core",
+      "study_id": "postgresql-19-ga-2026",
+      "project_id": "developer-safe-dotnet-core",
+      "review_id": "postgresql-19-ga-2026-release-notes",
+      "date": "2026-11-23",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / NEEDS_SOURCE_CODE",
+      "reason": "| PostgreSQL 19 GA | [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md) | Авторский [SOURCE_BRIEF](https://github.com/Artemedi/project-registry/blob/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/07-colleague-projects/developer-safe-dotnet-core/SOURCE_BRIEF.md) описывает ручной PostgreSQL SQL, schema drift и HiLo; ON CONFLICT get-or-create может быть релевантен | `AUTHOR_STATED / NEEDS_SOURCE_CODE`: URL, repo@SHA, API, тесты, baseline не предоставлены; PG19 не заявлен поддерживаемым | Условно: PG18 vs PG19 на 50 параллельных get-or-create с SQL result/uniqueness oracle, p95 и lock waits, только после доступа к коду | `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / NEEDS_SOURCE_CODE` |",
+      "limitations": "Historical engineering notes review. The Wiki_PG code seam and separate .NET project source remain unverified. No local benchmark.",
+      "next_test": "Check Wiki_PG on pinned source for version-aware diagnostics. Require project source for the separate .NET experiment.",
+      "next_test_reason": null,
+      "source_document": "portfolio/2026-11-23/review.md",
+      "source_line": 22,
+      "source_excerpt": "| PostgreSQL 19 GA | [developer-safe-dotnet-core](https://github.com/Artemedi/project-registry/blob/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/07-colleague-projects/developer-safe-dotnet-core/PROJECT.md) | Авторский [SOURCE_BRIEF](https://github.com/Artemedi/project-registry/blob/7a976c353579f8da64789daf18fe1088e5ab8dbb/projects/07-colleague-projects/developer-safe-dotnet-core/SOURCE_BRIEF.md) описывает ручной PostgreSQL SQL, schema drift и HiLo; ON CONFLICT get-or-create может быть релевантен | `AUTHOR_STATED / NEEDS_SOURCE_CODE`: URL, repo@SHA, API, тесты, baseline не предоставлены; PG19 не заявлен поддерживаемым | Условно: PG18 vs PG19 на 50 параллельных get-or-create с SQL result/uniqueness oracle, p95 и lock waits, только после доступа к коду | `PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / NEEDS_SOURCE_CODE` |",
+      "source_decision": "PROJECT_PROFILE_MATCH / NEEDS_EVIDENCE / NEEDS_SOURCE_CODE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Documentary transfer from the historical portfolio report. No new project source or deployment evidence.",
+      "supersedes": null
+    },
+    {
+      "id": "static-library-hallucinations-paper2project-pyright-20261125-fit",
+      "study_id": "static-library-hallucinations",
+      "project_id": "dsh-paper2agent",
+      "review_id": "static-library-hallucinations-paper2project-pyright-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "SYNTHETIC_SCREENING_PASS / BENEFIT_UNPROVEN",
+      "reason": "Pyright identified direct API misuse before running a synthetic adapter against the current Paper2Project App.",
+      "limitations": "Dynamic API errors escaped. The pinned source seam is documented in the review. Adapter corpus and practical benefit remain unmeasured.",
+      "next_test": "Use independently labeled, permitted adapter examples and quantify incremental detection and resource cost.",
+      "next_test_reason": null,
+      "source_document": "reviews/static-library-hallucinations/2026-11-25-paper2project-pyright.md",
+      "source_line": 28,
+      "source_excerpt": "| [Static library hallucinations](../../studies/static-library-hallucinations.md) | [dsh-paper2agent](../../projects/dsh-paper2agent.md) через Paper2Project | Проверено на восьми методах текущего App. Диагностика видит прямые ошибки до исполнения. | Все 40 примеров написаны для теста. Динамические ошибки пропущены. Нет оценки научной корректности, общей частоты ошибок или выигрыша на реальных адаптерах. | На разрешённом корпусе с независимыми метками измерить полезные предупреждения, ложные срабатывания, CPU/RAM и время до первого обнаружения. | SYNTHETIC_SCREENING_PASS / BENEFIT_UNPROVEN |",
+      "source_decision": "SYNTHETIC_SCREENING_PASS / BENEFIT_UNPROVEN",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-backed assessment; pinned public product code is cited separately from registry-card provenance.",
+      "supersedes": "static-library-hallucinations-dsh-paper2agent-profile-20261114"
+    },
+    {
+      "id": "postgresql-19-wiki-pg-settings-20261125-fit",
+      "study_id": "postgresql-19-ga-2026",
+      "project_id": "Wiki_PG",
+      "review_id": "postgresql-19-wiki-pg-settings-20261125",
+      "date": "2026-11-25",
+      "decision": "DOCUMENTED_CANDIDATE",
+      "evidence": "SYNTHETIC_TRANSFER_PASS / BENEFIT_UNPROVEN",
+      "reason": "Wiki_PG preserves port-scoped server version and I/O settings on the tested synthetic snapshots.",
+      "limitations": "Synthetic raw input only. Real collector and MCP shape, observed versions, and operational benefit need verification.",
+      "next_test": "On disposable PG18 and PG19, compare official pg_settings to recorded collector evidence and read-only MCP output.",
+      "next_test_reason": null,
+      "source_document": "reviews/postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md",
+      "source_line": 30,
+      "source_excerpt": "| [PostgreSQL 19 GA](../../studies/postgresql-19-ga-2026.md) | [Wiki_PG](../../projects/Wiki_PG.md) | Парсер и SQLite сохраняют достаточно информации, чтобы различить версию сервера, пропуск в снимке и несовместимое наблюдение по одному порту. | Пять GUC, синтетический контракт снимка, локальная SQLite. Нет реальных выгрузок PG18/19, сквозного MCP или измерений PostgreSQL. | Сравнить официальный `pg_settings` в двух одноразовых серверах PG18 и PG19 с выводом штатного коллектора и read-only MCP. | SYNTHETIC_TRANSFER_PASS / BENEFIT_UNPROVEN |",
+      "source_decision": "SYNTHETIC_TRANSFER_PASS / BENEFIT_UNPROVEN",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-backed assessment; the verified code seam is pinned separately in the review.",
+      "supersedes": "postgresql-19-ga-2026-document-Wiki_PG"
     }
   ],
   "current_assessments": [
@@ -19022,7 +19329,7 @@
     {
       "study_id": "static-library-hallucinations",
       "project_id": "dsh-paper2agent",
-      "assessment_id": "static-library-hallucinations-dsh-paper2agent-profile-20261114"
+      "assessment_id": "static-library-hallucinations-paper2project-pyright-20261125-fit"
     },
     {
       "study_id": "database-agent-observability",
@@ -19043,6 +19350,26 @@
       "study_id": "spillway",
       "project_id": "dsh-runtime",
       "assessment_id": "spillway-dsh-runtime-profile-20261114"
+    },
+    {
+      "study_id": "postgresql-2026-11-minor-releases",
+      "project_id": "Wiki_PG",
+      "assessment_id": "postgresql-2026-11-minor-releases-document-Wiki_PG"
+    },
+    {
+      "study_id": "postgresql-2026-11-minor-releases",
+      "project_id": "developer-safe-dotnet-core",
+      "assessment_id": "postgresql-2026-11-minor-releases-document-developer-safe-dotnet-core"
+    },
+    {
+      "study_id": "postgresql-19-ga-2026",
+      "project_id": "Wiki_PG",
+      "assessment_id": "postgresql-19-wiki-pg-settings-20261125-fit"
+    },
+    {
+      "study_id": "postgresql-19-ga-2026",
+      "project_id": "developer-safe-dotnet-core",
+      "assessment_id": "postgresql-19-ga-2026-document-developer-safe-dotnet-core"
     }
   ],
   "relations": [
@@ -19056,6 +19383,135 @@
     }
   ],
   "legacy_studies": [],
+  "documentary_study_bindings": [
+    {
+      "document": "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+      "line": 7,
+      "study_ids": [
+        "htn-orchestrate"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-08/htn-orchestrate-project-fit.md",
+      "line": 8,
+      "study_ids": [
+        "htn-orchestrate"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-08/understand-anything-project-fit.md",
+      "line": 7,
+      "study_ids": [
+        "understand-anything"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "line": 10,
+      "study_ids": [
+        "agent-risk"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "line": 11,
+      "study_ids": [
+        "agent-risk"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-09/agent-risk-project-fit.md",
+      "line": 12,
+      "study_ids": [
+        "agent-risk"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-13/source-project-fit.md",
+      "line": 9,
+      "study_ids": [
+        "drift-inspector"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-13/source-project-fit.md",
+      "line": 10,
+      "study_ids": [
+        "drift-inspector"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-13/source-project-fit.md",
+      "line": 11,
+      "study_ids": [
+        "auto-ontology"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-13/source-project-fit.md",
+      "line": 12,
+      "study_ids": [
+        "auto-ontology"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-13/source-project-fit.md",
+      "line": 13,
+      "study_ids": [
+        "auto-ontology"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-14/review.md",
+      "line": 19,
+      "study_ids": [
+        "jetstream"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-14/review.md",
+      "line": 20,
+      "study_ids": [
+        "static-library-hallucinations"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-14/review.md",
+      "line": 21,
+      "study_ids": [
+        "database-agent-observability"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-14/review.md",
+      "line": 22,
+      "study_ids": [
+        "database-agent-observability"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-14/review.md",
+      "line": 23,
+      "study_ids": [
+        "rea-bench"
+      ]
+    },
+    {
+      "document": "portfolio/2026-11-14/review.md",
+      "line": 24,
+      "study_ids": [
+        "spillway"
+      ]
+    },
+    {
+      "document": "reviews/rrsi-harness2/2026-11-04.md",
+      "line": 65,
+      "study_ids": [
+        "harness2",
+        "rrsi"
+      ]
+    }
+  ],
   "migration": {
     "baseline_commit": "9c3c579989f5c7fa61d3eaa43239cbe28142d5a0",
     "completed_on": "2026-11-05",

@@ -4,6 +4,7 @@
  * No real Claude CLI invocation. Fake command lives in temporary PATH; dedicated
  * TMUX_TMPDIR prevents touching the user's existing tmux server/sessions.
  */
+import { preparePrivateTmux } from './private-tmux.mjs';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -39,8 +40,8 @@ const upstreamFiles = {
 };
 const root = fs.mkdtempSync(path.join(os.tmpdir(), 'claude-swarm-fail-e2e-'));
 const repo = path.join(root, 'synthetic');
+let tmux;
 const originalPath = process.env.PATH;
-const oldTmuxDir = process.env.TMUX_TMPDIR;
 try {
   fs.mkdirSync(repo, { recursive: true });
   git(root, 'init', '-q', '-b', 'main', repo);
@@ -107,9 +108,7 @@ case "$id" in
   *) echo MOCK_UNKNOWN >&2; exit 8 ;;
 esac
 `, { mode: 0o700 });
-  const tmuxDir = path.join(root, 'tmux');
-  fs.mkdirSync(tmuxDir);
-  process.env.TMUX_TMPDIR = tmuxDir;
+  tmux = preparePrivateTmux(path.join(root, 'tmux'));
   process.env.MOCK_MAIN = repo;
   process.env.PATH = mockBin + path.delimiter + originalPath;
   // Deliberately unset permission override to inspect the upstream default.
@@ -169,7 +168,7 @@ esac
     'No execution changed the synthetic main Git HEAD');
 
   // The temp-root tmux socket contains only synthetic sessions; kill only that server.
-  try { execFileSync('tmux', ['kill-server'], { stdio: 'ignore' }); } catch {}
+  tmux?.stop();
   await wt.cleanupAll();
   const result = {
     date: '2026-11-07',
@@ -205,9 +204,8 @@ esac
     unexpected: result.unexpected_results, risks: result.risks.length }));
   assert.equal(result.matched_oracle, result.tests_total);
 } finally {
-  try { execFileSync('tmux', ['kill-server'], { stdio: 'ignore' }); } catch {}
+  tmux?.stop();
+  tmux?.restore();
   process.env.PATH = originalPath;
-  if (oldTmuxDir === undefined) delete process.env.TMUX_TMPDIR;
-  else process.env.TMUX_TMPDIR = oldTmuxDir;
   fs.rmSync(root, { recursive: true, force: true });
 }

@@ -56,7 +56,7 @@ node scripts/check.mjs
 node --test scripts/check.test.mjs scripts/entity-model.test.mjs scripts/document-assessment.test.mjs
 git diff --check
 ```
-Also run relevant build/lint for changed scripts, inspect staged files and sensitive paths, commit only research-hub, push, and verify exact-SHA CI.
+Also run relevant build/lint for changed scripts and inspect staged files and sensitive paths. Commit only when authorized, and limit the commit to research-hub. Push requires explicit owner authorization. After an authorized push, verify exact-SHA CI.
 
 ## Verified 20-task pilot and next gate (2026-11-07)
 

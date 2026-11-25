@@ -1,5 +1,7 @@
 # PostgreSQL 19 GA — 2026-11-19
 
+[Структурированная запись и связи](../catalog/studies/postgresql-19-ga-2026.md)
+
 **Тип:** официальный engineering release; **FULL_TEXT_VERIFIED**: https://www.postgresql.org/docs/19/release-19.html
 
 **Дата новой версии:** 2026-11-19. **Предыдущее рассмотрение:** [PostgreSQL minor 2026-11-12](postgresql-2026-11-minor-releases.md) — отдельная maintenance ветка, не дубликат GA.

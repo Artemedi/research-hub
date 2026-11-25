@@ -87,6 +87,7 @@
 | [Open Steps — хуки и ограничения](open-steps/2026-11-04.md) | 2026-11-04 |
 | [Paper2Agent — Research Papers as Reliable AI Agents — полнотекстовая научная проверка](paper2agent/2026-11-05-full-text.md) | 2026-11-05 |
 | [pgbot — диагностические проверки PostgreSQL](pgbot/2026-11-04.md) | 2026-11-04 |
+| [PostgreSQL 19 — version-aware settings evidence in Wiki_PG](postgresql-19-ga-2026/2026-11-25-wiki-pg-settings.md) | 2026-11-25 |
 | [ReA-Bench — Benchmarking Responsible Agent Auditing — full-text review 2026-11-14](rea-bench/2026-11-14.md) | 2026-11-14 |
 | [REALM — Retrieval-Driven Memory Reconsolidation — полнотекстовая научная проверка](realm/2026-11-05-full-text.md) | 2026-11-05 |
 | [ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка](recap/2026-11-05-full-text.md) | 2026-11-05 |
@@ -97,11 +98,14 @@
 | [RRSI / Harness² — повторяемый A/B на validation и holdout](rrsi/2026-11-06-validation-ab.md) | 2026-11-06 |
 | [TrinMedicalBot — A/B и внедрение Challenger v2](sequential-diagnosis-language-models/2026-11-05-challenger.md) | 2026-11-05 |
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
+| [Silent Cue Loss — PDF cue transfer in Paper2Project](silent-cue-loss/2026-11-25-paper2project-pdf.md) | 2026-11-25 |
+| [Silent Cue Loss — уточнение измерения штатного импорта PDF](silent-cue-loss/2026-11-25-pdf-measurement-correction.md) | 2026-11-25 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
 | [SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck](simurg/2026-11-07-hash-stability.md) | 2026-11-07 |
 | [SPILLWAY — Separating Target Admission from Sanitization — full-text review 2026-11-14](spillway/2026-11-14.md) | 2026-11-14 |
 | [StateComp — State-Conditioned Context Compression — полнотекстовая научная проверка](statecomp/2026-11-05-full-text.md) | 2026-11-05 |
 | [Static Analysis Methods for Detection and Mitigation of Code Library Hallucinations — full-text review 2026-11-14](static-library-hallucinations/2026-11-14.md) | 2026-11-14 |
+| [Static library hallucinations — Pyright on Paper2Project API calls](static-library-hallucinations/2026-11-25-paper2project-pyright.md) | 2026-11-25 |
 | [BK-025/034 — пользовательские транскрипты и ограничения](telegram-transcripts/2026-11-06-user-provided.md) | 2026-11-06 |
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [BK-002 TeamAI CLI independent distribution and scope A/B](tencent-teamai-cli/2026-11-06-distribution-ab.md) | 2026-11-06 |

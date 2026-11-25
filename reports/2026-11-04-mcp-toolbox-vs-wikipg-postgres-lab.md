@@ -38,11 +38,11 @@
 
 <a id="для-точной-репликации-git--c-labwiki_pg-checkout-d55721bb99bff25fae352341cfd630c048693d6b"></a>
 
-[Для точной репликации: git -C "$LAB/Wiki_PG" checkout d55721bb99bff25fae352341cfd630c048693d6b](../reviews/mcp-toolbox-postgres/2026-11-04.md#для-точной-репликации-git--c-labwiki_pg-checkout-d55721bb99bff25fae352341cfd630c048693d6b)
+[Для точной репликации: git -C "$LAB/Wiki_PG" checkout d55721bb99bff25fae352341cfd630c048693d6b](../reviews/mcp-toolbox-postgres/2026-11-04.md#репродукция-на-отдельной-машине)
 
 <a id="дождаться-podman-exec-trin-toolbox-lab-20261104-pg_isready--u-postgres"></a>
 
-[Дождаться podman exec trin-toolbox-lab-20261104 pg_isready -U postgres.](../reviews/mcp-toolbox-postgres/2026-11-04.md#дождаться-podman-exec-trin-toolbox-lab-20261104-pg_isready--u-postgres)
+[Дождаться podman exec trin-toolbox-lab-20261104 pg_isready -U postgres.](../reviews/mcp-toolbox-postgres/2026-11-04.md#репродукция-на-отдельной-машине)
 
 <a id="верификация-применимость-решение"></a>
 

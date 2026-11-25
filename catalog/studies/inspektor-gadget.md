@@ -22,6 +22,7 @@
 
 - [inspektor-gadget-review](../../reviews/inspektor-gadget/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
 - [inspektor-gadget-podman-20261106](../../reviews/inspektor-gadget/2026-11-06-privileged-podman-trace.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: inspektor-gadget-review. Версии: [29d60de9f7924607784915533dd5f3cc0052ee1a](https://github.com/inspektor-gadget/inspektor-gadget/tree/v0.57.0).
+- [BK-041 — проверка системного допуска](../../reviews/inspektor-gadget/2026-11-06-privilege-gate.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
 
