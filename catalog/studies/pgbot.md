@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [pgbot-review](../../reviews/pgbot/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [826531fefd7d13b4381327acd4cce5be98bd71eb](https://github.com/pgrundev/pgbot/tree/826531fefd7d13b4381327acd4cce5be98bd71eb).
+- [pgbot-wiki-pg-lock-evidence-20261125](../../reviews/pgbot/2026-11-25-wiki-pg-lock-evidence.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [826531fefd7d13b4381327acd4cce5be98bd71eb](https://github.com/pgrundev/pgbot/tree/826531fefd7d13b4381327acd4cce5be98bd71eb).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- pgbot-wiki-pg-lock-evidence-20261125-lab: ISOLATED_INTEGRATION / OBSERVED. Two matching eight-case repeats across PostgreSQL 15.20 and 18.3. Diagnostic flags matched; one waiter with two blockers exposed the different count units. Temporary databases and synthetic locks only. No full incident suite, latency or production integration measured. [Артефакт](../../experiments/pgbot/2026-11-25-wiki-pg-lock-evidence-protocol.md) · [Артефакт](../../experiments/pgbot/wiki-pg-lock-evidence.py) · [Артефакт](../../data/results/pgbot/2026-11-25-wiki-pg-lock-evidence.json)
 
 ## Ссылки из исходной карточки
 

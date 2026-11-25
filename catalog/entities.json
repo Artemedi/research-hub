@@ -4485,6 +4485,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic document handoff and revision lifecycle only. No agentification, scientific package execution or production integration.",
       "supersedes": null
+    },
+    {
+      "id": "pgbot-wiki-pg-lock-evidence-20261125",
+      "study_ids": ["pgbot"],
+      "version_ids": ["pgbot-version"],
+      "date": "2026-11-25",
+      "document": "reviews/pgbot/2026-11-25-wiki-pg-lock-evidence.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Isolated lock states on PostgreSQL 15 and 18. One collector SQL projection and the native reporting path; no complete collector or production workload.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5185,6 +5195,20 @@
         "experiments/paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md",
         "experiments/paper2agent/paper2project-qualified-handoff.py",
         "data/results/paper2agent/2026-11-25-paper2project-qualified-handoff.json"
+      ]
+    },
+    {
+      "id": "pgbot-wiki-pg-lock-evidence-20261125-lab",
+      "study_ids": ["pgbot"],
+      "review_id": "pgbot-wiki-pg-lock-evidence-20261125",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "OBSERVED",
+      "scope": "Two matching eight-case repeats across PostgreSQL 15.20 and 18.3. Diagnostic flags matched; one waiter with two blockers exposed the different count units.",
+      "limitations": "Temporary databases and synthetic locks only. No full incident suite, latency or production integration measured.",
+      "artifacts": [
+        "experiments/pgbot/2026-11-25-wiki-pg-lock-evidence-protocol.md",
+        "experiments/pgbot/wiki-pg-lock-evidence.py",
+        "data/results/pgbot/2026-11-25-wiki-pg-lock-evidence.json"
       ]
     }
   ],

@@ -1,0 +1,95 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "pgbot_archive_sha256": "adf0f08fbdd212a8c6b1e0462f872916866968c25e6e35ba1b5bba22a39841bc",
+  "postgres_images": {
+    "15.20": "sha256:91b9edc40277faf94bc1e3d7ae621b185fa70f3099b94309c4731a8296114870",
+    "18.3": "sha256:7e32e9833a6fb1c92c32552794cb6ed569d51b445a54907d35fc112ef39684db"
+  },
+  "repeat_count": 2,
+  "versions": {
+    "15.20": [
+      {
+        "phase": "baseline",
+        "oracle_blocked_sessions": 0,
+        "oracle_wait_edges": 0,
+        "wiki_blocked_sessions": 0,
+        "pgbot_blocked_count": 0,
+        "wiki_lock_finding": false,
+        "pgbot_lock_finding": false,
+        "wiki_source_and_capture_retained": true
+      },
+      {
+        "phase": "1_blocker",
+        "oracle_blocked_sessions": 1,
+        "oracle_wait_edges": 1,
+        "wiki_blocked_sessions": 1,
+        "pgbot_blocked_count": 1,
+        "wiki_lock_finding": true,
+        "pgbot_lock_finding": true,
+        "wiki_source_and_capture_retained": true
+      },
+      {
+        "phase": "2_blocker",
+        "oracle_blocked_sessions": 1,
+        "oracle_wait_edges": 2,
+        "wiki_blocked_sessions": 2,
+        "pgbot_blocked_count": 1,
+        "wiki_lock_finding": true,
+        "pgbot_lock_finding": true,
+        "wiki_source_and_capture_retained": true
+      },
+      {
+        "phase": "recovered",
+        "oracle_blocked_sessions": 0,
+        "oracle_wait_edges": 0,
+        "wiki_blocked_sessions": 0,
+        "pgbot_blocked_count": 0,
+        "wiki_lock_finding": false,
+        "pgbot_lock_finding": false,
+        "wiki_source_and_capture_retained": true
+      }
+    ],
+    "18.3": [
+      {
+        "phase": "baseline",
+        "oracle_blocked_sessions": 0,
+        "oracle_wait_edges": 0,
+        "wiki_blocked_sessions": 0,
+        "pgbot_blocked_count": 0,
+        "wiki_lock_finding": false,
+        "pgbot_lock_finding": false,
+        "wiki_source_and_capture_retained": true
+      },
+      {
+        "phase": "1_blocker",
+        "oracle_blocked_sessions": 1,
+        "oracle_wait_edges": 1,
+        "wiki_blocked_sessions": 1,
+        "pgbot_blocked_count": 1,
+        "wiki_lock_finding": true,
+        "pgbot_lock_finding": true,
+        "wiki_source_and_capture_retained": true
+      },
+      {
+        "phase": "2_blocker",
+        "oracle_blocked_sessions": 1,
+        "oracle_wait_edges": 2,
+        "wiki_blocked_sessions": 2,
+        "pgbot_blocked_count": 1,
+        "wiki_lock_finding": true,
+        "pgbot_lock_finding": true,
+        "wiki_source_and_capture_retained": true
+      },
+      {
+        "phase": "recovered",
+        "oracle_blocked_sessions": 0,
+        "oracle_wait_edges": 0,
+        "wiki_blocked_sessions": 0,
+        "pgbot_blocked_count": 0,
+        "wiki_lock_finding": false,
+        "pgbot_lock_finding": false,
+        "wiki_source_and_capture_retained": true
+      }
+    ]
+  }
+}

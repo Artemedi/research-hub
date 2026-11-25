@@ -95,6 +95,7 @@
 | [data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json](results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/paper2agent/2026-11-25-paper2project-qualified-handoff.json](results/paper2agent/2026-11-25-paper2project-qualified-handoff.json) | Результат ограниченной проверки |
+| [data/results/pgbot/2026-11-25-wiki-pg-lock-evidence.json](results/pgbot/2026-11-25-wiki-pg-lock-evidence.json) | Результат ограниченной проверки |
 | [data/results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json](results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-critics.json](results/research-portfolio/2026-11-07-claude-swarm-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json](results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json) | Результат ограниченной проверки |

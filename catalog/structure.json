@@ -3301,6 +3301,34 @@
       "title": "Paper2Agent — handoff and provenance export results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/pgbot/2026-11-25-wiki-pg-lock-evidence.md",
+      "title": "PGBot and Wiki_PG — PostgreSQL lock evidence and count units",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/pgbot/2026-11-25-wiki-pg-lock-evidence-protocol.md",
+      "title": "PGBot and Wiki_PG — lock evidence protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/pgbot/wiki-pg-lock-evidence.py",
+      "title": "PGBot — disposable PostgreSQL lock evidence replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/pgbot/2026-11-25-wiki-pg-lock-evidence.json",
+      "title": "PGBot and Wiki_PG — lock count and finding results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }
