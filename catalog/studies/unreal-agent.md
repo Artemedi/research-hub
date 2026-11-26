@@ -22,6 +22,7 @@
 
 - [unreal-access](../../reviews/unreal-agent/2026-11-04.md), 2026-11-04; FULL_TEXT_UNAVAILABLE; заменяет: нет. Версии: [не установлена](https://www.youtube.com/watch?v=eFBSlgXG3U0).
 - [unreal-source-audit-2026-11-06](../../reviews/unreal-agent/2026-11-06-source-audit.md), 2026-11-06; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: unreal-access. Версии: [не установлена](https://www.youtube.com/watch?v=eFBSlgXG3U0), [a5f3fd13032737142916523ae4344c392292f9d5](https://github.com/unreallabsai/unreal-agent/tree/a5f3fd13032737142916523ae4344c392292f9d5).
+- [unreal-polling-source-triage-20261126](../../reviews/unreal-agent/2026-11-26-polling-source-triage.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [a5f3fd13032737142916523ae4344c392292f9d5](https://github.com/unreallabsai/unreal-agent/tree/a5f3fd13032737142916523ae4344c392292f9d5).
 
 ## Применимость к проектам
 

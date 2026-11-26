@@ -3680,6 +3680,13 @@
       "title": "REA — managed metadata comparison results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/unreal-agent/2026-11-26-polling-source-triage.md",
+      "title": "Unreal Agent — review of scheduling and status polling",
+      "kind": "review",
+      "date": "2026-11-26"
     }
   ]
 }

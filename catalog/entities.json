@@ -4641,6 +4641,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Selected static .NET metadata fields in two authored assemblies. No target project run, public CLI or runtime behavior checked.",
       "supersedes": null
+    },
+    {
+      "id": "unreal-polling-source-triage-20261126",
+      "study_ids": ["unreal-agent"],
+      "version_ids": ["unreal-agent-a5f3-20261106"],
+      "date": "2026-11-26",
+      "document": "reviews/unreal-agent/2026-11-26-polling-source-triage.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Static scheduling and measurement review. No coordinator execution, trace sample, cost estimate or project transfer.",
+      "supersedes": null
     }
   ],
   "experiments": [
