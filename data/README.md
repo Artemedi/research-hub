@@ -79,6 +79,7 @@
 | [data/results/dsh-superagent-prototype/2026-11-05.json](results/dsh-superagent-prototype/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json](results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json) | Результат ограниченной проверки |
 | [data/results/exactly-once-limbo/2026-11-04.json](results/exactly-once-limbo/2026-11-04.json) | Результат ограниченной проверки |
+| [data/results/exactly-once-limbo/2026-11-26-hermes-issue-readback.json](results/exactly-once-limbo/2026-11-26-hermes-issue-readback.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-07-council.json](results/experienceindex/2026-11-07-council.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-07-link-oracle.json](results/experienceindex/2026-11-07-link-oracle.json) | Результат ограниченной проверки |
 | [data/results/experienceindex/2026-11-07-link-retrieval.json](results/experienceindex/2026-11-07-link-retrieval.json) | Результат ограниченной проверки |

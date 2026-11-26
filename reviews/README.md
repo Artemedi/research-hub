@@ -79,6 +79,7 @@
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |
 | [Where Does Exactly-Once Live? / LIMBO — полнотекстовая научная проверка](exactly-once-limbo/2026-11-05-full-text.md) | 2026-11-05 |
 | [LIMBO / TelegramBot — synthetic A/B политик доставки](exactly-once-limbo/2026-11-06-policy-ab.md) | 2026-11-06 |
+| [LIMBO × HermesAgent — issue visibility review](exactly-once-limbo/2026-11-26-hermes-issue-readback.md) | 2026-11-26 |
 | [ExperienceIndex full-source method recheck and explicit-link retrieval A/B](experienceindex/2026-11-07.md) | 2026-11-07 |
 | [ExperienceIndex — Wiki_PG linked-document validity](experienceindex/2026-11-25-wiki-pg-linked-validity.md) | 2026-11-25 |
 | [GeoAgent — Paper2Project named-artifact binding](geoagent/2026-11-25-paper2project-artifact-binding.md) | 2026-11-25 |

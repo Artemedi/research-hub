@@ -4857,6 +4857,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Actual DSH serializer and header utilities on authored histories. No provider, selection quality, execution, or cache measurement.",
       "supersedes": null
+    },
+    {
+      "id": "limbo-hermes-issue-readback-20261126",
+      "study_ids": ["exactly-once-limbo"],
+      "version_ids": ["verified-exactly-once-limbo-2026-11-05"],
+      "date": "2026-11-26",
+      "document": "reviews/exactly-once-limbo/2026-11-26-hermes-issue-readback.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned analyzer functions with an in-memory issue service. Provider visibility, parallel execution, and production failure rates were not measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5910,6 +5920,16 @@
       "scope": "Sixty histories in three repeats separated schema-list and property-order changes. Wire bytes and header equality changed while valid result links and schema content were retained.",
       "limitations": "Synthetic text-only inputs. No inference endpoint, actual tools, or measured cache behavior.",
       "artifacts": ["experiments/decision-geometry-harness/2026-11-26-order-isolation-protocol.md", "experiments/decision-geometry-harness/order-isolation.mjs", "data/results/decision-geometry-harness/2026-11-26-order-isolation.json"]
+    },
+    {
+      "id": "limbo-hermes-issue-readback-20261126-lab",
+      "study_ids": ["exactly-once-limbo"],
+      "review_id": "limbo-hermes-issue-readback-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "In 300 cases per arm, ensuring the source URL reduced duplicated cases from 120 to 60. All 60 hidden-effect cases duplicated in both arms.",
+      "limitations": "Sequential replay on an in-memory service. No live issue creation, provider contract, or deployment evidence.",
+      "artifacts": ["experiments/exactly-once-limbo/2026-11-26-hermes-issue-readback-protocol.md", "experiments/exactly-once-limbo/issue-readback.py", "data/results/exactly-once-limbo/2026-11-26-hermes-issue-readback.json"]
     }
   ],
   "projects": [

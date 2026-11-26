@@ -4149,6 +4149,34 @@
       "title": "Decision Geometry Harness — isolated order results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/exactly-once-limbo/2026-11-26-hermes-issue-readback.md",
+      "title": "LIMBO × HermesAgent — issue visibility review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/exactly-once-limbo/2026-11-26-hermes-issue-readback-protocol.md",
+      "title": "LIMBO × HermesAgent — issue read-back protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/exactly-once-limbo/issue-readback.py",
+      "title": "LIMBO × HermesAgent — synthetic issue replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/exactly-once-limbo/2026-11-26-hermes-issue-readback.json",
+      "title": "LIMBO × HermesAgent — issue read-back results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

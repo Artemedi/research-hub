@@ -1,0 +1,207 @@
+{
+  "source_revision": "668689dded92affb16b6a3b3f63d4be43d3d80cd",
+  "source_sha256": {
+    "entry": "543ea99a660a2402839b87bfea1b1d0f7a3587ecdfe3af5ad0b0b564b055ab90",
+    "publisher": "9a110ecd8f9dea963f87dd5ae6d5647895a953bd58f4f9129ff88551b63b95ac"
+  },
+  "real_provider_requests": 0,
+  "cases_per_scenario_per_seed": 20,
+  "observed_counts": {
+    "baseline": {
+      "19": {
+        "acknowledged": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "failed_before_create": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_visible": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_without_url": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_hidden": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        }
+      },
+      "47": {
+        "acknowledged": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "failed_before_create": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_visible": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_without_url": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_hidden": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        }
+      },
+      "83": {
+        "acknowledged": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "failed_before_create": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_visible": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_without_url": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_hidden": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        }
+      }
+    },
+    "fixed_url": {
+      "19": {
+        "acknowledged": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "failed_before_create": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_visible": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_without_url": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_hidden": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        }
+      },
+      "47": {
+        "acknowledged": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "failed_before_create": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_visible": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_without_url": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_hidden": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        }
+      },
+      "83": {
+        "acknowledged": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "failed_before_create": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 40
+        },
+        "lost_ack_visible": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_without_url": {
+          "cases": 20,
+          "duplicates": 0,
+          "missing": 0,
+          "attempts": 20
+        },
+        "lost_ack_hidden": {
+          "cases": 20,
+          "duplicates": 20,
+          "missing": 0,
+          "attempts": 40
+        }
+      }
+    }
+  }
+}

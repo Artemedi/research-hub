@@ -125,6 +125,8 @@
 - [dsh-creator-mode/offline-admission-evidence.py](dsh-creator-mode/offline-admission-evidence.py)
 - [dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md](dsh-superagent-prototype/2026-11-25-paper2project-interruption-protocol.md)
 - [dsh-superagent-prototype/paper2project-interruption.py](dsh-superagent-prototype/paper2project-interruption.py)
+- [exactly-once-limbo/2026-11-26-hermes-issue-readback-protocol.md](exactly-once-limbo/2026-11-26-hermes-issue-readback-protocol.md)
+- [exactly-once-limbo/issue-readback.py](exactly-once-limbo/issue-readback.py)
 - [experienceindex/2026-11-07-council.py](experienceindex/2026-11-07-council.py)
 - [experienceindex/2026-11-07-link-oracle.mjs](experienceindex/2026-11-07-link-oracle.mjs)
 - [experienceindex/2026-11-07-link-retrieval.py](experienceindex/2026-11-07-link-retrieval.py)
