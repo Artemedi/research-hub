@@ -1,0 +1,99 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "yahont_revision": "367b48da9de2d296f905aca4bf0eb384043bf643",
+  "yahont_helper_sha256": "511568e3cd0e6b45a81769699b40440b1f77276db26a919aff619977a8e6fea8",
+  "repeat_count": 2,
+  "status": "OBSERVED",
+  "fixtures": [
+    {
+      "fixture": 1,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 2,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 3,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 4,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 5,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 6,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 7,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 8,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 9,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    },
+    {
+      "fixture": 10,
+      "helper_pair_collision": true,
+      "helper_distinct_control": true,
+      "wiki_distinct_ids_identical_bytes": true,
+      "scoped_read_preserved_identity": true,
+      "only_updated_id_changed": true,
+      "only_deleted_source_disappeared": true
+    }
+  ]
+}

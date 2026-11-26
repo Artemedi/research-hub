@@ -4591,6 +4591,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Artificial arithmetic evidence and fixed votes. No model verifier, human reviewer or production measurements.",
       "supersedes": null
+    },
+    {
+      "id": "yahont-wiki-pg-source-identity-20261126",
+      "study_ids": ["yahont-ce"],
+      "version_ids": ["yahont-ce-version"],
+      "date": "2026-11-26",
+      "document": "reviews/yahont-ce/2026-11-26-wiki-pg-source-identity.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pure normalization helper and native Wiki_PG lexical index on synthetic sources. No Yahont indexing, deployment or ACL measurement.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5404,6 +5414,20 @@
         "experiments/veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md",
         "experiments/veriharness/paper2project-consensus-evidence.py",
         "data/results/veriharness/2026-11-26-paper2project-consensus-evidence.json"
+      ]
+    },
+    {
+      "id": "yahont-wiki-pg-source-identity-20261126-lab",
+      "study_ids": ["yahont-ce"],
+      "review_id": "yahont-wiki-pg-source-identity-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two matching ten-pair repeats. Yahont helper normalizes the pairs alike; Wiki_PG keeps distinct identities through initial indexing, edit and deletion.",
+      "limitations": "Pure Yahont helper only; no OpenSearch, connector path, permission or production behavior tested.",
+      "artifacts": [
+        "experiments/yahont-ce/2026-11-26-wiki-pg-source-identity-protocol.md",
+        "experiments/yahont-ce/wiki-pg-source-identity.py",
+        "data/results/yahont-ce/2026-11-26-wiki-pg-source-identity.json"
       ]
     }
   ],

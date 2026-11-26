@@ -3519,6 +3519,34 @@
       "title": "VeriHarness — consensus and two-source results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/yahont-ce/2026-11-26-wiki-pg-source-identity.md",
+      "title": "Yahont CE — source identity comparison with Wiki_PG",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/yahont-ce/2026-11-26-wiki-pg-source-identity-protocol.md",
+      "title": "Yahont CE — source identity protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/yahont-ce/wiki-pg-source-identity.py",
+      "title": "Yahont CE — pinned helper and Wiki_PG source replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/yahont-ce/2026-11-26-wiki-pg-source-identity.json",
+      "title": "Yahont CE — source identity results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

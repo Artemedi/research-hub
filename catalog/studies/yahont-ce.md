@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [yahont-ce-review](../../reviews/yahont-ce/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [367b48da9de2d296f905aca4bf0eb384043bf643](https://github.com/pipedude/yahont-ce/tree/367b48da9de2d296f905aca4bf0eb384043bf643).
+- [yahont-wiki-pg-source-identity-20261126](../../reviews/yahont-ce/2026-11-26-wiki-pg-source-identity.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [367b48da9de2d296f905aca4bf0eb384043bf643](https://github.com/pipedude/yahont-ce/tree/367b48da9de2d296f905aca4bf0eb384043bf643).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- yahont-wiki-pg-source-identity-20261126-lab: SYNTHETIC / OBSERVED. Two matching ten-pair repeats. Yahont helper normalizes the pairs alike; Wiki_PG keeps distinct identities through initial indexing, edit and deletion. Pure Yahont helper only; no OpenSearch, connector path, permission or production behavior tested. [Артефакт](../../experiments/yahont-ce/2026-11-26-wiki-pg-source-identity-protocol.md) · [Артефакт](../../experiments/yahont-ce/wiki-pg-source-identity.py) · [Артефакт](../../data/results/yahont-ce/2026-11-26-wiki-pg-source-identity.json)
 
 ## Ссылки из исходной карточки
 

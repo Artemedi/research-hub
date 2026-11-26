@@ -148,6 +148,7 @@
 | [VeriHarness — Paper2Project consensus and evidence checks](veriharness/2026-11-26-paper2project-consensus-evidence.md) | 2026-11-26 |
 | [Warp Skill Doctor — атрибуция и приватность](warp-skill-doctor/2026-11-04.md) | 2026-11-04 |
 | [Yahont CE — поиск, ACL и лицензия](yahont-ce/2026-11-04.md) | 2026-11-04 |
+| [Yahont CE — source identity comparison with Wiki_PG](yahont-ce/2026-11-26-wiki-pg-source-identity.md) | 2026-11-26 |
 | [youtube-skills — инструкции и внешние зависимости](youtube-skills/2026-11-04.md) | 2026-11-04 |
 | [YouTube Skills pinned API and secret bootstrap instructions boundary audit](youtube-skills/2026-11-07-provider-boundary.md) | 2026-11-07 |
 | [0-CODE — состояние и фильтры](zero-code/2026-11-04.md) | 2026-11-04 |

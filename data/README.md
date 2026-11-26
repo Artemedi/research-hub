@@ -163,6 +163,7 @@
 | [data/results/understand-anything/2026-11-08-mcp-head-security.json](results/understand-anything/2026-11-08-mcp-head-security.json) | Результат ограниченной проверки |
 | [data/results/vercel-agent-desktop/2026-11-05.json](results/vercel-agent-desktop/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/veriharness/2026-11-26-paper2project-consensus-evidence.json](results/veriharness/2026-11-26-paper2project-consensus-evidence.json) | Результат ограниченной проверки |
+| [data/results/yahont-ce/2026-11-26-wiki-pg-source-identity.json](results/yahont-ce/2026-11-26-wiki-pg-source-identity.json) | Результат ограниченной проверки |
 | [data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json](results/youtube-skills/2026-11-07-provider-boundary-oracle.json) | Результат ограниченной проверки |
 | [data/results/youtube-skills/2026-11-07-provider-boundary.json](results/youtube-skills/2026-11-07-provider-boundary.json) | Результат ограниченной проверки |
 | [data/results/zero-code/2026-11-07-jsonc-oracle.json](results/zero-code/2026-11-07-jsonc-oracle.json) | Результат ограниченной проверки |

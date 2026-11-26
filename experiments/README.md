@@ -203,6 +203,8 @@
 - [understand-anything/2026-11-08-viewer-symlink-probe.mjs](understand-anything/2026-11-08-viewer-symlink-probe.mjs)
 - [veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md](veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md)
 - [veriharness/paper2project-consensus-evidence.py](veriharness/paper2project-consensus-evidence.py)
+- [yahont-ce/2026-11-26-wiki-pg-source-identity-protocol.md](yahont-ce/2026-11-26-wiki-pg-source-identity-protocol.md)
+- [yahont-ce/wiki-pg-source-identity.py](yahont-ce/wiki-pg-source-identity.py)
 - [youtube-skills/2026-11-07-pinned-provider-boundary.py](youtube-skills/2026-11-07-pinned-provider-boundary.py)
 - [youtube-skills/2026-11-07-provider-boundary-oracle.py](youtube-skills/2026-11-07-provider-boundary-oracle.py)
 - [zero-code/2026-11-07-jsonc-fixtures.py](zero-code/2026-11-07-jsonc-fixtures.py)
