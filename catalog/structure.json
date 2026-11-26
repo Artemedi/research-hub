@@ -3799,6 +3799,34 @@
       "title": "Agent Desktop — Qt and Electron observation results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-risk/2026-11-26-snapshot-admission.md",
+      "title": "Agent Risk — snapshot admission review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-risk/2026-11-26-snapshot-admission-protocol.md",
+      "title": "Agent Risk — snapshot admission protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-risk/snapshot-admission.py",
+      "title": "Agent Risk — snapshot admission experiment",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-risk/2026-11-26-snapshot-admission.json",
+      "title": "Agent Risk — snapshot admission results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

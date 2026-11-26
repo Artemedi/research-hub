@@ -32,6 +32,7 @@
 | [Agent Mosaic — полнотекстовый follow-up и synthetic composite-gate lab](agent-mosaic/2026-11-07-composite-gate.md) | 2026-11-07 |
 | [Agent Mosaic — Wiki_PG session release policy](agent-mosaic/2026-11-25-wiki-pg-session-policy.md) | 2026-11-25 |
 | [agent-risk — replay assumptions and targeted continuation](agent-risk/2026-11-09-replay-assumptions.md) | 2026-11-09 |
+| [Agent Risk — snapshot admission review](agent-risk/2026-11-26-snapshot-admission.md) | 2026-11-26 |
 | [alphaXiv OpenResearch — источники и границы доступа](alphaxiv-openresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |
 | [OpenResearch — source snapshot portability](alphaxiv-openresearch/2026-11-25-snapshot-portability.md) | 2026-11-25 |

@@ -22,6 +22,7 @@
 
 - [agent-risk-review](../../studies/agent-risk.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.16280vv1).
 - [agent-risk-replay-assumptions-20261109](../../reviews/agent-risk/2026-11-09-replay-assumptions.md), 2026-11-09; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.16280vv1).
+- [agent-risk-snapshot-admission-20261126](../../reviews/agent-risk/2026-11-26-snapshot-admission.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [a1ab24aaf3c1e5bfbe47a24eaf4cf411bf0b3f1b](https://github.com/yzhao062/agent-risk/tree/a1ab24aaf3c1e5bfbe47a24eaf4cf411bf0b3f1b).
 
 ## Применимость к проектам
 
@@ -34,6 +35,7 @@
 ## Эксперименты
 
 - agent-risk-replay-boundary-20261109: SYNTHETIC / PASS. 200 deterministic finite episodes; 171 first-deviation continuations matched a full-from-zero live oracle (0/171 harm mismatches); log-only outer bounds [0.135, 0.890] contained live harm 0.665; targeted continuation used 600/1,200 synthetic proposal calls with prefix-log cost excluded. Negative controls: incomplete snapshot 24/171 mismatches, announced gate 34/171, changed environment 127/171; same coarse harm flag with different harm timing changed stopping replay. No LLM, author harness, real log, tool environment, database or production data. Synthetic calls are proposal steps, not token/latency/cost measurements. This is not reproduction of the paper’s empirical runs. [Артефакт](../../experiments/agent-risk/2026-11-09-replay-boundary.py) · [Артефакт](../../data/results/agent-risk/2026-11-09-replay-boundary.json) · [Артефакт](../../reviews/agent-risk/2026-11-09-replay-assumptions.md)
+- agent-risk-snapshot-admission-20261126-lab: SYNTHETIC / OBSERVED. Thirty-two authored cases matched the independent oracle with full state; 16 outcomes were unresolved by log-only replay. Eight invalid-state conditions per continuing case left outcomes unknown. Trusted recorded cut and declared environment. No agent, real event logs, inference costs or target runtime integration. [Артефакт](../../experiments/agent-risk/2026-11-26-snapshot-admission-protocol.md) · [Артефакт](../../experiments/agent-risk/snapshot-admission.py) · [Артефакт](../../data/results/agent-risk/2026-11-26-snapshot-admission.json)
 
 ## Ссылки из исходной карточки
 

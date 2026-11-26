@@ -1,0 +1,286 @@
+{
+  "source_commit": "a1ab24aaf3c1e5bfbe47a24eaf4cf411bf0b3f1b",
+  "repeat_count": 3,
+  "case_count": 32,
+  "branches": {
+    "agree": 8,
+    "terminal": 8,
+    "continuing": 16
+  },
+  "log_only_unknown_fraction": "1/2",
+  "log_only_outer_bounds": [
+    "9/32",
+    "25/32"
+  ],
+  "full_oracle_error_fraction": "5/8",
+  "replay_mismatches": 0,
+  "unknown_controls_by_reason": {
+    "missing_budget": 16,
+    "missing_context": 16,
+    "negative_budget": 16,
+    "wrong_cut": 16,
+    "changed_context": 16,
+    "edited_budget": 16,
+    "environment_changed": 16,
+    "policy_announced": 16
+  },
+  "budget_ambiguity_control": true,
+  "cases": [
+    {
+      "lane": "agree",
+      "remaining": 0,
+      "prior_error": false,
+      "branch": "agree",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "agree",
+      "remaining": 0,
+      "prior_error": true,
+      "branch": "agree",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "agree",
+      "remaining": 1,
+      "prior_error": false,
+      "branch": "agree",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "agree",
+      "remaining": 1,
+      "prior_error": true,
+      "branch": "agree",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "agree",
+      "remaining": 2,
+      "prior_error": false,
+      "branch": "agree",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "agree",
+      "remaining": 2,
+      "prior_error": true,
+      "branch": "agree",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "agree",
+      "remaining": 3,
+      "prior_error": false,
+      "branch": "agree",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "agree",
+      "remaining": 3,
+      "prior_error": true,
+      "branch": "agree",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "stop",
+      "remaining": 0,
+      "prior_error": false,
+      "branch": "terminal",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "stop",
+      "remaining": 0,
+      "prior_error": true,
+      "branch": "terminal",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "stop",
+      "remaining": 1,
+      "prior_error": false,
+      "branch": "terminal",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "stop",
+      "remaining": 1,
+      "prior_error": true,
+      "branch": "terminal",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "stop",
+      "remaining": 2,
+      "prior_error": false,
+      "branch": "terminal",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "stop",
+      "remaining": 2,
+      "prior_error": true,
+      "branch": "terminal",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "stop",
+      "remaining": 3,
+      "prior_error": false,
+      "branch": "terminal",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "stop",
+      "remaining": 3,
+      "prior_error": true,
+      "branch": "terminal",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 0,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 0,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 1,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 1,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 2,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 2,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 3,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "retry-inspect",
+      "remaining": 3,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 0,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 0,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 1,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 1,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 2,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 2,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 3,
+      "prior_error": false,
+      "branch": "continuing",
+      "oracle": false,
+      "replay": false
+    },
+    {
+      "lane": "retry-validate",
+      "remaining": 3,
+      "prior_error": true,
+      "branch": "continuing",
+      "oracle": true,
+      "replay": true
+    }
+  ]
+}

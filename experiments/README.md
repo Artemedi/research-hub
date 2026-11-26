@@ -49,6 +49,8 @@
 - [agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md](agent-mosaic/2026-11-25-wiki-pg-policy-protocol.md)
 - [agent-mosaic/wiki-pg-session-policy.py](agent-mosaic/wiki-pg-session-policy.py)
 - [agent-risk/2026-11-09-replay-boundary.py](agent-risk/2026-11-09-replay-boundary.py)
+- [agent-risk/2026-11-26-snapshot-admission-protocol.md](agent-risk/2026-11-26-snapshot-admission-protocol.md)
+- [agent-risk/snapshot-admission.py](agent-risk/snapshot-admission.py)
 - [alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md](alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md)
 - [alphaxiv-openresearch/openresearch-source-snapshot-test.rs](alphaxiv-openresearch/openresearch-source-snapshot-test.rs)
 - [alphaxiv-openresearch/paper2project-snapshot-portability.py](alphaxiv-openresearch/paper2project-snapshot-portability.py)
