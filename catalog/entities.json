@@ -4901,6 +4901,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Stock approval service with a fake dispatcher, journal, and counter. No actual tool or persistent audit validation.",
       "supersedes": null
+    },
+    {
+      "id": "htn-orchestrate-deferred-expansion-20261126",
+      "study_ids": ["htn-orchestrate"],
+      "version_ids": ["htn-orchestrate-version"],
+      "date": "2026-11-26",
+      "document": "reviews/htn-orchestrate/2026-11-26-deferred-expansion.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned author task tree with rule-based planning and arithmetic fixtures. No author planner, model, target project integration, or latency measurement.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5984,6 +5994,16 @@
       "scope": "Across 90 cases per repeat, all 10 grants changed a counter after audit; the 80 rejection, cancellation, or error cases caused no effects. Three repeats matched.",
       "limitations": "In-memory dispatcher, counter and audit sink. No model, tool execution, provider calls or persistence.",
       "artifacts": ["experiments/harnesssecurity-bench/2026-11-26-approval-effects-protocol.md", "experiments/harnesssecurity-bench/approval-effects.mjs", "data/results/harnesssecurity-bench/2026-11-26-approval-effects.json"]
+    },
+    {
+      "id": "htn-orchestrate-deferred-expansion-20261126-lab",
+      "study_ids": ["htn-orchestrate"],
+      "review_id": "htn-orchestrate-deferred-expansion-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "In 48 paired cases, all three strategies solved the same 24. Deferred planning used 24 drafts against 60 for early guessing, and 24 leaf calculations against 48 for the fixed plan.",
+      "limitations": "Deterministic arithmetic on the original tree. Counts depend on the authored mixture of outcomes. No real latency, token costs or agent evaluation.",
+      "artifacts": ["experiments/htn-orchestrate/2026-11-26-deferred-expansion-protocol.md", "experiments/htn-orchestrate/deferred-expansion.py", "data/results/htn-orchestrate/2026-11-26-deferred-expansion.json"]
     }
   ],
   "projects": [

@@ -91,6 +91,7 @@
 | [Harness² — final selection review](harness2/2026-11-26-final-selection.md) | 2026-11-26 |
 | [HarnessSecurity-Bench × DSH Runtime — approval effects review](harnesssecurity-bench/2026-11-26-approval-effects.md) | 2026-11-26 |
 | [HTN-Orchestrate — paired ablation and synthetic DAG follow-up](htn-orchestrate/2026-11-08-paired-audit-followup.md) | 2026-11-08 |
+| [HTN-Orchestrate — deferred expansion review](htn-orchestrate/2026-11-26-deferred-expansion.md) | 2026-11-26 |
 | [Hyperresearch — проверка цитирования](hyperresearch/2026-11-04.md) | 2026-11-04 |
 | [Pinned upstream Hyperresearch 54 test execution and existing citation limits](hyperresearch/2026-11-07-upstream-tests.md) | 2026-11-07 |
 | [Hyperresearch — citation auto-pass source blocker](hyperresearch/2026-11-09-citation-adjudication.md) | 2026-11-09 |

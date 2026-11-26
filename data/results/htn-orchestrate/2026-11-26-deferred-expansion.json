@@ -1,0 +1,114 @@
+{
+  "revision": "0bccf18d813298e5c2a33961dbf56b907bd8b133",
+  "source_sha256": {
+    "task_tree.py": "f4222053ee02541452c229596098bbe8444201e4fc24a597a7d70d5a681e4f01",
+    "task_node.py": "66bbce59ae807a534a2e900f5980786ea14e6150bdc3056ce20e3606a3561d4b"
+  },
+  "cases_per_scenario": 12,
+  "repeats": 3,
+  "model_or_provider_calls": 0,
+  "results": {
+    "early_guess": {
+      "guess_matches": {
+        "proposals": 12,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 12,
+        "tree_branch_ready": 12,
+        "roots_resolved": 12
+      },
+      "guess_changes": {
+        "proposals": 24,
+        "discarded": 12,
+        "replans": 12,
+        "calculation_leaves": 12,
+        "tree_branch_ready": 12,
+        "roots_resolved": 12
+      },
+      "failed": {
+        "proposals": 12,
+        "discarded": 12,
+        "replans": 0,
+        "calculation_leaves": 0,
+        "tree_branch_ready": 0,
+        "roots_resolved": 0
+      },
+      "unresolved": {
+        "proposals": 12,
+        "discarded": 12,
+        "replans": 0,
+        "calculation_leaves": 0,
+        "tree_branch_ready": 12,
+        "roots_resolved": 0
+      }
+    },
+    "fixed_both": {
+      "guess_matches": {
+        "proposals": 12,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 24,
+        "tree_branch_ready": 12,
+        "roots_resolved": 12
+      },
+      "guess_changes": {
+        "proposals": 12,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 24,
+        "tree_branch_ready": 12,
+        "roots_resolved": 12
+      },
+      "failed": {
+        "proposals": 12,
+        "discarded": 12,
+        "replans": 0,
+        "calculation_leaves": 0,
+        "tree_branch_ready": 0,
+        "roots_resolved": 0
+      },
+      "unresolved": {
+        "proposals": 12,
+        "discarded": 12,
+        "replans": 0,
+        "calculation_leaves": 0,
+        "tree_branch_ready": 12,
+        "roots_resolved": 0
+      }
+    },
+    "deferred": {
+      "guess_matches": {
+        "proposals": 12,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 12,
+        "tree_branch_ready": 12,
+        "roots_resolved": 12
+      },
+      "guess_changes": {
+        "proposals": 12,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 12,
+        "tree_branch_ready": 12,
+        "roots_resolved": 12
+      },
+      "failed": {
+        "proposals": 0,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 0,
+        "tree_branch_ready": 0,
+        "roots_resolved": 0
+      },
+      "unresolved": {
+        "proposals": 0,
+        "discarded": 0,
+        "replans": 0,
+        "calculation_leaves": 0,
+        "tree_branch_ready": 12,
+        "roots_resolved": 0
+      }
+    }
+  }
+}

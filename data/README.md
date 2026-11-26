@@ -95,6 +95,7 @@
 | [data/results/harness2/2026-11-26-final-selection.json](results/harness2/2026-11-26-final-selection.json) | Результат ограниченной проверки |
 | [data/results/harnesssecurity-bench/2026-11-26-approval-effects.json](results/harnesssecurity-bench/2026-11-26-approval-effects.json) | Результат ограниченной проверки |
 | [data/results/htn-orchestrate/2026-11-07-paired-audit.json](results/htn-orchestrate/2026-11-07-paired-audit.json) | Результат ограниченной проверки |
+| [data/results/htn-orchestrate/2026-11-26-deferred-expansion.json](results/htn-orchestrate/2026-11-26-deferred-expansion.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-07-upstream-tests.json](results/hyperresearch/2026-11-07-upstream-tests.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-09-temporal-scope-ab.json](results/hyperresearch/2026-11-09-temporal-scope-ab.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json](results/hyperresearch/2026-11-09-temporal-scope-oracle.json) | Результат ограниченной проверки |

@@ -4233,6 +4233,34 @@
       "title": "HarnessSecurity-Bench × DSH Runtime — approval effects results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/htn-orchestrate/2026-11-26-deferred-expansion.md",
+      "title": "HTN-Orchestrate — deferred expansion review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/htn-orchestrate/2026-11-26-deferred-expansion-protocol.md",
+      "title": "HTN-Orchestrate — deferred expansion protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/htn-orchestrate/deferred-expansion.py",
+      "title": "HTN-Orchestrate — planning schedule comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/htn-orchestrate/2026-11-26-deferred-expansion.json",
+      "title": "HTN-Orchestrate — deferred expansion results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

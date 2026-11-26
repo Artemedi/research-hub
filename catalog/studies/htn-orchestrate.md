@@ -22,6 +22,7 @@
 
 - [htn-orchestrate-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.22195v1).
 - [htn-orchestrate-paired-audit-followup-20261108](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md), 2026-11-08; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.22195v1).
+- [htn-orchestrate-deferred-expansion-20261126](../../reviews/htn-orchestrate/2026-11-26-deferred-expansion.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.22195v1).
 
 ## Применимость к проектам
 
@@ -33,6 +34,7 @@
 ## Эксперименты
 
 - htn-orchestrate-static-dag-20261107: SYNTHETIC / PASS. Previously executed 2026-11-07 independent static-DAG surrogate: 20 valid DAGs, 5 cyclic graphs and 5 missing-evidence graphs matched a separate brute-force topological-order oracle (30/30); 20/20 valid-DAG resume-idempotence checks passed. Exact McNemar p-values were recalculated from author-reported Appendix C.3 Table 11 paired counts, not raw outcomes. The surrogate is not the original HTN implementation and does not exercise LLM planning, dynamic decomposition, actual epoch recovery, BrowseComp or performance. Two targeted upstream test modules passed 43/43; full upstream suite and monorepo build were not run. No latency, token, cost, CPU or RAM measurements. [Артефакт](../../reviews/htn-orchestrate/2026-11-08-paired-audit-followup.md) · [Артефакт](../../experiments/htn-orchestrate/2026-11-07-offline-audit.py) · [Артефакт](../../data/results/htn-orchestrate/2026-11-07-paired-audit.json) · [Артефакт](../../portfolio/2026-11-08/htn-orchestrate-project-fit.md) · [Артефакт](../../data/project-fit/htn-orchestrate/2026-11-08-project-fit.json)
+- htn-orchestrate-deferred-expansion-20261126-lab: SYNTHETIC / OBSERVED. In 48 paired cases, all three strategies solved the same 24. Deferred planning used 24 drafts against 60 for early guessing, and 24 leaf calculations against 48 for the fixed plan. Deterministic arithmetic on the original tree. Counts depend on the authored mixture of outcomes. No real latency, token costs or agent evaluation. [Артефакт](../../experiments/htn-orchestrate/2026-11-26-deferred-expansion-protocol.md) · [Артефакт](../../experiments/htn-orchestrate/deferred-expansion.py) · [Артефакт](../../data/results/htn-orchestrate/2026-11-26-deferred-expansion.json)
 
 ## Ссылки из исходной карточки
 
