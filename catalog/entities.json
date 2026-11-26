@@ -1768,6 +1768,13 @@
       "url": "https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a"
     },
     {
+      "study_id": "hyperresearch",
+      "ref": "8f192b88bf777e2ad6da5e07e4b2ad7af40e2d7c",
+      "id": "hyperresearch-0-13-3-8f192b8",
+      "unknown_reason": null,
+      "url": "https://github.com/jordan-gibbs/hyperresearch/tree/8f192b88bf777e2ad6da5e07e4b2ad7af40e2d7c"
+    },
+    {
       "study_id": "inspektor-gadget",
       "ref": "29d60de9f7924607784915533dd5f3cc0052ee1a",
       "id": "inspektor-gadget-version",
@@ -4911,6 +4918,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned author task tree with rule-based planning and arithmetic fixtures. No author planner, model, target project integration, or latency measurement.",
       "supersedes": null
+    },
+    {
+      "id": "hyperresearch-report-citation-routing-20261126",
+      "study_ids": ["hyperresearch"],
+      "version_ids": ["hyperresearch-0-13-3-8f192b8"],
+      "date": "2026-11-26",
+      "document": "reviews/hyperresearch/2026-11-26-report-citation-routing.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic Markdown and in-memory vault. Stock Hyperresearch export and isolated Paper2Agent warning function. No model or real source adjudication.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6004,6 +6021,16 @@
       "scope": "In 48 paired cases, all three strategies solved the same 24. Deferred planning used 24 drafts against 60 for early guessing, and 24 leaf calculations against 48 for the fixed plan.",
       "limitations": "Deterministic arithmetic on the original tree. Counts depend on the authored mixture of outcomes. No real latency, token costs or agent evaluation.",
       "artifacts": ["experiments/htn-orchestrate/2026-11-26-deferred-expansion-protocol.md", "experiments/htn-orchestrate/deferred-expansion.py", "data/results/htn-orchestrate/2026-11-26-deferred-expansion.json"]
+    },
+    {
+      "id": "hyperresearch-report-citation-routing-20261126-lab",
+      "study_ids": ["hyperresearch"],
+      "review_id": "hyperresearch-report-citation-routing-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Stock Hyperresearch 0.13.3 auto-passed 36 of 72 unsupported claims for each Markdown citation style even with full review sampling. The exact-only policy queued all 72.",
+      "limitations": "Authored labels, notes without source ambiguity, and no downstream adjudication. Project warning function evaluated in isolation.",
+      "artifacts": ["experiments/hyperresearch/2026-11-26-report-citation-routing-protocol.md", "experiments/hyperresearch/report-citation-routing.py", "data/results/hyperresearch/2026-11-26-report-citation-routing.json"]
     }
   ],
   "projects": [

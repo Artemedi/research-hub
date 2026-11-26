@@ -99,6 +99,7 @@
 | [data/results/hyperresearch/2026-11-07-upstream-tests.json](results/hyperresearch/2026-11-07-upstream-tests.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-09-temporal-scope-ab.json](results/hyperresearch/2026-11-09-temporal-scope-ab.json) | Результат ограниченной проверки |
 | [data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json](results/hyperresearch/2026-11-09-temporal-scope-oracle.json) | Результат ограниченной проверки |
+| [data/results/hyperresearch/2026-11-26-report-citation-routing.json](results/hyperresearch/2026-11-26-report-citation-routing.json) | Результат ограниченной проверки |
 | [data/results/hyra-2/2026-11-25-paper2project-review-lifecycle.json](results/hyra-2/2026-11-25-paper2project-review-lifecycle.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-04.json](results/inspektor-gadget/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/inspektor-gadget/2026-11-06-host-diagnostics.json](results/inspektor-gadget/2026-11-06-host-diagnostics.json) | Результат ограниченной проверки |

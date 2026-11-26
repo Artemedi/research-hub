@@ -150,6 +150,8 @@
 - [hyperresearch/2026-11-07-pinned-upstream-tests.py](hyperresearch/2026-11-07-pinned-upstream-tests.py)
 - [hyperresearch/2026-11-09-temporal-scope-ab.py](hyperresearch/2026-11-09-temporal-scope-ab.py)
 - [hyperresearch/2026-11-09-temporal-scope-oracle.py](hyperresearch/2026-11-09-temporal-scope-oracle.py)
+- [hyperresearch/2026-11-26-report-citation-routing-protocol.md](hyperresearch/2026-11-26-report-citation-routing-protocol.md)
+- [hyperresearch/report-citation-routing.py](hyperresearch/report-citation-routing.py)
 - [hyra-2/2026-11-25-review-protocol.md](hyra-2/2026-11-25-review-protocol.md)
 - [hyra-2/paper2project-review-lifecycle.py](hyra-2/paper2project-review-lifecycle.py)
 - [inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md](inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md)

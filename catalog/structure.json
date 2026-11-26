@@ -4261,6 +4261,34 @@
       "title": "HTN-Orchestrate — deferred expansion results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/hyperresearch/2026-11-26-report-citation-routing.md",
+      "title": "Hyperresearch 0.13.3 — report citation routing",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/hyperresearch/2026-11-26-report-citation-routing-protocol.md",
+      "title": "Hyperresearch 0.13.3 — citation routing protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/hyperresearch/report-citation-routing.py",
+      "title": "Hyperresearch 0.13.3 — citation routing replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/hyperresearch/2026-11-26-report-citation-routing.json",
+      "title": "Hyperresearch 0.13.3 — citation routing results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

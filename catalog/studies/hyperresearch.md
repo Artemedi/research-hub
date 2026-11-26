@@ -22,6 +22,7 @@
 
 - [hyperresearch-review](../../reviews/hyperresearch/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).
 - [hyperresearch-citation-holdout-20261109](../../reviews/hyperresearch/2026-11-09-citation-adjudication.md), 2026-11-09; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [aece65f9307197119629beacf8aeaf8cc80e999a](https://github.com/jordan-gibbs/hyperresearch/tree/aece65f9307197119629beacf8aeaf8cc80e999a).
+- [hyperresearch-report-citation-routing-20261126](../../reviews/hyperresearch/2026-11-26-report-citation-routing.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [8f192b88bf777e2ad6da5e07e4b2ad7af40e2d7c](https://github.com/jordan-gibbs/hyperresearch/tree/8f192b88bf777e2ad6da5e07e4b2ad7af40e2d7c).
 - [Pinned upstream Hyperresearch 54 test execution and existing citation limits](../../reviews/hyperresearch/2026-11-07-upstream-tests.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -34,6 +35,7 @@
 ## Эксперименты
 
 - hyperresearch-temporal-scope-holdout-20261109: SYNTHETIC / OBSERVED. 84 examples from 12 authored synthetic source clauses, original pinned upstream triage_pairs. 48/60 unsupported auto-passed; exact-only 0/60; independent fixture and numerical oracle validated 84 records and detected 3 synthetic mutations. Not full scientific citation corpus, no blinded human labels, original library LLM/vault pipeline and real target project not executed. [Артефакт](../../experiments/hyperresearch/2026-11-09-temporal-scope-ab.py) · [Артефакт](../../experiments/hyperresearch/2026-11-09-temporal-scope-oracle.py) · [Артефакт](../../data/results/hyperresearch/2026-11-09-temporal-scope-ab.json) · [Артефакт](../../data/results/hyperresearch/2026-11-09-temporal-scope-oracle.json)
+- hyperresearch-report-citation-routing-20261126-lab: SYNTHETIC / OBSERVED. Stock Hyperresearch 0.13.3 auto-passed 36 of 72 unsupported claims for each Markdown citation style even with full review sampling. The exact-only policy queued all 72. Authored labels, notes without source ambiguity, and no downstream adjudication. Project warning function evaluated in isolation. [Артефакт](../../experiments/hyperresearch/2026-11-26-report-citation-routing-protocol.md) · [Артефакт](../../experiments/hyperresearch/report-citation-routing.py) · [Артефакт](../../data/results/hyperresearch/2026-11-26-report-citation-routing.json)
 
 ## Ссылки из исходной карточки
 

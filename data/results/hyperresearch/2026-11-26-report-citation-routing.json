@@ -1,0 +1,95 @@
+{
+  "upstream": "8f192b88bf777e2ad6da5e07e4b2ad7af40e2d7c",
+  "target": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "core_sha256": {
+    "citecheck": "53405db780de66866e8b3131f7a99edc1341832095fcc7b0888eaae69684a465",
+    "patterns": "e7dbe6b0b804cc784dde71e9d10fff3946258e5e91c806443096ba825efdbadc",
+    "fetcher": "7baa0fa70003e778c79d6fcc0de76995f1bc99b451f8b77a73009676c3711486",
+    "scholar": "42bd51802d950ca89a219828f790d083cea31847b8a3c6595a25edaf0acf487d"
+  },
+  "target_sha256": "fd37058e63efb578c7f3fc6864ba658b0e2c53722f454d32e6efa03d85d39a2b",
+  "repeats": 3,
+  "model_calls": 0,
+  "results": {
+    "numbered": {
+      "stock_default": {
+        "support_auto": 12,
+        "unsupported_auto": 36,
+        "support_queued": 12,
+        "unsupported_queued": 36,
+        "support_omitted": 0,
+        "unsupported_omitted": 0
+      },
+      "stock_full_sampling": {
+        "support_auto": 12,
+        "unsupported_auto": 36,
+        "support_queued": 12,
+        "unsupported_queued": 36,
+        "support_omitted": 0,
+        "unsupported_omitted": 0
+      },
+      "exact_all_other_pairs": {
+        "support_auto": 12,
+        "unsupported_auto": 0,
+        "support_queued": 12,
+        "unsupported_queued": 72,
+        "support_omitted": 0,
+        "unsupported_omitted": 0
+      },
+      "stock_auto_by_category": {
+        "exact": 12,
+        "reversal": 12,
+        "missing_condition": 12,
+        "negation": 12
+      },
+      "target_advisory_by_category": {
+        "missing_condition": 12,
+        "negation": 12,
+        "changed_unit": 12,
+        "unrelated": 12
+      },
+      "parsed_pairs": 97,
+      "dangling_findings": 1
+    },
+    "wiki": {
+      "stock_default": {
+        "support_auto": 12,
+        "unsupported_auto": 36,
+        "support_queued": 7,
+        "unsupported_queued": 36,
+        "support_omitted": 5,
+        "unsupported_omitted": 0
+      },
+      "stock_full_sampling": {
+        "support_auto": 12,
+        "unsupported_auto": 36,
+        "support_queued": 12,
+        "unsupported_queued": 36,
+        "support_omitted": 0,
+        "unsupported_omitted": 0
+      },
+      "exact_all_other_pairs": {
+        "support_auto": 12,
+        "unsupported_auto": 0,
+        "support_queued": 12,
+        "unsupported_queued": 72,
+        "support_omitted": 0,
+        "unsupported_omitted": 0
+      },
+      "stock_auto_by_category": {
+        "exact": 12,
+        "reversal": 12,
+        "missing_condition": 12,
+        "negation": 12
+      },
+      "target_advisory_by_category": {
+        "missing_condition": 12,
+        "negation": 12,
+        "changed_unit": 12,
+        "unrelated": 12
+      },
+      "parsed_pairs": 97,
+      "dangling_findings": 1
+    }
+  }
+}
