@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [dsh-creator-mode-offline-20261106](../../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [sha256:69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html).
+- [dsh-creator-offline-admission-evidence-20261126](../../reviews/dsh-creator-mode/2026-11-26-offline-admission-evidence.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [sha256:69265766b9b9c0c3dc3afb85153d26bc6565fe14ea86ab88627c9905d2395346](https://cdn.deepseek.com/harness/dsh-creator-mode-prompt-collection-en.html).
 - [BK-064 — ограниченный опыт Creator Mode](../../reviews/dsh-creator-mode/2026-11-06-local-probe.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -33,6 +34,7 @@
 ## Эксперименты
 
 - bk064-model-external-poster-probe-20261106: SYNTHETIC / OBSERVED. Codex CLI once generated code.client.js per official prompt #4; 9/9 deterministic mock React/Slots contract checks in rootless no-network read-only Podman; DSH Host 102/102 and Client 108/108 pre-existing unit tests passed. Generator was NOT DSH Creator. Real DSH browser model route/approval/installation not exercised, exact site font/shader unavailable, 1 attempt no A/B, no priced inference, no live DSH or CVE fix. [Артефакт](../../experiments/2026-11-06-bk064-poster-probe.cjs) · [Артефакт](../../data/results/dsh-creator/2026-11-06-offline-poster-probe.json) · [Артефакт](../../data/fixtures/dsh-creator/2026-11-06/INSTRUCTIONS.md) · [Артефакт](../../data/fixtures/dsh-creator/2026-11-06/code.client.js) · [Артефакт](../../data/fixtures/dsh-creator/2026-11-06/manifest.json) · [Артефакт](../../reviews/dsh-creator-mode/2026-11-06-external-generator-probe.md)
+- dsh-creator-offline-admission-evidence-20261126-lab: SYNTHETIC / OBSERVED. Five native agent-skills tests passed; two receipt replays admitted the saved offline fixture and rejected fourteen modified records or inputs. Static source and receipt checks. Recorded runtime boundaries were not exercised again; no running Creator or deployed binary verified. [Артефакт](../../experiments/dsh-creator-mode/2026-11-26-offline-admission-evidence-protocol.md) · [Артефакт](../../experiments/dsh-creator-mode/offline-admission-evidence.py) · [Артефакт](../../data/results/dsh-creator/2026-11-26-offline-admission-evidence.json)
 
 ## Ссылки из исходной карточки
 

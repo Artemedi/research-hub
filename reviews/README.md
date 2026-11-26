@@ -61,6 +61,7 @@
 | [Drift Inspector — Atomic Contribution Claims for Scientific Drift — source review](drift-inspector/2026-11-13.md) | 2026-11-13 |
 | [BK-064 — Codex generated Client plugin, synthetic Cordis test](dsh-creator-mode/2026-11-06-external-generator-probe.md) | 2026-11-06 |
 | [BK-064 — ограниченный опыт Creator Mode](dsh-creator-mode/2026-11-06-local-probe.md) | 2026-11-06 |
+| [DSH Creator Mode — saved offline evidence checks](dsh-creator-mode/2026-11-26-offline-admission-evidence.md) | 2026-11-26 |
 | [DSH Superagent Prototype — полномочия и lifecycle](dsh-superagent-prototype/2026-11-05.md) | 2026-11-05 |
 | [DSH Superagent Prototype — Paper2Project interruption recovery](dsh-superagent-prototype/2026-11-25-paper2project-interruption.md) | 2026-11-25 |
 | [LIMBO и TelegramBot — неоднозначная доставка](exactly-once-limbo/2026-11-04.md) | 2026-11-04 |

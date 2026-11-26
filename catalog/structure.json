@@ -3603,6 +3603,34 @@
       "title": "Database Agent Observability — counter and event results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/dsh-creator-mode/2026-11-26-offline-admission-evidence.md",
+      "title": "DSH Creator Mode — saved offline evidence checks",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/dsh-creator-mode/2026-11-26-offline-admission-evidence-protocol.md",
+      "title": "DSH Creator Mode — offline evidence protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/dsh-creator-mode/offline-admission-evidence.py",
+      "title": "DSH Creator Mode — saved fixture evidence replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/dsh-creator/2026-11-26-offline-admission-evidence.json",
+      "title": "DSH Creator Mode — offline evidence replay results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

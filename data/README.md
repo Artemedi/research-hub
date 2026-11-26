@@ -63,6 +63,7 @@
 | [data/results/drift-inspector/2026-11-25-b1-corpus-manifest.json](results/drift-inspector/2026-11-25-b1-corpus-manifest.json) | Результат ограниченной проверки |
 | [data/results/drift-inspector/2026-11-25-b1-relevance-preparation.json](results/drift-inspector/2026-11-25-b1-relevance-preparation.json) | Результат ограниченной проверки |
 | [data/results/dsh-creator/2026-11-06-offline-poster-probe.json](results/dsh-creator/2026-11-06-offline-poster-probe.json) | Результат ограниченной проверки |
+| [data/results/dsh-creator/2026-11-26-offline-admission-evidence.json](results/dsh-creator/2026-11-26-offline-admission-evidence.json) | Результат ограниченной проверки |
 | [data/results/dsh-superagent-prototype/2026-11-05.json](results/dsh-superagent-prototype/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json](results/dsh-superagent-prototype/2026-11-25-paper2project-interruption.json) | Результат ограниченной проверки |
 | [data/results/exactly-once-limbo/2026-11-04.json](results/exactly-once-limbo/2026-11-04.json) | Результат ограниченной проверки |

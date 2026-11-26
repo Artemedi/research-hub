@@ -1,0 +1,18 @@
+{
+  "agent_skills_revision": "8170c5fd92de212132bca7374bb050ac635a2c01",
+  "native_skills_tests_passed": 5,
+  "historical_report_sha256": "3fe59eae711914481a85c43c4bd1819b01bc24845328af22313ccb1376eac3e9",
+  "recorded_fixture_checks": 9,
+  "repeat_count": 2,
+  "cases": {
+    "historical_fixture": "offline_fixture_only",
+    "changed_code": "code_digest_mismatch",
+    "changed_manifest": "manifest_digest_mismatch",
+    "cleanup_check_missing": "required_checks_missing_or_failed",
+    "title_check_failed": "required_checks_missing_or_failed",
+    "scope_relabeled": "scope_mismatch",
+    "verifier_hash_mismatch": "verifier_binding_mismatch",
+    "boundary_missing": "offline_boundary_missing"
+  },
+  "creator_runtime_executed": false
+}

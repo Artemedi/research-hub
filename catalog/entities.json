@@ -4621,6 +4621,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic counter and event alignment only. No agent diagnostic accuracy, collection or production database measurement.",
       "supersedes": null
+    },
+    {
+      "id": "dsh-creator-offline-admission-evidence-20261126",
+      "study_ids": ["dsh-creator-mode"],
+      "version_ids": ["dsh-creator-official-seven-prompts-20261106"],
+      "date": "2026-11-26",
+      "document": "reviews/dsh-creator-mode/2026-11-26-offline-admission-evidence.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Static agent-skills tests and offline receipt checks. No plugin execution, deployed runtime attestation or live Creator verification.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5476,6 +5486,20 @@
         "experiments/database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md",
         "experiments/database-agent-observability/wiki-pg-counter-evidence.py",
         "data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json"
+      ]
+    },
+    {
+      "id": "dsh-creator-offline-admission-evidence-20261126-lab",
+      "study_ids": ["dsh-creator-mode"],
+      "review_id": "dsh-creator-offline-admission-evidence-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Five native agent-skills tests passed; two receipt replays admitted the saved offline fixture and rejected fourteen modified records or inputs.",
+      "limitations": "Static source and receipt checks. Recorded runtime boundaries were not exercised again; no running Creator or deployed binary verified.",
+      "artifacts": [
+        "experiments/dsh-creator-mode/2026-11-26-offline-admission-evidence-protocol.md",
+        "experiments/dsh-creator-mode/offline-admission-evidence.py",
+        "data/results/dsh-creator/2026-11-26-offline-admission-evidence.json"
       ]
     }
   ],
