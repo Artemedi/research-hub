@@ -22,6 +22,7 @@
 
 - [covert-assistance-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.39050).
 - [fulltext-covert-assistance-2026-11-05](../../reviews/covert-assistance/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.39050v1).
+- [covert-assistance-recipient-authority-20261126](../../reviews/covert-assistance/2026-11-26-recipient-authority.md), 2026-11-26; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.39050v1).
 
 ## Применимость к проектам
 
@@ -33,7 +34,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- covert-assistance-recipient-authority-20261126-lab: SYNTHETIC / OBSERVED. In 28 fixture cases, checking authority at both ends preserved four expected effects and excluded twenty extra effects seen in the sender-only control. Channel names are fixture labels. No real transport, payloads, agent, or secret handling. [Артефакт](../../experiments/covert-assistance/2026-11-26-recipient-authority-protocol.md) · [Артефакт](../../experiments/covert-assistance/recipient-authority.py) · [Артефакт](../../data/results/covert-assistance/2026-11-26-recipient-authority.json)
 
 ## Ссылки из исходной карточки
 

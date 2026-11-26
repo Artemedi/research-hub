@@ -88,6 +88,8 @@
 - [chartli/render-numeric-fixtures.mjs](chartli/render-numeric-fixtures.mjs)
 - [concordat/2026-11-26-approval-binding-protocol.md](concordat/2026-11-26-approval-binding-protocol.md)
 - [concordat/approval-binding.py](concordat/approval-binding.py)
+- [covert-assistance/2026-11-26-recipient-authority-protocol.md](covert-assistance/2026-11-26-recipient-authority-protocol.md)
+- [covert-assistance/recipient-authority.py](covert-assistance/recipient-authority.py)
 - [database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md](database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md)
 - [database-agent-observability/wiki-pg-counter-evidence.py](database-agent-observability/wiki-pg-counter-evidence.py)
 - [decision-geometry-harness/2026-11-07-bandit-oracle.py](decision-geometry-harness/2026-11-07-bandit-oracle.py)

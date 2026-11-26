@@ -49,6 +49,7 @@
 | [data/results/chartli/2026-11-07-svg-oracle.json](results/chartli/2026-11-07-svg-oracle.json) | Результат ограниченной проверки |
 | [data/results/chartli/2026-11-26-numeric-table-oracle.json](results/chartli/2026-11-26-numeric-table-oracle.json) | Результат ограниченной проверки |
 | [data/results/concordat/2026-11-26-approval-binding.json](results/concordat/2026-11-26-approval-binding.json) | Результат ограниченной проверки |
+| [data/results/covert-assistance/2026-11-26-recipient-authority.json](results/covert-assistance/2026-11-26-recipient-authority.json) | Результат ограниченной проверки |
 | [data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json](results/cursor-token-efficiency/2026-11-07-council-vs-single.json) | Результат ограниченной проверки |
 | [data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json](results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit-oracle.json](results/decision-geometry-harness/2026-11-07-bandit-oracle.json) | Результат ограниченной проверки |

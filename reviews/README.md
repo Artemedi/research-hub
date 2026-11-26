@@ -54,6 +54,7 @@
 | [Claude Swarm — workers и изоляция](claude-swarm/2026-11-04.md) | 2026-11-04 |
 | [Concordat — approval binding review](concordat/2026-11-26-approval-binding.md) | 2026-11-26 |
 | [Covert Assistance — Helpful LLM Agents Evade Oversight — полнотекстовая научная проверка](covert-assistance/2026-11-05-full-text.md) | 2026-11-05 |
+| [Covert Assistance — recipient authority review](covert-assistance/2026-11-26-recipient-authority.md) | 2026-11-26 |
 | [Cursor — инженерный источник и пределы доказательств](cursor-token-efficiency/2026-11-05-primary.md) | 2026-11-05 |
 | [BK-021 Cursor token efficiency independent GPT-6 versus ZCode council](cursor-token-efficiency/2026-11-07-council-vs-single.md) | 2026-11-07 |
 | [CVE-2026-82533 — аудит риска текущей установки DSH](cve-2026-82533/2026-11-06-readonly-risk.md) | 2026-11-06 |

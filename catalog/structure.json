@@ -4030,6 +4030,34 @@
       "title": "Concordat — approval binding results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/covert-assistance/2026-11-26-recipient-authority.md",
+      "title": "Covert Assistance — recipient authority review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/covert-assistance/2026-11-26-recipient-authority-protocol.md",
+      "title": "Covert Assistance — recipient authority protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/covert-assistance/recipient-authority.py",
+      "title": "Covert Assistance — defensive metadata check",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/covert-assistance/2026-11-26-recipient-authority.json",
+      "title": "Covert Assistance — recipient authority results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

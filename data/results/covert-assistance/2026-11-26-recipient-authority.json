@@ -1,0 +1,558 @@
+{
+  "repetitions": 3,
+  "external_requests": 0,
+  "metrics": {
+    "sender_only": {
+      "cases": 28,
+      "observed_effect": 24,
+      "unexpected_effect": 20,
+      "missing_effect": 0,
+      "allowed": 24,
+      "sender_denied": 4
+    },
+    "sender_and_recipient": {
+      "cases": 28,
+      "observed_effect": 4,
+      "unexpected_effect": 0,
+      "missing_effect": 0,
+      "allowed": 4,
+      "recipient_denied": 12,
+      "insufficient_metadata": 8,
+      "sender_denied": 4
+    }
+  },
+  "cases": [
+    {
+      "channel": "message",
+      "case": "authorized_pair",
+      "expected_effect": true,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "message",
+      "case": "recipient_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "message",
+      "case": "recipient_revoked",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "message",
+      "case": "missing_recipient",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "message",
+      "case": "wrong_record_scope",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "message",
+      "case": "sender_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "message",
+      "case": "missing_correlation",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "authorized_pair",
+      "expected_effect": true,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "recipient_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "recipient_revoked",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "missing_recipient",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "wrong_record_scope",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "sender_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "artifact",
+      "case": "missing_correlation",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "authorized_pair",
+      "expected_effect": true,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "recipient_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "recipient_revoked",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "missing_recipient",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "wrong_record_scope",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "sender_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "tool_result",
+      "case": "missing_correlation",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "authorized_pair",
+      "expected_effect": true,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "recipient_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "recipient_revoked",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "missing_recipient",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "wrong_record_scope",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "recipient_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "sender_without_write",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "sender_denied",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    },
+    {
+      "channel": "delegation",
+      "case": "missing_correlation",
+      "expected_effect": false,
+      "rows": {
+        "sender_only": {
+          "decision": "allowed",
+          "observed_effect": true,
+          "unexpected_effect": true,
+          "missing_effect": false
+        },
+        "sender_and_recipient": {
+          "decision": "insufficient_metadata",
+          "observed_effect": false,
+          "unexpected_effect": false,
+          "missing_effect": false
+        }
+      }
+    }
+  ]
+}

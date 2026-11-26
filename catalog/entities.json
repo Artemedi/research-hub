@@ -4803,6 +4803,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Actual Concordat session on toy inputs with an external proposal check. DSH read only. No model, real user approval or deployment.",
       "supersedes": null
+    },
+    {
+      "id": "covert-assistance-recipient-authority-20261126",
+      "study_ids": ["covert-assistance"],
+      "version_ids": ["verified-covert-assistance-2026-11-05"],
+      "date": "2026-11-26",
+      "document": "reviews/covert-assistance/2026-11-26-recipient-authority.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Defensive metadata fixture on synthetic receipts and a static DSH source read. No secret, agent, transport, or target integration.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5816,6 +5826,16 @@
       "scope": "Fifty cases in three repeats compared direct changes, stock session order with boolean approval, and a proposal-bound check. The bound check admitted ten expected effects without extras.",
       "limitations": "In-memory changes and authored confirmations. No real owner, durable receipt, concurrent execution, external tools or runtime rollout.",
       "artifacts": ["experiments/concordat/2026-11-26-approval-binding-protocol.md", "experiments/concordat/approval-binding.py", "data/results/concordat/2026-11-26-approval-binding.json"]
+    },
+    {
+      "id": "covert-assistance-recipient-authority-20261126-lab",
+      "study_ids": ["covert-assistance"],
+      "review_id": "covert-assistance-recipient-authority-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "In 28 fixture cases, checking authority at both ends preserved four expected effects and excluded twenty extra effects seen in the sender-only control.",
+      "limitations": "Channel names are fixture labels. No real transport, payloads, agent, or secret handling.",
+      "artifacts": ["experiments/covert-assistance/2026-11-26-recipient-authority-protocol.md", "experiments/covert-assistance/recipient-authority.py", "data/results/covert-assistance/2026-11-26-recipient-authority.json"]
     }
   ],
   "projects": [
