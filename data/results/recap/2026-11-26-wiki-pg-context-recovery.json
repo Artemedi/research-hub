@@ -1,0 +1,278 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 2,
+  "context_budget_bytes": 960,
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": 2,
+      "cases": [
+        {
+          "case": "linked_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": true,
+          "link_decision": "restored",
+          "sources_unchanged": true
+        },
+        {
+          "case": "direct_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": true,
+          "linked_hit": true,
+          "link_decision": "baseline",
+          "sources_unchanged": true
+        },
+        {
+          "case": "missing_link",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "no_link",
+          "sources_unchanged": true
+        },
+        {
+          "case": "another_port",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "wrong_scope",
+          "sources_unchanged": true
+        },
+        {
+          "case": "source_changed",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "stale_source",
+          "sources_unchanged": true
+        }
+      ]
+    },
+    {
+      "fixture": 11,
+      "cases": [
+        {
+          "case": "linked_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": true,
+          "link_decision": "restored",
+          "sources_unchanged": true
+        },
+        {
+          "case": "direct_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": true,
+          "linked_hit": true,
+          "link_decision": "baseline",
+          "sources_unchanged": true
+        },
+        {
+          "case": "missing_link",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "no_link",
+          "sources_unchanged": true
+        },
+        {
+          "case": "another_port",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "wrong_scope",
+          "sources_unchanged": true
+        },
+        {
+          "case": "source_changed",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "stale_source",
+          "sources_unchanged": true
+        }
+      ]
+    },
+    {
+      "fixture": 19,
+      "cases": [
+        {
+          "case": "linked_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": true,
+          "link_decision": "restored",
+          "sources_unchanged": true
+        },
+        {
+          "case": "direct_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": true,
+          "linked_hit": true,
+          "link_decision": "baseline",
+          "sources_unchanged": true
+        },
+        {
+          "case": "missing_link",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "no_link",
+          "sources_unchanged": true
+        },
+        {
+          "case": "another_port",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "wrong_scope",
+          "sources_unchanged": true
+        },
+        {
+          "case": "source_changed",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "stale_source",
+          "sources_unchanged": true
+        }
+      ]
+    },
+    {
+      "fixture": 23,
+      "cases": [
+        {
+          "case": "linked_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": true,
+          "link_decision": "restored",
+          "sources_unchanged": true
+        },
+        {
+          "case": "direct_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": true,
+          "linked_hit": true,
+          "link_decision": "baseline",
+          "sources_unchanged": true
+        },
+        {
+          "case": "missing_link",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "no_link",
+          "sources_unchanged": true
+        },
+        {
+          "case": "another_port",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "wrong_scope",
+          "sources_unchanged": true
+        },
+        {
+          "case": "source_changed",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "stale_source",
+          "sources_unchanged": true
+        }
+      ]
+    },
+    {
+      "fixture": 39,
+      "cases": [
+        {
+          "case": "linked_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": true,
+          "link_decision": "restored",
+          "sources_unchanged": true
+        },
+        {
+          "case": "direct_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": true,
+          "linked_hit": true,
+          "link_decision": "baseline",
+          "sources_unchanged": true
+        },
+        {
+          "case": "missing_link",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "no_link",
+          "sources_unchanged": true
+        },
+        {
+          "case": "another_port",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "wrong_scope",
+          "sources_unchanged": true
+        },
+        {
+          "case": "source_changed",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "stale_source",
+          "sources_unchanged": true
+        }
+      ]
+    },
+    {
+      "fixture": 47,
+      "cases": [
+        {
+          "case": "linked_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": true,
+          "link_decision": "restored",
+          "sources_unchanged": true
+        },
+        {
+          "case": "direct_recovery",
+          "retained_only_hit": false,
+          "lexical_hit": true,
+          "linked_hit": true,
+          "link_decision": "baseline",
+          "sources_unchanged": true
+        },
+        {
+          "case": "missing_link",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "no_link",
+          "sources_unchanged": true
+        },
+        {
+          "case": "another_port",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "wrong_scope",
+          "sources_unchanged": true
+        },
+        {
+          "case": "source_changed",
+          "retained_only_hit": false,
+          "lexical_hit": false,
+          "linked_hit": false,
+          "link_decision": "stale_source",
+          "sources_unchanged": true
+        }
+      ]
+    }
+  ]
+}

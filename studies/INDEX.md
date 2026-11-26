@@ -75,7 +75,7 @@
 | [REA — Reverse Engineer Anything](reverse-engineer-anything.md) | [2026-11-05 / rea-boundaries](../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md) · [2026-11-05 / rea-pe](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) |
 | [ReA-Bench — auditing responsible agent trajectories](rea-bench.md) | [2026-11-14 / rea-bench-fulltext-20261114](../reviews/rea-bench/2026-11-14.md) |
 | [REALM — Retrieval-Driven Memory Reconsolidation](realm.md) | [2026-11-03 / realm-review](realm.md) · [2026-11-05 / fulltext-realm-2026-11-05](../reviews/realm/2026-11-05-full-text.md) · [2026-11-25 / realm-wiki-pg-retrieval-feedback-20261125](../reviews/realm/2026-11-25-wiki-pg-retrieval-feedback.md) |
-| [ReCAP — Persistent Context Graphs for Memory Compaction](recap.md) | [2026-11-03 / recap-review](recap.md) · [2026-11-05 / fulltext-recap-2026-11-05](../reviews/recap/2026-11-05-full-text.md) |
+| [ReCAP — Persistent Context Graphs for Memory Compaction](recap.md) | [2026-11-03 / recap-review](recap.md) · [2026-11-05 / fulltext-recap-2026-11-05](../reviews/recap/2026-11-05-full-text.md) · [2026-11-26 / recap-wiki-pg-context-recovery-20261126](../reviews/recap/2026-11-26-wiki-pg-context-recovery.md) |
 | [Red-Teaming Auto Mode](red-teaming-auto-mode.md) | [2026-11-03 / red-teaming-auto-mode-review](red-teaming-auto-mode.md) |
 | [REMORY](remory.md) | [2026-11-03 / remory-review](remory.md) |
 | [REVA — Reusable Evidence View Aggregation](reva.md) | [2026-11-03 / reva-review](../portfolio/2026-09-03--2026-09-15/review.md) |

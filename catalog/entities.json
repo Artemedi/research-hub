@@ -4541,6 +4541,16 @@
       "source_coverage": "PARTIAL_SOURCE_REVIEW",
       "limitations": "Bounded CLI smoke; no pinned model, production integration or comparative benchmark.",
       "supersedes": null
+    },
+    {
+      "id": "recap-wiki-pg-context-recovery-20261126",
+      "study_ids": ["recap"],
+      "version_ids": ["recap-version"],
+      "date": "2026-11-26",
+      "document": "reviews/recap/2026-11-26-wiki-pg-context-recovery.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic lexical and manual-reference recovery. No ReCAP attention graph, model judgments or production measurements.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5284,6 +5294,20 @@
       "artifacts": [
         "experiments/google-antigravity/lifecycle-probe.py",
         "data/results/google-antigravity/2026-11-26.json"
+      ]
+    },
+    {
+      "id": "recap-wiki-pg-context-recovery-20261126-lab",
+      "study_ids": ["recap"],
+      "review_id": "recap-wiki-pg-context-recovery-20261126",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two 30-case repeats at a 960-byte limit. Twelve extra excerpts recovered and all 36 missing, wrong-port or stale references omitted.",
+      "limitations": "Scripted links and exact markers. No generated answers or model token, cost or latency claims.",
+      "artifacts": [
+        "experiments/recap/2026-11-26-wiki-pg-context-recovery-protocol.md",
+        "experiments/recap/wiki-pg-context-recovery.py",
+        "data/results/recap/2026-11-26-wiki-pg-context-recovery.json"
       ]
     }
   ],

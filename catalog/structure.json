@@ -3379,6 +3379,34 @@
       "title": "Antigravity observed smoke results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/recap/2026-11-26-wiki-pg-context-recovery.md",
+      "title": "ReCAP — scoped context recovery in Wiki_PG",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/recap/2026-11-26-wiki-pg-context-recovery-protocol.md",
+      "title": "ReCAP — scoped context recovery protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/recap/wiki-pg-context-recovery.py",
+      "title": "ReCAP — Wiki_PG context recovery replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/recap/2026-11-26-wiki-pg-context-recovery.json",
+      "title": "ReCAP — bounded context recovery results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

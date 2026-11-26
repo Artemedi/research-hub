@@ -99,6 +99,7 @@
 | [data/results/pgbot/2026-11-25-wiki-pg-lock-evidence.json](results/pgbot/2026-11-25-wiki-pg-lock-evidence.json) | Результат ограниченной проверки |
 | [data/results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json](results/postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.json) | Результат ограниченной проверки |
 | [data/results/realm/2026-11-25-wiki-pg-retrieval-feedback.json](results/realm/2026-11-25-wiki-pg-retrieval-feedback.json) | Результат ограниченной проверки |
+| [data/results/recap/2026-11-26-wiki-pg-context-recovery.json](results/recap/2026-11-26-wiki-pg-context-recovery.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-critics.json](results/research-portfolio/2026-11-07-claude-swarm-critics.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json](results/research-portfolio/2026-11-07-claude-swarm-failure-e2e.json) | Результат ограниченной проверки |
 | [data/results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json](results/research-portfolio/2026-11-07-claude-swarm-repair-ab.json) | Результат ограниченной проверки |
