@@ -1,0 +1,925 @@
+{
+  "fixture_changes": [
+    [
+      "alpha",
+      "A1",
+      "open",
+      105,
+      106
+    ],
+    [
+      "alpha",
+      "A2",
+      "open",
+      108,
+      119
+    ],
+    [
+      "alpha",
+      "A3",
+      "open",
+      123,
+      123
+    ],
+    [
+      "alpha",
+      "A-old",
+      "open",
+      101,
+      129
+    ],
+    [
+      "beta",
+      "B1",
+      "open",
+      105,
+      105
+    ],
+    [
+      "beta",
+      "B2",
+      "open",
+      116,
+      129
+    ],
+    [
+      "alpha",
+      "A1",
+      "closed",
+      135,
+      135
+    ],
+    [
+      "alpha",
+      "A1",
+      "open",
+      145,
+      145
+    ]
+  ],
+  "repeats": 3,
+  "runs_per_arm": 10,
+  "external_requests": 0,
+  "results": {
+    "shared_no_overlap": {
+      "delivered": [
+        [
+          "alpha",
+          "A1",
+          "open",
+          105
+        ],
+        [
+          "alpha",
+          "A3",
+          "open",
+          123
+        ],
+        [
+          "alpha",
+          "A1",
+          "closed",
+          135
+        ],
+        [
+          "alpha",
+          "A1",
+          "open",
+          145
+        ]
+      ],
+      "missed": [
+        [
+          "alpha",
+          "A-old",
+          "open",
+          101
+        ],
+        [
+          "alpha",
+          "A2",
+          "open",
+          108
+        ],
+        [
+          "beta",
+          "B1",
+          "open",
+          105
+        ],
+        [
+          "beta",
+          "B2",
+          "open",
+          116
+        ]
+      ],
+      "fetched_total": 6,
+      "duplicate_deliveries": 0,
+      "runs": [
+        {
+          "minute": 110,
+          "successful_sources": [
+            "alpha"
+          ],
+          "failed_sources": [
+            "beta"
+          ],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "555030847d38315a0e41e7d3b0d68dfd7a806032cd88e78d0efddecd4d1e1258",
+          "bookmarks": {
+            "alpha": 110,
+            "beta": 110
+          }
+        },
+        {
+          "minute": 120,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 0,
+          "proposed": [],
+          "publication": "unknown",
+          "state_committed": false,
+          "state_sha256": "555030847d38315a0e41e7d3b0d68dfd7a806032cd88e78d0efddecd4d1e1258",
+          "bookmarks": {
+            "alpha": 110,
+            "beta": 110
+          }
+        },
+        {
+          "minute": 121,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 0,
+          "proposed": [],
+          "publication": "silence",
+          "state_committed": true,
+          "state_sha256": "d6ffa22e40d186f1f31fdbebd27e0916d940c7535024b85eea6918321a48b51a",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 124,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "dry_run",
+          "state_committed": false,
+          "state_sha256": "d6ffa22e40d186f1f31fdbebd27e0916d940c7535024b85eea6918321a48b51a",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 125,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "held",
+          "state_committed": false,
+          "state_sha256": "d6ffa22e40d186f1f31fdbebd27e0916d940c7535024b85eea6918321a48b51a",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 126,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "93d189dba54d873b9a366a1a6be8ee85948d375377790536af263ec6281102ea",
+          "bookmarks": {
+            "alpha": 126,
+            "beta": 126
+          }
+        },
+        {
+          "minute": 130,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 0,
+          "proposed": [],
+          "publication": "silence",
+          "state_committed": true,
+          "state_sha256": "c8fb7454a12963b4562b0600624f304252c32474f56d9866d5fd0b06225d77b3",
+          "bookmarks": {
+            "alpha": 130,
+            "beta": 130
+          }
+        },
+        {
+          "minute": 140,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "closed",
+              135
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "f9db8da57e0f06a73ba22537e3b646f14310ec7132cd74d5d18b9179af0229bf",
+          "bookmarks": {
+            "alpha": 140,
+            "beta": 140
+          }
+        },
+        {
+          "minute": 150,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "open",
+              145
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "7a5ae6f78d8f1d2e7bdddc5cbe03bbc02b86e4af7a5a62f874aedd69eb1dce4c",
+          "bookmarks": {
+            "alpha": 150,
+            "beta": 150
+          }
+        },
+        {
+          "minute": 160,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 0,
+          "proposed": [],
+          "publication": "silence",
+          "state_committed": true,
+          "state_sha256": "f6eaddcd86a2c8f6a5f3540cf7bc72abafeb3e5e2909e3f977c70066aac9e3ee",
+          "bookmarks": {
+            "alpha": 160,
+            "beta": 160
+          }
+        }
+      ]
+    },
+    "per_source_no_overlap": {
+      "delivered": [
+        [
+          "alpha",
+          "A1",
+          "open",
+          105
+        ],
+        [
+          "beta",
+          "B1",
+          "open",
+          105
+        ],
+        [
+          "alpha",
+          "A3",
+          "open",
+          123
+        ],
+        [
+          "alpha",
+          "A1",
+          "closed",
+          135
+        ],
+        [
+          "alpha",
+          "A1",
+          "open",
+          145
+        ]
+      ],
+      "missed": [
+        [
+          "alpha",
+          "A-old",
+          "open",
+          101
+        ],
+        [
+          "alpha",
+          "A2",
+          "open",
+          108
+        ],
+        [
+          "beta",
+          "B2",
+          "open",
+          116
+        ]
+      ],
+      "fetched_total": 8,
+      "duplicate_deliveries": 0,
+      "runs": [
+        {
+          "minute": 110,
+          "successful_sources": [
+            "alpha"
+          ],
+          "failed_sources": [
+            "beta"
+          ],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "6d73c6d9deae27653ef71e8307f443ea3ebcc5da3c5c92c54396b86eba992df6",
+          "bookmarks": {
+            "alpha": 110,
+            "beta": 100
+          }
+        },
+        {
+          "minute": 120,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "beta",
+              "B1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "unknown",
+          "state_committed": false,
+          "state_sha256": "6d73c6d9deae27653ef71e8307f443ea3ebcc5da3c5c92c54396b86eba992df6",
+          "bookmarks": {
+            "alpha": 110,
+            "beta": 100
+          }
+        },
+        {
+          "minute": 121,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "beta",
+              "B1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "beff78a6c3d73a22688d7dd09cdb92ae01a55236ff9e451f999002249e87d319",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 124,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "dry_run",
+          "state_committed": false,
+          "state_sha256": "beff78a6c3d73a22688d7dd09cdb92ae01a55236ff9e451f999002249e87d319",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 125,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "held",
+          "state_committed": false,
+          "state_sha256": "beff78a6c3d73a22688d7dd09cdb92ae01a55236ff9e451f999002249e87d319",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 126,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "e2903fbc88af223bd8bd69c6dc0139791abc7a8efcf3b97062f70b5a83e345ed",
+          "bookmarks": {
+            "alpha": 126,
+            "beta": 126
+          }
+        },
+        {
+          "minute": 130,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 0,
+          "proposed": [],
+          "publication": "silence",
+          "state_committed": true,
+          "state_sha256": "bed91fbbf820213d55cb27ef93933e39631014dab5a364f8fd9738fa4602c2e5",
+          "bookmarks": {
+            "alpha": 130,
+            "beta": 130
+          }
+        },
+        {
+          "minute": 140,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "closed",
+              135
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "48bec50e3a5d1ff6b8acd48f754cedbd5db13c139b3a7689bb9a98c405483543",
+          "bookmarks": {
+            "alpha": 140,
+            "beta": 140
+          }
+        },
+        {
+          "minute": 150,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "open",
+              145
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "c00c0e4a24ea514cc2c3719cd8c559fa121fa19bee86ac41ed2daaaf53f35839",
+          "bookmarks": {
+            "alpha": 150,
+            "beta": 150
+          }
+        },
+        {
+          "minute": 160,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 0,
+          "proposed": [],
+          "publication": "silence",
+          "state_committed": true,
+          "state_sha256": "21dca071c9077029da84ee9d40bac080e070d1b0dd76513fa1222fb09d02ccf6",
+          "bookmarks": {
+            "alpha": 160,
+            "beta": 160
+          }
+        }
+      ]
+    },
+    "per_source_overlap_10": {
+      "delivered": [
+        [
+          "alpha",
+          "A1",
+          "open",
+          105
+        ],
+        [
+          "alpha",
+          "A2",
+          "open",
+          108
+        ],
+        [
+          "beta",
+          "B1",
+          "open",
+          105
+        ],
+        [
+          "alpha",
+          "A3",
+          "open",
+          123
+        ],
+        [
+          "beta",
+          "B2",
+          "open",
+          116
+        ],
+        [
+          "alpha",
+          "A1",
+          "closed",
+          135
+        ],
+        [
+          "alpha",
+          "A1",
+          "open",
+          145
+        ]
+      ],
+      "missed": [
+        [
+          "alpha",
+          "A-old",
+          "open",
+          101
+        ]
+      ],
+      "fetched_total": 16,
+      "duplicate_deliveries": 0,
+      "runs": [
+        {
+          "minute": 110,
+          "successful_sources": [
+            "alpha"
+          ],
+          "failed_sources": [
+            "beta"
+          ],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "6d73c6d9deae27653ef71e8307f443ea3ebcc5da3c5c92c54396b86eba992df6",
+          "bookmarks": {
+            "alpha": 110,
+            "beta": 100
+          }
+        },
+        {
+          "minute": 120,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 3,
+          "proposed": [
+            [
+              "alpha",
+              "A2",
+              "open",
+              108
+            ],
+            [
+              "beta",
+              "B1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "unknown",
+          "state_committed": false,
+          "state_sha256": "6d73c6d9deae27653ef71e8307f443ea3ebcc5da3c5c92c54396b86eba992df6",
+          "bookmarks": {
+            "alpha": 110,
+            "beta": 100
+          }
+        },
+        {
+          "minute": 121,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 3,
+          "proposed": [
+            [
+              "alpha",
+              "A2",
+              "open",
+              108
+            ],
+            [
+              "beta",
+              "B1",
+              "open",
+              105
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "14e78c1c411c5e46fff157d6433d2db7e384fa7cff468d9ff8c822fbc26aa2fe",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 124,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "dry_run",
+          "state_committed": false,
+          "state_sha256": "14e78c1c411c5e46fff157d6433d2db7e384fa7cff468d9ff8c822fbc26aa2fe",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 125,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "held",
+          "state_committed": false,
+          "state_sha256": "14e78c1c411c5e46fff157d6433d2db7e384fa7cff468d9ff8c822fbc26aa2fe",
+          "bookmarks": {
+            "alpha": 121,
+            "beta": 121
+          }
+        },
+        {
+          "minute": 126,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A3",
+              "open",
+              123
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "241fab39412fcbc1ba962bbd98b9deb74521c0b19ad31b71e848240f32ecfbf0",
+          "bookmarks": {
+            "alpha": 126,
+            "beta": 126
+          }
+        },
+        {
+          "minute": 130,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 2,
+          "proposed": [
+            [
+              "beta",
+              "B2",
+              "open",
+              116
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "a2d4d7f6b0b2048e291439624aea56ed482bcd43520ed008ee285f1fad742880",
+          "bookmarks": {
+            "alpha": 130,
+            "beta": 130
+          }
+        },
+        {
+          "minute": 140,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 2,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "closed",
+              135
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "7cf2945169b29c50a68f84113af8aac57f36bdc22753e2ddc4ed4b5c9333629b",
+          "bookmarks": {
+            "alpha": 140,
+            "beta": 140
+          }
+        },
+        {
+          "minute": 150,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [
+            [
+              "alpha",
+              "A1",
+              "open",
+              145
+            ]
+          ],
+          "publication": "posted",
+          "state_committed": true,
+          "state_sha256": "9a05cb5d6b37e1f1cfc7ca7dad3b3c4a62498576b764ccc38dcd0b1581c978b1",
+          "bookmarks": {
+            "alpha": 150,
+            "beta": 150
+          }
+        },
+        {
+          "minute": 160,
+          "successful_sources": [
+            "alpha",
+            "beta"
+          ],
+          "failed_sources": [],
+          "fetched": 1,
+          "proposed": [],
+          "publication": "silence",
+          "state_committed": true,
+          "state_sha256": "d541a4fce1cf60e040b7f1ccb9688e025026044c4316252bc432240c0e325844",
+          "bookmarks": {
+            "alpha": 160,
+            "beta": 160
+          }
+        }
+      ]
+    }
+  }
+}

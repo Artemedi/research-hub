@@ -58,6 +58,8 @@
 - [alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md](alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md)
 - [alphaxiv-openresearch/openresearch-source-snapshot-test.rs](alphaxiv-openresearch/openresearch-source-snapshot-test.rs)
 - [alphaxiv-openresearch/paper2project-snapshot-portability.py](alphaxiv-openresearch/paper2project-snapshot-portability.py)
+- [anthropic-agent-automations/2026-11-26-source-bookmarks-protocol.md](anthropic-agent-automations/2026-11-26-source-bookmarks-protocol.md)
+- [anthropic-agent-automations/source-bookmarks.py](anthropic-agent-automations/source-bookmarks.py)
 - [auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md](auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md)
 - [auto-ontology/wiki-pg-semantic-selectors.py](auto-ontology/wiki-pg-semantic-selectors.py)
 - [benchshield/2026-11-25-paper2project-protocol.md](benchshield/2026-11-25-paper2project-protocol.md)

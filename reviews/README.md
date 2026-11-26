@@ -39,6 +39,7 @@
 | [BK-014 OpenResearch provenance evidence and bounded source A/B](alphaxiv-openresearch/2026-11-06-provenance-ab.md) | 2026-11-06 |
 | [OpenResearch — source snapshot portability](alphaxiv-openresearch/2026-11-25-snapshot-portability.md) | 2026-11-25 |
 | [Anthropic agent automations — исходные контракты](anthropic-agent-automations/2026-11-04.md) | 2026-11-04 |
+| [Anthropic Agent Automations — source bookmark review](anthropic-agent-automations/2026-11-26-source-bookmarks.md) | 2026-11-26 |
 | [NVIDIA Auto Ontology — Semantic Model for Relational Data — source review](auto-ontology/2026-11-13.md) | 2026-11-13 |
 | [Auto-Ontology — Wiki_PG semantic selectors](auto-ontology/2026-11-26-wiki-pg-semantic-selectors.md) | 2026-11-26 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |

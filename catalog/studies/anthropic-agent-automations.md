@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [anthropic-agent-automations-review](../../reviews/anthropic-agent-automations/2026-11-04.md), 2026-11-04; FULL_PRIMARY_ENGINEERING_ARTICLE_REVIEWED; заменяет: нет. Версии: [не установлена](https://claude.dev/blog/building-effective-agent-automations/), [8ef47d719eba5379ff8f38133f5defcc499e856f](https://github.com/anthropics/claude-quickstarts/tree/8ef47d719eba5379ff8f38133f5defcc499e856f/managed-agents/daily-brief).
+- [anthropic-agent-automations-source-bookmarks-20261126](../../reviews/anthropic-agent-automations/2026-11-26-source-bookmarks.md), 2026-11-26; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [8ef47d719eba5379ff8f38133f5defcc499e856f](https://github.com/anthropics/claude-quickstarts/tree/8ef47d719eba5379ff8f38133f5defcc499e856f/managed-agents/daily-brief), [htmlsha256:968c4c5a26cd0056035a998aa2fec6586fe159cc55cb2dbf90cbe885307027ae](https://claude.dev/blog/building-effective-agent-automations/).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- anthropic-agent-automations-source-bookmarks-20261126-lab: SYNTHETIC / OBSERVED. Three bookmark policies recovered 4, 5, and 7 of eight authored changes. Unconfirmed publication and dry run left persisted state byte-identical. Single deterministic source timeline and a fake publication service. No external effects, concurrent commits, or project deployment. [Артефакт](../../experiments/anthropic-agent-automations/2026-11-26-source-bookmarks-protocol.md) · [Артефакт](../../experiments/anthropic-agent-automations/source-bookmarks.py) · [Артефакт](../../data/results/anthropic-agent-automations/2026-11-26-source-bookmarks.json)
 
 ## Ссылки из исходной карточки
 

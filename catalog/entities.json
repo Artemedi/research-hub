@@ -4732,6 +4732,16 @@
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Paired synthetic RCA cases with pinned target evaluator and scripted replies. No model, real case or causal quality claim.",
       "supersedes": null
+    },
+    {
+      "id": "anthropic-agent-automations-source-bookmarks-20261126",
+      "study_ids": ["anthropic-agent-automations"],
+      "version_ids": ["anthropic-daily-brief-code", "anthropic-agent-automations-observed-html-2026-11-05"],
+      "date": "2026-11-26",
+      "document": "reviews/anthropic-agent-automations/2026-11-26-source-bookmarks.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Reads the pinned reference instructions; independent fixture models watermark policy without running the reference or target projects.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5695,6 +5705,16 @@
       "scope": "Twenty feasible/blocked pairs showed why a status match alone overcredits budget stops and why an exact cause label can lack decisive evidence. Native replay denied forty fabricated observations.",
       "limitations": "Scripted planner replies and one diagnosis family. No LLM, live incident, expert causal adjudication, or changes to the target.",
       "artifacts": ["experiments/agentic-self-awareness/2026-11-26-paired-rca-protocol.md", "experiments/agentic-self-awareness/paired-rca.py", "data/results/agentic-self-awareness/2026-11-26-paired-rca.json"]
+    },
+    {
+      "id": "anthropic-agent-automations-source-bookmarks-20261126-lab",
+      "study_ids": ["anthropic-agent-automations"],
+      "review_id": "anthropic-agent-automations-source-bookmarks-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Three bookmark policies recovered 4, 5, and 7 of eight authored changes. Unconfirmed publication and dry run left persisted state byte-identical.",
+      "limitations": "Single deterministic source timeline and a fake publication service. No external effects, concurrent commits, or project deployment.",
+      "artifacts": ["experiments/anthropic-agent-automations/2026-11-26-source-bookmarks-protocol.md", "experiments/anthropic-agent-automations/source-bookmarks.py", "data/results/anthropic-agent-automations/2026-11-26-source-bookmarks.json"]
     }
   ],
   "projects": [

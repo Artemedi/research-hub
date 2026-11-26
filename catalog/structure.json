@@ -3883,6 +3883,34 @@
       "title": "Agentic Self-Awareness — paired RCA results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/anthropic-agent-automations/2026-11-26-source-bookmarks.md",
+      "title": "Anthropic Agent Automations — source bookmark review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/anthropic-agent-automations/2026-11-26-source-bookmarks-protocol.md",
+      "title": "Anthropic Agent Automations — source bookmark protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/anthropic-agent-automations/source-bookmarks.py",
+      "title": "Anthropic Agent Automations — offline bookmark comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/anthropic-agent-automations/2026-11-26-source-bookmarks.json",
+      "title": "Anthropic Agent Automations — source bookmark results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }
