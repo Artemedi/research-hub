@@ -1,0 +1,105 @@
+{
+  "upstream_commit": "6868817518876de8fd170c6a8354daca273b6191",
+  "python": "3.12.16",
+  "platform": "win32",
+  "repeat_count": 3,
+  "case_count": 8,
+  "provider_requests": 0,
+  "provider_tokens": null,
+  "observed_spend_usd": 0,
+  "cases_per_repeat": [
+    {
+      "case": "supported_final",
+      "calls": 1,
+      "chosen": "c2",
+      "ok": true,
+      "fallback": false,
+      "selection_usd_fixture": 0.125,
+      "correct_by_oracle": true,
+      "persisted": true,
+      "dropped": []
+    },
+    {
+      "case": "incorrect_but_valid_choice",
+      "calls": 1,
+      "chosen": "c1",
+      "ok": true,
+      "fallback": false,
+      "selection_usd_fixture": 0.125,
+      "correct_by_oracle": false,
+      "persisted": true,
+      "dropped": []
+    },
+    {
+      "case": "malformed_reply",
+      "calls": 1,
+      "chosen": "c1",
+      "ok": false,
+      "fallback": true,
+      "selection_usd_fixture": 0.125,
+      "correct_by_oracle": false,
+      "persisted": true,
+      "dropped": []
+    },
+    {
+      "case": "unknown_id",
+      "calls": 1,
+      "chosen": "c1",
+      "ok": false,
+      "fallback": true,
+      "selection_usd_fixture": 0.125,
+      "correct_by_oracle": false,
+      "persisted": true,
+      "dropped": []
+    },
+    {
+      "case": "provider_failure",
+      "calls": 1,
+      "chosen": "c1",
+      "ok": false,
+      "fallback": true,
+      "selection_usd_fixture": 0.25,
+      "correct_by_oracle": false,
+      "persisted": true,
+      "dropped": []
+    },
+    {
+      "case": "skip_undelivered_first",
+      "calls": 1,
+      "chosen": "c2",
+      "ok": false,
+      "fallback": true,
+      "selection_usd_fixture": 0.125,
+      "correct_by_oracle": true,
+      "persisted": true,
+      "dropped": [
+        "c1"
+      ]
+    },
+    {
+      "case": "no_deliverable",
+      "calls": 0,
+      "chosen": null,
+      "ok": false,
+      "fallback": false,
+      "selection_usd_fixture": 0.0,
+      "correct_by_oracle": null,
+      "persisted": false,
+      "dropped": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "case": "single_final",
+      "calls": 0,
+      "chosen": "c1",
+      "ok": true,
+      "fallback": false,
+      "selection_usd_fixture": 0.0,
+      "correct_by_oracle": true,
+      "persisted": true,
+      "dropped": []
+    }
+  ]
+}

@@ -3715,6 +3715,34 @@
       "title": "RRSI — citation anchoring results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/harness2/2026-11-26-final-selection.md",
+      "title": "Harness² — final selection review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/harness2/2026-11-26-final-selection-protocol.md",
+      "title": "Harness² — final selection protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/harness2/final-selection.py",
+      "title": "Harness² — offline final selection comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/harness2/2026-11-26-final-selection.json",
+      "title": "Harness² — final selection results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

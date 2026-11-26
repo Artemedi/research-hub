@@ -110,6 +110,8 @@
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs](goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py](goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py)
 - [google-antigravity/lifecycle-probe.py](google-antigravity/lifecycle-probe.py)
+- [harness2/2026-11-26-final-selection-protocol.md](harness2/2026-11-26-final-selection-protocol.md)
+- [harness2/final-selection.py](harness2/final-selection.py)
 - [htn-orchestrate/2026-11-07-offline-audit.py](htn-orchestrate/2026-11-07-offline-audit.py)
 - [hyperresearch/2026-11-07-pinned-upstream-tests.py](hyperresearch/2026-11-07-pinned-upstream-tests.py)
 - [hyperresearch/2026-11-09-temporal-scope-ab.py](hyperresearch/2026-11-09-temporal-scope-ab.py)

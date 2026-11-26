@@ -4661,6 +4661,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned selector and checker on authored Python examples with shared case templates. No deployment, real review sample or model calls.",
       "supersedes": null
+    },
+    {
+      "id": "harness2-final-selection-20261126",
+      "study_ids": ["harness2"],
+      "version_ids": ["harness2-code-6868817"],
+      "date": "2026-11-26",
+      "document": "reviews/harness2/2026-11-26-final-selection.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Final selection from authored outputs in Python 3.12. No agent, generation, actual inference cost or runtime integration.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5561,6 +5571,20 @@
         "experiments/rrsi/2026-11-26-anchored-citations-protocol.md",
         "experiments/rrsi/anchored-citations.py",
         "data/results/rrsi/2026-11-26-anchored-citations.json"
+      ]
+    },
+    {
+      "id": "harness2-final-selection-20261126-lab",
+      "study_ids": ["harness2"],
+      "review_id": "harness2-final-selection-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Eight final-selection cases in three repeats checked invalid replies, deterministic fallback, recorded fixture cost, persistence, and correctness via an arithmetic oracle.",
+      "limitations": "Scripted replies. No Propose, Probe or Compose execution, provider use, full-chain cost or project transfer.",
+      "artifacts": [
+        "experiments/harness2/2026-11-26-final-selection-protocol.md",
+        "experiments/harness2/final-selection.py",
+        "data/results/harness2/2026-11-26-final-selection.json"
       ]
     }
   ],
