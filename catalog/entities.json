@@ -4813,6 +4813,16 @@
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Defensive metadata fixture on synthetic receipts and a static DSH source read. No secret, agent, transport, or target integration.",
       "supersedes": null
+    },
+    {
+      "id": "cursor-token-efficiency-token-budget-20261126",
+      "study_ids": ["cursor-token-efficiency"],
+      "version_ids": ["cursor-token-efficiency-observed-html-2026-11-05"],
+      "date": "2026-11-26",
+      "document": "reviews/cursor-token-efficiency/2026-11-26-token-budget.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Stock DSH estimate and local tokenizers on authored schemas. No inference charges, provider cache or deployment.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5836,6 +5846,16 @@
       "scope": "In 28 fixture cases, checking authority at both ends preserved four expected effects and excluded twenty extra effects seen in the sender-only control.",
       "limitations": "Channel names are fixture labels. No real transport, payloads, agent, or secret handling.",
       "artifacts": ["experiments/covert-assistance/2026-11-26-recipient-authority-protocol.md", "experiments/covert-assistance/recipient-authority.py", "data/results/covert-assistance/2026-11-26-recipient-authority.json"]
+    },
+    {
+      "id": "cursor-token-efficiency-token-budget-20261126-lab",
+      "study_ids": ["cursor-token-efficiency"],
+      "review_id": "cursor-token-efficiency-token-budget-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Nine catalog fixtures and two tokenizers showed discovery overhead at four schemas and savings at twelve and twenty-four. Compared fixed-density DSH estimates and stable prefix lengths.",
+      "limitations": "Fixture JSON and scripted discovery. No provider serialization, model selection, cache hits or cost measurements.",
+      "artifacts": ["experiments/cursor-token-efficiency/2026-11-26-token-budget-protocol.md", "experiments/cursor-token-efficiency/token-budget.py", "experiments/cursor-token-efficiency/schema-variants.mjs", "data/results/cursor-token-efficiency/2026-11-26-token-budget.json"]
     }
   ],
   "projects": [

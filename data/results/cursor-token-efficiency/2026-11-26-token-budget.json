@@ -1,0 +1,228 @@
+{
+  "dsh_commit": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "node": "v26.13.1",
+  "tiktoken": "0.13.0",
+  "provider_requests": 0,
+  "results": {
+    "cl100k_base": {
+      "en-4": {
+        "estimated_schema_tokens": 374,
+        "local_schema_tokens": 274,
+        "estimate_minus_local": 100,
+        "static_request": 312,
+        "staged_common_request": 241,
+        "staged_rare_requests": 577,
+        "common_saving": 71,
+        "rare_saving": -265,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 312
+      },
+      "ru-4": {
+        "estimated_schema_tokens": 356,
+        "local_schema_tokens": 322,
+        "estimate_minus_local": 34,
+        "static_request": 360,
+        "staged_common_request": 265,
+        "staged_rare_requests": 637,
+        "common_saving": 95,
+        "rare_saving": -277,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 360
+      },
+      "zh-4": {
+        "estimated_schema_tokens": 324,
+        "local_schema_tokens": 338,
+        "estimate_minus_local": -14,
+        "static_request": 376,
+        "staged_common_request": 273,
+        "staged_rare_requests": 657,
+        "common_saving": 103,
+        "rare_saving": -281,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 376
+      },
+      "en-12": {
+        "estimated_schema_tokens": 1112,
+        "local_schema_tokens": 818,
+        "estimate_minus_local": 294,
+        "static_request": 856,
+        "staged_common_request": 241,
+        "staged_rare_requests": 577,
+        "common_saving": 615,
+        "rare_saving": 279,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 856
+      },
+      "ru-12": {
+        "estimated_schema_tokens": 1058,
+        "local_schema_tokens": 962,
+        "estimate_minus_local": 96,
+        "static_request": 1000,
+        "staged_common_request": 265,
+        "staged_rare_requests": 637,
+        "common_saving": 735,
+        "rare_saving": 363,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 1000
+      },
+      "zh-12": {
+        "estimated_schema_tokens": 962,
+        "local_schema_tokens": 1010,
+        "estimate_minus_local": -48,
+        "static_request": 1048,
+        "staged_common_request": 273,
+        "staged_rare_requests": 657,
+        "common_saving": 775,
+        "rare_saving": 391,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 1048
+      },
+      "en-24": {
+        "estimated_schema_tokens": 2219,
+        "local_schema_tokens": 1634,
+        "estimate_minus_local": 585,
+        "static_request": 1672,
+        "staged_common_request": 241,
+        "staged_rare_requests": 577,
+        "common_saving": 1431,
+        "rare_saving": 1095,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 1672
+      },
+      "ru-24": {
+        "estimated_schema_tokens": 2111,
+        "local_schema_tokens": 1922,
+        "estimate_minus_local": 189,
+        "static_request": 1960,
+        "staged_common_request": 265,
+        "staged_rare_requests": 637,
+        "common_saving": 1695,
+        "rare_saving": 1323,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 1960
+      },
+      "zh-24": {
+        "estimated_schema_tokens": 1919,
+        "local_schema_tokens": 2018,
+        "estimate_minus_local": -99,
+        "static_request": 2056,
+        "staged_common_request": 273,
+        "staged_rare_requests": 657,
+        "common_saving": 1783,
+        "rare_saving": 1399,
+        "changed_order_prefix_tokens": 13,
+        "stable_order_prefix_tokens": 2056
+      }
+    },
+    "o200k_base": {
+      "en-4": {
+        "estimated_schema_tokens": 374,
+        "local_schema_tokens": 282,
+        "estimate_minus_local": 92,
+        "static_request": 323,
+        "staged_common_request": 250,
+        "staged_rare_requests": 597,
+        "common_saving": 73,
+        "rare_saving": -274,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 323
+      },
+      "ru-4": {
+        "estimated_schema_tokens": 356,
+        "local_schema_tokens": 294,
+        "estimate_minus_local": 62,
+        "static_request": 335,
+        "staged_common_request": 256,
+        "staged_rare_requests": 612,
+        "common_saving": 79,
+        "rare_saving": -277,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 335
+      },
+      "zh-4": {
+        "estimated_schema_tokens": 324,
+        "local_schema_tokens": 310,
+        "estimate_minus_local": 14,
+        "static_request": 351,
+        "staged_common_request": 264,
+        "staged_rare_requests": 632,
+        "common_saving": 87,
+        "rare_saving": -281,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 351
+      },
+      "en-12": {
+        "estimated_schema_tokens": 1112,
+        "local_schema_tokens": 842,
+        "estimate_minus_local": 270,
+        "static_request": 883,
+        "staged_common_request": 250,
+        "staged_rare_requests": 597,
+        "common_saving": 633,
+        "rare_saving": 286,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 883
+      },
+      "ru-12": {
+        "estimated_schema_tokens": 1058,
+        "local_schema_tokens": 878,
+        "estimate_minus_local": 180,
+        "static_request": 919,
+        "staged_common_request": 256,
+        "staged_rare_requests": 612,
+        "common_saving": 663,
+        "rare_saving": 307,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 919
+      },
+      "zh-12": {
+        "estimated_schema_tokens": 962,
+        "local_schema_tokens": 926,
+        "estimate_minus_local": 36,
+        "static_request": 967,
+        "staged_common_request": 264,
+        "staged_rare_requests": 632,
+        "common_saving": 703,
+        "rare_saving": 335,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 967
+      },
+      "en-24": {
+        "estimated_schema_tokens": 2219,
+        "local_schema_tokens": 1682,
+        "estimate_minus_local": 537,
+        "static_request": 1723,
+        "staged_common_request": 250,
+        "staged_rare_requests": 597,
+        "common_saving": 1473,
+        "rare_saving": 1126,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 1723
+      },
+      "ru-24": {
+        "estimated_schema_tokens": 2111,
+        "local_schema_tokens": 1754,
+        "estimate_minus_local": 357,
+        "static_request": 1795,
+        "staged_common_request": 256,
+        "staged_rare_requests": 612,
+        "common_saving": 1539,
+        "rare_saving": 1183,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 1795
+      },
+      "zh-24": {
+        "estimated_schema_tokens": 1919,
+        "local_schema_tokens": 1850,
+        "estimate_minus_local": 69,
+        "static_request": 1891,
+        "staged_common_request": 264,
+        "staged_rare_requests": 632,
+        "common_saving": 1627,
+        "rare_saving": 1259,
+        "changed_order_prefix_tokens": 14,
+        "stable_order_prefix_tokens": 1891
+      }
+    }
+  }
+}

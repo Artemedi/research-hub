@@ -4058,6 +4058,41 @@
       "title": "Covert Assistance — recipient authority results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/cursor-token-efficiency/2026-11-26-token-budget.md",
+      "title": "Cursor Token Efficiency — local token budget review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/cursor-token-efficiency/2026-11-26-token-budget-protocol.md",
+      "title": "Cursor Token Efficiency — local token budget protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/cursor-token-efficiency/token-budget.py",
+      "title": "Cursor Token Efficiency — offline token comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/cursor-token-efficiency/schema-variants.mjs",
+      "title": "Cursor Token Efficiency — DSH schema estimate runner",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/cursor-token-efficiency/2026-11-26-token-budget.json",
+      "title": "Cursor Token Efficiency — local token budget results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }
