@@ -1,0 +1,48 @@
+{
+  "revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "source_sha256": {
+    "packages/experimental/agent-team/src/task-board.ts": "fdc554f616ea2b1fd0396d8665a7e116e2e787c075a69e906b22c3b5fd6f1750",
+    "packages/experimental/agent-team/src/task-graph.ts": "a726081289a2f7a848f69109a750db3ead0d95b88ab0adfdae0477f749b8f490"
+  },
+  "cases_per_scenario": 8,
+  "repeats": 3,
+  "agent_or_provider_calls": 0,
+  "counts": {
+    "verified": {
+      "board_ready": 8,
+      "baseline_claims": 8,
+      "verified_claims": 8,
+      "verified_recoveries": 0
+    },
+    "missing": {
+      "board_ready": 8,
+      "baseline_claims": 8,
+      "verified_claims": 0,
+      "verified_recoveries": 8
+    },
+    "wrong_value": {
+      "board_ready": 8,
+      "baseline_claims": 8,
+      "verified_claims": 0,
+      "verified_recoveries": 8
+    },
+    "wrong_parent": {
+      "board_ready": 8,
+      "baseline_claims": 8,
+      "verified_claims": 0,
+      "verified_recoveries": 8
+    },
+    "stale_revision": {
+      "board_ready": 8,
+      "baseline_claims": 8,
+      "verified_claims": 0,
+      "verified_recoveries": 8
+    },
+    "parent_in_progress": {
+      "board_ready": 0,
+      "baseline_claims": 0,
+      "verified_claims": 0,
+      "verified_recoveries": 8
+    }
+  }
+}

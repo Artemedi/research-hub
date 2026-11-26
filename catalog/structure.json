@@ -4177,6 +4177,34 @@
       "title": "LIMBO × HermesAgent — issue read-back results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.md",
+      "title": "GAD × DSH Runtime — dependency acceptance review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance-protocol.md",
+      "title": "GAD × DSH Runtime — dependency acceptance protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/goal-aware-dynamic-collaboration/dependency-acceptance.mjs",
+      "title": "GAD × DSH Runtime — task board replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.json",
+      "title": "GAD × DSH Runtime — dependency acceptance results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

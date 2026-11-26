@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [goal-aware-dynamic-collaboration-review](../../studies/goal-aware-dynamic-collaboration.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.39193vv1).
+- [gad-dependency-acceptance-20261126](../../reviews/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arXiv:2610.39193v1](https://arxiv.org/html/2610.39193v1).
 - [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](../../reviews/goal-aware-dynamic-collaboration/2026-11-07.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -33,7 +34,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- gad-dependency-acceptance-20261126-lab: SYNTHETIC / OBSERVED. In 48 cases per arm, the stock task board allowed 32 claims on invalid dependency evidence. External checks blocked all 32 and admitted all valid or repaired inputs. Three repeats matched. Sequential task-board exercise on synthetic arithmetic; no model, persistence, concurrent workers, or real-workload measurements. [Артефакт](../../experiments/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance-protocol.md) · [Артефакт](../../experiments/goal-aware-dynamic-collaboration/dependency-acceptance.mjs) · [Артефакт](../../data/results/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.json)
 
 ## Ссылки из исходной карточки
 

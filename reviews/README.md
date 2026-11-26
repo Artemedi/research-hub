@@ -84,6 +84,7 @@
 | [ExperienceIndex — Wiki_PG linked-document validity](experienceindex/2026-11-25-wiki-pg-linked-validity.md) | 2026-11-25 |
 | [GeoAgent — Paper2Project named-artifact binding](geoagent/2026-11-25-paper2project-artifact-binding.md) | 2026-11-25 |
 | [GAD full-source and pinned dsh-runtime DAG and root acceptance countercheck](goal-aware-dynamic-collaboration/2026-11-07.md) | 2026-11-07 |
+| [GAD × DSH Runtime — dependency acceptance review](goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.md) | 2026-11-26 |
 | [Antigravity lifecycle probe](google-antigravity/2026-11-26.md) | 2026-11-26 |
 | [BK-009 original Astra guidance full-text and five-pair live A/B](gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) | 2026-11-06 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |

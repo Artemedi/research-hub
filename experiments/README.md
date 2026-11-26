@@ -137,6 +137,8 @@
 - [goal-aware-dynamic-collaboration/2026-11-07-council.py](goal-aware-dynamic-collaboration/2026-11-07-council.py)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs](goal-aware-dynamic-collaboration/2026-11-07-dag-guard.mjs)
 - [goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py](goal-aware-dynamic-collaboration/2026-11-07-dag-oracle.py)
+- [goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance-protocol.md](goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance-protocol.md)
+- [goal-aware-dynamic-collaboration/dependency-acceptance.mjs](goal-aware-dynamic-collaboration/dependency-acceptance.mjs)
 - [google-antigravity/lifecycle-probe.py](google-antigravity/lifecycle-probe.py)
 - [harness2/2026-11-26-final-selection-protocol.md](harness2/2026-11-26-final-selection-protocol.md)
 - [harness2/final-selection.py](harness2/final-selection.py)
