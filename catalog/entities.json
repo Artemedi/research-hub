@@ -4651,6 +4651,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Static scheduling and measurement review. No coordinator execution, trace sample, cost estimate or project transfer.",
       "supersedes": null
+    },
+    {
+      "id": "rrsi-anchored-citations-20261126",
+      "study_ids": ["rrsi"],
+      "version_ids": ["rrsi-code-be50316"],
+      "date": "2026-11-26",
+      "document": "reviews/rrsi/2026-11-26-anchored-citations.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned selector and checker on authored Python examples with shared case templates. No deployment, real review sample or model calls.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5537,6 +5547,20 @@
         "experiments/reverse-engineer-anything/Fixture.cs",
         "experiments/reverse-engineer-anything/MetadataOracle.cs",
         "data/results/reverse-engineer-anything/2026-11-26-managed-metadata.json"
+      ]
+    },
+    {
+      "id": "rrsi-anchored-citations-20261126-lab",
+      "study_ids": ["rrsi"],
+      "review_id": "rrsi-anchored-citations-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "On 78 synthetic holdout cases, validation selected the adjacent-line anchor in all three folds. It corrected 18 baseline false anchors and accepted all six false behavior claims with supported quotes.",
+      "limitations": "Six fixture families share the same case templates. No measured provider cost, real review corpus or runtime change.",
+      "artifacts": [
+        "experiments/rrsi/2026-11-26-anchored-citations-protocol.md",
+        "experiments/rrsi/anchored-citations.py",
+        "data/results/rrsi/2026-11-26-anchored-citations.json"
       ]
     }
   ],

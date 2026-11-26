@@ -200,6 +200,8 @@
 - [reverse-engineer-anything/managed-metadata.mjs](reverse-engineer-anything/managed-metadata.mjs)
 - [reverse-engineer-anything/MetadataOracle.cs](reverse-engineer-anything/MetadataOracle.cs)
 - [reverse-engineer-anything/run-managed-metadata.ps1](reverse-engineer-anything/run-managed-metadata.ps1)
+- [rrsi/2026-11-26-anchored-citations-protocol.md](rrsi/2026-11-26-anchored-citations-protocol.md)
+- [rrsi/anchored-citations.py](rrsi/anchored-citations.py)
 - [silent-cue-loss/2026-11-25-pdf-cue-ab.py](silent-cue-loss/2026-11-25-pdf-cue-ab.py)
 - [silent-cue-loss/2026-11-25-protocol.md](silent-cue-loss/2026-11-25-protocol.md)
 - [silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md](silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md)

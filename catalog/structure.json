@@ -3687,6 +3687,34 @@
       "title": "Unreal Agent — review of scheduling and status polling",
       "kind": "review",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/rrsi/2026-11-26-anchored-citations.md",
+      "title": "RRSI — citation anchoring review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/rrsi/2026-11-26-anchored-citations-protocol.md",
+      "title": "RRSI — citation anchoring protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/rrsi/anchored-citations.py",
+      "title": "RRSI — citation anchoring comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/rrsi/2026-11-26-anchored-citations.json",
+      "title": "RRSI — citation anchoring results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }
