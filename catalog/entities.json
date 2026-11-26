@@ -1544,6 +1544,13 @@
       "unknown_reason": null
     },
     {
+      "id": "agentic-self-awareness-arxiv-2610-19226v1",
+      "study_id": "agentic-self-awareness",
+      "ref": "arXiv:2610.19226v1",
+      "url": "https://arxiv.org/pdf/2610.19226v1",
+      "unknown_reason": null
+    },
+    {
       "id": "alphaxiv-openresearch-version",
       "study_id": "alphaxiv-openresearch",
       "ref": "23a4d67bb5ce3cf9051f8d62b2cd52e93116e16d",
@@ -4715,6 +4722,16 @@
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Independent offline prototype inspired by the paper. No use of the original implementation, network latency, real peer trust, or project deployment.",
       "supersedes": null
+    },
+    {
+      "id": "agentic-self-awareness-paired-rca-20261126",
+      "study_ids": ["agentic-self-awareness"],
+      "version_ids": ["agentic-self-awareness-arxiv-2610-19226v1"],
+      "date": "2026-11-26",
+      "document": "reviews/agentic-self-awareness/2026-11-26-paired-rca.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Paired synthetic RCA cases with pinned target evaluator and scripted replies. No model, real case or causal quality claim.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5668,6 +5685,16 @@
       "scope": "Sixteen cases in three repetitions per platform matched on Windows and WSL. SQLite retained a pending envelope across worker exits, deduplicated delivery, and quarantined invalid stored envelopes.",
       "limitations": "Two local databases with fixture keys and trust flags. No distributed transport, production keys, network latency, or external delivery effects.",
       "artifacts": ["experiments/agent-transfer-protocol/2026-11-26-signed-queue-protocol.md", "experiments/agent-transfer-protocol/signed-queue.mjs", "data/results/agent-transfer-protocol/2026-11-26-signed-queue.json"]
+    },
+    {
+      "id": "agentic-self-awareness-paired-rca-20261126-lab",
+      "study_ids": ["agentic-self-awareness"],
+      "review_id": "agentic-self-awareness-paired-rca-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Twenty feasible/blocked pairs showed why a status match alone overcredits budget stops and why an exact cause label can lack decisive evidence. Native replay denied forty fabricated observations.",
+      "limitations": "Scripted planner replies and one diagnosis family. No LLM, live incident, expert causal adjudication, or changes to the target.",
+      "artifacts": ["experiments/agentic-self-awareness/2026-11-26-paired-rca-protocol.md", "experiments/agentic-self-awareness/paired-rca.py", "data/results/agentic-self-awareness/2026-11-26-paired-rca.json"]
     }
   ],
   "projects": [

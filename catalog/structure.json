@@ -3855,6 +3855,34 @@
       "title": "Agent Transfer Protocol — signed queue results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/agentic-self-awareness/2026-11-26-paired-rca.md",
+      "title": "Agentic Self-Awareness — paired RCA review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/agentic-self-awareness/2026-11-26-paired-rca-protocol.md",
+      "title": "Agentic Self-Awareness — paired RCA protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/agentic-self-awareness/paired-rca.py",
+      "title": "Agentic Self-Awareness — paired RCA comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/agentic-self-awareness/2026-11-26-paired-rca.json",
+      "title": "Agentic Self-Awareness — paired RCA results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

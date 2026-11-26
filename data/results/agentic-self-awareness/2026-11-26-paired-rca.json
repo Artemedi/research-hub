@@ -1,0 +1,2187 @@
+{
+  "target_commit": "13fa0c910c75d9e3b79c758bcba473a6406e008c",
+  "python": "3.11.9",
+  "repeats": 2,
+  "model_requests": 0,
+  "pair_count": 20,
+  "blocked_variants": {
+    "not_captured": 7,
+    "transaction_unknown": 7,
+    "scope_unmatched": 6
+  },
+  "aggregates": {
+    "evidence_first": {
+      "feasible": {
+        "cases": 20,
+        "status_match": 20,
+        "root_label_match": 20,
+        "abstained": 0,
+        "model_authored": 20,
+        "strict_match": 20
+      },
+      "blocked": {
+        "cases": 20,
+        "status_match": 20,
+        "root_label_match": 20,
+        "abstained": 20,
+        "model_authored": 20,
+        "strict_match": 20
+      }
+    },
+    "always_abstain": {
+      "feasible": {
+        "cases": 20,
+        "status_match": 0,
+        "root_label_match": 0,
+        "abstained": 20,
+        "model_authored": 20,
+        "strict_match": 0
+      },
+      "blocked": {
+        "cases": 20,
+        "status_match": 20,
+        "root_label_match": 20,
+        "abstained": 20,
+        "model_authored": 20,
+        "strict_match": 0
+      }
+    },
+    "premature_diagnose": {
+      "feasible": {
+        "cases": 20,
+        "status_match": 20,
+        "root_label_match": 20,
+        "abstained": 0,
+        "model_authored": 20,
+        "strict_match": 0
+      },
+      "blocked": {
+        "cases": 20,
+        "status_match": 0,
+        "root_label_match": 0,
+        "abstained": 0,
+        "model_authored": 20,
+        "strict_match": 0
+      }
+    },
+    "turn_budget": {
+      "feasible": {
+        "cases": 20,
+        "status_match": 0,
+        "root_label_match": 0,
+        "abstained": 20,
+        "model_authored": 0,
+        "strict_match": 0
+      },
+      "blocked": {
+        "cases": 20,
+        "status_match": 20,
+        "root_label_match": 20,
+        "abstained": 20,
+        "model_authored": 0,
+        "strict_match": 0
+      }
+    },
+    "model_error": {
+      "feasible": {
+        "cases": 20,
+        "status_match": 0,
+        "root_label_match": 0,
+        "abstained": 0,
+        "model_authored": 0,
+        "strict_match": 0
+      },
+      "blocked": {
+        "cases": 20,
+        "status_match": 0,
+        "root_label_match": 0,
+        "abstained": 0,
+        "model_authored": 0,
+        "strict_match": 0
+      }
+    }
+  },
+  "fabricated_observations_rejected": 40,
+  "cases": [
+    {
+      "case_id": "fixture-01-feasible",
+      "group": "feasible",
+      "snapshot_hash": "ba6860d2c3620ff95ac33ada0ba0477895013c39f1ef479ca6dc22509285636c",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-01-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "9c4f67504b56a431c53db33752f64adb5b1982fb4cccc62afc331ed670409267",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-02-feasible",
+      "group": "feasible",
+      "snapshot_hash": "6d95bf97a021a338d6e6a4b7798efd54193648f818b4b901aafe6b4bce7f8969",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-02-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "76272d140bc46b0d95a9427b08fc0b5122f022847203703c674c58075cd055c9",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-03-feasible",
+      "group": "feasible",
+      "snapshot_hash": "926a5bcac95563b462e1cdc2415c7c502f997e3884a4488e4bac88a4461a7c26",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-03-scope_unmatched",
+      "group": "blocked",
+      "snapshot_hash": "ad76fa27271014c5e5a0b83ef9cc920db89b7b81f6036be40038d53526079e2a",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-04-feasible",
+      "group": "feasible",
+      "snapshot_hash": "b60b1f26f2f590905277eb34c6c1e38e723e874f55156839e0538cd2584b59f7",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-04-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "94dda75eb2f6d45872906f753f4725e5860fdbd621256497332bb804dd0f1d43",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-05-feasible",
+      "group": "feasible",
+      "snapshot_hash": "e57e68acf3d6495df8fee93ec25830d77a1d1324e81498c45931de9f9f0a689c",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-05-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "b65c97a1b3e4b2ffbf3e4b249e5c7bb4f04cf1bf7f04901dd740c238a1c5b421",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-06-feasible",
+      "group": "feasible",
+      "snapshot_hash": "4d321a7f708452ff81711e97be3697128320b128405d8f2926c9156ecaca579f",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-06-scope_unmatched",
+      "group": "blocked",
+      "snapshot_hash": "33db54033e6d7523d2e1e07748a66b70bc635f8b540c36e50f3f99d3cf1ad189",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-07-feasible",
+      "group": "feasible",
+      "snapshot_hash": "7a6dcd1ea0d0f98b73c56ac7dcf284fab0a2af2fab032d600774852ae652d3a1",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-07-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "b4fb0ee17dfa0fd13e4f160d8d2b2b526326f0569f18b4aecaaf0bbfc66d8882",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-08-feasible",
+      "group": "feasible",
+      "snapshot_hash": "710efd9243d39f38fd7c241694615f37b9b8378e424dc92b1c408cd4cae52322",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-08-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "ea28591a9e5402a58b7f5f9cd2ef3266ec61903a399f9a266f8e479c2f062bc4",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-09-feasible",
+      "group": "feasible",
+      "snapshot_hash": "ccf4e76f9bcdb61dfd9895e7e912b2d16894d8f5a410c651e72f552e05966e3b",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-09-scope_unmatched",
+      "group": "blocked",
+      "snapshot_hash": "bd992b6e229f7eada6bb0f4403a2665827c152913d8d6074a347465a7a35d59f",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-10-feasible",
+      "group": "feasible",
+      "snapshot_hash": "1951b5aea44f61edc0582b1f388072d83a2a04b488c617ed9a5cdf2d55ac6f20",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-10-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "893d7cab39ff1daad4f15268562b2bfbf285e6e2ca9f2131049b8fc7a7643238",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-11-feasible",
+      "group": "feasible",
+      "snapshot_hash": "faf048b5e3bc18be11ede88a4879ec47e74c4bccabb21801f1be6e9c801389e4",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-11-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "44c2953862ebeb60e975ea3eb818ee3b9a4c465042938e7421b2afdc9b128609",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-12-feasible",
+      "group": "feasible",
+      "snapshot_hash": "0c4b8a71e0a2da90b007eca4bddb4e08acf63898cf27df2d48fe5c887f0eb56d",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-12-scope_unmatched",
+      "group": "blocked",
+      "snapshot_hash": "f729bb30564cb5247aa17b1b37c873be089cac77958875733fd930a15e771e0d",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-13-feasible",
+      "group": "feasible",
+      "snapshot_hash": "e54e8c1c666be87672db22fb1be3d750970a92b9ff48f31a010d80f7f8a3e975",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-13-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "b58ea1446edcfba2dd1b027fd614e65ec34893d6a008b63b643718a0cefab485",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-14-feasible",
+      "group": "feasible",
+      "snapshot_hash": "3c7b103abfc01896dd1d7f2d790c26fd2686f0635f24fa5c091bc2459e03648a",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-14-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "e48b5b8ededc929de5fa8e3ec683e1d9dd292082ac6f026ef0544ddb70c3e96f",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-15-feasible",
+      "group": "feasible",
+      "snapshot_hash": "5598ae90cfc3eb044b3cec218dcb5ec4f8821666ff5f5668823d9c0c30ba53c9",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-15-scope_unmatched",
+      "group": "blocked",
+      "snapshot_hash": "c28b63bed411ce3a37c3054d5d91b3592d83e3b83d920f43c2e9ea2361bcc08b",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-16-feasible",
+      "group": "feasible",
+      "snapshot_hash": "7bb5d87b5c104f3407a424a1860dc4e823f2104efd75648d185d1ddbfaadfae8",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-16-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "fd01da38cc9f2fd761fd2ca0bdbc2590ed7b411216049047c18b7693a148c7ec",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-17-feasible",
+      "group": "feasible",
+      "snapshot_hash": "a71b3a8332ce34c4dc78cc65e3b76b77c50a159046d8415c629d1e7f0ce19c23",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-17-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "55077924108476ca4330ff9e1b412bd1fd46baf8c611bf5ef3dd05b73b4bc79f",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-18-feasible",
+      "group": "feasible",
+      "snapshot_hash": "2ccbc3c0a2c92dde7dca80771228d340216588db23d80964b1c0f3c5b4089671",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-18-scope_unmatched",
+      "group": "blocked",
+      "snapshot_hash": "667506d22b426b21ed0124e4fe515b7cab8d4eca0b4343f273f6d563ab711397",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-19-feasible",
+      "group": "feasible",
+      "snapshot_hash": "6dc8e8e789106390a03859a9da523c675ba65a4e9a53c53ec529d10fb04dd852",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-19-not_captured",
+      "group": "blocked",
+      "snapshot_hash": "eb11ac6987936ba6a26e2870c8c4bda04cda4a1860b4a6668f6aaa649ddd22fa",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-20-feasible",
+      "group": "feasible",
+      "snapshot_hash": "2cc198e9a2c0852ff79f10556b30462971268486b35c5120ac34382b62c8a4c8",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case_id": "fixture-20-transaction_unknown",
+      "group": "blocked",
+      "snapshot_hash": "7c65a7264b28977cc9e5061fe8486769934e0f9bd4570fd6f70dd4a109a4be39",
+      "arms": {
+        "evidence_first": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": true,
+          "stop_reason": "MODEL_STOP",
+          "calls": 2
+        },
+        "always_abstain": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "premature_diagnose": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": true,
+          "strict_match": false,
+          "stop_reason": "MODEL_STOP",
+          "calls": 1
+        },
+        "turn_budget": {
+          "status_match": true,
+          "root_label_match": true,
+          "abstained": true,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "TURN_BUDGET",
+          "calls": 1
+        },
+        "model_error": {
+          "status_match": false,
+          "root_label_match": false,
+          "abstained": false,
+          "model_authored": false,
+          "strict_match": false,
+          "stop_reason": "MODEL_ERROR",
+          "calls": 1
+        }
+      }
+    }
+  ]
+}

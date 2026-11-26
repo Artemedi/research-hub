@@ -53,6 +53,8 @@
 - [agent-risk/snapshot-admission.py](agent-risk/snapshot-admission.py)
 - [agent-transfer-protocol/2026-11-26-signed-queue-protocol.md](agent-transfer-protocol/2026-11-26-signed-queue-protocol.md)
 - [agent-transfer-protocol/signed-queue.mjs](agent-transfer-protocol/signed-queue.mjs)
+- [agentic-self-awareness/2026-11-26-paired-rca-protocol.md](agentic-self-awareness/2026-11-26-paired-rca-protocol.md)
+- [agentic-self-awareness/paired-rca.py](agentic-self-awareness/paired-rca.py)
 - [alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md](alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md)
 - [alphaxiv-openresearch/openresearch-source-snapshot-test.rs](alphaxiv-openresearch/openresearch-source-snapshot-test.rs)
 - [alphaxiv-openresearch/paper2project-snapshot-portability.py](alphaxiv-openresearch/paper2project-snapshot-portability.py)

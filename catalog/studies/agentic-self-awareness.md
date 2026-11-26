@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [agentic-self-awareness-review](../../studies/agentic-self-awareness.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.19226vv1).
+- [agentic-self-awareness-paired-rca-20261126](../../reviews/agentic-self-awareness/2026-11-26-paired-rca.md), 2026-11-26; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arXiv:2610.19226v1](https://arxiv.org/pdf/2610.19226v1).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- agentic-self-awareness-paired-rca-20261126-lab: SYNTHETIC / OBSERVED. Twenty feasible/blocked pairs showed why a status match alone overcredits budget stops and why an exact cause label can lack decisive evidence. Native replay denied forty fabricated observations. Scripted planner replies and one diagnosis family. No LLM, live incident, expert causal adjudication, or changes to the target. [Артефакт](../../experiments/agentic-self-awareness/2026-11-26-paired-rca-protocol.md) · [Артефакт](../../experiments/agentic-self-awareness/paired-rca.py) · [Артефакт](../../data/results/agentic-self-awareness/2026-11-26-paired-rca.json)
 
 ## Ссылки из исходной карточки
 
