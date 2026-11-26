@@ -4561,6 +4561,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic citation-count ranking on Wiki_PG candidates. No generator attention, model quality or performance measured.",
       "supersedes": null
+    },
+    {
+      "id": "silent-cue-loss-wiki-pg-markdown-cues-20261126",
+      "study_ids": ["silent-cue-loss"],
+      "version_ids": ["silent-cue-loss-version"],
+      "date": "2026-11-26",
+      "document": "reviews/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic Markdown warning and source-scope test. No model judgment, general Markdown parser or real-corpus validation.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5332,6 +5342,20 @@
         "experiments/reva/2026-11-26-wiki-pg-frozen-span-views-protocol.md",
         "experiments/reva/wiki-pg-frozen-span-views.py",
         "data/results/reva/2026-11-26-wiki-pg-frozen-span-views.json"
+      ]
+    },
+    {
+      "id": "silent-cue-loss-wiki-pg-markdown-cues-20261126-lab",
+      "study_ids": ["silent-cue-loss"],
+      "review_id": "silent-cue-loss-wiki-pg-markdown-cues-20261126",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching 48-case repeats. Verified source rehydration finds all 24 genuine cues and rejects literal markers, code examples, wrong scope and stale bytes.",
+      "limitations": "Wiki_PG lexical search on artificial reports; no PDF rerun, LLM or production outcome.",
+      "artifacts": [
+        "experiments/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md",
+        "experiments/silent-cue-loss/wiki-pg-markdown-cues.py",
+        "data/results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json"
       ]
     }
   ],

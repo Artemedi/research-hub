@@ -191,6 +191,8 @@
 - [reva/wiki-pg-frozen-span-views.py](reva/wiki-pg-frozen-span-views.py)
 - [silent-cue-loss/2026-11-25-pdf-cue-ab.py](silent-cue-loss/2026-11-25-pdf-cue-ab.py)
 - [silent-cue-loss/2026-11-25-protocol.md](silent-cue-loss/2026-11-25-protocol.md)
+- [silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md](silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md)
+- [silent-cue-loss/wiki-pg-markdown-cues.py](silent-cue-loss/wiki-pg-markdown-cues.py)
 - [simurg/2026-11-07-hash-stability.py](simurg/2026-11-07-hash-stability.py)
 - [simurg/2026-11-07-hash-worker.py](simurg/2026-11-07-hash-worker.py)
 - [static-library-hallucinations/2026-11-25-paper2project-pyright-ab.py](static-library-hallucinations/2026-11-25-paper2project-pyright-ab.py)

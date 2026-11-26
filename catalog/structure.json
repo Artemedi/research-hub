@@ -3435,6 +3435,34 @@
       "title": "REVA — held-out ranking and fallback results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.md",
+      "title": "Silent Cue Loss — Wiki_PG Markdown warnings",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md",
+      "title": "Silent Cue Loss — Wiki_PG warning extraction protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/silent-cue-loss/wiki-pg-markdown-cues.py",
+      "title": "Silent Cue Loss — Wiki_PG source-bound cue replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json",
+      "title": "Silent Cue Loss — Wiki_PG warning recall results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

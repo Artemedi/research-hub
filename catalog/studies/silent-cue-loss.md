@@ -23,6 +23,7 @@
 - [silent-cue-loss-review](../../portfolio/2026-10-20--2026-10-26/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
 - [silent-cue-loss-paper2project-pdf-20261125](../../reviews/silent-cue-loss/2026-11-25-paper2project-pdf.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
 - [silent-cue-loss-pdf-measurement-correction-20261125](../../reviews/silent-cue-loss/2026-11-25-pdf-measurement-correction.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: silent-cue-loss-paper2project-pdf-20261125. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
+- [silent-cue-loss-wiki-pg-markdown-cues-20261126](../../reviews/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.30026v1).
 
 ## Применимость к проектам
 
@@ -34,6 +35,7 @@
 ## Эксперименты
 
 - silent-cue-loss-pdf-transfer-20261125: SYNTHETIC / PASS. Three repeats of 30 generated PDFs. Plain-text read contract observed on the stock path; annotated path retained 120/120 text lines and 30/30 red cues per repeat. No baseline color-recovery score, arbitrary PDFs, OCR, or benefit measurement. [Артефакт](../../data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json) · [Артефакт](../../experiments/silent-cue-loss/2026-11-25-pdf-cue-ab.py) · [Артефакт](../../experiments/silent-cue-loss/2026-11-25-protocol.md)
+- silent-cue-loss-wiki-pg-markdown-cues-20261126-lab: SYNTHETIC / PASS. Two matching 48-case repeats. Verified source rehydration finds all 24 genuine cues and rejects literal markers, code examples, wrong scope and stale bytes. Wiki_PG lexical search on artificial reports; no PDF rerun, LLM or production outcome. [Артефакт](../../experiments/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md) · [Артефакт](../../experiments/silent-cue-loss/wiki-pg-markdown-cues.py) · [Артефакт](../../data/results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json)
 
 ## Ссылки из исходной карточки
 

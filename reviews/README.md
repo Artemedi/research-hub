@@ -122,6 +122,7 @@
 | [MAI-DxO и SDBench — применимость к проектам](sequential-diagnosis-language-models/2026-11-05-project-fit.md) | 2026-11-05 |
 | [Silent Cue Loss — PDF cue transfer in Paper2Project](silent-cue-loss/2026-11-25-paper2project-pdf.md) | 2026-11-25 |
 | [Silent Cue Loss — уточнение измерения штатного импорта PDF](silent-cue-loss/2026-11-25-pdf-measurement-correction.md) | 2026-11-25 |
+| [Silent Cue Loss — Wiki_PG Markdown warnings](silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.md) | 2026-11-26 |
 | [SIMURG — потоковый монитор](simurg/2026-11-04.md) | 2026-11-04 |
 | [SIMURG verified original hash/sketch/SimHash cross-process determinism countercheck](simurg/2026-11-07-hash-stability.md) | 2026-11-07 |
 | [SPILLWAY — Separating Target Admission from Sanitization — full-text review 2026-11-14](spillway/2026-11-14.md) | 2026-11-14 |

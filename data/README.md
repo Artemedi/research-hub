@@ -154,6 +154,7 @@
 | [data/results/reva/2026-11-26-wiki-pg-frozen-span-views.json](results/reva/2026-11-26-wiki-pg-frozen-span-views.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json](results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json) | Результат ограниченной проверки |
+| [data/results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json](results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json) | Результат ограниченной проверки |
 | [data/results/simurg/2026-11-07-hash-stability.json](results/simurg/2026-11-07-hash-stability.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json](results/tencent-teamai-cli/2026-11-06-distribution-ab.json) | Результат ограниченной проверки |

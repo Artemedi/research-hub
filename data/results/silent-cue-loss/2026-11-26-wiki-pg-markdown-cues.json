@@ -1,0 +1,373 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 2,
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": 2,
+      "cases": [
+        {
+          "case": "same_fragment",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "instance_header",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "other_instance",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "inline_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "backtick_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "tilde_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "ordinary_note",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "changed_source",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "source_changed"
+        }
+      ]
+    },
+    {
+      "fixture": 4,
+      "cases": [
+        {
+          "case": "same_fragment",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "instance_header",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "other_instance",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "inline_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "backtick_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "tilde_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "ordinary_note",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "changed_source",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "source_changed"
+        }
+      ]
+    },
+    {
+      "fixture": 11,
+      "cases": [
+        {
+          "case": "same_fragment",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "instance_header",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "other_instance",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "inline_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "backtick_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "tilde_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "ordinary_note",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "changed_source",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "source_changed"
+        }
+      ]
+    },
+    {
+      "fixture": 14,
+      "cases": [
+        {
+          "case": "same_fragment",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "instance_header",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "other_instance",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "inline_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "backtick_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "tilde_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "ordinary_note",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "changed_source",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "source_changed"
+        }
+      ]
+    },
+    {
+      "fixture": 19,
+      "cases": [
+        {
+          "case": "same_fragment",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "instance_header",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "other_instance",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "inline_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "backtick_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "tilde_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "ordinary_note",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "changed_source",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "source_changed"
+        }
+      ]
+    },
+    {
+      "fixture": 23,
+      "cases": [
+        {
+          "case": "same_fragment",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "instance_header",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": true,
+          "decision": "verified"
+        },
+        {
+          "case": "other_instance",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "inline_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "backtick_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "tilde_sample",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "ordinary_note",
+          "native_raw_marker": false,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "no_warning_block"
+        },
+        {
+          "case": "changed_source",
+          "native_raw_marker": true,
+          "native_typed_cue": false,
+          "verified_warning": false,
+          "decision": "source_changed"
+        }
+      ]
+    }
+  ]
+}
