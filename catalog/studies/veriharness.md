@@ -24,6 +24,7 @@
 - [veriharness-historical-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2610.00972).
 - [fulltext-veriharness-2026-11-05](../../reviews/veriharness/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2610.00972v1).
 - [veriharness-locality-ab-2026-11-06](../../reviews/veriharness/2026-11-06-citation-locality-ab.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2610.00972v1).
+- [veriharness-paper2project-consensus-evidence-20261126](../../reviews/veriharness/2026-11-26-paper2project-consensus-evidence.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2610.00972).
 
 ## Применимость к проектам
 
@@ -36,6 +37,7 @@
 ## Эксперименты
 
 - veriharness-agent-config-citation-locality-ab-2026-11-06: SYNTHETIC / OBSERVED. Real agent-config check_findings @489e074 vs additional citation locality +/-1 on 1000 synthetic claims, 5 distinct seeds of 200. TP 400 both; FP 400 baseline vs 200 locality; false accept 66.7% vs 33.3% among artificial negatives; mean 200-check evaluation time 8.973 vs 13.465 ms. Not a VeriHarness full-model run, not representative code-review class distribution, not semantic correctness, not a production improvement; CPU/Python allocations and evaluation-only /proc/self/io measured, VRAM/tokens N/A. [Артефакт](../../experiments/2026-11-06-agent-config-citation-locality-ab.py) · [Артефакт](../../data/results/veriharness/2026-11-06-citation-locality-ab.json) · [Артефакт](../../reviews/veriharness/2026-11-06-citation-locality-ab.md)
+- veriharness-paper2project-consensus-evidence-20261126-lab: SYNTHETIC / PASS. Three matching 48-case repeats. Plain voting found 48 correct values, citation-filtered voting found 72, and two-source adjudication confirmed 72 and abstained 72 times. No agent rollouts or semantic verification beyond the programmed arithmetic oracle. [Артефакт](../../experiments/veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md) · [Артефакт](../../experiments/veriharness/paper2project-consensus-evidence.py) · [Артефакт](../../data/results/veriharness/2026-11-26-paper2project-consensus-evidence.json)
 
 ## Ссылки из исходной карточки
 

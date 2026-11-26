@@ -201,6 +201,8 @@
 - [toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md](toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md)
 - [toolgrad/paper2project-chain-evidence.py](toolgrad/paper2project-chain-evidence.py)
 - [understand-anything/2026-11-08-viewer-symlink-probe.mjs](understand-anything/2026-11-08-viewer-symlink-probe.mjs)
+- [veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md](veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md)
+- [veriharness/paper2project-consensus-evidence.py](veriharness/paper2project-consensus-evidence.py)
 - [youtube-skills/2026-11-07-pinned-provider-boundary.py](youtube-skills/2026-11-07-pinned-provider-boundary.py)
 - [youtube-skills/2026-11-07-provider-boundary-oracle.py](youtube-skills/2026-11-07-provider-boundary-oracle.py)
 - [zero-code/2026-11-07-jsonc-fixtures.py](zero-code/2026-11-07-jsonc-fixtures.py)

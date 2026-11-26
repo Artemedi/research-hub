@@ -1,0 +1,440 @@
+{
+  "revision": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "repeat_count": 3,
+  "cases_per_repeat": 48,
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "unanimous_correct",
+      "fixture": 1,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 2,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 3,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 4,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 5,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 6,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 7,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_correct",
+      "fixture": 8,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 1,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 2,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 3,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 4,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 5,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 6,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 7,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "unanimous_wrong",
+      "fixture": 8,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 1,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 2,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 3,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 4,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 5,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 6,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 7,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "disputed_correct_minority",
+      "fixture": 8,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 1,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 2,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 3,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 4,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 5,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 6,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 7,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "majority_wrong_citation",
+      "fixture": 8,
+      "candidates": 5,
+      "citation_admitted": 2,
+      "vote_correct": false,
+      "citation_vote_correct": true,
+      "verified": "supported"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 1,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 2,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 3,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 4,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 5,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 6,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 7,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "evidence_conflict",
+      "fixture": 8,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": true,
+      "citation_vote_correct": true,
+      "verified": "conflicting_evidence"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 1,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 2,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 3,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 4,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 5,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 6,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 7,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    },
+    {
+      "case": "disputed_all_wrong",
+      "fixture": 8,
+      "candidates": 5,
+      "citation_admitted": 5,
+      "vote_correct": false,
+      "citation_vote_correct": false,
+      "verified": "no_supported_candidate"
+    }
+  ]
+}

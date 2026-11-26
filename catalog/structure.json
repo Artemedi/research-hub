@@ -3491,6 +3491,34 @@
       "title": "ToolGrad — terminal state and trace results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/veriharness/2026-11-26-paper2project-consensus-evidence.md",
+      "title": "VeriHarness — Paper2Project consensus and evidence checks",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md",
+      "title": "VeriHarness — two-source adjudication protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/veriharness/paper2project-consensus-evidence.py",
+      "title": "VeriHarness — synthetic voting and evidence replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/veriharness/2026-11-26-paper2project-consensus-evidence.json",
+      "title": "VeriHarness — consensus and two-source results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

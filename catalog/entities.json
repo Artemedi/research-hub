@@ -4581,6 +4581,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Artificial chain data and native comparison, without author generation, tool execution through Paper2Project or production measurements.",
       "supersedes": null
+    },
+    {
+      "id": "veriharness-paper2project-consensus-evidence-20261126",
+      "study_ids": ["veriharness"],
+      "version_ids": ["veriharness-version"],
+      "date": "2026-11-26",
+      "document": "reviews/veriharness/2026-11-26-paper2project-consensus-evidence.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Artificial arithmetic evidence and fixed votes. No model verifier, human reviewer or production measurements.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5380,6 +5390,20 @@
         "experiments/toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md",
         "experiments/toolgrad/paper2project-chain-evidence.py",
         "data/results/toolgrad/2026-11-26-paper2project-chain-evidence.json"
+      ]
+    },
+    {
+      "id": "veriharness-paper2project-consensus-evidence-20261126-lab",
+      "study_ids": ["veriharness"],
+      "review_id": "veriharness-paper2project-consensus-evidence-20261126",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Three matching 48-case repeats. Plain voting found 48 correct values, citation-filtered voting found 72, and two-source adjudication confirmed 72 and abstained 72 times.",
+      "limitations": "No agent rollouts or semantic verification beyond the programmed arithmetic oracle.",
+      "artifacts": [
+        "experiments/veriharness/2026-11-26-paper2project-consensus-evidence-protocol.md",
+        "experiments/veriharness/paper2project-consensus-evidence.py",
+        "data/results/veriharness/2026-11-26-paper2project-consensus-evidence.json"
       ]
     }
   ],
