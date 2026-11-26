@@ -22,6 +22,7 @@
 
 - [rea-boundaries](../../reviews/reverse-engineer-anything/2026-11-05-source-boundaries.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [970969cb53f788976e64eae387076fcea104b603](https://github.com/morluto/rea/tree/970969cb53f788976e64eae387076fcea104b603).
 - [rea-pe](../../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: rea-boundaries. Версии: [92f332652d352e60b550567adf2399d83d8ebe78](https://github.com/morluto/rea/tree/92f332652d352e60b550567adf2399d83d8ebe78).
+- [rea-managed-metadata-20261126](../../reviews/reverse-engineer-anything/2026-11-26-managed-metadata.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [92f332652d352e60b550567adf2399d83d8ebe78](https://github.com/morluto/rea/tree/92f332652d352e60b550567adf2399d83d8ebe78).
 
 ## Применимость к проектам
 
@@ -76,6 +77,7 @@
 ## Эксперименты
 
 - rea-pe-layout: SYNTHETIC / PASS. 48/48 PE32/PE32+ header/layout cases; overlap-guard mutant обнаружен. Не CLR-loadability, metadata/CIL pipeline или project benefit. [Артефакт](../../experiments/2026-11-05-bk062-pe-layout.mjs) · [Артефакт](../../data/results/reverse-engineer-anything/2026-11-05.json)
+- rea-managed-metadata-20261126-lab: SYNTHETIC / OBSERVED. Twenty-four static metadata checks agreed with the independent .NET reader. Two independent builds reproduced assembly hashes and the complete receipt. Two authored Windows fixtures. No target project assembly, runtime behavior, CLI or native component checked. [Артефакт](../../experiments/reverse-engineer-anything/2026-11-26-managed-metadata-protocol.md) · [Артефакт](../../experiments/reverse-engineer-anything/run-managed-metadata.ps1) · [Артефакт](../../experiments/reverse-engineer-anything/managed-metadata.mjs) · [Артефакт](../../experiments/reverse-engineer-anything/Fixture.cs) · [Артефакт](../../experiments/reverse-engineer-anything/MetadataOracle.cs) · [Артефакт](../../data/results/reverse-engineer-anything/2026-11-26-managed-metadata.json)
 
 ## Ссылки из исходной карточки
 

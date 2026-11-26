@@ -156,6 +156,7 @@
 | [data/results/research-portfolio/2026-11-25-paper2project-queue.json](results/research-portfolio/2026-11-25-paper2project-queue.json) | Результат ограниченной проверки |
 | [data/results/reva/2026-11-26-wiki-pg-frozen-span-views.json](results/reva/2026-11-26-wiki-pg-frozen-span-views.json) | Результат ограниченной проверки |
 | [data/results/reverse-engineer-anything/2026-11-05.json](results/reverse-engineer-anything/2026-11-05.json) | Результат ограниченной проверки |
+| [data/results/reverse-engineer-anything/2026-11-26-managed-metadata.json](results/reverse-engineer-anything/2026-11-26-managed-metadata.json) | Результат ограниченной проверки |
 | [data/results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json](results/silent-cue-loss/2026-11-25-pdf-measurement-correction.json) | Результат ограниченной проверки |
 | [data/results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json](results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json) | Результат ограниченной проверки |
 | [data/results/simurg/2026-11-07-hash-stability.json](results/simurg/2026-11-07-hash-stability.json) | Результат ограниченной проверки |

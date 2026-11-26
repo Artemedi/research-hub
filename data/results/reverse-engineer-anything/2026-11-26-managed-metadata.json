@@ -1,0 +1,108 @@
+{
+  "source_commit": "92f332652d352e60b550567adf2399d83d8ebe78",
+  "node": "v24.22.3",
+  "platform": "win32",
+  "sdk": "11.0.100",
+  "results": [
+    {
+      "variant": "baseline",
+      "sha256": "9b668006cb09957352c800e22d89401320e867ab5ba027319a142ad67a6c9961",
+      "oracle": {
+        "module": {
+          "name": "ReaSynthetic.dll",
+          "mvid": "21506fab-2c66-4276-94c8-eb521ce36284",
+          "token": "0x00000001",
+          "row_offset": 768
+        },
+        "assembly": {
+          "name": "ReaSynthetic",
+          "version": "2.3.4.5",
+          "token": "0x20000001",
+          "row_offset": 1042
+        },
+        "references": [
+          {
+            "name": "System.Runtime",
+            "version": "11.0.0.0",
+            "token": "0x23000001",
+            "row_offset": 1064
+          }
+        ],
+        "row_counts": {
+          "TypeDef": 2,
+          "MethodDef": 1
+        }
+      },
+      "checks": [
+        "module identity, token and file offset",
+        "assembly identity, token and file offset",
+        "reference identities, tokens and file offsets",
+        "TypeDef and MethodDef row counts"
+      ],
+      "runs": [
+        {
+          "repeat": 1,
+          "passed": 4
+        },
+        {
+          "repeat": 2,
+          "passed": 4
+        },
+        {
+          "repeat": 3,
+          "passed": 4
+        }
+      ]
+    },
+    {
+      "variant": "second-method",
+      "sha256": "eb72d92e855a217d0bc1cbcacc161f6b935f4b2ed7a640c8c203a274795e1bea",
+      "oracle": {
+        "module": {
+          "name": "ReaSynthetic.dll",
+          "mvid": "5294a873-3161-4180-9a10-62846cb3fd2d",
+          "token": "0x00000001",
+          "row_offset": 772
+        },
+        "assembly": {
+          "name": "ReaSynthetic",
+          "version": "2.3.4.5",
+          "token": "0x20000001",
+          "row_offset": 1072
+        },
+        "references": [
+          {
+            "name": "System.Runtime",
+            "version": "11.0.0.0",
+            "token": "0x23000001",
+            "row_offset": 1094
+          }
+        ],
+        "row_counts": {
+          "TypeDef": 2,
+          "MethodDef": 2
+        }
+      },
+      "checks": [
+        "module identity, token and file offset",
+        "assembly identity, token and file offset",
+        "reference identities, tokens and file offsets",
+        "TypeDef and MethodDef row counts"
+      ],
+      "runs": [
+        {
+          "repeat": 1,
+          "passed": 4
+        },
+        {
+          "repeat": 2,
+          "passed": 4
+        },
+        {
+          "repeat": 3,
+          "passed": 4
+        }
+      ]
+    }
+  ]
+}

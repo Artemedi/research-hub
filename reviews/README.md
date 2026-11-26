@@ -118,6 +118,7 @@
 | [REVA — frozen span rankings in Wiki_PG](reva/2026-11-26-wiki-pg-frozen-span-views.md) | 2026-11-26 |
 | [REA — проверка PE layout](reverse-engineer-anything/2026-11-05-pe-layout.md) | 2026-11-05 |
 | [REA — границы статического анализа](reverse-engineer-anything/2026-11-05-source-boundaries.md) | 2026-11-05 |
+| [REA — managed metadata review](reverse-engineer-anything/2026-11-26-managed-metadata.md) | 2026-11-26 |
 | [RRSI и Harness² — переобучение при отборе](rrsi-harness2/2026-11-04.md) | 2026-11-04 |
 | [Полный текст RRSI — метод и ограничения](rrsi/2026-11-05-full-text.md) | 2026-11-05 |
 | [RRSI / Harness² — повторяемый A/B на validation и holdout](rrsi/2026-11-06-validation-ab.md) | 2026-11-06 |

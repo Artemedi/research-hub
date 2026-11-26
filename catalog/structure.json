@@ -3631,6 +3631,55 @@
       "title": "DSH Creator Mode — offline evidence replay results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/reverse-engineer-anything/2026-11-26-managed-metadata.md",
+      "title": "REA — managed metadata review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reverse-engineer-anything/2026-11-26-managed-metadata-protocol.md",
+      "title": "REA — synthetic managed metadata protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reverse-engineer-anything/run-managed-metadata.ps1",
+      "title": "REA — managed metadata experiment runner",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reverse-engineer-anything/managed-metadata.mjs",
+      "title": "REA — metadata comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reverse-engineer-anything/Fixture.cs",
+      "title": "REA — synthetic assembly source",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reverse-engineer-anything/MetadataOracle.cs",
+      "title": "REA — independent metadata reader",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/reverse-engineer-anything/2026-11-26-managed-metadata.json",
+      "title": "REA — managed metadata comparison results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

@@ -4631,6 +4631,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Static agent-skills tests and offline receipt checks. No plugin execution, deployed runtime attestation or live Creator verification.",
       "supersedes": null
+    },
+    {
+      "id": "rea-managed-metadata-20261126",
+      "study_ids": ["rea"],
+      "version_ids": ["rea-current"],
+      "date": "2026-11-26",
+      "document": "reviews/reverse-engineer-anything/2026-11-26-managed-metadata.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Selected static .NET metadata fields in two authored assemblies. No target project run, public CLI or runtime behavior checked.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5500,6 +5510,23 @@
         "experiments/dsh-creator-mode/2026-11-26-offline-admission-evidence-protocol.md",
         "experiments/dsh-creator-mode/offline-admission-evidence.py",
         "data/results/dsh-creator/2026-11-26-offline-admission-evidence.json"
+      ]
+    },
+    {
+      "id": "rea-managed-metadata-20261126-lab",
+      "study_ids": ["rea"],
+      "review_id": "rea-managed-metadata-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Twenty-four static metadata checks agreed with the independent .NET reader. Two independent builds reproduced assembly hashes and the complete receipt.",
+      "limitations": "Two authored Windows fixtures. No target project assembly, runtime behavior, CLI or native component checked.",
+      "artifacts": [
+        "experiments/reverse-engineer-anything/2026-11-26-managed-metadata-protocol.md",
+        "experiments/reverse-engineer-anything/run-managed-metadata.ps1",
+        "experiments/reverse-engineer-anything/managed-metadata.mjs",
+        "experiments/reverse-engineer-anything/Fixture.cs",
+        "experiments/reverse-engineer-anything/MetadataOracle.cs",
+        "data/results/reverse-engineer-anything/2026-11-26-managed-metadata.json"
       ]
     }
   ],
