@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [concordat-review](../../studies/concordat.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.37461vv2).
+- [concordat-approval-binding-20261126](../../reviews/concordat/2026-11-26-approval-binding.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [26fd8b1c3a823a4c6be39eedbe370a241623a4cc](https://github.com/miladsikaroudi/concordat/tree/26fd8b1c3a823a4c6be39eedbe370a241623a4cc).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- concordat-approval-binding-20261126-lab: SYNTHETIC / OBSERVED. Fifty cases in three repeats compared direct changes, stock session order with boolean approval, and a proposal-bound check. The bound check admitted ten expected effects without extras. In-memory changes and authored confirmations. No real owner, durable receipt, concurrent execution, external tools or runtime rollout. [Артефакт](../../experiments/concordat/2026-11-26-approval-binding-protocol.md) · [Артефакт](../../experiments/concordat/approval-binding.py) · [Артефакт](../../data/results/concordat/2026-11-26-approval-binding.json)
 
 ## Ссылки из исходной карточки
 

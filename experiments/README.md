@@ -86,6 +86,8 @@
 - [chartli/2026-11-26-numeric-table-oracle-protocol.md](chartli/2026-11-26-numeric-table-oracle-protocol.md)
 - [chartli/numeric-table-oracle.py](chartli/numeric-table-oracle.py)
 - [chartli/render-numeric-fixtures.mjs](chartli/render-numeric-fixtures.mjs)
+- [concordat/2026-11-26-approval-binding-protocol.md](concordat/2026-11-26-approval-binding-protocol.md)
+- [concordat/approval-binding.py](concordat/approval-binding.py)
 - [database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md](database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md)
 - [database-agent-observability/wiki-pg-counter-evidence.py](database-agent-observability/wiki-pg-counter-evidence.py)
 - [decision-geometry-harness/2026-11-07-bandit-oracle.py](decision-geometry-harness/2026-11-07-bandit-oracle.py)

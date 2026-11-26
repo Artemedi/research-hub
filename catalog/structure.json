@@ -4002,6 +4002,34 @@
       "title": "Chartli — numeric table comparison results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/concordat/2026-11-26-approval-binding.md",
+      "title": "Concordat — approval binding review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/concordat/2026-11-26-approval-binding-protocol.md",
+      "title": "Concordat — approval binding protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/concordat/approval-binding.py",
+      "title": "Concordat — offline approval binding comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/concordat/2026-11-26-approval-binding.json",
+      "title": "Concordat — approval binding results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

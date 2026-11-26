@@ -1,0 +1,1620 @@
+{
+  "source_commit": "26fd8b1c3a823a4c6be39eedbe370a241623a4cc",
+  "package": "0.0.6",
+  "python": "3.12.16",
+  "case_count": 50,
+  "repetitions": 3,
+  "external_requests": 0,
+  "metrics": {
+    "unvalidated": {
+      "effects": 55,
+      "unexpected_effects": 45,
+      "missing_expected_effects": 0,
+      "verified": 0
+    },
+    "state_only": {
+      "effects": 40,
+      "unexpected_effects": 30,
+      "missing_expected_effects": 0,
+      "verified": 40
+    },
+    "proposal_bound": {
+      "effects": 10,
+      "unexpected_effects": 0,
+      "missing_expected_effects": 0,
+      "verified": 10
+    }
+  },
+  "cases": {
+    "valid": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      }
+    ],
+    "repeated_in_session": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 2,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 2,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 2,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 2,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 2,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 1,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "verified",
+            "change_verified": true
+          }
+        }
+      }
+    ],
+    "missing": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "pending",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "rejected": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "previous_revision": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "other_record": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "other_value": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "expired": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "unbound_yes": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "session_order": 1
+            },
+            "state": "refused",
+            "change_verified": false
+          }
+        }
+      }
+    ],
+    "changed_after_approval": [
+      {
+        "case": 0,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "proposal_binding": 1
+            },
+            "state": "approved",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 1,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "proposal_binding": 1
+            },
+            "state": "approved",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 2,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "proposal_binding": 1
+            },
+            "state": "approved",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 3,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "proposal_binding": 1
+            },
+            "state": "approved",
+            "change_verified": false
+          }
+        }
+      },
+      {
+        "case": 4,
+        "arms": {
+          "unvalidated": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "pending",
+            "change_verified": false
+          },
+          "state_only": {
+            "effects": 1,
+            "unexpected_effects": 1,
+            "missing_expected_effects": 0,
+            "denials": {},
+            "state": "verified",
+            "change_verified": true
+          },
+          "proposal_bound": {
+            "effects": 0,
+            "unexpected_effects": 0,
+            "missing_expected_effects": 0,
+            "denials": {
+              "proposal_binding": 1
+            },
+            "state": "approved",
+            "change_verified": false
+          }
+        }
+      }
+    ]
+  }
+}

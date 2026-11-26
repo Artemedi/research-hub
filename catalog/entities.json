@@ -1621,6 +1621,13 @@
       "unknown_reason": null
     },
     {
+      "id": "concordat-code-26fd8b1",
+      "study_id": "concordat",
+      "ref": "26fd8b1c3a823a4c6be39eedbe370a241623a4cc",
+      "url": "https://github.com/miladsikaroudi/concordat/tree/26fd8b1c3a823a4c6be39eedbe370a241623a4cc",
+      "unknown_reason": null
+    },
+    {
       "id": "covert-assistance-version",
       "study_id": "covert-assistance",
       "ref": null,
@@ -4786,6 +4793,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Numeric SVG comparison with authored duration tables. Actual source renderer called without CLI, browser, or project exporter.",
       "supersedes": null
+    },
+    {
+      "id": "concordat-approval-binding-20261126",
+      "study_ids": ["concordat"],
+      "version_ids": ["concordat-code-26fd8b1"],
+      "date": "2026-11-26",
+      "document": "reviews/concordat/2026-11-26-approval-binding.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Actual Concordat session on toy inputs with an external proposal check. DSH read only. No model, real user approval or deployment.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5789,6 +5806,16 @@
       "scope": "Six tables in three repeats checked numeric spacing and shared scale, missing observations and rounded labels. Regular seconds and exact microseconds matched the oracle.",
       "limitations": "Authored small samples in the original line SVG path. No CLI testing, production exporter, browser, or throughput measurement.",
       "artifacts": ["experiments/chartli/2026-11-26-numeric-table-oracle-protocol.md", "experiments/chartli/numeric-table-oracle.py", "experiments/chartli/render-numeric-fixtures.mjs", "data/results/chartli/2026-11-26-numeric-table-oracle.json"]
+    },
+    {
+      "id": "concordat-approval-binding-20261126-lab",
+      "study_ids": ["concordat"],
+      "review_id": "concordat-approval-binding-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Fifty cases in three repeats compared direct changes, stock session order with boolean approval, and a proposal-bound check. The bound check admitted ten expected effects without extras.",
+      "limitations": "In-memory changes and authored confirmations. No real owner, durable receipt, concurrent execution, external tools or runtime rollout.",
+      "artifacts": ["experiments/concordat/2026-11-26-approval-binding-protocol.md", "experiments/concordat/approval-binding.py", "data/results/concordat/2026-11-26-approval-binding.json"]
     }
   ],
   "projects": [
