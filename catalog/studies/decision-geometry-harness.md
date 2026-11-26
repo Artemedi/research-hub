@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [decision-geometry-harness-review](../../studies/decision-geometry-harness.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v2](https://arxiv.org/pdf/2610.37255vv2).
+- [decision-geometry-harness-order-isolation-20261126](../../reviews/decision-geometry-harness/2026-11-26-order-isolation.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arXiv:2610.37255v2](https://arxiv.org/html/2610.37255v2).
 - [Decision Geometry exact two-action bandit source reproduction and project-fit gate](../../reviews/decision-geometry-harness/2026-11-07-bandit-countercheck.md) — ссылка на материал вне структурированной истории.
 - [Decision Geometry practical schema and observation order A/B using pinned DSH serializer and ZCode](../../reviews/decision-geometry-harness/2026-11-07-interface-order-ab.md) — ссылка на материал вне структурированной истории.
 - [Decision Geometry native provider tool-use A/B and inert tool-result continuation](../../reviews/decision-geometry-harness/2026-11-07-native-tool-ab.md) — ссылка на материал вне структурированной истории.
@@ -35,7 +36,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- decision-geometry-harness-order-isolation-20261126-lab: SYNTHETIC / OBSERVED. Sixty histories in three repeats separated schema-list and property-order changes. Wire bytes and header equality changed while valid result links and schema content were retained. Synthetic text-only inputs. No inference endpoint, actual tools, or measured cache behavior. [Артефакт](../../experiments/decision-geometry-harness/2026-11-26-order-isolation-protocol.md) · [Артефакт](../../experiments/decision-geometry-harness/order-isolation.mjs) · [Артефакт](../../data/results/decision-geometry-harness/2026-11-26-order-isolation.json)
 
 ## Ссылки из исходной карточки
 

@@ -1670,6 +1670,13 @@
       "unknown_reason": null
     },
     {
+      "id": "decision-geometry-harness-arxiv-2610-37255v2",
+      "study_id": "decision-geometry-harness",
+      "ref": "arXiv:2610.37255v2",
+      "url": "https://arxiv.org/html/2610.37255v2",
+      "unknown_reason": null
+    },
+    {
       "id": "drag-version",
       "study_id": "drag",
       "ref": null,
@@ -4840,6 +4847,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Stock memory pool on authored rule sets. No model, automatic rule generation, or target integration.",
       "supersedes": null
+    },
+    {
+      "id": "decision-geometry-harness-order-isolation-20261126",
+      "study_ids": ["decision-geometry-harness"],
+      "version_ids": ["decision-geometry-harness-arxiv-2610-37255v2"],
+      "date": "2026-11-26",
+      "document": "reviews/decision-geometry-harness/2026-11-26-order-isolation.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Actual DSH serializer and header utilities on authored histories. No provider, selection quality, execution, or cache measurement.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5883,6 +5900,16 @@
       "scope": "Twenty authored holdouts scored 10 without a bank, 15 with three-success selection, and 20 with reviewed preconditions. The upstream loader refused missing and empty banks.",
       "limitations": "Authored rules and scripted environment. No automatic heuristic generation or agent quality estimate.",
       "artifacts": ["experiments/daedalus/2026-11-26-frozen-bank-protocol.md", "experiments/daedalus/frozen-bank.py", "data/results/daedalus/2026-11-26-frozen-bank.json"]
+    },
+    {
+      "id": "decision-geometry-harness-order-isolation-20261126-lab",
+      "study_ids": ["decision-geometry-harness"],
+      "review_id": "decision-geometry-harness-order-isolation-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Sixty histories in three repeats separated schema-list and property-order changes. Wire bytes and header equality changed while valid result links and schema content were retained.",
+      "limitations": "Synthetic text-only inputs. No inference endpoint, actual tools, or measured cache behavior.",
+      "artifacts": ["experiments/decision-geometry-harness/2026-11-26-order-isolation-protocol.md", "experiments/decision-geometry-harness/order-isolation.mjs", "data/results/decision-geometry-harness/2026-11-26-order-isolation.json"]
     }
   ],
   "projects": [

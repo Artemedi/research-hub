@@ -4121,6 +4121,34 @@
       "title": "Daedalus — frozen memory bank results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/decision-geometry-harness/2026-11-26-order-isolation.md",
+      "title": "Decision Geometry Harness — isolated order review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/decision-geometry-harness/2026-11-26-order-isolation-protocol.md",
+      "title": "Decision Geometry Harness — isolated order protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/decision-geometry-harness/order-isolation.mjs",
+      "title": "Decision Geometry Harness — pinned serializer order check",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/decision-geometry-harness/2026-11-26-order-isolation.json",
+      "title": "Decision Geometry Harness — isolated order results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }
