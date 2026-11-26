@@ -1,0 +1,16 @@
+from PyQt5.QtWidgets import QApplication, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget
+
+app = QApplication(["research-qt-fixture"])
+window = QWidget()
+window.setWindowTitle("Research Qt Fixture")
+layout = QVBoxLayout(window)
+layout.addWidget(QLabel("Synthetic query plan"))
+query = QLineEdit()
+query.setAccessibleName("Fixture Query")
+query.setText("SELECT 1")
+layout.addWidget(query)
+button = QPushButton("Run fixture")
+button.setAccessibleName("Fixture Run")
+layout.addWidget(button)
+window.show()
+app.exec()

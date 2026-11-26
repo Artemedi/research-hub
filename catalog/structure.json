@@ -3743,6 +3743,62 @@
       "title": "Harness² — final selection results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/vercel-agent-desktop/2026-11-26-toolkit-observation.md",
+      "title": "Agent Desktop — Qt and Electron observation review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/vercel-agent-desktop/2026-11-26-toolkit-observation-protocol.md",
+      "title": "Agent Desktop — toolkit observation protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/vercel-agent-desktop/Dockerfile",
+      "title": "Agent Desktop — isolated toolkit build",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/vercel-agent-desktop/run-observation.sh",
+      "title": "Agent Desktop — private snapshot runner",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/vercel-agent-desktop/observe-toolkit.py",
+      "title": "Agent Desktop — read-only snapshot verifier",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/vercel-agent-desktop/qt-fixture.py",
+      "title": "Agent Desktop — Qt fixture",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/vercel-agent-desktop/electron-fixture.cjs",
+      "title": "Agent Desktop — Electron fixture",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/vercel-agent-desktop/2026-11-26-toolkit-observation.json",
+      "title": "Agent Desktop — Qt and Electron observation results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

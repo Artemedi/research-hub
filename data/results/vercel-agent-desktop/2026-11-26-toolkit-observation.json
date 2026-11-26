@@ -1,0 +1,141 @@
+{
+  "source_commit": "b43ac4f6e892ef608f8851428613c4009f0e84c7",
+  "image_id": "sha256:31539d83182597ed86e37c45c796950f5f2bfd67d78c78c26ec8487c458a3403",
+  "rust": "rustc 1.89.0 (29483883e 2025-08-04)",
+  "qt_and_pyqt_versions": "5.15.8 5.15.9",
+  "display": "X11/Xvfb",
+  "transport": "private AT-SPI session bus",
+  "electron_version": "44.7.0",
+  "electron_zip_sha256": "3ae7d5bdad61c664486c6ab61361dd084d064c8c08af8d13a687096e18ce555a",
+  "network": "none",
+  "action_calls": 0,
+  "repetitions_per_toolkit": 3,
+  "results": [
+    {
+      "toolkit": "qt",
+      "status": "all_controls_matched",
+      "controls": {
+        "Fixture Query": [
+          {
+            "role": "textfield",
+            "has_ref": true
+          }
+        ],
+        "Fixture Run": [
+          {
+            "role": "button",
+            "has_ref": true
+          }
+        ]
+      },
+      "absent_control": true,
+      "complete": true,
+      "identity_unproven": false
+    },
+    {
+      "toolkit": "qt",
+      "status": "all_controls_matched",
+      "controls": {
+        "Fixture Query": [
+          {
+            "role": "textfield",
+            "has_ref": true
+          }
+        ],
+        "Fixture Run": [
+          {
+            "role": "button",
+            "has_ref": true
+          }
+        ]
+      },
+      "absent_control": true,
+      "complete": true,
+      "identity_unproven": false
+    },
+    {
+      "toolkit": "qt",
+      "status": "all_controls_matched",
+      "controls": {
+        "Fixture Query": [
+          {
+            "role": "textfield",
+            "has_ref": true
+          }
+        ],
+        "Fixture Run": [
+          {
+            "role": "button",
+            "has_ref": true
+          }
+        ]
+      },
+      "absent_control": true,
+      "complete": true,
+      "identity_unproven": false
+    },
+    {
+      "toolkit": "electron",
+      "status": "all_controls_matched",
+      "controls": {
+        "Fixture Query": [
+          {
+            "role": "textfield",
+            "has_ref": true
+          }
+        ],
+        "Fixture Run": [
+          {
+            "role": "button",
+            "has_ref": true
+          }
+        ]
+      },
+      "absent_control": true,
+      "complete": true,
+      "identity_unproven": false
+    },
+    {
+      "toolkit": "electron",
+      "status": "all_controls_matched",
+      "controls": {
+        "Fixture Query": [
+          {
+            "role": "textfield",
+            "has_ref": true
+          }
+        ],
+        "Fixture Run": [
+          {
+            "role": "button",
+            "has_ref": true
+          }
+        ]
+      },
+      "absent_control": true,
+      "complete": true,
+      "identity_unproven": false
+    },
+    {
+      "toolkit": "electron",
+      "status": "all_controls_matched",
+      "controls": {
+        "Fixture Query": [
+          {
+            "role": "textfield",
+            "has_ref": true
+          }
+        ],
+        "Fixture Run": [
+          {
+            "role": "button",
+            "has_ref": true
+          }
+        ]
+      },
+      "absent_control": true,
+      "complete": true,
+      "identity_unproven": false
+    }
+  ]
+}

@@ -4671,6 +4671,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Final selection from authored outputs in Python 3.12. No agent, generation, actual inference cost or runtime integration.",
       "supersedes": null
+    },
+    {
+      "id": "vercel-agent-desktop-toolkit-observation-20261126",
+      "study_ids": ["vercel-agent-desktop"],
+      "version_ids": ["vercel-agent-desktop-b43ac4f"],
+      "date": "2026-11-26",
+      "document": "reviews/vercel-agent-desktop/2026-11-26-toolkit-observation.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Read-only Linux X11 snapshots of authored Qt and Electron windows. No actions, target apps, Windows observation or project benefit measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5585,6 +5595,24 @@
         "experiments/harness2/2026-11-26-final-selection-protocol.md",
         "experiments/harness2/final-selection.py",
         "data/results/harness2/2026-11-26-final-selection.json"
+      ]
+    },
+    {
+      "id": "vercel-agent-desktop-toolkit-observation-20261126-lab",
+      "study_ids": ["vercel-agent-desktop"],
+      "review_id": "vercel-agent-desktop-toolkit-observation-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Three private Qt and three private Electron snapshots exposed the authored field and button with the expected names, roles and references, without the absent control.",
+      "limitations": "Chromium accessibility explicitly enabled. No user desktop, action delivery, target project launch or cross-platform claim.",
+      "artifacts": [
+        "experiments/vercel-agent-desktop/2026-11-26-toolkit-observation-protocol.md",
+        "experiments/vercel-agent-desktop/Dockerfile",
+        "experiments/vercel-agent-desktop/run-observation.sh",
+        "experiments/vercel-agent-desktop/observe-toolkit.py",
+        "experiments/vercel-agent-desktop/qt-fixture.py",
+        "experiments/vercel-agent-desktop/electron-fixture.cjs",
+        "data/results/vercel-agent-desktop/2026-11-26-toolkit-observation.json"
       ]
     }
   ],

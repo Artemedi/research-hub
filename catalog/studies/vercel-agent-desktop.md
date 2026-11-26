@@ -22,6 +22,7 @@
 
 - [vercel-agent-desktop-source-gate](../../reviews/vercel-agent-desktop/2026-11-05-source-boundaries.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [b43ac4f6e892ef608f8851428613c4009f0e84c7](https://github.com/vercel-labs/agent-desktop/tree/b43ac4f6e892ef608f8851428613c4009f0e84c7).
 - [vercel-agent-desktop-wayland](../../reviews/vercel-agent-desktop/2026-11-05-wayland.md), 2026-11-05; PARTIAL_SOURCE_REVIEW; заменяет: vercel-agent-desktop-source-gate. Версии: [b43ac4f6e892ef608f8851428613c4009f0e84c7](https://github.com/vercel-labs/agent-desktop/tree/b43ac4f6e892ef608f8851428613c4009f0e84c7).
+- [vercel-agent-desktop-toolkit-observation-20261126](../../reviews/vercel-agent-desktop/2026-11-26-toolkit-observation.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [b43ac4f6e892ef608f8851428613c4009f0e84c7](https://github.com/vercel-labs/agent-desktop/tree/b43ac4f6e892ef608f8851428613c4009f0e84c7).
 
 ## Применимость к проектам
 
@@ -76,6 +77,7 @@
 ## Эксперименты
 
 - vercel-agent-desktop-wayland-toy-ui: ISOLATED_INTEGRATION / PASS. Original CLI on private Linux Wayland GTK toy UI: 4 cases × 3 fresh homes (12/12 pass), with independent GTK clicked-counter oracle. Qualified click changes counter once; bare ref, unknown snapshot, and destroyed-widget ref are refused without effect. This is only the bounded GUI fixture result. Does not imply a fully green Linux suite: one failure and 233 ignored remain in the private-desktop run; the source-scanner test passed separately. Does not establish all-platform security, general wrong-target safety, reliability/performance, project benefit, or production readiness. [Артефакт](../../experiments/2026-11-05-bk065-gui-probe.py) · [Артефакт](../../experiments/2026-11-05-bk065-isolated-gui.sh) · [Артефакт](../../data/results/vercel-agent-desktop/2026-11-05.json)
+- vercel-agent-desktop-toolkit-observation-20261126-lab: SYNTHETIC / OBSERVED. Three private Qt and three private Electron snapshots exposed the authored field and button with the expected names, roles and references, without the absent control. Chromium accessibility explicitly enabled. No user desktop, action delivery, target project launch or cross-platform claim. [Артефакт](../../experiments/vercel-agent-desktop/2026-11-26-toolkit-observation-protocol.md) · [Артефакт](../../experiments/vercel-agent-desktop/Dockerfile) · [Артефакт](../../experiments/vercel-agent-desktop/run-observation.sh) · [Артефакт](../../experiments/vercel-agent-desktop/observe-toolkit.py) · [Артефакт](../../experiments/vercel-agent-desktop/qt-fixture.py) · [Артефакт](../../experiments/vercel-agent-desktop/electron-fixture.cjs) · [Артефакт](../../data/results/vercel-agent-desktop/2026-11-26-toolkit-observation.json)
 
 ## Ссылки из исходной карточки
 

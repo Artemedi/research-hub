@@ -149,6 +149,7 @@
 | [Unsloth — обучение decision model](unsloth-decision-model/2026-11-04.md) | 2026-11-04 |
 | [Agent Desktop — ссылки и разрешения](vercel-agent-desktop/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [Agent Desktop — изолированная проверка Wayland](vercel-agent-desktop/2026-11-05-wayland.md) | 2026-11-05 |
+| [Agent Desktop — Qt and Electron observation review](vercel-agent-desktop/2026-11-26-toolkit-observation.md) | 2026-11-26 |
 | [VeriHarness и agent-config — проверка gates](veriharness/2026-11-04.md) | 2026-11-04 |
 | [VeriHarness — Evidence-Grounded Agentic Verification — полнотекстовая научная проверка](veriharness/2026-11-05-full-text.md) | 2026-11-05 |
 | [VeriHarness/agent-config — offline A/B по близости цитаты](veriharness/2026-11-06-citation-locality-ab.md) | 2026-11-06 |

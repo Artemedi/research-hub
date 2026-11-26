@@ -168,6 +168,7 @@
 | [data/results/toolgrad/2026-11-26-paper2project-chain-evidence.json](results/toolgrad/2026-11-26-paper2project-chain-evidence.json) | Результат ограниченной проверки |
 | [data/results/understand-anything/2026-11-08-mcp-head-security.json](results/understand-anything/2026-11-08-mcp-head-security.json) | Результат ограниченной проверки |
 | [data/results/vercel-agent-desktop/2026-11-05.json](results/vercel-agent-desktop/2026-11-05.json) | Результат ограниченной проверки |
+| [data/results/vercel-agent-desktop/2026-11-26-toolkit-observation.json](results/vercel-agent-desktop/2026-11-26-toolkit-observation.json) | Результат ограниченной проверки |
 | [data/results/veriharness/2026-11-26-paper2project-consensus-evidence.json](results/veriharness/2026-11-26-paper2project-consensus-evidence.json) | Результат ограниченной проверки |
 | [data/results/yahont-ce/2026-11-26-wiki-pg-source-identity.json](results/yahont-ce/2026-11-26-wiki-pg-source-identity.json) | Результат ограниченной проверки |
 | [data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json](results/youtube-skills/2026-11-07-provider-boundary-oracle.json) | Результат ограниченной проверки |
