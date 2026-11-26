@@ -50,6 +50,7 @@
 | [BK-021 Cursor token efficiency independent GPT-6 versus ZCode council](cursor-token-efficiency/2026-11-07-council-vs-single.md) | 2026-11-07 |
 | [CVE-2026-82533 — аудит риска текущей установки DSH](cve-2026-82533/2026-11-06-readonly-risk.md) | 2026-11-06 |
 | [Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning — full-text review 2026-11-14](database-agent-observability/2026-11-14.md) | 2026-11-14 |
+| [Database Agent Observability — Wiki_PG counter and event evidence](database-agent-observability/2026-11-26-wiki-pg-counter-evidence.md) | 2026-11-26 |
 | [Decision Geometry exact two-action bandit source reproduction and project-fit gate](decision-geometry-harness/2026-11-07-bandit-countercheck.md) | 2026-11-07 |
 | [Decision Geometry practical schema and observation order A/B using pinned DSH serializer and ZCode](decision-geometry-harness/2026-11-07-interface-order-ab.md) | 2026-11-07 |
 | [Decision Geometry native provider tool-use A/B and inert tool-result continuation](decision-geometry-harness/2026-11-07-native-tool-ab.md) | 2026-11-07 |

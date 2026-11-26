@@ -4611,6 +4611,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Manual terminology and native Wiki_PG snapshot queries. No NVIDIA runtime, generated SQL or production data.",
       "supersedes": null
+    },
+    {
+      "id": "database-agent-observability-wiki-pg-counter-evidence-20261126",
+      "study_ids": ["database-agent-observability"],
+      "version_ids": ["database-agent-observability-2611-17304v1"],
+      "date": "2026-11-26",
+      "document": "reviews/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic counter and event alignment only. No agent diagnostic accuracy, collection or production database measurement.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5452,6 +5462,20 @@
         "experiments/auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md",
         "experiments/auto-ontology/wiki-pg-semantic-selectors.py",
         "data/results/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.json"
+      ]
+    },
+    {
+      "id": "database-agent-observability-wiki-pg-counter-evidence-20261126-lab",
+      "study_ids": ["database-agent-observability"],
+      "review_id": "database-agent-observability-wiki-pg-counter-evidence-20261126",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Three matching 48-case repeats. 132 raw increases reduced to 96 comparable increases and 24 independently scoped event matches.",
+      "limitations": "Synthetic samples and one event per case. No causation, agent results or real monitoring coverage measured.",
+      "artifacts": [
+        "experiments/database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md",
+        "experiments/database-agent-observability/wiki-pg-counter-evidence.py",
+        "data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json"
       ]
     }
   ],

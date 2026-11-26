@@ -71,6 +71,8 @@
 - [cera-moa/2026-11-08-routing-contract.py](cera-moa/2026-11-08-routing-contract.py)
 - [chartli/2026-11-07-svg-fixtures.mts](chartli/2026-11-07-svg-fixtures.mts)
 - [chartli/2026-11-07-svg-oracle.py](chartli/2026-11-07-svg-oracle.py)
+- [database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md](database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md)
+- [database-agent-observability/wiki-pg-counter-evidence.py](database-agent-observability/wiki-pg-counter-evidence.py)
 - [decision-geometry-harness/2026-11-07-bandit-oracle.py](decision-geometry-harness/2026-11-07-bandit-oracle.py)
 - [decision-geometry-harness/2026-11-07-bandit.py](decision-geometry-harness/2026-11-07-bandit.py)
 - [decision-geometry-harness/2026-11-07-council.py](decision-geometry-harness/2026-11-07-council.py)

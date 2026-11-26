@@ -42,6 +42,7 @@
 | [data/results/chartli/2026-11-07-svg-fixtures.json](results/chartli/2026-11-07-svg-fixtures.json) | Результат ограниченной проверки |
 | [data/results/chartli/2026-11-07-svg-oracle.json](results/chartli/2026-11-07-svg-oracle.json) | Результат ограниченной проверки |
 | [data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json](results/cursor-token-efficiency/2026-11-07-council-vs-single.json) | Результат ограниченной проверки |
+| [data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json](results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit-oracle.json](results/decision-geometry-harness/2026-11-07-bandit-oracle.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit.json](results/decision-geometry-harness/2026-11-07-bandit.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-council.json](results/decision-geometry-harness/2026-11-07-council.json) | Результат ограниченной проверки |

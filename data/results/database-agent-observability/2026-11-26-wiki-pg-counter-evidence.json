@@ -1,0 +1,456 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 3,
+  "status": "PASS",
+  "cases_per_repeat": 48,
+  "cases": [
+    {
+      "case": "matched",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-0"
+      ]
+    },
+    {
+      "case": "right_boundary",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-0"
+      ]
+    },
+    {
+      "case": "no_record",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "left_boundary",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "future_record",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_host",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_port",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_database",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "reset",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "reset",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "incompatible_samples",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "incompatible",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "missing_reset_clock",
+      "initial_value": 0,
+      "numbers_increased": true,
+      "native_status": "unavailable",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "no_growth",
+      "initial_value": 0,
+      "numbers_increased": false,
+      "native_status": "measured",
+      "native_delta": 0,
+      "record_decision": "no_counter_increase",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "matched",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-4"
+      ]
+    },
+    {
+      "case": "right_boundary",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-4"
+      ]
+    },
+    {
+      "case": "no_record",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "left_boundary",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "future_record",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_host",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_port",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_database",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "reset",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "reset",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "incompatible_samples",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "incompatible",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "missing_reset_clock",
+      "initial_value": 4,
+      "numbers_increased": true,
+      "native_status": "unavailable",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "no_growth",
+      "initial_value": 4,
+      "numbers_increased": false,
+      "native_status": "measured",
+      "native_delta": 0,
+      "record_decision": "no_counter_increase",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "matched",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-11"
+      ]
+    },
+    {
+      "case": "right_boundary",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-11"
+      ]
+    },
+    {
+      "case": "no_record",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "left_boundary",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "future_record",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_host",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_port",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_database",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "reset",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "reset",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "incompatible_samples",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "incompatible",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "missing_reset_clock",
+      "initial_value": 11,
+      "numbers_increased": true,
+      "native_status": "unavailable",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "no_growth",
+      "initial_value": 11,
+      "numbers_increased": false,
+      "native_status": "measured",
+      "native_delta": 0,
+      "record_decision": "no_counter_increase",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "matched",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-24"
+      ]
+    },
+    {
+      "case": "right_boundary",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "corroborated",
+      "corroborated_record_ids": [
+        "fixture-deadlock-24"
+      ]
+    },
+    {
+      "case": "no_record",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "left_boundary",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "future_record",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_host",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_port",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "other_database",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "measured",
+      "native_delta": 3,
+      "record_decision": "no_matching_record",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "reset",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "reset",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "incompatible_samples",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "incompatible",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "missing_reset_clock",
+      "initial_value": 24,
+      "numbers_increased": true,
+      "native_status": "unavailable",
+      "native_delta": null,
+      "record_decision": "unusable_counter",
+      "corroborated_record_ids": null
+    },
+    {
+      "case": "no_growth",
+      "initial_value": 24,
+      "numbers_increased": false,
+      "native_status": "measured",
+      "native_delta": 0,
+      "record_decision": "no_counter_increase",
+      "corroborated_record_ids": null
+    }
+  ]
+}

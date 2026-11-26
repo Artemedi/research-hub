@@ -3575,6 +3575,34 @@
       "title": "Auto-Ontology — semantic selector results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.md",
+      "title": "Database Agent Observability — Wiki_PG counter and event evidence",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md",
+      "title": "Database Agent Observability — counter and event protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/database-agent-observability/wiki-pg-counter-evidence.py",
+      "title": "Database Agent Observability — counter and scoped record replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json",
+      "title": "Database Agent Observability — counter and event results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

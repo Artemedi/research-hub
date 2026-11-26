@@ -13,6 +13,7 @@
 ## Версии и история обзоров
 
 - [database-agent-observability-fulltext-20261114](../../reviews/database-agent-observability/2026-11-14.md), 2026-11-14; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:2611.17304v1](https://arxiv.org/pdf/2611.17304v1).
+- [database-agent-observability-wiki-pg-counter-evidence-20261126](../../reviews/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:2611.17304v1](https://arxiv.org/pdf/2611.17304v1).
 
 ## Применимость к проектам
 
@@ -23,7 +24,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- database-agent-observability-wiki-pg-counter-evidence-20261126-lab: SYNTHETIC / PASS. Three matching 48-case repeats. 132 raw increases reduced to 96 comparable increases and 24 independently scoped event matches. Synthetic samples and one event per case. No causation, agent results or real monitoring coverage measured. [Артефакт](../../experiments/database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md) · [Артефакт](../../experiments/database-agent-observability/wiki-pg-counter-evidence.py) · [Артефакт](../../data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json)
 
 ## Ссылки из исходной карточки
 
