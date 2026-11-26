@@ -187,6 +187,8 @@
 - [research-portfolio/report-micro.py](research-portfolio/report-micro.py)
 - [research-portfolio/source-audit.py](research-portfolio/source-audit.py)
 - [research-portfolio/source-packs.py](research-portfolio/source-packs.py)
+- [reva/2026-11-26-wiki-pg-frozen-span-views-protocol.md](reva/2026-11-26-wiki-pg-frozen-span-views-protocol.md)
+- [reva/wiki-pg-frozen-span-views.py](reva/wiki-pg-frozen-span-views.py)
 - [silent-cue-loss/2026-11-25-pdf-cue-ab.py](silent-cue-loss/2026-11-25-pdf-cue-ab.py)
 - [silent-cue-loss/2026-11-25-protocol.md](silent-cue-loss/2026-11-25-protocol.md)
 - [simurg/2026-11-07-hash-stability.py](simurg/2026-11-07-hash-stability.py)

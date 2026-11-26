@@ -112,6 +112,7 @@
 | [REALM — reversible Wiki_PG retrieval feedback](realm/2026-11-25-wiki-pg-retrieval-feedback.md) | 2026-11-25 |
 | [ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка](recap/2026-11-05-full-text.md) | 2026-11-05 |
 | [ReCAP — scoped context recovery in Wiki_PG](recap/2026-11-26-wiki-pg-context-recovery.md) | 2026-11-26 |
+| [REVA — frozen span rankings in Wiki_PG](reva/2026-11-26-wiki-pg-frozen-span-views.md) | 2026-11-26 |
 | [REA — проверка PE layout](reverse-engineer-anything/2026-11-05-pe-layout.md) | 2026-11-05 |
 | [REA — границы статического анализа](reverse-engineer-anything/2026-11-05-source-boundaries.md) | 2026-11-05 |
 | [RRSI и Harness² — переобучение при отборе](rrsi-harness2/2026-11-04.md) | 2026-11-04 |

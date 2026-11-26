@@ -4551,6 +4551,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic lexical and manual-reference recovery. No ReCAP attention graph, model judgments or production measurements.",
       "supersedes": null
+    },
+    {
+      "id": "reva-wiki-pg-frozen-span-views-20261126",
+      "study_ids": ["reva"],
+      "version_ids": ["reva-version"],
+      "date": "2026-11-26",
+      "document": "reviews/reva/2026-11-26-wiki-pg-frozen-span-views.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Synthetic citation-count ranking on Wiki_PG candidates. No generator attention, model quality or performance measured.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5308,6 +5318,20 @@
         "experiments/recap/2026-11-26-wiki-pg-context-recovery-protocol.md",
         "experiments/recap/wiki-pg-context-recovery.py",
         "data/results/recap/2026-11-26-wiki-pg-context-recovery.json"
+      ]
+    },
+    {
+      "id": "reva-wiki-pg-frozen-span-views-20261126-lab",
+      "study_ids": ["reva"],
+      "review_id": "reva-wiki-pg-frozen-span-views-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two matching 50-case repeats. Saved scores gained 20 routine hits and lost 20 exception hits; unscored and updated sources used lexical fallback.",
+      "limitations": "Artificial fixtures and a one-span limit. No attention-based compression, tokenizer budget or production usage measured.",
+      "artifacts": [
+        "experiments/reva/2026-11-26-wiki-pg-frozen-span-views-protocol.md",
+        "experiments/reva/wiki-pg-frozen-span-views.py",
+        "data/results/reva/2026-11-26-wiki-pg-frozen-span-views.json"
       ]
     }
   ],

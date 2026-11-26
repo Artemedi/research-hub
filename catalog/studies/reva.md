@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [reva-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.11209;v1).
+- [reva-wiki-pg-frozen-span-views-20261126](../../reviews/reva/2026-11-26-wiki-pg-frozen-span-views.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2609.11209;v1).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- reva-wiki-pg-frozen-span-views-20261126-lab: SYNTHETIC / OBSERVED. Two matching 50-case repeats. Saved scores gained 20 routine hits and lost 20 exception hits; unscored and updated sources used lexical fallback. Artificial fixtures and a one-span limit. No attention-based compression, tokenizer budget or production usage measured. [Артефакт](../../experiments/reva/2026-11-26-wiki-pg-frozen-span-views-protocol.md) · [Артефакт](../../experiments/reva/wiki-pg-frozen-span-views.py) · [Артефакт](../../data/results/reva/2026-11-26-wiki-pg-frozen-span-views.json)
 
 ## Ссылки из исходной карточки
 

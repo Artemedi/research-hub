@@ -3407,6 +3407,34 @@
       "title": "ReCAP — bounded context recovery results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/reva/2026-11-26-wiki-pg-frozen-span-views.md",
+      "title": "REVA — frozen span rankings in Wiki_PG",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reva/2026-11-26-wiki-pg-frozen-span-views-protocol.md",
+      "title": "REVA — predeclared span reuse protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/reva/wiki-pg-frozen-span-views.py",
+      "title": "REVA — Wiki_PG frozen span ranking replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/reva/2026-11-26-wiki-pg-frozen-span-views.json",
+      "title": "REVA — held-out ranking and fallback results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

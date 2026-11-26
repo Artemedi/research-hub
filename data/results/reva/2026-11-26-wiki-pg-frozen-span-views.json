@@ -1,0 +1,458 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 2,
+  "view_spans": 1,
+  "status": "OBSERVED",
+  "fixtures": [
+    {
+      "fixture": 2,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 4,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 11,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 14,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 19,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 23,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 39,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 47,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 53,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    },
+    {
+      "fixture": 87,
+      "cases": [
+        {
+          "case": "frequent",
+          "first_span_hit": false,
+          "lexical_hit": false,
+          "reused_scores_hit": true,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_with_common",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": false,
+          "policy": "prior_scores",
+          "selected_views_verified": true
+        },
+        {
+          "case": "rare_only",
+          "first_span_hit": true,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "unscored_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        },
+        {
+          "case": "revised_source",
+          "first_span_hit": false,
+          "lexical_hit": true,
+          "reused_scores_hit": true,
+          "policy": "lexical_fallback",
+          "selected_views_verified": true
+        }
+      ]
+    }
+  ]
+}
