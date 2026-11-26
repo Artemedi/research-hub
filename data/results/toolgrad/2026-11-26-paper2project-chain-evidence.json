@@ -1,0 +1,30 @@
+{
+  "revision": "c3bbe09bddf54b0efdcc0da1f17e1446dd35a4fd",
+  "repeat_count": 2,
+  "chains_per_repeat": 100,
+  "cases_per_repeat": 500,
+  "status": "PASS",
+  "accepted_per_repeat": {
+    "success_flag": {
+      "exact": 100,
+      "omitted_publish": 100,
+      "reordered": 100,
+      "wrong_scope": 100,
+      "redundant_publish": 100
+    },
+    "terminal_state": {
+      "exact": 100,
+      "omitted_publish": 0,
+      "reordered": 0,
+      "wrong_scope": 0,
+      "redundant_publish": 100
+    },
+    "state_and_trace": {
+      "exact": 100,
+      "omitted_publish": 0,
+      "reordered": 0,
+      "wrong_scope": 0,
+      "redundant_publish": 0
+    }
+  }
+}

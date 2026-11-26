@@ -198,6 +198,8 @@
 - [static-library-hallucinations/2026-11-25-paper2project-pyright-ab.py](static-library-hallucinations/2026-11-25-paper2project-pyright-ab.py)
 - [static-library-hallucinations/2026-11-25-protocol.md](static-library-hallucinations/2026-11-25-protocol.md)
 - [tests/test_drag_evidence_gate.py](tests/test_drag_evidence_gate.py)
+- [toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md](toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md)
+- [toolgrad/paper2project-chain-evidence.py](toolgrad/paper2project-chain-evidence.py)
 - [understand-anything/2026-11-08-viewer-symlink-probe.mjs](understand-anything/2026-11-08-viewer-symlink-probe.mjs)
 - [youtube-skills/2026-11-07-pinned-provider-boundary.py](youtube-skills/2026-11-07-pinned-provider-boundary.py)
 - [youtube-skills/2026-11-07-provider-boundary-oracle.py](youtube-skills/2026-11-07-provider-boundary-oracle.py)

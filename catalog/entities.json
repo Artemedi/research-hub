@@ -4571,6 +4571,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic Markdown warning and source-scope test. No model judgment, general Markdown parser or real-corpus validation.",
       "supersedes": null
+    },
+    {
+      "id": "toolgrad-paper2project-chain-evidence-20261126",
+      "study_ids": ["toolgrad"],
+      "version_ids": ["toolgrad-version"],
+      "date": "2026-11-26",
+      "document": "reviews/toolgrad/2026-11-26-paper2project-chain-evidence.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Artificial chain data and native comparison, without author generation, tool execution through Paper2Project or production measurements.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5356,6 +5366,20 @@
         "experiments/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues-protocol.md",
         "experiments/silent-cue-loss/wiki-pg-markdown-cues.py",
         "data/results/silent-cue-loss/2026-11-26-wiki-pg-markdown-cues.json"
+      ]
+    },
+    {
+      "id": "toolgrad-paper2project-chain-evidence-20261126-lab",
+      "study_ids": ["toolgrad"],
+      "review_id": "toolgrad-paper2project-chain-evidence-20261126",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching 500-case repeats. Exact state catches 600 altered outcomes; exact trace catches 200 extra steps with unchanged state.",
+      "limitations": "No learned chain generation, external tools or independently attested third-party traces.",
+      "artifacts": [
+        "experiments/toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md",
+        "experiments/toolgrad/paper2project-chain-evidence.py",
+        "data/results/toolgrad/2026-11-26-paper2project-chain-evidence.json"
       ]
     }
   ],

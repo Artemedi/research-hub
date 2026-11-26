@@ -3463,6 +3463,34 @@
       "title": "Silent Cue Loss — Wiki_PG warning recall results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/toolgrad/2026-11-26-paper2project-chain-evidence.md",
+      "title": "ToolGrad — Paper2Project chain state and trace evidence",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md",
+      "title": "ToolGrad — independent terminal and trace protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/toolgrad/paper2project-chain-evidence.py",
+      "title": "ToolGrad — synthetic chain evidence replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/toolgrad/2026-11-26-paper2project-chain-evidence.json",
+      "title": "ToolGrad — terminal state and trace results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

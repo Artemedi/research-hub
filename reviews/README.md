@@ -133,6 +133,7 @@
 | [Tencent TeamAI CLI — исходники и расхождение форка](tencent-teamai-cli/2026-11-04.md) | 2026-11-04 |
 | [BK-002 TeamAI CLI independent distribution and scope A/B](tencent-teamai-cli/2026-11-06-distribution-ab.md) | 2026-11-06 |
 | [ToolGrad BK-005 original code and local chain-first DFS experiment](toolgrad/2026-11-06-chain-validation-ab.md) | 2026-11-06 |
+| [ToolGrad — Paper2Project chain state and trace evidence](toolgrad/2026-11-26-paper2project-chain-evidence.md) | 2026-11-26 |
 | [TufaZip — complete engineering source and project-fit review](tufazip/2026-11-21.md) | 2026-11-21 |
 | [Understand Anything — граф и SQL parser](understand-anything/2026-11-04.md) | 2026-11-04 |
 | [Understand Anything — bounded MCP HEAD and viewer security review](understand-anything/2026-11-08-mcp-head-security.md) | 2026-11-08 |

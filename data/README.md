@@ -159,6 +159,7 @@
 | [data/results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json](results/tencent-teamai-cli/2026-11-06-dependency-lock-rewrite.json) | Результат ограниченной проверки |
 | [data/results/tencent-teamai-cli/2026-11-06-distribution-ab.json](results/tencent-teamai-cli/2026-11-06-distribution-ab.json) | Результат ограниченной проверки |
 | [data/results/toolgrad/2026-11-06-chain-validation-ab.json](results/toolgrad/2026-11-06-chain-validation-ab.json) | Результат ограниченной проверки |
+| [data/results/toolgrad/2026-11-26-paper2project-chain-evidence.json](results/toolgrad/2026-11-26-paper2project-chain-evidence.json) | Результат ограниченной проверки |
 | [data/results/understand-anything/2026-11-08-mcp-head-security.json](results/understand-anything/2026-11-08-mcp-head-security.json) | Результат ограниченной проверки |
 | [data/results/vercel-agent-desktop/2026-11-05.json](results/vercel-agent-desktop/2026-11-05.json) | Результат ограниченной проверки |
 | [data/results/youtube-skills/2026-11-07-provider-boundary-oracle.json](results/youtube-skills/2026-11-07-provider-boundary-oracle.json) | Результат ограниченной проверки |

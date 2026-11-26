@@ -22,6 +22,7 @@
 
 - [toolgrad-review](../../portfolio/2026-09-03--2026-09-15/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [ACL-2026-Findings](https://aclanthology.org/2026.findings-acl.950/).
 - [toolgrad-bk005-source-proxy-20261106](../../reviews/toolgrad/2026-11-06-chain-validation-ab.md), 2026-11-06; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [ACL-2026-Findings](https://aclanthology.org/2026.findings-acl.950/), [c9544f842aacc13b5e44d5833fcc5dc4b86c5161](https://github.com/zhongyi-zhou/toolgrad).
+- [toolgrad-paper2project-chain-evidence-20261126](../../reviews/toolgrad/2026-11-26-paper2project-chain-evidence.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [ACL-2026-Findings](https://aclanthology.org/2026.findings-acl.950/).
 
 ## Применимость к проектам
 
@@ -34,6 +35,7 @@
 ## Эксперименты
 
 - toolgrad-bk005-chain-state-oracle-20261106: SYNTHETIC / OBSERVED. Source-backed Pydantic workflow updater and API response validator executed on 5 seeds x 100 tasks over 12 synthetic stateful APIs; chain-first and local bounded DFS both 500/500; 100 impossible targets rejected; 500 truncated-chain oracle mutations rejected; original validator 10/10 benign error_count:0 false negatives. No Gemini / model API / ToolBench / original DFS / SFT / BFCL. Answer-first always generates reachable tasks, DFS written locally; 500/500 cannot establish comparative ToolGrad benefit; time CPU RSS not feature-equivalent. [Артефакт](../../reviews/toolgrad/2026-11-06-chain-validation-ab.md) · [Артефакт](../../experiments/2026-11-06-bk005-toolgrad-chain-validation-ab.py) · [Артефакт](../../data/results/toolgrad/2026-11-06-chain-validation-ab.json)
+- toolgrad-paper2project-chain-evidence-20261126-lab: SYNTHETIC / PASS. Two matching 500-case repeats. Exact state catches 600 altered outcomes; exact trace catches 200 extra steps with unchanged state. No learned chain generation, external tools or independently attested third-party traces. [Артефакт](../../experiments/toolgrad/2026-11-26-paper2project-chain-evidence-protocol.md) · [Артефакт](../../experiments/toolgrad/paper2project-chain-evidence.py) · [Артефакт](../../data/results/toolgrad/2026-11-26-paper2project-chain-evidence.json)
 
 ## Ссылки из исходной карточки
 
