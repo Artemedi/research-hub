@@ -47,6 +47,7 @@
 | [data/results/cera-moa/2026-11-08-routing-contract.json](results/cera-moa/2026-11-08-routing-contract.json) | Результат ограниченной проверки |
 | [data/results/chartli/2026-11-07-svg-fixtures.json](results/chartli/2026-11-07-svg-fixtures.json) | Результат ограниченной проверки |
 | [data/results/chartli/2026-11-07-svg-oracle.json](results/chartli/2026-11-07-svg-oracle.json) | Результат ограниченной проверки |
+| [data/results/chartli/2026-11-26-numeric-table-oracle.json](results/chartli/2026-11-26-numeric-table-oracle.json) | Результат ограниченной проверки |
 | [data/results/cursor-token-efficiency/2026-11-07-council-vs-single.json](results/cursor-token-efficiency/2026-11-07-council-vs-single.json) | Результат ограниченной проверки |
 | [data/results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json](results/database-agent-observability/2026-11-26-wiki-pg-counter-evidence.json) | Результат ограниченной проверки |
 | [data/results/decision-geometry-harness/2026-11-07-bandit-oracle.json](results/decision-geometry-harness/2026-11-07-bandit-oracle.json) | Результат ограниченной проверки |

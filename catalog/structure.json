@@ -3967,6 +3967,41 @@
       "title": "BIRD-RL — PostgreSQL isolation results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/chartli/2026-11-26-numeric-table-oracle.md",
+      "title": "Chartli — numeric table comparison review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/chartli/2026-11-26-numeric-table-oracle-protocol.md",
+      "title": "Chartli — numeric table comparison protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/chartli/numeric-table-oracle.py",
+      "title": "Chartli — independent numeric table oracle",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/chartli/render-numeric-fixtures.mjs",
+      "title": "Chartli — pinned SVG numeric fixture runner",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/chartli/2026-11-26-numeric-table-oracle.json",
+      "title": "Chartli — numeric table comparison results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

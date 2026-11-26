@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [chartli-review](../../reviews/chartli/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [3b39b97aeb564646437b2b7501b60541994d7575](https://github.com/ahmadawais/chartli/tree/3b39b97aeb564646437b2b7501b60541994d7575).
+- [chartli-numeric-table-oracle-20261126](../../reviews/chartli/2026-11-26-numeric-table-oracle.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [3b39b97aeb564646437b2b7501b60541994d7575](https://github.com/ahmadawais/chartli/tree/3b39b97aeb564646437b2b7501b60541994d7575).
 - [Chartli pinned TS SVG renderer and independent XML plus finite-geometry audit](../../reviews/chartli/2026-11-07-svg-validation.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- chartli-numeric-table-oracle-20261126-lab: SYNTHETIC / OBSERVED. Six tables in three repeats checked numeric spacing and shared scale, missing observations and rounded labels. Regular seconds and exact microseconds matched the oracle. Authored small samples in the original line SVG path. No CLI testing, production exporter, browser, or throughput measurement. [Артефакт](../../experiments/chartli/2026-11-26-numeric-table-oracle-protocol.md) · [Артефакт](../../experiments/chartli/numeric-table-oracle.py) · [Артефакт](../../experiments/chartli/render-numeric-fixtures.mjs) · [Артефакт](../../data/results/chartli/2026-11-26-numeric-table-oracle.json)
 
 ## Ссылки из исходной карточки
 

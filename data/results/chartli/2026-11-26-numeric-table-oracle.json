@@ -1,0 +1,453 @@
+{
+  "source_commit": "3b39b97aeb564646437b2b7501b60541994d7575",
+  "repetitions": 3,
+  "node": "v26.13.1",
+  "cases": [
+    {
+      "id": "regular_seconds",
+      "input_table": {
+        "x_seconds": [
+          0,
+          10,
+          20
+        ],
+        "duration_seconds": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      "render_input_rows": [
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ]
+      ],
+      "axes": [
+        "Offset (s)",
+        "Duration (s)"
+      ],
+      "points": [
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            82
+          ],
+          [
+            376,
+            22
+          ]
+        ]
+      ],
+      "labels": [
+        "1",
+        "3",
+        "5"
+      ],
+      "y_ticks": [
+        "5",
+        "3",
+        "1"
+      ],
+      "errors": [],
+      "presentation": "chart_and_source_table",
+      "svg_sha256": "dd0a8d76dab22fae8696ad8f591540ec73c19bcdbb253c5716309033f8ced7fd"
+    },
+    {
+      "id": "irregular_seconds",
+      "input_table": {
+        "x_seconds": [
+          0,
+          10,
+          40
+        ],
+        "duration_seconds": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      "render_input_rows": [
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ]
+      ],
+      "axes": [
+        "Offset (s)",
+        "Duration (s)"
+      ],
+      "points": [
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            82
+          ],
+          [
+            376,
+            22
+          ]
+        ]
+      ],
+      "labels": [
+        "1",
+        "3",
+        "5"
+      ],
+      "y_ticks": [
+        "5",
+        "3",
+        "1"
+      ],
+      "errors": [
+        "x_spacing"
+      ],
+      "presentation": "source_table_only",
+      "svg_sha256": "d0f73af1cdb866c0644f966dabb5a52f65f20f583ef42b47e102e58afe632a8e"
+    },
+    {
+      "id": "different_series_same_unit",
+      "input_table": {
+        "x_seconds": [
+          0,
+          10,
+          20
+        ],
+        "duration_seconds": [
+          [
+            0,
+            10
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            20,
+            30
+          ]
+        ]
+      },
+      "render_input_rows": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          20,
+          30
+        ]
+      ],
+      "axes": [
+        "Offset (s)",
+        "Duration (s)"
+      ],
+      "points": [
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            82
+          ],
+          [
+            376,
+            22
+          ]
+        ],
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            142
+          ],
+          [
+            376,
+            22
+          ]
+        ]
+      ],
+      "labels": [
+        "0",
+        "10",
+        "20",
+        "10",
+        "10",
+        "30"
+      ],
+      "y_ticks": [
+        "1.00",
+        "0.50",
+        "0.00"
+      ],
+      "errors": [
+        "shared_y_geometry",
+        "numeric_y_ticks"
+      ],
+      "presentation": "source_table_only",
+      "svg_sha256": "889ff182a7ffad4fa3de7764bb4b9d9cdae18474650b05cee6d1dfedbc9936c0"
+    },
+    {
+      "id": "omitted_series_sample",
+      "input_table": {
+        "x_seconds": [
+          0,
+          10,
+          20
+        ],
+        "duration_seconds": [
+          [
+            0,
+            10
+          ],
+          [
+            10,
+            null
+          ],
+          [
+            20,
+            30
+          ]
+        ]
+      },
+      "render_input_rows": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          null
+        ],
+        [
+          20,
+          30
+        ]
+      ],
+      "axes": [
+        "Offset (s)",
+        "Duration (s)"
+      ],
+      "points": [
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            97
+          ],
+          [
+            376,
+            52
+          ]
+        ],
+        [
+          [
+            56,
+            102
+          ],
+          [
+            216,
+            142
+          ],
+          [
+            376,
+            22
+          ]
+        ]
+      ],
+      "labels": [
+        "0",
+        "10",
+        "20",
+        "10",
+        "0",
+        "30"
+      ],
+      "y_ticks": [
+        "1.00",
+        "0.50",
+        "0.00"
+      ],
+      "errors": [
+        "missing_sample_plotted"
+      ],
+      "presentation": "source_table_only",
+      "svg_sha256": "272533b3d72343a66c6b4d04b7ec3c5daf60dd17d132d1bbd9c7e3b3047e3072"
+    },
+    {
+      "id": "rounded_seconds",
+      "input_table": {
+        "x_seconds": [
+          0,
+          10,
+          20
+        ],
+        "duration_seconds": [
+          [
+            0.0001
+          ],
+          [
+            0.0002
+          ],
+          [
+            0.0003
+          ]
+        ]
+      },
+      "render_input_rows": [
+        [
+          0.0001
+        ],
+        [
+          0.0002
+        ],
+        [
+          0.0003
+        ]
+      ],
+      "axes": [
+        "Offset (s)",
+        "Duration (s)"
+      ],
+      "points": [
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            82
+          ],
+          [
+            376,
+            22
+          ]
+        ]
+      ],
+      "labels": [
+        "0",
+        "0",
+        "0"
+      ],
+      "y_ticks": [
+        "0",
+        "0",
+        "0"
+      ],
+      "errors": [
+        "numeric_y_ticks",
+        "duration_labels"
+      ],
+      "presentation": "source_table_only",
+      "svg_sha256": "72e01c0f2e235dab3d3bf10809c4dbe94ebc04709898e04ca1fe544d2dc4d594"
+    },
+    {
+      "id": "exact_microseconds",
+      "input_table": {
+        "x_seconds": [
+          0,
+          10,
+          20
+        ],
+        "duration_seconds": [
+          [
+            0.0001
+          ],
+          [
+            0.0002
+          ],
+          [
+            0.0003
+          ]
+        ]
+      },
+      "render_input_rows": [
+        [
+          100
+        ],
+        [
+          200
+        ],
+        [
+          300
+        ]
+      ],
+      "axes": [
+        "Offset (s)",
+        "Duration (\u00b5s)"
+      ],
+      "points": [
+        [
+          [
+            56,
+            142
+          ],
+          [
+            216,
+            82
+          ],
+          [
+            376,
+            22
+          ]
+        ]
+      ],
+      "labels": [
+        "100",
+        "200",
+        "300"
+      ],
+      "y_ticks": [
+        "300",
+        "200",
+        "100"
+      ],
+      "errors": [],
+      "presentation": "chart_and_source_table",
+      "svg_sha256": "b21fa20659febdbc7d31e30911a5a154ef138307d58e898e0605e0861673bc23"
+    }
+  ]
+}
