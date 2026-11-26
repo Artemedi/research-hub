@@ -1,0 +1,325 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 2,
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": 2,
+      "cases": [
+        {
+          "case": "canonical",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "native_host_alias",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "business_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "other_host_same_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "ambiguous_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "ambiguous_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "unknown_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "unknown_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "missing_without_fallback",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        },
+        {
+          "case": "wrong_port",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        }
+      ]
+    },
+    {
+      "fixture": 4,
+      "cases": [
+        {
+          "case": "canonical",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "native_host_alias",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "business_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "other_host_same_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "ambiguous_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "ambiguous_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "unknown_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "unknown_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "missing_without_fallback",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        },
+        {
+          "case": "wrong_port",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        }
+      ]
+    },
+    {
+      "fixture": 11,
+      "cases": [
+        {
+          "case": "canonical",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "native_host_alias",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "business_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "other_host_same_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "ambiguous_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "ambiguous_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "unknown_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "unknown_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "missing_without_fallback",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        },
+        {
+          "case": "wrong_port",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        }
+      ]
+    },
+    {
+      "fixture": 14,
+      "cases": [
+        {
+          "case": "canonical",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "native_host_alias",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "business_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "other_host_same_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "ambiguous_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "ambiguous_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "unknown_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "unknown_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "missing_without_fallback",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        },
+        {
+          "case": "wrong_port",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        }
+      ]
+    },
+    {
+      "fixture": 19,
+      "cases": [
+        {
+          "case": "canonical",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "native_host_alias",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "business_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "other_host_same_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "ambiguous_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "ambiguous_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "unknown_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "unknown_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "missing_without_fallback",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        },
+        {
+          "case": "wrong_port",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        }
+      ]
+    },
+    {
+      "fixture": 23,
+      "cases": [
+        {
+          "case": "canonical",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "native_host_alias",
+          "literal_decision": "exact",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "business_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "other_host_same_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "exact",
+          "exact_source_checked": true
+        },
+        {
+          "case": "ambiguous_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "ambiguous_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "unknown_term",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "unknown_term",
+          "exact_source_checked": false
+        },
+        {
+          "case": "missing_without_fallback",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        },
+        {
+          "case": "wrong_port",
+          "literal_decision": "unknown_term",
+          "semantic_decision": "missing",
+          "exact_source_checked": false
+        }
+      ]
+    }
+  ]
+}

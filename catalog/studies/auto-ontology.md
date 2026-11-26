@@ -13,6 +13,7 @@
 ## Версии и история обзоров
 
 - [auto-ontology-20261113](../../reviews/auto-ontology/2026-11-13.md), 2026-11-13; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [fc43a82600e18b19d159c52023f54f5572f537ac](https://github.com/NVIDIA/auto-ontology/tree/fc43a82600e18b19d159c52023f54f5572f537ac).
+- [auto-ontology-wiki-pg-semantic-selectors-20261126](../../reviews/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [fc43a82600e18b19d159c52023f54f5572f537ac](https://github.com/NVIDIA/auto-ontology/tree/fc43a82600e18b19d159c52023f54f5572f537ac).
 
 ## Применимость к проектам
 
@@ -24,7 +25,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- auto-ontology-wiki-pg-semantic-selectors-20261126-lab: SYNTHETIC / PASS. Two matching 48-case repeats. A manual glossary added 24 correct results without cross-host, cross-port or older-snapshot substitution. Fixed synthetic terminology and exact snapshot reads. No ontology generation, SQL generation or performance measurements. [Артефакт](../../experiments/auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md) · [Артефакт](../../experiments/auto-ontology/wiki-pg-semantic-selectors.py) · [Артефакт](../../data/results/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.json)
 
 ## Ссылки из исходной карточки
 

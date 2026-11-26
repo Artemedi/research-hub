@@ -3547,6 +3547,34 @@
       "title": "Yahont CE — source identity results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.md",
+      "title": "Auto-Ontology — Wiki_PG semantic selectors",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md",
+      "title": "Auto-Ontology — Wiki_PG terminology protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/auto-ontology/wiki-pg-semantic-selectors.py",
+      "title": "Auto-Ontology — scoped snapshot selector replay",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.json",
+      "title": "Auto-Ontology — semantic selector results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

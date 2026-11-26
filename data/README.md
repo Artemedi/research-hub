@@ -34,6 +34,7 @@
 | [data/results/alphaxiv-openresearch/2026-11-06-provenance-ab.json](results/alphaxiv-openresearch/2026-11-06-provenance-ab.json) | Результат ограниченной проверки |
 | [data/results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json](results/alphaxiv-openresearch/2026-11-25-openresearch-source-snapshot.json) | Результат ограниченной проверки |
 | [data/results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json](results/alphaxiv-openresearch/2026-11-25-paper2project-snapshot-portability.json) | Результат ограниченной проверки |
+| [data/results/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.json](results/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-04.json](results/benchshield/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-25-paper2project-report-replay.json](results/benchshield/2026-11-25-paper2project-report-replay.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-independent-oracle.json](results/cera-moa/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |

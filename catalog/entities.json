@@ -4601,6 +4601,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pure normalization helper and native Wiki_PG lexical index on synthetic sources. No Yahont indexing, deployment or ACL measurement.",
       "supersedes": null
+    },
+    {
+      "id": "auto-ontology-wiki-pg-semantic-selectors-20261126",
+      "study_ids": ["auto-ontology"],
+      "version_ids": ["auto-ontology-fc43a826"],
+      "date": "2026-11-26",
+      "document": "reviews/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Manual terminology and native Wiki_PG snapshot queries. No NVIDIA runtime, generated SQL or production data.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5428,6 +5438,20 @@
         "experiments/yahont-ce/2026-11-26-wiki-pg-source-identity-protocol.md",
         "experiments/yahont-ce/wiki-pg-source-identity.py",
         "data/results/yahont-ce/2026-11-26-wiki-pg-source-identity.json"
+      ]
+    },
+    {
+      "id": "auto-ontology-wiki-pg-semantic-selectors-20261126-lab",
+      "study_ids": ["auto-ontology"],
+      "review_id": "auto-ontology-wiki-pg-semantic-selectors-20261126",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Two matching 48-case repeats. A manual glossary added 24 correct results without cross-host, cross-port or older-snapshot substitution.",
+      "limitations": "Fixed synthetic terminology and exact snapshot reads. No ontology generation, SQL generation or performance measurements.",
+      "artifacts": [
+        "experiments/auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md",
+        "experiments/auto-ontology/wiki-pg-semantic-selectors.py",
+        "data/results/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.json"
       ]
     }
   ],

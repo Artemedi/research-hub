@@ -62,7 +62,7 @@
 | [Microsoft Skill Recorder — запись действий и создание навыка](microsoft-skill-recorder.md) | [2026-11-04 / microsoft-skill-recorder-review](../reviews/microsoft-skill-recorder/2026-11-04.md) |
 | [MobileProbe — trajectory-aware injection testing for Android GUI agents](mobileprobe.md) | [2026-11-14 / mobileprobe-fulltext-20261114](../reviews/mobileprobe/2026-11-14.md) |
 | [NovaFabric — tamper-evident agent run evidence](novafabric.md) | [2026-11-03 / novafabric-paper-review](../portfolio/2026-09-03--2026-09-15/review.md) · [2026-11-04 / novafabric-review](../reviews/novafabric/2026-11-04.md) |
-| [NVIDIA Auto Ontology — семантический слой и text-to-SQL](auto-ontology.md) | [2026-11-13 / auto-ontology-20261113](../reviews/auto-ontology/2026-11-13.md) |
+| [NVIDIA Auto Ontology — семантический слой и text-to-SQL](auto-ontology.md) | [2026-11-13 / auto-ontology-20261113](../reviews/auto-ontology/2026-11-13.md) · [2026-11-26 / auto-ontology-wiki-pg-semantic-selectors-20261126](../reviews/auto-ontology/2026-11-26-wiki-pg-semantic-selectors.md) |
 | [Open Steps — понятные статусы и навыки агентной разработки](open-steps.md) | [2026-11-04 / open-steps-review](../reviews/open-steps/2026-11-04.md) |
 | [PackHallu](package-hallucination-rule-files.md) | [2026-11-03 / package-hallucination-rule-files-review](../portfolio/2026-10-06--2026-10-12/review.md) |
 | [Paper2Agent — Research Papers as Reliable AI Agents](paper2agent.md) | [2026-09-21 / paper2agent-review](../archive/dsh/knowledge/research/2026-09-21-research-review-proposal.md) · [2026-11-05 / fulltext-paper2agent-2026-11-05](../reviews/paper2agent/2026-11-05-full-text.md) · [2026-11-25 / paper2agent-qualified-handoff-20261125](../reviews/paper2agent/2026-11-25-paper2project-qualified-handoff.md) |
