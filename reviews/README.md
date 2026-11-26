@@ -45,6 +45,7 @@
 | [Behavior Beyond Text — observed effect review](behavior-beyond-text/2026-11-26-effect-oracle.md) | 2026-11-26 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
 | [BenchShield — Paper2Project report replay](benchshield/2026-11-25-paper2project-report-replay.md) | 2026-11-25 |
+| [BIRD-RL — PostgreSQL isolation review](bird-rl/2026-11-26-postgres-isolation.md) | 2026-11-26 |
 | [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
 | [CERA-MoA — routing contract и актуальная оценка применимости](cera-moa/2026-11-08-routing-contract.md) | 2026-11-08 |
 | [Chartli — parser и отображение](chartli/2026-11-04.md) | 2026-11-04 |

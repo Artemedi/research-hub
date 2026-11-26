@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [bird-rl-review](../../studies/bird-rl.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.29426vv1).
+- [bird-rl-postgres-isolation-20261126](../../reviews/bird-rl/2026-11-26-postgres-isolation.md), 2026-11-26; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arXiv:2610.29426v1](https://arxiv.org/pdf/2610.29426v1).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- bird-rl-postgres-isolation-20261126-lab: SYNTHETIC / OBSERVED. Two three-trajectory runs per arm confirmed clean starts in separate clusters and template clones. Rollback reverted rows and DDL but retained sequence advancement. One serial toy workload on temporary filesystems. No physical IOPS, concurrent cases, production database, or agent. [Артефакт](../../experiments/bird-rl/2026-11-26-postgres-isolation-protocol.md) · [Артефакт](../../experiments/bird-rl/postgres-isolation.py) · [Артефакт](../../data/results/bird-rl/2026-11-26-postgres-isolation.json)
 
 ## Ссылки из исходной карточки
 

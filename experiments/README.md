@@ -66,6 +66,8 @@
 - [behavior-beyond-text/effect-oracle.py](behavior-beyond-text/effect-oracle.py)
 - [benchshield/2026-11-25-paper2project-protocol.md](benchshield/2026-11-25-paper2project-protocol.md)
 - [benchshield/paper2project-report-replay.py](benchshield/paper2project-report-replay.py)
+- [bird-rl/2026-11-26-postgres-isolation-protocol.md](bird-rl/2026-11-26-postgres-isolation-protocol.md)
+- [bird-rl/postgres-isolation.py](bird-rl/postgres-isolation.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)
 - [bk011-simurg/check-fixture.py](bk011-simurg/check-fixture.py)
 - [bk019-skill-doctor/attribution-fixture.py](bk019-skill-doctor/attribution-fixture.py)

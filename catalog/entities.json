@@ -1586,6 +1586,13 @@
       "unknown_reason": null
     },
     {
+      "id": "bird-rl-arxiv-2610-29426v1",
+      "study_id": "bird-rl",
+      "ref": "arXiv:2610.29426v1",
+      "url": "https://arxiv.org/pdf/2610.29426v1",
+      "unknown_reason": null
+    },
+    {
       "id": "cera-moa-version",
       "study_id": "cera-moa",
       "ref": null,
@@ -4759,6 +4766,16 @@
       "source_coverage": "FULL_TEXT_REVIEWED",
       "limitations": "Independent fixture with scripted replies and a static DSH source read. No model runs, production risk estimate or target deployment.",
       "supersedes": null
+    },
+    {
+      "id": "bird-rl-postgres-isolation-20261126",
+      "study_ids": ["bird-rl"],
+      "version_ids": ["bird-rl-arxiv-2610-29426v1"],
+      "date": "2026-11-26",
+      "document": "reviews/bird-rl/2026-11-26-postgres-isolation.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Independent PostgreSQL 18.7 experiment inspired by BIRD-RL. Does not rerun the authors' SQLite implementation, models, or benchmark.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5742,6 +5759,16 @@
       "scope": "Thirty paired toy requests separated refusal text, recorded requests, dispatch and observed state. The authorization control blocked incompatible writes while retaining twelve expected permitted effects.",
       "limitations": "Scripted in-memory writes. No harmful work, live model, external tool calls or verification of a target runtime.",
       "artifacts": ["experiments/behavior-beyond-text/2026-11-26-effect-oracle-protocol.md", "experiments/behavior-beyond-text/effect-oracle.py", "data/results/behavior-beyond-text/2026-11-26-effect-oracle.json"]
+    },
+    {
+      "id": "bird-rl-postgres-isolation-20261126-lab",
+      "study_ids": ["bird-rl"],
+      "review_id": "bird-rl-postgres-isolation-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Two three-trajectory runs per arm confirmed clean starts in separate clusters and template clones. Rollback reverted rows and DDL but retained sequence advancement.",
+      "limitations": "One serial toy workload on temporary filesystems. No physical IOPS, concurrent cases, production database, or agent.",
+      "artifacts": ["experiments/bird-rl/2026-11-26-postgres-isolation-protocol.md", "experiments/bird-rl/postgres-isolation.py", "data/results/bird-rl/2026-11-26-postgres-isolation.json"]
     }
   ],
   "projects": [

@@ -3939,6 +3939,34 @@
       "title": "Behavior Beyond Text — effect observation results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/bird-rl/2026-11-26-postgres-isolation.md",
+      "title": "BIRD-RL — PostgreSQL isolation review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/bird-rl/2026-11-26-postgres-isolation-protocol.md",
+      "title": "BIRD-RL — PostgreSQL isolation protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/bird-rl/postgres-isolation.py",
+      "title": "BIRD-RL — offline PostgreSQL isolation comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/bird-rl/2026-11-26-postgres-isolation.json",
+      "title": "BIRD-RL — PostgreSQL isolation results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

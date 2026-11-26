@@ -42,6 +42,7 @@
 | [data/results/behavior-beyond-text/2026-11-26-effect-oracle.json](results/behavior-beyond-text/2026-11-26-effect-oracle.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-04.json](results/benchshield/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/benchshield/2026-11-25-paper2project-report-replay.json](results/benchshield/2026-11-25-paper2project-report-replay.json) | Результат ограниченной проверки |
+| [data/results/bird-rl/2026-11-26-postgres-isolation.json](results/bird-rl/2026-11-26-postgres-isolation.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-independent-oracle.json](results/cera-moa/2026-11-08-independent-oracle.json) | Результат ограниченной проверки |
 | [data/results/cera-moa/2026-11-08-routing-contract.json](results/cera-moa/2026-11-08-routing-contract.json) | Результат ограниченной проверки |
 | [data/results/chartli/2026-11-07-svg-fixtures.json](results/chartli/2026-11-07-svg-fixtures.json) | Результат ограниченной проверки |

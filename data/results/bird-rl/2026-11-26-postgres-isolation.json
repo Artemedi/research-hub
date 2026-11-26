@@ -1,0 +1,987 @@
+{
+  "image": "postgres@sha256:c699303802144847d238196173655dbbecf7a96aeca1565f2b02eb671a1f0b6b",
+  "postgres_version": "18.7",
+  "trajectories_per_arm": 3,
+  "seed_rows": 20000,
+  "clone_template_unchanged": true,
+  "retained_clone_allocated_bytes": 77725696,
+  "summary": {
+    "fresh_cluster": {
+      "initial_state_matches": 3,
+      "obtained_sequence": [
+        1,
+        1,
+        1
+      ],
+      "setup_ms_median": 2140.53,
+      "workload_ms_median": 149.97,
+      "workload_wal_bytes_median": 8624
+    },
+    "template_clone": {
+      "initial_state_matches": 3,
+      "obtained_sequence": [
+        1,
+        1,
+        1
+      ],
+      "setup_ms_median": 178.38,
+      "workload_ms_median": 150.42,
+      "workload_wal_bytes_median": 8624
+    },
+    "rollback_shared": {
+      "initial_state_matches": 1,
+      "obtained_sequence": [
+        1,
+        2,
+        3
+      ],
+      "setup_ms_median": 0,
+      "workload_ms_median": 151.32,
+      "workload_wal_bytes_median": 8184
+    }
+  },
+  "samples": {
+    "fresh_cluster": [
+      {
+        "trajectory": 1,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 10,
+          "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 10,
+          "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 2605.26,
+        "workload_ms": 147.94,
+        "setup_delta": {
+          "reads": 355,
+          "writes": 644,
+          "extends": 170,
+          "wal_bytes": 7323240
+        },
+        "workload_delta": {
+          "reads": 0,
+          "writes": 1,
+          "extends": 1,
+          "wal_bytes": 6544
+        },
+        "database_bytes": 9369279,
+        "cgroup_memory_bytes": 118960128,
+        "pgdata_allocated_bytes": 44572672
+      },
+      {
+        "trajectory": 2,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 20,
+          "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 20,
+          "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 2127.9,
+        "workload_ms": 149.97,
+        "setup_delta": {
+          "reads": 355,
+          "writes": 644,
+          "extends": 170,
+          "wal_bytes": 7323240
+        },
+        "workload_delta": {
+          "reads": 0,
+          "writes": 1,
+          "extends": 1,
+          "wal_bytes": 8624
+        },
+        "database_bytes": 9369279,
+        "cgroup_memory_bytes": 84606976,
+        "pgdata_allocated_bytes": 44572672
+      },
+      {
+        "trajectory": 3,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 30,
+          "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 30,
+          "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 2140.53,
+        "workload_ms": 153.16,
+        "setup_delta": {
+          "reads": 355,
+          "writes": 561,
+          "extends": 170,
+          "wal_bytes": 7323240
+        },
+        "workload_delta": {
+          "reads": 0,
+          "writes": 1,
+          "extends": 1,
+          "wal_bytes": 10728
+        },
+        "database_bytes": 9369279,
+        "cgroup_memory_bytes": 84824064,
+        "pgdata_allocated_bytes": 44572672
+      }
+    ],
+    "template_clone": [
+      {
+        "trajectory": 1,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 10,
+          "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 10,
+          "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 193.95,
+        "workload_ms": 154.39,
+        "setup_delta": {
+          "reads": 64,
+          "writes": 591,
+          "extends": 0,
+          "wal_bytes": 5852136
+        },
+        "workload_delta": {
+          "reads": 0,
+          "writes": 1,
+          "extends": 1,
+          "wal_bytes": 6544
+        },
+        "database_bytes": 9369279,
+        "cgroup_memory_bytes": 113946624,
+        "pgdata_allocated_bytes": 63586304
+      },
+      {
+        "trajectory": 2,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 20,
+          "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 20,
+          "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 154.14,
+        "workload_ms": 150.42,
+        "setup_delta": {
+          "reads": 0,
+          "writes": 704,
+          "extends": 0,
+          "wal_bytes": 5852096
+        },
+        "workload_delta": {
+          "reads": 0,
+          "writes": 1,
+          "extends": 1,
+          "wal_bytes": 8624
+        },
+        "database_bytes": 9369279,
+        "cgroup_memory_bytes": 127516672,
+        "pgdata_allocated_bytes": 70213632
+      },
+      {
+        "trajectory": 3,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 30,
+          "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 30,
+          "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 178.38,
+        "workload_ms": 146.17,
+        "setup_delta": {
+          "reads": 171,
+          "writes": 683,
+          "extends": 0,
+          "wal_bytes": 5852096
+        },
+        "workload_delta": {
+          "reads": 0,
+          "writes": 1,
+          "extends": 1,
+          "wal_bytes": 10728
+        },
+        "database_bytes": 9369279,
+        "cgroup_memory_bytes": 135819264,
+        "pgdata_allocated_bytes": 77725696
+      }
+    ],
+    "rollback_shared": [
+      {
+        "trajectory": 1,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            false
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 10,
+          "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": false
+        },
+        "obtained_sequence": 1,
+        "setup_ms": 0,
+        "workload_ms": 151.32,
+        "setup_delta": null,
+        "workload_delta": {
+          "reads": 63,
+          "writes": 0,
+          "extends": 1,
+          "wal_bytes": 6216
+        },
+        "database_bytes": 9361087,
+        "cgroup_memory_bytes": 85225472,
+        "pgdata_allocated_bytes": 44564480
+      },
+      {
+        "trajectory": 2,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            1,
+            true
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 20,
+          "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+          "sequence": [
+            2,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            2,
+            true
+          ],
+          "marker": false
+        },
+        "obtained_sequence": 2,
+        "setup_ms": 0,
+        "workload_ms": 149.3,
+        "setup_delta": null,
+        "workload_delta": {
+          "reads": 0,
+          "writes": 0,
+          "extends": 1,
+          "wal_bytes": 8184
+        },
+        "database_bytes": 9361087,
+        "cgroup_memory_bytes": 84971520,
+        "pgdata_allocated_bytes": 44564480
+      },
+      {
+        "trajectory": 3,
+        "initial": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            2,
+            true
+          ],
+          "marker": false
+        },
+        "in_transaction": {
+          "rows": 20000,
+          "done": 30,
+          "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+          "sequence": [
+            3,
+            true
+          ],
+          "marker": true
+        },
+        "final": {
+          "rows": 20000,
+          "done": 0,
+          "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+          "sequence": [
+            3,
+            true
+          ],
+          "marker": false
+        },
+        "obtained_sequence": 3,
+        "setup_ms": 0,
+        "workload_ms": 152.35,
+        "setup_delta": null,
+        "workload_delta": {
+          "reads": 0,
+          "writes": 0,
+          "extends": 1,
+          "wal_bytes": 10384
+        },
+        "database_bytes": 9361087,
+        "cgroup_memory_bytes": 84766720,
+        "pgdata_allocated_bytes": 44564480
+      }
+    ]
+  },
+  "independent_repeat": {
+    "state_matches_first_run": true,
+    "clone_template_unchanged": true,
+    "retained_clone_allocated_bytes": 78209024,
+    "summary": {
+      "fresh_cluster": {
+        "initial_state_matches": 3,
+        "obtained_sequence": [
+          1,
+          1,
+          1
+        ],
+        "setup_ms_median": 2281.55,
+        "workload_ms_median": 160.25,
+        "workload_wal_bytes_median": 8624
+      },
+      "template_clone": {
+        "initial_state_matches": 3,
+        "obtained_sequence": [
+          1,
+          1,
+          1
+        ],
+        "setup_ms_median": 195.47,
+        "workload_ms_median": 168.47,
+        "workload_wal_bytes_median": 8624
+      },
+      "rollback_shared": {
+        "initial_state_matches": 1,
+        "obtained_sequence": [
+          1,
+          2,
+          3
+        ],
+        "setup_ms_median": 0,
+        "workload_ms_median": 154.36,
+        "workload_wal_bytes_median": 8184
+      }
+    },
+    "samples": {
+      "fresh_cluster": [
+        {
+          "trajectory": 1,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 10,
+            "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 10,
+            "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 2367.89,
+          "workload_ms": 147.86,
+          "setup_delta": {
+            "reads": 355,
+            "writes": 572,
+            "extends": 170,
+            "wal_bytes": 7323240
+          },
+          "workload_delta": {
+            "reads": 0,
+            "writes": 1,
+            "extends": 1,
+            "wal_bytes": 6544
+          },
+          "database_bytes": 9369279,
+          "cgroup_memory_bytes": 85274624,
+          "pgdata_allocated_bytes": 44572672
+        },
+        {
+          "trajectory": 2,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 20,
+            "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 20,
+            "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 2281.55,
+          "workload_ms": 170.07,
+          "setup_delta": {
+            "reads": 355,
+            "writes": 574,
+            "extends": 170,
+            "wal_bytes": 7323240
+          },
+          "workload_delta": {
+            "reads": 0,
+            "writes": 1,
+            "extends": 1,
+            "wal_bytes": 8624
+          },
+          "database_bytes": 9369279,
+          "cgroup_memory_bytes": 84414464,
+          "pgdata_allocated_bytes": 44572672
+        },
+        {
+          "trajectory": 3,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 30,
+            "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 30,
+            "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 2262.9,
+          "workload_ms": 160.25,
+          "setup_delta": {
+            "reads": 355,
+            "writes": 553,
+            "extends": 170,
+            "wal_bytes": 7323240
+          },
+          "workload_delta": {
+            "reads": 0,
+            "writes": 1,
+            "extends": 1,
+            "wal_bytes": 10728
+          },
+          "database_bytes": 9369279,
+          "cgroup_memory_bytes": 85217280,
+          "pgdata_allocated_bytes": 44572672
+        }
+      ],
+      "template_clone": [
+        {
+          "trajectory": 1,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 10,
+            "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 10,
+            "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 182.84,
+          "workload_ms": 168.47,
+          "setup_delta": {
+            "reads": 64,
+            "writes": 591,
+            "extends": 0,
+            "wal_bytes": 5852136
+          },
+          "workload_delta": {
+            "reads": 0,
+            "writes": 1,
+            "extends": 1,
+            "wal_bytes": 6544
+          },
+          "database_bytes": 9369279,
+          "cgroup_memory_bytes": 114003968,
+          "pgdata_allocated_bytes": 63586304
+        },
+        {
+          "trajectory": 2,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 20,
+            "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 20,
+            "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 222.59,
+          "workload_ms": 168.53,
+          "setup_delta": {
+            "reads": 0,
+            "writes": 704,
+            "extends": 0,
+            "wal_bytes": 5852096
+          },
+          "workload_delta": {
+            "reads": 0,
+            "writes": 1,
+            "extends": 1,
+            "wal_bytes": 8624
+          },
+          "database_bytes": 9369279,
+          "cgroup_memory_bytes": 128524288,
+          "pgdata_allocated_bytes": 70787072
+        },
+        {
+          "trajectory": 3,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 30,
+            "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 30,
+            "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 195.47,
+          "workload_ms": 164.65,
+          "setup_delta": {
+            "reads": 171,
+            "writes": 683,
+            "extends": 0,
+            "wal_bytes": 5852096
+          },
+          "workload_delta": {
+            "reads": 0,
+            "writes": 1,
+            "extends": 1,
+            "wal_bytes": 10728
+          },
+          "database_bytes": 9369279,
+          "cgroup_memory_bytes": 135962624,
+          "pgdata_allocated_bytes": 78209024
+        }
+      ],
+      "rollback_shared": [
+        {
+          "trajectory": 1,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              false
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 10,
+            "table_hash": "f1393c7dd3a286c639ab09db3a0d8e69",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": false
+          },
+          "obtained_sequence": 1,
+          "setup_ms": 0,
+          "workload_ms": 154.36,
+          "setup_delta": null,
+          "workload_delta": {
+            "reads": 63,
+            "writes": 0,
+            "extends": 1,
+            "wal_bytes": 6216
+          },
+          "database_bytes": 9361087,
+          "cgroup_memory_bytes": 84885504,
+          "pgdata_allocated_bytes": 44564480
+        },
+        {
+          "trajectory": 2,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              1,
+              true
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 20,
+            "table_hash": "9aa78b9579c063ea8f73b4bfeb565001",
+            "sequence": [
+              2,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              2,
+              true
+            ],
+            "marker": false
+          },
+          "obtained_sequence": 2,
+          "setup_ms": 0,
+          "workload_ms": 151.69,
+          "setup_delta": null,
+          "workload_delta": {
+            "reads": 0,
+            "writes": 0,
+            "extends": 1,
+            "wal_bytes": 8184
+          },
+          "database_bytes": 9361087,
+          "cgroup_memory_bytes": 85065728,
+          "pgdata_allocated_bytes": 44564480
+        },
+        {
+          "trajectory": 3,
+          "initial": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              2,
+              true
+            ],
+            "marker": false
+          },
+          "in_transaction": {
+            "rows": 20000,
+            "done": 30,
+            "table_hash": "2c1f0cf22519b1fb0de8f70b4d83d07b",
+            "sequence": [
+              3,
+              true
+            ],
+            "marker": true
+          },
+          "final": {
+            "rows": 20000,
+            "done": 0,
+            "table_hash": "b7201406e0e11180b76e69c0caeef2f4",
+            "sequence": [
+              3,
+              true
+            ],
+            "marker": false
+          },
+          "obtained_sequence": 3,
+          "setup_ms": 0,
+          "workload_ms": 155.74,
+          "setup_delta": null,
+          "workload_delta": {
+            "reads": 0,
+            "writes": 0,
+            "extends": 1,
+            "wal_bytes": 10384
+          },
+          "database_bytes": 9361087,
+          "cgroup_memory_bytes": 85053440,
+          "pgdata_allocated_bytes": 44564480
+        }
+      ]
+    }
+  }
+}
