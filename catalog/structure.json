@@ -3911,6 +3911,34 @@
       "title": "Anthropic Agent Automations — source bookmark results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/behavior-beyond-text/2026-11-26-effect-oracle.md",
+      "title": "Behavior Beyond Text — observed effect review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/behavior-beyond-text/2026-11-26-effect-oracle-protocol.md",
+      "title": "Behavior Beyond Text — effect observation protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/behavior-beyond-text/effect-oracle.py",
+      "title": "Behavior Beyond Text — offline effect oracle",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/behavior-beyond-text/2026-11-26-effect-oracle.json",
+      "title": "Behavior Beyond Text — effect observation results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

@@ -1572,6 +1572,13 @@
       "unknown_reason": null
     },
     {
+      "id": "behavior-beyond-text-arxiv-2610-28982v1",
+      "study_id": "behavior-beyond-text",
+      "ref": "arXiv:2610.28982v1",
+      "url": "https://arxiv.org/pdf/2610.28982v1",
+      "unknown_reason": null
+    },
+    {
       "id": "bird-rl-version",
       "study_id": "bird-rl",
       "ref": "arxiv:v1",
@@ -4742,6 +4749,16 @@
       "source_coverage": "PARTIAL_SOURCE_REVIEW",
       "limitations": "Reads the pinned reference instructions; independent fixture models watermark policy without running the reference or target projects.",
       "supersedes": null
+    },
+    {
+      "id": "behavior-beyond-text-effect-oracle-20261126",
+      "study_ids": ["behavior-beyond-text"],
+      "version_ids": ["behavior-beyond-text-arxiv-2610-28982v1"],
+      "date": "2026-11-26",
+      "document": "reviews/behavior-beyond-text/2026-11-26-effect-oracle.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Independent fixture with scripted replies and a static DSH source read. No model runs, production risk estimate or target deployment.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5715,6 +5732,16 @@
       "scope": "Three bookmark policies recovered 4, 5, and 7 of eight authored changes. Unconfirmed publication and dry run left persisted state byte-identical.",
       "limitations": "Single deterministic source timeline and a fake publication service. No external effects, concurrent commits, or project deployment.",
       "artifacts": ["experiments/anthropic-agent-automations/2026-11-26-source-bookmarks-protocol.md", "experiments/anthropic-agent-automations/source-bookmarks.py", "data/results/anthropic-agent-automations/2026-11-26-source-bookmarks.json"]
+    },
+    {
+      "id": "behavior-beyond-text-effect-oracle-20261126-lab",
+      "study_ids": ["behavior-beyond-text"],
+      "review_id": "behavior-beyond-text-effect-oracle-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Thirty paired toy requests separated refusal text, recorded requests, dispatch and observed state. The authorization control blocked incompatible writes while retaining twelve expected permitted effects.",
+      "limitations": "Scripted in-memory writes. No harmful work, live model, external tool calls or verification of a target runtime.",
+      "artifacts": ["experiments/behavior-beyond-text/2026-11-26-effect-oracle-protocol.md", "experiments/behavior-beyond-text/effect-oracle.py", "data/results/behavior-beyond-text/2026-11-26-effect-oracle.json"]
     }
   ],
   "projects": [

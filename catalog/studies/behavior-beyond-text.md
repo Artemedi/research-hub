@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [behavior-beyond-text-review](../../studies/behavior-beyond-text.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.28982vv1).
+- [behavior-beyond-text-effect-oracle-20261126](../../reviews/behavior-beyond-text/2026-11-26-effect-oracle.md), 2026-11-26; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arXiv:2610.28982v1](https://arxiv.org/pdf/2610.28982v1).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- behavior-beyond-text-effect-oracle-20261126-lab: SYNTHETIC / OBSERVED. Thirty paired toy requests separated refusal text, recorded requests, dispatch and observed state. The authorization control blocked incompatible writes while retaining twelve expected permitted effects. Scripted in-memory writes. No harmful work, live model, external tool calls or verification of a target runtime. [Артефакт](../../experiments/behavior-beyond-text/2026-11-26-effect-oracle-protocol.md) · [Артефакт](../../experiments/behavior-beyond-text/effect-oracle.py) · [Артефакт](../../data/results/behavior-beyond-text/2026-11-26-effect-oracle.json)
 
 ## Ссылки из исходной карточки
 

@@ -62,6 +62,8 @@
 - [anthropic-agent-automations/source-bookmarks.py](anthropic-agent-automations/source-bookmarks.py)
 - [auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md](auto-ontology/2026-11-26-wiki-pg-semantic-selectors-protocol.md)
 - [auto-ontology/wiki-pg-semantic-selectors.py](auto-ontology/wiki-pg-semantic-selectors.py)
+- [behavior-beyond-text/2026-11-26-effect-oracle-protocol.md](behavior-beyond-text/2026-11-26-effect-oracle-protocol.md)
+- [behavior-beyond-text/effect-oracle.py](behavior-beyond-text/effect-oracle.py)
 - [benchshield/2026-11-25-paper2project-protocol.md](benchshield/2026-11-25-paper2project-protocol.md)
 - [benchshield/paper2project-report-replay.py](benchshield/paper2project-report-replay.py)
 - [bk006-open-steps/fingerprint-fixture.sh](bk006-open-steps/fingerprint-fixture.sh)

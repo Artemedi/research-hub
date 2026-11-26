@@ -42,6 +42,7 @@
 | [Anthropic Agent Automations — source bookmark review](anthropic-agent-automations/2026-11-26-source-bookmarks.md) | 2026-11-26 |
 | [NVIDIA Auto Ontology — Semantic Model for Relational Data — source review](auto-ontology/2026-11-13.md) | 2026-11-13 |
 | [Auto-Ontology — Wiki_PG semantic selectors](auto-ontology/2026-11-26-wiki-pg-semantic-selectors.md) | 2026-11-26 |
+| [Behavior Beyond Text — observed effect review](behavior-beyond-text/2026-11-26-effect-oracle.md) | 2026-11-26 |
 | [BenchShield — целостность reward и provenance](benchshield/2026-11-04.md) | 2026-11-04 |
 | [BenchShield — Paper2Project report replay](benchshield/2026-11-25-paper2project-report-replay.md) | 2026-11-25 |
 | [Полный текст CERA-MoA — источники и применимость](cera-moa/2026-11-05-full-text.md) | 2026-11-05 |
