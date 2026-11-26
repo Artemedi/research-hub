@@ -4093,6 +4093,34 @@
       "title": "Cursor Token Efficiency — local token budget results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/daedalus/2026-11-26-frozen-bank.md",
+      "title": "Daedalus — frozen memory bank review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/daedalus/2026-11-26-frozen-bank-protocol.md",
+      "title": "Daedalus — frozen memory bank protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/daedalus/frozen-bank.py",
+      "title": "Daedalus — held-out memory bank comparison",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/daedalus/2026-11-26-frozen-bank.json",
+      "title": "Daedalus — frozen memory bank results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

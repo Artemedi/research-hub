@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [daedalus-review](../../studies/daedalus.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.08048vv1).
+- [daedalus-frozen-bank-20261126](../../reviews/daedalus/2026-11-26-frozen-bank.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [2f78c7f9343926e2088a88907d61571079ec411e](https://github.com/illuin-tech/daedalus/tree/2f78c7f9343926e2088a88907d61571079ec411e).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- daedalus-frozen-bank-20261126-lab: SYNTHETIC / OBSERVED. Twenty authored holdouts scored 10 without a bank, 15 with three-success selection, and 20 with reviewed preconditions. The upstream loader refused missing and empty banks. Authored rules and scripted environment. No automatic heuristic generation or agent quality estimate. [Артефакт](../../experiments/daedalus/2026-11-26-frozen-bank-protocol.md) · [Артефакт](../../experiments/daedalus/frozen-bank.py) · [Артефакт](../../data/results/daedalus/2026-11-26-frozen-bank.json)
 
 ## Ссылки из исходной карточки
 

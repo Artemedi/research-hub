@@ -93,6 +93,8 @@
 - [cursor-token-efficiency/2026-11-26-token-budget-protocol.md](cursor-token-efficiency/2026-11-26-token-budget-protocol.md)
 - [cursor-token-efficiency/schema-variants.mjs](cursor-token-efficiency/schema-variants.mjs)
 - [cursor-token-efficiency/token-budget.py](cursor-token-efficiency/token-budget.py)
+- [daedalus/2026-11-26-frozen-bank-protocol.md](daedalus/2026-11-26-frozen-bank-protocol.md)
+- [daedalus/frozen-bank.py](daedalus/frozen-bank.py)
 - [database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md](database-agent-observability/2026-11-26-wiki-pg-counter-evidence-protocol.md)
 - [database-agent-observability/wiki-pg-counter-evidence.py](database-agent-observability/wiki-pg-counter-evidence.py)
 - [decision-geometry-harness/2026-11-07-bandit-oracle.py](decision-geometry-harness/2026-11-07-bandit-oracle.py)

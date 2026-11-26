@@ -1,0 +1,441 @@
+{
+  "source_commit": "2f78c7f9343926e2088a88907d61571079ec411e",
+  "repeats": 3,
+  "provider_requests": 0,
+  "heldout_count": 20,
+  "bank_admission": {
+    "missing": "FileNotFoundError",
+    "empty": "ValueError"
+  },
+  "selection_trials": [
+    {
+      "candidate": "ready_always",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "candidate": "blocked_escalate",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "candidate": "complete_keep",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "candidate": "complete_reopen",
+      "results": [
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "results": {
+    "no_memory": {
+      "correct": 10,
+      "unwarranted_stages": 0,
+      "bank_sha256": null,
+      "bank_bytes": 0,
+      "rules": [],
+      "heldout": [
+        {
+          "exercise": "heldout-0-0",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-1",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-2",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-3",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-4",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-0",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-1",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-2",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-3",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-4",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-0",
+          "expected": "escalated",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-2-1",
+          "expected": "escalated",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-2-2",
+          "expected": "escalated",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-2-3",
+          "expected": "escalated",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-2-4",
+          "expected": "escalated",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-3-0",
+          "expected": "kept",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-3-1",
+          "expected": "kept",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-3-2",
+          "expected": "kept",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-3-3",
+          "expected": "kept",
+          "observed": "waiting",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-3-4",
+          "expected": "kept",
+          "observed": "waiting",
+          "correct": false
+        }
+      ]
+    },
+    "three_success_bank": {
+      "correct": 15,
+      "unwarranted_stages": 5,
+      "bank_sha256": "455623f99ab459fb9306c272a63e76549a882d0ccb387c6aab26e31f91f670c5",
+      "bank_bytes": 943,
+      "rules": [
+        "ready_always",
+        "blocked_escalate",
+        "complete_keep"
+      ],
+      "heldout": [
+        {
+          "exercise": "heldout-0-0",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-1",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-2",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-3",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-4",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-0",
+          "expected": "waiting",
+          "observed": "staged",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-1-1",
+          "expected": "waiting",
+          "observed": "staged",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-1-2",
+          "expected": "waiting",
+          "observed": "staged",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-1-3",
+          "expected": "waiting",
+          "observed": "staged",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-1-4",
+          "expected": "waiting",
+          "observed": "staged",
+          "correct": false
+        },
+        {
+          "exercise": "heldout-2-0",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-1",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-2",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-3",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-4",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-0",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-1",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-2",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-3",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-4",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        }
+      ]
+    },
+    "reviewed_bank": {
+      "correct": 20,
+      "unwarranted_stages": 0,
+      "bank_sha256": "00e21d3221dcb38cbb912de38716f3997c31c1db3b8be9ce8db5f3ea23097e97",
+      "bank_bytes": 946,
+      "rules": [
+        "ready_checked",
+        "blocked_escalate",
+        "complete_keep"
+      ],
+      "heldout": [
+        {
+          "exercise": "heldout-0-0",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-1",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-2",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-3",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-0-4",
+          "expected": "staged",
+          "observed": "staged",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-0",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-1",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-2",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-3",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-1-4",
+          "expected": "waiting",
+          "observed": "waiting",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-0",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-1",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-2",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-3",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-2-4",
+          "expected": "escalated",
+          "observed": "escalated",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-0",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-1",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-2",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-3",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        },
+        {
+          "exercise": "heldout-3-4",
+          "expected": "kept",
+          "observed": "kept",
+          "correct": true
+        }
+      ]
+    }
+  }
+}

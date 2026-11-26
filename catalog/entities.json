@@ -1649,6 +1649,13 @@
       "unknown_reason": "The cited card/review does not pin an explicit arXiv version or source revision."
     },
     {
+      "id": "daedalus-code-2f78c7f",
+      "study_id": "daedalus",
+      "ref": "2f78c7f9343926e2088a88907d61571079ec411e",
+      "url": "https://github.com/illuin-tech/daedalus/tree/2f78c7f9343926e2088a88907d61571079ec411e",
+      "unknown_reason": null
+    },
+    {
       "id": "daedalus-version",
       "study_id": "daedalus",
       "ref": "arxiv:v1",
@@ -4823,6 +4830,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Stock DSH estimate and local tokenizers on authored schemas. No inference charges, provider cache or deployment.",
       "supersedes": null
+    },
+    {
+      "id": "daedalus-frozen-bank-20261126",
+      "study_ids": ["daedalus"],
+      "version_ids": ["daedalus-code-2f78c7f"],
+      "date": "2026-11-26",
+      "document": "reviews/daedalus/2026-11-26-frozen-bank.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Stock memory pool on authored rule sets. No model, automatic rule generation, or target integration.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5856,6 +5873,16 @@
       "scope": "Nine catalog fixtures and two tokenizers showed discovery overhead at four schemas and savings at twelve and twenty-four. Compared fixed-density DSH estimates and stable prefix lengths.",
       "limitations": "Fixture JSON and scripted discovery. No provider serialization, model selection, cache hits or cost measurements.",
       "artifacts": ["experiments/cursor-token-efficiency/2026-11-26-token-budget-protocol.md", "experiments/cursor-token-efficiency/token-budget.py", "experiments/cursor-token-efficiency/schema-variants.mjs", "data/results/cursor-token-efficiency/2026-11-26-token-budget.json"]
+    },
+    {
+      "id": "daedalus-frozen-bank-20261126-lab",
+      "study_ids": ["daedalus"],
+      "review_id": "daedalus-frozen-bank-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Twenty authored holdouts scored 10 without a bank, 15 with three-success selection, and 20 with reviewed preconditions. The upstream loader refused missing and empty banks.",
+      "limitations": "Authored rules and scripted environment. No automatic heuristic generation or agent quality estimate.",
+      "artifacts": ["experiments/daedalus/2026-11-26-frozen-bank-protocol.md", "experiments/daedalus/frozen-bank.py", "data/results/daedalus/2026-11-26-frozen-bank.json"]
     }
   ],
   "projects": [
