@@ -1420,6 +1420,21 @@
         "studies/postgresql-2026-11-minor-releases.md",
         "reports/2026-11-23-portfolio-research.md"
       ]
+    },
+    {
+      "id": "google-antigravity",
+      "title": "Google Antigravity — agent runtime and lifecycle control",
+      "kind": "engineering",
+      "card": "studies/google-antigravity.md",
+      "primary_url": "https://antigravity.google/docs/cli/headless/",
+      "current_review_id": "google-antigravity-20261126-lifecycle",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "a9a92b7fbe1ed5eca5d83f3d1bea91aaf39ec75afc8483ab2b4405320b165cb1",
+      "linked_materials": [
+        "reviews/google-antigravity/2026-11-26.md",
+        "experiments/google-antigravity/lifecycle-probe.py",
+        "data/results/google-antigravity/2026-11-26.json"
+      ]
     }
   ],
   "versions": [
@@ -2316,6 +2331,13 @@
       "study_id": "postgresql-19-ga-2026",
       "ref": "19.0",
       "url": "https://www.postgresql.org/docs/19/release-19.html",
+      "unknown_reason": null
+    },
+    {
+      "id": "google-antigravity-1-5-11",
+      "study_id": "google-antigravity",
+      "ref": "CLI 1.5.11",
+      "url": "https://antigravity.google/docs/cli/headless/",
       "unknown_reason": null
     }
   ],
@@ -4505,6 +4527,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Native lexical search plus scripted alias links. No autonomously learned links, semantic answer test or production measurement.",
       "supersedes": null
+    },
+    {
+      "id": "google-antigravity-20261126-lifecycle",
+      "study_ids": [
+        "google-antigravity"
+      ],
+      "version_ids": [
+        "google-antigravity-1-5-11"
+      ],
+      "date": "2026-11-26",
+      "document": "reviews/google-antigravity/2026-11-26.md",
+      "source_coverage": "PARTIAL_SOURCE_REVIEW",
+      "limitations": "Bounded CLI smoke; no pinned model, production integration or comparative benchmark.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5233,6 +5269,21 @@
         "experiments/realm/2026-11-25-wiki-pg-retrieval-feedback-protocol.md",
         "experiments/realm/wiki-pg-retrieval-feedback.py",
         "data/results/realm/2026-11-25-wiki-pg-retrieval-feedback.json"
+      ]
+    },
+    {
+      "id": "google-antigravity-20261126-lifecycle-smoke",
+      "study_ids": [
+        "google-antigravity"
+      ],
+      "review_id": "google-antigravity-20261126-lifecycle",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "OBSERVED",
+      "scope": "AGENTS marker, JSON/NDJSON and four lifecycle events including Stop continuation in two of three live runs.",
+      "limitations": "Three non-equivalent configurations; first missing journal cause unresolved; no tool permissions, subagent isolation or DSH integration evidence.",
+      "artifacts": [
+        "experiments/google-antigravity/lifecycle-probe.py",
+        "data/results/google-antigravity/2026-11-26.json"
       ]
     }
   ],
@@ -17227,6 +17278,27 @@
       "project_card_sha256": null,
       "unknown_reason": "Document-backed assessment; the verified code seam is pinned separately in the review.",
       "supersedes": "postgresql-19-ga-2026-document-Wiki_PG"
+    },
+    {
+      "id": "google-antigravity-20261126-lifecycle-dsh-runtime",
+      "study_id": "google-antigravity",
+      "project_id": "dsh-runtime",
+      "review_id": "google-antigravity-20261126-lifecycle",
+      "date": "2026-11-26",
+      "decision": "DEFERRED",
+      "evidence": "DEFERRED / NEEDS_EVIDENCE",
+      "reason": "Headless orchestration and continuation match the documented research profile.",
+      "limitations": "No current code seam, reproducibility or benefit established.",
+      "next_test": "Compare independent CLI harness against existing baseline on identical tasks.",
+      "next_test_reason": null,
+      "source_document": "reviews/google-antigravity/2026-11-26.md",
+      "source_line": 21,
+      "source_excerpt": "| [Antigravity](../../studies/google-antigravity.md) | [dsh-runtime](../../projects/dsh-runtime.md) | Headless orchestration и continuation относятся к исследовательскому профилю runtime. | Точка интеграции в актуальном коде не проверена; повторяемость и benefit не установлены. | Сравнить независимый CLI harness с существующим baseline на одинаковых задачах. | DEFERRED / NEEDS_EVIDENCE |",
+      "source_decision": "DEFERRED / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-backed screening of pinned registry profile, not current project source.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -19834,6 +19906,11 @@
       "study_id": "postgresql-19-ga-2026",
       "project_id": "developer-safe-dotnet-core",
       "assessment_id": "postgresql-19-ga-2026-document-developer-safe-dotnet-core"
+    },
+    {
+      "study_id": "google-antigravity",
+      "project_id": "dsh-runtime",
+      "assessment_id": "google-antigravity-20261126-lifecycle-dsh-runtime"
     }
   ],
   "relations": [
