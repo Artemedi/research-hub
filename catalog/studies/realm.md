@@ -22,6 +22,7 @@
 
 - [realm-review](../../studies/realm.md), 2026-11-03; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.16053).
 - [fulltext-realm-2026-11-05](../../reviews/realm/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.16053v1).
+- [realm-wiki-pg-retrieval-feedback-20261125](../../reviews/realm/2026-11-25-wiki-pg-retrieval-feedback.md), 2026-11-25; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.16053).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- realm-wiki-pg-retrieval-feedback-20261125-lab: SYNTHETIC / PASS. Three matching 30-case repeats. Confirmed links recovered 18 excerpts; 54 negative controls abstained and removing the feedback restored baseline. Fixed aliases and approval markers supplied by the fixture. No semantic relevance, authorization or production benefit measured. [Артефакт](../../experiments/realm/2026-11-25-wiki-pg-retrieval-feedback-protocol.md) · [Артефакт](../../experiments/realm/wiki-pg-retrieval-feedback.py) · [Артефакт](../../data/results/realm/2026-11-25-wiki-pg-retrieval-feedback.json)
 
 ## Ссылки из исходной карточки
 

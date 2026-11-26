@@ -3329,6 +3329,34 @@
       "title": "PGBot and Wiki_PG — lock count and finding results",
       "kind": "data",
       "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "reviews/realm/2026-11-25-wiki-pg-retrieval-feedback.md",
+      "title": "REALM — reversible Wiki_PG retrieval feedback",
+      "kind": "review",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/realm/2026-11-25-wiki-pg-retrieval-feedback-protocol.md",
+      "title": "REALM — source-bound feedback protocol",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "experiments/realm/wiki-pg-retrieval-feedback.py",
+      "title": "REALM — reversible Wiki_PG feedback replay",
+      "kind": "experiment",
+      "date": "2026-11-25"
+    },
+    {
+      "from": null,
+      "to": "data/results/realm/2026-11-25-wiki-pg-retrieval-feedback.json",
+      "title": "REALM — Wiki_PG retrieval feedback results",
+      "kind": "data",
+      "date": "2026-11-25"
     }
   ]
 }

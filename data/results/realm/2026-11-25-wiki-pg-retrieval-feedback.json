@@ -1,0 +1,277 @@
+{
+  "wiki_revision": "d55721bb99bff25fae352341cfd630c048693d6b",
+  "repeat_count": 3,
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": 2,
+      "cases": [
+        {
+          "case": "approved_alias",
+          "baseline_hit": false,
+          "feedback_hit": true,
+          "reason": "recalled",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "direct_query",
+          "baseline_hit": true,
+          "feedback_hit": true,
+          "reason": "baseline",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "unreviewed_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "no_confirmed_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "conflicting_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "ambiguous",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "source_changed_after_index",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "stale_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        }
+      ]
+    },
+    {
+      "fixture": 11,
+      "cases": [
+        {
+          "case": "approved_alias",
+          "baseline_hit": false,
+          "feedback_hit": true,
+          "reason": "recalled",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "direct_query",
+          "baseline_hit": true,
+          "feedback_hit": true,
+          "reason": "baseline",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "unreviewed_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "no_confirmed_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "conflicting_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "ambiguous",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "source_changed_after_index",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "stale_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        }
+      ]
+    },
+    {
+      "fixture": 19,
+      "cases": [
+        {
+          "case": "approved_alias",
+          "baseline_hit": false,
+          "feedback_hit": true,
+          "reason": "recalled",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "direct_query",
+          "baseline_hit": true,
+          "feedback_hit": true,
+          "reason": "baseline",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "unreviewed_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "no_confirmed_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "conflicting_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "ambiguous",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "source_changed_after_index",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "stale_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        }
+      ]
+    },
+    {
+      "fixture": 23,
+      "cases": [
+        {
+          "case": "approved_alias",
+          "baseline_hit": false,
+          "feedback_hit": true,
+          "reason": "recalled",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "direct_query",
+          "baseline_hit": true,
+          "feedback_hit": true,
+          "reason": "baseline",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "unreviewed_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "no_confirmed_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "conflicting_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "ambiguous",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "source_changed_after_index",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "stale_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        }
+      ]
+    },
+    {
+      "fixture": 39,
+      "cases": [
+        {
+          "case": "approved_alias",
+          "baseline_hit": false,
+          "feedback_hit": true,
+          "reason": "recalled",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "direct_query",
+          "baseline_hit": true,
+          "feedback_hit": true,
+          "reason": "baseline",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "unreviewed_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "no_confirmed_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "conflicting_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "ambiguous",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "source_changed_after_index",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "stale_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        }
+      ]
+    },
+    {
+      "fixture": 47,
+      "cases": [
+        {
+          "case": "approved_alias",
+          "baseline_hit": false,
+          "feedback_hit": true,
+          "reason": "recalled",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "direct_query",
+          "baseline_hit": true,
+          "feedback_hit": true,
+          "reason": "baseline",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "unreviewed_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "no_confirmed_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "conflicting_feedback",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "ambiguous",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        },
+        {
+          "case": "source_changed_after_index",
+          "baseline_hit": false,
+          "feedback_hit": false,
+          "reason": "stale_binding",
+          "rollback_restored_baseline": true,
+          "source_bytes_preserved": true
+        }
+      ]
+    }
+  ]
+}

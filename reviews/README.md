@@ -108,6 +108,7 @@
 | [PostgreSQL 15.20 and 18.7 — Wiki_PG index inventory](postgresql-2026-11-minor-releases/2026-11-25-wiki-pg-inventory.md) | 2026-11-25 |
 | [ReA-Bench — Benchmarking Responsible Agent Auditing — full-text review 2026-11-14](rea-bench/2026-11-14.md) | 2026-11-14 |
 | [REALM — Retrieval-Driven Memory Reconsolidation — полнотекстовая научная проверка](realm/2026-11-05-full-text.md) | 2026-11-05 |
+| [REALM — reversible Wiki_PG retrieval feedback](realm/2026-11-25-wiki-pg-retrieval-feedback.md) | 2026-11-25 |
 | [ReCAP — Persistent Context Graphs for Memory Compaction — полнотекстовая научная проверка](recap/2026-11-05-full-text.md) | 2026-11-05 |
 | [REA — проверка PE layout](reverse-engineer-anything/2026-11-05-pe-layout.md) | 2026-11-05 |
 | [REA — границы статического анализа](reverse-engineer-anything/2026-11-05-source-boundaries.md) | 2026-11-05 |

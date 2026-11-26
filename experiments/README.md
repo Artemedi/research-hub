@@ -130,6 +130,8 @@
 - [postgresql-19-ga-2026/2026-11-25-protocol.md](postgresql-19-ga-2026/2026-11-25-protocol.md)
 - [postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py](postgresql-19-ga-2026/2026-11-25-wiki-pg-settings-ab.py)
 - [postgresql-2026-11-minor-releases/wiki-pg-inventory.py](postgresql-2026-11-minor-releases/wiki-pg-inventory.py)
+- [realm/2026-11-25-wiki-pg-retrieval-feedback-protocol.md](realm/2026-11-25-wiki-pg-retrieval-feedback-protocol.md)
+- [realm/wiki-pg-retrieval-feedback.py](realm/wiki-pg-retrieval-feedback.py)
 - [research-portfolio/2026-11-07-claude-swarm-critics.py](research-portfolio/2026-11-07-claude-swarm-critics.py)
 - [research-portfolio/2026-11-07-claude-swarm-failure-e2e.mjs](research-portfolio/2026-11-07-claude-swarm-failure-e2e.mjs)
 - [research-portfolio/2026-11-07-claude-swarm-recovery.patch.gz](research-portfolio/2026-11-07-claude-swarm-recovery.patch.gz)

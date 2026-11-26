@@ -4495,6 +4495,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Isolated lock states on PostgreSQL 15 and 18. One collector SQL projection and the native reporting path; no complete collector or production workload.",
       "supersedes": null
+    },
+    {
+      "id": "realm-wiki-pg-retrieval-feedback-20261125",
+      "study_ids": ["realm"],
+      "version_ids": ["realm-version"],
+      "date": "2026-11-25",
+      "document": "reviews/realm/2026-11-25-wiki-pg-retrieval-feedback.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Native lexical search plus scripted alias links. No autonomously learned links, semantic answer test or production measurement.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5209,6 +5219,20 @@
         "experiments/pgbot/2026-11-25-wiki-pg-lock-evidence-protocol.md",
         "experiments/pgbot/wiki-pg-lock-evidence.py",
         "data/results/pgbot/2026-11-25-wiki-pg-lock-evidence.json"
+      ]
+    },
+    {
+      "id": "realm-wiki-pg-retrieval-feedback-20261125-lab",
+      "study_ids": ["realm"],
+      "review_id": "realm-wiki-pg-retrieval-feedback-20261125",
+      "environment": "SYNTHETIC",
+      "result": "PASS",
+      "scope": "Three matching 30-case repeats. Confirmed links recovered 18 excerpts; 54 negative controls abstained and removing the feedback restored baseline.",
+      "limitations": "Fixed aliases and approval markers supplied by the fixture. No semantic relevance, authorization or production benefit measured.",
+      "artifacts": [
+        "experiments/realm/2026-11-25-wiki-pg-retrieval-feedback-protocol.md",
+        "experiments/realm/wiki-pg-retrieval-feedback.py",
+        "data/results/realm/2026-11-25-wiki-pg-retrieval-feedback.json"
       ]
     }
   ],
