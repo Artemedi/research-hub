@@ -51,6 +51,8 @@
 - [agent-risk/2026-11-09-replay-boundary.py](agent-risk/2026-11-09-replay-boundary.py)
 - [agent-risk/2026-11-26-snapshot-admission-protocol.md](agent-risk/2026-11-26-snapshot-admission-protocol.md)
 - [agent-risk/snapshot-admission.py](agent-risk/snapshot-admission.py)
+- [agent-transfer-protocol/2026-11-26-signed-queue-protocol.md](agent-transfer-protocol/2026-11-26-signed-queue-protocol.md)
+- [agent-transfer-protocol/signed-queue.mjs](agent-transfer-protocol/signed-queue.mjs)
 - [alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md](alphaxiv-openresearch/2026-11-25-snapshot-portability-protocol.md)
 - [alphaxiv-openresearch/openresearch-source-snapshot-test.rs](alphaxiv-openresearch/openresearch-source-snapshot-test.rs)
 - [alphaxiv-openresearch/paper2project-snapshot-portability.py](alphaxiv-openresearch/paper2project-snapshot-portability.py)

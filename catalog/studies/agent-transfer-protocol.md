@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [agent-transfer-protocol-review](../../studies/agent-transfer-protocol.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.38398vv1).
+- [agent-transfer-protocol-signed-queue-20261126](../../reviews/agent-transfer-protocol/2026-11-26-signed-queue.md), 2026-11-26; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arXiv:2610.38398v1](https://arxiv.org/pdf/2610.38398v1).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- agent-transfer-protocol-signed-queue-20261126-lab: SYNTHETIC / OBSERVED. Sixteen cases in three repetitions per platform matched on Windows and WSL. SQLite retained a pending envelope across worker exits, deduplicated delivery, and quarantined invalid stored envelopes. Two local databases with fixture keys and trust flags. No distributed transport, production keys, network latency, or external delivery effects. [Артефакт](../../experiments/agent-transfer-protocol/2026-11-26-signed-queue-protocol.md) · [Артефакт](../../experiments/agent-transfer-protocol/signed-queue.mjs) · [Артефакт](../../data/results/agent-transfer-protocol/2026-11-26-signed-queue.json)
 
 ## Ссылки из исходной карточки
 

@@ -3827,6 +3827,34 @@
       "title": "Agent Risk — snapshot admission results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/agent-transfer-protocol/2026-11-26-signed-queue.md",
+      "title": "Agent Transfer Protocol — signed queue review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-transfer-protocol/2026-11-26-signed-queue-protocol.md",
+      "title": "Agent Transfer Protocol — signed queue protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/agent-transfer-protocol/signed-queue.mjs",
+      "title": "Agent Transfer Protocol — offline signed queue",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/agent-transfer-protocol/2026-11-26-signed-queue.json",
+      "title": "Agent Transfer Protocol — signed queue results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

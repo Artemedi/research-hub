@@ -1,0 +1,58 @@
+{
+  "runtimes": [
+    {
+      "node": "v26.13.1",
+      "platform": "win32",
+      "sqlite": "3.54.1"
+    },
+    {
+      "node": "v24.11.1",
+      "platform": "linux",
+      "sqlite": "3.50.4"
+    }
+  ],
+  "repeats_per_runtime": 3,
+  "cases_per_repeat": 16,
+  "outcomes": {
+    "direct_while_offline": "receiver_unavailable",
+    "sender_stage": "staged",
+    "receiver_offline_queue": "queued",
+    "resend_before_ack": "duplicate",
+    "sender_acknowledged": "acknowledged",
+    "consume_in_new_process": "delivered",
+    "resend_after_delivery": "duplicate",
+    "different_signed_body_same_id": "id_conflict",
+    "modified_before_enqueue": "invalid_signature",
+    "wrong_recipient": "wrong_recipient",
+    "expired_before_enqueue": "expired",
+    "expired_at_read": "expired",
+    "revoked_at_read": "revoked",
+    "revoked_before_enqueue": "revoked",
+    "modified_after_enqueue": "invalid_signature",
+    "no_second_delivery": "empty"
+  },
+  "deliveries": [
+    {
+      "id": "restart",
+      "body": "Synthetic handoff"
+    }
+  ],
+  "inbox_states": [
+    {
+      "id": "changed-on-disk",
+      "state": "quarantined"
+    },
+    {
+      "id": "late",
+      "state": "quarantined"
+    },
+    {
+      "id": "restart",
+      "state": "delivered"
+    },
+    {
+      "id": "revoked-at-read",
+      "state": "quarantined"
+    }
+  ]
+}

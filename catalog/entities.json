@@ -1530,6 +1530,13 @@
       "unknown_reason": null
     },
     {
+      "id": "agent-transfer-protocol-arxiv-2610-38398v1",
+      "study_id": "agent-transfer-protocol",
+      "ref": "arXiv:2610.38398v1",
+      "url": "https://arxiv.org/pdf/2610.38398v1",
+      "unknown_reason": null
+    },
+    {
       "id": "agentic-self-awareness-version",
       "study_id": "agentic-self-awareness",
       "ref": "arxiv:v1",
@@ -4698,6 +4705,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Author replay calculations on an authored event model and static source observations. No runtime, provider or live risk measurement.",
       "supersedes": null
+    },
+    {
+      "id": "agent-transfer-protocol-signed-queue-20261126",
+      "study_ids": ["agent-transfer-protocol"],
+      "version_ids": ["agent-transfer-protocol-arxiv-2610-38398v1"],
+      "date": "2026-11-26",
+      "document": "reviews/agent-transfer-protocol/2026-11-26-signed-queue.md",
+      "source_coverage": "FULL_TEXT_REVIEWED",
+      "limitations": "Independent offline prototype inspired by the paper. No use of the original implementation, network latency, real peer trust, or project deployment.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5641,6 +5658,16 @@
       "scope": "Thirty-two authored cases matched the independent oracle with full state; 16 outcomes were unresolved by log-only replay. Eight invalid-state conditions per continuing case left outcomes unknown.",
       "limitations": "Trusted recorded cut and declared environment. No agent, real event logs, inference costs or target runtime integration.",
       "artifacts": ["experiments/agent-risk/2026-11-26-snapshot-admission-protocol.md", "experiments/agent-risk/snapshot-admission.py", "data/results/agent-risk/2026-11-26-snapshot-admission.json"]
+    },
+    {
+      "id": "agent-transfer-protocol-signed-queue-20261126-lab",
+      "study_ids": ["agent-transfer-protocol"],
+      "review_id": "agent-transfer-protocol-signed-queue-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Sixteen cases in three repetitions per platform matched on Windows and WSL. SQLite retained a pending envelope across worker exits, deduplicated delivery, and quarantined invalid stored envelopes.",
+      "limitations": "Two local databases with fixture keys and trust flags. No distributed transport, production keys, network latency, or external delivery effects.",
+      "artifacts": ["experiments/agent-transfer-protocol/2026-11-26-signed-queue-protocol.md", "experiments/agent-transfer-protocol/signed-queue.mjs", "data/results/agent-transfer-protocol/2026-11-26-signed-queue.json"]
     }
   ],
   "projects": [
