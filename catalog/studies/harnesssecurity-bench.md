@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [harnesssecurity-bench-review](../../studies/harnesssecurity-bench.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.07639vv1).
+- [harnesssecurity-bench-approval-effects-20261126](../../reviews/harnesssecurity-bench/2026-11-26-approval-effects.md), 2026-11-26; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arXiv:2610.07639v1](https://arxiv.org/html/2610.07639v1).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- harnesssecurity-bench-approval-effects-20261126-lab: SYNTHETIC / OBSERVED. Across 90 cases per repeat, all 10 grants changed a counter after audit; the 80 rejection, cancellation, or error cases caused no effects. Three repeats matched. In-memory dispatcher, counter and audit sink. No model, tool execution, provider calls or persistence. [Артефакт](../../experiments/harnesssecurity-bench/2026-11-26-approval-effects-protocol.md) · [Артефакт](../../experiments/harnesssecurity-bench/approval-effects.mjs) · [Артефакт](../../data/results/harnesssecurity-bench/2026-11-26-approval-effects.json)
 
 ## Ссылки из исходной карточки
 

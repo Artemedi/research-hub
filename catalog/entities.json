@@ -1733,6 +1733,13 @@
       "unknown_reason": null
     },
     {
+      "id": "harnesssecurity-bench-arxiv-2610-07639v1",
+      "study_id": "harnesssecurity-bench",
+      "ref": "arXiv:2610.07639v1",
+      "url": "https://arxiv.org/html/2610.07639v1",
+      "unknown_reason": null
+    },
+    {
       "id": "exactly-once-limbo-telegrambot-b47c527",
       "study_id": "exactly-once-limbo",
       "ref": "b47c527d40d0e7b0aa5311677eca9e8a14fd1b9e",
@@ -4884,6 +4891,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned board transitions with an in-memory journal and scripted subtotal verification. No agents, persistent storage, or root acceptance.",
       "supersedes": null
+    },
+    {
+      "id": "harnesssecurity-bench-approval-effects-20261126",
+      "study_ids": ["harnesssecurity-bench"],
+      "version_ids": ["harnesssecurity-bench-arxiv-2610-07639v1"],
+      "date": "2026-11-26",
+      "document": "reviews/harnesssecurity-bench/2026-11-26-approval-effects.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Stock approval service with a fake dispatcher, journal, and counter. No actual tool or persistent audit validation.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -5957,6 +5974,16 @@
       "scope": "In 48 cases per arm, the stock task board allowed 32 claims on invalid dependency evidence. External checks blocked all 32 and admitted all valid or repaired inputs. Three repeats matched.",
       "limitations": "Sequential task-board exercise on synthetic arithmetic; no model, persistence, concurrent workers, or real-workload measurements.",
       "artifacts": ["experiments/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance-protocol.md", "experiments/goal-aware-dynamic-collaboration/dependency-acceptance.mjs", "data/results/goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.json"]
+    },
+    {
+      "id": "harnesssecurity-bench-approval-effects-20261126-lab",
+      "study_ids": ["harnesssecurity-bench"],
+      "review_id": "harnesssecurity-bench-approval-effects-20261126",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Across 90 cases per repeat, all 10 grants changed a counter after audit; the 80 rejection, cancellation, or error cases caused no effects. Three repeats matched.",
+      "limitations": "In-memory dispatcher, counter and audit sink. No model, tool execution, provider calls or persistence.",
+      "artifacts": ["experiments/harnesssecurity-bench/2026-11-26-approval-effects-protocol.md", "experiments/harnesssecurity-bench/approval-effects.mjs", "data/results/harnesssecurity-bench/2026-11-26-approval-effects.json"]
     }
   ],
   "projects": [

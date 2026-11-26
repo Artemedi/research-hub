@@ -142,6 +142,8 @@
 - [google-antigravity/lifecycle-probe.py](google-antigravity/lifecycle-probe.py)
 - [harness2/2026-11-26-final-selection-protocol.md](harness2/2026-11-26-final-selection-protocol.md)
 - [harness2/final-selection.py](harness2/final-selection.py)
+- [harnesssecurity-bench/2026-11-26-approval-effects-protocol.md](harnesssecurity-bench/2026-11-26-approval-effects-protocol.md)
+- [harnesssecurity-bench/approval-effects.mjs](harnesssecurity-bench/approval-effects.mjs)
 - [htn-orchestrate/2026-11-07-offline-audit.py](htn-orchestrate/2026-11-07-offline-audit.py)
 - [hyperresearch/2026-11-07-pinned-upstream-tests.py](hyperresearch/2026-11-07-pinned-upstream-tests.py)
 - [hyperresearch/2026-11-09-temporal-scope-ab.py](hyperresearch/2026-11-09-temporal-scope-ab.py)

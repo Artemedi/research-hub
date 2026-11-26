@@ -4205,6 +4205,34 @@
       "title": "GAD × DSH Runtime — dependency acceptance results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/harnesssecurity-bench/2026-11-26-approval-effects.md",
+      "title": "HarnessSecurity-Bench × DSH Runtime — approval effects review",
+      "kind": "review",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/harnesssecurity-bench/2026-11-26-approval-effects-protocol.md",
+      "title": "HarnessSecurity-Bench × DSH Runtime — approval effects protocol",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "experiments/harnesssecurity-bench/approval-effects.mjs",
+      "title": "HarnessSecurity-Bench × DSH Runtime — synthetic approval check",
+      "kind": "experiment",
+      "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "data/results/harnesssecurity-bench/2026-11-26-approval-effects.json",
+      "title": "HarnessSecurity-Bench × DSH Runtime — approval effects results",
+      "kind": "data",
+      "date": "2026-11-26"
     }
   ]
 }

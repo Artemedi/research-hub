@@ -1,0 +1,93 @@
+{
+  "revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "source_sha256": {
+    "packages/interaction/user-approval/src/index.ts": "632d819c0e1d0b0f489a17264a1e3bd9f88ae537746be768bbb0775d842e4a24",
+    "packages/interaction/user-approval/src/types.ts": "46548447cf6aab4283d5473a99014b2b6075724982b99cc3dc77b9ae8274200c"
+  },
+  "cases_per_scenario": 10,
+  "repeats": 3,
+  "shell_or_provider_calls": 0,
+  "results": {
+    "allowed": {
+      "cases": 10,
+      "outcomes": {
+        "allowed-once": 10
+      },
+      "answerer_calls": 10,
+      "audit_records": 20,
+      "effects": 10
+    },
+    "rejected": {
+      "cases": 10,
+      "outcomes": {
+        "rejected": 10
+      },
+      "answerer_calls": 10,
+      "audit_records": 20,
+      "effects": 0
+    },
+    "no_answerer": {
+      "cases": 10,
+      "outcomes": {
+        "unavailable": 10
+      },
+      "answerer_calls": 0,
+      "audit_records": 20,
+      "effects": 0
+    },
+    "answerer_error": {
+      "cases": 10,
+      "outcomes": {
+        "unavailable": 10
+      },
+      "answerer_calls": 10,
+      "audit_records": 20,
+      "effects": 0
+    },
+    "already_cancelled": {
+      "cases": 10,
+      "outcomes": {
+        "cancelled": 10
+      },
+      "answerer_calls": 0,
+      "audit_records": 20,
+      "effects": 0
+    },
+    "cancelled_then_allowed": {
+      "cases": 10,
+      "outcomes": {
+        "cancelled": 10
+      },
+      "answerer_calls": 10,
+      "audit_records": 20,
+      "effects": 0
+    },
+    "never_policy": {
+      "cases": 10,
+      "outcomes": {
+        "rejected": 10
+      },
+      "answerer_calls": 0,
+      "audit_records": 20,
+      "effects": 0
+    },
+    "audit_write_failure": {
+      "cases": 10,
+      "outcomes": {
+        "error": 10
+      },
+      "answerer_calls": 10,
+      "audit_records": 10,
+      "effects": 0
+    },
+    "closed_turn": {
+      "cases": 10,
+      "outcomes": {
+        "error": 10
+      },
+      "answerer_calls": 0,
+      "audit_records": 0,
+      "effects": 0
+    }
+  }
+}
