@@ -160,6 +160,8 @@
 - [ipfire-fireperf/rca-evidence.py](ipfire-fireperf/rca-evidence.py)
 - [jetstream/2026-11-25-twin-protocol.md](jetstream/2026-11-25-twin-protocol.md)
 - [jetstream/twin-maintenance.py](jetstream/twin-maintenance.py)
+- [jevagentharness/2026-11-27-tool-choice-shift-protocol.md](jevagentharness/2026-11-27-tool-choice-shift-protocol.md)
+- [jevagentharness/tool-choice-shift.mjs](jevagentharness/tool-choice-shift.mjs)
 - [karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md](karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md)
 - [karpathy-autoresearch/paper2project-holdout.py](karpathy-autoresearch/paper2project-holdout.py)
 - [kvset/2026-11-25-pilot-archive-rebuild-protocol.md](kvset/2026-11-25-pilot-archive-rebuild-protocol.md)

@@ -1,0 +1,150 @@
+{
+  "author_revision": "f2932199e1ef1d9f089b51d39430c87be0f560b5",
+  "author_rule_sha256": "11f508b265af89c49ae3a55da2db567b661a5d4386e2164feb2c5834c53069e2",
+  "target_revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "target_source_sha256": {
+    "packages/core/tools/src/schema.ts": "be6e4b3fa18fe633c6c83ed4f9072da5a2a203f64bf0b70c9066fd58b0e2c897",
+    "packages/core/tools/src/json-schema.ts": "13deffdfd34539e23706b0fde235991da45b2f07c5c18dbbf3ca734c1da0c788"
+  },
+  "model_calls": 0,
+  "repeats": 3,
+  "calibration": {
+    "threshold": 0.87,
+    "tasks": 48,
+    "decisions": 144,
+    "tasks_solved": 48,
+    "delegated": 120,
+    "fallback": 24,
+    "schema_or_registry_rejections": 12,
+    "profile_deferrals": 0,
+    "wrong_delegated": 0
+  },
+  "holdouts": {
+    "matched": {
+      "reference": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 48,
+        "delegated": 0,
+        "fallback": 144,
+        "schema_or_registry_rejections": 0,
+        "profile_deferrals": 0,
+        "wrong_delegated": 0
+      },
+      "no_threshold": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 36,
+        "delegated": 132,
+        "fallback": 12,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 12
+      },
+      "fitted": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 48,
+        "delegated": 120,
+        "fallback": 24,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 0
+      },
+      "known_profile_only": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 48,
+        "delegated": 120,
+        "fallback": 24,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 0
+      }
+    },
+    "catalog_shift": {
+      "reference": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 48,
+        "delegated": 0,
+        "fallback": 144,
+        "schema_or_registry_rejections": 0,
+        "profile_deferrals": 0,
+        "wrong_delegated": 0
+      },
+      "no_threshold": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 24,
+        "delegated": 132,
+        "fallback": 12,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 24
+      },
+      "fitted": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 36,
+        "delegated": 120,
+        "fallback": 24,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 12
+      },
+      "known_profile_only": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 48,
+        "delegated": 0,
+        "fallback": 144,
+        "schema_or_registry_rejections": 0,
+        "profile_deferrals": 132,
+        "wrong_delegated": 0
+      }
+    },
+    "silent_shift": {
+      "reference": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 48,
+        "delegated": 0,
+        "fallback": 144,
+        "schema_or_registry_rejections": 0,
+        "profile_deferrals": 0,
+        "wrong_delegated": 0
+      },
+      "no_threshold": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 24,
+        "delegated": 132,
+        "fallback": 12,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 24
+      },
+      "fitted": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 36,
+        "delegated": 120,
+        "fallback": 24,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 12
+      },
+      "known_profile_only": {
+        "tasks": 48,
+        "decisions": 144,
+        "tasks_solved": 36,
+        "delegated": 120,
+        "fallback": 24,
+        "schema_or_registry_rejections": 12,
+        "profile_deferrals": 0,
+        "wrong_delegated": 12
+      }
+    }
+  }
+}

@@ -4317,6 +4317,34 @@
       "title": "IPFire fireperf — RCA evidence replay results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/jevagentharness/2026-11-27-tool-choice-shift.md",
+      "title": "JevAgentHarness × DSH Runtime — calibrated tool-choice shift",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/jevagentharness/2026-11-27-tool-choice-shift-protocol.md",
+      "title": "JevAgentHarness — tool-choice shift protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/jevagentharness/tool-choice-shift.mjs",
+      "title": "JevAgentHarness — synthetic tool-choice replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/jevagentharness/2026-11-27-tool-choice-shift.json",
+      "title": "JevAgentHarness — tool-choice replay results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

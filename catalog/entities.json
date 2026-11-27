@@ -4938,6 +4938,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Archived loopback receipt, pinned RCA schema and scripted report drafts. No network, database or model execution.",
       "supersedes": null
+    },
+    {
+      "id": "jevagentharness-tool-choice-shift-20261127",
+      "study_ids": ["jevagentharness"],
+      "version_ids": ["jevagentharness-version"],
+      "date": "2026-11-27",
+      "document": "reviews/jevagentharness/2026-11-27-tool-choice-shift.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Authored scores, arithmetic tools and pinned DSH argument validation. No author runtime, model costs, or live tool routing.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6051,6 +6061,16 @@
       "scope": "Replayed 12 archived loopback trials and one refusal control. Stock RCA validation accepted 24 out-of-scope draft claims citing known evidence. The scoped handoff withheld all 24 and retained the 12 valid lab observations.",
       "limitations": "Archived measurements and authored drafts. No validation of arbitrary report claims, verified incident causes, or measured project benefit.",
       "artifacts": ["experiments/ipfire-fireperf/2026-11-27-rca-evidence-protocol.md", "experiments/ipfire-fireperf/rca-evidence.py", "data/results/ipfire-fireperf/2026-11-27-rca-evidence.json"]
+    },
+    {
+      "id": "jevagentharness-tool-choice-shift-20261127-lab",
+      "study_ids": ["jevagentharness"],
+      "review_id": "jevagentharness-tool-choice-shift-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Calibrated threshold solved 48 of 48 matched tasks and 36 of 48 shifted tasks. A version-bound fallback restored 48 only for a declared profile change.",
+      "limitations": "Scripted scores and reference, no real LLM, tools, costs or automatic drift detection.",
+      "artifacts": ["experiments/jevagentharness/2026-11-27-tool-choice-shift-protocol.md", "experiments/jevagentharness/tool-choice-shift.mjs", "data/results/jevagentharness/2026-11-27-tool-choice-shift.json"]
     }
   ],
   "projects": [

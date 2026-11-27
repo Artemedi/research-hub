@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [jevagentharness-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21412v1).
+- [jevagentharness-tool-choice-shift-20261127](../../reviews/jevagentharness/2026-11-27-tool-choice-shift.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21412v1).
 
 ## Применимость к проектам
 
@@ -30,7 +31,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- jevagentharness-tool-choice-shift-20261127-lab: SYNTHETIC / OBSERVED. Calibrated threshold solved 48 of 48 matched tasks and 36 of 48 shifted tasks. A version-bound fallback restored 48 only for a declared profile change. Scripted scores and reference, no real LLM, tools, costs or automatic drift detection. [Артефакт](../../experiments/jevagentharness/2026-11-27-tool-choice-shift-protocol.md) · [Артефакт](../../experiments/jevagentharness/tool-choice-shift.mjs) · [Артефакт](../../data/results/jevagentharness/2026-11-27-tool-choice-shift.json)
 
 ## Ссылки из исходной карточки
 

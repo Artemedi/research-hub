@@ -109,6 +109,7 @@
 | [data/results/ipfire-fireperf/2026-11-04.json](results/ipfire-fireperf/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/ipfire-fireperf/2026-11-27-rca-evidence.json](results/ipfire-fireperf/2026-11-27-rca-evidence.json) | Результат ограниченной проверки |
 | [data/results/jetstream/2026-11-25-twin-maintenance.json](results/jetstream/2026-11-25-twin-maintenance.json) | Результат ограниченной проверки |
+| [data/results/jevagentharness/2026-11-27-tool-choice-shift.json](results/jevagentharness/2026-11-27-tool-choice-shift.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json](results/karpathy-autoresearch/2026-11-06-wikipg-autoloop-oracle.json) | Результат ограниченной проверки |
 | [data/results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json](results/karpathy-autoresearch/2026-11-25-paper2project-holdout.json) | Результат ограниченной проверки |
 | [data/results/kvset/2026-11-25-pilot-archive-rebuild.json](results/kvset/2026-11-25-pilot-archive-rebuild.json) | Результат ограниченной проверки |
