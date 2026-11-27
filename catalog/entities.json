@@ -5008,6 +5008,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned DSH ApprovalService with an in-memory session and arithmetic effect. No durable recovery, external receiver or timing claim.",
       "supersedes": null
+    },
+    {
+      "id": "memcomposer-procedure-assembly-20261127",
+      "study_ids": ["memcomposer"],
+      "version_ids": ["memcomposer-version"],
+      "date": "2026-11-27",
+      "document": "reviews/memcomposer/2026-11-27-procedure-assembly.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned DSH context assembly, authored ranks and deterministic procedure execution. No learned composer or production evidence.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6191,6 +6201,16 @@
       "scope": "Across 24 schedules per repeat, fresh and selective modes matched outcomes. With identical 44 approval requests and 36 fixture dispatches per mode, selective analysis fell from 44 calls to 28.",
       "limitations": "Arithmetic effects, in-memory receipts and one-shot fixture answerer. No durable recovery, production authorization evidence or elapsed-time measurement.",
       "artifacts": ["experiments/matoi/2026-11-27-effect-revalidation-protocol.md", "experiments/matoi/effect-revalidation.mjs", "data/results/matoi/2026-11-27-effect-revalidation.json"]
+    },
+    {
+      "id": "memcomposer-procedure-assembly-20261127-lab",
+      "study_ids": ["memcomposer"],
+      "review_id": "memcomposer-procedure-assembly-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Per repeat, fixed top-three, filtered rank, and filtered dependency order solved 12, 24, and 36 of 36 solvable fixtures. Both filtered branches withheld all context in 12 no-match fixtures and rendered 12060 total bytes versus 22332 for fixed selection.",
+      "limitations": "Authored candidate ranks and metadata, one-pass fixture executor, and UTF-8 byte counts. No learned composer, token or workload measurements.",
+      "artifacts": ["experiments/memcomposer/2026-11-27-procedure-assembly-protocol.md", "experiments/memcomposer/procedure-assembly.mjs", "data/results/memcomposer/2026-11-27-procedure-assembly.json"]
     }
   ],
   "projects": [

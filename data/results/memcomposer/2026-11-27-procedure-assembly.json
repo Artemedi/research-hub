@@ -1,0 +1,423 @@
+{
+  "date": "2026-11-27",
+  "target_revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "source_sha256": "2cd5cc40c006e70b8fb5f50ad459213623f9f7f86e12ad3fc402cefca0ece577",
+  "node_version": "24.11.1",
+  "cases_per_repeat": 48,
+  "repeats": [
+    {
+      "single": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5580
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 12,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 2520
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 12,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 2520
+        }
+      },
+      "pair": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5598
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 6,
+          "empty_when_absent": 0,
+          "delivered_items": 24,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 4068
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 24,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 4068
+        }
+      },
+      "triple": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5526
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 6,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 5472
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 5472
+        }
+      },
+      "absent": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 36,
+          "context_utf8_bytes": 5628
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        }
+      }
+    },
+    {
+      "single": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5580
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 12,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 2520
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 12,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 2520
+        }
+      },
+      "pair": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5598
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 6,
+          "empty_when_absent": 0,
+          "delivered_items": 24,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 4068
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 24,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 4068
+        }
+      },
+      "triple": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5526
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 6,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 5472
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 5472
+        }
+      },
+      "absent": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 36,
+          "context_utf8_bytes": 5628
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        }
+      }
+    },
+    {
+      "single": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5580
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 12,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 2520
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 12,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 2520
+        }
+      },
+      "pair": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5598
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 6,
+          "empty_when_absent": 0,
+          "delivered_items": 24,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 4068
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 24,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 4068
+        }
+      },
+      "triple": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 24,
+          "context_utf8_bytes": 5526
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 6,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 5472
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 12,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 5472
+        }
+      },
+      "absent": {
+        "no_memory": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "fixed_top3": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 0,
+          "delivered_items": 36,
+          "irrelevant_items": 36,
+          "context_utf8_bytes": 5628
+        },
+        "filtered_rank": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        },
+        "filtered_dependencies": {
+          "cases": 12,
+          "completed": 0,
+          "empty_when_absent": 12,
+          "delivered_items": 0,
+          "irrelevant_items": 0,
+          "context_utf8_bytes": 0
+        }
+      }
+    }
+  ]
+}

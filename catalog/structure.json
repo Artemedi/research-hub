@@ -4520,6 +4520,34 @@
       "title": "Matoi — effect revalidation results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/memcomposer/2026-11-27-procedure-assembly.md",
+      "title": "MemComposer × DSH Runtime — procedure selection and ordering",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/memcomposer/2026-11-27-procedure-assembly-protocol.md",
+      "title": "MemComposer — procedure assembly protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/memcomposer/procedure-assembly.mjs",
+      "title": "MemComposer × DSH Runtime — synthetic procedure replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/memcomposer/2026-11-27-procedure-assembly.json",
+      "title": "MemComposer — procedure assembly results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

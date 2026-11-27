@@ -122,6 +122,7 @@
 | [data/results/maadbench/2026-11-27-trace-attribution.json](results/maadbench/2026-11-27-trace-attribution.json) | Результат ограниченной проверки |
 | [data/results/matoi/2026-11-27-effect-revalidation.json](results/matoi/2026-11-27-effect-revalidation.json) | Результат ограниченной проверки |
 | [data/results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json](results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json) | Результат ограниченной проверки |
+| [data/results/memcomposer/2026-11-27-procedure-assembly.json](results/memcomposer/2026-11-27-procedure-assembly.json) | Результат ограниченной проверки |
 | [data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json](results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
 | [data/results/paper2agent/2026-11-25-paper2project-qualified-handoff.json](results/paper2agent/2026-11-25-paper2project-qualified-handoff.json) | Результат ограниченной проверки |

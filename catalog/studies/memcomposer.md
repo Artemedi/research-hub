@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [memcomposer-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21091v1).
+- [memcomposer-procedure-assembly-20261127](../../reviews/memcomposer/2026-11-27-procedure-assembly.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21091v1).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- memcomposer-procedure-assembly-20261127-lab: SYNTHETIC / OBSERVED. Per repeat, fixed top-three, filtered rank, and filtered dependency order solved 12, 24, and 36 of 36 solvable fixtures. Both filtered branches withheld all context in 12 no-match fixtures and rendered 12060 total bytes versus 22332 for fixed selection. Authored candidate ranks and metadata, one-pass fixture executor, and UTF-8 byte counts. No learned composer, token or workload measurements. [Артефакт](../../experiments/memcomposer/2026-11-27-procedure-assembly-protocol.md) · [Артефакт](../../experiments/memcomposer/procedure-assembly.mjs) · [Артефакт](../../data/results/memcomposer/2026-11-27-procedure-assembly.json)
 
 ## Ссылки из исходной карточки
 

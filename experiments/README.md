@@ -183,6 +183,8 @@
 - [matoi/effect-revalidation.mjs](matoi/effect-revalidation.mjs)
 - [mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md](mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md)
 - [mcp-toolbox-postgres/wiki-pg-temporal-contract.py](mcp-toolbox-postgres/wiki-pg-temporal-contract.py)
+- [memcomposer/2026-11-27-procedure-assembly-protocol.md](memcomposer/2026-11-27-procedure-assembly-protocol.md)
+- [memcomposer/procedure-assembly.mjs](memcomposer/procedure-assembly.mjs)
 - [memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md](memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md)
 - [memory-centric-continual-learning/wiki-pg-catalogue-retention.py](memory-centric-continual-learning/wiki-pg-catalogue-retention.py)
 - [paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md](paper2agent/2026-11-25-paper2project-qualified-handoff-protocol.md)
