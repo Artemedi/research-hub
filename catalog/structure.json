@@ -4464,6 +4464,34 @@
       "title": "Local Knowledge Graph — RCA path replay results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/maadbench/2026-11-27-trace-attribution.md",
+      "title": "MAADBench × DSH Runtime — trace attribution",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/maadbench/2026-11-27-trace-attribution-protocol.md",
+      "title": "MAADBench — trace attribution protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/maadbench/trace-attribution.mjs",
+      "title": "MAADBench × DSH Runtime — synthetic trace replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/maadbench/2026-11-27-trace-attribution.json",
+      "title": "MAADBench — trace replay results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

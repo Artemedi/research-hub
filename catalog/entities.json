@@ -4988,6 +4988,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned graph functions and authored similarity weights. No models, expert causal adjudication, or production diagnosis.",
       "supersedes": null
+    },
+    {
+      "id": "maadbench-trace-attribution-20261127",
+      "study_ids": ["maadbench"],
+      "version_ids": ["verified-maadbench-2026-11-05"],
+      "date": "2026-11-27",
+      "document": "reviews/maadbench/2026-11-27-trace-attribution.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned DSH Team projection with deterministic arithmetic and authored events. No agents or open-ended attribution.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6151,6 +6161,16 @@
       "scope": "On 60 projected RCA graphs, stock similarity search matched 12 oracle outcomes, directed search 48, and directed relation-filtered search 60. There were 36 expected no-path cases.",
       "limitations": "Synthetic evidence graphs with assigned scores, no similarity model or verified causal outcome.",
       "artifacts": ["experiments/local-knowledge-graph/2026-11-27-rca-paths-protocol.md", "experiments/local-knowledge-graph/rca-paths.py", "data/results/local-knowledge-graph/2026-11-27-rca-paths.json"]
+    },
+    {
+      "id": "maadbench-trace-attribution-20261127-lab",
+      "study_ids": ["maadbench"],
+      "review_id": "maadbench-trace-attribution-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "In each repeat, DSH projection rejected 12 revision gaps and accepted 48 traces. An independent check of delivered arithmetic results and the structural error matched expectations on all 60 traces.",
+      "limitations": "Authored arithmetic with deterministic ground truth, a four-task graph and in-memory replay. No model or production evidence.",
+      "artifacts": ["experiments/maadbench/2026-11-27-trace-attribution-protocol.md", "experiments/maadbench/trace-attribution.mjs", "data/results/maadbench/2026-11-27-trace-attribution.json"]
     }
   ],
   "projects": [
