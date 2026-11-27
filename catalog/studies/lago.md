@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [lago-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.19843v1).
+- [lago-option-admission-20261127](../../reviews/lago/2026-11-27-option-admission.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.19843v1).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- lago-option-admission-20261127-lab: SYNTHETIC / OBSERVED. Across 72 held-out cases, the fixed catalog solved 48, single-example admission 24, verified name lookup 48, and verified contract lookup 72. Both verified libraries contained 24 options. Authored arithmetic, fixed ranking and rule-based admission. No author implementation, language models, operational risk or measured real-task benefit. [Артефакт](../../experiments/lago/2026-11-27-option-admission-protocol.md) · [Артефакт](../../experiments/lago/option-admission.mjs) · [Артефакт](../../data/results/lago/2026-11-27-option-admission.json)
 
 ## Ссылки из исходной карточки
 

@@ -4408,6 +4408,34 @@
       "title": "KVTether — cache observation results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/lago/2026-11-27-option-admission.md",
+      "title": "LAGO × DSH Runtime — verified option admission",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/lago/2026-11-27-option-admission-protocol.md",
+      "title": "LAGO — option admission protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/lago/option-admission.mjs",
+      "title": "LAGO × DSH Runtime — synthetic option replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/lago/2026-11-27-option-admission.json",
+      "title": "LAGO — option admission results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

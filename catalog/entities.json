@@ -4968,6 +4968,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned DeepSeek request serialization and SSE translation only. Synthetic placement metadata. No other adapter, backend, or physical cache validation.",
       "supersedes": null
+    },
+    {
+      "id": "lago-option-admission-20261127",
+      "study_ids": ["lago"],
+      "version_ids": ["lago-version"],
+      "date": "2026-11-27",
+      "document": "reviews/lago/2026-11-27-option-admission.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned DSH skill registry with a fixture provider and authored arithmetic contracts. No agent runtime, learned options, or persistent library.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6111,6 +6121,16 @@
       "scope": "All 48 pairs with the same counters and different authored placement metadata produced identical request bodies and translated events. All counter controls remained visible in three repeats.",
       "limitations": "No physical KV control, request transport, provider execution, or model timing measured.",
       "artifacts": ["experiments/kvtether/2026-11-27-deepseek-cache-observation-protocol.md", "experiments/kvtether/deepseek-cache-observation.mjs", "data/results/kvtether/2026-11-27-deepseek-cache-observation.json"]
+    },
+    {
+      "id": "lago-option-admission-20261127-lab",
+      "study_ids": ["lago"],
+      "review_id": "lago-option-admission-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Across 72 held-out cases, the fixed catalog solved 48, single-example admission 24, verified name lookup 48, and verified contract lookup 72. Both verified libraries contained 24 options.",
+      "limitations": "Authored arithmetic, fixed ranking and rule-based admission. No author implementation, language models, operational risk or measured real-task benefit.",
+      "artifacts": ["experiments/lago/2026-11-27-option-admission-protocol.md", "experiments/lago/option-admission.mjs", "data/results/lago/2026-11-27-option-admission.json"]
     }
   ],
   "projects": [

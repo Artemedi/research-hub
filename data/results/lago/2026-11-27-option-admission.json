@@ -1,0 +1,61 @@
+{
+  "revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "registry_sha256": "bdec27a0ba5dc4063f7987dd2989e70e077de58a55a4e37d29a897bd690a6eb0",
+  "repeats": 3,
+  "model_calls": 0,
+  "results": {
+    "fixed": {
+      "proposals": 60,
+      "library_size": 12,
+      "rejected": 0,
+      "merged": 0,
+      "tasks": 72,
+      "solved": 48,
+      "wrong_contract": 36,
+      "selected": {
+        "primary": 24
+      },
+      "duplicate_warnings": 0
+    },
+    "single-example": {
+      "proposals": 60,
+      "library_size": 48,
+      "rejected": 12,
+      "merged": 0,
+      "tasks": 72,
+      "solved": 24,
+      "wrong_contract": 36,
+      "selected": {
+        "narrow": 24
+      },
+      "duplicate_warnings": 72
+    },
+    "verified-name": {
+      "proposals": 60,
+      "library_size": 24,
+      "rejected": 24,
+      "merged": 12,
+      "tasks": 72,
+      "solved": 48,
+      "wrong_contract": 36,
+      "selected": {
+        "alias": 24
+      },
+      "duplicate_warnings": 24
+    },
+    "verified-contract": {
+      "proposals": 60,
+      "library_size": 24,
+      "rejected": 24,
+      "merged": 12,
+      "tasks": 72,
+      "solved": 72,
+      "wrong_contract": 0,
+      "selected": {
+        "alias": 12,
+        "specialized": 12
+      },
+      "duplicate_warnings": 0
+    }
+  }
+}

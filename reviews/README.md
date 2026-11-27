@@ -117,6 +117,7 @@
 | [KVTether — KV Cache Lifecycle Management in ReAct Agents — полнотекстовая научная проверка](kvtether/2026-11-05-full-text.md) | 2026-11-05 |
 | [KVTether full-source lifecycle ordering contract and backend adoption gate](kvtether/2026-11-07-event-order.md) | 2026-11-07 |
 | [KVTether × DSH Runtime — DeepSeek cache observation](kvtether/2026-11-27-deepseek-cache-observation.md) | 2026-11-27 |
+| [LAGO × DSH Runtime — verified option admission](lago/2026-11-27-option-admission.md) | 2026-11-27 |
 | [Local Knowledge Graph — граф рассуждений](local-knowledge-graph/2026-11-04.md) | 2026-11-04 |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка](maadbench/2026-11-05-full-text.md) | 2026-11-05 |
 | [MCP Toolbox и Wiki_PG — настройки PostgreSQL](mcp-toolbox-postgres/2026-11-04.md) | 2026-11-04 |
