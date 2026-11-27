@@ -1,0 +1,117 @@
+{
+  "id": "run-7c525f992e564764",
+  "experiment_id": "exp-1a5566c6a5ad48c5",
+  "job_id": "job-620046af4e9b4846",
+  "started_at": "2026-11-27T10:31:53.533360+00:00",
+  "plan": "1b82b233c50e9290ee258d3c67747bab73975ff8f3101f92a2d43b1cd5e11994",
+  "source_tree": {
+    "bytes": 200343,
+    "files": 87,
+    "sha256": "9f5d8b24ea24f25b80c203bba153e0f64da0eb3b0b5c8a73922d303e0131ec7f"
+  },
+  "input_tree": {
+    "bytes": 7982699,
+    "files": 2,
+    "sha256": "2a4acf2d0a2e6a95bad3a80b6b66d739226e4b0d693bcc4a277ed070f27830bc"
+  },
+  "image_id": "826a5616954ee645ca5c165d4c8c960d4d8d444347838cf7bdc1ac555385358b",
+  "arms": {
+    "baseline": {
+      "arm": "baseline",
+      "exit_code": 0,
+      "timed_out": false,
+      "error": null,
+      "result": "f617a185e0d8074e6be5e9da2dfda36c1075ca715837af49451dad2c61c9fb09",
+      "result_sha256": "aac4fff2ee4dfa700851f1f3124862e4b5e8e2e9865cc4a36a52f29ac188be70",
+      "output_files": {
+        "test.log": "039720d5ffe60249bbf36574c3975613b81bdf71e17608348d699c06f09489ef",
+        "result.json": "aac4fff2ee4dfa700851f1f3124862e4b5e8e2e9865cc4a36a52f29ac188be70"
+      },
+      "stdout": "=== RUN   TestAuditTransfer\n    audit_test.go:67: repeat=0 mode=download payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=1049901 sftp_tx=1889 us=3622\n    audit_test.go:67: repeat=1 mode=download payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=1049877 sftp_tx=1863 us=3870\n    audit_test.go:67: repeat=2 mode=download payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=1049805 sftp_tx=1785 us=4043\n--- PASS: TestAuditTransfer (0.03s)\nPASS\n",
+      "stderr": "",
+      "stdout_sha256": "039720d5ffe60249bbf36574c3975613b81bdf71e17608348d699c06f09489ef",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 0.221
+    },
+    "candidate": {
+      "arm": "candidate",
+      "exit_code": 0,
+      "timed_out": false,
+      "error": null,
+      "result": "d05b158ed588ec27a79625e8ae11dbcf09c21e0c5989bc0736a09d7dd704828c",
+      "result_sha256": "09821af88b92521072f07f4b76b6a7e403a81195c89eb14fd28fe603fb443c05",
+      "output_files": {
+        "test.log": "d0d8519cb438a6e1a6a8fbb7afc26cae899e045a5816c3358407d43fde2cd150",
+        "result.json": "09821af88b92521072f07f4b76b6a7e403a81195c89eb14fd28fe603fb443c05"
+      },
+      "stdout": "=== RUN   TestAuditTransfer\n    audit_test.go:67: repeat=0 mode=sync-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049901 sftp_tx=1889 us=3483\n    audit_test.go:67: repeat=1 mode=sync-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049781 sftp_tx=1759 us=3044\n    audit_test.go:67: repeat=2 mode=sync-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049877 sftp_tx=1863 us=3474\n--- PASS: TestAuditTransfer (0.03s)\nPASS\n",
+      "stderr": "",
+      "stdout_sha256": "d0d8519cb438a6e1a6a8fbb7afc26cae899e045a5816c3358407d43fde2cd150",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 0.221
+    }
+  },
+  "sealed": "b38f0e3aa2d4ffce3b421afc7e990d7cd85135f335a499f28db2018cf211f5b4",
+  "finished_at": "2026-11-27T10:31:54.050622+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "metric": "repeats",
+      "arm": "baseline",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "metric": "repeats",
+      "arm": "candidate",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "metric": "reported_bytes",
+      "arm": "baseline",
+      "expected": 1048576,
+      "actual": 1048576,
+      "passed": true
+    },
+    {
+      "metric": "reported_bytes",
+      "arm": "candidate",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "metric": "skipped",
+      "arm": "baseline",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "metric": "skipped",
+      "arm": "candidate",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "metric": "full_payload_reads",
+      "arm": "baseline",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "metric": "full_payload_reads",
+      "arm": "candidate",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    }
+  ],
+  "reproduced": true,
+  "benefit": null
+}

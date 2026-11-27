@@ -1,0 +1,277 @@
+{
+  "source": "4b5ca398a37af94fd36993a59dad4b4e99f8ea7c",
+  "go_files": 24,
+  "go_lines": 2563,
+  "registry": "4366a4d809506228b91b76765a615f78d74a99c6",
+  "profiles_screened": 45,
+  "build": {
+    "go": "1.27.4",
+    "platform": "linux/amd64",
+    "status": "PASS",
+    "vet": "PASS",
+    "format": "PASS",
+    "upstream_tests": 0,
+    "cli_smoke": "PASS",
+    "binary_sha256": "df8284b1f56351a15b76ac7c80369014a23d26718311477cbbd01fb73e0759cd"
+  },
+  "paired": {
+    "rows": [
+      {
+        "repeat": 0,
+        "mode": "download",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 1049877,
+        "sftp_tx": 1854,
+        "us": 1664
+      },
+      {
+        "repeat": 0,
+        "mode": "sync-unchanged",
+        "payload": 1048576,
+        "reported_bytes": 0,
+        "skipped": 1,
+        "sftp_rx": 1049901,
+        "sftp_tx": 1880,
+        "us": 2886
+      },
+      {
+        "repeat": 0,
+        "mode": "sync-changed",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 2099593,
+        "sftp_tx": 3522,
+        "us": 4150
+      },
+      {
+        "repeat": 0,
+        "mode": "upload",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 789,
+        "sftp_tx": 1049591,
+        "us": 2122
+      },
+      {
+        "repeat": 0,
+        "mode": "sync-up-unchanged",
+        "payload": 1048576,
+        "reported_bytes": 0,
+        "skipped": 1,
+        "sftp_rx": 1049918,
+        "sftp_tx": 1910,
+        "us": 3082
+      },
+      {
+        "repeat": 1,
+        "mode": "download",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 1049973,
+        "sftp_tx": 1958,
+        "us": 1556
+      },
+      {
+        "repeat": 1,
+        "mode": "sync-unchanged",
+        "payload": 1048576,
+        "reported_bytes": 0,
+        "skipped": 1,
+        "sftp_rx": 1049902,
+        "sftp_tx": 1946,
+        "us": 3059
+      },
+      {
+        "repeat": 1,
+        "mode": "sync-changed",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 2099691,
+        "sftp_tx": 3755,
+        "us": 4281
+      },
+      {
+        "repeat": 1,
+        "mode": "upload",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 790,
+        "sftp_tx": 1049624,
+        "us": 2041
+      },
+      {
+        "repeat": 1,
+        "mode": "sync-up-unchanged",
+        "payload": 1048576,
+        "reported_bytes": 0,
+        "skipped": 1,
+        "sftp_rx": 1049943,
+        "sftp_tx": 2002,
+        "us": 3214
+      },
+      {
+        "repeat": 2,
+        "mode": "download",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 1049782,
+        "sftp_tx": 1811,
+        "us": 1235
+      },
+      {
+        "repeat": 2,
+        "mode": "sync-unchanged",
+        "payload": 1048576,
+        "reported_bytes": 0,
+        "skipped": 1,
+        "sftp_rx": 1049902,
+        "sftp_tx": 1946,
+        "us": 2928
+      },
+      {
+        "repeat": 2,
+        "mode": "sync-changed",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 2099715,
+        "sftp_tx": 3782,
+        "us": 4521
+      },
+      {
+        "repeat": 2,
+        "mode": "upload",
+        "payload": 1048576,
+        "reported_bytes": 1048576,
+        "skipped": 0,
+        "sftp_rx": 790,
+        "sftp_tx": 1049624,
+        "us": 1833
+      },
+      {
+        "repeat": 2,
+        "mode": "sync-up-unchanged",
+        "payload": 1048576,
+        "reported_bytes": 0,
+        "skipped": 1,
+        "sftp_rx": 1049919,
+        "sftp_tx": 1975,
+        "us": 3382
+      }
+    ],
+    "median": {
+      "download": {
+        "repeats": 3,
+        "median_sftp_rx": 1049877,
+        "median_sftp_tx": 1854,
+        "median_sftp_total": 1051731,
+        "median_us": 1556,
+        "reported_bytes": 1048576
+      },
+      "sync-changed": {
+        "repeats": 3,
+        "median_sftp_rx": 2099691,
+        "median_sftp_tx": 3755,
+        "median_sftp_total": 2103446,
+        "median_us": 4281,
+        "reported_bytes": 1048576
+      },
+      "sync-unchanged": {
+        "repeats": 3,
+        "median_sftp_rx": 1049902,
+        "median_sftp_tx": 1946,
+        "median_sftp_total": 1051848,
+        "median_us": 2928,
+        "reported_bytes": 0
+      },
+      "sync-up-unchanged": {
+        "repeats": 3,
+        "median_sftp_rx": 1049919,
+        "median_sftp_tx": 1975,
+        "median_sftp_total": 1051894,
+        "median_us": 3214,
+        "reported_bytes": 0
+      },
+      "upload": {
+        "repeats": 3,
+        "median_sftp_rx": 790,
+        "median_sftp_tx": 1049624,
+        "median_sftp_total": 1050414,
+        "median_us": 2041,
+        "reported_bytes": 1048576
+      }
+    },
+    "unchanged_download_traffic_reduction": -0.00011124517581007076,
+    "changed_download_ratio": 1.9999847869845047,
+    "benefit_criterion": "FAIL"
+  },
+  "formal": {
+    "job": "job-620046af4e9b4846",
+    "experiment": "exp-1a5566c6a5ad48c5",
+    "run": "run-7c525f992e564764",
+    "status": "PASS",
+    "checks_passed": 8,
+    "checks_total": 8,
+    "plan": "1b82b233c50e9290ee258d3c67747bab73975ff8f3101f92a2d43b1cd5e11994",
+    "source_tree": {
+      "bytes": 200343,
+      "files": 87,
+      "sha256": "9f5d8b24ea24f25b80c203bba153e0f64da0eb3b0b5c8a73922d303e0131ec7f"
+    },
+    "input_tree": {
+      "bytes": 7982699,
+      "files": 2,
+      "sha256": "2a4acf2d0a2e6a95bad3a80b6b66d739226e4b0d693bcc4a277ed070f27830bc"
+    },
+    "head_matches": true,
+    "image_id": "826a5616954ee645ca5c165d4c8c960d4d8d444347838cf7bdc1ac555385358b",
+    "sealed": "b38f0e3aa2d4ffce3b421afc7e990d7cd85135f335a499f28db2018cf211f5b4",
+    "analysis": "ac10804e9fa5ece4c1db1416c45cb9f4088a60a60c2ee32eb4fcd6a5011d69a5",
+    "benefit": null,
+    "independent_review": false,
+    "project_decisions": [
+      {
+        "project_id": "agent-skills",
+        "decision": "NEEDS_PROJECT_EVIDENCE"
+      },
+      {
+        "project_id": "dsh-runtime",
+        "decision": "NEEDS_PROJECT_EVIDENCE"
+      },
+      {
+        "project_id": "hermesagent",
+        "decision": "NEEDS_PROJECT_EVIDENCE"
+      }
+    ]
+  },
+  "limitations": [
+    "No live Google account or Cloud Shell",
+    "No independent reviewer",
+    "No target-project implementation or benchmark",
+    "No dependency CVE scan",
+    "First paired lab shared container; formal arms separated",
+    "SFTP bytes only, no SSH/TCP overhead",
+    "Generic source import not qualified Paper2Agent handoff"
+  ],
+  "risk_probes": {
+    "status": "PASS",
+    "checks_passed": 4,
+    "checks_total": 4,
+    "initial_run": "FIXTURE_ERROR_MISSING_FILELIST",
+    "findings": {
+      "GS-01": "two distinct untrusted host keys accepted; library exit status 42",
+      "GS-02": "existing 16-byte destination truncated to zero on read error",
+      "GS-06": "existing credential mode remains 0644",
+      "GS-07": "two HTTP 403 responses until context deadline"
+    },
+    "scope": "supplemental isolated lab; not formal Paper2Project"
+  }
+}

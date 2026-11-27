@@ -101,7 +101,8 @@
     "studies/tufazip.md",
     "studies/postgresql-2026-11-minor-releases.md",
     "studies/postgresql-19-ga-2026.md",
-    "studies/google-antigravity.md"
+    "studies/google-antigravity.md",
+    "studies/gshell.md"
   ],
   "documents": [
     {
@@ -4547,6 +4548,13 @@
       "to": "data/results/memcomposer/2026-11-27-procedure-assembly.json",
       "title": "MemComposer — procedure assembly results",
       "kind": "data",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/gshell/2026-11-27.md",
+      "title": "gshell — source audit and isolated SFTP reproduction",
+      "kind": "review",
       "date": "2026-11-27"
     }
   ]

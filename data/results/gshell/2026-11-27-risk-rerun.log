@@ -1,0 +1,18 @@
+=== RUN   TestAuditDestinationLoss
+    risk_audit_test.go:43: GS-02 reproduced: previous destination 16 bytes -> 0 bytes after synthetic read error
+--- PASS: TestAuditDestinationLoss (0.00s)
+=== RUN   TestAuditHostIdentityAndExit
+    risk_audit_test.go:91: GS-01 reproduced: two independently generated untrusted host keys accepted; library preserves exit status 42, CLI flattening established statically
+--- PASS: TestAuditHostIdentityAndExit (0.00s)
+PASS
+ok  	gshell/internal/ssh	0.006s
+=== RUN   TestAuditExistingCredentialMode
+    risk_audit_test.go:18: GS-06 reproduced: existing credential file permission remains 0644 after SaveToken
+--- PASS: TestAuditExistingCredentialMode (0.00s)
+PASS
+ok  	gshell/internal/auth	0.002s
+=== RUN   TestAuditPollingHTTPError
+    risk_audit_test.go:24: GS-07 reproduced: 2 HTTP 403 responses polled until context deadline
+--- PASS: TestAuditPollingHTTPError (2.30s)
+PASS
+ok  	gshell/internal/cloudshell	2.303s

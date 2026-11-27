@@ -1435,6 +1435,25 @@
         "experiments/google-antigravity/lifecycle-probe.py",
         "data/results/google-antigravity/2026-11-26.json"
       ]
+    },
+    {
+      "id": "gshell",
+      "title": "gshell — remote execution, SFTP and Cloud Shell lifecycle",
+      "kind": "engineering",
+      "card": "studies/gshell.md",
+      "primary_url": "https://github.com/Spectra010s/gshell",
+      "current_review_id": "gshell-20261127-audit",
+      "fit_coverage": "PARTIAL",
+      "card_body_sha256": "9c404477bf06fcde3c982b1c44fb6e2619e23bdeeee0f7866210ca228eaa14b9",
+      "linked_materials": [
+        "reviews/gshell/2026-11-27.md",
+        "experiments/gshell/protocol.md",
+        "experiments/gshell/engine-protocol.md",
+        "experiments/gshell/audit_test.go",
+        "data/results/gshell/2026-11-27-build-and-lab.log",
+        "data/results/gshell/2026-11-27-paper2project.json",
+        "data/results/gshell/2026-11-27.json"
+      ]
     }
   ],
   "versions": [
@@ -2415,6 +2434,13 @@
       "study_id": "google-antigravity",
       "ref": "CLI 1.5.11",
       "url": "https://antigravity.google/docs/cli/headless/",
+      "unknown_reason": null
+    },
+    {
+      "id": "gshell-4b5ca398a37a",
+      "study_id": "gshell",
+      "ref": "4b5ca398a37af94fd36993a59dad4b4e99f8ea7c",
+      "url": "https://github.com/Spectra010s/gshell/tree/4b5ca398a37af94fd36993a59dad4b4e99f8ea7c",
       "unknown_reason": null
     }
   ],
@@ -5018,6 +5044,20 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned DSH context assembly, authored ranks and deterministic procedure execution. No learned composer or production evidence.",
       "supersedes": null
+    },
+    {
+      "id": "gshell-20261127-audit",
+      "study_ids": [
+        "gshell"
+      ],
+      "version_ids": [
+        "gshell-4b5ca398a37a"
+      ],
+      "date": "2026-11-27",
+      "document": "reviews/gshell/2026-11-27.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "First-party Go source and scripts; isolated synthetic SFTP tests, no live Cloud Shell, dependency audit, independent reviewer or target project benefit.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6211,6 +6251,28 @@
       "scope": "Per repeat, fixed top-three, filtered rank, and filtered dependency order solved 12, 24, and 36 of 36 solvable fixtures. Both filtered branches withheld all context in 12 no-match fixtures and rendered 12060 total bytes versus 22332 for fixed selection.",
       "limitations": "Authored candidate ranks and metadata, one-pass fixture executor, and UTF-8 byte counts. No learned composer, token or workload measurements.",
       "artifacts": ["experiments/memcomposer/2026-11-27-procedure-assembly-protocol.md", "experiments/memcomposer/procedure-assembly.mjs", "data/results/memcomposer/2026-11-27-procedure-assembly.json"]
+    },
+    {
+      "id": "gshell-20261127-sftp-lab",
+      "study_ids": [
+        "gshell"
+      ],
+      "review_id": "gshell-20261127-audit",
+      "environment": "ISOLATED_INTEGRATION",
+      "result": "OBSERVED",
+      "scope": "Build, vet and smoke passed; 15 paired SFTP observations and separate Paper2Project arms passed 8/8 reproduction checks. Unchanged sync reads full file; changed download reads twice; network benefit criterion failed.",
+      "limitations": "Synthetic 1 MiB files, local SFTP protocol; not live cloud, not encrypted SSH wire or target project benefit.",
+      "artifacts": [
+        "experiments/gshell/protocol.md",
+        "experiments/gshell/engine-protocol.md",
+        "experiments/gshell/audit_test.go",
+        "experiments/gshell/arm_test.go",
+        "experiments/gshell/run.sh",
+        "experiments/gshell/run-arm.sh",
+        "data/results/gshell/2026-11-27-build-and-lab.log",
+        "data/results/gshell/2026-11-27-paper2project.json",
+        "data/results/gshell/2026-11-27.json"
+      ]
     }
   ],
   "projects": [
@@ -18225,6 +18287,69 @@
       "project_card_sha256": null,
       "unknown_reason": "Document-backed screening of pinned registry profile, not current project source.",
       "supersedes": null
+    },
+    {
+      "id": "gshell-20261127-audit-dsh-runtime",
+      "study_id": "gshell",
+      "project_id": "dsh-runtime",
+      "review_id": "gshell-20261127-audit",
+      "date": "2026-11-27",
+      "decision": "DEFERRED",
+      "evidence": "DEFERRED / NEEDS_EVIDENCE",
+      "reason": "Tool orchestration and continuation reliability; transport lifecycle reference.",
+      "limitations": "No current target seam; security and failure gates unverified.",
+      "next_test": "30 synthetic tasks, exact exit codes/cancellation/integrity and p95.",
+      "next_test_reason": null,
+      "source_document": "reviews/gshell/2026-11-27.md",
+      "source_line": 42,
+      "source_excerpt": "| [gshell](../../studies/gshell.md) | [dsh-runtime](../../projects/dsh-runtime.md) | Tool orchestration and continuation reliability; remote transport lifecycle reference. | No current target seam; host verification, cancellation, exit codes and traffic guard fail/unverified. Value 7/10, complexity 6/10. | Compare existing execution backend vs minimal remote adapter on 30 synthetic tasks; content integrity, exact exit codes, cancellation, p95, CPU/IO, zero silent loss. | DEFERRED / NEEDS_EVIDENCE |",
+      "source_decision": "DEFERRED / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-backed screening of registry@4366a4d; not current target code.",
+      "supersedes": null
+    },
+    {
+      "id": "gshell-20261127-audit-agent-skills",
+      "study_id": "gshell",
+      "project_id": "agent-skills",
+      "review_id": "gshell-20261127-audit",
+      "date": "2026-11-27",
+      "decision": "DEFERRED",
+      "evidence": "DEFERRED / NEEDS_EVIDENCE",
+      "reason": "Reproducible verification and code-review profile; remote workspace recipe.",
+      "limitations": "No current skill contract; credentials and untrusted command risk.",
+      "next_test": "10 read-only fixture tasks and negative cases vs plain SSH.",
+      "next_test_reason": null,
+      "source_document": "reviews/gshell/2026-11-27.md",
+      "source_line": 43,
+      "source_excerpt": "| [gshell](../../studies/gshell.md) | [agent-skills](../../projects/agent-skills.md) | Reproducible verification and code-review skill profile; remote-workspace recipe. | No current skill contract; avoid injecting untrusted command strings and credentials. Value 6/10, complexity 3/10. | Test read-only remote fixture with 10 safe tasks, strict allowlist and negative cases; compare plain SSH. | DEFERRED / NEEDS_EVIDENCE |",
+      "source_decision": "DEFERRED / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-backed screening of registry@4366a4d; not current target code.",
+      "supersedes": null
+    },
+    {
+      "id": "gshell-20261127-audit-HermesAgent",
+      "study_id": "gshell",
+      "project_id": "HermesAgent",
+      "review_id": "gshell-20261127-audit",
+      "date": "2026-11-27",
+      "decision": "DEFERRED",
+      "evidence": "DEFERRED / NEEDS_EVIDENCE",
+      "reason": "Robust sessions and tool access; lifecycle reference.",
+      "limitations": "No current source seam or persistent cloud runtime.",
+      "next_test": "Compare existing SSH/tool access vs wrapper on bounded tasks.",
+      "next_test_reason": null,
+      "source_document": "reviews/gshell/2026-11-27.md",
+      "source_line": 44,
+      "source_excerpt": "| [gshell](../../studies/gshell.md) | [HermesAgent](../../projects/HermesAgent.md) | Robust sessions and tool access; provider lifecycle reference. | No current source seam, persistent cloud runtime not established. Value 5/10, complexity 5/10. | Compare existing SSH/tool access vs wrapper on bounded ephemeral tasks; exact failure propagation and no privileged credentials. | DEFERRED / NEEDS_EVIDENCE |",
+      "source_decision": "DEFERRED / NEEDS_EVIDENCE",
+      "project_revision": null,
+      "project_card_sha256": null,
+      "unknown_reason": "Document-backed screening of registry@4366a4d; not current target code.",
+      "supersedes": null
     }
   ],
   "current_assessments": [
@@ -20837,6 +20962,21 @@
       "study_id": "google-antigravity",
       "project_id": "dsh-runtime",
       "assessment_id": "google-antigravity-20261126-lifecycle-dsh-runtime"
+    },
+    {
+      "study_id": "gshell",
+      "project_id": "dsh-runtime",
+      "assessment_id": "gshell-20261127-audit-dsh-runtime"
+    },
+    {
+      "study_id": "gshell",
+      "project_id": "agent-skills",
+      "assessment_id": "gshell-20261127-audit-agent-skills"
+    },
+    {
+      "study_id": "gshell",
+      "project_id": "HermesAgent",
+      "assessment_id": "gshell-20261127-audit-HermesAgent"
     }
   ],
   "relations": [

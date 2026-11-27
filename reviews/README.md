@@ -87,6 +87,7 @@
 | [GAD × DSH Runtime — dependency acceptance review](goal-aware-dynamic-collaboration/2026-11-26-dependency-acceptance.md) | 2026-11-26 |
 | [Antigravity lifecycle probe](google-antigravity/2026-11-26.md) | 2026-11-26 |
 | [BK-009 original Astra guidance full-text and five-pair live A/B](gpt6-astra-skills-prompts/2026-11-06-live-astra-ab.md) | 2026-11-06 |
+| [gshell — source audit and isolated SFTP reproduction](gshell/2026-11-27.md) | 2026-11-27 |
 | [Полный текст Harness² — метод и ограничения](harness2/2026-11-05-full-text.md) | 2026-11-05 |
 | [Harness² — final selection review](harness2/2026-11-26-final-selection.md) | 2026-11-26 |
 | [HarnessSecurity-Bench × DSH Runtime — approval effects review](harnesssecurity-bench/2026-11-26-approval-effects.md) | 2026-11-26 |

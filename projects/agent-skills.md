@@ -44,5 +44,6 @@
 | --- | --- | --- | --- | --- |
 | [rea](../catalog/studies/rea.md) | NO_CONFIRMED_FIT | PROFILE_TRIAGE_ONLY | навыки review: не установлена профильная задача binary/managed artifact inspection; общая возможность применить tool к любому ПО недостаточна для project fit. | [Обзор](../reviews/reverse-engineer-anything/2026-11-05-pe-layout.md) · [Основание](../data/project-fit/reverse-engineer-anything/2026-11-05.json) |
 | [cera-moa](../catalog/studies/cera-moa.md) | NO_CURRENT_FIT | PROFILE_TRIAGE_ONLY | Конфигурация/agent layer поверх провайдеров; нет контроля model weights, hidden states и совместного RL/LoRA training. | [Обзор](../reviews/cera-moa/2026-11-08-routing-contract.md) · [Основание](../data/project-fit/cera-moa/2026-11-08-project-fit.json) |
+| [gshell](../catalog/studies/gshell.md) | DEFERRED | DEFERRED / NEEDS_EVIDENCE | Reproducible verification and code-review profile; remote workspace recipe. | [Обзор](../reviews/gshell/2026-11-27.md) · [Основание](../reviews/gshell/2026-11-27.md) |
 
 Ограничения, следующий тест и история оценки доступны в структурированной записи источника. Отсутствие связи не означает отрицательную оценку; полный портфель заново не оценивался.

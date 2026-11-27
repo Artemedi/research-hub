@@ -1,0 +1,77 @@
+go version go1.27.4 linux/amd64
+=== build ===
+/out/gshell: go1.27.4
+	path	gshell
+	mod	gshell	(devel)
+	dep	cloud.google.com/go/compute/metadata	v0.3.0	h1:Tz+eQXMEqDIKRsmY3cHTL6FVaynIjX2QxYC4trgAKZc=
+	dep	github.com/kr/fs	v0.1.0	h1:Jskdu9ieNAYnjxsi0LbQp1ulIKZV1LAFgK1tWhpZgl8=
+	dep	github.com/pkg/sftp	v1.13.12	h1:Myhzy/ZzLPnCtE2F2WtDHsgs8RfgMnH2gfbHuCJhkMU=
+	dep	github.com/spf13/cobra	v1.10.2	h1:DMTTonx5m65Ic0GOoRY2c16WCbHxOOw6xxezuLaBpcU=
+	dep	github.com/spf13/pflag	v1.0.9	h1:9exaQaMOCwffKiiiYk6/BndUBv+iRViNW+4lEMi0PvY=
+	dep	golang.org/x/crypto	v0.58.0	h1:COkYLr4k7nDI4r6QtMML2AfzeIswWHAJthLS6K/M/54=
+	dep	golang.org/x/oauth2	v0.38.0	h1:uW7XQbcu1eoiQS7uMJvLOjPMl04bTbmY1VeRPxvbspI=
+	dep	golang.org/x/sys	v0.50.0	h1:dkKZEFTEKaLr1sjhs0WiKqoi8Jj5nHbS3Njmx1UoMJs=
+	dep	golang.org/x/term	v0.48.0	h1:G6UU1eiSB8nl3DzeUGt7Mg+2SctI8tPS6Z5/mBt6cOk=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-trimpath=true
+	build	CGO_ENABLED=0
+	build	GOARCH=amd64
+	build	GOOS=linux
+	build	GOAMD64=v1
+df8284b1f56351a15b76ac7c80369014a23d26718311477cbbd01fb73e0759cd  /out/gshell
+=== vet ===
+=== format ===
+=== upstream tests ===
+?   	gshell	[no test files]
+?   	gshell/cmd	[no test files]
+?   	gshell/internal/auth	[no test files]
+?   	gshell/internal/cloudshell	[no test files]
+?   	gshell/internal/config	[no test files]
+?   	gshell/internal/ssh	[no test files]
+?   	gshell/internal/ui	[no test files]
+=== CLI smoke ===
+gshell version 2.0.0
+Terminal client for Google Cloud Shell
+
+Usage:
+  gshell [flags]
+  gshell [command]
+
+Examples:
+  gshell                          # open an interactive session
+  gshell run "git status"         # run a command in Cloud Shell
+  gshell status                   # show environment details
+  gshell cp ./project remote:~/   # copy files to Cloud Shell
+
+Available Commands:
+  auth              Manage Google authentication credentials
+  completion        Generate the autocompletion script for the specified shell
+✓ Project set to valid-project
+  Project      valid-project
+Error: invalid project ID "bad;project": use 6-30 lowercase letters, digits, or hyphens
+Not authenticated.
+Run: gshell auth login
+Error: either source or destination must use the 'remote:' prefix
+CLI_SMOKE_PASS
+=== synthetic SFTP ===
+=== RUN   TestAuditTransfer
+    audit_test.go:66: repeat=0 mode=download payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=1049877 sftp_tx=1854 us=1664
+    audit_test.go:66: repeat=0 mode=sync-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049901 sftp_tx=1880 us=2886
+    audit_test.go:66: repeat=0 mode=sync-changed payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=2099593 sftp_tx=3522 us=4150
+    audit_test.go:66: repeat=0 mode=upload payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=789 sftp_tx=1049591 us=2122
+    audit_test.go:66: repeat=0 mode=sync-up-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049918 sftp_tx=1910 us=3082
+    audit_test.go:66: repeat=1 mode=download payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=1049973 sftp_tx=1958 us=1556
+    audit_test.go:66: repeat=1 mode=sync-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049902 sftp_tx=1946 us=3059
+    audit_test.go:66: repeat=1 mode=sync-changed payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=2099691 sftp_tx=3755 us=4281
+    audit_test.go:66: repeat=1 mode=upload payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=790 sftp_tx=1049624 us=2041
+    audit_test.go:66: repeat=1 mode=sync-up-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049943 sftp_tx=2002 us=3214
+    audit_test.go:66: repeat=2 mode=download payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=1049782 sftp_tx=1811 us=1235
+    audit_test.go:66: repeat=2 mode=sync-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049902 sftp_tx=1946 us=2928
+    audit_test.go:66: repeat=2 mode=sync-changed payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=2099715 sftp_tx=3782 us=4521
+    audit_test.go:66: repeat=2 mode=upload payload=1048576 reported_bytes=1048576 skipped=0 sftp_rx=790 sftp_tx=1049624 us=1833
+    audit_test.go:66: repeat=2 mode=sync-up-unchanged payload=1048576 reported_bytes=0 skipped=1 sftp_rx=1049919 sftp_tx=1975 us=3382
+--- PASS: TestAuditTransfer (0.08s)
+PASS
+ok  	gshell/internal/ssh	0.081s
+AUDIT_PASS
