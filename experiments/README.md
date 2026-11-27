@@ -156,6 +156,8 @@
 - [hyra-2/paper2project-review-lifecycle.py](hyra-2/paper2project-review-lifecycle.py)
 - [inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md](inspektor-gadget/2026-11-25-wiki-pg-collection-coverage-protocol.md)
 - [inspektor-gadget/wiki-pg-collection-coverage.py](inspektor-gadget/wiki-pg-collection-coverage.py)
+- [ipfire-fireperf/2026-11-27-rca-evidence-protocol.md](ipfire-fireperf/2026-11-27-rca-evidence-protocol.md)
+- [ipfire-fireperf/rca-evidence.py](ipfire-fireperf/rca-evidence.py)
 - [jetstream/2026-11-25-twin-protocol.md](jetstream/2026-11-25-twin-protocol.md)
 - [jetstream/twin-maintenance.py](jetstream/twin-maintenance.py)
 - [karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md](karpathy-autoresearch/2026-11-25-paper2project-holdout-protocol.md)

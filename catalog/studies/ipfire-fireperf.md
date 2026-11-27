@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [ipfire-fireperf-review](../../reviews/ipfire-fireperf/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [v0.3.0](https://source.ipfire.org/releases/fireperf/fireperf-0.3.0.tar.gz).
+- [ipfire-fireperf-rca-evidence-20261127](../../reviews/ipfire-fireperf/2026-11-27-rca-evidence.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [v0.3.0](https://source.ipfire.org/releases/fireperf/fireperf-0.3.0.tar.gz).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- ipfire-fireperf-rca-evidence-20261127-lab: SYNTHETIC / OBSERVED. Replayed 12 archived loopback trials and one refusal control. Stock RCA validation accepted 24 out-of-scope draft claims citing known evidence. The scoped handoff withheld all 24 and retained the 12 valid lab observations. Archived measurements and authored drafts. No validation of arbitrary report claims, verified incident causes, or measured project benefit. [Артефакт](../../experiments/ipfire-fireperf/2026-11-27-rca-evidence-protocol.md) · [Артефакт](../../experiments/ipfire-fireperf/rca-evidence.py) · [Артефакт](../../data/results/ipfire-fireperf/2026-11-27-rca-evidence.json)
 
 ## Ссылки из исходной карточки
 

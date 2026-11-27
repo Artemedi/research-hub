@@ -103,6 +103,7 @@
 | [BK-041 privileged Podman eBPF trace audit](inspektor-gadget/2026-11-06-privileged-podman-trace.md) | 2026-11-06 |
 | [Inspektor Gadget — Wiki_PG diagnostic collection coverage](inspektor-gadget/2026-11-25-wiki-pg-collection-coverage.md) | 2026-11-25 |
 | [IPFire fireperf — TCP loopback](ipfire-fireperf/2026-11-04.md) | 2026-11-04 |
+| [IPFire fireperf × sequential-rca — scope of imported evidence](ipfire-fireperf/2026-11-27-rca-evidence.md) | 2026-11-27 |
 | [JetStream — Generating Verified Query Accelerators for Existing Database Systems — full-text review 2026-11-14](jetstream/2026-11-14.md) | 2026-11-14 |
 | [JetStream — synthetic transaction contract for AKUZ Optimizer Twin](jetstream/2026-11-25-twin-maintenance.md) | 2026-11-25 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |

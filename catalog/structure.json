@@ -4289,6 +4289,34 @@
       "title": "Hyperresearch 0.13.3 — citation routing results",
       "kind": "data",
       "date": "2026-11-26"
+    },
+    {
+      "from": null,
+      "to": "reviews/ipfire-fireperf/2026-11-27-rca-evidence.md",
+      "title": "IPFire fireperf × sequential-rca — scope of imported evidence",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/ipfire-fireperf/2026-11-27-rca-evidence-protocol.md",
+      "title": "IPFire fireperf — archived evidence protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/ipfire-fireperf/rca-evidence.py",
+      "title": "IPFire fireperf — offline RCA evidence replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/ipfire-fireperf/2026-11-27-rca-evidence.json",
+      "title": "IPFire fireperf — RCA evidence replay results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

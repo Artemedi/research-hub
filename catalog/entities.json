@@ -4928,6 +4928,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Synthetic Markdown and in-memory vault. Stock Hyperresearch export and isolated Paper2Agent warning function. No model or real source adjudication.",
       "supersedes": null
+    },
+    {
+      "id": "ipfire-fireperf-rca-evidence-20261127",
+      "study_ids": ["ipfire-fireperf"],
+      "version_ids": ["ipfire-fireperf-version"],
+      "date": "2026-11-27",
+      "document": "reviews/ipfire-fireperf/2026-11-27-rca-evidence.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Archived loopback receipt, pinned RCA schema and scripted report drafts. No network, database or model execution.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6031,6 +6041,16 @@
       "scope": "Stock Hyperresearch 0.13.3 auto-passed 36 of 72 unsupported claims for each Markdown citation style even with full review sampling. The exact-only policy queued all 72.",
       "limitations": "Authored labels, notes without source ambiguity, and no downstream adjudication. Project warning function evaluated in isolation.",
       "artifacts": ["experiments/hyperresearch/2026-11-26-report-citation-routing-protocol.md", "experiments/hyperresearch/report-citation-routing.py", "data/results/hyperresearch/2026-11-26-report-citation-routing.json"]
+    },
+    {
+      "id": "ipfire-fireperf-rca-evidence-20261127-lab",
+      "study_ids": ["ipfire-fireperf"],
+      "review_id": "ipfire-fireperf-rca-evidence-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Replayed 12 archived loopback trials and one refusal control. Stock RCA validation accepted 24 out-of-scope draft claims citing known evidence. The scoped handoff withheld all 24 and retained the 12 valid lab observations.",
+      "limitations": "Archived measurements and authored drafts. No validation of arbitrary report claims, verified incident causes, or measured project benefit.",
+      "artifacts": ["experiments/ipfire-fireperf/2026-11-27-rca-evidence-protocol.md", "experiments/ipfire-fireperf/rca-evidence.py", "data/results/ipfire-fireperf/2026-11-27-rca-evidence.json"]
     }
   ],
   "projects": [

@@ -1,0 +1,35 @@
+{
+  "revision": "13fa0c910c75d9e3b79c758bcba473a6406e008c",
+  "source_sha256": {
+    "state.py": "6e20881609494d10391187237befc00d236eeca77556b6957a3127ab5aeb7544",
+    "graph.py": "b0a22615ecf4c34d1ecef35da85d76596ea5c7add252d4fbdfe983a6d6b2e171",
+    "orchestrator.py": "c677e4b79264c1fa5192f4739f4b32aa0267da56b58ffea1a8347705679d100d"
+  },
+  "receipt_sha256": "e8c0456e058ae0fcb1e989b5615665c5fa0927a8c1288a80ebced2cb7e093359",
+  "case_snapshot_sha256": "493055a384b0dd3d057d20ff4618096b085a16482b7470bab75672aec66fcce9",
+  "imported_trials": 12,
+  "connections_opened": 240,
+  "imported_refusal_controls": 1,
+  "retrospective_scope": "isolated-loopback",
+  "capture_time": null,
+  "model_or_network_calls": 0,
+  "repeats": 3,
+  "rejected_receipt_mutations": [
+    "scope",
+    "missing_limits",
+    "byte_count",
+    "boolean_counter",
+    "duplicate_trial",
+    "refusal_label"
+  ],
+  "counts": {
+    "local_observation_schema_accepted": 12,
+    "local_observation_attached": 12,
+    "routed_claim_schema_accepted": 12,
+    "routed_claim_withheld": 12,
+    "relabeled_routed_claim_schema_accepted": 12,
+    "relabeled_routed_claim_withheld": 12,
+    "unknown_evidence_rejected_by_stock_and_guard": 12,
+    "duplicate_evidence_rejected_by_stock_and_guard": 12
+  }
+}
