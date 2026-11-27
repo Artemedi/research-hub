@@ -4998,6 +4998,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned DSH Team projection with deterministic arithmetic and authored events. No agents or open-ended attribution.",
       "supersedes": null
+    },
+    {
+      "id": "matoi-effect-revalidation-20261127",
+      "study_ids": ["matoi"],
+      "version_ids": ["matoi-version"],
+      "date": "2026-11-27",
+      "document": "reviews/matoi/2026-11-27-effect-revalidation.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned DSH ApprovalService with an in-memory session and arithmetic effect. No durable recovery, external receiver or timing claim.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6171,6 +6181,16 @@
       "scope": "In each repeat, DSH projection rejected 12 revision gaps and accepted 48 traces. An independent check of delivered arithmetic results and the structural error matched expectations on all 60 traces.",
       "limitations": "Authored arithmetic with deterministic ground truth, a four-task graph and in-memory replay. No model or production evidence.",
       "artifacts": ["experiments/maadbench/2026-11-27-trace-attribution-protocol.md", "experiments/maadbench/trace-attribution.mjs", "data/results/maadbench/2026-11-27-trace-attribution.json"]
+    },
+    {
+      "id": "matoi-effect-revalidation-20261127-lab",
+      "study_ids": ["matoi"],
+      "review_id": "matoi-effect-revalidation-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Across 24 schedules per repeat, fresh and selective modes matched outcomes. With identical 44 approval requests and 36 fixture dispatches per mode, selective analysis fell from 44 calls to 28.",
+      "limitations": "Arithmetic effects, in-memory receipts and one-shot fixture answerer. No durable recovery, production authorization evidence or elapsed-time measurement.",
+      "artifacts": ["experiments/matoi/2026-11-27-effect-revalidation-protocol.md", "experiments/matoi/effect-revalidation.mjs", "data/results/matoi/2026-11-27-effect-revalidation.json"]
     }
   ],
   "projects": [

@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-27",
+  "target_revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "approval_source_sha256": "632d819c0e1d0b0f489a17264a1e3bd9f88ae537746be768bbb0775d842e4a24",
+  "node_version": "24.11.1",
+  "repeats": [
+    {
+      "scenarios": {
+        "stable": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "unrelated_change": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "relevant_change": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "revoked": {
+          "first": "confirmed",
+          "second": "rejected",
+          "schedules": 4
+        },
+        "unavailable": {
+          "first": "confirmed",
+          "second": "unavailable",
+          "schedules": 4
+        },
+        "unknown_retry": {
+          "first": "unknown",
+          "second": "held-unknown",
+          "schedules": 4
+        }
+      },
+      "totals": {
+        "fresh": {
+          "schedules": 24,
+          "analyses": 44,
+          "approval_requests": 44,
+          "answerer_calls": 36,
+          "dispatches": 36
+        },
+        "selective": {
+          "schedules": 24,
+          "analyses": 28,
+          "approval_requests": 44,
+          "answerer_calls": 36,
+          "dispatches": 36
+        }
+      }
+    },
+    {
+      "scenarios": {
+        "stable": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "unrelated_change": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "relevant_change": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "revoked": {
+          "first": "confirmed",
+          "second": "rejected",
+          "schedules": 4
+        },
+        "unavailable": {
+          "first": "confirmed",
+          "second": "unavailable",
+          "schedules": 4
+        },
+        "unknown_retry": {
+          "first": "unknown",
+          "second": "held-unknown",
+          "schedules": 4
+        }
+      },
+      "totals": {
+        "fresh": {
+          "schedules": 24,
+          "analyses": 44,
+          "approval_requests": 44,
+          "answerer_calls": 36,
+          "dispatches": 36
+        },
+        "selective": {
+          "schedules": 24,
+          "analyses": 28,
+          "approval_requests": 44,
+          "answerer_calls": 36,
+          "dispatches": 36
+        }
+      }
+    },
+    {
+      "scenarios": {
+        "stable": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "unrelated_change": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "relevant_change": {
+          "first": "confirmed",
+          "second": "confirmed",
+          "schedules": 4
+        },
+        "revoked": {
+          "first": "confirmed",
+          "second": "rejected",
+          "schedules": 4
+        },
+        "unavailable": {
+          "first": "confirmed",
+          "second": "unavailable",
+          "schedules": 4
+        },
+        "unknown_retry": {
+          "first": "unknown",
+          "second": "held-unknown",
+          "schedules": 4
+        }
+      },
+      "totals": {
+        "fresh": {
+          "schedules": 24,
+          "analyses": 44,
+          "approval_requests": 44,
+          "answerer_calls": 36,
+          "dispatches": 36
+        },
+        "selective": {
+          "schedules": 24,
+          "analyses": 28,
+          "approval_requests": 44,
+          "answerer_calls": 36,
+          "dispatches": 36
+        }
+      }
+    }
+  ]
+}

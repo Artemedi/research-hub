@@ -4492,6 +4492,34 @@
       "title": "MAADBench — trace replay results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/matoi/2026-11-27-effect-revalidation.md",
+      "title": "Matoi × DSH Runtime — effect revalidation",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/matoi/2026-11-27-effect-revalidation-protocol.md",
+      "title": "Matoi — effect revalidation protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/matoi/effect-revalidation.mjs",
+      "title": "Matoi × DSH Runtime — synthetic approval replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/matoi/2026-11-27-effect-revalidation.json",
+      "title": "Matoi — effect revalidation results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

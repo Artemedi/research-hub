@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [matoi-review](../../portfolio/2026-10-12--2026-10-19/review.md), 2026-11-03; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21394v1).
+- [matoi-effect-revalidation-20261127](../../reviews/matoi/2026-11-27-effect-revalidation.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/pdf/2610.21394v1).
 
 ## Применимость к проектам
 
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- matoi-effect-revalidation-20261127-lab: SYNTHETIC / OBSERVED. Across 24 schedules per repeat, fresh and selective modes matched outcomes. With identical 44 approval requests and 36 fixture dispatches per mode, selective analysis fell from 44 calls to 28. Arithmetic effects, in-memory receipts and one-shot fixture answerer. No durable recovery, production authorization evidence or elapsed-time measurement. [Артефакт](../../experiments/matoi/2026-11-27-effect-revalidation-protocol.md) · [Артефакт](../../experiments/matoi/effect-revalidation.mjs) · [Артефакт](../../data/results/matoi/2026-11-27-effect-revalidation.json)
 
 ## Ссылки из исходной карточки
 

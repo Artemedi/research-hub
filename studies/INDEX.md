@@ -55,7 +55,7 @@
 | [LAGO](lago.md) | [2026-11-03 / lago-review](../portfolio/2026-10-12--2026-10-19/review.md) · [2026-11-27 / lago-option-admission-20261127](../reviews/lago/2026-11-27-option-admission.md) |
 | [Local Knowledge Graph — граф шагов рассуждения модели](local-knowledge-graph.md) | [2026-11-04 / local-knowledge-graph-review](../reviews/local-knowledge-graph/2026-11-04.md) · [2026-11-27 / local-knowledge-graph-rca-paths-20261127](../reviews/local-knowledge-graph/2026-11-27-rca-paths.md) |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks](maadbench.md) | [2026-10-05 / maadbench-review](../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md) · [2026-11-05 / fulltext-maadbench-2026-11-05](../reviews/maadbench/2026-11-05-full-text.md) · [2026-11-27 / maadbench-trace-attribution-20261127](../reviews/maadbench/2026-11-27-trace-attribution.md) |
-| [Matoi](matoi.md) | [2026-11-03 / matoi-review](../portfolio/2026-10-12--2026-10-19/review.md) |
+| [Matoi](matoi.md) | [2026-11-03 / matoi-review](../portfolio/2026-10-12--2026-10-19/review.md) · [2026-11-27 / matoi-effect-revalidation-20261127](../reviews/matoi/2026-11-27-effect-revalidation.md) |
 | [MemComposer](memcomposer.md) | [2026-11-03 / memcomposer-review](../portfolio/2026-10-12--2026-10-19/review.md) |
 | [Memory-Centric Continual Learning (MCCL)](memory-centric-continual-learning.md) | [2026-11-03 / memory-centric-continual-learning-review](../portfolio/2026-10-20--2026-10-26/review.md) · [2026-11-25 / mccl-wiki-pg-catalogue-retention-20261125](../reviews/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.md) |
 | [MemScope](memscope.md) | [2026-11-03 / memscope-review](../portfolio/2026-10-12--2026-10-19/review.md) |

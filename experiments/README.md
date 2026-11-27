@@ -179,6 +179,8 @@
 - [local-knowledge-graph/rca-paths.py](local-knowledge-graph/rca-paths.py)
 - [maadbench/2026-11-27-trace-attribution-protocol.md](maadbench/2026-11-27-trace-attribution-protocol.md)
 - [maadbench/trace-attribution.mjs](maadbench/trace-attribution.mjs)
+- [matoi/2026-11-27-effect-revalidation-protocol.md](matoi/2026-11-27-effect-revalidation-protocol.md)
+- [matoi/effect-revalidation.mjs](matoi/effect-revalidation.mjs)
 - [mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md](mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md)
 - [mcp-toolbox-postgres/wiki-pg-temporal-contract.py](mcp-toolbox-postgres/wiki-pg-temporal-contract.py)
 - [memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md](memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md)

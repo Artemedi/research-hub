@@ -122,6 +122,7 @@
 | [Local Knowledge Graph × sequential-rca — typed paths](local-knowledge-graph/2026-11-27-rca-paths.md) | 2026-11-27 |
 | [MAADBench — Multi-Agent Anomaly and Fault Benchmarks — полнотекстовая научная проверка](maadbench/2026-11-05-full-text.md) | 2026-11-05 |
 | [MAADBench × DSH Runtime — trace attribution](maadbench/2026-11-27-trace-attribution.md) | 2026-11-27 |
+| [Matoi × DSH Runtime — effect revalidation](matoi/2026-11-27-effect-revalidation.md) | 2026-11-27 |
 | [MCP Toolbox и Wiki_PG — настройки PostgreSQL](mcp-toolbox-postgres/2026-11-04.md) | 2026-11-04 |
 | [MCP Toolbox — live values and Wiki_PG snapshot dates](mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.md) | 2026-11-25 |
 | [MCCL — Wiki_PG snapshot retention and catalogue updates](memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.md) | 2026-11-25 |
