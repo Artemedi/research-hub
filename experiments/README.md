@@ -171,6 +171,8 @@
 - [kvset/rebuild-pilot-archive.py](kvset/rebuild-pilot-archive.py)
 - [kvtether/2026-11-07-event-oracle.py](kvtether/2026-11-07-event-oracle.py)
 - [kvtether/2026-11-07-event-order.mjs](kvtether/2026-11-07-event-order.mjs)
+- [kvtether/2026-11-27-deepseek-cache-observation-protocol.md](kvtether/2026-11-27-deepseek-cache-observation-protocol.md)
+- [kvtether/deepseek-cache-observation.mjs](kvtether/deepseek-cache-observation.mjs)
 - [mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md](mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md)
 - [mcp-toolbox-postgres/wiki-pg-temporal-contract.py](mcp-toolbox-postgres/wiki-pg-temporal-contract.py)
 - [memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md](memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md)

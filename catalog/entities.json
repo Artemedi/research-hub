@@ -4958,6 +4958,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned shortlist and routing checks with authored logits and stand-in argmax. No model weights, native reducer, transport, or evidence storage.",
       "supersedes": null
+    },
+    {
+      "id": "kvtether-deepseek-cache-observation-20261127",
+      "study_ids": ["kvtether"],
+      "version_ids": ["verified-kvtether-2026-11-05"],
+      "date": "2026-11-27",
+      "document": "reviews/kvtether/2026-11-27-deepseek-cache-observation.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned DeepSeek request serialization and SSE translation only. Synthetic placement metadata. No other adapter, backend, or physical cache validation.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6091,6 +6101,16 @@
       "scope": "Paired option order shifted the desired finalist from 0 of 20 to 20 of 20 with authored scores. The pinned 9router boundary rejected all 60 excluded-route controls per repeat.",
       "limitations": "Synthetic score changes, no model quality, operational cost, persistence or transport measurements.",
       "artifacts": ["experiments/julia-1/2026-11-27-shortlist-replay-protocol.md", "experiments/julia-1/shortlist-replay.py", "experiments/julia-1/allowed-routes.mjs", "data/results/julia-1/2026-11-27-shortlist-replay.json"]
+    },
+    {
+      "id": "kvtether-deepseek-cache-observation-20261127-lab",
+      "study_ids": ["kvtether"],
+      "review_id": "kvtether-deepseek-cache-observation-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "All 48 pairs with the same counters and different authored placement metadata produced identical request bodies and translated events. All counter controls remained visible in three repeats.",
+      "limitations": "No physical KV control, request transport, provider execution, or model timing measured.",
+      "artifacts": ["experiments/kvtether/2026-11-27-deepseek-cache-observation-protocol.md", "experiments/kvtether/deepseek-cache-observation.mjs", "data/results/kvtether/2026-11-27-deepseek-cache-observation.json"]
     }
   ],
   "projects": [

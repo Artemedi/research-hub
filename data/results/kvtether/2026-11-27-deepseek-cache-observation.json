@@ -1,0 +1,36 @@
+{
+  "revision": "b6a1635b1200071754e2871b9d9453368e6daf23",
+  "source_sha256": {
+    "serialize.ts": "36ff023acb53f11af7eb7550e533907489e928a81037f8b4e447804a16910162",
+    "translate.ts": "66e8b1f96a90404d4e5ca67fc85b9e37a96bbee78ed52521e7b8fdc3f336ba32",
+    "sse.ts": "621f53b6641a9fb5c652a755f477045f0616f42d5a559b9bea4754836552d705",
+    "adapter.ts": "bd97f822363f45fae28e4aa1b7a4412305865979e22889c6c771989dcee87a32"
+  },
+  "eventsource_parser": "3.1.0",
+  "cases_per_form": 16,
+  "repeats": 3,
+  "provider_or_model_calls": 0,
+  "counts": {
+    "native": {
+      "pairs": 16,
+      "identical_requests": 16,
+      "identical_events": 16,
+      "counter_controls": 16,
+      "text_controls": 16
+    },
+    "compatible": {
+      "pairs": 16,
+      "identical_requests": 16,
+      "identical_events": 16,
+      "counter_controls": 16,
+      "text_controls": 16
+    },
+    "both": {
+      "pairs": 16,
+      "identical_requests": 16,
+      "identical_events": 16,
+      "counter_controls": 16,
+      "text_controls": 16
+    }
+  }
+}

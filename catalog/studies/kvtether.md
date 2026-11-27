@@ -22,6 +22,7 @@
 
 - [kvtether-review](../../archive/dsh/knowledge/research/2026-10-05-research-review-decisions.md), 2026-10-05; HISTORICAL_REVIEW_RECORDED; заменяет: нет. Версии: [не установлена](https://arxiv.org/abs/2609.39819).
 - [fulltext-kvtether-2026-11-05](../../reviews/kvtether/2026-11-05-full-text.md), 2026-11-05; FULL_TEXT_REVIEWED; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.39819v1).
+- [kvtether-deepseek-cache-observation-20261127](../../reviews/kvtether/2026-11-27-deepseek-cache-observation.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [arxiv:v1](https://arxiv.org/html/2609.39819v1).
 - [KVTether full-source lifecycle ordering contract and backend adoption gate](../../reviews/kvtether/2026-11-07-event-order.md) — ссылка на материал вне структурированной истории.
 
 ## Применимость к проектам
@@ -32,7 +33,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- kvtether-deepseek-cache-observation-20261127-lab: SYNTHETIC / OBSERVED. All 48 pairs with the same counters and different authored placement metadata produced identical request bodies and translated events. All counter controls remained visible in three repeats. No physical KV control, request transport, provider execution, or model timing measured. [Артефакт](../../experiments/kvtether/2026-11-27-deepseek-cache-observation-protocol.md) · [Артефакт](../../experiments/kvtether/deepseek-cache-observation.mjs) · [Артефакт](../../data/results/kvtether/2026-11-27-deepseek-cache-observation.json)
 
 ## Оговорка исходного источника
 

@@ -4380,6 +4380,34 @@
       "title": "Julia 1 — shortlist replay results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/kvtether/2026-11-27-deepseek-cache-observation.md",
+      "title": "KVTether × DSH Runtime — DeepSeek cache observation",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/kvtether/2026-11-27-deepseek-cache-observation-protocol.md",
+      "title": "KVTether — DeepSeek cache observation protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/kvtether/deepseek-cache-observation.mjs",
+      "title": "KVTether — synthetic cache observation replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/kvtether/2026-11-27-deepseek-cache-observation.json",
+      "title": "KVTether — cache observation results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

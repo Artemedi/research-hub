@@ -116,6 +116,7 @@
 | [data/results/kvset/2026-11-25-pilot-archive-rebuild.json](results/kvset/2026-11-25-pilot-archive-rebuild.json) | Результат ограниченной проверки |
 | [data/results/kvtether/2026-11-07-event-oracle.json](results/kvtether/2026-11-07-event-oracle.json) | Результат ограниченной проверки |
 | [data/results/kvtether/2026-11-07-event-order.json](results/kvtether/2026-11-07-event-order.json) | Результат ограниченной проверки |
+| [data/results/kvtether/2026-11-27-deepseek-cache-observation.json](results/kvtether/2026-11-27-deepseek-cache-observation.json) | Результат ограниченной проверки |
 | [data/results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json](results/mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract.json) | Результат ограниченной проверки |
 | [data/results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json](results/memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention.json) | Результат ограниченной проверки |
 | [data/results/novafabric/2026-11-04.json](results/novafabric/2026-11-04.json) | Результат ограниченной проверки |
