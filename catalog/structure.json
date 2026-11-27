@@ -4436,6 +4436,34 @@
       "title": "LAGO — option admission results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/local-knowledge-graph/2026-11-27-rca-paths.md",
+      "title": "Local Knowledge Graph × sequential-rca — typed paths",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/local-knowledge-graph/2026-11-27-rca-paths-protocol.md",
+      "title": "Local Knowledge Graph — RCA path protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/local-knowledge-graph/rca-paths.py",
+      "title": "Local Knowledge Graph — synthetic RCA path replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/local-knowledge-graph/2026-11-27-rca-paths.json",
+      "title": "Local Knowledge Graph — RCA path replay results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

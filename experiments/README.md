@@ -175,6 +175,8 @@
 - [kvtether/deepseek-cache-observation.mjs](kvtether/deepseek-cache-observation.mjs)
 - [lago/2026-11-27-option-admission-protocol.md](lago/2026-11-27-option-admission-protocol.md)
 - [lago/option-admission.mjs](lago/option-admission.mjs)
+- [local-knowledge-graph/2026-11-27-rca-paths-protocol.md](local-knowledge-graph/2026-11-27-rca-paths-protocol.md)
+- [local-knowledge-graph/rca-paths.py](local-knowledge-graph/rca-paths.py)
 - [mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md](mcp-toolbox-postgres/2026-11-25-wiki-pg-temporal-contract-protocol.md)
 - [mcp-toolbox-postgres/wiki-pg-temporal-contract.py](mcp-toolbox-postgres/wiki-pg-temporal-contract.py)
 - [memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md](memory-centric-continual-learning/2026-11-25-wiki-pg-catalogue-retention-protocol.md)

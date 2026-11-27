@@ -1,0 +1,62 @@
+{
+  "lkg_revision": "58fce402c7d15a3f5abcc8d0b1e920c1be5071b5",
+  "lkg_source_sha256": "a4faedce7752c4f192d7bc06d727e1fe272da90986fc6fc2e9055c865f6f8f75",
+  "rca_revision": "13fa0c910c75d9e3b79c758bcba473a6406e008c",
+  "rca_source_sha256": {
+    "graph.py": "b0a22615ecf4c34d1ecef35da85d76596ea5c7add252d4fbdfe983a6d6b2e171",
+    "state.py": "6e20881609494d10391187237befc00d236eeca77556b6957a3127ab5aeb7544",
+    "orchestrator.py": "c677e4b79264c1fa5192f4739f4b32aa0267da56b58ffea1a8347705679d100d"
+  },
+  "networkx": "3.6.1",
+  "numpy": "1.26.4",
+  "cases_per_scenario": 12,
+  "repeats": 3,
+  "model_calls": 0,
+  "counts": {
+    "direct": {
+      "cases": 12,
+      "stock_matches_oracle": 12,
+      "stock_reverse_edges": 0,
+      "stock_contradiction_paths": 0,
+      "directed_matches_oracle": 12,
+      "typed_matches_oracle": 12,
+      "typed_no_path": 0
+    },
+    "reverse_only": {
+      "cases": 12,
+      "stock_matches_oracle": 0,
+      "stock_reverse_edges": 12,
+      "stock_contradiction_paths": 0,
+      "directed_matches_oracle": 12,
+      "typed_matches_oracle": 12,
+      "typed_no_path": 12
+    },
+    "contradiction_only": {
+      "cases": 12,
+      "stock_matches_oracle": 0,
+      "stock_reverse_edges": 0,
+      "stock_contradiction_paths": 12,
+      "directed_matches_oracle": 0,
+      "typed_matches_oracle": 12,
+      "typed_no_path": 12
+    },
+    "bridge_only": {
+      "cases": 12,
+      "stock_matches_oracle": 0,
+      "stock_reverse_edges": 12,
+      "stock_contradiction_paths": 0,
+      "directed_matches_oracle": 12,
+      "typed_matches_oracle": 12,
+      "typed_no_path": 12
+    },
+    "bridge_with_alternative": {
+      "cases": 12,
+      "stock_matches_oracle": 0,
+      "stock_reverse_edges": 12,
+      "stock_contradiction_paths": 0,
+      "directed_matches_oracle": 12,
+      "typed_matches_oracle": 12,
+      "typed_no_path": 0
+    }
+  }
+}

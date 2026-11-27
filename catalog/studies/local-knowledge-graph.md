@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [local-knowledge-graph-review](../../reviews/local-knowledge-graph/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [58fce402c7d15a3f5abcc8d0b1e920c1be5071b5](https://github.com/punnerud/Local_Knowledge_Graph/tree/58fce402c7d15a3f5abcc8d0b1e920c1be5071b5).
+- [local-knowledge-graph-rca-paths-20261127](../../reviews/local-knowledge-graph/2026-11-27-rca-paths.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [58fce402c7d15a3f5abcc8d0b1e920c1be5071b5](https://github.com/punnerud/Local_Knowledge_Graph/tree/58fce402c7d15a3f5abcc8d0b1e920c1be5071b5).
 
 ## Применимость к проектам
 
@@ -30,7 +31,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- local-knowledge-graph-rca-paths-20261127-lab: SYNTHETIC / OBSERVED. On 60 projected RCA graphs, stock similarity search matched 12 oracle outcomes, directed search 48, and directed relation-filtered search 60. There were 36 expected no-path cases. Synthetic evidence graphs with assigned scores, no similarity model or verified causal outcome. [Артефакт](../../experiments/local-knowledge-graph/2026-11-27-rca-paths-protocol.md) · [Артефакт](../../experiments/local-knowledge-graph/rca-paths.py) · [Артефакт](../../data/results/local-knowledge-graph/2026-11-27-rca-paths.json)
 
 ## Ссылки из исходной карточки
 

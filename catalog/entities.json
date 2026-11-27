@@ -4978,6 +4978,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Pinned DSH skill registry with a fixture provider and authored arithmetic contracts. No agent runtime, learned options, or persistent library.",
       "supersedes": null
+    },
+    {
+      "id": "local-knowledge-graph-rca-paths-20261127",
+      "study_ids": ["local-knowledge-graph"],
+      "version_ids": ["local-knowledge-graph-version"],
+      "date": "2026-11-27",
+      "document": "reviews/local-knowledge-graph/2026-11-27-rca-paths.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned graph functions and authored similarity weights. No models, expert causal adjudication, or production diagnosis.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6131,6 +6141,16 @@
       "scope": "Across 72 held-out cases, the fixed catalog solved 48, single-example admission 24, verified name lookup 48, and verified contract lookup 72. Both verified libraries contained 24 options.",
       "limitations": "Authored arithmetic, fixed ranking and rule-based admission. No author implementation, language models, operational risk or measured real-task benefit.",
       "artifacts": ["experiments/lago/2026-11-27-option-admission-protocol.md", "experiments/lago/option-admission.mjs", "data/results/lago/2026-11-27-option-admission.json"]
+    },
+    {
+      "id": "local-knowledge-graph-rca-paths-20261127-lab",
+      "study_ids": ["local-knowledge-graph"],
+      "review_id": "local-knowledge-graph-rca-paths-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "On 60 projected RCA graphs, stock similarity search matched 12 oracle outcomes, directed search 48, and directed relation-filtered search 60. There were 36 expected no-path cases.",
+      "limitations": "Synthetic evidence graphs with assigned scores, no similarity model or verified causal outcome.",
+      "artifacts": ["experiments/local-knowledge-graph/2026-11-27-rca-paths-protocol.md", "experiments/local-knowledge-graph/rca-paths.py", "data/results/local-knowledge-graph/2026-11-27-rca-paths.json"]
     }
   ],
   "projects": [
