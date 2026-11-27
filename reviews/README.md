@@ -108,6 +108,7 @@
 | [JetStream — synthetic transaction contract for AKUZ Optimizer Twin](jetstream/2026-11-25-twin-maintenance.md) | 2026-11-25 |
 | [JevAgentHarness × DSH Runtime — calibrated tool-choice shift](jevagentharness/2026-11-27-tool-choice-shift.md) | 2026-11-27 |
 | [Julia 1 — типы и вероятности](julia-1/2026-11-04.md) | 2026-11-04 |
+| [Julia 1 × 9router — shortlist replay review](julia-1/2026-11-27-shortlist-replay.md) | 2026-11-27 |
 | [Karpathy autoresearch — исходники и ограничения](karpathy-autoresearch/2026-11-04.md) | 2026-11-04 |
 | [BK-034 Karpathy/AI LABS and Wiki_PG autoloop](karpathy-autoresearch/2026-11-06-loop-audit.md) | 2026-11-06 |
 | [Karpathy AutoResearch — Paper2Project metrics and independent guard](karpathy-autoresearch/2026-11-25-paper2project-holdout.md) | 2026-11-25 |

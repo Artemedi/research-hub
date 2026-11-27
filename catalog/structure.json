@@ -4345,6 +4345,41 @@
       "title": "JevAgentHarness — tool-choice replay results",
       "kind": "data",
       "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "reviews/julia-1/2026-11-27-shortlist-replay.md",
+      "title": "Julia 1 × 9router — shortlist replay review",
+      "kind": "review",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/julia-1/2026-11-27-shortlist-replay-protocol.md",
+      "title": "Julia 1 — shortlist replay protocol",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/julia-1/shortlist-replay.py",
+      "title": "Julia 1 — shortlist replay",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "experiments/julia-1/allowed-routes.mjs",
+      "title": "Julia 1 × 9router — allowed routes check",
+      "kind": "experiment",
+      "date": "2026-11-27"
+    },
+    {
+      "from": null,
+      "to": "data/results/julia-1/2026-11-27-shortlist-replay.json",
+      "title": "Julia 1 — shortlist replay results",
+      "kind": "data",
+      "date": "2026-11-27"
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "julia_revision": "a85b127321d580d65176c89ced8273f305745d85",
+  "julia_source_sha256": {
+    "julia/router/router.py": "624b0b82fd34e4c6874a37595fa91a1d79553d0ca9d8111ef8330ed805f6be7c",
+    "julia/probabilities.py": "2a0197d2e0fa5a3c4b06b93599a85706724df7b0d2cc821a13ed293aef59f206"
+  },
+  "target_revision": "d15f5bf3289e50bddda8263cddd239d7078e4ef0",
+  "target_sha256": "86749093d2cb38dc0aba4a45ccadf95f1cc5d44e7684a6ff82d6c6759421e638",
+  "model_or_provider_calls": 0,
+  "repeats": 3,
+  "excluded_route_denials_per_repeat": 60,
+  "counts": {
+    "direct": {
+      "cases": 20,
+      "gold_in_final": 20,
+      "gold_selected": 20,
+      "wrong_displayed_as_one": 0,
+      "scoring_rows": 20,
+      "rounds": 20
+    },
+    "same_group": {
+      "cases": 20,
+      "gold_in_final": 0,
+      "gold_selected": 0,
+      "wrong_displayed_as_one": 20,
+      "scoring_rows": 60,
+      "rounds": 40
+    },
+    "separate_groups": {
+      "cases": 20,
+      "gold_in_final": 20,
+      "gold_selected": 20,
+      "wrong_displayed_as_one": 0,
+      "scoring_rows": 60,
+      "rounds": 40
+    }
+  }
+}

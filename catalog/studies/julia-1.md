@@ -21,6 +21,7 @@
 ## Версии и история обзоров
 
 - [julia-1-review](../../reviews/julia-1/2026-11-04.md), 2026-11-04; PARTIAL_SOURCE_REVIEW; заменяет: нет. Версии: [a85b127321d580d65176c89ced8273f305745d85](https://huggingface.co/SupersonicLabs/Julia-1/tree/a85b127321d580d65176c89ced8273f305745d85).
+- [julia-1-shortlist-replay-20261127](../../reviews/julia-1/2026-11-27-shortlist-replay.md), 2026-11-27; BOUNDED_CODE_REVIEW; заменяет: нет. Версии: [a85b127321d580d65176c89ced8273f305745d85](https://huggingface.co/SupersonicLabs/Julia-1/tree/a85b127321d580d65176c89ced8273f305745d85).
 
 ## Применимость к проектам
 
@@ -31,7 +32,7 @@
 
 ## Эксперименты
 
-В модели нет отдельной записи эксперимента. Фактический охват и ссылки сохранены в исходной карточке и обзорах; это не утверждение NOT_RUN.
+- julia-1-shortlist-replay-20261127-lab: SYNTHETIC / OBSERVED. Paired option order shifted the desired finalist from 0 of 20 to 20 of 20 with authored scores. The pinned 9router boundary rejected all 60 excluded-route controls per repeat. Synthetic score changes, no model quality, operational cost, persistence or transport measurements. [Артефакт](../../experiments/julia-1/2026-11-27-shortlist-replay-protocol.md) · [Артефакт](../../experiments/julia-1/shortlist-replay.py) · [Артефакт](../../experiments/julia-1/allowed-routes.mjs) · [Артефакт](../../data/results/julia-1/2026-11-27-shortlist-replay.json)
 
 ## Ссылки из исходной карточки
 

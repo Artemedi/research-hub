@@ -4948,6 +4948,16 @@
       "source_coverage": "BOUNDED_CODE_REVIEW",
       "limitations": "Authored scores, arithmetic tools and pinned DSH argument validation. No author runtime, model costs, or live tool routing.",
       "supersedes": null
+    },
+    {
+      "id": "julia-1-shortlist-replay-20261127",
+      "study_ids": ["julia-1"],
+      "version_ids": ["julia-1-version"],
+      "date": "2026-11-27",
+      "document": "reviews/julia-1/2026-11-27-shortlist-replay.md",
+      "source_coverage": "BOUNDED_CODE_REVIEW",
+      "limitations": "Pinned shortlist and routing checks with authored logits and stand-in argmax. No model weights, native reducer, transport, or evidence storage.",
+      "supersedes": null
     }
   ],
   "experiments": [
@@ -6071,6 +6081,16 @@
       "scope": "Calibrated threshold solved 48 of 48 matched tasks and 36 of 48 shifted tasks. A version-bound fallback restored 48 only for a declared profile change.",
       "limitations": "Scripted scores and reference, no real LLM, tools, costs or automatic drift detection.",
       "artifacts": ["experiments/jevagentharness/2026-11-27-tool-choice-shift-protocol.md", "experiments/jevagentharness/tool-choice-shift.mjs", "data/results/jevagentharness/2026-11-27-tool-choice-shift.json"]
+    },
+    {
+      "id": "julia-1-shortlist-replay-20261127-lab",
+      "study_ids": ["julia-1"],
+      "review_id": "julia-1-shortlist-replay-20261127",
+      "environment": "SYNTHETIC",
+      "result": "OBSERVED",
+      "scope": "Paired option order shifted the desired finalist from 0 of 20 to 20 of 20 with authored scores. The pinned 9router boundary rejected all 60 excluded-route controls per repeat.",
+      "limitations": "Synthetic score changes, no model quality, operational cost, persistence or transport measurements.",
+      "artifacts": ["experiments/julia-1/2026-11-27-shortlist-replay-protocol.md", "experiments/julia-1/shortlist-replay.py", "experiments/julia-1/allowed-routes.mjs", "data/results/julia-1/2026-11-27-shortlist-replay.json"]
     }
   ],
   "projects": [
